@@ -1,0 +1,18 @@
+[Unit]
+Description=Mots vocabulary static website
+After=network.target
+
+[Service]
+Type=simple
+ExecStartPre=/usr/sbin/nginx -t -p %h/Work/Mots/ -c %h/Work/Mots/config/nginx.conf
+ExecStart=/usr/sbin/nginx -p %h/Work/Mots/ -c %h/Work/Mots/config/nginx.conf -g "daemon off;"
+ExecReload=/bin/kill -HUP $MAINPID
+KillSignal=SIGQUIT
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+UMask=0027
+
+[Install]
+WantedBy=default.target

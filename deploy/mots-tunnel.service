@@ -1,0 +1,16 @@
+[Unit]
+Description=Mots Cloudflare Tunnel
+After=network-online.target mots-web.service
+Wants=network-online.target mots-web.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/cloudflared --no-autoupdate --config %h/.cloudflared/config-mots.yml tunnel run
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+UMask=0077
+
+[Install]
+WantedBy=default.target

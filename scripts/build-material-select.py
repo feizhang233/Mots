@@ -14,6 +14,8 @@ import platform
 import subprocess
 import sys
 
+from assets import SRC, digest, select_input_digest
+
 ROOT = Path(__file__).resolve().parent.parent
 VENDOR = ROOT / 'scripts' / 'vendor' / 'material-select'
 
@@ -41,11 +43,15 @@ def main():
     environment = dict(os.environ)
     environment['NODE_PATH'] = str(modules)
     subprocess.run([
-        str(binary), str(ROOT / 'scripts' / 'material-select-entry.js'),
+        str(binary), str(SRC / 'components' / 'material-select.js'),
         '--bundle', '--minify', '--format=iife', '--platform=browser',
         '--target=es2020', '--legal-comments=inline', f'--banner:js={banner}',
         f'--outfile={ROOT / "dist" / "select.js"}',
     ], env=environment, check=True)
+    (VENDOR / 'build.json').write_text(json.dumps({
+        'inputs_sha256': select_input_digest(),
+        'bundle_sha256': digest((ROOT / 'dist/select.js').read_bytes()),
+    }, indent=2) + '\n')
 
 
 if __name__ == '__main__':

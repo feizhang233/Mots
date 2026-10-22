@@ -1,0 +1,13 @@
+{
+  "page2": "nearest forward unseen from current page",
+  "laterPage": "target page synced when next unseen is beyond current page",
+  "wrap": "earlier unseen used when no forward candidate",
+  "allNonzero": "current page first word fallback",
+  "empty": "empty state retained without lookup errors",
+  "hideUnseen": "excluded unseen stay excluded",
+  "filters": "category, subcategory and search scope retained",
+  "random": "search respects stable shuffled deck order",
+  "dictionary": "active dictionary progress used for colliding IDs",
+  "reclick": "active card button no-op",
+  "nonStudy": "lookup and captured review cursor are unchanged"
+}

@@ -6,7 +6,8 @@ import '@material/web/select/select-option.js';
 const pendingValues = new WeakMap();
 const optionSignatures = new WeakMap();
 const registered = new WeakSet();
-const getControl = target => typeof target === 'string' ? document.getElementById(target) : target;
+const getControl = (target) =>
+  typeof target === 'string' ? document.getElementById(target) : target;
 const controls = () => [...document.querySelectorAll('md-outlined-select')];
 const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -31,28 +32,31 @@ function setValue(target, value) {
   control.value = desired;
   // On first render, options and the internal menu may still be upgrading.
   // Reapply only this latest request after Material's own update has settled.
-  Promise.all([...control.children].map(option => option.updateComplete)).then(() => control.updateComplete).then(() => {
-    if (pendingValues.get(control) !== request || !control.isConnected) return;
-    control.value = desired;
-  });
+  Promise.all([...control.children].map((option) => option.updateComplete))
+    .then(() => control.updateComplete)
+    .then(() => {
+      if (pendingValues.get(control) !== request || !control.isConnected) return;
+      control.value = desired;
+    });
 }
 
 function setOptions(target, entries) {
   const control = getControl(target);
   if (!control) return;
   configure(control);
-  const options = entries.map(entry => ({
+  const options = entries.map((entry) => ({
     value: String(entry.value),
     label: String(entry.label ?? entry.value),
     disabled: Boolean(entry.disabled),
-    lang: entry.lang ? String(entry.lang) : ''
+    lang: entry.lang ? String(entry.lang) : '',
   }));
   const signature = JSON.stringify(options);
   if (optionSignatures.get(control) === signature) return;
   optionSignatures.set(control, signature);
   const previous = pendingValues.get(control)?.value ?? control.value;
-  const desired = options.some(option => option.value === previous && !option.disabled)
-    ? previous : options.find(option => !option.disabled)?.value ?? '';
+  const desired = options.some((option) => option.value === previous && !option.disabled)
+    ? previous
+    : (options.find((option) => !option.disabled)?.value ?? '');
   const fragment = document.createDocumentFragment();
   for (const entry of options) {
     const option = document.createElement('md-select-option');
@@ -86,5 +90,8 @@ function closeAll() {
 
 window.MotsSelect = Object.freeze({ setOptions, setValue, syncAll, closeAll });
 syncAll();
-document.querySelectorAll('dialog').forEach(dialog => dialog.addEventListener('close', closeAll));
+document.querySelectorAll('dialog').forEach((dialog) => dialog.addEventListener('close', closeAll));
+// A popup opened before a viewport change retains its measured desktop width.
+// Close it through Material so reopening measures the current trigger again.
+window.addEventListener('resize', closeAll);
 window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', syncAll);

@@ -51,7 +51,7 @@ md-select-option {
   --md-menu-item-selected-label-text-color: var(--primary);
 }
 
-md-select-option [slot="headline"] {
+md-select-option [slot='headline'] {
   font: inherit;
   overflow-wrap: anywhere;
 }
@@ -63,4 +63,6 @@ md-outlined-select:not(:defined) {
   border: 1px solid var(--outline);
   border-radius: 4px;
 }
-md-outlined-select:not(:defined) > * { visibility: hidden; }
+md-outlined-select:not(:defined) > * {
+  visibility: hidden;
+}

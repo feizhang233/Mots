@@ -1,0 +1,68 @@
+/* Material Web is the shared select owner; Mots maps its existing theme tokens. */
+:root {
+  --md-sys-color-primary: var(--primary);
+  --md-sys-color-on-primary: var(--on-primary);
+  --md-sys-color-primary-container: var(--primary-container);
+  --md-sys-color-on-primary-container: var(--primary);
+  --md-sys-color-secondary-container: var(--primary-container);
+  --md-sys-color-on-secondary-container: var(--primary);
+  --md-sys-color-surface: var(--surface);
+  --md-sys-color-surface-container: var(--surface-container);
+  --md-sys-color-surface-container-highest: var(--surface-high);
+  --md-sys-color-on-surface: var(--ink);
+  --md-sys-color-on-surface-variant: var(--muted);
+  --md-sys-color-outline: var(--outline);
+  --md-sys-color-outline-variant: var(--outline);
+  --md-sys-color-error: var(--danger);
+  --md-sys-typescale-body-large-font: var(--font-body);
+  --md-sys-typescale-body-large-size: 14px;
+  --md-sys-typescale-label-large-font: var(--font-body);
+  --md-sys-typescale-label-large-size: 14px;
+}
+
+.settings-field > md-outlined-select {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  --md-outlined-select-text-field-container-shape: 4px;
+  --md-outlined-select-text-field-input-text-font: var(--font-body);
+  --md-outlined-select-text-field-input-text-size: 14px;
+  --md-outlined-select-text-field-input-text-color: var(--ink);
+  --md-outlined-select-text-field-label-text-font: var(--font-body);
+  --md-outlined-select-text-field-label-text-color: var(--muted);
+  --md-outlined-select-text-field-outline-color: var(--outline);
+  --md-outlined-select-text-field-hover-outline-color: var(--muted);
+  --md-outlined-select-text-field-focus-outline-color: var(--primary);
+}
+
+md-outlined-select::part(menu) {
+  --md-menu-container-color: var(--surface-container);
+  --md-menu-container-shape: 4px;
+  --md-menu-item-label-text-font: var(--font-body);
+  --md-menu-item-label-text-size: 14px;
+  --md-menu-item-label-text-color: var(--ink);
+}
+
+md-select-option {
+  --md-menu-item-label-text-font: var(--font-body);
+  --md-menu-item-label-text-size: 14px;
+  --md-menu-item-label-text-color: var(--ink);
+  --md-menu-item-selected-container-color: var(--primary-container);
+  --md-menu-item-selected-label-text-color: var(--primary);
+}
+
+md-select-option [slot='headline'] {
+  font: inherit;
+  overflow-wrap: anywhere;
+}
+
+/* Reserve a field footprint while the bundled custom element upgrades. */
+md-outlined-select:not(:defined) {
+  display: block;
+  min-height: 56px;
+  border: 1px solid var(--outline);
+  border-radius: 4px;
+}
+md-outlined-select:not(:defined) > * {
+  visibility: hidden;
+}

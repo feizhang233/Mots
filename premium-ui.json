@@ -1,7 +1,7 @@
 {
   "profile": "product-admin",
   "sourceRoots": [
-    "dist"
+    "src"
   ],
   "locale": "zh-Hant",
   "canonicalMap": "UX-CONTRACT.md",
@@ -14,23 +14,21 @@
     "Select/Listbox": "authored"
   },
   "requiredCommands": [
-    "javascript",
+    "build",
+    "regressions",
+    "deployment",
     "data",
-    "languages",
     "audio",
     "extraAudio",
-    "select",
-    "dictionaries",
-    "workspace"
+    "select"
   ],
   "commands": {
-    "javascript": "node --check dist/app.js",
+    "build": "python3 scripts/build.py --check",
+    "regressions": "node tests/run.cjs",
+    "deployment": "python3 tests/deploy_test.py",
     "data": "node --check dist/data.js",
-    "languages": "node --check dist/languages.js",
     "audio": "node --check dist/audio-manifest.js",
     "extraAudio": "node --check dist/extra-audio.js",
-    "select": "node --check dist/select.js",
-    "dictionaries": "node --check dist/dictionaries.js",
-    "workspace": "node --check dist/workspace.js"
+    "select": "node --check dist/select.js"
   }
 }

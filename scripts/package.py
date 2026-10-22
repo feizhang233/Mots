@@ -16,6 +16,7 @@ from pathlib import Path
 import re
 import shutil
 import subprocess
+import sys
 import tempfile
 from html.parser import HTMLParser
 from urllib.parse import unquote, urlsplit
@@ -44,8 +45,10 @@ class PackagingError(RuntimeError):
 
 def local_asset(reference: str, base: Path = DIST) -> Path:
     url = urlsplit(reference)
-    if url.scheme or url.netloc or url.query or url.fragment:
-        raise PackagingError(f"Expected a local asset without URL suffix: {reference}")
+    # Online HTML uses content fingerprints to invalidate CDN/browser caches.
+    # Standalone packaging resolves that same local file and embeds its bytes.
+    if url.scheme or url.netloc or url.fragment or (url.query and not re.fullmatch(r"v=[a-f0-9]{16}", url.query)):
+        raise PackagingError(f"Expected a local asset with an optional content version: {reference}")
     target = (base / unquote(url.path)).resolve()
     if not target.is_relative_to(DIST.resolve()) or not target.is_file():
         raise PackagingError(f"Missing or out-of-tree asset: {reference}")
@@ -274,20 +277,24 @@ def archive_files() -> list[Path]:
                     raise PackagingError("Audio manifest paths must be strings")
                 active_audio.add(local_asset(reference))
     candidates = [ROOT / HTML_NAME]
-    for directory in ("dist", "qa", "scripts", "database"):
+    for directory in ("src", "dist", "tests", "docs", "deploy", "qa", "scripts", "database"):
         candidates.extend(path for path in (ROOT / directory).rglob("*") if path.is_file())
     candidates.extend(ROOT.glob("*.md"))
     candidates.extend(ROOT.glob("premium-*.json"))
+    candidates.extend(ROOT / name for name in ("Makefile", ".prettierrc.json", ".prettierignore"))
     return sorted({
         path for path in candidates
         if path.is_file()
-        and not any(part.startswith(".") or part == "__pycache__" for part in path.relative_to(ROOT).parts)
+        and (path.name in {".prettierrc.json", ".prettierignore"} or not any(
+            part.startswith(".") or part == "__pycache__" for part in path.relative_to(ROOT).parts
+        ))
         and path.suffix.lower() not in {".tmp", ".pyc", ".aiff", ".aif"}
         and (path.suffix.lower() not in {".m4a", ".mp3", ".wav"} or path.resolve() in active_audio)
     })
 
 
 def main() -> None:
+    subprocess.run([sys.executable, str(ROOT / "scripts/build.py")], check=True, stdout=sys.stderr)
     builder = StandaloneBuilder()
     builder.feed((DIST / "index.html").read_text(encoding="utf-8"))
     builder.close()

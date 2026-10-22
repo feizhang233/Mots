@@ -1,0 +1,7 @@
+tunnel: 568fa3b6-c349-42d1-9f4f-a0c3da928dc0
+credentials-file: /home/fei/.cloudflared/568fa3b6-c349-42d1-9f4f-a0c3da928dc0.json
+metrics: 127.0.0.1:20247
+ingress:
+  - hostname: mots.feizhang233.com
+    service: http://127.0.0.1:8010
+  - service: http_status:404
