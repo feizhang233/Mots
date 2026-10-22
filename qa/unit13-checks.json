@@ -1,0 +1,88 @@
+{
+  "unit13": 304,
+  "basic": 131,
+  "advanced": 173,
+  "subcategories": {
+    "13.01": 45,
+    "13.02": 34,
+    "13.03": 47,
+    "13.04": 54,
+    "13.05": 55,
+    "13.06": 33,
+    "13.07": 36
+  },
+  "sourcePrintedPages": [
+    109,
+    121
+  ],
+  "sourcePdfPages": [
+    116,
+    128
+  ],
+  "pageCounts": [
+    20,
+    23,
+    24,
+    24,
+    25,
+    22,
+    23,
+    22,
+    25,
+    24,
+    25,
+    26,
+    21
+  ],
+  "totalWords": 2669,
+  "sourceWords": 2669,
+  "starterWords": 0,
+  "audioFiles": 5338,
+  "audioBytes": 86573180,
+  "minAudioSeconds": 0.5108390022675737,
+  "maxAudioSeconds": 7.291065759637188,
+  "checks": [
+    "All thirteen source pages visually reviewed; following page starts Unit 14",
+    "All 304 saved XLSX records and all fields in seven category blocks matched to JSON",
+    "Excel table, filter and familiarity dropdown verified",
+    "All first-twelve-unit records, categories and audio mappings unchanged",
+    "All 5338 active French audio references exist with positive container durations",
+    "Bank and all seven classified-sheet previews visually reviewed",
+    "All seven subcategories, preceding Unit 12, pagination boundary, mobile category picker, search, no-results, card reveal and embedded audio playback verified",
+    "Desktop and mobile screenshots visually reviewed; no horizontal overflow at width 390"
+  ],
+  "browser": {
+    "standalone": true,
+    "categoryCount": 304,
+    "allWords": 2669,
+    "subcategories": {
+      "13.01": 45,
+      "13.02": 34,
+      "13.03": 47,
+      "13.04": 54,
+      "13.05": 55,
+      "13.06": 33,
+      "13.07": 36
+    },
+    "previousUnit12Count": 309,
+    "lastPage": "301–304 / 304; page 16/16; next disabled",
+    "mobileCategoryPicker": "13.04 selected: 54 entries; all Unit 13 restored: 304",
+    "search": "contemporaine returns two matches (example in la peinture and gendered headword); next card displays contemporain, contemporaine",
+    "noResults": "zzzzunite13 shows localized no-results message and clear action",
+    "offlineAudio": {
+      "embeddedDataAudio": true,
+      "durationSeconds": 2.229116,
+      "paused": false,
+      "readyState": 4
+    },
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "visualReview": "Paired headword wraps naturally; meaning, example and controls fit"
+    },
+    "desktopScreenshot": "qa/unit13-desktop.png",
+    "mobileScreenshot": "qa/unit13-mobile.png",
+    "consoleErrors": [],
+    "finalView": "First page in list mode; 1–20 / 304; 1 / 16"
+  }
+}

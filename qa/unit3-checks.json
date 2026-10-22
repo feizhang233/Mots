@@ -1,0 +1,64 @@
+{
+  "unit3": 210,
+  "basic": 93,
+  "advanced": 117,
+  "subcategories": {
+    "3.01": 42,
+    "3.02": 63,
+    "3.03": 35,
+    "3.04": 70
+  },
+  "sourcePrintedPages": [
+    24,
+    32
+  ],
+  "sourcePdfPages": [
+    31,
+    39
+  ],
+  "pageCounts": [
+    23,
+    19,
+    26,
+    28,
+    25,
+    24,
+    24,
+    27,
+    14
+  ],
+  "totalWords": 843,
+  "sourceWords": 727,
+  "starterWords": 116,
+  "audioFiles": 1686,
+  "audioBytes": 27361414,
+  "minAudioSeconds": 0.6501587301587302,
+  "maxAudioSeconds": 7.291065759637188,
+  "retainedUnit3IDs": 13,
+  "checks": [
+    "All nine source pages visually reviewed",
+    "All 210 saved XLSX records and four category blocks matched to JSON",
+    "Excel table and familiarity dropdown verified",
+    "Other unit data and audio mappings unchanged",
+    "All 1686 referenced audio files exist with positive container durations"
+  ],
+  "browser": {
+    "subcategoryCounts": [
+      42,
+      63,
+      35,
+      70
+    ],
+    "lastPage": "201–210 / 210; 11 / 11",
+    "lastPageNextDisabled": true,
+    "embeddedWordAudio": true,
+    "testedAudioDuration": 1.160998,
+    "mobileWidth": 390,
+    "mobileScrollWidth": 390,
+    "consoleErrors": [],
+    "screenshots": [
+      "unit3-desktop.png",
+      "unit3-mobile.png"
+    ]
+  }
+}

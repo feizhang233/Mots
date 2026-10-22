@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 1,
+  "language": "fr",
+  "source": "法语基础词汇分类学习手册",
+  "runtimeDatabase": "../dist/data.js",
+  "unitCount": 16,
+  "entryCount": 3846,
+  "jsonFileCount": 16,
+  "xlsxFileCount": 16,
+  "totalFileBytes": 2296609,
+  "hashAlgorithm": "SHA-256",
+  "units": [
+    {
+      "unit": 1,
+      "title": "第一单元：履历、个人信息",
+      "entryCount": 321,
+      "subcategoryCount": 7,
+      "files": [
+        {
+          "path": "unit1/第一单元词库.json",
+          "format": "json",
+          "bytes": 128725,
+          "sha256": "50f5d05fd1328e93fc8daf4184f5fddfd2f693eda982fceecb05ecd37357be39"
+        },
+        {
+          "path": "unit1/第一单元_法语单词库.xlsx",
+          "format": "xlsx",
+          "bytes": 54482,
+          "sha256": "0894aa0da43ff9c835e5a6a41db3ca012e25612340b6aa2da070b9e1a0fb56fc"
+        }
+      ]
+    },
+    {
+      "unit": 2,
+      "title": "第二单元：居住",
+      "entryCount": 196,
+      "subcategoryCount": 4,
+      "files": [
+        {
+          "path": "unit2/第二单元词库.json",
+          "format": "json",
+          "bytes": 79416,
+          "sha256": "09269065e3d7a7df0c03fa02cd3035bd155b0464322a9f0b5bf7f4167757228f"
+        },
+        {
+          "path": "unit2/第二单元_法语单词库.xlsx",
+          "format": "xlsx",
+          "bytes": 36536,
+          "sha256": "2997876f30be63e9a4ddf6501b33489d6c5849d3cad9ddcfd5e303bd6d67cf79"
+        }
+      ]
+    },
+    {
+      "unit": 3,
+      "title": "第三单元：环境",
+      "entryCount": 210,
+      "subcategoryCount": 4,
+      "files": [
+        {
+          "path": "unit3/第三单元词库.json",
+          "format": "json",
+          "bytes": 85175,
+          "sha256": "a147545c6472a6a776b5470003600200b468b4ab5ecf23d8510c2db49e95ba3c"
+        },
+        {
+          "path": "unit3/第三单元_法语单词库.xlsx",
+          "format": "xlsx",
+          "bytes": 37927,
+          "sha256": "f8ce1c9a0badbda0909bd622b46a05cada656ac5a57faf013728a78b846ec916"
+        }
+      ]
+    },
+    {
+      "unit": 4,
+      "title": "第四单元：旅游和交通",
+      "entryCount": 167,
+      "subcategoryCount": 4,
+      "files": [
+        {
+          "path": "unit4/第四单元词库.json",
+          "format": "json",
+          "bytes": 69421,
+          "sha256": "171951fb98163188423d258bb7f988323d6a3aab630b4437b715893b4017ef7b"
+        },
+        {
+          "path": "unit4/第四单元_法语单词库.xlsx",
+          "format": "xlsx",
+          "bytes": 33328,
+          "sha256": "3d6f13b56abe67f0957040898a1b165b95972bf76d65a1db9cce2d1644c67378"
+        }
+      ]
+    },
+    {
+      "unit": 5,
+      "title": "第五单元：膳食",
+      "entryCount": 104,
+      "subcategoryCount": 2,
+      "files": [
+        {
+          "path": "unit5/第五单元词库.json",
+          "format": "json",
+          "bytes": 44386,
+          "sha256": "e5ad741f106a8537ab2b27dccf97540455df2f03f0a56a6007d903da1106eb8b"
+        },
+        {
+          "path": "unit5/第五单元_法语单词库.xlsx",
+          "format": "xlsx",
+          "bytes": 24072,
+          "sha256": "2f739b096e236b3cd4ca946b255e2e96d18b176f7d4709f5d19cd2a85df74ce3"
+        }
+      ]
+    },
+    {
+      "unit": 6,
+      "title": "第六单元：购物",
+      "entryCount": 162,
+      "subcategoryCount": 3,
+      "files": [
+        {
+          "path": "unit6/第六单元词库.json",
+          "format": "json",
+          "bytes": 67232,
+          "sha256": "94e7f35be594c038332060b509df1ef9b77e95894cd5a10ad15ab9c70eb6d635"
+        },
+        {
+          "path": "unit6/第六单元_法语单词库.xlsx",
+          "format": "xlsx",
+          "bytes": 31574,
+          "sha256": "2030824d95ede03cf83e2e308f1c33b9096331d1de951135ca7f3174eb22091e"
+        }
+      ]
+    },
+    {
+      "unit": 7,
+      "title": "第七单元：公共和私人服务业",
+      "entryCount": 131,
+      "subcategoryCount": 4,
+      "files": [
+        {
+          "path": "unit7/第七单元词库.json",
+          "format": "json",
+          "bytes": 55267,
+          "sha256": "ff9627c022ddb9c88e783edcb89ff718f37bcd86b76bdeb307fd6d58cc09b4a2"
+        },
+        {
+          "path": "unit7/第七单元_法语单词库.xlsx",
+          "format": "xlsx",
+          "bytes": 27314,
+          "sha256": "640d310f28a4fc6f2477640da0cee12f7703a513e161b8ed1d128a8ed0eebd64"
+        }
+      ]
+    },
+    {
+      "unit": 8,
+      "title": "第八单元：身体、健康和卫生",
+      "entryCount": 207,
+      "subcategoryCount": 4,
+      "files": [
+        {
+          "path": "unit8/第八单元词库.json",
+          "format": "json",
+          "bytes": 86046,
+          "sha256": "e7c9aaec09bc7a17778f3ba5340b6f41887b57f81c781f38a721753099662e92"
+        },
+        {
+          "path": "unit8/第八单元_法语单词库.xlsx",
+          "format": "xlsx",
+          "bytes": 37480,
+          "sha256": "73e022edcbd7ef5fde579d916fe380c5f0362f0a746faad3ca40871ef68fd96e"
+        }
+      ]
+    },
+    {
+      "unit": 9,
+      "title": "第九单元：感觉和运动",
+      "entryCount": 248,
+      "subcategoryCount": 5,
+      "files": [
+        {
+          "path": "unit9/第九单元词库.json",
+          "format": "json",
+          "bytes": 99473,
+          "sha256": "bb0ed95e8f37c35d6f8c9a49f37b1502e8612d8988a5d5c6c9612c5edda53767"
+        },
+        {
+          "path": "unit9/第九单元_法语单词库.xlsx",
+          "format": "xlsx",
+          "bytes": 42462,
+          "sha256": "7669aa0fd17f63f0c6eca50f1a2e0b84472b41b52d580c9bc16e16c747d55adc"
+        }
+      ]
+    },
+    {
+      "unit": 10,
+      "title": "第十单元：学习培训",
+      "entryCount": 153,
+      "subcategoryCount": 4,
+      "files": [
+        {
+          "path": "unit10/第十单元词库.json",
+          "format": "json",
+          "bytes": 66368,
+          "sha256": "4b3c255727e9bd1a9b9a73ea04e05d6eedc6efe63df3babf567daff6aaadea63"
+        },
+        {
+          "path": "unit10/第十单元_法语单词库.xlsx",
+          "format": "xlsx",
+          "bytes": 31531,
+          "sha256": "687ecd826fa233b522a0a33b246d8f1898fe98f1c3c3865749046395863064b8"
+        }
+      ]
+    },
+    {
+      "unit": 11,
+      "title": "第十一单元：工作领域",
+      "entryCount": 157,
+      "subcategoryCount": 3,
+      "files": [
+        {
+          "path": "unit11/第十一单元词库.json",
+          "format": "json",
+          "bytes": 66105,
+          "sha256": "1e47798c00c9aa43136f0b02bc269fc3e74fb3e34586858dfc374ca4b4800e2d"
+        },
+        {
+          "path": "unit11/第十一单元_法语单词库.xlsx",
+          "format": "xlsx",
+          "bytes": 30369,
+          "sha256": "ce0bba748f181c7faa59b98aab9664039906400b62ce735e78b39698fa131f38"
+        }
+      ]
+    },
+    {
+      "unit": 12,
+      "title": "第十二单元：语言",
+      "entryCount": 309,
+      "subcategoryCount": 6,
+      "files": [
+        {
+          "path": "unit12/第十二单元词库.json",
+          "format": "json",
+          "bytes": 130430,
+          "sha256": "a5f71a0e877d4ea4fa4e0827bc6f30408d878a773656d9915eb7dec1295a30aa"
+        },
+        {
+          "path": "unit12/第十二单元_法语单词库.xlsx",
+          "format": "xlsx",
+          "bytes": 56731,
+          "sha256": "d4e9cd72adfbebf231137ff343e34f9a0c5ec9ade5cf6f39b2f49cb84374fa15"
+        }
+      ]
+    },
+    {
+      "unit": 13,
+      "title": "第十三单元：业余时间和娱乐",
+      "entryCount": 304,
+      "subcategoryCount": 7,
+      "files": [
+        {
+          "path": "unit13/第十三单元词库.json",
+          "format": "json",
+          "bytes": 124533,
+          "sha256": "a528a1eb959181e03f6dae227b396859db9c1bdc3c938777ab50c66b1a6f43e1"
+        },
+        {
+          "path": "unit13/第十三单元_法语单词库.xlsx",
+          "format": "xlsx",
+          "bytes": 52000,
+          "sha256": "995a99c46ecd099e77d776273907b3028edb1a85eb8a47c598ab85f5af241a0c"
+        }
+      ]
+    },
+    {
+      "unit": 14,
+      "title": "第十四单元：私人关系和联络",
+      "entryCount": 166,
+      "subcategoryCount": 4,
+      "files": [
+        {
+          "path": "unit14/第十四单元词库.json",
+          "format": "json",
+          "bytes": 70868,
+          "sha256": "205c9aec1f26de5ec5b289e366a2e7bb8beb3a263304cad898ec350399f259b5"
+        },
+        {
+          "path": "unit14/第十四单元_法语单词库.xlsx",
+          "format": "xlsx",
+          "bytes": 34443,
+          "sha256": "4ac87f6ab0b871fa06531b3f6eb713ab76ebdd798ca4c9caacefa9b7ff788bb2"
+        }
+      ]
+    },
+    {
+      "unit": 15,
+      "title": "第十五单元：政治和社会",
+      "entryCount": 334,
+      "subcategoryCount": 7,
+      "files": [
+        {
+          "path": "unit15/第十五单元词库.json",
+          "format": "json",
+          "bytes": 142244,
+          "sha256": "1ad1efdf4113819cbaf362e528ac945b9e49101d126ecb60e71c46a2331790f6"
+        },
+        {
+          "path": "unit15/第十五单元_法语单词库.xlsx",
+          "format": "xlsx",
+          "bytes": 60990,
+          "sha256": "431f92e04e08bb64f9871e7d894f29917ed5c76d123f34c69690165aa824f019"
+        }
+      ]
+    },
+    {
+      "unit": 16,
+      "title": "第十六单元：一般性概念",
+      "entryCount": 677,
+      "subcategoryCount": 13,
+      "files": [
+        {
+          "path": "unit16/第十六单元词库.json",
+          "format": "json",
+          "bytes": 279121,
+          "sha256": "a8500feebef3ba24e1bf793c3628e498e5010b4670ad4e3ddf217736bef71872"
+        },
+        {
+          "path": "unit16/第十六单元_法语单词库.xlsx",
+          "format": "xlsx",
+          "bytes": 110560,
+          "sha256": "37505d9507b3a71be25021111b22449ad848ba4b28bda96d04de4c6cc46fed1d"
+        }
+      ]
+    }
+  ]
+}

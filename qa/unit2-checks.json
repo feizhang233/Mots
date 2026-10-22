@@ -1,0 +1,49 @@
+{
+  "unit2": 196,
+  "basic": 84,
+  "advanced": 112,
+  "subcategories": {
+    "2.01": 47,
+    "2.02": 68,
+    "2.03": 45,
+    "2.04": 36
+  },
+  "sourcePrintedPages": [
+    16,
+    23
+  ],
+  "sourcePdfPages": [
+    23,
+    30
+  ],
+  "pageCounts": [
+    21,
+    20,
+    24,
+    22,
+    28,
+    26,
+    29,
+    26
+  ],
+  "totalWords": 649,
+  "sourceWords": 517,
+  "starterWords": 132,
+  "audioFiles": 1298,
+  "audioBytes": 21061250,
+  "minAudioSeconds": 0.6965986394557823,
+  "maxAudioSeconds": 7.291065759637188,
+  "retainedUnit2IDs": 8,
+  "checks": [
+    "All eight source pages visually reviewed",
+    "All 196 saved XLSX records and four category blocks matched to JSON",
+    "Excel filter table and familiarity dropdown verified",
+    "Other unit data and audio mappings unchanged",
+    "All 1298 referenced audio files exist with positive container durations",
+    "Final standalone HTML browser: four subcategory counts matched",
+    "Embedded data-URI example audio playing with 7.291066 seconds duration",
+    "390px viewport: long paired adjective visible, no horizontal overflow",
+    "List page 10 contains entries 181-196; Next disabled",
+    "No browser console errors"
+  ]
+}

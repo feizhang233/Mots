@@ -1,0 +1,72 @@
+{
+  "unit10": 153,
+  "basic": 81,
+  "advanced": 72,
+  "subcategories": {
+    "10.01": 39,
+    "10.02": 39,
+    "10.03": 32,
+    "10.04": 43
+  },
+  "sourcePrintedPages": [
+    77,
+    84
+  ],
+  "sourcePdfPages": [
+    84,
+    91
+  ],
+  "pageCounts": [
+    20,
+    19,
+    21,
+    18,
+    21,
+    19,
+    21,
+    14
+  ],
+  "totalWords": 1911,
+  "sourceWords": 1899,
+  "starterWords": 12,
+  "audioFiles": 3822,
+  "audioBytes": 61588141,
+  "minAudioSeconds": 0.6501587301587302,
+  "maxAudioSeconds": 7.291065759637188,
+  "retainedUnit10IDs": 6,
+  "checks": [
+    "All eight source pages visually reviewed; following page starts Unit 11",
+    "All 153 saved XLSX records and all fields in four category blocks matched to JSON",
+    "Excel table, filter, and familiarity dropdown verified",
+    "Other unit data and audio mappings unchanged",
+    "All 3822 referenced French audio files exist with positive container durations",
+    "Bank and four classified-sheet renders visually checked",
+    "Standalone desktop and mobile, four subcategory counts, search, pagination and embedded audio playback checked"
+  ],
+  "browser": {
+    "standalone": true,
+    "categoryCount": 153,
+    "subcategories": {
+      "10.01": 39,
+      "10.02": 39,
+      "10.03": 32,
+      "10.04": 43
+    },
+    "lastPage": "141–153 / 153; page 8/8; next disabled",
+    "search": "surveillant returns one gendered headword with its original example",
+    "offlineAudio": {
+      "embeddedDataAudio": true,
+      "durationSeconds": 2.554195,
+      "paused": false,
+      "readyState": 4
+    },
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "visualReview": "Long gendered headword, meaning, example and controls fit without clipping"
+    },
+    "desktopScreenshot": "qa/unit10-desktop.png",
+    "mobileScreenshot": "qa/unit10-mobile.png",
+    "consoleErrors": []
+  }
+}

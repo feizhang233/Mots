@@ -1,0 +1,72 @@
+{
+  "unit11": 157,
+  "basic": 68,
+  "advanced": 89,
+  "subcategories": {
+    "11.01": 51,
+    "11.02": 67,
+    "11.03": 39
+  },
+  "sourcePrintedPages": [
+    85,
+    93
+  ],
+  "sourcePdfPages": [
+    92,
+    100
+  ],
+  "pageCounts": [
+    16,
+    14,
+    15,
+    18,
+    23,
+    22,
+    23,
+    23,
+    3
+  ],
+  "totalWords": 2056,
+  "sourceWords": 2056,
+  "starterWords": 0,
+  "audioFiles": 4112,
+  "audioBytes": 66435116,
+  "minAudioSeconds": 0.6501587301587302,
+  "maxAudioSeconds": 7.291065759637188,
+  "retainedUnit11IDs": 6,
+  "checks": [
+    "All nine source pages visually reviewed; following page starts Unit 12",
+    "All 157 saved XLSX records and all fields in three category blocks matched to JSON",
+    "Excel table, filter, and familiarity dropdown verified",
+    "Other unit data and audio mappings unchanged",
+    "All 4112 referenced French audio files exist with positive container durations",
+    "All current French entries belong to the first eleven source-book units; no starter placeholders remain",
+    "Bank and three classified-sheet renders visually checked",
+    "Standalone desktop and mobile, three subcategory counts, search, pagination and embedded audio playback checked"
+  ],
+  "browser": {
+    "standalone": true,
+    "categoryCount": 157,
+    "subcategories": {
+      "11.01": 51,
+      "11.02": 67,
+      "11.03": 39
+    },
+    "lastPage": "141–157 / 157; page 8/8; next disabled",
+    "search": "demandeur returns the gendered jobseeker term and its original example",
+    "offlineAudio": {
+      "embeddedDataAudio": true,
+      "durationSeconds": 3.018594,
+      "paused": false,
+      "readyState": 4
+    },
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "visualReview": "Long gendered job title, meaning, example and controls fit without clipping"
+    },
+    "desktopScreenshot": "qa/unit11-desktop.png",
+    "mobileScreenshot": "qa/unit11-mobile.png",
+    "consoleErrors": []
+  }
+}

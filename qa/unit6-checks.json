@@ -1,0 +1,82 @@
+{
+  "unit6": 162,
+  "basic": 80,
+  "advanced": 82,
+  "subcategories": {
+    "6.01": 38,
+    "6.02": 62,
+    "6.03": 62
+  },
+  "sourcePrintedPages": [
+    46,
+    52
+  ],
+  "sourcePdfPages": [
+    53,
+    59
+  ],
+  "pageCounts": [
+    19,
+    23,
+    27,
+    26,
+    28,
+    26,
+    13
+  ],
+  "totalWords": 1240,
+  "sourceWords": 1160,
+  "starterWords": 80,
+  "audioFiles": 2480,
+  "audioBytes": 40579880,
+  "minAudioSeconds": 0.6501587301587302,
+  "maxAudioSeconds": 7.291065759637188,
+  "retainedUnit6IDs": 8,
+  "checks": [
+    "All seven source pages visually reviewed; following page starts Unit 7",
+    "All 162 saved XLSX records and three category blocks matched to JSON",
+    "Excel table, filter, and familiarity dropdown verified",
+    "Other unit data and audio mappings unchanged",
+    "All 2480 referenced French audio files exist with positive container durations"
+  ],
+  "browser": {
+    "subcategoryCounts": [
+      38,
+      62,
+      62
+    ],
+    "lastPage": "161–162 / 162; 9 / 9",
+    "lastPageNextDisabled": true,
+    "embeddedWordAudio": true,
+    "testedAudioDuration": 2.972154,
+    "testedAudioReadyState": 4,
+    "testedAudioPaused": false,
+    "mobileWidths": [
+      390,
+      320
+    ],
+    "mobileScrollWidths": [
+      390,
+      320
+    ],
+    "longLatinTermFontAt390": "28px",
+    "shortTermFontAt320": "35px",
+    "emptySearchAndEscapeRecovery": true,
+    "consoleErrors": [],
+    "screenshots": [
+      "unit6-desktop.png",
+      "unit6-mobile.png"
+    ]
+  },
+  "verification": {
+    "configuredJavaScriptSyntaxChecks": [
+      "app.js",
+      "data.js",
+      "languages.js",
+      "audio-manifest.js",
+      "extra-audio.js",
+      "select.js"
+    ],
+    "strictProjectAudit": "passed"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "unit16": 677,
+  "basic": 375,
+  "advanced": 302,
+  "subcategories": {
+    "16.01": 35,
+    "16.02": 57,
+    "16.03": 53,
+    "16.04": 54,
+    "16.05": 54,
+    "16.06": 53,
+    "16.07": 67,
+    "16.08": 60,
+    "16.09": 55,
+    "16.10": 47,
+    "16.11": 48,
+    "16.12": 36,
+    "16.13": 58
+  },
+  "sourcePrintedPages": [
+    147,
+    177
+  ],
+  "sourcePdfPages": [
+    154,
+    184
+  ],
+  "pageCounts": [
+    24,
+    24,
+    29,
+    22,
+    23,
+    21,
+    27,
+    22,
+    22,
+    24,
+    21,
+    31,
+    23,
+    20,
+    20,
+    19,
+    22,
+    20,
+    19,
+    26,
+    23,
+    23,
+    21,
+    21,
+    17,
+    19,
+    22,
+    19,
+    21,
+    21,
+    11
+  ],
+  "missingSourceExamples": 23,
+  "totalWords": 3846,
+  "sourceWords": 3846,
+  "starterWords": 0,
+  "newAudioFiles": 1331,
+  "audioFiles": 7669,
+  "audioBytes": 127092987,
+  "minAudioSeconds": 0.5108390022675737,
+  "maxAudioSeconds": 8.034104308390022,
+  "checks": [
+    "All thirty-one source pages visually reviewed; printed page 178 starts Unit 17",
+    "All 677 saved XLSX records and all fields in thirteen category blocks matched to JSON",
+    "23 source number entries without examples remain blank, annotated, and have no invented example audio",
+    "Excel table, filter, freeze panes and familiarity dropdown verified",
+    "All 1331 Unit 16 audio paths match hashes of current word and nonempty example text",
+    "All first-fifteen-unit records, categories and audio mappings unchanged",
+    "All 7669 active French audio references exist with positive container durations",
+    "Bank and all thirteen classified-sheet previews visually reviewed",
+    "All thirteen subcategory counts verified in the browser",
+    "Search for corrected quatre-vingts returns one record; missing source example displays a dash in list and blank on card",
+    "Last subcategory page reaches vider; mobile category selection and long heading verified",
+    "Standalone HTML word audio for aujourd’hui and le cent plays embedded data URIs without media errors",
+    "Desktop and mobile screenshots visually reviewed; no browser console errors"
+  ],
+  "browserChecks": {
+    "desktop": {
+      "width": 1280,
+      "height": 900,
+      "totalWords": 3846,
+      "unit16Words": 677,
+      "pages": 34,
+      "subcategories": [
+        35,
+        57,
+        53,
+        54,
+        54,
+        53,
+        67,
+        60,
+        55,
+        47,
+        48,
+        36,
+        58
+      ]
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "longSubcategoryTitle": "16.07 · 特點、類型和方式",
+      "subcategoryWords": 67,
+      "image": "qa/unit16-mobile.png"
+    },
+    "emptySourceExample": {
+      "card": "le cent",
+      "meaning": "一百",
+      "exampleBlank": true,
+      "search": "quatre-vingts",
+      "matches": 1,
+      "listExamplePlaceholder": "—"
+    },
+    "lastSubcategoryFinalPage": {
+      "page": "3 / 3",
+      "range": "41–58",
+      "lastWord": "vider"
+    },
+    "standalonePlayback": [
+      {
+        "word": "aujourd’hui",
+        "embeddedDataUri": true,
+        "readyState": 4,
+        "duration": 0.928798,
+        "pausedDuringCheck": false,
+        "error": null
+      },
+      {
+        "word": "le cent",
+        "embeddedDataUri": true,
+        "readyState": 4,
+        "duration": 0.789478,
+        "pausedDuringCheck": false,
+        "error": null
+      }
+    ],
+    "consoleErrors": [],
+    "desktopImage": "qa/unit16-desktop.png"
+  },
+  "standaloneWordCount": 3846
+}

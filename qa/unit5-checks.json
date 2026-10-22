@@ -1,0 +1,58 @@
+{
+  "unit5": 104,
+  "basic": 58,
+  "advanced": 46,
+  "subcategories": {
+    "5.01": 39,
+    "5.02": 65
+  },
+  "sourcePrintedPages": [
+    41,
+    45
+  ],
+  "sourcePdfPages": [
+    48,
+    52
+  ],
+  "pageCounts": [
+    22,
+    20,
+    24,
+    23,
+    15
+  ],
+  "totalWords": 1090,
+  "sourceWords": 998,
+  "starterWords": 92,
+  "audioFiles": 2180,
+  "audioBytes": 35826826,
+  "minAudioSeconds": 0.6501587301587302,
+  "maxAudioSeconds": 7.291065759637188,
+  "retainedUnit5IDs": 5,
+  "checks": [
+    "All five source pages visually reviewed; following page starts Unit 6",
+    "All 104 saved XLSX records and both category blocks matched to JSON",
+    "Excel table, filter, and familiarity dropdown verified",
+    "Other unit data and audio mappings unchanged",
+    "All 2180 referenced French audio files exist with positive container durations"
+  ],
+  "browser": {
+    "subcategoryCounts": [
+      39,
+      65
+    ],
+    "lastPage": "101–104 / 104; 6 / 6",
+    "lastPageNextDisabled": true,
+    "embeddedWordAudio": true,
+    "testedAudioDuration": 1.904036,
+    "testedAudioReadyState": 4,
+    "testedAudioPaused": false,
+    "mobileWidth": 390,
+    "mobileScrollWidth": 390,
+    "consoleErrors": [],
+    "screenshots": [
+      "unit5-desktop.png",
+      "unit5-mobile.png"
+    ]
+  }
+}

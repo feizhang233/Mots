@@ -1,0 +1,36 @@
+{
+  "unit1": 321,
+  "basic": 146,
+  "advanced": 175,
+  "subcategories": {
+    "1.01": 28,
+    "1.02": 39,
+    "1.03": 39,
+    "1.04": 46,
+    "1.05": 69,
+    "1.06": 41,
+    "1.07": 59
+  },
+  "total": 469,
+  "audioFiles": 938,
+  "minAudioSeconds": 0.6965986394557823,
+  "maxAudioSeconds": 4.73687074829932,
+  "sourcePrintedPages": [
+    1,
+    15
+  ],
+  "sourcePdfPages": [
+    8,
+    22
+  ],
+  "checks": [
+    "Each of 15 source pages visually reviewed",
+    "Page and subcategory counts reconciled",
+    "Saved XLSX fields compared with JSON",
+    "Excel table and familiarity dropdown verified",
+    "Desktop and 390px browser rendering reviewed",
+    "Seven subcategory counts checked in browser",
+    "Search empty/recovery and list final page verified",
+    "New built-in example audio playback confirmed"
+  ]
+}

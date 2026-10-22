@@ -1,0 +1,100 @@
+{
+  "unit12": 309,
+  "basic": 181,
+  "advanced": 128,
+  "subcategories": {
+    "12.01": 35,
+    "12.02": 47,
+    "12.03": 59,
+    "12.04": 68,
+    "12.05": 60,
+    "12.06": 40
+  },
+  "sourcePrintedPages": [
+    94,
+    108
+  ],
+  "sourcePdfPages": [
+    101,
+    115
+  ],
+  "pageCounts": [
+    20,
+    17,
+    24,
+    21,
+    20,
+    18,
+    21,
+    21,
+    23,
+    20,
+    27,
+    23,
+    20,
+    21,
+    13
+  ],
+  "totalWords": 2365,
+  "sourceWords": 2365,
+  "starterWords": 0,
+  "audioFiles": 4730,
+  "audioBytes": 76824155,
+  "minAudioSeconds": 0.5108390022675737,
+  "maxAudioSeconds": 7.291065759637188,
+  "retainedUnit12IDs": 0,
+  "clippedSourceExamples": {
+    "printedPage": 102,
+    "excerptOnly": [
+      "ne"
+    ],
+    "annotatedCharacterRestorations": [
+      "non",
+      "particulièrement",
+      "le principe",
+      "profondément",
+      "tellement"
+    ]
+  },
+  "checks": [
+    "All fifteen source pages visually reviewed; following page starts Unit 13",
+    "Clipped right edge on printed page 102 checked against PDF page boxes; six affected examples explicitly annotated",
+    "All 309 saved XLSX records and all fields in six category blocks matched to JSON",
+    "Excel table, filter, and familiarity dropdown verified",
+    "All first-eleven-unit records, categories and audio mappings unchanged",
+    "All 4730 referenced French audio files exist with positive container durations",
+    "Bank and six classified-sheet renders visually checked",
+    "New category navigation, all six subcategory counts, preceding Unit 11, pagination, mobile category picker, search and embedded playback checked"
+  ],
+  "browser": {
+    "standalone": true,
+    "categoryCount": 309,
+    "subcategories": {
+      "12.01": 35,
+      "12.02": 47,
+      "12.03": 59,
+      "12.04": 68,
+      "12.05": 60,
+      "12.06": 40
+    },
+    "previousUnit11Count": 157,
+    "lastPage": "301–309 / 309; page 16/16; next disabled",
+    "mobileCategoryPicker": "12.06 selected: 40 entries; all Unit 12 restored: 309",
+    "search": "correspondante returns one gendered headword",
+    "offlineAudio": {
+      "embeddedDataAudio": true,
+      "durationSeconds": 2.414875,
+      "paused": false,
+      "readyState": 4
+    },
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "visualReview": "Long gendered headword, meaning, example and controls fit"
+    },
+    "desktopScreenshot": "qa/unit12-desktop.png",
+    "mobileScreenshot": "qa/unit12-mobile.png",
+    "consoleErrors": [],
+    "finalView": "First page in list mode; 1–20 / 309; 1 / 16"
+  }
+}
