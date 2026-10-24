@@ -63,6 +63,6 @@
     }
   ],
   "signingBuild": "Xcode signed build succeeded using preserved configured team and bundle ID",
-  "hostCodesignVerification": "CSSMERR_TP_NOT_TRUSTED; iOS device install and launch results recorded separately",
+  "hostCodesignVerification": "Passed codesign --verify --deep --strict with access to the system signature verification service. Initial restricted invocation could not evaluate trust.",
   "dataHandling": "In-place update only. No uninstall, erase, personal-data read or export."
 }

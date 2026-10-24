@@ -62,3 +62,11 @@ Verified 414 Japanese entries in source column order.
 Exported fr: 3846, de: 12, ja: 414, grammar-fr: 6, grammar-de: 6, grammar-ja: 6, grammar-theme-fr: 0, grammar-theme-de: 0, grammar-theme-ja: 0; 4272 bundled word clips.
 Data synchronized: 07740f3e3bedc53d; 3846 French entries, 32 source files; native/web catalog matches.
 Validated 8095 audio references and 16995 files.
+nginx: the configuration file /home/fei/Work/Mots/releases/20261024-204901-9efa351d/deploy/nginx.conf syntax is ok
+nginx: configuration file /home/fei/Work/Mots/releases/20261024-204901-9efa351d/deploy/nginx.conf test is successful
+Verified 16995 files
+Validating rules from /home/fei/Work/Mots/releases/20261024-204901-9efa351d/deploy/config-mots.yml
+OK
+Origin HTTP 200 and homepage SHA-256 matched
+Activated 20261024-204901-9efa351d
+Synchronized 07740f3e3bedc53d: 16995 server files, 101 public checks. Report: /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/qa/data-vps-sync.json
