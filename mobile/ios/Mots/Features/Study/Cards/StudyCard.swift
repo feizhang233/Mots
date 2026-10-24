@@ -93,18 +93,20 @@ struct StudyCard: View {
                 .tint(MotsTheme.accent)
                 .accessibilityIdentifier("study.reveal")
             }
-            Button {
-                SpeechPlayer.shared.stop()
-                showingDetail = true
-            } label: {
-                Label("查看詳情", systemImage: "text.alignleft")
-                    .font(.subheadline.weight(.medium))
-                    .frame(minHeight: 44)
+            if store.currentDictionary.isGrammar {
+                Button {
+                    SpeechPlayer.shared.stop()
+                    showingDetail = true
+                } label: {
+                    Label("查看詳情", systemImage: "text.alignleft")
+                        .font(.subheadline.weight(.medium))
+                        .frame(minHeight: 44)
+                }
+                .buttonStyle(.plain)
+                .foregroundStyle(MotsTheme.accent)
+                .accessibilityLabel("查看 \(word.term) 的詳情")
+                .accessibilityIdentifier("study.detail")
             }
-            .buttonStyle(.plain)
-            .foregroundStyle(MotsTheme.accent)
-            .accessibilityLabel("查看 \(word.term) 的詳情")
-            .accessibilityIdentifier("study.detail")
         }
         .padding(24)
         .frame(maxWidth: .infinity, minHeight: 350, alignment: .topLeading)

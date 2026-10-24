@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "checks": [
+    "fr: list, hidden/revealed card and responsive width 1440",
+    "de: list, hidden/revealed card and responsive width 1440",
+    "ja: list, hidden/revealed card and responsive width 1440",
+    "Grammar retains card/list details and modal focus at width 1440",
+    "fr: list, hidden/revealed card and responsive width 390",
+    "de: list, hidden/revealed card and responsive width 390",
+    "ja: list, hidden/revealed card and responsive width 390",
+    "Grammar retains card/list details and modal focus at width 390",
+    "fr: list, hidden/revealed card and responsive width 320",
+    "de: list, hidden/revealed card and responsive width 320",
+    "ja: list, hidden/revealed card and responsive width 320",
+    "Grammar retains card/list details and modal focus at width 320",
+    "Dark, reduced motion and search empty/clear retain vocabulary behavior"
+  ],
+  "errors": []
+}

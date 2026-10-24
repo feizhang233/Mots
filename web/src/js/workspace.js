@@ -122,7 +122,9 @@
       return `<div class="entry-example ${variant}-example"><p class="example-sentence" lang="${state.language}">${esc(example.text)}</p></div>`;
     }
     const detailButton = (word) =>
-      `<button class="text-button entry-detail-button" type="button" data-detail="${esc(word.id)}" aria-label="查看「${esc(word.term)}」的詳情">詳情${icons.right}</button>`;
+      isGrammar()
+        ? `<button class="text-button entry-detail-button" type="button" data-detail="${esc(word.id)}" aria-label="查看「${esc(word.term)}」的詳情">詳情${icons.right}</button>`
+        : '';
     function renderSmallCard(w) {
       const { state, settings } = getModel();
       const m = meaning(w),
