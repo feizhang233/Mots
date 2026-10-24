@@ -1,0 +1,635 @@
+node mobile/ios/scripts/export-content.cjs
+Exported fr: 3846, de: 12, ja: 12; 3870 bundled word clips.
+python3 mobile/ios/scripts/generate-project.py
+Generated mobile/ios/Mots.xcodeproj
+xcodebuild -project mobile/ios/Mots.xcodeproj -scheme Mots -configuration Release -destination 'generic/platform=iOS' -derivedDataPath mobile/ios/build/device CODE_SIGNING_ALLOWED=NO build
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project mobile/ios/Mots.xcodeproj -scheme Mots -configuration Release -destination generic/platform=iOS -derivedDataPath mobile/ios/build/device CODE_SIGNING_ALLOWED=NO build
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'Mots' in project 'Mots' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: c59726d7e67648a49658d407be446a6c
+Build description path: /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/XCBuildData/c59726d7e67648a49658d407be446a6c.xcbuilddata
+CreateBuildDirectory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/CompilationCache.noindex
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots.xcodeproj
+    builtin-create-build-directory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/CompilationCache.noindex
+
+CreateBuildDirectory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/ModuleCache.noindex
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots.xcodeproj
+    builtin-create-build-directory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/ModuleCache.noindex
+
+CreateBuildDirectory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots.xcodeproj
+    builtin-create-build-directory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKStatCaches.noindex/iphoneos27.0-24A430-6c78b3cbc238196c85e1bf6c792c5915.sdkstatcache
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk -o /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKStatCaches.noindex/iphoneos27.0-24A430-6c78b3cbc238196c85e1bf6c792c5915.sdkstatcache
+
+CreateBuildDirectory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots.xcodeproj
+    builtin-create-build-directory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex
+
+CreateBuildDirectory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots.xcodeproj
+    builtin-create-build-directory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products
+
+WriteAuxiliaryFile /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots-be6b3c38e74c1a4d7d33c7a3466e579d-VFS-iphoneos/all-product-headers.yaml
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots.xcodeproj
+    write-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots-be6b3c38e74c1a4d7d33c7a3466e579d-VFS-iphoneos/all-product-headers.yaml
+
+CreateBuildDirectory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots.xcodeproj
+    builtin-create-build-directory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots.xcodeproj
+    builtin-create-build-directory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos
+
+CreateBuildDirectory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots.xcodeproj
+    builtin-create-build-directory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots.xcodeproj
+    builtin-create-build-directory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos
+
+CreateBuildDirectory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/PrecompiledHeaders
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots.xcodeproj
+    builtin-create-build-directory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/PrecompiledHeaders
+
+MkDir /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    /bin/mkdir -p /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app
+
+WriteAuxiliaryFile /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots.hmap (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    write-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots.hmap
+
+WriteAuxiliaryFile /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-project-headers.hmap (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    write-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-project-headers.hmap
+
+WriteAuxiliaryFile /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-all-target-headers.hmap (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    write-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-all-non-framework-target-headers.hmap (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    write-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.LinkFileList (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    write-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.LinkFileList
+
+WriteAuxiliaryFile /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots_const_extract_protocols.json (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    write-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.SwiftConstValuesFileList (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    write-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots-OutputFileMap.json (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    write-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.SwiftFileList (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    write-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.SwiftFileList
+
+WriteAuxiliaryFile /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots.DependencyStaticMetadataFileList (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    write-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots.DependencyMetadataFileList (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    write-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-own-target-headers.hmap (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    write-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-generated-files.hmap (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    write-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-generated-files.hmap
+
+MkDir /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_output/thinned (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    /bin/mkdir -p /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_output/thinned
+
+MkDir /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_output/unthinned (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    /bin/mkdir -p /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_output/unthinned
+
+CpResource /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/Resources /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/Resources (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/Resources /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app
+
+GenerateAssetSymbols /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/Assets.xcassets (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/Assets.xcassets --compile /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app --output-format human-readable-text --notices --warnings --export-dependency-info /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_dependencies --output-partial-info-plist /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_generated_info.plist --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --development-region zh-Hant --target-device iphone --target-device ipad --minimum-deployment-target 26.0 --platform iphoneos --bundle-identifier com.feizhang.mots --generate-swift-asset-symbol-extensions NO --generate-swift-asset-symbols /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/* com.apple.actool.compilation-results */
+/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources/GeneratedAssetSymbols.h
+/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources/GeneratedAssetSymbols.swift
+
+
+CpResource /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/PrivacyInfo.xcprivacy /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/PrivacyInfo.xcprivacy (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/PrivacyInfo.xcprivacy /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app
+
+CompileAssetCatalogVariant thinned /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/Assets.xcassets (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/Assets.xcassets --compile /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_dependencies_thinned --output-partial-info-plist /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_generated_info.plist_thinned --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --development-region zh-Hant --target-device iphone --target-device ipad --minimum-deployment-target 26.0 --platform iphoneos
+/* com.apple.actool.compilation-results */
+/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_generated_info.plist_thinned
+/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_output/thinned/AppIcon60x60@2x.png
+/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_output/thinned/AppIcon76x76@2x~ipad.png
+/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_output/thinned/Assets.car
+
+
+SwiftDriver Mots normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Mots -O @/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.SwiftFileList -enable-upcoming-feature StrictConcurrency -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk -target arm64-apple-ios26.0 -g -module-cache-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos -F /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos -emit-localized-strings -emit-localized-strings-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64 -c -j12 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKStatCaches.noindex/iphoneos27.0-24A430-6c78b3cbc238196c85e1bf6c792c5915.sdkstatcache -output-file-map /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/ModuleCache.noindex -sdk-module-cache-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots_const_extract_protocols.json -Xcc -iquote -Xcc /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-generated-files.hmap -Xcc -I/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-own-target-headers.hmap -Xcc -I/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-all-target-headers.hmap -Xcc -iquote -Xcc /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-project-headers.hmap -Xcc -I/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/include -Xcc -I/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources-normal/arm64 -Xcc -I/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources/arm64 -Xcc -I/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots-Swift.h -working-directory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios -experimental-emit-module-separately -disable-cmo
+
+LinkAssetCatalog /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/Assets.xcassets (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-linkAssetCatalog --thinned /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_output/thinned --thinned-dependencies /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_dependencies_thinned --thinned-info-plist-content /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_generated_info.plist_thinned --unthinned /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_output/unthinned --unthinned-dependencies /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_dependencies_unthinned --unthinned-info-plist-content /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_generated_info.plist_unthinned --output /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app --plist-output /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_generated_info.plist
+note: Emplaced /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/AppIcon76x76@2x~ipad.png (in target 'Mots' from project 'Mots')
+note: Emplaced /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/AppIcon60x60@2x.png (in target 'Mots' from project 'Mots')
+note: Emplaced /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/Assets.car (in target 'Mots' from project 'Mots')
+
+ProcessInfoPlistFile /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/Info.plist /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/Info.plist (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-infoPlistUtility /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -additionalcontentfile /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_generated_info.plist -requiredArchitecture arm64 -o /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/Info.plist
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/SwiftShims-F599SYDF4Z1X3FKUIJ0HFJLAH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/_AvailabilityInternal-CXP7C99B16203RQLA4220S4NE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/_Builtin_stddef-ADUTY1DBFA1T1RG3WHLL5I640.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/ptrauth-ANHV90JLIC0RKUZY746YBA67L.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/_SwiftConcurrencyShims-2OQEGWMI35P29DDQJ0C5A5QG4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/ptrcheck-2O4QSJGQI5KHT00AYTN60K089.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/_Builtin_float-86CQFRROZLAKNQ9X60NSML9GD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/_Builtin_stdbool-50M2OPZK7PUJKABFWV1GXTRAX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/DeveloperToolsSupport-BIOZM81QEEZAG3P1HOAYNB0WN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/_Builtin_stdarg-4HBLCB8PIYIIU78ME9E4VXBIT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/_DarwinFoundation1-8ETH20FGVK14G0NHLK7Z4ZP8X.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/_DarwinFoundation2-ELXCJGDONGX2GKSPG2PRAGO8F.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/_Builtin_limits-2QWDT7YGZ1ZSG8ZSLL57Y45RH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/string_h-5ZG3XUIG41SQH5DZP308B5C97.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/_Builtin_stdint-ACQV15MR0KEQFM2J9UV6GG4X3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/_Builtin_tgmath-2D5BU75BKZH4KJ31REH6NXXEH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/sys_types-UJ01ON5Y16RBVVKLZ3EMWXPQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/_Builtin_stdatomic-EE3CEWDCR39DMYWZ970H3OH85.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/_Builtin_intrinsics-CJQVTHSSZ3M299HO6MRFP7GO2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/_DarwinFoundation3-4SLEA4KDGD89RHU4PR1O7D170.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/_Builtin_inttypes-3SEFBRT48RL72KACOZCOB84MX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/Darwin-9Z8HURB8M9NZQAF7KBYJXYL33.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/simd-EOGYHTNI6TTK1BIUDD1MRUSO2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/MachO-WLWHHD42NWLHHWRRE7BGIYS0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/ObjectiveC-9YNTV9AW2A33SESMY0R3WQA0T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/os_object-4ZJ0ZASYROH24YM7CS5AOTKKL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/os_workgroup-29ROJX468J7H32KQBDN1HVDRL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/Spatial-PQ0AXA9AOEFX5ZWVERHIAKVA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/Dispatch-ADZL011VG64EHA107QUSL87PD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/dnssd-3RU9QQ9NU596ULOS8GK2OOPO9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/XPC-4BAM6JS6V1XXEAFH86WZFIGZI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/CoreFoundation-6726IJDZPNIRF05LD8VOH1QU9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/os-ZWHCK4ASI25RDZI9PWFODNR5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/CFNetwork-EN7CIIUXTWTNXMC4JW45QC5VX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/CoreAudioTypes-84XC5LZAWAOIC0VWCEG2SOFAZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/CoreGraphics-WFO8N8S5NLJIRF0RHSL1WTVN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/Security-ASWB2GR66T24JFG19S0NTGLT5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/CoreAudio-6SDABSMAI9W987IC8IAC9ZIZX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/Foundation-8P3ZA22JLY1855HY02BMDCQVX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/CoreText-763269RZERAMU92GM57YHYJT9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/ImageIO-4NP9SJZ8M44GCCVM94O027FD5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/UIUtilities-6D7NTVZSCV2DX3EJHHMQB3P4O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/Symbols-5NOI7QDHQKWEFYV6JN9M7HNXG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/UniformTypeIdentifiers-3EEYFFU1VU3V4Z4DD0GPISTH7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/IOSurface-EJ0Z99OZUKU20PTJ10ILGHSGK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/CoreMIDI-6HMZBAM1UZ3AQAV2ZLNV8G2AF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/FileProvider-DPNEL9I1JKIJYL827JV1ZYOCQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/Accessibility-9OH1N6693SUE2ZCLD7D0H8HN8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/OSLog-7N3B7M5UOLIESTVLVR9AA39L5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/Network-D8ZQXGWSC81Q5V4PZEBRFWMOQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/CoreTransferable-BGSH1CCSFQ4R0XSBJKYWIWQ3I.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/CoreData-DJ2TV1BPK6U7K9H5THWKU7VT3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/DataDetection-4K1Z62EDBUQPJI8FCC7XL5D56.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/UserNotifications-6OGBBJVKGZTCFHBC2VJEC2UVD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/_LocationEssentials-1YUUI88NL7OGW4QS2NCMFWDJS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/Metal-76O55UU8EPJCKSRH274GRHZUI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/OpenGLES-1Z5OOTPXK673H32JK3OHY5LN6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/AVRouting-AYATPB1U94F80U74B2BICET9V.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/AudioToolbox-2Z8CTP7RG8ZC69VR21D0VK0CV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/CoreLocation-DOMHOH4UIPY4NJVT9Z0XUUUR1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/CoreMotion-B19Y96JAJ6WXIL3MGYB8LD1OE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/CoreVideo-10BGZDZBUBAHZHC7G6OQ7A4SM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/CoreImage-D1APD1IPQPIU515XNR0K3TXBP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/QuartzCore-69H8IDAEZ0LTZWIJ9L20IB4RA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/CoreMedia-66EMQO3UI7R6RDBN1WJWR945R.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/SwiftUICore-BELEM5N6OS8UFPP57QBQB4M7S.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/VideoToolbox-DN5VZHR92EEKVNNDH5Z09U5ZB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/MediaToolbox-AWI2JJOL0OXVIWLZ5XDIYAS4G.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/AVFAudio-CDXCNS25LN07BCJACTHIGVIZ2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/UIKit-4O4STIEYPOKLYK1J0LPPRLR8J.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/AVFoundation-BTJOVBPXIR5E5KUX5XVCZBIEB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules/SwiftUI-CX7CES54ORNFTNXXLR1UPMV53.pcm
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ Mots (in target 'Mots' from project 'Mots')
+
+SwiftCompile normal arm64 (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    
+
+SwiftCompile normal arm64 Compiling\ GeneratedAssetSymbols.swift /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'Mots' from project 'Mots')
+
+SwiftCompile normal arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-SwiftPerFileCompile GeneratedAssetSymbols.swift
+
+SwiftCompile normal arm64 Compiling\ AppView.swift /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/AppView.swift (in target 'Mots' from project 'Mots')
+
+SwiftCompile normal arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/AppView.swift (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-SwiftPerFileCompile AppView.swift
+
+SwiftCompile normal arm64 Compiling\ StudyStore.swift /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/StudyStore.swift (in target 'Mots' from project 'Mots')
+
+SwiftCompile normal arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/StudyStore.swift (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-SwiftPerFileCompile StudyStore.swift
+
+SwiftCompile normal arm64 Compiling\ SettingsView.swift /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/SettingsView.swift (in target 'Mots' from project 'Mots')
+
+SwiftCompile normal arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/SettingsView.swift (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-SwiftPerFileCompile SettingsView.swift
+
+SwiftCompile normal arm64 Compiling\ SpeechPlayer.swift /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/SpeechPlayer.swift (in target 'Mots' from project 'Mots')
+
+SwiftCompile normal arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/SpeechPlayer.swift (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-SwiftPerFileCompile SpeechPlayer.swift
+
+SwiftCompile normal arm64 Compiling\ Models.swift /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/Models.swift (in target 'Mots' from project 'Mots')
+
+SwiftCompile normal arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/Models.swift (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-SwiftPerFileCompile Models.swift
+
+SwiftCompile normal arm64 Compiling\ Theme.swift /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/Theme.swift (in target 'Mots' from project 'Mots')
+
+SwiftCompile normal arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/Theme.swift (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-SwiftPerFileCompile Theme.swift
+
+SwiftCompile normal arm64 Compiling\ MotsApp.swift /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/MotsApp.swift (in target 'Mots' from project 'Mots')
+
+SwiftCompile normal arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/Mots/MotsApp.swift (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-SwiftPerFileCompile MotsApp.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling GeneratedAssetSymbols.swift (in target 'Mots' from project 'Mots')
+
+SwiftDriverJobDiscovery normal arm64 Compiling Theme.swift (in target 'Mots' from project 'Mots')
+
+SwiftDriverJobDiscovery normal arm64 Compiling MotsApp.swift (in target 'Mots' from project 'Mots')
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for Mots (in target 'Mots' from project 'Mots')
+
+SwiftDriver\ Compilation\ Requirements Mots normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Mots -O @/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.SwiftFileList -enable-upcoming-feature StrictConcurrency -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk -target arm64-apple-ios26.0 -g -module-cache-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos -F /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos -emit-localized-strings -emit-localized-strings-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64 -c -j12 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKStatCaches.noindex/iphoneos27.0-24A430-6c78b3cbc238196c85e1bf6c792c5915.sdkstatcache -output-file-map /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/ModuleCache.noindex -sdk-module-cache-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots_const_extract_protocols.json -Xcc -iquote -Xcc /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-generated-files.hmap -Xcc -I/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-own-target-headers.hmap -Xcc -I/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-all-target-headers.hmap -Xcc -iquote -Xcc /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-project-headers.hmap -Xcc -I/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/include -Xcc -I/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources-normal/arm64 -Xcc -I/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources/arm64 -Xcc -I/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots-Swift.h -working-directory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources/Mots-Swift.h /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots-Swift.h (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-swiftHeaderTool -arch arm64 /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots-Swift.h -o /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources/Mots-Swift.h
+
+Copy /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.swiftmodule/arm64-apple-ios.swiftmodule /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.swiftmodule (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.swiftmodule /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.swiftmodule/arm64-apple-ios.swiftmodule
+
+Copy /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.swiftmodule/arm64-apple-ios.abi.json /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.abi.json (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.abi.json /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.swiftmodule/arm64-apple-ios.abi.json
+
+Copy /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.swiftsourceinfo (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.swiftsourceinfo /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo
+
+Copy /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.swiftmodule/arm64-apple-ios.swiftdoc /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.swiftdoc (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.swiftdoc /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.swiftmodule/arm64-apple-ios.swiftdoc
+
+SwiftDriverJobDiscovery normal arm64 Compiling SpeechPlayer.swift (in target 'Mots' from project 'Mots')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SettingsView.swift (in target 'Mots' from project 'Mots')
+
+SwiftDriverJobDiscovery normal arm64 Compiling Models.swift (in target 'Mots' from project 'Mots')
+
+SwiftDriverJobDiscovery normal arm64 Compiling AppView.swift (in target 'Mots' from project 'Mots')
+
+SwiftDriverJobDiscovery normal arm64 Compiling StudyStore.swift (in target 'Mots' from project 'Mots')
+
+SwiftDriver\ Compilation Mots normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Mots -O @/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.SwiftFileList -enable-upcoming-feature StrictConcurrency -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk -target arm64-apple-ios26.0 -g -module-cache-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos -F /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos -emit-localized-strings -emit-localized-strings-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64 -c -j12 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKStatCaches.noindex/iphoneos27.0-24A430-6c78b3cbc238196c85e1bf6c792c5915.sdkstatcache -output-file-map /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/ModuleCache.noindex -sdk-module-cache-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots_const_extract_protocols.json -Xcc -iquote -Xcc /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-generated-files.hmap -Xcc -I/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-own-target-headers.hmap -Xcc -I/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-all-target-headers.hmap -Xcc -iquote -Xcc /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-project-headers.hmap -Xcc -I/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/include -Xcc -I/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources-normal/arm64 -Xcc -I/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources/arm64 -Xcc -I/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots-Swift.h -working-directory /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/Mots normal (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios26.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos -L/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos -F/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos -F/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos -filelist /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.LinkFileList -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots_lto.o -Xlinker -dependency_info -Xlinker /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.swiftmodule -o /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/Mots
+
+GenerateDSYMFile /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app.dSYM /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/Mots (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    export PATH\=/Applications/Xcode.app/Contents/SharedFrameworks/SwiftBuild.framework/Versions/A/PlugIns/SWBBuildService.bundle/Contents/PlugIns/SWBUniversalPlatformPlugin.bundle/Contents/Frameworks/SWBUniversalPlatform.framework/Resources:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/zhangfei/.pyenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/zhangfei/.codex/tmp/arg0-macos/codex-arg0HcjOJu:/Users/zhangfei/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/Users/zhangfei/.grok/bin:/Users/zhangfei/.local/bin:/opt/homebrew/opt/python@3.12/libexec/bin:/opt/homebrew/opt/python@3.12/bin:/Users/zhangfei/.opencode/bin:/Users/zhangfei/.antigravity/antigravity/bin:/Users/zhangfei/.pyenv/bin:/Users/zhangfei/development/flutter/bin:/Users/zhangfei/.lmstudio/bin:/Users/zhangfei/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/Mots -o /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app.dSYM
+
+ExtractAppIntentsMetadata (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name Mots --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk --xcode-version 27A266a --platform-family iOS --deployment-target 26.0 --bundle-identifier com.feizhang.mots --output /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app --target-triple arm64-apple-ios26.0 --binary-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/Mots --dependency-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots_dependency_info.dat --stringsdata-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.SwiftFileList --metadata-file-list /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots.DependencyMetadataFileList --static-metadata-file-list /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots.DependencyStaticMetadataFileList --swift-const-vals-list /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-10-23 12:44:49.058 appintentsmetadataprocessor[51949:2562374] Starting appintentsmetadataprocessor export
+2026-10-23 12:44:49.060 appintentsmetadataprocessor[51949:2562374] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+CopySwiftLibs /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/Mots --scan-folder /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/Frameworks --scan-folder /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/PlugIns --scan-folder /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/SystemExtensions --scan-folder /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/Extensions --platform iphoneos --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+AppIntentsSSUTraining (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/Info.plist --temp-dir-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/ssu --bundle-id com.feizhang.mots --product-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app --extracted-metadata-path /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/Metadata.appintents --metadata-file-list /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots.DependencyMetadataFileList --source-file /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app/Info.plist --archive-ssu-assets
+2026-10-23 12:44:49.081 appintentsnltrainingprocessor[51950:2562375] Parsing options for appintentsnltrainingprocessor
+2026-10-23 12:44:49.081 appintentsnltrainingprocessor[51950:2562375] Starting AppIntents SSU YAML Generation
+2026-10-23 12:44:49.083 appintentsnltrainingprocessor[51950:2562375] No AppShortcuts found - Skipping.
+
+RegisterExecutionPolicyException /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-RegisterExecutionPolicyException /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app
+
+Validate /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    builtin-validationUtility /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app -shallow-bundle -infoplist-subpath Info.plist
+
+Touch /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app (in target 'Mots' from project 'Mots')
+    cd /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios
+    /usr/bin/touch -c /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Products/Release-iphoneos/Mots.app
+
+PruneExplicitPrecompiledModules /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/build/device/SDKExplicitPrecompiledModules
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources/GeneratedAssetSymbols-Index.plist' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources/GeneratedAssetSymbols.h' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources/GeneratedAssetSymbols.swift' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/DerivedSources/Mots-Swift.h' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-all-non-framework-target-headers.hmap' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-all-target-headers.hmap' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-generated-files.hmap' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-own-target-headers.hmap' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots-project-headers.hmap' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots.DependencyMetadataFileList' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots.DependencyStaticMetadataFileList' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Mots.hmap' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/AppView.o' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/AppView.stringsdata' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/AppView.swiftconstvalues' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/GeneratedAssetSymbols.o' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/GeneratedAssetSymbols.stringsdata' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Models.o' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Models.stringsdata' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Models.swiftconstvalues' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots Swift Compilation Finished' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots Swift Compilation Requirements Finished' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots-OutputFileMap.json' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots-Swift.h' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots-dependency-scan.dia' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.LinkFileList' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.SwiftConstValuesFileList' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.SwiftFileList' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.abi.json' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.swiftdoc' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.swiftmodule' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots.swiftsourceinfo' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/MotsApp.o' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/MotsApp.stringsdata' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/MotsApp.swiftconstvalues' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots_const_extract_protocols.json' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots_dependency_info.dat' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Mots_lto.o' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/SettingsView.o' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/SettingsView.stringsdata' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/SettingsView.swiftconstvalues' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/SpeechPlayer.o' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/SpeechPlayer.stringsdata' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/SpeechPlayer.swiftconstvalues' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/StudyStore.o' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/StudyStore.stringsdata' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/StudyStore.swiftconstvalues' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Theme.o' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Theme.stringsdata' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/Objects-normal/arm64/Theme.swiftconstvalues' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_dependencies_thinned' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_dependencies_unthinned' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_generated_info.plist' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_generated_info.plist_thinned' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_generated_info.plist_unthinned' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_output/thinned' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_output/unthinned' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/assetcatalog_signature' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Intermediates.noindex/Mots.build/Release-iphoneos/Mots.build/ssu/root.ssu.yaml' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Products/Release-iphoneos/Mots.app' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Products/Release-iphoneos/Mots.app.dSYM' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Products/Release-iphoneos/Mots.app.dSYM/Contents/Resources/DWARF/Mots' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Products/Release-iphoneos/Mots.app/Assets.car' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Products/Release-iphoneos/Mots.app/Info.plist' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Products/Release-iphoneos/Mots.app/Mots' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Products/Release-iphoneos/Mots.app/PkgInfo' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Products/Release-iphoneos/Mots.app/PrivacyInfo.xcprivacy' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Products/Release-iphoneos/Mots.app/Resources' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Products/Release-iphoneos/Mots.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Products/Release-iphoneos/Mots.swiftmodule/arm64-apple-ios.abi.json' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Products/Release-iphoneos/Mots.swiftmodule/arm64-apple-ios.swiftdoc' is located outside of the allowed root paths.
+
+warning: Stale file '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/ios/build/device/Build/Products/Release-iphoneos/Mots.swiftmodule/arm64-apple-ios.swiftmodule' is located outside of the allowed root paths.
+
+** BUILD SUCCEEDED **
+

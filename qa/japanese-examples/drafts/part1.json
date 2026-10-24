@@ -1,0 +1,830 @@
+[
+  {
+    "id": "ja-vocab-0d85970cc339",
+    "headword": "診察する",
+    "example": "医師が患者を診察している間、家族は外で待っていた。",
+    "translation": "醫生為病人診察時，家屬在外面等候。"
+  },
+  {
+    "id": "ja-vocab-8606e39efe76",
+    "headword": "外科",
+    "example": "腕の傷を診てもらうため、外科を受診した。",
+    "translation": "為了檢查手臂的傷口，我去看了外科。"
+  },
+  {
+    "id": "ja-vocab-9b16ab058e39",
+    "headword": "這う",
+    "example": "赤ちゃんが床を這って、おもちゃに近づいた。",
+    "translation": "嬰兒在地板上爬著靠近玩具。"
+  },
+  {
+    "id": "ja-vocab-1c4901718b99",
+    "headword": "しゃがむ",
+    "example": "道端の小さな花を見ようと、しゃがんだ。",
+    "translation": "我為了看路邊的小花而蹲下。"
+  },
+  {
+    "id": "ja-vocab-9513c1603c4a",
+    "headword": "腰掛ける",
+    "example": "祖父は公園のベンチに腰掛けて休んでいた。",
+    "translation": "祖父坐在公園的長椅上休息。"
+  },
+  {
+    "id": "ja-vocab-5a3e4b9f0a85",
+    "headword": "欠伸",
+    "example": "昨夜あまり眠れず、授業中に何度も欠伸が出た。",
+    "translation": "昨晚沒睡好，上課時一直打哈欠。"
+  },
+  {
+    "id": "ja-vocab-50c96f0b1feb",
+    "headword": "徹夜する",
+    "example": "友達と話し込んで、つい徹夜してしまった。",
+    "translation": "我和朋友聊得太投入，不知不覺就熬了一整夜。"
+  },
+  {
+    "id": "ja-vocab-6e45b019d97b",
+    "headword": "剃刀",
+    "example": "旅行用のかばんに、新しい剃刀を入れた。",
+    "translation": "我在旅行袋裡放了一把新的刮鬍刀。"
+  },
+  {
+    "id": "ja-vocab-69879921b328",
+    "headword": "髭",
+    "example": "父は休暇中、髭を伸ばしていた。",
+    "translation": "父親休假期間留起了鬍鬚。"
+  },
+  {
+    "id": "ja-vocab-d0a2483af7c6",
+    "headword": "剃る",
+    "example": "出勤する前に、鏡を見ながら髭を剃った。",
+    "translation": "上班前，我照著鏡子刮了鬍子。"
+  },
+  {
+    "id": "ja-vocab-c0dbe1fafaf3",
+    "headword": "櫛",
+    "example": "母からもらった木の櫛を今も使っている。",
+    "translation": "我現在仍使用母親送給我的木梳。"
+  },
+  {
+    "id": "ja-vocab-54608128789b",
+    "headword": "ブラシ",
+    "example": "このブラシは柔らかくて、髪をとかしやすい。",
+    "translation": "這把髮刷很柔軟，很好梳頭髮。"
+  },
+  {
+    "id": "ja-vocab-e6fc348a848e",
+    "headword": "しゃっくり",
+    "example": "食事の途中でしゃっくりが出て、話せなくなった。",
+    "translation": "吃飯時突然打嗝，讓我說不出話來。"
+  },
+  {
+    "id": "ja-vocab-c420a68b68f8",
+    "headword": "咳",
+    "example": "昨夜は咳がひどくて、何度も目が覚めた。",
+    "translation": "昨晚咳得很厲害，好幾次都醒了過來。"
+  },
+  {
+    "id": "ja-vocab-336c03e25e7b",
+    "headword": "くしゃみ",
+    "example": "ほこりを吸い込んで、大きなくしゃみをした。",
+    "translation": "我吸入灰塵，打了一個大噴嚏。"
+  },
+  {
+    "id": "ja-vocab-cb01948a6c26",
+    "headword": "当分",
+    "example": "引っ越したばかりなので、当分は家具を買わずに暮らす。",
+    "translation": "才剛搬家，這段時間我打算先不買家具過日子。"
+  },
+  {
+    "id": "ja-vocab-31885b000827",
+    "headword": "たちまち",
+    "example": "焼きたてのパンは、店に並ぶとたちまち売り切れた。",
+    "translation": "剛出爐的麵包一上架，轉眼間就賣光了。"
+  },
+  {
+    "id": "ja-vocab-c211fbfc4873",
+    "headword": "看病する",
+    "example": "熱を出した弟を、母が一晩中看病していた。",
+    "translation": "弟弟發燒了，母親照顧了他一整夜。"
+  },
+  {
+    "id": "ja-vocab-442de16ffdf3",
+    "headword": "予防する",
+    "example": "病気を予防するために、生活習慣を見直した。",
+    "translation": "為了預防疾病，我重新檢視了自己的生活習慣。"
+  },
+  {
+    "id": "ja-vocab-72a8a97b349f",
+    "headword": "休養",
+    "example": "仕事を数日休んで、家で十分な休養を取った。",
+    "translation": "我請了幾天假，在家充分休養。"
+  },
+  {
+    "id": "ja-vocab-87d4f0e108ee",
+    "headword": "消毒",
+    "example": "看護師は注射をする前に、腕を消毒した。",
+    "translation": "護理師在打針前先替手臂消毒。"
+  },
+  {
+    "id": "ja-vocab-1a9fd2a1d11f",
+    "headword": "不規則",
+    "example": "夜勤が続いて、食事の時間が不規則になった。",
+    "translation": "連續上夜班，讓我的用餐時間變得不規律。"
+  },
+  {
+    "id": "ja-vocab-84dce2d5a725",
+    "headword": "美容",
+    "example": "姉は美容の仕事に興味があり、専門学校で学んでいる。",
+    "translation": "姊姊對美容工作感興趣，正在專門學校學習。"
+  },
+  {
+    "id": "ja-vocab-d8b166defcd4",
+    "headword": "荒れる",
+    "example": "強い風で海が荒れ、船は港を出られなかった。",
+    "translation": "強風吹得海面波濤洶湧，船無法出港。"
+  },
+  {
+    "id": "ja-vocab-cda46207a737",
+    "headword": "ひねる",
+    "example": "階段を下りるときに足首をひねってしまった。",
+    "translation": "下樓梯時，我不小心扭傷了腳踝。"
+  },
+  {
+    "id": "ja-vocab-5583cc1e42ca",
+    "headword": "床",
+    "example": "コップを倒して、床に水をこぼしてしまった。",
+    "translation": "我打翻杯子，把水灑在了地板上。"
+  },
+  {
+    "id": "ja-vocab-7894d0aad731",
+    "headword": "肌",
+    "example": "冬になると、肌が乾燥しやすくなる。",
+    "translation": "一到冬天，皮膚就容易乾燥。"
+  },
+  {
+    "id": "ja-vocab-3085f770767c",
+    "headword": "上達",
+    "example": "毎日練習しているので、妹はピアノの上達が早い。",
+    "translation": "妹妹每天練習，因此鋼琴進步得很快。"
+  },
+  {
+    "id": "ja-vocab-e171c227640e",
+    "headword": "見事",
+    "example": "彼女は難しい曲を見事に弾き終えた。",
+    "translation": "她出色地演奏完了一首高難度的曲子。"
+  },
+  {
+    "id": "ja-vocab-91f240a8a0d3",
+    "headword": "活躍",
+    "example": "地元の選手が世界の大会で活躍している。",
+    "translation": "本地選手正在世界大賽中大展身手。"
+  },
+  {
+    "id": "ja-vocab-c4d54a6dc7c2",
+    "headword": "従う",
+    "example": "係員の指示に従って、順番に会場を出た。",
+    "translation": "我們遵照工作人員的指示，依序離開會場。"
+  },
+  {
+    "id": "ja-vocab-48bc955c9526",
+    "headword": "応援",
+    "example": "試合当日は、家族みんなで弟を応援しに行く。",
+    "translation": "比賽當天，全家人都要去替弟弟加油。"
+  },
+  {
+    "id": "ja-vocab-0aecab7e98ea",
+    "headword": "ベテラン",
+    "example": "困ったときは、ベテランの先輩に相談している。",
+    "translation": "遇到困難時，我都會找經驗豐富的前輩商量。"
+  },
+  {
+    "id": "ja-vocab-0c510f1b3759",
+    "headword": "攻める",
+    "example": "後半に入ると、相手チームは右側から攻めてきた。",
+    "translation": "進入下半場後，對方球隊從右側發動了進攻。"
+  },
+  {
+    "id": "ja-vocab-75309a4d22c4",
+    "headword": "破る",
+    "example": "弟が百メートル走で学校の記録を破った。",
+    "translation": "弟弟在一百公尺賽跑中打破了學校紀錄。"
+  },
+  {
+    "id": "ja-vocab-b95c1ce128f7",
+    "headword": "敗れる",
+    "example": "私たちのチームは決勝戦で強豪に敗れた。",
+    "translation": "我們的球隊在決賽中敗給了強隊。"
+  },
+  {
+    "id": "ja-vocab-97c035bb9f8b",
+    "headword": "引き分け",
+    "example": "両チームとも点が取れず、試合は引き分けに終わった。",
+    "translation": "兩隊都沒有得分，比賽以平手結束。"
+  },
+  {
+    "id": "ja-vocab-c2f6dfb42b45",
+    "headword": "著者",
+    "example": "この小説の著者は、長い間外国で暮らしていた。",
+    "translation": "這本小說的作者曾在國外生活很長一段時間。"
+  },
+  {
+    "id": "ja-vocab-f532c7bde6a6",
+    "headword": "文芸",
+    "example": "高校では文芸部に入り、短い物語を書いていた。",
+    "translation": "高中時，我加入文藝社，寫過一些短篇故事。"
+  },
+  {
+    "id": "ja-vocab-711502244919",
+    "headword": "筆者",
+    "example": "この文章の筆者は、自然を守る大切さを訴えている。",
+    "translation": "這篇文章的作者呼籲大家重視保護自然的重要性。"
+  },
+  {
+    "id": "ja-vocab-7168ea7b6ca9",
+    "headword": "目次",
+    "example": "必要な章を探すために、まず目次を開いた。",
+    "translation": "為了找到需要的章節，我先翻開了目錄。"
+  },
+  {
+    "id": "ja-vocab-7580bb4ea696",
+    "headword": "索引",
+    "example": "本の索引で、調べたい言葉のページを探した。",
+    "translation": "我利用書後的索引，尋找想查的詞所在的頁數。"
+  },
+  {
+    "id": "ja-vocab-cfb2cd46a19d",
+    "headword": "執筆",
+    "example": "祖母は退職後、故郷の歴史について執筆している。",
+    "translation": "祖母退休後，一直在撰寫關於故鄉歷史的文章。"
+  },
+  {
+    "id": "ja-vocab-43aa1bc70d7e",
+    "headword": "芝居",
+    "example": "舞台の役者たちの芝居に、すっかり引き込まれた。",
+    "translation": "我完全被舞台上演員們的演技吸引住了。"
+  },
+  {
+    "id": "ja-vocab-be57f340403c",
+    "headword": "劇場",
+    "example": "開演の三十分前に劇場に着いた。",
+    "translation": "我在開演前三十分鐘抵達了劇場。"
+  },
+  {
+    "id": "ja-vocab-0eb5ac522d81",
+    "headword": "幕",
+    "example": "幕が上がると、舞台には大きな船が現れた。",
+    "translation": "幕布一拉開，舞台上出現了一艘大船。"
+  },
+  {
+    "id": "ja-vocab-a0a186eba1d6",
+    "headword": "粗筋",
+    "example": "映画を見る前に、友達から話の粗筋を聞いた。",
+    "translation": "看電影前，我先聽朋友介紹了故事大綱。"
+  },
+  {
+    "id": "ja-vocab-7ee9bd267c4e",
+    "headword": "編み物",
+    "example": "祖母は編み物が得意で、毎年マフラーを作ってくれる。",
+    "translation": "祖母很擅長編織，每年都會替我織圍巾。"
+  },
+  {
+    "id": "ja-vocab-1cfa6500ca67",
+    "headword": "工芸",
+    "example": "この町では、竹を使った工芸が盛んだ。",
+    "translation": "這座城鎮的竹工藝很興盛。"
+  },
+  {
+    "id": "ja-vocab-ad415cdf106d",
+    "headword": "綿",
+    "example": "この枕には、柔らかい綿がたくさん詰まっている。",
+    "translation": "這個枕頭裡塞滿了柔軟的棉花。"
+  },
+  {
+    "id": "ja-vocab-e12c879d1758",
+    "headword": "削る",
+    "example": "旅行に行くために、毎月の外食費を削った。",
+    "translation": "為了去旅行，我削減了每個月的外食費用。"
+  },
+  {
+    "id": "ja-vocab-868563c321b9",
+    "headword": "彫る",
+    "example": "父は木の板に、家族の名前を彫った。",
+    "translation": "父親在木板上刻下了家人的名字。"
+  },
+  {
+    "id": "ja-vocab-6b9b8178e90d",
+    "headword": "詰めて",
+    "example": "もう一人座れるように、少し詰めてください。",
+    "translation": "請稍微坐靠近一點，讓另一個人也能坐下。"
+  },
+  {
+    "id": "ja-vocab-791e78206de4",
+    "headword": "日程",
+    "example": "雨の予報が出たので、旅行の日程を変更した。",
+    "translation": "因為天氣預報說會下雨，我更改了旅行行程。"
+  },
+  {
+    "id": "ja-vocab-7448fee3521e",
+    "headword": "座席",
+    "example": "窓側の座席から、遠くの山がよく見えた。",
+    "translation": "從靠窗的座位，可以清楚看見遠方的山。"
+  },
+  {
+    "id": "ja-vocab-59a79bf69801",
+    "headword": "往復",
+    "example": "空港まで電車で往復すると、二時間ほどかかる。",
+    "translation": "搭電車往返機場，大約需要兩個小時。"
+  },
+  {
+    "id": "ja-vocab-c08c2c531167",
+    "headword": "片道",
+    "example": "駅から大学までは、歩いて片道二十分だ。",
+    "translation": "從車站走到大學，單程需要二十分鐘。"
+  },
+  {
+    "id": "ja-vocab-a2a62f372cd3",
+    "headword": "日帰り",
+    "example": "週末に、友達と日帰りで温泉へ行った。",
+    "translation": "週末我和朋友去泡溫泉，當天就回來了。"
+  },
+  {
+    "id": "ja-vocab-b90917bc5d0f",
+    "headword": "跡",
+    "example": "雪の上に、猫の足の跡が残っていた。",
+    "translation": "雪地上留著貓的腳印。"
+  },
+  {
+    "id": "ja-vocab-c8b677fe5235",
+    "headword": "巡る",
+    "example": "夏休みに、自転車で湖の周りの町を巡った。",
+    "translation": "暑假時，我騎腳踏車走訪了湖邊的幾座城鎮。"
+  },
+  {
+    "id": "ja-vocab-ba0a503d70e9",
+    "headword": "混雑",
+    "example": "休日の混雑を避けて、平日に美術館へ行った。",
+    "translation": "為了避開假日的人潮，我選在平日去美術館。"
+  },
+  {
+    "id": "ja-vocab-de7e48166730",
+    "headword": "大通り",
+    "example": "この路地を抜けると、にぎやかな大通りに出る。",
+    "translation": "穿過這條巷子，就會走到熱鬧的大街。"
+  },
+  {
+    "id": "ja-vocab-4890b407b19e",
+    "headword": "踏切",
+    "example": "踏切の前で、電車が通り過ぎるのを待った。",
+    "translation": "我在平交道前等電車通過。"
+  },
+  {
+    "id": "ja-vocab-47792baa0c01",
+    "headword": "経由",
+    "example": "大阪を経由して、京都へ向かった。",
+    "translation": "我經由大阪前往京都。"
+  },
+  {
+    "id": "ja-vocab-11ca6cc2b745",
+    "headword": "通学",
+    "example": "弟は毎朝、自転車で高校に通学している。",
+    "translation": "弟弟每天早上騎腳踏車去高中上學。"
+  },
+  {
+    "id": "ja-vocab-f7129d1ccf82",
+    "headword": "ラッシュアワー",
+    "example": "ラッシュアワーを避けるため、いつもより早く家を出た。",
+    "translation": "為了避開交通尖峰時段，我比平常更早出門。"
+  },
+  {
+    "id": "ja-vocab-9eeb47c92694",
+    "headword": "競技",
+    "example": "妹は陸上競技の大会で二位になった。",
+    "translation": "妹妹在田徑比賽中獲得了第二名。"
+  },
+  {
+    "id": "ja-vocab-5791af70d388",
+    "headword": "発つ",
+    "example": "兄は明日の朝、留学先の国へ発つ。",
+    "translation": "哥哥明天早上將啟程前往留學的國家。"
+  },
+  {
+    "id": "ja-vocab-e34cf8241396",
+    "headword": "既に",
+    "example": "会場に着いたときには、式は既に始まっていた。",
+    "translation": "我抵達會場時，典禮已經開始了。"
+  },
+  {
+    "id": "ja-vocab-a5d2e814b770",
+    "headword": "見送る",
+    "example": "駅のホームで、遠くへ引っ越す友人を見送った。",
+    "translation": "我在車站月台為即將搬到遠方的朋友送行。"
+  },
+  {
+    "id": "ja-vocab-23d5b5303731",
+    "headword": "南北",
+    "example": "この道路は、町の南北を結んでいる。",
+    "translation": "這條道路連接著城鎮的南北兩端。"
+  },
+  {
+    "id": "ja-vocab-844e919ace9c",
+    "headword": "岬",
+    "example": "岬の先に立つ白い灯台が、海からも見える。",
+    "translation": "矗立在海岬盡頭的白色燈塔，從海上也看得見。"
+  },
+  {
+    "id": "ja-vocab-60f17d2ad71e",
+    "headword": "丘",
+    "example": "丘の上から、町全体を見渡せた。",
+    "translation": "從小山丘上，可以眺望整座城鎮。"
+  },
+  {
+    "id": "ja-vocab-fd6ee3c9c9d8",
+    "headword": "険しい",
+    "example": "山頂までは、険しい山道を登らなければならない。",
+    "translation": "要到山頂，必須攀登陡峭的山路。"
+  },
+  {
+    "id": "ja-vocab-9cf0517e493b",
+    "headword": "ふもと",
+    "example": "山のふもとの小さな村で、一晩泊まった。",
+    "translation": "我在山腳下的小村莊住了一晚。"
+  },
+  {
+    "id": "ja-vocab-ceb7b2a20cbd",
+    "headword": "谷",
+    "example": "深い谷の底を、細い川が流れている。",
+    "translation": "深谷底部流著一條細細的河川。"
+  },
+  {
+    "id": "ja-vocab-ed5ffbbcb3f3",
+    "headword": "滝",
+    "example": "森の奥を歩くと、大きな滝の音が聞こえてきた。",
+    "translation": "往森林深處走去，就聽見了大瀑布的水聲。"
+  },
+  {
+    "id": "ja-vocab-59368a07ddf7",
+    "headword": "砂",
+    "example": "子供たちは海辺の砂で大きな城を作った。",
+    "translation": "孩子們用海邊的沙子堆了一座大城堡。"
+  },
+  {
+    "id": "ja-vocab-56f085adea3f",
+    "headword": "泥",
+    "example": "雨上がりの畑を歩いて、靴が泥だらけになった。",
+    "translation": "我走過雨後的田地，鞋子沾滿了泥巴。"
+  },
+  {
+    "id": "ja-vocab-2ec3aadeb1c7",
+    "headword": "砂漠",
+    "example": "砂漠を旅する人たちは、十分な水を用意した。",
+    "translation": "穿越沙漠的旅人們準備了充足的水。"
+  },
+  {
+    "id": "ja-vocab-b9255c9a6ee5",
+    "headword": "沖",
+    "example": "釣り船が港を離れ、沖へ向かっていった。",
+    "translation": "釣魚船離開港口，駛向外海。"
+  },
+  {
+    "id": "ja-vocab-91ea8e24efa5",
+    "headword": "快晴",
+    "example": "旅行の最終日は快晴で、山の景色を楽しめた。",
+    "translation": "旅行的最後一天晴空萬里，我得以欣賞山景。"
+  },
+  {
+    "id": "ja-vocab-5b977c44201a",
+    "headword": "夕立",
+    "example": "突然の夕立で、洗濯物がすっかりぬれてしまった。",
+    "translation": "突如其來的傍晚驟雨，把晾著的衣服全淋濕了。"
+  },
+  {
+    "id": "ja-vocab-fd900b7ae294",
+    "headword": "沈む",
+    "example": "夕日が海に沈むまで、砂浜に座っていた。",
+    "translation": "我坐在沙灘上，直到夕陽沉入海中。"
+  },
+  {
+    "id": "ja-vocab-e8277081f7ad",
+    "headword": "日差し",
+    "example": "午後は日差しが強くなるので、木陰で休もう。",
+    "translation": "下午陽光會變強，我們到樹蔭下休息吧。"
+  },
+  {
+    "id": "ja-vocab-b8034369b8c2",
+    "headword": "実り",
+    "example": "農家の人たちは、秋の実りを喜んでいた。",
+    "translation": "農家們為秋天的收成感到喜悅。"
+  },
+  {
+    "id": "ja-vocab-5604b56da552",
+    "headword": "稲",
+    "example": "田んぼの稲が育ち、穂が少しずつ重くなってきた。",
+    "translation": "田裡的水稻長大了，稻穗也漸漸變重。"
+  },
+  {
+    "id": "ja-vocab-dd92cb0746f1",
+    "headword": "刈る",
+    "example": "父は週末に、庭の伸びすぎた草を刈った。",
+    "translation": "父親在週末割除了庭院裡長得太高的草。"
+  },
+  {
+    "id": "ja-vocab-dd58e0c1d837",
+    "headword": "初霜",
+    "example": "今朝は初霜が降り、畑がうっすら白くなった。",
+    "translation": "今天早上下了入秋後的第一場霜，田地泛著一層淡白色。"
+  },
+  {
+    "id": "ja-vocab-094ae0c81f9e",
+    "headword": "凍える",
+    "example": "雪の中でバスを待ち、手が凍えるほど冷たくなった。",
+    "translation": "我在雪中等公車，雙手冷得幾乎凍僵。"
+  },
+  {
+    "id": "ja-vocab-4d9e4f1330f6",
+    "headword": "遥かに",
+    "example": "新しい道を使うと、以前より遥かに早く着く。",
+    "translation": "走新開的道路，會比以前快得多。"
+  },
+  {
+    "id": "ja-vocab-5dc34e331acb",
+    "headword": "眩しい",
+    "example": "カーテンを開けると、朝日が眩しくて目を細めた。",
+    "translation": "一拉開窗簾，朝陽刺得我瞇起了眼睛。"
+  },
+  {
+    "id": "ja-vocab-9ceecb4ca62f",
+    "headword": "なだらかな",
+    "example": "なだらかな坂道を、ゆっくり自転車で登った。",
+    "translation": "我騎著腳踏車，慢慢爬上平緩的坡道。"
+  },
+  {
+    "id": "ja-vocab-5f2567109f06",
+    "headword": "一段と",
+    "example": "雨が上がると、山の緑が一段と鮮やかに見えた。",
+    "translation": "雨停之後，山林的綠色看起來更加鮮明了。"
+  },
+  {
+    "id": "ja-vocab-660edcbf4a44",
+    "headword": "遥か",
+    "example": "遥か遠くに、雪をかぶった山が見えた。",
+    "translation": "在遙遠的地方，可以看見覆著白雪的山。"
+  },
+  {
+    "id": "ja-vocab-55a2b740b60d",
+    "headword": "湧く",
+    "example": "岩の間から、冷たい水が湧いている。",
+    "translation": "冰涼的水從岩石縫隙間湧出。"
+  },
+  {
+    "id": "ja-vocab-9b514f4c8003",
+    "headword": "眺める",
+    "example": "窓辺に座り、庭に咲く花を眺めていた。",
+    "translation": "我坐在窗邊，欣賞庭院裡盛開的花。"
+  },
+  {
+    "id": "ja-vocab-fa3c082d3cc6",
+    "headword": "単位",
+    "example": "卒業に必要な単位を、すべて取り終えた。",
+    "translation": "我已修完畢業所需的所有學分。"
+  },
+  {
+    "id": "ja-vocab-491683081aa5",
+    "headword": "休講",
+    "example": "先生が出張中のため、今日の授業は休講になった。",
+    "translation": "因為老師出差，今天的課停課了。"
+  },
+  {
+    "id": "ja-vocab-9d9f6e81c24b",
+    "headword": "科目",
+    "example": "今学期は、興味のある科目を三つ選んだ。",
+    "translation": "這學期，我選了三門自己感興趣的科目。"
+  },
+  {
+    "id": "ja-vocab-4a616be3a2c5",
+    "headword": "児童",
+    "example": "児童たちは、先生と一緒に野菜を育てている。",
+    "translation": "小學生們和老師一起種植蔬菜。"
+  },
+  {
+    "id": "ja-vocab-ab39b81e985f",
+    "headword": "実習",
+    "example": "調理の実習で、野菜の切り方を習った。",
+    "translation": "在烹飪實作課上，我學了蔬菜的切法。"
+  },
+  {
+    "id": "ja-vocab-6fe255e728ba",
+    "headword": "期末",
+    "example": "期末のレポートを書くため、図書館で資料を集めた。",
+    "translation": "為了寫期末報告，我到圖書館蒐集資料。"
+  },
+  {
+    "id": "ja-vocab-73f344b1ced1",
+    "headword": "筆記",
+    "example": "試験は、筆記と面接の二つに分かれている。",
+    "translation": "考試分為筆試和面試兩個部分。"
+  },
+  {
+    "id": "ja-vocab-86d43f67635a",
+    "headword": "暗記",
+    "example": "年号の暗記だけでなく、出来事の背景も学びたい。",
+    "translation": "除了熟記年代，我也想了解事件的背景。"
+  },
+  {
+    "id": "ja-vocab-db4959778e7e",
+    "headword": "優れる",
+    "example": "このかばんは軽く、耐久性にも優れている。",
+    "translation": "這個包包很輕，耐用性也很出色。"
+  },
+  {
+    "id": "ja-vocab-d359598226ee",
+    "headword": "妥当",
+    "example": "作業にかかる時間を考えると、この料金は妥当だ。",
+    "translation": "考慮到工作所需的時間，這個收費是合理的。"
+  },
+  {
+    "id": "ja-vocab-c98ab5697ac9",
+    "headword": "学会",
+    "example": "来月の学会で、研究の成果を発表する予定だ。",
+    "translation": "我預計在下個月的學術會議上發表研究成果。"
+  },
+  {
+    "id": "ja-vocab-80db605c7b72",
+    "headword": "哲学",
+    "example": "大学で哲学を学び、人の生き方について考えるようになった。",
+    "translation": "在大學學習哲學後，我開始思考人的生活方式。"
+  },
+  {
+    "id": "ja-vocab-ff08785605a2",
+    "headword": "自習",
+    "example": "先生が来るまで、教室で静かに自習していた。",
+    "translation": "老師來之前，我一直在教室裡安靜自習。"
+  },
+  {
+    "id": "ja-vocab-f7e479b892bf",
+    "headword": "採点する",
+    "example": "先生は週末に、学生の答案を採点した。",
+    "translation": "老師在週末批改了學生的考卷。"
+  },
+  {
+    "id": "ja-vocab-4f7230d23ede",
+    "headword": "怠ける",
+    "example": "休みの日も怠けずに、日本語の勉強を続けている。",
+    "translation": "即使放假，我也不偷懶，持續學習日語。"
+  },
+  {
+    "id": "ja-vocab-171249948271",
+    "headword": "思いつく",
+    "example": "散歩をしているときに、いい考えを思いついた。",
+    "translation": "散步的時候，我想到了一個好主意。"
+  },
+  {
+    "id": "ja-vocab-2ec848c178ed",
+    "headword": "慌ただしい",
+    "example": "引っ越しの準備で、慌ただしい一週間を過ごした。",
+    "translation": "為了準備搬家，我度過了忙亂的一週。"
+  },
+  {
+    "id": "ja-vocab-cb8c98168bd4",
+    "headword": "能率",
+    "example": "道具の置き場所を変えたら、仕事の能率が上がった。",
+    "translation": "改變工具的擺放位置後，工作效率提高了。"
+  },
+  {
+    "id": "ja-vocab-b4c3a6bcdbe8",
+    "headword": "引き受ける",
+    "example": "忙しい同僚に代わって、会議の準備を引き受けた。",
+    "translation": "我代替忙碌的同事，接下了準備會議的工作。"
+  },
+  {
+    "id": "ja-vocab-29f0c8eca618",
+    "headword": "失業",
+    "example": "父は失業した後、新しい仕事を探し始めた。",
+    "translation": "父親失業後，開始尋找新工作。"
+  },
+  {
+    "id": "ja-vocab-a249b746a7bd",
+    "headword": "稼ぐ",
+    "example": "学生のころは、店で働いて生活費を稼いでいた。",
+    "translation": "學生時期，我在店裡打工賺生活費。"
+  },
+  {
+    "id": "ja-vocab-cf4d6cb15471",
+    "headword": "破産",
+    "example": "借金が増え続け、その会社はついに破産した。",
+    "translation": "那家公司的債務不斷增加，最後終於破產了。"
+  },
+  {
+    "id": "ja-vocab-590cd32346f0",
+    "headword": "月給",
+    "example": "初めての月給で、両親に食事をごちそうした。",
+    "translation": "我領到第一份月薪後，請父母吃了一頓飯。"
+  },
+  {
+    "id": "ja-vocab-eeef35e74dc6",
+    "headword": "張り切る",
+    "example": "初めて店を手伝うことになり、弟は朝から張り切っている。",
+    "translation": "第一次要幫店裡的忙，弟弟從早上起就幹勁十足。"
+  },
+  {
+    "id": "ja-vocab-4e519d496fb4",
+    "headword": "資本",
+    "example": "二人は少ない資本で、小さな店を始めた。",
+    "translation": "兩人用不多的資金，開了一家小店。"
+  },
+  {
+    "id": "ja-vocab-0a9ee0e6af2f",
+    "headword": "雇う",
+    "example": "店が忙しくなったので、新しい店員を二人雇った。",
+    "translation": "店裡變忙了，因此新僱用了兩名店員。"
+  },
+  {
+    "id": "ja-vocab-e9054af8a1ea",
+    "headword": "募集",
+    "example": "図書館では、本の整理を手伝う人を募集している。",
+    "translation": "圖書館正在招募幫忙整理書籍的人。"
+  },
+  {
+    "id": "ja-vocab-66ec1ff92fe1",
+    "headword": "重役",
+    "example": "来週の会議には、会社の重役も出席する。",
+    "translation": "下週的會議，公司高階主管也會出席。"
+  },
+  {
+    "id": "ja-vocab-6b39fef52ea6",
+    "headword": "組合",
+    "example": "労働組合が、働く時間について会社と話し合った。",
+    "translation": "工會和公司討論了工時問題。"
+  },
+  {
+    "id": "ja-vocab-7d4b3e381d4c",
+    "headword": "金融",
+    "example": "兄は大学で経済を学び、今は金融の仕事をしている。",
+    "translation": "哥哥在大學學習經濟，現在從事金融工作。"
+  },
+  {
+    "id": "ja-vocab-59631e105136",
+    "headword": "引き出す",
+    "example": "旅行の前に、銀行で現金を引き出した。",
+    "translation": "旅行前，我到銀行提領了現金。"
+  },
+  {
+    "id": "ja-vocab-d10c42c9b9ed",
+    "headword": "当てはまる",
+    "example": "この説明は、すべての場合に当てはまるわけではない。",
+    "translation": "這個說明並不適用於所有情況。"
+  },
+  {
+    "id": "ja-vocab-d8bb45ec238f",
+    "headword": "追いかける",
+    "example": "犬が転がるボールを追いかけて、庭を走り回った。",
+    "translation": "狗追著滾動的球，在庭院裡跑來跑去。"
+  },
+  {
+    "id": "ja-vocab-fee823c5642b",
+    "headword": "マスコミ",
+    "example": "事件の現場には、マスコミの記者が大勢集まった。",
+    "translation": "事件現場聚集了許多媒體記者。"
+  },
+  {
+    "id": "ja-vocab-a7e766a34c0c",
+    "headword": "見出し",
+    "example": "新聞の大きな見出しを見て、足を止めた。",
+    "translation": "我看到報紙的大標題，不禁停下了腳步。"
+  },
+  {
+    "id": "ja-vocab-51e4c5683e8c",
+    "headword": "近々",
+    "example": "近々、駅の近くに新しい本屋ができるそうだ。",
+    "translation": "聽說車站附近不久後就會開一家新書店。"
+  },
+  {
+    "id": "ja-vocab-6c753c6017fe",
+    "headword": "自ら",
+    "example": "店長自ら客の前に出て、事情を説明した。",
+    "translation": "店長親自出面，向顧客說明情況。"
+  },
+  {
+    "id": "ja-vocab-2ca0c3566834",
+    "headword": "じっくり",
+    "example": "大きな買い物なので、家族とじっくり相談したい。",
+    "translation": "因為是大筆消費，我想和家人仔細商量。"
+  },
+  {
+    "id": "ja-vocab-c8f01d9528f8",
+    "headword": "流れる",
+    "example": "店の中には、静かな音楽が流れていた。",
+    "translation": "店裡播放著輕柔的音樂。"
+  },
+  {
+    "id": "ja-vocab-8b99ec5c3b33",
+    "headword": "掛かる",
+    "example": "この修理には、一週間ほど掛かると言われた。",
+    "translation": "對方告訴我，這項修理大約需要一週。"
+  },
+  {
+    "id": "ja-vocab-981b91b281ca",
+    "headword": "浴びる",
+    "example": "毎朝シャワーを浴びてから、朝ご飯を食べる。",
+    "translation": "我每天早上先淋浴，再吃早餐。"
+  }
+]

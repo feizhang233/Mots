@@ -1,7 +1,7 @@
 {
   "profile": "product-admin",
   "sourceRoots": [
-    "src"
+    "web/src"
   ],
   "locale": "zh-Hant",
   "canonicalMap": "UX-CONTRACT.md",
@@ -11,7 +11,7 @@
     "Toast"
   ],
   "ownership": {
-    "Select/Listbox": "authored"
+    "Select/Listbox": "native"
   },
   "requiredCommands": [
     "build",
@@ -23,12 +23,12 @@
     "select"
   ],
   "commands": {
-    "build": "python3 scripts/build.py --check",
-    "regressions": "node tests/run.cjs",
+    "build": "python3 web/scripts/build.py --check",
+    "regressions": "node web/tests/run.cjs",
     "deployment": "python3 tests/deploy_test.py",
-    "data": "node --check dist/data.js",
-    "audio": "node --check dist/audio-manifest.js",
-    "extraAudio": "node --check dist/extra-audio.js",
-    "select": "node --check dist/select.js"
+    "data": "node --check web/dist/data.js",
+    "audio": "node --check web/dist/audio-manifest.js",
+    "extraAudio": "node --check web/dist/extra-audio.js",
+    "select": "node --check web/dist/select.js"
   }
 }

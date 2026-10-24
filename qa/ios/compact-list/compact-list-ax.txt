@@ -1,0 +1,135 @@
+Window: "Mots Test iPhone 17", App: Device Hub.
+0 unknown Secondary Actions: Raise
+	1 split group
+		2 split group com.apple.dt.DeviceKit.DeviceManagementWindow-AppWindow-2, SidebarNavigationSplitView
+			3 scroll area
+				4 list Sidebar
+					5 row (selectable) Expanded
+					6 row (selected) Mots Test iPhone 17
+27.0
+Simulator
+					7 row (selectable) Collapsed
+			8 search text field (settable) Search
+				9 button Search
+			10 splitter (settable, float) 240
+			11 container
+				12 container
+					13 text Description: 全部單字, Secondary Actions: Cancel
+					14 tab group ID: study.layout, Secondary Actions: Cancel
+					15 pop up button Description: 篩選單字, Secondary Actions: Cancel
+					16 text Description: 3,846 個單字, Secondary Actions: Cancel
+					17 text Description: 1 / 193, Secondary Actions: Cancel
+					18 button Description: 朗讀 l’âge, Value: 年齡, ID: list.speak.book-1.01-001, Secondary Actions: Cancel
+					19 button Description: l’âge，不熟悉, Help: 不熟悉, Value: 未選取, ID: rating.book-1.01-001.1, Secondary Actions: Cancel
+					20 button (selected) Description: l’âge，有印象, Help: 有印象, Value: 已選取，再點一次清除標記, ID: rating.book-1.01-001.2, Secondary Actions: Cancel
+					21 button Description: l’âge，已掌握, Help: 已掌握, Value: 未選取, ID: rating.book-1.01-001.3, Secondary Actions: Cancel
+					22 button Description: 朗讀 âgé, âgée, Value: 年齡為……的, ID: list.speak.book-1.01-002, Secondary Actions: Cancel
+					23 button Description: âgé, âgée，不熟悉, Help: 不熟悉, Value: 未選取, ID: rating.book-1.01-002.1, Secondary Actions: Cancel
+					24 button Description: âgé, âgée，有印象, Help: 有印象, Value: 未選取, ID: rating.book-1.01-002.2, Secondary Actions: Cancel
+					25 button (selected) Description: âgé, âgée，已掌握, Help: 已掌握, Value: 已選取，再點一次清除標記, ID: rating.book-1.01-002.3, Secondary Actions: Cancel
+					26 button Description: 朗讀 s’appeler, Value: 名叫, ID: list.speak.book-1.01-003, Secondary Actions: Cancel
+					27 button Description: s’appeler，不熟悉, Help: 不熟悉, Value: 未選取, ID: rating.book-1.01-003.1, Secondary Actions: Cancel
+					28 button (selected) Description: s’appeler，有印象, Help: 有印象, Value: 已選取，再點一次清除標記, ID: rating.book-1.01-003.2, Secondary Actions: Cancel
+					29 button Description: s’appeler，已掌握, Help: 已掌握, Value: 未選取, ID: rating.book-1.01-003.3, Secondary Actions: Cancel
+					30 button Description: 朗讀 la dame, Value: 女士，夫人, ID: list.speak.book-1.01-004, Secondary Actions: Cancel
+					31 button (selected) Description: la dame，不熟悉, Help: 不熟悉, Value: 已選取，再點一次清除標記, ID: rating.book-1.01-004.1, Secondary Actions: Cancel
+					32 button Description: la dame，有印象, Help: 有印象, Value: 未選取, ID: rating.book-1.01-004.2, Secondary Actions: Cancel
+					33 button Description: la dame，已掌握, Help: 已掌握, Value: 未選取, ID: rating.book-1.01-004.3, Secondary Actions: Cancel
+					34 button Description: 朗讀 demeurer, Value: 居住, ID: list.speak.book-1.01-005, Secondary Actions: Cancel
+					35 button Description: demeurer，不熟悉, Help: 不熟悉, Value: 未選取, ID: rating.book-1.01-005.1, Secondary Actions: Cancel
+					36 button Description: demeurer，有印象, Help: 有印象, Value: 未選取, ID: rating.book-1.01-005.2, Secondary Actions: Cancel
+					37 button Description: demeurer，已掌握, Help: 已掌握, Value: 未選取, ID: rating.book-1.01-005.3, Secondary Actions: Cancel
+					38 button Description: 朗讀 l’enfance, Value: 童年, ID: list.speak.book-1.01-006, Secondary Actions: Cancel
+					39 button Description: l’enfance，不熟悉, Help: 不熟悉, Value: 未選取, ID: rating.book-1.01-006.1, Secondary Actions: Cancel
+					40 button Description: l’enfance，有印象, Help: 有印象, Value: 未選取, ID: rating.book-1.01-006.2, Secondary Actions: Cancel
+					41 button Description: l’enfance，已掌握, Help: 已掌握, Value: 未選取, ID: rating.book-1.01-006.3, Secondary Actions: Cancel
+					42 button Description: 朗讀 féminin, féminine, Value: 陰性的, ID: list.speak.book-1.01-007, Secondary Actions: Cancel
+					43 button Description: féminin, féminine，不熟悉, Help: 不熟悉, Value: 未選取, ID: rating.book-1.01-007.1, Secondary Actions: Cancel
+					44 button Description: féminin, féminine，有印象, Help: 有印象, Value: 未選取, ID: rating.book-1.01-007.2, Secondary Actions: Cancel
+					45 button Description: féminin, féminine，已掌握, Help: 已掌握, Value: 未選取, ID: rating.book-1.01-007.3, Secondary Actions: Cancel
+					46 button Description: 朗讀 habiter, Value: 住，居住, ID: list.speak.book-1.01-008, Secondary Actions: Cancel
+					47 button Description: habiter，不熟悉, Help: 不熟悉, Value: 未選取, ID: rating.book-1.01-008.1, Secondary Actions: Cancel
+					48 button Description: habiter，有印象, Help: 有印象, Value: 未選取, ID: rating.book-1.01-008.2, Secondary Actions: Cancel
+					49 button Description: habiter，已掌握, Help: 已掌握, Value: 未選取, ID: rating.book-1.01-008.3, Secondary Actions: Cancel
+					50 button Description: 朗讀 laïc, laïque, Value: 非宗教的，世俗的, ID: list.speak.book-1.01-009, Secondary Actions: Cancel
+					51 button Description: laïc, laïque，不熟悉, Help: 不熟悉, Value: 未選取, ID: rating.book-1.01-009.1, Secondary Actions: Cancel
+					52 button Description: laïc, laïque，有印象, Help: 有印象, Value: 未選取, ID: rating.book-1.01-009.2, Secondary Actions: Cancel
+					53 button Description: laïc, laïque，已掌握, Help: 已掌握, Value: 未選取, ID: rating.book-1.01-009.3, Secondary Actions: Cancel
+					54 button Description: 朗讀 madame, Value: 夫人，太太, ID: list.speak.book-1.01-010, Secondary Actions: Cancel
+					55 button Description: madame，不熟悉, Help: 不熟悉, Value: 未選取, ID: rating.book-1.01-010.1, Secondary Actions: Cancel
+					56 button Description: madame，有印象, Help: 有印象, Value: 未選取, ID: rating.book-1.01-010.2, Secondary Actions: Cancel
+					57 button Description: madame，已掌握, Help: 已掌握, Value: 未選取, ID: rating.book-1.01-010.3, Secondary Actions: Cancel
+					58 button Description: 朗讀 mademoiselle, Value: 小姐, ID: list.speak.book-1.01-011, Secondary Actions: Cancel
+					59 button Description: mademoiselle，不熟悉, Help: 不熟悉, Value: 未選取, ID: rating.book-1.01-011.1, Secondary Actions: Cancel
+					60 button Description: mademoiselle，有印象, Help: 有印象, Value: 未選取, ID: rating.book-1.01-011.2, Secondary Actions: Cancel
+					61 button Description: mademoiselle，已掌握, Help: 已掌握, Value: 未選取, ID: rating.book-1.01-011.3, Secondary Actions: Cancel
+					62 button Description: 朗讀 le métier, Value: 工作，職業, ID: list.speak.book-1.01-012, Secondary Actions: Cancel
+					63 button Description: le métier，不熟悉, Help: 不熟悉, Value: 未選取, ID: rating.book-1.01-012.1, Secondary Actions: Cancel
+					64 button Description: le métier，有印象, Help: 有印象, Value: 未選取, ID: rating.book-1.01-012.2, Secondary Actions: Cancel
+					65 button Description: le métier，已掌握, Help: 已掌握, Value: 未選取, ID: rating.book-1.01-012.3, Secondary Actions: Cancel
+					66 button Description: 朗讀 le monsieur, Value: 先生, ID: list.speak.book-1.01-013, Secondary Actions: Cancel
+					67 button Description: le monsieur，不熟悉, Help: 不熟悉, Value: 未選取, ID: rating.book-1.01-013.1, Secondary Actions: Cancel
+					68 button Description: le monsieur，有印象, Help: 有印象, Value: 未選取, ID: rating.book-1.01-013.2, Secondary Actions: Cancel
+					69 button Description: le monsieur，已掌握, Help: 已掌握, Value: 未選取, ID: rating.book-1.01-013.3, Secondary Actions: Cancel
+					70 button Description: 朗讀 naître, Value: 出生, ID: list.speak.book-1.01-014, Secondary Actions: Cancel
+					71 button Description: naître，不熟悉, Help: 不熟悉, Value: 未選取, ID: rating.book-1.01-014.1, Secondary Actions: Cancel
+					72 button Description: naître，有印象, Help: 有印象, Value: 未選取, ID: rating.book-1.01-014.2, Secondary Actions: Cancel
+					73 button Description: naître，已掌握, Help: 已掌握, Value: 未選取, ID: rating.book-1.01-014.3, Secondary Actions: Cancel
+					74 button Description: 朗讀 né, née, Value: 出生的, ID: list.speak.book-1.01-015, Secondary Actions: Cancel
+					75 button Description: né, née，不熟悉, Help: 不熟悉, Value: 未選取, ID: rating.book-1.01-015.1, Secondary Actions: Cancel
+					76 button Description: né, née，有印象, Help: 有印象, Value: 未選取, ID: rating.book-1.01-015.2, Secondary Actions: Cancel
+					77 button Description: né, née，已掌握, Help: 已掌握, Value: 未選取, ID: rating.book-1.01-015.3, Secondary Actions: Cancel
+					78 button Description: 朗讀 le nom, Value: 名字，姓氏, ID: list.speak.1.01-1, Secondary Actions: Cancel
+					79 button Description: le nom，不熟悉, Help: 不熟悉, Value: 未選取, ID: rating.1.01-1.1, Secondary Actions: Cancel
+					80 button Description: le nom，有印象, Help: 有印象, Value: 未選取, ID: rating.1.01-1.2, Secondary Actions: Cancel
+					81 button Description: le nom，已掌握, Help: 已掌握, Value: 未選取, ID: rating.1.01-1.3, Secondary Actions: Cancel
+					82 button Description: 朗讀 nommé, nommée, Value: 被任命的, ID: list.speak.book-1.01-017, Secondary Actions: Cancel
+					83 button Description: nommé, nommée，不熟悉, Help: 不熟悉, Value: 未選取, ID: rating.book-1.01-017.1, Secondary Actions: Cancel
+					84 button Description: nommé, nommée，有印象, Help: 有印象, Value: 未選取, ID: rating.book-1.01-017.2, Secondary Actions: Cancel
+					85 button Description: nommé, nommée，已掌握, Help: 已掌握, Value: 未選取, ID: rating.book-1.01-017.3, Secondary Actions: Cancel
+					86 button Description: 朗讀 l’adolescent, l’adolescente, Value: 青少年, ID: list.speak.book-1.01-018, Secondary Actions: Cancel
+					87 button Description: l’adolescent, l’adolescente，不熟悉, Help: 不熟悉, Value: 未選取, ID: rating.book-1.01-018.1, Secondary Actions: Cancel
+					88 button Description: l’adolescent, l’adolescente，有印象, Help: 有印象, Value: 未選取, ID: rating.book-1.01-018.2, Secondary Actions: Cancel
+					89 button Description: l’adolescent, l’adolescente，已掌握, Help: 已掌握, Value: 未選取, ID: rating.book-1.01-018.3, Secondary Actions: Cancel
+					90 button Description: 朗讀 l’adresse, Value: 地址, ID: list.speak.1.01-4, Secondary Actions: Cancel
+					91 button Description: l’adresse，不熟悉, Help: 不熟悉, Value: 未選取, ID: rating.1.01-4.1, Secondary Actions: Cancel
+					92 button Description: l’adresse，有印象, Help: 有印象, Value: 未選取, ID: rating.1.01-4.2, Secondary Actions: Cancel
+					93 button Description: l’adresse，已掌握, Help: 已掌握, Value: 未選取, ID: rating.1.01-4.3, Secondary Actions: Cancel
+					94 button (disabled) Description: 上一頁, Secondary Actions: Cancel
+					95 text Description: 顯示第 1 至 20 個單字, Secondary Actions: Cancel
+					96 button Description: 下一頁, Secondary Actions: Cancel
+				97 button app.grid.3x3
+				98 button camera.viewfinder
+				99 button record.circle
+				100 button
+		101 splitter (settable, float) 1100
+	102 toolbar
+		103 menu button Add Device, ID: plus
+		104 toggle button Description: Filter, Help: Sort and Filter, Value: off
+		105 button Description: Hide Sidebar, Secondary Actions: Increment, Decrement, Delete, Cancel
+		106 toggle button Description: Capture Keyboard, Value: off
+		107 toggle button Description: Resize mode, Help: Enter resize mode, Value: off
+		108 Zoom
+			109 radio button Description: Zoom Out, Value: 0, ID: minus.magnifyingglass
+			110 radio button Description: Up, Right, Down, And Left Triangles In A Magnifying Glass, Help: Zoom to Fit, Value: 0, ID: arrowtriangles.up.right.down.left.magnifyingglass
+			111 radio button Description: Zoom To Actual Size, Help: Physical Size, Value: 1, ID: 1.magnifyingglass
+			112 radio button Description: Zoom In, Value: 0, ID: plus.magnifyingglass
+		113 button Description: Open in New Window, Help: Switch to compact window, Secondary Actions: Increment, Decrement, Delete, Cancel, Move previous, Move next, Remove from toolbar
+		114 menu button More Actions, ID: ellipsis
+		115 Inspector Category
+			116 radio button Description: Edit, Help: Settings, Value: 0, ID: slider.horizontal.3
+			117 radio button Description: Text Document, Help: Reports, Value: 0, ID: text.document
+			118 radio button Description: Info, Value: 0, ID: info
+	119 close button
+	120 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	121 minimize button
+	122 text Mots Test iPhone 17 iOS 27.0
+123 menu bar
+	124 Device Hub
+	125 File
+	126 Edit
+	127 View
+	128 Device
+	129 Controls
+	130 Window
+	131 Help

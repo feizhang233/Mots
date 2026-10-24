@@ -1,0 +1,451 @@
+{
+  "checkedAt": "2026-10-24T20:08:19.696490+00:00",
+  "previousRelease": "/home/fei/Work/Mots/releases/20261024-195151-8f55ac62",
+  "contentVersion": "f6b81922211dbed08fcc879b178820bcb48785853e774f17bdb1e8a9b0a0cfd3",
+  "database": {
+    "unitCount": 16,
+    "entryCount": 3846,
+    "sourceFiles": 32
+  },
+  "dictionaries": [
+    {
+      "id": "fr",
+      "language": "fr",
+      "entryCount": 3846
+    },
+    {
+      "id": "de",
+      "language": "de",
+      "entryCount": 12
+    },
+    {
+      "id": "ja",
+      "language": "ja",
+      "entryCount": 414
+    }
+  ],
+  "server": {
+    "release": "/home/fei/Work/Mots/releases/20261024-200709-f8219718",
+    "files": 16994,
+    "sha256_match": true,
+    "services": {
+      "mots-web": "active",
+      "mots-tunnel": "active",
+      "mots-progress": "active"
+    }
+  },
+  "public": {
+    "url": "https://mots.feizhang233.com/",
+    "public_ipv4_override": null,
+    "checked": 100,
+    "sha256_match": true,
+    "audio_range_status": 206,
+    "content_range": "bytes 0-31/8563",
+    "sync_health": {
+      "version": 1,
+      "status": "ok"
+    },
+    "checks": [
+      {
+        "path": "app.js?v=dbe054860ff6d707",
+        "status": 200
+      },
+      {
+        "path": "audio-manifest.js?v=bb45c3104e660e04",
+        "status": 200
+      },
+      {
+        "path": "audio.js?v=0631d97562665aec",
+        "status": 200
+      },
+      {
+        "path": "core.js?v=7c72fb0139b35234",
+        "status": 200
+      },
+      {
+        "path": "data.js?v=c0c5ea303df43e8b",
+        "status": 200
+      },
+      {
+        "path": "deletion-state.js?v=6d8acb74e77b42d2",
+        "status": 200
+      },
+      {
+        "path": "dictionaries.js?v=80adb4366e5cd28f",
+        "status": 200
+      },
+      {
+        "path": "downloads.js?v=887b8391395047af",
+        "status": 200
+      },
+      {
+        "path": "entries.js?v=d3b87be61bb80a47",
+        "status": 200
+      },
+      {
+        "path": "extra-audio.js?v=7d2a754d6cda9f8c",
+        "status": 200
+      },
+      {
+        "path": "icon.svg",
+        "status": 200
+      },
+      {
+        "path": "index.html",
+        "status": 200
+      },
+      {
+        "path": "languages.js?v=fb321935c01189fb",
+        "status": 200
+      },
+      {
+        "path": "progress-sync.js?v=194bbbc24be6d88a",
+        "status": 200
+      },
+      {
+        "path": "select.css?v=d9685d2e102b4476",
+        "status": 200
+      },
+      {
+        "path": "select.js?v=c1c4fcfbcf76e20b",
+        "status": 200
+      },
+      {
+        "path": "settings-panel.js?v=a1e90c82f831d785",
+        "status": 200
+      },
+      {
+        "path": "styles.css?v=62af8f275284a194",
+        "status": 200
+      },
+      {
+        "path": "sync-protocol.js?v=4935a93c70f88375",
+        "status": 200
+      },
+      {
+        "path": "workspace.css?v=aee4c0cb75ea9566",
+        "status": 200
+      },
+      {
+        "path": "workspace.js?v=65c6b70f4c58a0c9",
+        "status": 200
+      },
+      {
+        "path": "database/README.md",
+        "status": 200
+      },
+      {
+        "path": "database/catalog.json",
+        "status": 200
+      },
+      {
+        "path": "database/content-version.json",
+        "status": 200
+      },
+      {
+        "path": "database/japanese/examples.json",
+        "status": 200
+      },
+      {
+        "path": "database/japanese/source.md",
+        "status": 200
+      },
+      {
+        "path": "database/japanese/vocabulary.json",
+        "status": 200
+      },
+      {
+        "path": "database/manifest.json",
+        "status": 200
+      },
+      {
+        "path": "database/runtime/audio/validation.json",
+        "status": 200
+      },
+      {
+        "path": "database/runtime/audio-manifest.js",
+        "status": 200
+      },
+      {
+        "path": "database/runtime/data.js",
+        "status": 200
+      },
+      {
+        "path": "database/runtime/extra-audio/japanese-validation.json",
+        "status": 200
+      },
+      {
+        "path": "database/runtime/extra-audio/validation.json",
+        "status": 200
+      },
+      {
+        "path": "database/runtime/extra-audio.js",
+        "status": 200
+      },
+      {
+        "path": "database/unit1/第一单元_法语单词库.xlsx",
+        "status": 200
+      },
+      {
+        "path": "database/unit1/第一单元词库.json",
+        "status": 200
+      },
+      {
+        "path": "database/unit10/第十单元_法语单词库.xlsx",
+        "status": 200
+      },
+      {
+        "path": "database/unit10/第十单元词库.json",
+        "status": 200
+      },
+      {
+        "path": "database/unit11/第十一单元_法语单词库.xlsx",
+        "status": 200
+      },
+      {
+        "path": "database/unit11/第十一单元词库.json",
+        "status": 200
+      },
+      {
+        "path": "database/unit12/第十二单元_法语单词库.xlsx",
+        "status": 200
+      },
+      {
+        "path": "database/unit12/第十二单元词库.json",
+        "status": 200
+      },
+      {
+        "path": "database/unit13/第十三单元_法语单词库.xlsx",
+        "status": 200
+      },
+      {
+        "path": "database/unit13/第十三单元词库.json",
+        "status": 200
+      },
+      {
+        "path": "database/unit14/第十四单元_法语单词库.xlsx",
+        "status": 200
+      },
+      {
+        "path": "database/unit14/第十四单元词库.json",
+        "status": 200
+      },
+      {
+        "path": "database/unit15/第十五单元_法语单词库.xlsx",
+        "status": 200
+      },
+      {
+        "path": "database/unit15/第十五单元词库.json",
+        "status": 200
+      },
+      {
+        "path": "database/unit16/第十六单元_法语单词库.xlsx",
+        "status": 200
+      },
+      {
+        "path": "database/unit16/第十六单元词库.json",
+        "status": 200
+      },
+      {
+        "path": "database/unit2/第二单元_法语单词库.xlsx",
+        "status": 200
+      },
+      {
+        "path": "database/unit2/第二单元词库.json",
+        "status": 200
+      },
+      {
+        "path": "database/unit3/第三单元_法语单词库.xlsx",
+        "status": 200
+      },
+      {
+        "path": "database/unit3/第三单元词库.json",
+        "status": 200
+      },
+      {
+        "path": "database/unit4/第四单元_法语单词库.xlsx",
+        "status": 200
+      },
+      {
+        "path": "database/unit4/第四单元词库.json",
+        "status": 200
+      },
+      {
+        "path": "database/unit5/第五单元_法语单词库.xlsx",
+        "status": 200
+      },
+      {
+        "path": "database/unit5/第五单元词库.json",
+        "status": 200
+      },
+      {
+        "path": "database/unit6/第六单元_法语单词库.xlsx",
+        "status": 200
+      },
+      {
+        "path": "database/unit6/第六单元词库.json",
+        "status": 200
+      },
+      {
+        "path": "database/unit7/第七单元_法语单词库.xlsx",
+        "status": 200
+      },
+      {
+        "path": "database/unit7/第七单元词库.json",
+        "status": 200
+      },
+      {
+        "path": "database/unit8/第八单元_法语单词库.xlsx",
+        "status": 200
+      },
+      {
+        "path": "database/unit8/第八单元词库.json",
+        "status": 200
+      },
+      {
+        "path": "database/unit9/第九单元_法语单词库.xlsx",
+        "status": 200
+      },
+      {
+        "path": "database/unit9/第九单元词库.json",
+        "status": 200
+      },
+      {
+        "path": "audio/book-1.01-001-20e7b35d.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-1.06-020-e1998cd8.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-2.03-045-914d4403.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-3.04-064-e5df764d.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-5.02-028-cccd1c44.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/7.02-1-e9fd8071.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-8.03-023-33d461e4.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-9.04-031-975d7180.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-11.01-022-ea952fbe.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-12.03-023-62f0c4c1.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-13.01-036-f3ce8df7.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-13.07-008-a2ed529a.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-15.02-007-c8fd2bf7.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-15.07-015-e84e080d.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-16.04-047-c9a7138f.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-16.08-059-7764abd6.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-16.13-053-9d4c7de0.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-1.01-001-699d17b1-example.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-1.06-018-71beda71-example.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-2.03-041-1157ebe4-example.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-3.04-058-e8b7a073-example.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-5.02-020-5b0975b3-example.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-7.02-001-00f2f0a9-example.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-8.03-011-8aaa77ed-example.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/9.04-1-ea709cbf-example.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-11.01-006-ead3b3f1-example.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-12.03-005-332a7e97-example.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-13.01-016-18162baa-example.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-13.06-019-1a76f842-example.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-15.01-022-e9e739a6-example.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-15.06-039-5da42c07-example.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-16.04-019-b455a7c2-example.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-16.08-052-1206e682-example.m4a",
+        "status": 200
+      },
+      {
+        "path": "audio/book-16.13-044-4a944d30-example.m4a",
+        "status": 200
+      }
+    ]
+  }
+}

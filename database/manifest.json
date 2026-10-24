@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "language": "fr",
   "source": "法语基础词汇分类学习手册",
-  "runtimeDatabase": "../dist/data.js",
+  "runtimeDatabase": "runtime/data.js",
   "unitCount": 16,
   "entryCount": 3846,
   "jsonFileCount": 16,

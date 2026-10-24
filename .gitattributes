@@ -1,5 +1,5 @@
-# Generated third-party code contains significant template-literal whitespace.
-dist/select.js linguist-generated=true -whitespace
-dist/*.js linguist-generated=true
-dist/*.css linguist-generated=true
-dist/index.html linguist-generated=true
+# Generated Web assets are reviewed through their authored sources.
+web/dist/select.js linguist-generated=true -whitespace
+web/dist/*.js linguist-generated=true
+web/dist/*.css linguist-generated=true
+web/dist/index.html linguist-generated=true

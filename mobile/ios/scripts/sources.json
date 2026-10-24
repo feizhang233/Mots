@@ -1,0 +1,29 @@
+{
+  "model": [
+    "Data/StudyStore.swift",
+    "Domain/Models.swift",
+    "Sync/PairingCredentials.swift",
+    "Sync/ProgressSyncController.swift",
+    "Sync/ProgressSyncRecord.swift",
+    "Sync/SyncRecordIdentity.swift",
+    "Sync/WordDeletion.swift"
+  ],
+  "app": [
+    "App/AppView.swift",
+    "App/MotsApp.swift",
+    "App/StudyModePresentation.swift",
+    "Audio/SpeechPlayer.swift",
+    "Features/Settings/DeletedWordsView.swift",
+    "Features/Settings/MotsExport.swift",
+    "Features/Settings/SettingsDisclosureStyle.swift",
+    "Features/Settings/SettingsView.swift",
+    "Features/Settings/SyncSettingsContent.swift",
+    "Features/Study/Cards/StudyCard.swift",
+    "Features/Study/Cards/StudyCardPager.swift",
+    "Features/Study/EntryDetailView.swift",
+    "Features/Study/List/VocabularyList.swift",
+    "Features/Study/StudyWorkbench.swift",
+    "Shared/Theme.swift",
+    "Shared/WordControls.swift"
+  ]
+}

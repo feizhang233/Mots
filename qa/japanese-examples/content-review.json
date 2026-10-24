@@ -1,0 +1,24 @@
+{
+  "entryCount": 414,
+  "independentlyReviewed": 414,
+  "uniqueSentences": 414,
+  "nonemptyTranslations": 414,
+  "appliedCorrections": [
+    {
+      "id": "ja-vocab-844a4ef06f61",
+      "reason": "停電に備える是為停電預作準備，不是預防停電發生；修正中文的因果含義。"
+    },
+    {
+      "id": "ja-vocab-f05c4354b68d",
+      "reason": "原日文「暖かい場所で待った」指人在溫暖處等待，未表達中文的把麵團放置該處；補出放置動作以確保自然且中日一致。"
+    }
+  ],
+  "retainedAfterReview": [
+    {
+      "id": "ja-vocab-1d5710ae0087",
+      "reason": "現有版本已是自然的誤判車站距離情境，保留。"
+    }
+  ],
+  "exampleDisplayLanguage": "ja",
+  "translationReferenceLanguage": "zh-Hant"
+}

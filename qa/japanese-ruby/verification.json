@@ -1,0 +1,13 @@
+{
+  "change": "Semantic ruby/rt above kanji; okurigana and kana-only terms stay on baseline",
+  "annotatedWords": 363,
+  "kanaOnlyWords": 51,
+  "sourceEntries": 414,
+  "sourceVocabularyAndAudioUnchanged": true,
+  "sharedRenderer": "MotsCore.formatTerm",
+  "staticAudit": {
+    "findings": 39,
+    "rule": "affordance.actionless-button",
+    "review": "Existing delegated button handlers; no actions or controls changed. UX-CONTRACT.md documents this auditor limitation."
+  }
+}

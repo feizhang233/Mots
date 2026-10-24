@@ -1,0 +1,49 @@
+{
+  "info" : {
+    "arguments" : [
+      "devicectl",
+      "device",
+      "info",
+      "apps",
+      "--device",
+      "00008140-000948C13468801C",
+      "--bundle-id",
+      "com.feizhang.mots",
+      "--json-output",
+      "qa/code-structure/phone-installed-app.json",
+      "--timeout",
+      "30"
+    ],
+    "commandType" : "devicectl.device.info.apps",
+    "environment" : {
+      "TERM" : "dumb"
+    },
+    "jsonVersion" : 5,
+    "outcome" : "success",
+    "version" : "642.16"
+  },
+  "result" : {
+    "apps" : [
+      {
+        "appClip" : false,
+        "builtByDeveloper" : true,
+        "bundleIdentifier" : "com.feizhang.mots",
+        "bundleVersion" : "1",
+        "containerAccessible" : true,
+        "defaultApp" : false,
+        "hidden" : false,
+        "internalApp" : false,
+        "name" : "Mots",
+        "removable" : true,
+        "url" : "file:///private/var/containers/Bundle/Application/2369AB1E-08B7-411A-A186-730CC687DFE2/Mots.app/",
+        "version" : "1.0"
+      }
+    ],
+    "defaultAppsIncluded" : false,
+    "deviceIdentifier" : "2D0B8EAD-0830-53A2-BBF5-32CFD59F6E0A",
+    "hiddenAppsIncluded" : false,
+    "internalAppsIncluded" : false,
+    "matchingBundleIdentifier" : "com.feizhang.mots",
+    "removableAppsIncluded" : true
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "info" : {
+    "arguments" : [
+      "devicectl",
+      "device",
+      "process",
+      "launch",
+      "--device",
+      "00008140-000948C13468801C",
+      "--terminate-existing",
+      "com.feizhang.mots",
+      "--timeout",
+      "45",
+      "--json-output",
+      "qa/ios/thematic-grammar-books/device-release-launch.json",
+      "--log-output",
+      "qa/ios/thematic-grammar-books/device-release-launch.log"
+    ],
+    "commandType" : "devicectl.device.process.launch",
+    "environment" : {
+      "TERM" : "dumb"
+    },
+    "jsonVersion" : 5,
+    "outcome" : "success",
+    "version" : "642.16"
+  },
+  "result" : {
+    "deviceIdentifier" : "2D0B8EAD-0830-53A2-BBF5-32CFD59F6E0A",
+    "launchOptions" : {
+      "activatedWhenStarted" : true,
+      "arguments" : [
+
+      ],
+      "environmentVariables" : {
+        "TERM" : "dumb"
+      },
+      "platformSpecificOptions" : {
+
+      },
+      "startStopped" : false,
+      "terminateExistingInstances" : true,
+      "user" : {
+        "active" : true
+      }
+    },
+    "process" : {
+      "auditToken" : [
+        4294967295,
+        501,
+        501,
+        501,
+        501,
+        78376,
+        0,
+        477093
+      ],
+      "executable" : "file:///private/var/containers/Bundle/Application/4F9C0443-3898-41C7-83AE-D468981E565C/Mots.app/Mots",
+      "processIdentifier" : 78376
+    }
+  }
+}

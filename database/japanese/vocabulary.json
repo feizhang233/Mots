@@ -1,0 +1,8306 @@
+{
+  "id": "ja",
+  "title": "日語詞彙總表",
+  "language": "ja",
+  "entryCount": 414,
+  "sourceFile": "source.md",
+  "sourceSHA256": "206a70a8bb0b4d1d3a05393ab5bcf74d0cd23dedf937865c61fbef4749925afc",
+  "readingOrder": "left-column-top-to-bottom-then-right-column",
+  "notes": "保留原表讀音、釋義及待確認標記；原表未提供詞性。例句及繁體中文翻譯為另行編寫的學習補充，非原表內容。",
+  "examplesFile": "examples.json",
+  "examplesSHA256": "9d2d686687bd75e7d96f7265da76aaa45c5ddd170cd661e0042e41d8fb6ef36d",
+  "categories": [
+    {
+      "id": "1",
+      "name": "日語詞彙總表",
+      "subcategories": [
+        {
+          "id": "1.01",
+          "name": "全部詞彙"
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "ja-vocab-0d85970cc339",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "診察する（しんさつする）",
+      "headword": "診察する",
+      "reading": "しんさつする",
+      "meanings": {
+        "zh-Hant": "診察、檢查病情"
+      },
+      "example": "医師が患者を診察している間、家族は外で待っていた。",
+      "examples": [
+        {
+          "text": "医師が患者を診察している間、家族は外で待っていた。",
+          "translations": {
+            "zh-Hant": "醫生為病人診察時，家屬在外面等候。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-8606e39efe76",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "外科（げか）",
+      "headword": "外科",
+      "reading": "げか",
+      "meanings": {
+        "zh-Hant": "外科"
+      },
+      "example": "腕の傷を診てもらうため、外科を受診した。",
+      "examples": [
+        {
+          "text": "腕の傷を診てもらうため、外科を受診した。",
+          "translations": {
+            "zh-Hant": "為了檢查手臂的傷口，我去看了外科。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-9b16ab058e39",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "這う（はう）",
+      "headword": "這う",
+      "reading": "はう",
+      "meanings": {
+        "zh-Hant": "爬、爬行"
+      },
+      "example": "赤ちゃんが床を這って、おもちゃに近づいた。",
+      "examples": [
+        {
+          "text": "赤ちゃんが床を這って、おもちゃに近づいた。",
+          "translations": {
+            "zh-Hant": "嬰兒在地板上爬著靠近玩具。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-1c4901718b99",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "しゃがむ（しゃがむ）",
+      "headword": "しゃがむ",
+      "reading": "しゃがむ",
+      "meanings": {
+        "zh-Hant": "蹲下"
+      },
+      "example": "道端の小さな花を見ようと、しゃがんだ。",
+      "examples": [
+        {
+          "text": "道端の小さな花を見ようと、しゃがんだ。",
+          "translations": {
+            "zh-Hant": "我為了看路邊的小花而蹲下。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-9513c1603c4a",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "腰掛ける（こしかける）",
+      "headword": "腰掛ける",
+      "reading": "こしかける",
+      "meanings": {
+        "zh-Hant": "坐下"
+      },
+      "example": "祖父は公園のベンチに腰掛けて休んでいた。",
+      "examples": [
+        {
+          "text": "祖父は公園のベンチに腰掛けて休んでいた。",
+          "translations": {
+            "zh-Hant": "祖父坐在公園的長椅上休息。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-5a3e4b9f0a85",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "欠伸（あくび）",
+      "headword": "欠伸",
+      "reading": "あくび",
+      "meanings": {
+        "zh-Hant": "哈欠"
+      },
+      "example": "昨夜あまり眠れず、授業中に何度も欠伸が出た。",
+      "examples": [
+        {
+          "text": "昨夜あまり眠れず、授業中に何度も欠伸が出た。",
+          "translations": {
+            "zh-Hant": "昨晚沒睡好，上課時一直打哈欠。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-50c96f0b1feb",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "徹夜する（てつやする）",
+      "headword": "徹夜する",
+      "reading": "てつやする",
+      "meanings": {
+        "zh-Hant": "熬夜、通宵"
+      },
+      "example": "友達と話し込んで、つい徹夜してしまった。",
+      "examples": [
+        {
+          "text": "友達と話し込んで、つい徹夜してしまった。",
+          "translations": {
+            "zh-Hant": "我和朋友聊得太投入，不知不覺就熬了一整夜。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-6e45b019d97b",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "剃刀（かみそり）",
+      "headword": "剃刀",
+      "reading": "かみそり",
+      "meanings": {
+        "zh-Hant": "剃刀、刮鬍刀"
+      },
+      "example": "旅行用のかばんに、新しい剃刀を入れた。",
+      "examples": [
+        {
+          "text": "旅行用のかばんに、新しい剃刀を入れた。",
+          "translations": {
+            "zh-Hant": "我在旅行袋裡放了一把新的刮鬍刀。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-69879921b328",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "髭（ひげ）",
+      "headword": "髭",
+      "reading": "ひげ",
+      "meanings": {
+        "zh-Hant": "鬍鬚"
+      },
+      "example": "父は休暇中、髭を伸ばしていた。",
+      "examples": [
+        {
+          "text": "父は休暇中、髭を伸ばしていた。",
+          "translations": {
+            "zh-Hant": "父親休假期間留起了鬍鬚。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-d0a2483af7c6",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "剃る（そる）",
+      "headword": "剃る",
+      "reading": "そる",
+      "meanings": {
+        "zh-Hant": "剃、刮"
+      },
+      "example": "出勤する前に、鏡を見ながら髭を剃った。",
+      "examples": [
+        {
+          "text": "出勤する前に、鏡を見ながら髭を剃った。",
+          "translations": {
+            "zh-Hant": "上班前，我照著鏡子刮了鬍子。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-c0dbe1fafaf3",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "櫛（くし）",
+      "headword": "櫛",
+      "reading": "くし",
+      "meanings": {
+        "zh-Hant": "梳子"
+      },
+      "example": "母からもらった木の櫛を今も使っている。",
+      "examples": [
+        {
+          "text": "母からもらった木の櫛を今も使っている。",
+          "translations": {
+            "zh-Hant": "我現在仍使用母親送給我的木梳。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-54608128789b",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "ブラシ（ぶらし）",
+      "headword": "ブラシ",
+      "reading": "ぶらし",
+      "meanings": {
+        "zh-Hant": "刷子、髮刷"
+      },
+      "example": "このブラシは柔らかくて、髪をとかしやすい。",
+      "examples": [
+        {
+          "text": "このブラシは柔らかくて、髪をとかしやすい。",
+          "translations": {
+            "zh-Hant": "這把髮刷很柔軟，很好梳頭髮。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-e6fc348a848e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "しゃっくり（しゃっくり）",
+      "headword": "しゃっくり",
+      "reading": "しゃっくり",
+      "meanings": {
+        "zh-Hant": "打嗝、呃逆"
+      },
+      "example": "食事の途中でしゃっくりが出て、話せなくなった。",
+      "examples": [
+        {
+          "text": "食事の途中でしゃっくりが出て、話せなくなった。",
+          "translations": {
+            "zh-Hant": "吃飯時突然打嗝，讓我說不出話來。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-c420a68b68f8",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "咳（せき）",
+      "headword": "咳",
+      "reading": "せき",
+      "meanings": {
+        "zh-Hant": "咳嗽"
+      },
+      "example": "昨夜は咳がひどくて、何度も目が覚めた。",
+      "examples": [
+        {
+          "text": "昨夜は咳がひどくて、何度も目が覚めた。",
+          "translations": {
+            "zh-Hant": "昨晚咳得很厲害，好幾次都醒了過來。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-336c03e25e7b",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "くしゃみ（くしゃみ）",
+      "headword": "くしゃみ",
+      "reading": "くしゃみ",
+      "meanings": {
+        "zh-Hant": "噴嚏"
+      },
+      "example": "ほこりを吸い込んで、大きなくしゃみをした。",
+      "examples": [
+        {
+          "text": "ほこりを吸い込んで、大きなくしゃみをした。",
+          "translations": {
+            "zh-Hant": "我吸入灰塵，打了一個大噴嚏。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-cb01948a6c26",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "当分（とうぶん）",
+      "headword": "当分",
+      "reading": "とうぶん",
+      "meanings": {
+        "zh-Hant": "暫時、一段時間內"
+      },
+      "example": "引っ越したばかりなので、当分は家具を買わずに暮らす。",
+      "examples": [
+        {
+          "text": "引っ越したばかりなので、当分は家具を買わずに暮らす。",
+          "translations": {
+            "zh-Hant": "才剛搬家，這段時間我打算先不買家具過日子。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-31885b000827",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "たちまち（たちまち）",
+      "headword": "たちまち",
+      "reading": "たちまち",
+      "meanings": {
+        "zh-Hant": "立刻、轉眼間"
+      },
+      "example": "焼きたてのパンは、店に並ぶとたちまち売り切れた。",
+      "examples": [
+        {
+          "text": "焼きたてのパンは、店に並ぶとたちまち売り切れた。",
+          "translations": {
+            "zh-Hant": "剛出爐的麵包一上架，轉眼間就賣光了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-c211fbfc4873",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "看病する（かんびょうする）",
+      "headword": "看病する",
+      "reading": "かんびょうする",
+      "meanings": {
+        "zh-Hant": "照顧病人、看護"
+      },
+      "example": "熱を出した弟を、母が一晩中看病していた。",
+      "examples": [
+        {
+          "text": "熱を出した弟を、母が一晩中看病していた。",
+          "translations": {
+            "zh-Hant": "弟弟發燒了，母親照顧了他一整夜。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-442de16ffdf3",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "予防する（よぼうする）",
+      "headword": "予防する",
+      "reading": "よぼうする",
+      "meanings": {
+        "zh-Hant": "預防"
+      },
+      "example": "病気を予防するために、生活習慣を見直した。",
+      "examples": [
+        {
+          "text": "病気を予防するために、生活習慣を見直した。",
+          "translations": {
+            "zh-Hant": "為了預防疾病，我重新檢視了自己的生活習慣。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-72a8a97b349f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "休養（きゅうよう）",
+      "headword": "休養",
+      "reading": "きゅうよう",
+      "meanings": {
+        "zh-Hant": "休養、調養"
+      },
+      "example": "仕事を数日休んで、家で十分な休養を取った。",
+      "examples": [
+        {
+          "text": "仕事を数日休んで、家で十分な休養を取った。",
+          "translations": {
+            "zh-Hant": "我請了幾天假，在家充分休養。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-87d4f0e108ee",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "消毒（しょうどく）",
+      "headword": "消毒",
+      "reading": "しょうどく",
+      "meanings": {
+        "zh-Hant": "消毒"
+      },
+      "example": "看護師は注射をする前に、腕を消毒した。",
+      "examples": [
+        {
+          "text": "看護師は注射をする前に、腕を消毒した。",
+          "translations": {
+            "zh-Hant": "護理師在打針前先替手臂消毒。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-1a9fd2a1d11f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "不規則（ふきそく）",
+      "headword": "不規則",
+      "reading": "ふきそく",
+      "meanings": {
+        "zh-Hant": "不規則、沒有規律"
+      },
+      "example": "夜勤が続いて、食事の時間が不規則になった。",
+      "examples": [
+        {
+          "text": "夜勤が続いて、食事の時間が不規則になった。",
+          "translations": {
+            "zh-Hant": "連續上夜班，讓我的用餐時間變得不規律。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-84dce2d5a725",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "美容（びよう）",
+      "headword": "美容",
+      "reading": "びよう",
+      "meanings": {
+        "zh-Hant": "美容"
+      },
+      "example": "姉は美容の仕事に興味があり、専門学校で学んでいる。",
+      "examples": [
+        {
+          "text": "姉は美容の仕事に興味があり、専門学校で学んでいる。",
+          "translations": {
+            "zh-Hant": "姊姊對美容工作感興趣，正在專門學校學習。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-d8b166defcd4",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "荒れる（あれる）",
+      "headword": "荒れる",
+      "reading": "あれる",
+      "meanings": {
+        "zh-Hant": "粗糙、荒蕪；天氣惡劣"
+      },
+      "example": "強い風で海が荒れ、船は港を出られなかった。",
+      "examples": [
+        {
+          "text": "強い風で海が荒れ、船は港を出られなかった。",
+          "translations": {
+            "zh-Hant": "強風吹得海面波濤洶湧，船無法出港。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-cda46207a737",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "ひねる（ひねる）",
+      "headword": "ひねる",
+      "reading": "ひねる",
+      "meanings": {
+        "zh-Hant": "扭、擰；扭傷"
+      },
+      "example": "階段を下りるときに足首をひねってしまった。",
+      "examples": [
+        {
+          "text": "階段を下りるときに足首をひねってしまった。",
+          "translations": {
+            "zh-Hant": "下樓梯時，我不小心扭傷了腳踝。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-5583cc1e42ca",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "床（ゆか）",
+      "headword": "床",
+      "reading": "ゆか",
+      "meanings": {
+        "zh-Hant": "地板"
+      },
+      "example": "コップを倒して、床に水をこぼしてしまった。",
+      "examples": [
+        {
+          "text": "コップを倒して、床に水をこぼしてしまった。",
+          "translations": {
+            "zh-Hant": "我打翻杯子，把水灑在了地板上。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-7894d0aad731",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "肌（はだ）",
+      "headword": "肌",
+      "reading": "はだ",
+      "meanings": {
+        "zh-Hant": "皮膚、肌膚"
+      },
+      "example": "冬になると、肌が乾燥しやすくなる。",
+      "examples": [
+        {
+          "text": "冬になると、肌が乾燥しやすくなる。",
+          "translations": {
+            "zh-Hant": "一到冬天，皮膚就容易乾燥。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-3085f770767c",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "上達（じょうたつ）",
+      "headword": "上達",
+      "reading": "じょうたつ",
+      "meanings": {
+        "zh-Hant": "進步、技藝提高"
+      },
+      "example": "毎日練習しているので、妹はピアノの上達が早い。",
+      "examples": [
+        {
+          "text": "毎日練習しているので、妹はピアノの上達が早い。",
+          "translations": {
+            "zh-Hant": "妹妹每天練習，因此鋼琴進步得很快。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-e171c227640e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "見事（みごと）",
+      "headword": "見事",
+      "reading": "みごと",
+      "meanings": {
+        "zh-Hant": "精彩、出色"
+      },
+      "example": "彼女は難しい曲を見事に弾き終えた。",
+      "examples": [
+        {
+          "text": "彼女は難しい曲を見事に弾き終えた。",
+          "translations": {
+            "zh-Hant": "她出色地演奏完了一首高難度的曲子。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-91f240a8a0d3",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "活躍（かつやく）",
+      "headword": "活躍",
+      "reading": "かつやく",
+      "meanings": {
+        "zh-Hant": "活躍、發揮本領"
+      },
+      "example": "地元の選手が世界の大会で活躍している。",
+      "examples": [
+        {
+          "text": "地元の選手が世界の大会で活躍している。",
+          "translations": {
+            "zh-Hant": "本地選手正在世界大賽中大展身手。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-c4d54a6dc7c2",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "従う（したがう）",
+      "headword": "従う",
+      "reading": "したがう",
+      "meanings": {
+        "zh-Hant": "遵從、服從；跟隨"
+      },
+      "example": "係員の指示に従って、順番に会場を出た。",
+      "examples": [
+        {
+          "text": "係員の指示に従って、順番に会場を出た。",
+          "translations": {
+            "zh-Hant": "我們遵照工作人員的指示，依序離開會場。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-48bc955c9526",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "応援（おうえん）",
+      "headword": "応援",
+      "reading": "おうえん",
+      "meanings": {
+        "zh-Hant": "支援、加油"
+      },
+      "example": "試合当日は、家族みんなで弟を応援しに行く。",
+      "examples": [
+        {
+          "text": "試合当日は、家族みんなで弟を応援しに行く。",
+          "translations": {
+            "zh-Hant": "比賽當天，全家人都要去替弟弟加油。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-0aecab7e98ea",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "ベテラン（べてらん）",
+      "headword": "ベテラン",
+      "reading": "べてらん",
+      "meanings": {
+        "zh-Hant": "老手、經驗豐富的人"
+      },
+      "example": "困ったときは、ベテランの先輩に相談している。",
+      "examples": [
+        {
+          "text": "困ったときは、ベテランの先輩に相談している。",
+          "translations": {
+            "zh-Hant": "遇到困難時，我都會找經驗豐富的前輩商量。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-0c510f1b3759",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "攻める（せめる）",
+      "headword": "攻める",
+      "reading": "せめる",
+      "meanings": {
+        "zh-Hant": "進攻、攻擊"
+      },
+      "example": "後半に入ると、相手チームは右側から攻めてきた。",
+      "examples": [
+        {
+          "text": "後半に入ると、相手チームは右側から攻めてきた。",
+          "translations": {
+            "zh-Hant": "進入下半場後，對方球隊從右側發動了進攻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-75309a4d22c4",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "破る（やぶる）",
+      "headword": "破る",
+      "reading": "やぶる",
+      "meanings": {
+        "zh-Hant": "撕破；打破、擊敗"
+      },
+      "example": "弟が百メートル走で学校の記録を破った。",
+      "examples": [
+        {
+          "text": "弟が百メートル走で学校の記録を破った。",
+          "translations": {
+            "zh-Hant": "弟弟在一百公尺賽跑中打破了學校紀錄。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-b95c1ce128f7",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "敗れる（やぶれる）",
+      "headword": "敗れる",
+      "reading": "やぶれる",
+      "meanings": {
+        "zh-Hant": "敗北、輸"
+      },
+      "example": "私たちのチームは決勝戦で強豪に敗れた。",
+      "examples": [
+        {
+          "text": "私たちのチームは決勝戦で強豪に敗れた。",
+          "translations": {
+            "zh-Hant": "我們的球隊在決賽中敗給了強隊。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-97c035bb9f8b",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "引き分け（ひきわけ）",
+      "headword": "引き分け",
+      "reading": "ひきわけ",
+      "meanings": {
+        "zh-Hant": "平手、平局"
+      },
+      "example": "両チームとも点が取れず、試合は引き分けに終わった。",
+      "examples": [
+        {
+          "text": "両チームとも点が取れず、試合は引き分けに終わった。",
+          "translations": {
+            "zh-Hant": "兩隊都沒有得分，比賽以平手結束。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-c2f6dfb42b45",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "著者（ちょしゃ）",
+      "headword": "著者",
+      "reading": "ちょしゃ",
+      "meanings": {
+        "zh-Hant": "作者、著者"
+      },
+      "example": "この小説の著者は、長い間外国で暮らしていた。",
+      "examples": [
+        {
+          "text": "この小説の著者は、長い間外国で暮らしていた。",
+          "translations": {
+            "zh-Hant": "這本小說的作者曾在國外生活很長一段時間。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-f532c7bde6a6",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "文芸（ぶんげい）",
+      "headword": "文芸",
+      "reading": "ぶんげい",
+      "meanings": {
+        "zh-Hant": "文學、文藝"
+      },
+      "example": "高校では文芸部に入り、短い物語を書いていた。",
+      "examples": [
+        {
+          "text": "高校では文芸部に入り、短い物語を書いていた。",
+          "translations": {
+            "zh-Hant": "高中時，我加入文藝社，寫過一些短篇故事。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-711502244919",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "筆者（ひっしゃ）",
+      "headword": "筆者",
+      "reading": "ひっしゃ",
+      "meanings": {
+        "zh-Hant": "撰文者、文章作者"
+      },
+      "example": "この文章の筆者は、自然を守る大切さを訴えている。",
+      "examples": [
+        {
+          "text": "この文章の筆者は、自然を守る大切さを訴えている。",
+          "translations": {
+            "zh-Hant": "這篇文章的作者呼籲大家重視保護自然的重要性。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-7168ea7b6ca9",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "目次（もくじ）",
+      "headword": "目次",
+      "reading": "もくじ",
+      "meanings": {
+        "zh-Hant": "目錄"
+      },
+      "example": "必要な章を探すために、まず目次を開いた。",
+      "examples": [
+        {
+          "text": "必要な章を探すために、まず目次を開いた。",
+          "translations": {
+            "zh-Hant": "為了找到需要的章節，我先翻開了目錄。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-7580bb4ea696",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "索引（さくいん）",
+      "headword": "索引",
+      "reading": "さくいん",
+      "meanings": {
+        "zh-Hant": "索引"
+      },
+      "example": "本の索引で、調べたい言葉のページを探した。",
+      "examples": [
+        {
+          "text": "本の索引で、調べたい言葉のページを探した。",
+          "translations": {
+            "zh-Hant": "我利用書後的索引，尋找想查的詞所在的頁數。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-cfb2cd46a19d",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "執筆（しっぴつ）",
+      "headword": "執筆",
+      "reading": "しっぴつ",
+      "meanings": {
+        "zh-Hant": "執筆、寫作"
+      },
+      "example": "祖母は退職後、故郷の歴史について執筆している。",
+      "examples": [
+        {
+          "text": "祖母は退職後、故郷の歴史について執筆している。",
+          "translations": {
+            "zh-Hant": "祖母退休後，一直在撰寫關於故鄉歷史的文章。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-43aa1bc70d7e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "芝居（しばい）",
+      "headword": "芝居",
+      "reading": "しばい",
+      "meanings": {
+        "zh-Hant": "戲劇、演戲"
+      },
+      "example": "舞台の役者たちの芝居に、すっかり引き込まれた。",
+      "examples": [
+        {
+          "text": "舞台の役者たちの芝居に、すっかり引き込まれた。",
+          "translations": {
+            "zh-Hant": "我完全被舞台上演員們的演技吸引住了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-be57f340403c",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "劇場（げきじょう）",
+      "headword": "劇場",
+      "reading": "げきじょう",
+      "meanings": {
+        "zh-Hant": "劇場"
+      },
+      "example": "開演の三十分前に劇場に着いた。",
+      "examples": [
+        {
+          "text": "開演の三十分前に劇場に着いた。",
+          "translations": {
+            "zh-Hant": "我在開演前三十分鐘抵達了劇場。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-0eb5ac522d81",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "幕（まく）",
+      "headword": "幕",
+      "reading": "まく",
+      "meanings": {
+        "zh-Hant": "幕布；戲劇的一幕"
+      },
+      "example": "幕が上がると、舞台には大きな船が現れた。",
+      "examples": [
+        {
+          "text": "幕が上がると、舞台には大きな船が現れた。",
+          "translations": {
+            "zh-Hant": "幕布一拉開，舞台上出現了一艘大船。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-a0a186eba1d6",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "粗筋（あらすじ）",
+      "headword": "粗筋",
+      "reading": "あらすじ",
+      "meanings": {
+        "zh-Hant": "梗概、故事大綱"
+      },
+      "example": "映画を見る前に、友達から話の粗筋を聞いた。",
+      "examples": [
+        {
+          "text": "映画を見る前に、友達から話の粗筋を聞いた。",
+          "translations": {
+            "zh-Hant": "看電影前，我先聽朋友介紹了故事大綱。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-7ee9bd267c4e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "編み物（あみもの）",
+      "headword": "編み物",
+      "reading": "あみもの",
+      "meanings": {
+        "zh-Hant": "編織；編織品"
+      },
+      "example": "祖母は編み物が得意で、毎年マフラーを作ってくれる。",
+      "examples": [
+        {
+          "text": "祖母は編み物が得意で、毎年マフラーを作ってくれる。",
+          "translations": {
+            "zh-Hant": "祖母很擅長編織，每年都會替我織圍巾。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-1cfa6500ca67",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "工芸（こうげい）",
+      "headword": "工芸",
+      "reading": "こうげい",
+      "meanings": {
+        "zh-Hant": "工藝"
+      },
+      "example": "この町では、竹を使った工芸が盛んだ。",
+      "examples": [
+        {
+          "text": "この町では、竹を使った工芸が盛んだ。",
+          "translations": {
+            "zh-Hant": "這座城鎮的竹工藝很興盛。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-ad415cdf106d",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "綿（わた）",
+      "headword": "綿",
+      "reading": "わた",
+      "meanings": {
+        "zh-Hant": "棉花、棉絮"
+      },
+      "example": "この枕には、柔らかい綿がたくさん詰まっている。",
+      "examples": [
+        {
+          "text": "この枕には、柔らかい綿がたくさん詰まっている。",
+          "translations": {
+            "zh-Hant": "這個枕頭裡塞滿了柔軟的棉花。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-e12c879d1758",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "削る（けずる）",
+      "headword": "削る",
+      "reading": "けずる",
+      "meanings": {
+        "zh-Hant": "削、刨；削減"
+      },
+      "example": "旅行に行くために、毎月の外食費を削った。",
+      "examples": [
+        {
+          "text": "旅行に行くために、毎月の外食費を削った。",
+          "translations": {
+            "zh-Hant": "為了去旅行，我削減了每個月的外食費用。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-868563c321b9",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "彫る（ほる）",
+      "headword": "彫る",
+      "reading": "ほる",
+      "meanings": {
+        "zh-Hant": "雕刻"
+      },
+      "example": "父は木の板に、家族の名前を彫った。",
+      "examples": [
+        {
+          "text": "父は木の板に、家族の名前を彫った。",
+          "translations": {
+            "zh-Hant": "父親在木板上刻下了家人的名字。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-6b9b8178e90d",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "詰めて（つめて）",
+      "headword": "詰めて",
+      "reading": "つめて",
+      "meanings": {
+        "zh-Hant": "靠攏一些、挪緊一些"
+      },
+      "example": "もう一人座れるように、少し詰めてください。",
+      "examples": [
+        {
+          "text": "もう一人座れるように、少し詰めてください。",
+          "translations": {
+            "zh-Hant": "請稍微坐靠近一點，讓另一個人也能坐下。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-791e78206de4",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "日程（にってい）",
+      "headword": "日程",
+      "reading": "にってい",
+      "meanings": {
+        "zh-Hant": "日程、行程安排"
+      },
+      "example": "雨の予報が出たので、旅行の日程を変更した。",
+      "examples": [
+        {
+          "text": "雨の予報が出たので、旅行の日程を変更した。",
+          "translations": {
+            "zh-Hant": "因為天氣預報說會下雨，我更改了旅行行程。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-7448fee3521e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "座席（ざせき）",
+      "headword": "座席",
+      "reading": "ざせき",
+      "meanings": {
+        "zh-Hant": "座位"
+      },
+      "example": "窓側の座席から、遠くの山がよく見えた。",
+      "examples": [
+        {
+          "text": "窓側の座席から、遠くの山がよく見えた。",
+          "translations": {
+            "zh-Hant": "從靠窗的座位，可以清楚看見遠方的山。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-59a79bf69801",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "往復（おうふく）",
+      "headword": "往復",
+      "reading": "おうふく",
+      "meanings": {
+        "zh-Hant": "往返、來回"
+      },
+      "example": "空港まで電車で往復すると、二時間ほどかかる。",
+      "examples": [
+        {
+          "text": "空港まで電車で往復すると、二時間ほどかかる。",
+          "translations": {
+            "zh-Hant": "搭電車往返機場，大約需要兩個小時。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-c08c2c531167",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "片道（かたみち）",
+      "headword": "片道",
+      "reading": "かたみち",
+      "meanings": {
+        "zh-Hant": "單程"
+      },
+      "example": "駅から大学までは、歩いて片道二十分だ。",
+      "examples": [
+        {
+          "text": "駅から大学までは、歩いて片道二十分だ。",
+          "translations": {
+            "zh-Hant": "從車站走到大學，單程需要二十分鐘。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-a2a62f372cd3",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "日帰り（ひがえり）",
+      "headword": "日帰り",
+      "reading": "ひがえり",
+      "meanings": {
+        "zh-Hant": "當天往返"
+      },
+      "example": "週末に、友達と日帰りで温泉へ行った。",
+      "examples": [
+        {
+          "text": "週末に、友達と日帰りで温泉へ行った。",
+          "translations": {
+            "zh-Hant": "週末我和朋友去泡溫泉，當天就回來了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-b90917bc5d0f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "跡（あと）",
+      "headword": "跡",
+      "reading": "あと",
+      "meanings": {
+        "zh-Hant": "痕跡；遺址"
+      },
+      "example": "雪の上に、猫の足の跡が残っていた。",
+      "examples": [
+        {
+          "text": "雪の上に、猫の足の跡が残っていた。",
+          "translations": {
+            "zh-Hant": "雪地上留著貓的腳印。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-c8b677fe5235",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "巡る（めぐる）",
+      "headword": "巡る",
+      "reading": "めぐる",
+      "meanings": {
+        "zh-Hant": "巡遊、走訪；圍繞"
+      },
+      "example": "夏休みに、自転車で湖の周りの町を巡った。",
+      "examples": [
+        {
+          "text": "夏休みに、自転車で湖の周りの町を巡った。",
+          "translations": {
+            "zh-Hant": "暑假時，我騎腳踏車走訪了湖邊的幾座城鎮。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-ba0a503d70e9",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "混雑（こんざつ）",
+      "headword": "混雑",
+      "reading": "こんざつ",
+      "meanings": {
+        "zh-Hant": "擁擠、混雜"
+      },
+      "example": "休日の混雑を避けて、平日に美術館へ行った。",
+      "examples": [
+        {
+          "text": "休日の混雑を避けて、平日に美術館へ行った。",
+          "translations": {
+            "zh-Hant": "為了避開假日的人潮，我選在平日去美術館。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-de7e48166730",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "大通り（おおどおり）",
+      "headword": "大通り",
+      "reading": "おおどおり",
+      "meanings": {
+        "zh-Hant": "大街、主要道路"
+      },
+      "example": "この路地を抜けると、にぎやかな大通りに出る。",
+      "examples": [
+        {
+          "text": "この路地を抜けると、にぎやかな大通りに出る。",
+          "translations": {
+            "zh-Hant": "穿過這條巷子，就會走到熱鬧的大街。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-4890b407b19e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "踏切（ふみきり）",
+      "headword": "踏切",
+      "reading": "ふみきり",
+      "meanings": {
+        "zh-Hant": "鐵路平交道"
+      },
+      "example": "踏切の前で、電車が通り過ぎるのを待った。",
+      "examples": [
+        {
+          "text": "踏切の前で、電車が通り過ぎるのを待った。",
+          "translations": {
+            "zh-Hant": "我在平交道前等電車通過。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-47792baa0c01",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "経由（けいゆ）",
+      "headword": "経由",
+      "reading": "けいゆ",
+      "meanings": {
+        "zh-Hant": "經由、途經"
+      },
+      "example": "大阪を経由して、京都へ向かった。",
+      "examples": [
+        {
+          "text": "大阪を経由して、京都へ向かった。",
+          "translations": {
+            "zh-Hant": "我經由大阪前往京都。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-11ca6cc2b745",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "通学（つうがく）",
+      "headword": "通学",
+      "reading": "つうがく",
+      "meanings": {
+        "zh-Hant": "上學、往返學校"
+      },
+      "example": "弟は毎朝、自転車で高校に通学している。",
+      "examples": [
+        {
+          "text": "弟は毎朝、自転車で高校に通学している。",
+          "translations": {
+            "zh-Hant": "弟弟每天早上騎腳踏車去高中上學。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-f7129d1ccf82",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "ラッシュアワー（らっしゅあわー）",
+      "headword": "ラッシュアワー",
+      "reading": "らっしゅあわー",
+      "meanings": {
+        "zh-Hant": "交通尖峰時段"
+      },
+      "example": "ラッシュアワーを避けるため、いつもより早く家を出た。",
+      "examples": [
+        {
+          "text": "ラッシュアワーを避けるため、いつもより早く家を出た。",
+          "translations": {
+            "zh-Hant": "為了避開交通尖峰時段，我比平常更早出門。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-9eeb47c92694",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "競技（きょうぎ）",
+      "headword": "競技",
+      "reading": "きょうぎ",
+      "meanings": {
+        "zh-Hant": "競技、體育比賽"
+      },
+      "example": "妹は陸上競技の大会で二位になった。",
+      "examples": [
+        {
+          "text": "妹は陸上競技の大会で二位になった。",
+          "translations": {
+            "zh-Hant": "妹妹在田徑比賽中獲得了第二名。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-5791af70d388",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "発つ（たつ）",
+      "headword": "発つ",
+      "reading": "たつ",
+      "meanings": {
+        "zh-Hant": "出發、啟程"
+      },
+      "example": "兄は明日の朝、留学先の国へ発つ。",
+      "examples": [
+        {
+          "text": "兄は明日の朝、留学先の国へ発つ。",
+          "translations": {
+            "zh-Hant": "哥哥明天早上將啟程前往留學的國家。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-e34cf8241396",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "既に（すでに）",
+      "headword": "既に",
+      "reading": "すでに",
+      "meanings": {
+        "zh-Hant": "已經"
+      },
+      "example": "会場に着いたときには、式は既に始まっていた。",
+      "examples": [
+        {
+          "text": "会場に着いたときには、式は既に始まっていた。",
+          "translations": {
+            "zh-Hant": "我抵達會場時，典禮已經開始了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-a5d2e814b770",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "見送る（みおくる）",
+      "headword": "見送る",
+      "reading": "みおくる",
+      "meanings": {
+        "zh-Hant": "送行；暫緩、放棄"
+      },
+      "example": "駅のホームで、遠くへ引っ越す友人を見送った。",
+      "examples": [
+        {
+          "text": "駅のホームで、遠くへ引っ越す友人を見送った。",
+          "translations": {
+            "zh-Hant": "我在車站月台為即將搬到遠方的朋友送行。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-23d5b5303731",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "南北（なんぼく）",
+      "headword": "南北",
+      "reading": "なんぼく",
+      "meanings": {
+        "zh-Hant": "南北"
+      },
+      "example": "この道路は、町の南北を結んでいる。",
+      "examples": [
+        {
+          "text": "この道路は、町の南北を結んでいる。",
+          "translations": {
+            "zh-Hant": "這條道路連接著城鎮的南北兩端。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-844e919ace9c",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "岬（みさき）",
+      "headword": "岬",
+      "reading": "みさき",
+      "meanings": {
+        "zh-Hant": "海岬、海角"
+      },
+      "example": "岬の先に立つ白い灯台が、海からも見える。",
+      "examples": [
+        {
+          "text": "岬の先に立つ白い灯台が、海からも見える。",
+          "translations": {
+            "zh-Hant": "矗立在海岬盡頭的白色燈塔，從海上也看得見。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-60f17d2ad71e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "丘（おか）",
+      "headword": "丘",
+      "reading": "おか",
+      "meanings": {
+        "zh-Hant": "丘陵、小山"
+      },
+      "example": "丘の上から、町全体を見渡せた。",
+      "examples": [
+        {
+          "text": "丘の上から、町全体を見渡せた。",
+          "translations": {
+            "zh-Hant": "從小山丘上，可以眺望整座城鎮。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-fd6ee3c9c9d8",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "険しい（けわしい）",
+      "headword": "険しい",
+      "reading": "けわしい",
+      "meanings": {
+        "zh-Hant": "險峻；嚴峻"
+      },
+      "example": "山頂までは、険しい山道を登らなければならない。",
+      "examples": [
+        {
+          "text": "山頂までは、険しい山道を登らなければならない。",
+          "translations": {
+            "zh-Hant": "要到山頂，必須攀登陡峭的山路。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-9cf0517e493b",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "ふもと（ふもと）",
+      "headword": "ふもと",
+      "reading": "ふもと",
+      "meanings": {
+        "zh-Hant": "山腳"
+      },
+      "example": "山のふもとの小さな村で、一晩泊まった。",
+      "examples": [
+        {
+          "text": "山のふもとの小さな村で、一晩泊まった。",
+          "translations": {
+            "zh-Hant": "我在山腳下的小村莊住了一晚。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-ceb7b2a20cbd",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "谷（たに）",
+      "headword": "谷",
+      "reading": "たに",
+      "meanings": {
+        "zh-Hant": "山谷"
+      },
+      "example": "深い谷の底を、細い川が流れている。",
+      "examples": [
+        {
+          "text": "深い谷の底を、細い川が流れている。",
+          "translations": {
+            "zh-Hant": "深谷底部流著一條細細的河川。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-ed5ffbbcb3f3",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "滝（たき）",
+      "headword": "滝",
+      "reading": "たき",
+      "meanings": {
+        "zh-Hant": "瀑布"
+      },
+      "example": "森の奥を歩くと、大きな滝の音が聞こえてきた。",
+      "examples": [
+        {
+          "text": "森の奥を歩くと、大きな滝の音が聞こえてきた。",
+          "translations": {
+            "zh-Hant": "往森林深處走去，就聽見了大瀑布的水聲。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-59368a07ddf7",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "砂（すな）",
+      "headword": "砂",
+      "reading": "すな",
+      "meanings": {
+        "zh-Hant": "沙、沙子"
+      },
+      "example": "子供たちは海辺の砂で大きな城を作った。",
+      "examples": [
+        {
+          "text": "子供たちは海辺の砂で大きな城を作った。",
+          "translations": {
+            "zh-Hant": "孩子們用海邊的沙子堆了一座大城堡。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-56f085adea3f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "泥（どろ）",
+      "headword": "泥",
+      "reading": "どろ",
+      "meanings": {
+        "zh-Hant": "泥、泥土"
+      },
+      "example": "雨上がりの畑を歩いて、靴が泥だらけになった。",
+      "examples": [
+        {
+          "text": "雨上がりの畑を歩いて、靴が泥だらけになった。",
+          "translations": {
+            "zh-Hant": "我走過雨後的田地，鞋子沾滿了泥巴。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-2ec3aadeb1c7",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "砂漠（さばく）",
+      "headword": "砂漠",
+      "reading": "さばく",
+      "meanings": {
+        "zh-Hant": "沙漠"
+      },
+      "example": "砂漠を旅する人たちは、十分な水を用意した。",
+      "examples": [
+        {
+          "text": "砂漠を旅する人たちは、十分な水を用意した。",
+          "translations": {
+            "zh-Hant": "穿越沙漠的旅人們準備了充足的水。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-b9255c9a6ee5",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "沖（おき）",
+      "headword": "沖",
+      "reading": "おき",
+      "meanings": {
+        "zh-Hant": "離岸較遠的海面、外海"
+      },
+      "example": "釣り船が港を離れ、沖へ向かっていった。",
+      "examples": [
+        {
+          "text": "釣り船が港を離れ、沖へ向かっていった。",
+          "translations": {
+            "zh-Hant": "釣魚船離開港口，駛向外海。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-91ea8e24efa5",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "快晴（かいせい）",
+      "headword": "快晴",
+      "reading": "かいせい",
+      "meanings": {
+        "zh-Hant": "晴朗無雲"
+      },
+      "example": "旅行の最終日は快晴で、山の景色を楽しめた。",
+      "examples": [
+        {
+          "text": "旅行の最終日は快晴で、山の景色を楽しめた。",
+          "translations": {
+            "zh-Hant": "旅行的最後一天晴空萬里，我得以欣賞山景。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-5b977c44201a",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "夕立（ゆうだち）",
+      "headword": "夕立",
+      "reading": "ゆうだち",
+      "meanings": {
+        "zh-Hant": "夏季傍晚的驟雨"
+      },
+      "example": "突然の夕立で、洗濯物がすっかりぬれてしまった。",
+      "examples": [
+        {
+          "text": "突然の夕立で、洗濯物がすっかりぬれてしまった。",
+          "translations": {
+            "zh-Hant": "突如其來的傍晚驟雨，把晾著的衣服全淋濕了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-fd900b7ae294",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "沈む（しずむ）",
+      "headword": "沈む",
+      "reading": "しずむ",
+      "meanings": {
+        "zh-Hant": "下沉；日落；消沉"
+      },
+      "example": "夕日が海に沈むまで、砂浜に座っていた。",
+      "examples": [
+        {
+          "text": "夕日が海に沈むまで、砂浜に座っていた。",
+          "translations": {
+            "zh-Hant": "我坐在沙灘上，直到夕陽沉入海中。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-e8277081f7ad",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "日差し（ひざし）",
+      "headword": "日差し",
+      "reading": "ひざし",
+      "meanings": {
+        "zh-Hant": "陽光、日照"
+      },
+      "example": "午後は日差しが強くなるので、木陰で休もう。",
+      "examples": [
+        {
+          "text": "午後は日差しが強くなるので、木陰で休もう。",
+          "translations": {
+            "zh-Hant": "下午陽光會變強，我們到樹蔭下休息吧。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-b8034369b8c2",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "実り（みのり）",
+      "headword": "実り",
+      "reading": "みのり",
+      "meanings": {
+        "zh-Hant": "結實、收成；成果"
+      },
+      "example": "農家の人たちは、秋の実りを喜んでいた。",
+      "examples": [
+        {
+          "text": "農家の人たちは、秋の実りを喜んでいた。",
+          "translations": {
+            "zh-Hant": "農家們為秋天的收成感到喜悅。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-5604b56da552",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "稲（いね）",
+      "headword": "稲",
+      "reading": "いね",
+      "meanings": {
+        "zh-Hant": "水稻、稻子"
+      },
+      "example": "田んぼの稲が育ち、穂が少しずつ重くなってきた。",
+      "examples": [
+        {
+          "text": "田んぼの稲が育ち、穂が少しずつ重くなってきた。",
+          "translations": {
+            "zh-Hant": "田裡的水稻長大了，稻穗也漸漸變重。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-dd92cb0746f1",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "刈る（かる）",
+      "headword": "刈る",
+      "reading": "かる",
+      "meanings": {
+        "zh-Hant": "割、收割"
+      },
+      "example": "父は週末に、庭の伸びすぎた草を刈った。",
+      "examples": [
+        {
+          "text": "父は週末に、庭の伸びすぎた草を刈った。",
+          "translations": {
+            "zh-Hant": "父親在週末割除了庭院裡長得太高的草。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-dd58e0c1d837",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "初霜（はつしも）",
+      "headword": "初霜",
+      "reading": "はつしも",
+      "meanings": {
+        "zh-Hant": "入秋後的第一次霜"
+      },
+      "example": "今朝は初霜が降り、畑がうっすら白くなった。",
+      "examples": [
+        {
+          "text": "今朝は初霜が降り、畑がうっすら白くなった。",
+          "translations": {
+            "zh-Hant": "今天早上下了入秋後的第一場霜，田地泛著一層淡白色。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-094ae0c81f9e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "凍える（こごえる）",
+      "headword": "凍える",
+      "reading": "こごえる",
+      "meanings": {
+        "zh-Hant": "凍僵"
+      },
+      "example": "雪の中でバスを待ち、手が凍えるほど冷たくなった。",
+      "examples": [
+        {
+          "text": "雪の中でバスを待ち、手が凍えるほど冷たくなった。",
+          "translations": {
+            "zh-Hant": "我在雪中等公車，雙手冷得幾乎凍僵。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-4d9e4f1330f6",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "遥かに（はるかに）",
+      "headword": "遥かに",
+      "reading": "はるかに",
+      "meanings": {
+        "zh-Hant": "遠遠地；大大地"
+      },
+      "example": "新しい道を使うと、以前より遥かに早く着く。",
+      "examples": [
+        {
+          "text": "新しい道を使うと、以前より遥かに早く着く。",
+          "translations": {
+            "zh-Hant": "走新開的道路，會比以前快得多。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-5dc34e331acb",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "眩しい（まぶしい）",
+      "headword": "眩しい",
+      "reading": "まぶしい",
+      "meanings": {
+        "zh-Hant": "耀眼、刺眼"
+      },
+      "example": "カーテンを開けると、朝日が眩しくて目を細めた。",
+      "examples": [
+        {
+          "text": "カーテンを開けると、朝日が眩しくて目を細めた。",
+          "translations": {
+            "zh-Hant": "一拉開窗簾，朝陽刺得我瞇起了眼睛。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-9ceecb4ca62f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "なだらかな（なだらかな）",
+      "headword": "なだらかな",
+      "reading": "なだらかな",
+      "meanings": {
+        "zh-Hant": "平緩的、坡度和緩的"
+      },
+      "example": "なだらかな坂道を、ゆっくり自転車で登った。",
+      "examples": [
+        {
+          "text": "なだらかな坂道を、ゆっくり自転車で登った。",
+          "translations": {
+            "zh-Hant": "我騎著腳踏車，慢慢爬上平緩的坡道。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-5f2567109f06",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "一段と（いちだんと）",
+      "headword": "一段と",
+      "reading": "いちだんと",
+      "meanings": {
+        "zh-Hant": "更加、越發"
+      },
+      "example": "雨が上がると、山の緑が一段と鮮やかに見えた。",
+      "examples": [
+        {
+          "text": "雨が上がると、山の緑が一段と鮮やかに見えた。",
+          "translations": {
+            "zh-Hant": "雨停之後，山林的綠色看起來更加鮮明了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-660edcbf4a44",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "遥か（はるか）",
+      "headword": "遥か",
+      "reading": "はるか",
+      "meanings": {
+        "zh-Hant": "遙遠、久遠"
+      },
+      "example": "遥か遠くに、雪をかぶった山が見えた。",
+      "examples": [
+        {
+          "text": "遥か遠くに、雪をかぶった山が見えた。",
+          "translations": {
+            "zh-Hant": "在遙遠的地方，可以看見覆著白雪的山。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-55a2b740b60d",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "湧く（わく）",
+      "headword": "湧く",
+      "reading": "わく",
+      "meanings": {
+        "zh-Hant": "湧出；產生、湧現"
+      },
+      "example": "岩の間から、冷たい水が湧いている。",
+      "examples": [
+        {
+          "text": "岩の間から、冷たい水が湧いている。",
+          "translations": {
+            "zh-Hant": "冰涼的水從岩石縫隙間湧出。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-9b514f4c8003",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "眺める（ながめる）",
+      "headword": "眺める",
+      "reading": "ながめる",
+      "meanings": {
+        "zh-Hant": "眺望、欣賞"
+      },
+      "example": "窓辺に座り、庭に咲く花を眺めていた。",
+      "examples": [
+        {
+          "text": "窓辺に座り、庭に咲く花を眺めていた。",
+          "translations": {
+            "zh-Hant": "我坐在窗邊，欣賞庭院裡盛開的花。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-fa3c082d3cc6",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "単位（たんい）",
+      "headword": "単位",
+      "reading": "たんい",
+      "meanings": {
+        "zh-Hant": "單位；學分"
+      },
+      "example": "卒業に必要な単位を、すべて取り終えた。",
+      "examples": [
+        {
+          "text": "卒業に必要な単位を、すべて取り終えた。",
+          "translations": {
+            "zh-Hant": "我已修完畢業所需的所有學分。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-491683081aa5",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "休講（きゅうこう）",
+      "headword": "休講",
+      "reading": "きゅうこう",
+      "meanings": {
+        "zh-Hant": "停課"
+      },
+      "example": "先生が出張中のため、今日の授業は休講になった。",
+      "examples": [
+        {
+          "text": "先生が出張中のため、今日の授業は休講になった。",
+          "translations": {
+            "zh-Hant": "因為老師出差，今天的課停課了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-9d9f6e81c24b",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "科目（かもく）",
+      "headword": "科目",
+      "reading": "かもく",
+      "meanings": {
+        "zh-Hant": "科目"
+      },
+      "example": "今学期は、興味のある科目を三つ選んだ。",
+      "examples": [
+        {
+          "text": "今学期は、興味のある科目を三つ選んだ。",
+          "translations": {
+            "zh-Hant": "這學期，我選了三門自己感興趣的科目。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-4a616be3a2c5",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "児童（じどう）",
+      "headword": "児童",
+      "reading": "じどう",
+      "meanings": {
+        "zh-Hant": "兒童、小學生"
+      },
+      "example": "児童たちは、先生と一緒に野菜を育てている。",
+      "examples": [
+        {
+          "text": "児童たちは、先生と一緒に野菜を育てている。",
+          "translations": {
+            "zh-Hant": "小學生們和老師一起種植蔬菜。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-ab39b81e985f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "実習（じっしゅう）",
+      "headword": "実習",
+      "reading": "じっしゅう",
+      "meanings": {
+        "zh-Hant": "實習、實作練習"
+      },
+      "example": "調理の実習で、野菜の切り方を習った。",
+      "examples": [
+        {
+          "text": "調理の実習で、野菜の切り方を習った。",
+          "translations": {
+            "zh-Hant": "在烹飪實作課上，我學了蔬菜的切法。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-6fe255e728ba",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "期末（きまつ）",
+      "headword": "期末",
+      "reading": "きまつ",
+      "meanings": {
+        "zh-Hant": "期末"
+      },
+      "example": "期末のレポートを書くため、図書館で資料を集めた。",
+      "examples": [
+        {
+          "text": "期末のレポートを書くため、図書館で資料を集めた。",
+          "translations": {
+            "zh-Hant": "為了寫期末報告，我到圖書館蒐集資料。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-73f344b1ced1",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "筆記（ひっき）",
+      "headword": "筆記",
+      "reading": "ひっき",
+      "meanings": {
+        "zh-Hant": "筆記、書寫記錄"
+      },
+      "example": "試験は、筆記と面接の二つに分かれている。",
+      "examples": [
+        {
+          "text": "試験は、筆記と面接の二つに分かれている。",
+          "translations": {
+            "zh-Hant": "考試分為筆試和面試兩個部分。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-86d43f67635a",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "暗記（あんき）",
+      "headword": "暗記",
+      "reading": "あんき",
+      "meanings": {
+        "zh-Hant": "背誦、熟記"
+      },
+      "example": "年号の暗記だけでなく、出来事の背景も学びたい。",
+      "examples": [
+        {
+          "text": "年号の暗記だけでなく、出来事の背景も学びたい。",
+          "translations": {
+            "zh-Hant": "除了熟記年代，我也想了解事件的背景。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-db4959778e7e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "優れる（すぐれる）",
+      "headword": "優れる",
+      "reading": "すぐれる",
+      "meanings": {
+        "zh-Hant": "優秀、出色"
+      },
+      "example": "このかばんは軽く、耐久性にも優れている。",
+      "examples": [
+        {
+          "text": "このかばんは軽く、耐久性にも優れている。",
+          "translations": {
+            "zh-Hant": "這個包包很輕，耐用性也很出色。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-d359598226ee",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "妥当（だとう）",
+      "headword": "妥当",
+      "reading": "だとう",
+      "meanings": {
+        "zh-Hant": "妥當、適當、合理"
+      },
+      "example": "作業にかかる時間を考えると、この料金は妥当だ。",
+      "examples": [
+        {
+          "text": "作業にかかる時間を考えると、この料金は妥当だ。",
+          "translations": {
+            "zh-Hant": "考慮到工作所需的時間，這個收費是合理的。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-c98ab5697ac9",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "学会（がっかい）",
+      "headword": "学会",
+      "reading": "がっかい",
+      "meanings": {
+        "zh-Hant": "學會；學術會議"
+      },
+      "example": "来月の学会で、研究の成果を発表する予定だ。",
+      "examples": [
+        {
+          "text": "来月の学会で、研究の成果を発表する予定だ。",
+          "translations": {
+            "zh-Hant": "我預計在下個月的學術會議上發表研究成果。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-80db605c7b72",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "哲学（てつがく）",
+      "headword": "哲学",
+      "reading": "てつがく",
+      "meanings": {
+        "zh-Hant": "哲學"
+      },
+      "example": "大学で哲学を学び、人の生き方について考えるようになった。",
+      "examples": [
+        {
+          "text": "大学で哲学を学び、人の生き方について考えるようになった。",
+          "translations": {
+            "zh-Hant": "在大學學習哲學後，我開始思考人的生活方式。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-ff08785605a2",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "自習（じしゅう）",
+      "headword": "自習",
+      "reading": "じしゅう",
+      "meanings": {
+        "zh-Hant": "自習"
+      },
+      "example": "先生が来るまで、教室で静かに自習していた。",
+      "examples": [
+        {
+          "text": "先生が来るまで、教室で静かに自習していた。",
+          "translations": {
+            "zh-Hant": "老師來之前，我一直在教室裡安靜自習。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-f7e479b892bf",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "採点する（さいてんする）",
+      "headword": "採点する",
+      "reading": "さいてんする",
+      "meanings": {
+        "zh-Hant": "評分、批改"
+      },
+      "example": "先生は週末に、学生の答案を採点した。",
+      "examples": [
+        {
+          "text": "先生は週末に、学生の答案を採点した。",
+          "translations": {
+            "zh-Hant": "老師在週末批改了學生的考卷。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-4f7230d23ede",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "怠ける（なまける）",
+      "headword": "怠ける",
+      "reading": "なまける",
+      "meanings": {
+        "zh-Hant": "偷懶、懈怠"
+      },
+      "example": "休みの日も怠けずに、日本語の勉強を続けている。",
+      "examples": [
+        {
+          "text": "休みの日も怠けずに、日本語の勉強を続けている。",
+          "translations": {
+            "zh-Hant": "即使放假，我也不偷懶，持續學習日語。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-171249948271",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "思いつく（おもいつく）",
+      "headword": "思いつく",
+      "reading": "おもいつく",
+      "meanings": {
+        "zh-Hant": "想到、想出"
+      },
+      "example": "散歩をしているときに、いい考えを思いついた。",
+      "examples": [
+        {
+          "text": "散歩をしているときに、いい考えを思いついた。",
+          "translations": {
+            "zh-Hant": "散步的時候，我想到了一個好主意。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-2ec848c178ed",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "慌ただしい（あわただしい）",
+      "headword": "慌ただしい",
+      "reading": "あわただしい",
+      "meanings": {
+        "zh-Hant": "忙亂、匆忙"
+      },
+      "example": "引っ越しの準備で、慌ただしい一週間を過ごした。",
+      "examples": [
+        {
+          "text": "引っ越しの準備で、慌ただしい一週間を過ごした。",
+          "translations": {
+            "zh-Hant": "為了準備搬家，我度過了忙亂的一週。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-cb8c98168bd4",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "能率（のうりつ）",
+      "headword": "能率",
+      "reading": "のうりつ",
+      "meanings": {
+        "zh-Hant": "效率、工作效率"
+      },
+      "example": "道具の置き場所を変えたら、仕事の能率が上がった。",
+      "examples": [
+        {
+          "text": "道具の置き場所を変えたら、仕事の能率が上がった。",
+          "translations": {
+            "zh-Hant": "改變工具的擺放位置後，工作效率提高了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-b4c3a6bcdbe8",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "引き受ける（ひきうける）",
+      "headword": "引き受ける",
+      "reading": "ひきうける",
+      "meanings": {
+        "zh-Hant": "承擔、接受委託"
+      },
+      "example": "忙しい同僚に代わって、会議の準備を引き受けた。",
+      "examples": [
+        {
+          "text": "忙しい同僚に代わって、会議の準備を引き受けた。",
+          "translations": {
+            "zh-Hant": "我代替忙碌的同事，接下了準備會議的工作。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-29f0c8eca618",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "失業（しつぎょう）",
+      "headword": "失業",
+      "reading": "しつぎょう",
+      "meanings": {
+        "zh-Hant": "失業"
+      },
+      "example": "父は失業した後、新しい仕事を探し始めた。",
+      "examples": [
+        {
+          "text": "父は失業した後、新しい仕事を探し始めた。",
+          "translations": {
+            "zh-Hant": "父親失業後，開始尋找新工作。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-a249b746a7bd",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "稼ぐ（かせぐ）",
+      "headword": "稼ぐ",
+      "reading": "かせぐ",
+      "meanings": {
+        "zh-Hant": "賺錢、謀生"
+      },
+      "example": "学生のころは、店で働いて生活費を稼いでいた。",
+      "examples": [
+        {
+          "text": "学生のころは、店で働いて生活費を稼いでいた。",
+          "translations": {
+            "zh-Hant": "學生時期，我在店裡打工賺生活費。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-cf4d6cb15471",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "破産（はさん）",
+      "headword": "破産",
+      "reading": "はさん",
+      "meanings": {
+        "zh-Hant": "破產"
+      },
+      "example": "借金が増え続け、その会社はついに破産した。",
+      "examples": [
+        {
+          "text": "借金が増え続け、その会社はついに破産した。",
+          "translations": {
+            "zh-Hant": "那家公司的債務不斷增加，最後終於破產了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-590cd32346f0",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "月給（げっきゅう）",
+      "headword": "月給",
+      "reading": "げっきゅう",
+      "meanings": {
+        "zh-Hant": "月薪"
+      },
+      "example": "初めての月給で、両親に食事をごちそうした。",
+      "examples": [
+        {
+          "text": "初めての月給で、両親に食事をごちそうした。",
+          "translations": {
+            "zh-Hant": "我領到第一份月薪後，請父母吃了一頓飯。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-eeef35e74dc6",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "張り切る（はりきる）",
+      "headword": "張り切る",
+      "reading": "はりきる",
+      "meanings": {
+        "zh-Hant": "幹勁十足、精神抖擻"
+      },
+      "example": "初めて店を手伝うことになり、弟は朝から張り切っている。",
+      "examples": [
+        {
+          "text": "初めて店を手伝うことになり、弟は朝から張り切っている。",
+          "translations": {
+            "zh-Hant": "第一次要幫店裡的忙，弟弟從早上起就幹勁十足。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-4e519d496fb4",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "資本（しほん）",
+      "headword": "資本",
+      "reading": "しほん",
+      "meanings": {
+        "zh-Hant": "資本、資金"
+      },
+      "example": "二人は少ない資本で、小さな店を始めた。",
+      "examples": [
+        {
+          "text": "二人は少ない資本で、小さな店を始めた。",
+          "translations": {
+            "zh-Hant": "兩人用不多的資金，開了一家小店。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-0a9ee0e6af2f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "雇う（やとう）",
+      "headword": "雇う",
+      "reading": "やとう",
+      "meanings": {
+        "zh-Hant": "僱用"
+      },
+      "example": "店が忙しくなったので、新しい店員を二人雇った。",
+      "examples": [
+        {
+          "text": "店が忙しくなったので、新しい店員を二人雇った。",
+          "translations": {
+            "zh-Hant": "店裡變忙了，因此新僱用了兩名店員。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-e9054af8a1ea",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "募集（ぼしゅう）",
+      "headword": "募集",
+      "reading": "ぼしゅう",
+      "meanings": {
+        "zh-Hant": "招募、徵集"
+      },
+      "example": "図書館では、本の整理を手伝う人を募集している。",
+      "examples": [
+        {
+          "text": "図書館では、本の整理を手伝う人を募集している。",
+          "translations": {
+            "zh-Hant": "圖書館正在招募幫忙整理書籍的人。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-66ec1ff92fe1",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "重役（じゅうやく）",
+      "headword": "重役",
+      "reading": "じゅうやく",
+      "meanings": {
+        "zh-Hant": "公司董事、高級主管"
+      },
+      "example": "来週の会議には、会社の重役も出席する。",
+      "examples": [
+        {
+          "text": "来週の会議には、会社の重役も出席する。",
+          "translations": {
+            "zh-Hant": "下週的會議，公司高階主管也會出席。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-6b39fef52ea6",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "組合（くみあい）",
+      "headword": "組合",
+      "reading": "くみあい",
+      "meanings": {
+        "zh-Hant": "工會、合作社等組織"
+      },
+      "example": "労働組合が、働く時間について会社と話し合った。",
+      "examples": [
+        {
+          "text": "労働組合が、働く時間について会社と話し合った。",
+          "translations": {
+            "zh-Hant": "工會和公司討論了工時問題。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-7d4b3e381d4c",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "金融（きんゆう）",
+      "headword": "金融",
+      "reading": "きんゆう",
+      "meanings": {
+        "zh-Hant": "金融"
+      },
+      "example": "兄は大学で経済を学び、今は金融の仕事をしている。",
+      "examples": [
+        {
+          "text": "兄は大学で経済を学び、今は金融の仕事をしている。",
+          "translations": {
+            "zh-Hant": "哥哥在大學學習經濟，現在從事金融工作。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-59631e105136",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "引き出す（ひきだす）",
+      "headword": "引き出す",
+      "reading": "ひきだす",
+      "meanings": {
+        "zh-Hant": "拉出；提款；引出"
+      },
+      "example": "旅行の前に、銀行で現金を引き出した。",
+      "examples": [
+        {
+          "text": "旅行の前に、銀行で現金を引き出した。",
+          "translations": {
+            "zh-Hant": "旅行前，我到銀行提領了現金。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-d10c42c9b9ed",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "当てはまる（あてはまる）",
+      "headword": "当てはまる",
+      "reading": "あてはまる",
+      "meanings": {
+        "zh-Hant": "適用、符合"
+      },
+      "example": "この説明は、すべての場合に当てはまるわけではない。",
+      "examples": [
+        {
+          "text": "この説明は、すべての場合に当てはまるわけではない。",
+          "translations": {
+            "zh-Hant": "這個說明並不適用於所有情況。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-d8bb45ec238f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "追いかける（おいかける）",
+      "headword": "追いかける",
+      "reading": "おいかける",
+      "meanings": {
+        "zh-Hant": "追趕、追逐"
+      },
+      "example": "犬が転がるボールを追いかけて、庭を走り回った。",
+      "examples": [
+        {
+          "text": "犬が転がるボールを追いかけて、庭を走り回った。",
+          "translations": {
+            "zh-Hant": "狗追著滾動的球，在庭院裡跑來跑去。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-fee823c5642b",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "マスコミ（ますこみ）",
+      "headword": "マスコミ",
+      "reading": "ますこみ",
+      "meanings": {
+        "zh-Hant": "大眾傳媒、媒體"
+      },
+      "example": "事件の現場には、マスコミの記者が大勢集まった。",
+      "examples": [
+        {
+          "text": "事件の現場には、マスコミの記者が大勢集まった。",
+          "translations": {
+            "zh-Hant": "事件現場聚集了許多媒體記者。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-a7e766a34c0c",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "見出し（みだし）",
+      "headword": "見出し",
+      "reading": "みだし",
+      "meanings": {
+        "zh-Hant": "標題、小標題"
+      },
+      "example": "新聞の大きな見出しを見て、足を止めた。",
+      "examples": [
+        {
+          "text": "新聞の大きな見出しを見て、足を止めた。",
+          "translations": {
+            "zh-Hant": "我看到報紙的大標題，不禁停下了腳步。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-51e4c5683e8c",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "近々（ちかぢか）",
+      "headword": "近々",
+      "reading": "ちかぢか",
+      "meanings": {
+        "zh-Hant": "不久、近日內"
+      },
+      "example": "近々、駅の近くに新しい本屋ができるそうだ。",
+      "examples": [
+        {
+          "text": "近々、駅の近くに新しい本屋ができるそうだ。",
+          "translations": {
+            "zh-Hant": "聽說車站附近不久後就會開一家新書店。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-6c753c6017fe",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "自ら（みずから）",
+      "headword": "自ら",
+      "reading": "みずから",
+      "meanings": {
+        "zh-Hant": "親自；自己、主動地"
+      },
+      "example": "店長自ら客の前に出て、事情を説明した。",
+      "examples": [
+        {
+          "text": "店長自ら客の前に出て、事情を説明した。",
+          "translations": {
+            "zh-Hant": "店長親自出面，向顧客說明情況。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-2ca0c3566834",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "じっくり（じっくり）",
+      "headword": "じっくり",
+      "reading": "じっくり",
+      "meanings": {
+        "zh-Hant": "仔細地、耐心地"
+      },
+      "example": "大きな買い物なので、家族とじっくり相談したい。",
+      "examples": [
+        {
+          "text": "大きな買い物なので、家族とじっくり相談したい。",
+          "translations": {
+            "zh-Hant": "因為是大筆消費，我想和家人仔細商量。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-c8f01d9528f8",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "流れる（ながれる）",
+      "headword": "流れる",
+      "reading": "ながれる",
+      "meanings": {
+        "zh-Hant": "流動；播放；流逝"
+      },
+      "example": "店の中には、静かな音楽が流れていた。",
+      "examples": [
+        {
+          "text": "店の中には、静かな音楽が流れていた。",
+          "translations": {
+            "zh-Hant": "店裡播放著輕柔的音樂。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-8b99ec5c3b33",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "掛かる（かかる）",
+      "headword": "掛かる",
+      "reading": "かかる",
+      "meanings": {
+        "zh-Hant": "花費時間或金錢；掛著；電話打來"
+      },
+      "example": "この修理には、一週間ほど掛かると言われた。",
+      "examples": [
+        {
+          "text": "この修理には、一週間ほど掛かると言われた。",
+          "translations": {
+            "zh-Hant": "對方告訴我，這項修理大約需要一週。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-981b91b281ca",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "浴びる（あびる）",
+      "headword": "浴びる",
+      "reading": "あびる",
+      "meanings": {
+        "zh-Hant": "淋、沐浴；受到、遭受"
+      },
+      "example": "毎朝シャワーを浴びてから、朝ご飯を食べる。",
+      "examples": [
+        {
+          "text": "毎朝シャワーを浴びてから、朝ご飯を食べる。",
+          "translations": {
+            "zh-Hant": "我每天早上先淋浴，再吃早餐。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-a34d05d4c3d7",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "消去（しょうきょ）",
+      "headword": "消去",
+      "reading": "しょうきょ",
+      "meanings": {
+        "zh-Hant": "消除、清除"
+      },
+      "example": "古い携帯電話を売る前に、保存したデータをすべて消去した。",
+      "examples": [
+        {
+          "text": "古い携帯電話を売る前に、保存したデータをすべて消去した。",
+          "translations": {
+            "zh-Hant": "賣掉舊手機前，我清除了所有儲存的資料。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-132c92296835",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "削除（さくじょ）",
+      "headword": "削除",
+      "reading": "さくじょ",
+      "meanings": {
+        "zh-Hant": "刪除"
+      },
+      "example": "間違えて同じ写真を二枚保存したので、一枚を削除した。",
+      "examples": [
+        {
+          "text": "間違えて同じ写真を二枚保存したので、一枚を削除した。",
+          "translations": {
+            "zh-Hant": "我不小心把同一張照片存了兩次，所以刪掉了其中一張。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-347c9d2a0188",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "添付する（てんぷする）",
+      "headword": "添付する",
+      "reading": "てんぷする",
+      "meanings": {
+        "zh-Hant": "附上、添加附件"
+      },
+      "example": "申込書をメールに添付して、担当者に送った。",
+      "examples": [
+        {
+          "text": "申込書をメールに添付して、担当者に送った。",
+          "translations": {
+            "zh-Hant": "我把申請表附在電子郵件中，寄給了負責人。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-9b7ee1c03afd",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "拡大（かくだい）",
+      "headword": "拡大",
+      "reading": "かくだい",
+      "meanings": {
+        "zh-Hant": "擴大、放大"
+      },
+      "example": "地図を拡大すると、小さな道の名前まで読めた。",
+      "examples": [
+        {
+          "text": "地図を拡大すると、小さな道の名前まで読めた。",
+          "translations": {
+            "zh-Hant": "把地圖放大後，連小路的名稱都看得清楚了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-b93cfc8549ea",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "縮小（しゅくしょう）",
+      "headword": "縮小",
+      "reading": "しゅくしょう",
+      "meanings": {
+        "zh-Hant": "縮小"
+      },
+      "example": "写真を縮小して、履歴書の右上に貼った。",
+      "examples": [
+        {
+          "text": "写真を縮小して、履歴書の右上に貼った。",
+          "translations": {
+            "zh-Hant": "我把照片縮小，貼在履歷表的右上角。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-0f27af0aa853",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "接続する（せつぞくする）",
+      "headword": "接続する",
+      "reading": "せつぞくする",
+      "meanings": {
+        "zh-Hant": "連接、接通"
+      },
+      "example": "パソコンをテレビに接続して、家族で旅行の写真を見た。",
+      "examples": [
+        {
+          "text": "パソコンをテレビに接続して、家族で旅行の写真を見た。",
+          "translations": {
+            "zh-Hant": "我把電腦連接到電視，和家人一起看旅行的照片。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-15c02c079cc9",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "モニター（もにたー）",
+      "headword": "モニター",
+      "reading": "もにたー",
+      "meanings": {
+        "zh-Hant": "顯示器；監測；試用評價者"
+      },
+      "example": "モニターの位置を少し上げると、画面が見やすくなった。",
+      "examples": [
+        {
+          "text": "モニターの位置を少し上げると、画面が見やすくなった。",
+          "translations": {
+            "zh-Hant": "把顯示器的位置稍微調高後，畫面就更容易看清楚了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-c9fc5d2357fc",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "若干（じゃっかん）",
+      "headword": "若干",
+      "reading": "じゃっかん",
+      "meanings": {
+        "zh-Hant": "少許、若干"
+      },
+      "example": "この二つの商品は、色に若干の違いがある。",
+      "examples": [
+        {
+          "text": "この二つの商品は、色に若干の違いがある。",
+          "translations": {
+            "zh-Hant": "這兩件商品的顏色略有差異。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-3cccab07e675",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "変換（へんかん）",
+      "headword": "変換",
+      "reading": "へんかん",
+      "meanings": {
+        "zh-Hant": "轉換"
+      },
+      "example": "名前を入力したら、別の漢字に変換されてしまった。",
+      "examples": [
+        {
+          "text": "名前を入力したら、別の漢字に変換されてしまった。",
+          "translations": {
+            "zh-Hant": "輸入姓名後，文字卻被轉換成了別的漢字。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-64dfd361e4bd",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "大まか（おおまか）",
+      "headword": "大まか",
+      "reading": "おおまか",
+      "meanings": {
+        "zh-Hant": "粗略、大致"
+      },
+      "example": "出張の日程は、大まかに決めてから細かく調整しよう。",
+      "examples": [
+        {
+          "text": "出張の日程は、大まかに決めてから細かく調整しよう。",
+          "translations": {
+            "zh-Hant": "出差行程先大致定下來，再調整細節吧。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-a8d44d0b5ac6",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "でたらめ（でたらめ）",
+      "headword": "でたらめ",
+      "reading": "でたらめ",
+      "meanings": {
+        "zh-Hant": "胡說、胡亂；毫無根據"
+      },
+      "example": "彼の話はでたらめで、実際にはそんな店は存在しなかった。",
+      "examples": [
+        {
+          "text": "彼の話はでたらめで、実際にはそんな店は存在しなかった。",
+          "translations": {
+            "zh-Hant": "他說的話全是胡扯，實際上根本沒有那家店。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-56eef131feef",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "うっかり（うっかり）",
+      "headword": "うっかり",
+      "reading": "うっかり",
+      "meanings": {
+        "zh-Hant": "不留神、疏忽地"
+      },
+      "example": "急いでいたので、うっかり傘を電車に忘れてしまった。",
+      "examples": [
+        {
+          "text": "急いでいたので、うっかり傘を電車に忘れてしまった。",
+          "translations": {
+            "zh-Hant": "因為趕時間，我不留神把傘忘在電車上了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-5cbd0ef84f5c",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "音声（おんせい）",
+      "headword": "音声",
+      "reading": "おんせい",
+      "meanings": {
+        "zh-Hant": "語音、聲音"
+      },
+      "example": "この動画は音声が小さくて、何を言っているのか聞き取れない。",
+      "examples": [
+        {
+          "text": "この動画は音声が小さくて、何を言っているのか聞き取れない。",
+          "translations": {
+            "zh-Hant": "這段影片的聲音太小，聽不清楚在說什麼。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-79d23cf5964e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "立ち上げる（たちあげる）",
+      "headword": "立ち上げる",
+      "reading": "たちあげる",
+      "meanings": {
+        "zh-Hant": "啟動；創辦、成立"
+      },
+      "example": "大学時代の友人と、小さな会社を立ち上げた。",
+      "examples": [
+        {
+          "text": "大学時代の友人と、小さな会社を立ち上げた。",
+          "translations": {
+            "zh-Hant": "我和大學時代的朋友一起創辦了一家小公司。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-f0f420f9ae7d",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "盛り上げる（もりあげる）",
+      "headword": "盛り上げる",
+      "reading": "もりあげる",
+      "meanings": {
+        "zh-Hant": "堆高；使氣氛熱烈"
+      },
+      "example": "司会者の明るい話し方が、会場の雰囲気を盛り上げた。",
+      "examples": [
+        {
+          "text": "司会者の明るい話し方が、会場の雰囲気を盛り上げた。",
+          "translations": {
+            "zh-Hant": "主持人開朗的說話方式讓會場的氣氛熱絡了起來。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-5c627509af2f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "仏（ほとけ）",
+      "headword": "仏",
+      "reading": "ほとけ",
+      "meanings": {
+        "zh-Hant": "佛；逝者"
+      },
+      "example": "寺の本堂に入り、仏の前で静かに手を合わせた。",
+      "examples": [
+        {
+          "text": "寺の本堂に入り、仏の前で静かに手を合わせた。",
+          "translations": {
+            "zh-Hant": "走進寺院正殿後，我在佛像前靜靜地合掌。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-517a29772196",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "願う（ねがう）",
+      "headword": "願う",
+      "reading": "ねがう",
+      "meanings": {
+        "zh-Hant": "希望、祈願；請求"
+      },
+      "example": "離れて暮らす両親の健康を、いつも願っている。",
+      "examples": [
+        {
+          "text": "離れて暮らす両親の健康を、いつも願っている。",
+          "translations": {
+            "zh-Hant": "我一直祈願住在遠方的父母身體健康。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-d47715c4a81e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "ふさわしい（ふさわしい）",
+      "headword": "ふさわしい",
+      "reading": "ふさわしい",
+      "meanings": {
+        "zh-Hant": "合適、相稱"
+      },
+      "example": "式典には、その場にふさわしい服装で出席してください。",
+      "examples": [
+        {
+          "text": "式典には、その場にふさわしい服装で出席してください。",
+          "translations": {
+            "zh-Hant": "出席典禮時，請穿著適合該場合的服裝。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-fa8108591f86",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "承諾（しょうだく）",
+      "headword": "承諾",
+      "reading": "しょうだく",
+      "meanings": {
+        "zh-Hant": "同意、答應"
+      },
+      "example": "店長の承諾を得てから、店内の写真を撮った。",
+      "examples": [
+        {
+          "text": "店長の承諾を得てから、店内の写真を撮った。",
+          "translations": {
+            "zh-Hant": "取得店長的同意後，我才拍攝店內的照片。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-fa49e5e95c28",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "築く（きずく）",
+      "headword": "築く",
+      "reading": "きずく",
+      "meanings": {
+        "zh-Hant": "建造；建立、奠定"
+      },
+      "example": "何度も話し合うことで、少しずつ信頼関係を築いてきた。",
+      "examples": [
+        {
+          "text": "何度も話し合うことで、少しずつ信頼関係を築いてきた。",
+          "translations": {
+            "zh-Hant": "透過一次次的溝通，我們逐漸建立了信任關係。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-5b71f796f11e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "資金（しきん）",
+      "headword": "資金",
+      "reading": "しきん",
+      "meanings": {
+        "zh-Hant": "資金"
+      },
+      "example": "店を開くための資金を、三年間かけて用意した。",
+      "examples": [
+        {
+          "text": "店を開くための資金を、三年間かけて用意した。",
+          "translations": {
+            "zh-Hant": "我花了三年時間，籌備開店所需的資金。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-b8e42de9b489",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "花嫁（はなよめ）",
+      "headword": "花嫁",
+      "reading": "はなよめ",
+      "meanings": {
+        "zh-Hant": "新娘"
+      },
+      "example": "花嫁は父親と腕を組んで、ゆっくり歩いてきた。",
+      "examples": [
+        {
+          "text": "花嫁は父親と腕を組んで、ゆっくり歩いてきた。",
+          "translations": {
+            "zh-Hant": "新娘挽著父親的手臂，緩緩地走了過來。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-7554311e6296",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "盛大（せいだい）",
+      "headword": "盛大",
+      "reading": "せいだい",
+      "meanings": {
+        "zh-Hant": "盛大、隆重"
+      },
+      "example": "祖父の九十歳の誕生日を、親戚一同で盛大に祝った。",
+      "examples": [
+        {
+          "text": "祖父の九十歳の誕生日を、親戚一同で盛大に祝った。",
+          "translations": {
+            "zh-Hant": "親戚們齊聚一堂，隆重地慶祝祖父的九十大壽。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-61f5062c5fca",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "豪華（ごうか）",
+      "headword": "豪華",
+      "reading": "ごうか",
+      "meanings": {
+        "zh-Hant": "豪華、奢華"
+      },
+      "example": "こんなに豪華なホテルに泊まるのは、初めてだ。",
+      "examples": [
+        {
+          "text": "こんなに豪華なホテルに泊まるのは、初めてだ。",
+          "translations": {
+            "zh-Hant": "這是我第一次入住這麼豪華的飯店。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-93b59c20f95e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "華やかな（はなやかな）",
+      "headword": "華やかな",
+      "reading": "はなやかな",
+      "meanings": {
+        "zh-Hant": "華麗的、光彩奪目的"
+      },
+      "example": "華やかな衣装を着た踊り手たちが、舞台に並んだ。",
+      "examples": [
+        {
+          "text": "華やかな衣装を着た踊り手たちが、舞台に並んだ。",
+          "translations": {
+            "zh-Hant": "穿著華麗服裝的舞者們在舞臺上排成一列。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-fbfdc775541a",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "育つ（そだつ）",
+      "headword": "育つ",
+      "reading": "そだつ",
+      "meanings": {
+        "zh-Hant": "成長、長大"
+      },
+      "example": "この野菜は、日当たりのよい場所でよく育つ。",
+      "examples": [
+        {
+          "text": "この野菜は、日当たりのよい場所でよく育つ。",
+          "translations": {
+            "zh-Hant": "這種蔬菜在日照充足的地方長得很好。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-c36ddb19611f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "果たす（はたす）",
+      "headword": "果たす",
+      "reading": "はたす",
+      "meanings": {
+        "zh-Hant": "完成、履行；實現"
+      },
+      "example": "最後まで責任を果たした彼に、みんなが感謝した。",
+      "examples": [
+        {
+          "text": "最後まで責任を果たした彼に、みんなが感謝した。",
+          "translations": {
+            "zh-Hant": "大家都很感謝他負責到底，履行了自己的職責。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-36c6ea231e20",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "奮闘（ふんとう）",
+      "headword": "奮闘",
+      "reading": "ふんとう",
+      "meanings": {
+        "zh-Hant": "奮鬥、奮力拼搏"
+      },
+      "example": "慣れない仕事に奮闘する弟を、家族みんなで応援している。",
+      "examples": [
+        {
+          "text": "慣れない仕事に奮闘する弟を、家族みんなで応援している。",
+          "translations": {
+            "zh-Hant": "弟弟正努力適應不熟悉的工作，全家人都在為他加油。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-3f97ae492d3e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "墓（はか）",
+      "headword": "墓",
+      "reading": "はか",
+      "meanings": {
+        "zh-Hant": "墳墓"
+      },
+      "example": "お盆には家族で祖母の墓を訪れ、花を供える。",
+      "examples": [
+        {
+          "text": "お盆には家族で祖母の墓を訪れ、花を供える。",
+          "translations": {
+            "zh-Hant": "盂蘭盆節時，我們全家會到祖母的墓前獻花。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-d5189b4ed971",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "墓地（ぼち）",
+      "headword": "墓地",
+      "reading": "ぼち",
+      "meanings": {
+        "zh-Hant": "墓地、公墓"
+      },
+      "example": "丘の上の墓地からは、遠くの海が見える。",
+      "examples": [
+        {
+          "text": "丘の上の墓地からは、遠くの海が見える。",
+          "translations": {
+            "zh-Hant": "從山丘上的墓地可以看見遠處的大海。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-9d3ad54d8ecc",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "葬儀（そうぎ）",
+      "headword": "葬儀",
+      "reading": "そうぎ",
+      "meanings": {
+        "zh-Hant": "葬禮"
+      },
+      "example": "葬儀には、故人と親しかった友人たちが集まった。",
+      "examples": [
+        {
+          "text": "葬儀には、故人と親しかった友人たちが集まった。",
+          "translations": {
+            "zh-Hant": "與逝者交好的朋友們都來參加了葬禮。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-5c99740caf0f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "故人（こじん）",
+      "headword": "故人",
+      "reading": "こじん",
+      "meanings": {
+        "zh-Hant": "已故的人、逝者"
+      },
+      "example": "遺族の希望で、会場には故人の好きだった音楽が流れた。",
+      "examples": [
+        {
+          "text": "遺族の希望で、会場には故人の好きだった音楽が流れた。",
+          "translations": {
+            "zh-Hant": "依照家屬的意願，會場播放了逝者生前喜愛的音樂。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-f0e13850478a",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "惜しむ（おしむ）",
+      "headword": "惜しむ",
+      "reading": "おしむ",
+      "meanings": {
+        "zh-Hant": "惋惜、不捨；吝惜"
+      },
+      "example": "留学生たちは、別れを惜しんで何度も手を振った。",
+      "examples": [
+        {
+          "text": "留学生たちは、別れを惜しんで何度も手を振った。",
+          "translations": {
+            "zh-Hant": "留學生們依依不捨，不斷揮手道別。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-a4aab44a3e36",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "嘆く（なげく）",
+      "headword": "嘆く",
+      "reading": "なげく",
+      "meanings": {
+        "zh-Hant": "嘆息、悲嘆"
+      },
+      "example": "失敗を嘆くばかりではなく、次に何ができるか考えよう。",
+      "examples": [
+        {
+          "text": "失敗を嘆くばかりではなく、次に何ができるか考えよう。",
+          "translations": {
+            "zh-Hant": "別只顧著為失敗嘆息，想想接下來能做些什麼吧。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-66e041a143ae",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "すくすく（すくすく）",
+      "headword": "すくすく",
+      "reading": "すくすく",
+      "meanings": {
+        "zh-Hant": "茁壯成長的樣子"
+      },
+      "example": "庭に植えた木は、すくすくと育っている。",
+      "examples": [
+        {
+          "text": "庭に植えた木は、すくすくと育っている。",
+          "translations": {
+            "zh-Hant": "種在庭院裡的樹正茁壯成長。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-792699b256cd",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "のびのび（のびのび）",
+      "headword": "のびのび",
+      "reading": "のびのび",
+      "meanings": {
+        "zh-Hant": "自由自在、無拘無束"
+      },
+      "example": "子どもたちは広い芝生の上で、のびのびと遊んでいた。",
+      "examples": [
+        {
+          "text": "子どもたちは広い芝生の上で、のびのびと遊んでいた。",
+          "translations": {
+            "zh-Hant": "孩子們在寬闊的草地上無拘無束地玩耍。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-52ee65a6539b",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "遭う（あう）",
+      "headword": "遭う",
+      "reading": "あう",
+      "meanings": {
+        "zh-Hant": "遭遇、碰上不幸的事"
+      },
+      "example": "旅行中に盗難に遭い、財布をなくしてしまった。",
+      "examples": [
+        {
+          "text": "旅行中に盗難に遭い、財布をなくしてしまった。",
+          "translations": {
+            "zh-Hant": "我在旅行途中遭竊，錢包被偷走了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-4625696f2712",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "取り締まる（とりしまる）",
+      "headword": "取り締まる",
+      "reading": "とりしまる",
+      "meanings": {
+        "zh-Hant": "取締、查禁；監督管理"
+      },
+      "example": "警察は、駅前の違法駐車を厳しく取り締まっている。",
+      "examples": [
+        {
+          "text": "警察は、駅前の違法駐車を厳しく取り締まっている。",
+          "translations": {
+            "zh-Hant": "警方正在嚴格取締車站前的違規停車。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-844a4ef06f61",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "備える（そなえる）",
+      "headword": "備える",
+      "reading": "そなえる",
+      "meanings": {
+        "zh-Hant": "準備、防備；配備"
+      },
+      "example": "停電に備えて、懐中電灯を取り出しやすい場所に置いた。",
+      "examples": [
+        {
+          "text": "停電に備えて、懐中電灯を取り出しやすい場所に置いた。",
+          "translations": {
+            "zh-Hant": "為了因應停電，我把手電筒放在容易拿取的地方。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-f12b034e1987",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "土砂（どしゃ）",
+      "headword": "土砂",
+      "reading": "どしゃ",
+      "meanings": {
+        "zh-Hant": "泥沙、土石"
+      },
+      "example": "大雨で流れ込んだ土砂が、道路をふさいでいた。",
+      "examples": [
+        {
+          "text": "大雨で流れ込んだ土砂が、道路をふさいでいた。",
+          "translations": {
+            "zh-Hant": "大雨沖來的泥沙堵住了道路。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-392bea7ab8a7",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "崩れ（くずれ）",
+      "headword": "崩れ",
+      "reading": "くずれ",
+      "meanings": {
+        "zh-Hant": "崩塌、倒塌；潰散"
+      },
+      "example": "土砂崩れで、山へ続く道路が通れなくなった。",
+      "examples": [
+        {
+          "text": "土砂崩れで、山へ続く道路が通れなくなった。",
+          "translations": {
+            "zh-Hant": "通往山裡的道路因土石崩塌而無法通行了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-07096ea69a5a",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "河川（かせん）",
+      "headword": "河川",
+      "reading": "かせん",
+      "meanings": {
+        "zh-Hant": "河川、河流"
+      },
+      "example": "この町では、河川の水質を毎月調べている。",
+      "examples": [
+        {
+          "text": "この町では、河川の水質を毎月調べている。",
+          "translations": {
+            "zh-Hant": "這個城鎮每個月都會檢測河川的水質。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-51ccfe139379",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "氾濫（はんらん）",
+      "headword": "氾濫",
+      "reading": "はんらん",
+      "meanings": {
+        "zh-Hant": "氾濫、洪水泛濫"
+      },
+      "example": "川の氾濫を恐れて、住民たちは高台へ避難した。",
+      "examples": [
+        {
+          "text": "川の氾濫を恐れて、住民たちは高台へ避難した。",
+          "translations": {
+            "zh-Hant": "居民們擔心河水氾濫，紛紛撤離到高地。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-5207d0973aa5",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "噴火（ふんか）",
+      "headword": "噴火",
+      "reading": "ふんか",
+      "meanings": {
+        "zh-Hant": "火山噴發"
+      },
+      "example": "火山の噴火で、近くの空港は一時閉鎖された。",
+      "examples": [
+        {
+          "text": "火山の噴火で、近くの空港は一時閉鎖された。",
+          "translations": {
+            "zh-Hant": "附近的機場因火山噴發而暫時關閉了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-350bbaf297db",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "救済する（きゅうさいする）",
+      "headword": "救済する",
+      "reading": "きゅうさいする",
+      "meanings": {
+        "zh-Hant": "救濟、救助"
+      },
+      "example": "市は、災害で家を失った人々を救済する制度を設けた。",
+      "examples": [
+        {
+          "text": "市は、災害で家を失った人々を救済する制度を設けた。",
+          "translations": {
+            "zh-Hant": "市政府設立了救助在災害中失去家園者的制度。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-eb57604bfc49",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "復旧する（ふっきゅうする）",
+      "headword": "復旧する",
+      "reading": "ふっきゅうする",
+      "meanings": {
+        "zh-Hant": "修復、恢復原狀"
+      },
+      "example": "修理が終わり、止まっていた水道がようやく復旧した。",
+      "examples": [
+        {
+          "text": "修理が終わり、止まっていた水道がようやく復旧した。",
+          "translations": {
+            "zh-Hant": "維修結束後，中斷的供水終於恢復了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-dea14f941c88",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "依然（いぜん）",
+      "headword": "依然",
+      "reading": "いぜん",
+      "meanings": {
+        "zh-Hant": "依然、仍然"
+      },
+      "example": "薬を飲んでも、熱は依然として下がらなかった。",
+      "examples": [
+        {
+          "text": "薬を飲んでも、熱は依然として下がらなかった。",
+          "translations": {
+            "zh-Hant": "即使吃了藥，體溫仍然沒有降下來。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-fcd14c0e7079",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "直ちに（ただちに）",
+      "headword": "直ちに",
+      "reading": "ただちに",
+      "meanings": {
+        "zh-Hant": "立即、馬上"
+      },
+      "example": "異常に気づいた作業員は、直ちに機械を止めた。",
+      "examples": [
+        {
+          "text": "異常に気づいた作業員は、直ちに機械を止めた。",
+          "translations": {
+            "zh-Hant": "察覺異常的作業員立即停止了機器。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-38170bc8f9fa",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "浮気（うわき）",
+      "headword": "浮気",
+      "reading": "うわき",
+      "meanings": {
+        "zh-Hant": "外遇；見異思遷"
+      },
+      "example": "夫の浮気を知ってから、二人の関係は悪くなった。",
+      "examples": [
+        {
+          "text": "夫の浮気を知ってから、二人の関係は悪くなった。",
+          "translations": {
+            "zh-Hant": "得知丈夫外遇後，兩人的關係變差了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-447a2d835b7e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "貯める（ためる）",
+      "headword": "貯める",
+      "reading": "ためる",
+      "meanings": {
+        "zh-Hant": "儲存、積攢"
+      },
+      "example": "新しい自転車を買うために、お小遣いを少しずつ貯めている。",
+      "examples": [
+        {
+          "text": "新しい自転車を買うために、お小遣いを少しずつ貯めている。",
+          "translations": {
+            "zh-Hant": "為了買一輛新腳踏車，我正一點一滴地存零用錢。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-6303196fe310",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "打ち合わせ（うちあわせ）",
+      "headword": "打ち合わせ",
+      "reading": "うちあわせ",
+      "meanings": {
+        "zh-Hant": "事先商量、工作磋商"
+      },
+      "example": "明日の会議の前に、担当者同士で打ち合わせをした。",
+      "examples": [
+        {
+          "text": "明日の会議の前に、担当者同士で打ち合わせをした。",
+          "translations": {
+            "zh-Hant": "明天開會之前，負責人之間先做了事前討論。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-429faaa8b90b",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "細やか（ささやか）",
+      "headword": "細やか",
+      "reading": "ささやか",
+      "meanings": {
+        "zh-Hant": "微薄、簡單、小小的"
+      },
+      "example": "細やかな贈り物ですが、どうぞお受け取りください。",
+      "examples": [
+        {
+          "text": "細やかな贈り物ですが、どうぞお受け取りください。",
+          "translations": {
+            "zh-Hant": "這只是一份小小的禮物，請您收下。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-f8bc3b96de75",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "努める（つとめる）",
+      "headword": "努める",
+      "reading": "つとめる",
+      "meanings": {
+        "zh-Hant": "努力、盡力"
+      },
+      "example": "誤解を招かないように、分かりやすい説明に努めた。",
+      "examples": [
+        {
+          "text": "誤解を招かないように、分かりやすい説明に努めた。",
+          "translations": {
+            "zh-Hant": "為了避免引起誤會，我盡力把事情解釋清楚。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-ca26aa1fb3d2",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "行方（ゆくえ）",
+      "headword": "行方",
+      "reading": "ゆくえ",
+      "meanings": {
+        "zh-Hant": "去向、下落"
+      },
+      "example": "駅でいなくなった犬の行方を、家族で捜している。",
+      "examples": [
+        {
+          "text": "駅でいなくなった犬の行方を、家族で捜している。",
+          "translations": {
+            "zh-Hant": "全家人正在尋找那隻在車站走失的狗。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-44e1eb4ec752",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "差し掛かる（さしかかる）",
+      "headword": "差し掛かる",
+      "reading": "さしかかる",
+      "meanings": {
+        "zh-Hant": "來到、行至；臨近"
+      },
+      "example": "橋に差し掛かったところで、急に雨が降り出した。",
+      "examples": [
+        {
+          "text": "橋に差し掛かったところで、急に雨が降り出した。",
+          "translations": {
+            "zh-Hant": "剛走到橋邊，天就突然下起雨來。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-151fbc2fa542",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "役割（やくわり）",
+      "headword": "役割",
+      "reading": "やくわり",
+      "meanings": {
+        "zh-Hant": "角色、職責"
+      },
+      "example": "文化祭では、私は会場を案内する役割を任された。",
+      "examples": [
+        {
+          "text": "文化祭では、私は会場を案内する役割を任された。",
+          "translations": {
+            "zh-Hant": "在文化祭上，我被指派負責引導來賓。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-66874224e11d",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "預ける（あずける）",
+      "headword": "預ける",
+      "reading": "あずける",
+      "meanings": {
+        "zh-Hant": "寄存、託付"
+      },
+      "example": "大きな荷物をホテルに預けてから、町を歩いた。",
+      "examples": [
+        {
+          "text": "大きな荷物をホテルに預けてから、町を歩いた。",
+          "translations": {
+            "zh-Hant": "把大型行李寄放在飯店後，我才去逛街。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-3b510423ae33",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "取り押さえる（とりおさえる）",
+      "headword": "取り押さえる",
+      "reading": "とりおさえる",
+      "meanings": {
+        "zh-Hant": "抓住、制伏、逮住"
+      },
+      "example": "逃げようとした男を、二人の警備員が取り押さえた。",
+      "examples": [
+        {
+          "text": "逃げようとした男を、二人の警備員が取り押さえた。",
+          "translations": {
+            "zh-Hant": "兩名警衛制伏了試圖逃跑的男子。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-df217f5af861",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "貯金する（ちょきんする）",
+      "headword": "貯金する",
+      "reading": "ちょきんする",
+      "meanings": {
+        "zh-Hant": "存錢、儲蓄"
+      },
+      "example": "給料が入るたびに、決まった額を貯金している。",
+      "examples": [
+        {
+          "text": "給料が入るたびに、決まった額を貯金している。",
+          "translations": {
+            "zh-Hant": "每次領到薪水，我都會把固定金額存起來。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-8eb3be71614b",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "貯蓄する（ちょちくする）",
+      "headword": "貯蓄する",
+      "reading": "ちょちくする",
+      "meanings": {
+        "zh-Hant": "儲蓄、積蓄財物"
+      },
+      "example": "将来の学費に備えて、夫婦で毎月貯蓄している。",
+      "examples": [
+        {
+          "text": "将来の学費に備えて、夫婦で毎月貯蓄している。",
+          "translations": {
+            "zh-Hant": "為了準備將來的學費，我們夫妻每個月都會儲蓄。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-4e805d8f7d5e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "借金（しゃっきん）",
+      "headword": "借金",
+      "reading": "しゃっきん",
+      "meanings": {
+        "zh-Hant": "借款、債務"
+      },
+      "example": "借金を返すために、しばらく支出を減らすことにした。",
+      "examples": [
+        {
+          "text": "借金を返すために、しばらく支出を減らすことにした。",
+          "translations": {
+            "zh-Hant": "為了償還債務，我決定暫時減少開銷。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-dc8ecdc92f3a",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "利子（りし）",
+      "headword": "利子",
+      "reading": "りし",
+      "meanings": {
+        "zh-Hant": "利息"
+      },
+      "example": "借りたお金には利子がつくので、返す総額を確認した。",
+      "examples": [
+        {
+          "text": "借りたお金には利子がつくので、返す総額を確認した。",
+          "translations": {
+            "zh-Hant": "借款會產生利息，所以我確認了應償還的總金額。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-00c749ea416f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "利息（りそく）",
+      "headword": "利息",
+      "reading": "りそく",
+      "meanings": {
+        "zh-Hant": "利息"
+      },
+      "example": "通帳を見たら、預金に少し利息がついていた。",
+      "examples": [
+        {
+          "text": "通帳を見たら、預金に少し利息がついていた。",
+          "translations": {
+            "zh-Hant": "查看存摺時，我發現存款多了一點利息。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-84da74d6df57",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "納税（のうぜい）",
+      "headword": "納税",
+      "reading": "のうぜい",
+      "meanings": {
+        "zh-Hant": "納稅"
+      },
+      "example": "納税の期限が近づいているので、必要な書類をそろえた。",
+      "examples": [
+        {
+          "text": "納税の期限が近づいているので、必要な書類をそろえた。",
+          "translations": {
+            "zh-Hant": "納稅期限快到了，所以我備齊了所需文件。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-7035723c5a79",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "納める（おさめる）",
+      "headword": "納める",
+      "reading": "おさめる",
+      "meanings": {
+        "zh-Hant": "繳納；交付"
+      },
+      "example": "今年の税金は、期限までにすべて納めた。",
+      "examples": [
+        {
+          "text": "今年の税金は、期限までにすべて納めた。",
+          "translations": {
+            "zh-Hant": "今年的稅款，我已在期限內全部繳清了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-904b423883d3",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "耕す（たがやす）",
+      "headword": "耕す",
+      "reading": "たがやす",
+      "meanings": {
+        "zh-Hant": "耕地、翻耕"
+      },
+      "example": "春になると、祖父は畑を耕して野菜を植える準備をする。",
+      "examples": [
+        {
+          "text": "春になると、祖父は畑を耕して野菜を植える準備をする。",
+          "translations": {
+            "zh-Hant": "春天一到，祖父就翻耕田地，準備種菜。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-aadcb6094a21",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "畑（はたけ）",
+      "headword": "畑",
+      "reading": "はたけ",
+      "meanings": {
+        "zh-Hant": "旱田、田地"
+      },
+      "example": "家の裏の畑で、トマトときゅうりを育てている。",
+      "examples": [
+        {
+          "text": "家の裏の畑で、トマトときゅうりを育てている。",
+          "translations": {
+            "zh-Hant": "我在屋後的田地裡種番茄和小黃瓜。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-5dc09d821116",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "出荷（しゅっか）",
+      "headword": "出荷",
+      "reading": "しゅっか",
+      "meanings": {
+        "zh-Hant": "出貨、發貨"
+      },
+      "example": "出荷する前に、箱の数と商品の状態を確認した。",
+      "examples": [
+        {
+          "text": "出荷する前に、箱の数と商品の状態を確認した。",
+          "translations": {
+            "zh-Hant": "出貨前，我確認了箱數和商品的狀態。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-49949f404917",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "供給（きょうきゅう）",
+      "headword": "供給",
+      "reading": "きょうきゅう",
+      "meanings": {
+        "zh-Hant": "供給、供應"
+      },
+      "example": "水道管の工事で、この地域への水の供給が止まった。",
+      "examples": [
+        {
+          "text": "水道管の工事で、この地域への水の供給が止まった。",
+          "translations": {
+            "zh-Hant": "由於水管施工，這個地區暫停供水。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-c8ef6dfc0c49",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "天然（てんねん）",
+      "headword": "天然",
+      "reading": "てんねん",
+      "meanings": {
+        "zh-Hant": "天然、自然形成"
+      },
+      "example": "この石けんは、天然の植物油から作られている。",
+      "examples": [
+        {
+          "text": "この石けんは、天然の植物油から作られている。",
+          "translations": {
+            "zh-Hant": "這款肥皂是用天然植物油製成的。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-3bd2b3ea92c7",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "決して（けっして）",
+      "headword": "決して",
+      "reading": "けっして",
+      "meanings": {
+        "zh-Hant": "絕不、決不（後接否定）"
+      },
+      "example": "どんなに急いでいても、決して信号を無視してはいけない。",
+      "examples": [
+        {
+          "text": "どんなに急いでいても、決して信号を無視してはいけない。",
+          "translations": {
+            "zh-Hant": "無論多麼趕時間，都絕對不能闖紅燈。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-e09d9f52a8eb",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "向上する（こうじょうする）",
+      "headword": "向上する",
+      "reading": "こうじょうする",
+      "meanings": {
+        "zh-Hant": "提高、進步"
+      },
+      "example": "毎日練習を続けた結果、会話の力が向上した。",
+      "examples": [
+        {
+          "text": "毎日練習を続けた結果、会話の力が向上した。",
+          "translations": {
+            "zh-Hant": "每天持續練習後，我的會話能力進步了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-995d34d9efb6",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "一旦（いったん）",
+      "headword": "一旦",
+      "reading": "いったん",
+      "meanings": {
+        "zh-Hant": "一旦；暫且"
+      },
+      "example": "作業を一旦止めて、全員で手順を確認した。",
+      "examples": [
+        {
+          "text": "作業を一旦止めて、全員で手順を確認した。",
+          "translations": {
+            "zh-Hant": "我們先暫停作業，由所有人一起確認操作步驟。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-6602293de7ae",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "取引先（とりひきさき）",
+      "headword": "取引先",
+      "reading": "とりひきさき",
+      "meanings": {
+        "zh-Hant": "業務往來對象、客戶"
+      },
+      "example": "午後は取引先を訪ねて、新しい商品を紹介する予定だ。",
+      "examples": [
+        {
+          "text": "午後は取引先を訪ねて、新しい商品を紹介する予定だ。",
+          "translations": {
+            "zh-Hant": "下午預計拜訪客戶，向對方介紹新商品。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-1c82f160f6e8",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "下ろす（おろす）",
+      "headword": "下ろす",
+      "reading": "おろす",
+      "meanings": {
+        "zh-Hant": "放下、卸下；提款"
+      },
+      "example": "重いリュックを下ろして、ベンチで少し休んだ。",
+      "examples": [
+        {
+          "text": "重いリュックを下ろして、ベンチで少し休んだ。",
+          "translations": {
+            "zh-Hant": "我放下沉重的背包，坐在長椅上休息了一會兒。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-64eca7beef5d",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "勤める（つとめる）",
+      "headword": "勤める",
+      "reading": "つとめる",
+      "meanings": {
+        "zh-Hant": "任職、在某處工作"
+      },
+      "example": "姉は大学を卒業してから、地元の銀行に勤めている。",
+      "examples": [
+        {
+          "text": "姉は大学を卒業してから、地元の銀行に勤めている。",
+          "translations": {
+            "zh-Hant": "姊姊大學畢業後，一直在家鄉的銀行任職。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-5e9b6ab04fab",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "財務相（ざいむしょう）",
+      "headword": "財務相",
+      "reading": "ざいむしょう",
+      "meanings": {
+        "zh-Hant": "財政部長、財務大臣"
+      },
+      "example": "財務相は、来年度の予算案について説明した。",
+      "examples": [
+        {
+          "text": "財務相は、来年度の予算案について説明した。",
+          "translations": {
+            "zh-Hant": "財政部長說明了下一年度的預算案。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-64c1d7ad8430",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "合意する（ごういする）",
+      "headword": "合意する",
+      "reading": "ごういする",
+      "meanings": {
+        "zh-Hant": "達成共識、取得一致意見"
+      },
+      "example": "長い話し合いの末、両社は契約の条件に合意した。",
+      "examples": [
+        {
+          "text": "長い話し合いの末、両社は契約の条件に合意した。",
+          "translations": {
+            "zh-Hant": "經過長時間討論，兩家公司終於就合約條件達成共識。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-62b20649bafc",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "財政的（ざいせいてき）",
+      "headword": "財政的",
+      "reading": "ざいせいてき",
+      "meanings": {
+        "zh-Hant": "財政上的、財政方面的"
+      },
+      "example": "町の財政的な負担を減らすため、計画を見直した。",
+      "examples": [
+        {
+          "text": "町の財政的な負担を減らすため、計画を見直した。",
+          "translations": {
+            "zh-Hant": "為了減輕鎮上的財政負擔，我們重新檢視了計畫。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-ad909f09a289",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "取り組み（とりくみ）",
+      "headword": "取り組み",
+      "reading": "とりくみ",
+      "meanings": {
+        "zh-Hant": "努力、措施；致力處理某事"
+      },
+      "example": "ごみを減らす取り組みが、地域全体に広がっている。",
+      "examples": [
+        {
+          "text": "ごみを減らす取り組みが、地域全体に広がっている。",
+          "translations": {
+            "zh-Hant": "減少垃圾的行動正擴展到整個地區。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-c3575fb9d3c8",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "条約（じょうやく）",
+      "headword": "条約",
+      "reading": "じょうやく",
+      "meanings": {
+        "zh-Hant": "條約"
+      },
+      "example": "両国は、平和条約を結ぶことで合意した。",
+      "examples": [
+        {
+          "text": "両国は、平和条約を結ぶことで合意した。",
+          "translations": {
+            "zh-Hant": "兩國同意締結和平條約。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-676d35169881",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "見直す（みなおす）",
+      "headword": "見直す",
+      "reading": "みなおす",
+      "meanings": {
+        "zh-Hant": "重新檢視、修訂；重新評價"
+      },
+      "example": "無駄な出費がないか、家計を見直してみた。",
+      "examples": [
+        {
+          "text": "無駄な出費がないか、家計を見直してみた。",
+          "translations": {
+            "zh-Hant": "我重新檢視了家中收支，看看是否有不必要的開銷。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-40420869b9af",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "政策（せいさく）",
+      "headword": "政策",
+      "reading": "せいさく",
+      "meanings": {
+        "zh-Hant": "政策"
+      },
+      "example": "市の新しい交通政策について、住民向けの説明会が開かれた。",
+      "examples": [
+        {
+          "text": "市の新しい交通政策について、住民向けの説明会が開かれた。",
+          "translations": {
+            "zh-Hant": "市政府針對新的交通政策，舉辦了面向居民的說明會。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-8713e798796d",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "公共（こうきょう）",
+      "headword": "公共",
+      "reading": "こうきょう",
+      "meanings": {
+        "zh-Hant": "公共、公眾共有"
+      },
+      "example": "駅や図書館などの公共の場所では、周りの人に配慮しよう。",
+      "examples": [
+        {
+          "text": "駅や図書館などの公共の場所では、周りの人に配慮しよう。",
+          "translations": {
+            "zh-Hant": "在車站、圖書館等公共場所，要多替周圍的人著想。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-4d0a24fe5248",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "投票（とうひょう）",
+      "headword": "投票",
+      "reading": "とうひょう",
+      "meanings": {
+        "zh-Hant": "投票"
+      },
+      "example": "選挙の日、仕事に行く前に投票を済ませた。",
+      "examples": [
+        {
+          "text": "選挙の日、仕事に行く前に投票を済ませた。",
+          "translations": {
+            "zh-Hant": "選舉當天，我在上班前先去投了票。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-e2be8db39740",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "定める（さだめる）",
+      "headword": "定める",
+      "reading": "さだめる",
+      "meanings": {
+        "zh-Hant": "決定、規定、制定"
+      },
+      "example": "新しい規則では、図書館の閉館時刻を午後八時と定めた。",
+      "examples": [
+        {
+          "text": "新しい規則では、図書館の閉館時刻を午後八時と定めた。",
+          "translations": {
+            "zh-Hant": "新規定將圖書館的閉館時間訂為晚上八點。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-ef0773440fcd",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "改正する（かいせいする）",
+      "headword": "改正する",
+      "reading": "かいせいする",
+      "meanings": {
+        "zh-Hant": "修訂、修改法規等"
+      },
+      "example": "利用者の声を受けて、施設の利用規則を改正した。",
+      "examples": [
+        {
+          "text": "利用者の声を受けて、施設の利用規則を改正した。",
+          "translations": {
+            "zh-Hant": "收到使用者的意見後，管理方修訂了設施使用規則。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-97187facef9c",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "訴える（うったえる）",
+      "headword": "訴える",
+      "reading": "うったえる",
+      "meanings": {
+        "zh-Hant": "控訴；申訴、呼籲"
+      },
+      "example": "住民たちは、市に道路の危険性を訴えた。",
+      "examples": [
+        {
+          "text": "住民たちは、市に道路の危険性を訴えた。",
+          "translations": {
+            "zh-Hant": "居民們向市政府反映了道路的危險性。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-c20d84fcb521",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "統一（とういつ）",
+      "headword": "統一",
+      "reading": "とういつ",
+      "meanings": {
+        "zh-Hant": "統一"
+      },
+      "example": "資料が読みやすくなるように、文字の大きさを統一した。",
+      "examples": [
+        {
+          "text": "資料が読みやすくなるように、文字の大きさを統一した。",
+          "translations": {
+            "zh-Hant": "為了讓資料更容易閱讀，我統一了字體大小。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-34db3f566c25",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "栄える（さかえる）",
+      "headword": "栄える",
+      "reading": "さかえる",
+      "meanings": {
+        "zh-Hant": "繁榮、興盛"
+      },
+      "example": "この町は港を中心に栄え、多くの商人が集まった。",
+      "examples": [
+        {
+          "text": "この町は港を中心に栄え、多くの商人が集まった。",
+          "translations": {
+            "zh-Hant": "這座城鎮以港口為中心繁榮起來，吸引了許多商人。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-a9eafff236dd",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "滅びる（ほろびる）",
+      "headword": "滅びる",
+      "reading": "ほろびる",
+      "meanings": {
+        "zh-Hant": "滅亡、衰亡"
+      },
+      "example": "戦争が続き、かつて栄えた王国は滅びてしまった。",
+      "examples": [
+        {
+          "text": "戦争が続き、かつて栄えた王国は滅びてしまった。",
+          "translations": {
+            "zh-Hant": "戰爭連年不斷，曾經繁榮的王國終於滅亡了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-cd848ab2db82",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "植民地（しょくみんち）",
+      "headword": "植民地",
+      "reading": "しょくみんち",
+      "meanings": {
+        "zh-Hant": "殖民地"
+      },
+      "example": "その小説は、かつて植民地だった島を舞台にしている。",
+      "examples": [
+        {
+          "text": "その小説は、かつて植民地だった島を舞台にしている。",
+          "translations": {
+            "zh-Hant": "那部小說以一座曾經是殖民地的島嶼為背景。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-a93d3fb12942",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "権力（けんりょく）",
+      "headword": "権力",
+      "reading": "けんりょく",
+      "meanings": {
+        "zh-Hant": "權力"
+      },
+      "example": "権力を持つ人ほど、自分の行動に責任を持つべきだ。",
+      "examples": [
+        {
+          "text": "権力を持つ人ほど、自分の行動に責任を持つべきだ。",
+          "translations": {
+            "zh-Hant": "越是掌握權力的人，越應該對自己的行為負責。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-aa377d82b238",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "握る（にぎる）",
+      "headword": "握る",
+      "reading": "にぎる",
+      "meanings": {
+        "zh-Hant": "握住；掌握"
+      },
+      "example": "迷子にならないように、娘の手をしっかり握った。",
+      "examples": [
+        {
+          "text": "迷子にならないように、娘の手をしっかり握った。",
+          "translations": {
+            "zh-Hant": "為了避免女兒走失，我緊緊握住了她的手。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-bb2369cc699c",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "庶民（しょみん）",
+      "headword": "庶民",
+      "reading": "しょみん",
+      "meanings": {
+        "zh-Hant": "平民、一般民眾"
+      },
+      "example": "この食堂は、安くておいしい庶民の味で知られている。",
+      "examples": [
+        {
+          "text": "この食堂は、安くておいしい庶民の味で知られている。",
+          "translations": {
+            "zh-Hant": "這間餐館以平價又美味的平民料理聞名。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-2a29f58fd081",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "言い合い（いいあい）",
+      "headword": "言い合い",
+      "reading": "いいあい",
+      "meanings": {
+        "zh-Hant": "爭吵、口角"
+      },
+      "example": "小さな誤解から、友人と言い合いになってしまった。",
+      "examples": [
+        {
+          "text": "小さな誤解から、友人と言い合いになってしまった。",
+          "translations": {
+            "zh-Hant": "一個小小的誤會，竟讓我和朋友吵了起來。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-647c1be153f5",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "話し合い（はなしあい）",
+      "headword": "話し合い",
+      "reading": "はなしあい",
+      "meanings": {
+        "zh-Hant": "商量、協商、討論"
+      },
+      "example": "話し合いを重ねるうちに、お互いの考えが分かってきた。",
+      "examples": [
+        {
+          "text": "話し合いを重ねるうちに、お互いの考えが分かってきた。",
+          "translations": {
+            "zh-Hant": "經過多次討論，我們逐漸了解了彼此的想法。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-15aa066fe89b",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "問い合わせる（といあわせる）",
+      "headword": "問い合わせる",
+      "reading": "といあわせる",
+      "meanings": {
+        "zh-Hant": "詢問、查詢"
+      },
+      "example": "荷物が届かないので、配送会社に問い合わせた。",
+      "examples": [
+        {
+          "text": "荷物が届かないので、配送会社に問い合わせた。",
+          "translations": {
+            "zh-Hant": "因為包裹遲遲沒送到，我向配送公司詢問了情況。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-6ebb244781a5",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "場合（ばあい）",
+      "headword": "場合",
+      "reading": "ばあい",
+      "meanings": {
+        "zh-Hant": "情況、場合"
+      },
+      "example": "雨が降った場合は、試合を来週に延期する。",
+      "examples": [
+        {
+          "text": "雨が降った場合は、試合を来週に延期する。",
+          "translations": {
+            "zh-Hant": "如果下雨，比賽就延到下週。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-94e6c976fd86",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "瓶（びん）",
+      "headword": "瓶",
+      "reading": "びん",
+      "meanings": {
+        "zh-Hant": "瓶子"
+      },
+      "example": "空になった瓶を洗って、花を一輪挿した。",
+      "examples": [
+        {
+          "text": "空になった瓶を洗って、花を一輪挿した。",
+          "translations": {
+            "zh-Hant": "我把空瓶子洗乾淨，插上了一朵花。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-3214e9685aba",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "缶（かん）",
+      "headword": "缶",
+      "reading": "かん",
+      "meanings": {
+        "zh-Hant": "罐子、金屬罐"
+      },
+      "example": "飲み終わった缶は、専用の箱に入れてください。",
+      "examples": [
+        {
+          "text": "飲み終わった缶は、専用の箱に入れてください。",
+          "translations": {
+            "zh-Hant": "喝完的空罐請放進專用的箱子裡。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-eb0dc1e3f8db",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "汚染（おせん）",
+      "headword": "汚染",
+      "reading": "おせん",
+      "meanings": {
+        "zh-Hant": "污染"
+      },
+      "example": "工場から流れ出た油が、川の汚染の原因になった。",
+      "examples": [
+        {
+          "text": "工場から流れ出た油が、川の汚染の原因になった。",
+          "translations": {
+            "zh-Hant": "工廠流出的油成了河川污染的原因。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-f9207c751bb2",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "深刻（しんこく）",
+      "headword": "深刻",
+      "reading": "しんこく",
+      "meanings": {
+        "zh-Hant": "嚴重、深刻"
+      },
+      "example": "若い人が減り、この村では人手不足が深刻になっている。",
+      "examples": [
+        {
+          "text": "若い人が減り、この村では人手不足が深刻になっている。",
+          "translations": {
+            "zh-Hant": "年輕人口減少，使這座村莊的人力不足問題日益嚴重。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-793eced10961",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "騒音（そうおん）",
+      "headword": "騒音",
+      "reading": "そうおん",
+      "meanings": {
+        "zh-Hant": "噪音"
+      },
+      "example": "隣の工事現場の騒音で、電話の声が聞こえなかった。",
+      "examples": [
+        {
+          "text": "隣の工事現場の騒音で、電話の声が聞こえなかった。",
+          "translations": {
+            "zh-Hant": "隔壁工地的噪音太大，我聽不見電話另一頭的聲音。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-4426fd3ff0b4",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "繁殖（はんしょく）",
+      "headword": "繁殖",
+      "reading": "はんしょく",
+      "meanings": {
+        "zh-Hant": "繁殖"
+      },
+      "example": "雨の後、水たまりで蚊が繁殖していた。",
+      "examples": [
+        {
+          "text": "雨の後、水たまりで蚊が繁殖していた。",
+          "translations": {
+            "zh-Hant": "下雨後，蚊子在積水處繁殖。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-bfabc0643f16",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "獲物（えもの）",
+      "headword": "獲物",
+      "reading": "えもの",
+      "meanings": {
+        "zh-Hant": "獵物、捕獲物"
+      },
+      "example": "猫は草むらに隠れて、獲物が近づくのを待っていた。",
+      "examples": [
+        {
+          "text": "猫は草むらに隠れて、獲物が近づくのを待っていた。",
+          "translations": {
+            "zh-Hant": "貓躲在草叢裡，等待獵物靠近。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-e60a67240492",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "群がる（むらがる）",
+      "headword": "群がる",
+      "reading": "むらがる",
+      "meanings": {
+        "zh-Hant": "聚集、成群聚攏"
+      },
+      "example": "甘い香りに誘われて、花に虫が群がっていた。",
+      "examples": [
+        {
+          "text": "甘い香りに誘われて、花に虫が群がっていた。",
+          "translations": {
+            "zh-Hant": "昆蟲受到甜美香氣的吸引，成群聚集在花上。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-a2a152d0df16",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "鶏（にわとり）",
+      "headword": "鶏",
+      "reading": "にわとり",
+      "meanings": {
+        "zh-Hant": "雞"
+      },
+      "example": "祖母は毎朝、庭で飼っている鶏に餌をやる。",
+      "examples": [
+        {
+          "text": "祖母は毎朝、庭で飼っている鶏に餌をやる。",
+          "translations": {
+            "zh-Hant": "祖母每天早上都會餵養在庭院裡的雞。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-70bee1832f1a",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "飼育（しいく）",
+      "headword": "飼育",
+      "reading": "しいく",
+      "meanings": {
+        "zh-Hant": "飼養、養育動物"
+      },
+      "example": "弟は学校で飼育しているうさぎの世話を担当している。",
+      "examples": [
+        {
+          "text": "弟は学校で飼育しているうさぎの世話を担当している。",
+          "translations": {
+            "zh-Hant": "弟弟負責照顧學校飼養的兔子。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-7501778ba9cf",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "くわえる（くわえる）",
+      "headword": "くわえる",
+      "reading": "くわえる",
+      "meanings": {
+        "zh-Hant": "用嘴叼住、銜住"
+      },
+      "example": "犬が新聞をくわえて、玄関まで運んできた。",
+      "examples": [
+        {
+          "text": "犬が新聞をくわえて、玄関まで運んできた。",
+          "translations": {
+            "zh-Hant": "狗叼著報紙，把它送到了玄關。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-9169e9fee9b1",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "雌（めす）",
+      "headword": "雌",
+      "reading": "めす",
+      "meanings": {
+        "zh-Hant": "雌性、母的"
+      },
+      "example": "この猫は雌で、去年三匹の子猫を産んだ。",
+      "examples": [
+        {
+          "text": "この猫は雌で、去年三匹の子猫を産んだ。",
+          "translations": {
+            "zh-Hant": "這隻貓是母貓，去年生了三隻小貓。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-803d32bb14cd",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "見分ける（みわける）",
+      "headword": "見分ける",
+      "reading": "みわける",
+      "meanings": {
+        "zh-Hant": "辨別、分辨"
+      },
+      "example": "よく似た二種類の鳥を、羽の色で見分ける。",
+      "examples": [
+        {
+          "text": "よく似た二種類の鳥を、羽の色で見分ける。",
+          "translations": {
+            "zh-Hant": "這兩種鳥長得很像，可以根據羽毛顏色來辨別。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-754e1f2ea742",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "子牛（こうし）",
+      "headword": "子牛",
+      "reading": "こうし",
+      "meanings": {
+        "zh-Hant": "小牛、牛犢"
+      },
+      "example": "子牛が母牛のそばで、よろよろと立ち上がった。",
+      "examples": [
+        {
+          "text": "子牛が母牛のそばで、よろよろと立ち上がった。",
+          "translations": {
+            "zh-Hant": "小牛在母牛身旁搖搖晃晃地站了起來。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-719571a1ced8",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "一頭生まれる（いっとううまれる）",
+      "headword": "一頭生まれる",
+      "reading": "いっとううまれる",
+      "meanings": {
+        "zh-Hant": "出生一頭大型動物"
+      },
+      "example": "今朝、牧場で子牛が一頭生まれた。",
+      "examples": [
+        {
+          "text": "今朝、牧場で子牛が一頭生まれた。",
+          "translations": {
+            "zh-Hant": "今天早上，牧場裡出生了一頭小牛。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-e50904f7bd01",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "植える（うえる）",
+      "headword": "植える",
+      "reading": "うえる",
+      "meanings": {
+        "zh-Hant": "種植、栽種"
+      },
+      "example": "窓の外から見える場所に、桜の木を植えた。",
+      "examples": [
+        {
+          "text": "窓の外から見える場所に、桜の木を植えた。",
+          "translations": {
+            "zh-Hant": "我在從窗戶看得到的地方，種了一棵櫻花樹。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-e7c013c594f7",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "茎（くき）",
+      "headword": "茎",
+      "reading": "くき",
+      "meanings": {
+        "zh-Hant": "莖"
+      },
+      "example": "この花は茎が細いので、強い風で折れやすい。",
+      "examples": [
+        {
+          "text": "この花は茎が細いので、強い風で折れやすい。",
+          "translations": {
+            "zh-Hant": "這種花的莖很細，遇到強風容易折斷。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-07f301ffe197",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "つぼみ（つぼみ）",
+      "headword": "つぼみ",
+      "reading": "つぼみ",
+      "meanings": {
+        "zh-Hant": "花苞、蓓蕾"
+      },
+      "example": "桜のつぼみが少しずつ開き始めた。",
+      "examples": [
+        {
+          "text": "桜のつぼみが少しずつ開き始めた。",
+          "translations": {
+            "zh-Hant": "櫻花的花苞開始一點一點地綻放了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-f05c4354b68d",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "膨らむ（ふくらむ）",
+      "headword": "膨らむ",
+      "reading": "ふくらむ",
+      "meanings": {
+        "zh-Hant": "膨脹、鼓起；擴大"
+      },
+      "example": "パンの生地を暖かい場所に置き、膨らむのを待った。",
+      "examples": [
+        {
+          "text": "パンの生地を暖かい場所に置き、膨らむのを待った。",
+          "translations": {
+            "zh-Hant": "我把麵包麵團放在溫暖的地方，等待它膨脹。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-43a7312a6442",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "花粉（かふん）",
+      "headword": "花粉",
+      "reading": "かふん",
+      "meanings": {
+        "zh-Hant": "花粉"
+      },
+      "example": "春になると、花粉で目がかゆくなる。",
+      "examples": [
+        {
+          "text": "春になると、花粉で目がかゆくなる。",
+          "translations": {
+            "zh-Hant": "一到春天，我的眼睛就會因為花粉而發癢。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-1d5710ae0087",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "見誤る（みあやまる）",
+      "headword": "見誤る",
+      "reading": "みあやまる",
+      "meanings": {
+        "zh-Hant": "看錯、判斷錯誤"
+      },
+      "example": "駅までの距離を見誤って、電車に乗り遅れた。",
+      "examples": [
+        {
+          "text": "駅までの距離を見誤って、電車に乗り遅れた。",
+          "translations": {
+            "zh-Hant": "我誤判了到車站的距離，結果沒趕上電車。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-32bcfe41c356",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "取り組む（とりくむ）",
+      "headword": "取り組む",
+      "reading": "とりくむ",
+      "meanings": {
+        "zh-Hant": "致力於、認真處理"
+      },
+      "example": "苦手な問題にも、あきらめずに取り組んでいる。",
+      "examples": [
+        {
+          "text": "苦手な問題にも、あきらめずに取り組んでいる。",
+          "translations": {
+            "zh-Hant": "即使是不擅長的題目，我也不放棄，持續認真解答。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-4ee8a9248e82",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "取り入れる（とりいれる）",
+      "headword": "取り入れる",
+      "reading": "とりいれる",
+      "meanings": {
+        "zh-Hant": "採納、引進；收割"
+      },
+      "example": "生徒の意見を取り入れて、授業の進め方を変えた。",
+      "examples": [
+        {
+          "text": "生徒の意見を取り入れて、授業の進め方を変えた。",
+          "translations": {
+            "zh-Hant": "老師採納了學生的意見，改變了授課方式。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-9d9319c452c3",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "徐々に（じょじょに）",
+      "headword": "徐々に",
+      "reading": "じょじょに",
+      "meanings": {
+        "zh-Hant": "漸漸地、逐步地"
+      },
+      "example": "雨がやみ、空が徐々に明るくなってきた。",
+      "examples": [
+        {
+          "text": "雨がやみ、空が徐々に明るくなってきた。",
+          "translations": {
+            "zh-Hant": "雨停了，天空也漸漸明亮起來。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-2c1e9cf660d0",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "区別する（くべつする）",
+      "headword": "区別する",
+      "reading": "くべつする",
+      "meanings": {
+        "zh-Hant": "區別、分辨"
+      },
+      "example": "この二つの言葉は、意味を区別して使う必要がある。",
+      "examples": [
+        {
+          "text": "この二つの言葉は、意味を区別して使う必要がある。",
+          "translations": {
+            "zh-Hant": "這兩個詞必須區分意思後再使用。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-641fb1bb9032",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "返品する（へんぴんする）",
+      "headword": "返品する",
+      "reading": "へんぴんする",
+      "meanings": {
+        "zh-Hant": "退貨"
+      },
+      "example": "買ったシャツに穴が開いていたので、店に返品した。",
+      "examples": [
+        {
+          "text": "買ったシャツに穴が開いていたので、店に返品した。",
+          "translations": {
+            "zh-Hant": "買來的襯衫上有個破洞，所以我拿到店裡退貨了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-aa08b3341d43",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "普及する（ふきゅうする）",
+      "headword": "普及する",
+      "reading": "ふきゅうする",
+      "meanings": {
+        "zh-Hant": "普及、推廣"
+      },
+      "example": "スマートフォンが普及して、外出先でも地図を見られるようになった。",
+      "examples": [
+        {
+          "text": "スマートフォンが普及して、外出先でも地図を見られるようになった。",
+          "translations": {
+            "zh-Hant": "智慧型手機普及後，出門在外也能查看地圖了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-7bd10029adde",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "発達する（はったつする）",
+      "headword": "発達する",
+      "reading": "はったつする",
+      "meanings": {
+        "zh-Hant": "發展、發達"
+      },
+      "example": "子どもの言葉は、周囲の人との会話を通して発達する。",
+      "examples": [
+        {
+          "text": "子どもの言葉は、周囲の人との会話を通して発達する。",
+          "translations": {
+            "zh-Hant": "兒童的語言能力會透過與周圍人的交談而發展。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-737c1be4ab4b",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "通信網（つうしんもう）",
+      "headword": "通信網",
+      "reading": "つうしんもう",
+      "meanings": {
+        "zh-Hant": "通訊網路"
+      },
+      "example": "災害で通信網が使えなくなり、家族と連絡が取れなかった。",
+      "examples": [
+        {
+          "text": "災害で通信網が使えなくなり、家族と連絡が取れなかった。",
+          "translations": {
+            "zh-Hant": "通訊網路因災害而中斷，我無法和家人取得聯繫。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-dbd39d7b9471",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "退化する（たいかする）",
+      "headword": "退化する",
+      "reading": "たいかする",
+      "meanings": {
+        "zh-Hant": "退化"
+      },
+      "example": "この生物は暗い場所で暮らしてきたため、目が退化している。",
+      "examples": [
+        {
+          "text": "この生物は暗い場所で暮らしてきたため、目が退化している。",
+          "translations": {
+            "zh-Hant": "這種生物長期生活在黑暗環境中，因此眼睛已經退化。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-193f0d55151f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "収集する（しゅうしゅうする）",
+      "headword": "収集する",
+      "reading": "しゅうしゅうする",
+      "meanings": {
+        "zh-Hant": "收集"
+      },
+      "example": "祖父は、旅先で見つけた古い切手を収集している。",
+      "examples": [
+        {
+          "text": "祖父は、旅先で見つけた古い切手を収集している。",
+          "translations": {
+            "zh-Hant": "祖父會收集旅行途中發現的老郵票。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-72a9c415ca6e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "感染する（かんせんする）",
+      "headword": "感染する",
+      "reading": "かんせんする",
+      "meanings": {
+        "zh-Hant": "感染"
+      },
+      "example": "インフルエンザに感染して、一週間学校を休んだ。",
+      "examples": [
+        {
+          "text": "インフルエンザに感染して、一週間学校を休んだ。",
+          "translations": {
+            "zh-Hant": "我感染了流感，請了一週的病假沒去上學。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-2ceeeff35236",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "菌（きん）",
+      "headword": "菌",
+      "reading": "きん",
+      "meanings": {
+        "zh-Hant": "菌、微生物"
+      },
+      "example": "ヨーグルトに含まれる菌の働きを調べた。",
+      "examples": [
+        {
+          "text": "ヨーグルトに含まれる菌の働きを調べた。",
+          "translations": {
+            "zh-Hant": "我研究了優格中所含菌種的作用。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-29de63f51dd5",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "細菌（さいきん）",
+      "headword": "細菌",
+      "reading": "さいきん",
+      "meanings": {
+        "zh-Hant": "細菌"
+      },
+      "example": "研究室で、顕微鏡を使って細菌を観察した。",
+      "examples": [
+        {
+          "text": "研究室で、顕微鏡を使って細菌を観察した。",
+          "translations": {
+            "zh-Hant": "我在研究室裡用顯微鏡觀察細菌。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-47fc991be1b6",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "改良する（かいりょうする）",
+      "headword": "改良する",
+      "reading": "かいりょうする",
+      "meanings": {
+        "zh-Hant": "改良"
+      },
+      "example": "使いやすくなるように、道具の形を少し改良した。",
+      "examples": [
+        {
+          "text": "使いやすくなるように、道具の形を少し改良した。",
+          "translations": {
+            "zh-Hant": "為了讓工具更好用，我稍微改良了它的形狀。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-e93e7d01f22f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "組み換え（くみかえ）",
+      "headword": "組み換え",
+      "reading": "くみかえ",
+      "meanings": {
+        "zh-Hant": "重新組合、重組"
+      },
+      "example": "遺伝子の組み換えについて、授業で学んだ。",
+      "examples": [
+        {
+          "text": "遺伝子の組み換えについて、授業で学んだ。",
+          "translations": {
+            "zh-Hant": "我在課堂上學習了基因重組的相關知識。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-2eea27fdcfe6",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "受け継ぐ（うけつぐ）",
+      "headword": "受け継ぐ",
+      "reading": "うけつぐ",
+      "meanings": {
+        "zh-Hant": "繼承、承襲"
+      },
+      "example": "母が大切にしていた着物を、娘の私が受け継いだ。",
+      "examples": [
+        {
+          "text": "母が大切にしていた着物を、娘の私が受け継いだ。",
+          "translations": {
+            "zh-Hant": "身為女兒的我，繼承了母親珍藏的和服。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-b36f6ab0ddb2",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "技術的（ぎじゅつてき）",
+      "headword": "技術的",
+      "reading": "ぎじゅつてき",
+      "meanings": {
+        "zh-Hant": "技術上的"
+      },
+      "example": "この計画には、まだ技術的な課題が残っている。",
+      "examples": [
+        {
+          "text": "この計画には、まだ技術的な課題が残っている。",
+          "translations": {
+            "zh-Hant": "這項計畫仍有技術上的課題尚待解決。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-5a44d19119fc",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "微量（びりょう）",
+      "headword": "微量",
+      "reading": "びりょう",
+      "meanings": {
+        "zh-Hant": "微量"
+      },
+      "example": "この水には、微量の塩分が含まれている。",
+      "examples": [
+        {
+          "text": "この水には、微量の塩分が含まれている。",
+          "translations": {
+            "zh-Hant": "這水裡含有微量的鹽分。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-8bc9a52fb0ee",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "炊く（たく）",
+      "headword": "炊く",
+      "reading": "たく",
+      "meanings": {
+        "zh-Hant": "煮飯、炊煮"
+      },
+      "example": "毎朝、家族の分のご飯を炊きます。",
+      "examples": [
+        {
+          "text": "毎朝、家族の分のご飯を炊きます。",
+          "translations": {
+            "zh-Hant": "每天早上，我都會煮全家人的飯。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-6e001bdf1efd",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "役立つ（やくだつ）",
+      "headword": "役立つ",
+      "reading": "やくだつ",
+      "meanings": {
+        "zh-Hant": "有用、派上用場"
+      },
+      "example": "この地図は街を歩くときに役立ちます。",
+      "examples": [
+        {
+          "text": "この地図は街を歩くときに役立ちます。",
+          "translations": {
+            "zh-Hant": "這張地圖在市區步行時很有幫助。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-876ffa73896f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "足し算（たしざん）",
+      "headword": "足し算",
+      "reading": "たしざん",
+      "meanings": {
+        "zh-Hant": "加法"
+      },
+      "example": "弟は指を使って足し算をしています。",
+      "examples": [
+        {
+          "text": "弟は指を使って足し算をしています。",
+          "translations": {
+            "zh-Hant": "弟弟正在用手指做加法。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-e58c77e27d4e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "引き算（ひきざん）",
+      "headword": "引き算",
+      "reading": "ひきざん",
+      "meanings": {
+        "zh-Hant": "減法"
+      },
+      "example": "この引き算の答えは七です。",
+      "examples": [
+        {
+          "text": "この引き算の答えは七です。",
+          "translations": {
+            "zh-Hant": "這道減法題的答案是七。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-abfc4fddd9b4",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "掛け算（かけざん）",
+      "headword": "掛け算",
+      "reading": "かけざん",
+      "meanings": {
+        "zh-Hant": "乘法"
+      },
+      "example": "掛け算を覚えると、計算が速くなります。",
+      "examples": [
+        {
+          "text": "掛け算を覚えると、計算が速くなります。",
+          "translations": {
+            "zh-Hant": "學會乘法後，計算就會變快。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-6e898a392e69",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "割り算（わりざん）",
+      "headword": "割り算",
+      "reading": "わりざん",
+      "meanings": {
+        "zh-Hant": "除法"
+      },
+      "example": "割り算で余りが出たので、もう一度確かめました。",
+      "examples": [
+        {
+          "text": "割り算で余りが出たので、もう一度確かめました。",
+          "translations": {
+            "zh-Hant": "除法算出了餘數，所以我又檢查了一遍。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-af165e007ef4",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "勘定（かんじょう）",
+      "headword": "勘定",
+      "reading": "かんじょう",
+      "meanings": {
+        "zh-Hant": "計算；帳款、結帳"
+      },
+      "example": "お勘定は別々でお願いします。",
+      "examples": [
+        {
+          "text": "お勘定は別々でお願いします。",
+          "translations": {
+            "zh-Hant": "麻煩幫我們分開結帳。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-dd83ade376f5",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "増大（ぞうだい）",
+      "headword": "増大",
+      "reading": "ぞうだい",
+      "meanings": {
+        "zh-Hant": "增大、增加"
+      },
+      "example": "人口の増加に伴って、水の需要が増大しています。",
+      "examples": [
+        {
+          "text": "人口の増加に伴って、水の需要が増大しています。",
+          "translations": {
+            "zh-Hant": "隨著人口增加，用水需求也正在增大。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-7c370a1446af",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "補う（おぎなう）",
+      "headword": "補う",
+      "reading": "おぎなう",
+      "meanings": {
+        "zh-Hant": "補充、彌補"
+      },
+      "example": "足りない生活費を補うために、週末も働いています。",
+      "examples": [
+        {
+          "text": "足りない生活費を補うために、週末も働いています。",
+          "translations": {
+            "zh-Hant": "為了補足生活費，我連週末也在工作。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-b1ccc665edf2",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "不足（ふそく）",
+      "headword": "不足",
+      "reading": "ふそく",
+      "meanings": {
+        "zh-Hant": "不足、缺乏"
+      },
+      "example": "雨が降らず、畑の水が不足しています。",
+      "examples": [
+        {
+          "text": "雨が降らず、畑の水が不足しています。",
+          "translations": {
+            "zh-Hant": "一直沒有下雨，田裡的水不夠了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-5b43b5bfe718",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "軽減（けいげん）",
+      "headword": "軽減",
+      "reading": "けいげん",
+      "meanings": {
+        "zh-Hant": "減輕"
+      },
+      "example": "荷物を減らせば、肩の負担を軽減できます。",
+      "examples": [
+        {
+          "text": "荷物を減らせば、肩の負担を軽減できます。",
+          "translations": {
+            "zh-Hant": "減少行李，就能減輕肩膀的負擔。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-b6a980c002dd",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "殺生（せっしょう）",
+      "headword": "殺生",
+      "reading": "せっしょう",
+      "meanings": {
+        "zh-Hant": "殺生、殺害生物"
+      },
+      "example": "祖母は殺生を嫌い、家に入った虫も外へ逃がします。",
+      "examples": [
+        {
+          "text": "祖母は殺生を嫌い、家に入った虫も外へ逃がします。",
+          "translations": {
+            "zh-Hant": "祖母不喜歡殺生，就連跑進家裡的蟲也會放到外面。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-309f94637d15",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "達する（たっする）",
+      "headword": "達する",
+      "reading": "たっする",
+      "meanings": {
+        "zh-Hant": "達到、到達"
+      },
+      "example": "今日の最高気温は三十五度に達しました。",
+      "examples": [
+        {
+          "text": "今日の最高気温は三十五度に達しました。",
+          "translations": {
+            "zh-Hant": "今天的最高氣溫達到了三十五度。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-2a910fb598af",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "広がる（ひろがる）",
+      "headword": "広がる",
+      "reading": "ひろがる",
+      "meanings": {
+        "zh-Hant": "擴展、蔓延"
+      },
+      "example": "丘の上からは、青い海が広がっているのが見えます。",
+      "examples": [
+        {
+          "text": "丘の上からは、青い海が広がっているのが見えます。",
+          "translations": {
+            "zh-Hant": "從山丘上可以看見一望無際的藍色大海。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-53e3381ca854",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "通り（とおり）",
+      "headword": "通り",
+      "reading": "とおり",
+      "meanings": {
+        "zh-Hant": "大街；通行；方式"
+      },
+      "example": "この通りには古い本屋が何軒もあります。",
+      "examples": [
+        {
+          "text": "この通りには古い本屋が何軒もあります。",
+          "translations": {
+            "zh-Hant": "這條街上有好幾家老書店。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-9377e653ebd5",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "経過する（けいかする）",
+      "headword": "経過する",
+      "reading": "けいかする",
+      "meanings": {
+        "zh-Hant": "經過、時間流逝"
+      },
+      "example": "手術から一週間が経過しました。",
+      "examples": [
+        {
+          "text": "手術から一週間が経過しました。",
+          "translations": {
+            "zh-Hant": "距離手術已經過了一個星期。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-481a2db0e860",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "周期（しゅうき）",
+      "headword": "周期",
+      "reading": "しゅうき",
+      "meanings": {
+        "zh-Hant": "週期"
+      },
+      "example": "この機械は十秒の周期で音を出します。",
+      "examples": [
+        {
+          "text": "この機械は十秒の周期で音を出します。",
+          "translations": {
+            "zh-Hant": "這台機器每隔十秒就會發出聲音。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-175dac23e7cd",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "早朝（そうちょう）",
+      "headword": "早朝",
+      "reading": "そうちょう",
+      "meanings": {
+        "zh-Hant": "清晨"
+      },
+      "example": "早朝の公園は静かで、空気も澄んでいます。",
+      "examples": [
+        {
+          "text": "早朝の公園は静かで、空気も澄んでいます。",
+          "translations": {
+            "zh-Hant": "清晨的公園很安靜，空氣也很清新。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-9193eec7b511",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "夕暮れ時（ゆうぐれどき）",
+      "headword": "夕暮れ時",
+      "reading": "ゆうぐれどき",
+      "meanings": {
+        "zh-Hant": "黃昏時分"
+      },
+      "example": "夕暮れ時に、犬を連れて海辺を散歩しました。",
+      "examples": [
+        {
+          "text": "夕暮れ時に、犬を連れて海辺を散歩しました。",
+          "translations": {
+            "zh-Hant": "黃昏時，我帶著狗在海邊散步。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-ec3e7d3d85eb",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "下旬（げじゅん）",
+      "headword": "下旬",
+      "reading": "げじゅん",
+      "meanings": {
+        "zh-Hant": "下旬"
+      },
+      "example": "来月の下旬に新しい店が開きます。",
+      "examples": [
+        {
+          "text": "来月の下旬に新しい店が開きます。",
+          "translations": {
+            "zh-Hant": "下個月下旬會有一家新店開幕。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-382cdcd3c02c",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "向かう（むかう）",
+      "headword": "向かう",
+      "reading": "むかう",
+      "meanings": {
+        "zh-Hant": "朝向、前往；面對"
+      },
+      "example": "駅へ向かう途中で、友人に会いました。",
+      "examples": [
+        {
+          "text": "駅へ向かう途中で、友人に会いました。",
+          "translations": {
+            "zh-Hant": "前往車站的途中，我遇見了朋友。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-bb4af23327a3",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "枠（わく）",
+      "headword": "枠",
+      "reading": "わく",
+      "meanings": {
+        "zh-Hant": "框架；範圍、名額"
+      },
+      "example": "この写真には木の枠がよく合います。",
+      "examples": [
+        {
+          "text": "この写真には木の枠がよく合います。",
+          "translations": {
+            "zh-Hant": "這張照片很適合搭配木製相框。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-410a652a25e9",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "敷く（しく）",
+      "headword": "敷く",
+      "reading": "しく",
+      "meanings": {
+        "zh-Hant": "鋪設、鋪開"
+      },
+      "example": "冷たい床に毛布を敷いて座りました。",
+      "examples": [
+        {
+          "text": "冷たい床に毛布を敷いて座りました。",
+          "translations": {
+            "zh-Hant": "我在冰冷的地板上鋪了毛毯再坐下。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-661d483a5f02",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "配置（はいち）",
+      "headword": "配置",
+      "reading": "はいち",
+      "meanings": {
+        "zh-Hant": "配置、安排"
+      },
+      "example": "部屋を広く使えるように、机の配置を変えました。",
+      "examples": [
+        {
+          "text": "部屋を広く使えるように、机の配置を変えました。",
+          "translations": {
+            "zh-Hant": "為了讓房間的空間更好利用，我改變了桌子的配置。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-cedd17c1b33f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "位置（いち）",
+      "headword": "位置",
+      "reading": "いち",
+      "meanings": {
+        "zh-Hant": "位置"
+      },
+      "example": "地図でホテルの位置を確かめました。",
+      "examples": [
+        {
+          "text": "地図でホテルの位置を確かめました。",
+          "translations": {
+            "zh-Hant": "我在地圖上確認了飯店的位置。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-7ab764734e86",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "常に（つねに）",
+      "headword": "常に",
+      "reading": "つねに",
+      "meanings": {
+        "zh-Hant": "經常、始終"
+      },
+      "example": "医師は常に患者の話をよく聞いていました。",
+      "examples": [
+        {
+          "text": "医師は常に患者の話をよく聞いていました。",
+          "translations": {
+            "zh-Hant": "那位醫師始終很仔細地聆聽病人說話。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-549b0cd2e1a9",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "逃す（のがす）",
+      "headword": "逃す",
+      "reading": "のがす",
+      "meanings": {
+        "zh-Hant": "放跑；錯失"
+      },
+      "example": "迷っている間に、申し込む機会を逃しました。",
+      "examples": [
+        {
+          "text": "迷っている間に、申し込む機会を逃しました。",
+          "translations": {
+            "zh-Hant": "猶豫不決的時候，我錯過了報名的機會。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-9493412fc88d",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "留守（るす）",
+      "headword": "留守",
+      "reading": "るす",
+      "meanings": {
+        "zh-Hant": "不在家、外出"
+      },
+      "example": "昼間は留守なので、荷物は夕方に届けてください。",
+      "examples": [
+        {
+          "text": "昼間は留守なので、荷物は夕方に届けてください。",
+          "translations": {
+            "zh-Hant": "白天我不在家，請在傍晚送來包裹。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-fec8f055dbca",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "押さえる（おさえる）",
+      "headword": "押さえる",
+      "reading": "おさえる",
+      "meanings": {
+        "zh-Hant": "按住、壓住；掌握重點"
+      },
+      "example": "風で飛ばないように、紙を手で押さえてください。",
+      "examples": [
+        {
+          "text": "風で飛ばないように、紙を手で押さえてください。",
+          "translations": {
+            "zh-Hant": "請用手按住紙張，以免被風吹走。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-5d49b83693be",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "抑える（おさえる）",
+      "headword": "抑える",
+      "reading": "おさえる",
+      "meanings": {
+        "zh-Hant": "抑制、控制"
+      },
+      "example": "深呼吸をして、怒りを抑えました。",
+      "examples": [
+        {
+          "text": "深呼吸をして、怒りを抑えました。",
+          "translations": {
+            "zh-Hant": "我做了深呼吸，壓住了怒氣。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-ce9c75afc24f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "傾く（かたむく）",
+      "headword": "傾く",
+      "reading": "かたむく",
+      "meanings": {
+        "zh-Hant": "傾斜；傾向、衰落"
+      },
+      "example": "古い塀が道路の方へ傾いています。",
+      "examples": [
+        {
+          "text": "古い塀が道路の方へ傾いています。",
+          "translations": {
+            "zh-Hant": "老舊的圍牆正朝道路的方向傾斜。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-76ad637f6b8d",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "刻む（きざむ）",
+      "headword": "刻む",
+      "reading": "きざむ",
+      "meanings": {
+        "zh-Hant": "切碎；刻、銘記"
+      },
+      "example": "玉ねぎを細かく刻んで、鍋に入れます。",
+      "examples": [
+        {
+          "text": "玉ねぎを細かく刻んで、鍋に入れます。",
+          "translations": {
+            "zh-Hant": "把洋蔥切碎，再放進鍋裡。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-15f040c1d797",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "崩す（くずす）",
+      "headword": "崩す",
+      "reading": "くずす",
+      "meanings": {
+        "zh-Hant": "弄垮、打散；打亂"
+      },
+      "example": "弟が積み木の城を崩してしまいました。",
+      "examples": [
+        {
+          "text": "弟が積み木の城を崩してしまいました。",
+          "translations": {
+            "zh-Hant": "弟弟把積木城堡弄倒了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-7b26cc1116a9",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "狂う（くるう）",
+      "headword": "狂う",
+      "reading": "くるう",
+      "meanings": {
+        "zh-Hant": "失常、發狂；出錯"
+      },
+      "example": "電車が遅れて、一日の予定が狂ってしまいました。",
+      "examples": [
+        {
+          "text": "電車が遅れて、一日の予定が狂ってしまいました。",
+          "translations": {
+            "zh-Hant": "電車誤點，打亂了我一整天的行程。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-75cf1cc6d187",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "染める（そめる）",
+      "headword": "染める",
+      "reading": "そめる",
+      "meanings": {
+        "zh-Hant": "染色、染上"
+      },
+      "example": "白い布を青く染めて、袋を作りました。",
+      "examples": [
+        {
+          "text": "白い布を青く染めて、袋を作りました。",
+          "translations": {
+            "zh-Hant": "我把白布染成藍色，做成了袋子。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-2c330ed56939",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "迫る（せまる）",
+      "headword": "迫る",
+      "reading": "せまる",
+      "meanings": {
+        "zh-Hant": "逼近、迫近；逼迫"
+      },
+      "example": "締め切りが迫っているので、今日は残業します。",
+      "examples": [
+        {
+          "text": "締め切りが迫っているので、今日は残業します。",
+          "translations": {
+            "zh-Hant": "截止日期快到了，所以今天要加班。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-6ae964d7a35d",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "注ぐ（そそぐ）",
+      "headword": "注ぐ",
+      "reading": "そそぐ",
+      "meanings": {
+        "zh-Hant": "注入、倒入；傾注"
+      },
+      "example": "カップに熱いお茶を注ぎました。",
+      "examples": [
+        {
+          "text": "カップに熱いお茶を注ぎました。",
+          "translations": {
+            "zh-Hant": "我把熱茶倒進杯子裡。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-47ab4be4abf4",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "搾る（しぼる）",
+      "headword": "搾る",
+      "reading": "しぼる",
+      "meanings": {
+        "zh-Hant": "榨取、擠出"
+      },
+      "example": "牧場で、牛の乳を搾る体験をしました。",
+      "examples": [
+        {
+          "text": "牧場で、牛の乳を搾る体験をしました。",
+          "translations": {
+            "zh-Hant": "我在牧場體驗了擠牛奶。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-506595847cbe",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "絞る（しぼる）",
+      "headword": "絞る",
+      "reading": "しぼる",
+      "meanings": {
+        "zh-Hant": "擰乾；縮小範圍"
+      },
+      "example": "洗ったタオルをよく絞ってから、干してください。",
+      "examples": [
+        {
+          "text": "洗ったタオルをよく絞ってから、干してください。",
+          "translations": {
+            "zh-Hant": "請把洗好的毛巾擰乾後再晾起來。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-031e6f986162",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "縛る（しばる）",
+      "headword": "縛る",
+      "reading": "しばる",
+      "meanings": {
+        "zh-Hant": "捆綁；束縛"
+      },
+      "example": "古い新聞をひもで縛って、玄関に置きました。",
+      "examples": [
+        {
+          "text": "古い新聞をひもで縛って、玄関に置きました。",
+          "translations": {
+            "zh-Hant": "我用繩子把舊報紙綁好，放在玄關。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-bffbd3ab8b63",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "上り（のぼり）",
+      "headword": "上り",
+      "reading": "のぼり",
+      "meanings": {
+        "zh-Hant": "上行、上坡"
+      },
+      "example": "東京方面へ行く上りの電車に乗りました。",
+      "examples": [
+        {
+          "text": "東京方面へ行く上りの電車に乗りました。",
+          "translations": {
+            "zh-Hant": "我搭上了開往東京方向的上行列車。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-7205e6beb5c5",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "沈み（しずみ）",
+      "headword": "沈み",
+      "reading": "しずみ",
+      "meanings": {
+        "zh-Hant": "下沉、低落"
+      },
+      "example": "このソファは座ったときの沈みが大きいです。",
+      "examples": [
+        {
+          "text": "このソファは座ったときの沈みが大きいです。",
+          "translations": {
+            "zh-Hant": "這張沙發坐下時會陷得很深。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-3f435939c207",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "見栄（みえ）",
+      "headword": "見栄",
+      "reading": "みえ",
+      "meanings": {
+        "zh-Hant": "外表、虛榮"
+      },
+      "example": "見栄を張って、高い時計を買ってしまいました。",
+      "examples": [
+        {
+          "text": "見栄を張って、高い時計を買ってしまいました。",
+          "translations": {
+            "zh-Hant": "我為了愛面子，買下了昂貴的手錶。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-18450753a9bf",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "積む（つむ）",
+      "headword": "積む",
+      "reading": "つむ",
+      "meanings": {
+        "zh-Hant": "堆積、裝載；累積"
+      },
+      "example": "引っ越しの箱をトラックに積みました。",
+      "examples": [
+        {
+          "text": "引っ越しの箱をトラックに積みました。",
+          "translations": {
+            "zh-Hant": "我把搬家用的箱子裝上了卡車。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-dc75044f840e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "解く（とく）",
+      "headword": "解く",
+      "reading": "とく",
+      "meanings": {
+        "zh-Hant": "解開；解答"
+      },
+      "example": "先生にヒントをもらって、難しい問題を解きました。",
+      "examples": [
+        {
+          "text": "先生にヒントをもらって、難しい問題を解きました。",
+          "translations": {
+            "zh-Hant": "得到老師的提示後，我解開了那道難題。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-5234cb2c6197",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "溶く〔待確認〕（とく）",
+      "headword": "溶く〔待確認〕",
+      "reading": "とく",
+      "meanings": {
+        "zh-Hant": "溶解、調開"
+      },
+      "example": "小麦粉を水で溶いて、衣を作ります。",
+      "examples": [
+        {
+          "text": "小麦粉を水で溶いて、衣を作ります。",
+          "translations": {
+            "zh-Hant": "把麵粉用水調開，做成裹炸物的麵糊。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-e4e517ba348c",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "捕らえる（とらえる）",
+      "headword": "捕らえる",
+      "reading": "とらえる",
+      "meanings": {
+        "zh-Hant": "捕捉、抓住"
+      },
+      "example": "猫が庭で小さなねずみを捕らえました。",
+      "examples": [
+        {
+          "text": "猫が庭で小さなねずみを捕らえました。",
+          "translations": {
+            "zh-Hant": "貓在庭院裡捉到了一隻小老鼠。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-022c8c9897f0",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "睨む（にらむ）",
+      "headword": "睨む",
+      "reading": "にらむ",
+      "meanings": {
+        "zh-Hant": "瞪視；盯住、估計"
+      },
+      "example": "大声で話していたら、隣の客に睨まれました。",
+      "examples": [
+        {
+          "text": "大声で話していたら、隣の客に睨まれました。",
+          "translations": {
+            "zh-Hant": "我大聲說話時，被鄰座的客人瞪了一眼。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-25697c2f5d08",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "跳ねる（はねる）",
+      "headword": "跳ねる",
+      "reading": "はねる",
+      "meanings": {
+        "zh-Hant": "跳躍；濺起"
+      },
+      "example": "水たまりを踏んで、泥がズボンに跳ねました。",
+      "examples": [
+        {
+          "text": "水たまりを踏んで、泥がズボンに跳ねました。",
+          "translations": {
+            "zh-Hant": "我踩進水窪，泥水濺到了褲子上。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-22fd071c7b4f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "はまる（はまる）",
+      "headword": "はまる",
+      "reading": "はまる",
+      "meanings": {
+        "zh-Hant": "嵌入；陷入、著迷"
+      },
+      "example": "最近、古い映画を見ることにはまっています。",
+      "examples": [
+        {
+          "text": "最近、古い映画を見ることにはまっています。",
+          "translations": {
+            "zh-Hant": "最近我迷上了看老電影。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-2de92ace261f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "塞がる（ふさがる）",
+      "headword": "塞がる",
+      "reading": "ふさがる",
+      "meanings": {
+        "zh-Hant": "堵住；被佔用"
+      },
+      "example": "倒れた木で道が塞がり、先へ進めませんでした。",
+      "examples": [
+        {
+          "text": "倒れた木で道が塞がり、先へ進めませんでした。",
+          "translations": {
+            "zh-Hant": "倒下的樹堵住了道路，讓我們無法繼續前進。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-65cc3c9450b2",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "ぶつかる（ぶつかる）",
+      "headword": "ぶつかる",
+      "reading": "ぶつかる",
+      "meanings": {
+        "zh-Hant": "碰撞；遇到、衝突"
+      },
+      "example": "急いで角を曲がったら、人にぶつかりそうになりました。",
+      "examples": [
+        {
+          "text": "急いで角を曲がったら、人にぶつかりそうになりました。",
+          "translations": {
+            "zh-Hant": "我匆忙轉過街角，差點撞到人。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-642ae2a15b2d",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "振る（ふる）",
+      "headword": "振る",
+      "reading": "ふる",
+      "meanings": {
+        "zh-Hant": "揮動、搖動；甩開"
+      },
+      "example": "母は窓から手を振って、見送ってくれました。",
+      "examples": [
+        {
+          "text": "母は窓から手を振って、見送ってくれました。",
+          "translations": {
+            "zh-Hant": "母親從窗邊揮手，目送我離開。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-796ed39f09db",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "触れる（ふれる）",
+      "headword": "触れる",
+      "reading": "ふれる",
+      "meanings": {
+        "zh-Hant": "觸碰；提及、接觸"
+      },
+      "example": "展示品には手で触れないでください。",
+      "examples": [
+        {
+          "text": "展示品には手で触れないでください。",
+          "translations": {
+            "zh-Hant": "請不要用手觸摸展示品。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-0bff49d6cf81",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "招く（まねく）",
+      "headword": "招く",
+      "reading": "まねく",
+      "meanings": {
+        "zh-Hant": "招待、邀請；招致"
+      },
+      "example": "週末は友人を家に招いて、一緒に料理をします。",
+      "examples": [
+        {
+          "text": "週末は友人を家に招いて、一緒に料理をします。",
+          "translations": {
+            "zh-Hant": "週末我要邀請朋友來家裡，一起做飯。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-63d9c38cad3d",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "寄せる（よせる）",
+      "headword": "寄せる",
+      "reading": "よせる",
+      "meanings": {
+        "zh-Hant": "使靠近、聚攏；寄送"
+      },
+      "example": "寒いので、椅子をストーブの近くに寄せました。",
+      "examples": [
+        {
+          "text": "寒いので、椅子をストーブの近くに寄せました。",
+          "translations": {
+            "zh-Hant": "因為很冷，我把椅子挪到了暖爐旁。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-e2674f984d5e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "文句（もんく）",
+      "headword": "文句",
+      "reading": "もんく",
+      "meanings": {
+        "zh-Hant": "抱怨；語句"
+      },
+      "example": "文句を言う前に、まず自分で試してみてください。",
+      "examples": [
+        {
+          "text": "文句を言う前に、まず自分で試してみてください。",
+          "translations": {
+            "zh-Hant": "抱怨之前，請先自己試試看。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-8438803585eb",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "波（なみ）",
+      "headword": "波",
+      "reading": "なみ",
+      "meanings": {
+        "zh-Hant": "波浪；波動"
+      },
+      "example": "今日は波が高いので、海には入りません。",
+      "examples": [
+        {
+          "text": "今日は波が高いので、海には入りません。",
+          "translations": {
+            "zh-Hant": "今天海浪很大，所以我不下海。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-b704a8db3083",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "陰（かげ）",
+      "headword": "陰",
+      "reading": "かげ",
+      "meanings": {
+        "zh-Hant": "陰處；背後"
+      },
+      "example": "日差しが強かったので、木の陰で休みました。",
+      "examples": [
+        {
+          "text": "日差しが強かったので、木の陰で休みました。",
+          "translations": {
+            "zh-Hant": "陽光太強，所以我在樹蔭下休息。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-f774681ffe03",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "鋭い（するどい）",
+      "headword": "鋭い",
+      "reading": "するどい",
+      "meanings": {
+        "zh-Hant": "尖銳、鋒利；敏銳"
+      },
+      "example": "この包丁は刃が鋭いので、扱いに気をつけてください。",
+      "examples": [
+        {
+          "text": "この包丁は刃が鋭いので、扱いに気をつけてください。",
+          "translations": {
+            "zh-Hant": "這把菜刀的刀刃很鋒利，使用時請小心。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-94cb2fd32fd5",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "やかましい（やかましい）",
+      "headword": "やかましい",
+      "reading": "やかましい",
+      "meanings": {
+        "zh-Hant": "吵鬧；挑剔、嚴格"
+      },
+      "example": "外の工事の音がやかましくて、仕事に集中できません。",
+      "examples": [
+        {
+          "text": "外の工事の音がやかましくて、仕事に集中できません。",
+          "translations": {
+            "zh-Hant": "外面的施工聲太吵，讓我無法專心工作。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-ce70464fdc48",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "しょっちゅう（しょっちゅう）",
+      "headword": "しょっちゅう",
+      "reading": "しょっちゅう",
+      "meanings": {
+        "zh-Hant": "經常、老是"
+      },
+      "example": "兄はしょっちゅう鍵をなくして、家族に探してもらっています。",
+      "examples": [
+        {
+          "text": "兄はしょっちゅう鍵をなくして、家族に探してもらっています。",
+          "translations": {
+            "zh-Hant": "哥哥老是弄丟鑰匙，請家人幫忙找。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-91a7273e7f76",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "頻繁に（ひんぱんに）",
+      "headword": "頻繁に",
+      "reading": "ひんぱんに",
+      "meanings": {
+        "zh-Hant": "頻繁地"
+      },
+      "example": "最近、仕事で大阪を頻繁に訪れています。",
+      "examples": [
+        {
+          "text": "最近、仕事で大阪を頻繁に訪れています。",
+          "translations": {
+            "zh-Hant": "最近我因為工作而頻繁前往大阪。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-d65080a0aaae",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "尋ねる（たずねる）",
+      "headword": "尋ねる",
+      "reading": "たずねる",
+      "meanings": {
+        "zh-Hant": "詢問、打聽"
+      },
+      "example": "道が分からなかったので、近くの店で駅への行き方を尋ねました。",
+      "examples": [
+        {
+          "text": "道が分からなかったので、近くの店で駅への行き方を尋ねました。",
+          "translations": {
+            "zh-Hant": "因為不認識路，我到附近的店裡詢問了去車站的走法。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-c6e064911613",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "大げさに（おおげさに）",
+      "headword": "大げさに",
+      "reading": "おおげさに",
+      "meanings": {
+        "zh-Hant": "誇張地、小題大作地"
+      },
+      "example": "兄は小さなけがなのに、大げさに痛がっています。",
+      "examples": [
+        {
+          "text": "兄は小さなけがなのに、大げさに痛がっています。",
+          "translations": {
+            "zh-Hant": "哥哥明明只是受了小傷，卻誇張地喊痛。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-3cb8d1773a70",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "オーバーに（おーばーに）",
+      "headword": "オーバーに",
+      "reading": "おーばーに",
+      "meanings": {
+        "zh-Hant": "誇張地、過度地"
+      },
+      "example": "彼はわざとオーバーに驚いて、子供たちを笑わせました。",
+      "examples": [
+        {
+          "text": "彼はわざとオーバーに驚いて、子供たちを笑わせました。",
+          "translations": {
+            "zh-Hant": "他故意誇張地表現出驚訝，逗得孩子們大笑。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-6d2ca6ba8dfc",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "にわかに（にわかに）",
+      "headword": "にわかに",
+      "reading": "にわかに",
+      "meanings": {
+        "zh-Hant": "突然、驟然"
+      },
+      "example": "晴れていた空が、にわかに暗くなりました。",
+      "examples": [
+        {
+          "text": "晴れていた空が、にわかに暗くなりました。",
+          "translations": {
+            "zh-Hant": "原本晴朗的天空突然暗了下來。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-9575fb5d6539",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "あらゆる（あらゆる）",
+      "headword": "あらゆる",
+      "reading": "あらゆる",
+      "meanings": {
+        "zh-Hant": "所有、一切"
+      },
+      "example": "あらゆる方法を試しましたが、鍵は見つかりませんでした。",
+      "examples": [
+        {
+          "text": "あらゆる方法を試しましたが、鍵は見つかりませんでした。",
+          "translations": {
+            "zh-Hant": "我試過了所有方法，卻還是找不到鑰匙。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-4ba0c0de2f28",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "安易に（あんいに）",
+      "headword": "安易に",
+      "reading": "あんいに",
+      "meanings": {
+        "zh-Hant": "輕易地、草率地"
+      },
+      "example": "契約の内容を読まずに、安易に署名してはいけません。",
+      "examples": [
+        {
+          "text": "契約の内容を読まずに、安易に署名してはいけません。",
+          "translations": {
+            "zh-Hant": "不可以沒看合約內容就草率簽名。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-da4a2da91644",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "相互に（そうごに）",
+      "headword": "相互に",
+      "reading": "そうごに",
+      "meanings": {
+        "zh-Hant": "互相、彼此"
+      },
+      "example": "仕事を進めるには、相互に情報を伝える必要があります。",
+      "examples": [
+        {
+          "text": "仕事を進めるには、相互に情報を伝える必要があります。",
+          "translations": {
+            "zh-Hant": "要推進工作，就必須互相傳遞資訊。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-180273bd0e2c",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "スムーズに（すむーずに）",
+      "headword": "スムーズに",
+      "reading": "すむーずに",
+      "meanings": {
+        "zh-Hant": "順暢地、順利地"
+      },
+      "example": "事前に準備したので、受付はスムーズに進みました。",
+      "examples": [
+        {
+          "text": "事前に準備したので、受付はスムーズに進みました。",
+          "translations": {
+            "zh-Hant": "由於事先做好準備，報到作業進行得很順利。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-3b65da86f1a6",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "強引に（ごういんに）",
+      "headword": "強引に",
+      "reading": "ごういんに",
+      "meanings": {
+        "zh-Hant": "強行地、硬來地"
+      },
+      "example": "相手の話を聞かずに、強引に自分の案を通しました。",
+      "examples": [
+        {
+          "text": "相手の話を聞かずに、強引に自分の案を通しました。",
+          "translations": {
+            "zh-Hant": "他不聽對方的意見，強行通過了自己的方案。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-d6f4fbd160da",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "案の定（あんのじょう）",
+      "headword": "案の定",
+      "reading": "あんのじょう",
+      "meanings": {
+        "zh-Hant": "果然、不出所料"
+      },
+      "example": "傘を持たずに出たら、案の定、帰りに雨に降られました。",
+      "examples": [
+        {
+          "text": "傘を持たずに出たら、案の定、帰りに雨に降られました。",
+          "translations": {
+            "zh-Hant": "出門沒帶傘，果然回家時就遇上了下雨。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-c03e06621cf5",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "厚かましい（あつかましい）",
+      "headword": "厚かましい",
+      "reading": "あつかましい",
+      "meanings": {
+        "zh-Hant": "厚臉皮、不知羞恥"
+      },
+      "example": "初対面の人にお金を借りるなんて、厚かましいと思います。",
+      "examples": [
+        {
+          "text": "初対面の人にお金を借りるなんて、厚かましいと思います。",
+          "translations": {
+            "zh-Hant": "向第一次見面的人借錢，我覺得太厚臉皮了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-8d37e03190e8",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "図々しい（ずうずうしい）",
+      "headword": "図々しい",
+      "reading": "ずうずうしい",
+      "meanings": {
+        "zh-Hant": "厚臉皮、恬不知恥"
+      },
+      "example": "人の席に勝手に座るなんて、図々しい人ですね。",
+      "examples": [
+        {
+          "text": "人の席に勝手に座るなんて、図々しい人ですね。",
+          "translations": {
+            "zh-Hant": "竟然擅自坐別人的位子，真是個厚臉皮的人。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-7087ca85d361",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "内気（うちき）",
+      "headword": "内気",
+      "reading": "うちき",
+      "meanings": {
+        "zh-Hant": "內向、靦腆"
+      },
+      "example": "内気な弟は、新しいクラスで周りの人にまだ話しかけられません。",
+      "examples": [
+        {
+          "text": "内気な弟は、新しいクラスで周りの人にまだ話しかけられません。",
+          "translations": {
+            "zh-Hant": "內向的弟弟到了新班級，還不敢主動和周圍的人說話。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-8cad8bb6a535",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "シャイ（しゃい）",
+      "headword": "シャイ",
+      "reading": "しゃい",
+      "meanings": {
+        "zh-Hant": "害羞、靦腆"
+      },
+      "example": "彼はシャイなので、褒めるとすぐ顔が赤くなります。",
+      "examples": [
+        {
+          "text": "彼はシャイなので、褒めるとすぐ顔が赤くなります。",
+          "translations": {
+            "zh-Hant": "他很害羞，一受到稱讚就馬上臉紅。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-2235be6e4b36",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "曖昧（あいまい）",
+      "headword": "曖昧",
+      "reading": "あいまい",
+      "meanings": {
+        "zh-Hant": "含糊、模稜兩可"
+      },
+      "example": "曖昧な返事だけでは、参加するのかどうか分かりません。",
+      "examples": [
+        {
+          "text": "曖昧な返事だけでは、参加するのかどうか分かりません。",
+          "translations": {
+            "zh-Hant": "只給含糊的答覆，讓人無法知道到底會不會參加。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-24def3f41fe2",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "厄介な（やっかいな）",
+      "headword": "厄介な",
+      "reading": "やっかいな",
+      "meanings": {
+        "zh-Hant": "麻煩的、棘手的"
+      },
+      "example": "厄介な問題ですが、一つずつ解決していきましょう。",
+      "examples": [
+        {
+          "text": "厄介な問題ですが、一つずつ解決していきましょう。",
+          "translations": {
+            "zh-Hant": "雖然都是棘手的問題，我們還是一個個解決吧。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-a2f618c398eb",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "差し支えない（さしつかえない）",
+      "headword": "差し支えない",
+      "reading": "さしつかえない",
+      "meanings": {
+        "zh-Hant": "沒有妨礙、沒有關係"
+      },
+      "example": "差し支えない範囲で、お仕事について教えてください。",
+      "examples": [
+        {
+          "text": "差し支えない範囲で、お仕事について教えてください。",
+          "translations": {
+            "zh-Hant": "請在方便透露的範圍內，介紹一下您的工作。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-2bee37a36090",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "やむを得ない（やむをえない）",
+      "headword": "やむを得ない",
+      "reading": "やむをえない",
+      "meanings": {
+        "zh-Hant": "不得已、無可奈何"
+      },
+      "example": "大雪で電車が止まったのなら、遅刻もやむを得ないでしょう。",
+      "examples": [
+        {
+          "text": "大雪で電車が止まったのなら、遅刻もやむを得ないでしょう。",
+          "translations": {
+            "zh-Hant": "如果是因為大雪導致電車停駛，那麼遲到也是無可奈何的吧。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-80695f798f03",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "みっともない（みっともない）",
+      "headword": "みっともない",
+      "reading": "みっともない",
+      "meanings": {
+        "zh-Hant": "難看、不體面"
+      },
+      "example": "人前で大声で言い争うのは、みっともないですよ。",
+      "examples": [
+        {
+          "text": "人前で大声で言い争うのは、みっともないですよ。",
+          "translations": {
+            "zh-Hant": "在眾人面前大聲爭吵，很不體面喔。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-524d7675d04d",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "順調に（じゅんちょうに）",
+      "headword": "順調に",
+      "reading": "じゅんちょうに",
+      "meanings": {
+        "zh-Hant": "順利地"
+      },
+      "example": "工事は予定どおり順調に進んでいます。",
+      "examples": [
+        {
+          "text": "工事は予定どおり順調に進んでいます。",
+          "translations": {
+            "zh-Hant": "工程正按照預定計畫順利進行。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-e0abc938bb2f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "アイデア（あいであ）",
+      "headword": "アイデア",
+      "reading": "あいであ",
+      "meanings": {
+        "zh-Hant": "主意、構想"
+      },
+      "example": "散歩をしていると、いいアイデアが浮かびました。",
+      "examples": [
+        {
+          "text": "散歩をしていると、いいアイデアが浮かびました。",
+          "translations": {
+            "zh-Hant": "散步的時候，我想到了一個好主意。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-7ffb2710ddbe",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "伝言（でんごん）",
+      "headword": "伝言",
+      "reading": "でんごん",
+      "meanings": {
+        "zh-Hant": "傳話、留言"
+      },
+      "example": "留守番電話に伝言を残しました。",
+      "examples": [
+        {
+          "text": "留守番電話に伝言を残しました。",
+          "translations": {
+            "zh-Hant": "我在電話答錄機裡留了言。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-d024185eb6b7",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "各々（おのおの）",
+      "headword": "各々",
+      "reading": "おのおの",
+      "meanings": {
+        "zh-Hant": "各自、各個"
+      },
+      "example": "参加者は各々、自分の飲み物を持ってきてください。",
+      "examples": [
+        {
+          "text": "参加者は各々、自分の飲み物を持ってきてください。",
+          "translations": {
+            "zh-Hant": "請參加者各自攜帶自己的飲料。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-b6c5e5aa4df4",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "苦情（くじょう）",
+      "headword": "苦情",
+      "reading": "くじょう",
+      "meanings": {
+        "zh-Hant": "抱怨、投訴"
+      },
+      "example": "夜中の騒音について、住民から苦情が出ています。",
+      "examples": [
+        {
+          "text": "夜中の騒音について、住民から苦情が出ています。",
+          "translations": {
+            "zh-Hant": "居民對半夜的噪音提出了投訴。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-4f13613fd7fd",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "マナー（まなー）",
+      "headword": "マナー",
+      "reading": "まなー",
+      "meanings": {
+        "zh-Hant": "禮儀、規矩"
+      },
+      "example": "店員に乱暴な言い方をするのは、マナーに反します。",
+      "examples": [
+        {
+          "text": "店員に乱暴な言い方をするのは、マナーに反します。",
+          "translations": {
+            "zh-Hant": "用粗魯的語氣對店員說話，是不合禮儀的行為。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-8c3298178f6c",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "契機（けいき）",
+      "headword": "契機",
+      "reading": "けいき",
+      "meanings": {
+        "zh-Hant": "契機、轉機"
+      },
+      "example": "留学を契機に、料理を自分で作るようになりました。",
+      "examples": [
+        {
+          "text": "留学を契機に、料理を自分で作るようになりました。",
+          "translations": {
+            "zh-Hant": "以留學為契機，我開始自己做飯。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-e48696d2702e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "試作品（しさくひん）",
+      "headword": "試作品",
+      "reading": "しさくひん",
+      "meanings": {
+        "zh-Hant": "試製品、樣品"
+      },
+      "example": "試作品を使ってもらい、お客さんの意見を集めました。",
+      "examples": [
+        {
+          "text": "試作品を使ってもらい、お客さんの意見を集めました。",
+          "translations": {
+            "zh-Hant": "我們請顧客試用樣品，蒐集了他們的意見。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-deb3b54d2fd7",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "援助（えんじょ）",
+      "headword": "援助",
+      "reading": "えんじょ",
+      "meanings": {
+        "zh-Hant": "援助、幫助"
+      },
+      "example": "被災した村に、食料や水の援助が届きました。",
+      "examples": [
+        {
+          "text": "被災した村に、食料や水の援助が届きました。",
+          "translations": {
+            "zh-Hant": "受災的村莊收到了糧食和飲用水等援助。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-86592fe77e48",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "上がる（あがる）",
+      "headword": "上がる",
+      "reading": "あがる",
+      "meanings": {
+        "zh-Hant": "上升；怯場、緊張"
+      },
+      "example": "初めての発表で上がってしまい、名前も言えませんでした。",
+      "examples": [
+        {
+          "text": "初めての発表で上がってしまい、名前も言えませんでした。",
+          "translations": {
+            "zh-Hant": "第一次上台發表時，我緊張得連名字都說不出來。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-b3d749bfcd44",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "頭に来る（あたまにくる）",
+      "headword": "頭に来る",
+      "reading": "あたまにくる",
+      "meanings": {
+        "zh-Hant": "生氣、惱火"
+      },
+      "example": "約束を何度も破られて、さすがに頭に来ました。",
+      "examples": [
+        {
+          "text": "約束を何度も破られて、さすがに頭に来ました。",
+          "translations": {
+            "zh-Hant": "對方一再違反約定，這次我實在火大了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-051139cb9ff8",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "腹が立つ（はらがたつ）",
+      "headword": "腹が立つ",
+      "reading": "はらがたつ",
+      "meanings": {
+        "zh-Hant": "生氣、憤怒"
+      },
+      "example": "私の話を最後まで聞かないので、腹が立ちました。",
+      "examples": [
+        {
+          "text": "私の話を最後まで聞かないので、腹が立ちました。",
+          "translations": {
+            "zh-Hant": "對方不肯把我的話聽完，讓我很生氣。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-996e96ed2aa8",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "へこむ（へこむ）",
+      "headword": "へこむ",
+      "reading": "へこむ",
+      "meanings": {
+        "zh-Hant": "凹陷；沮喪"
+      },
+      "example": "失敗してへこんでいたら、友人が励ましてくれました。",
+      "examples": [
+        {
+          "text": "失敗してへこんでいたら、友人が励ましてくれました。",
+          "translations": {
+            "zh-Hant": "我因為失敗而沮喪時，朋友給了我鼓勵。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-8ed6aee1bf93",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "がっかりする（がっかりする）",
+      "headword": "がっかりする",
+      "reading": "がっかりする",
+      "meanings": {
+        "zh-Hant": "失望、灰心"
+      },
+      "example": "楽しみにしていた店が休みで、がっかりしました。",
+      "examples": [
+        {
+          "text": "楽しみにしていた店が休みで、がっかりしました。",
+          "translations": {
+            "zh-Hant": "期待已久的店竟然沒營業，讓我很失望。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-516b6f37234f",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "お詫びする（おわびする）",
+      "headword": "お詫びする",
+      "reading": "おわびする",
+      "meanings": {
+        "zh-Hant": "道歉、致歉"
+      },
+      "example": "商品の発送が遅れたことを、お客様にお詫びしました。",
+      "examples": [
+        {
+          "text": "商品の発送が遅れたことを、お客様にお詫びしました。",
+          "translations": {
+            "zh-Hant": "我為商品延遲出貨一事向顧客致歉。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-0309f961a45e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "言い張る（いいはる）",
+      "headword": "言い張る",
+      "reading": "いいはる",
+      "meanings": {
+        "zh-Hant": "堅稱、堅持己見"
+      },
+      "example": "彼は証拠を見せられても、知らないと言い張りました。",
+      "examples": [
+        {
+          "text": "彼は証拠を見せられても、知らないと言い張りました。",
+          "translations": {
+            "zh-Hant": "即使證據擺在眼前，他仍堅稱自己不知情。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-a13144bd2c66",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "打ち消す（うちけす）",
+      "headword": "打ち消す",
+      "reading": "うちけす",
+      "meanings": {
+        "zh-Hant": "否定、消除"
+      },
+      "example": "会社は店を閉めるといううわさを打ち消しました。",
+      "examples": [
+        {
+          "text": "会社は店を閉めるといううわさを打ち消しました。",
+          "translations": {
+            "zh-Hant": "公司否認了將要關店的傳聞。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-44c82f35a6ed",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "くるむ（くるむ）",
+      "headword": "くるむ",
+      "reading": "くるむ",
+      "meanings": {
+        "zh-Hant": "包裹、包住"
+      },
+      "example": "赤ちゃんを柔らかい毛布でくるみました。",
+      "examples": [
+        {
+          "text": "赤ちゃんを柔らかい毛布でくるみました。",
+          "translations": {
+            "zh-Hant": "我用柔軟的毛毯把嬰兒包起來。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-62e4516102db",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "背負う（せおう）",
+      "headword": "背負う",
+      "reading": "せおう",
+      "meanings": {
+        "zh-Hant": "背負；承擔"
+      },
+      "example": "父は重いリュックを背負って、山道を歩きました。",
+      "examples": [
+        {
+          "text": "父は重いリュックを背負って、山道を歩きました。",
+          "translations": {
+            "zh-Hant": "父親背著沉重的背包，走在山路上。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-fc9328c64c64",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "担ぐ（かつぐ）",
+      "headword": "担ぐ",
+      "reading": "かつぐ",
+      "meanings": {
+        "zh-Hant": "扛、抬；擁戴"
+      },
+      "example": "二人で木材を肩に担いで、倉庫まで運びました。",
+      "examples": [
+        {
+          "text": "二人で木材を肩に担いで、倉庫まで運びました。",
+          "translations": {
+            "zh-Hant": "兩個人一起把木材扛在肩上，搬到了倉庫。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-077f35d8b992",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "引き返す（ひきかえす）",
+      "headword": "引き返す",
+      "reading": "ひきかえす",
+      "meanings": {
+        "zh-Hant": "返回、折返"
+      },
+      "example": "財布を忘れたことに気づいて、家へ引き返しました。",
+      "examples": [
+        {
+          "text": "財布を忘れたことに気づいて、家へ引き返しました。",
+          "translations": {
+            "zh-Hant": "發現忘了帶錢包後，我便折返回家。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-5a91b2e107f8",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "くたびれる（くたびれる）",
+      "headword": "くたびれる",
+      "reading": "くたびれる",
+      "meanings": {
+        "zh-Hant": "疲倦；磨損、陳舊"
+      },
+      "example": "一日中歩いて、すっかりくたびれました。",
+      "examples": [
+        {
+          "text": "一日中歩いて、すっかりくたびれました。",
+          "translations": {
+            "zh-Hant": "走了一整天，我已經累壞了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-dd6777d9e799",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "悩む（なやむ）",
+      "headword": "悩む",
+      "reading": "なやむ",
+      "meanings": {
+        "zh-Hant": "煩惱、苦惱"
+      },
+      "example": "進学するか就職するか、ずっと悩んでいます。",
+      "examples": [
+        {
+          "text": "進学するか就職するか、ずっと悩んでいます。",
+          "translations": {
+            "zh-Hant": "我一直在煩惱該繼續升學還是就業。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-8c52920802b4",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "負ける（まける）",
+      "headword": "負ける",
+      "reading": "まける",
+      "meanings": {
+        "zh-Hant": "輸、敗北；讓價"
+      },
+      "example": "昨日の試合では一点差で負けました。",
+      "examples": [
+        {
+          "text": "昨日の試合では一点差で負けました。",
+          "translations": {
+            "zh-Hant": "昨天的比賽，我們以一分之差輸了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-d5af6ae7d19c",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "サボる（さぼる）",
+      "headword": "サボる",
+      "reading": "さぼる",
+      "meanings": {
+        "zh-Hant": "偷懶、翹課、曠工"
+      },
+      "example": "授業をサボって映画を見に行き、先生に叱られました。",
+      "examples": [
+        {
+          "text": "授業をサボって映画を見に行き、先生に叱られました。",
+          "translations": {
+            "zh-Hant": "我翹課去看電影，被老師罵了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-d07149209712",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "転居する（てんきょする）",
+      "headword": "転居する",
+      "reading": "てんきょする",
+      "meanings": {
+        "zh-Hant": "搬家、遷居"
+      },
+      "example": "来月、会社の近くの町へ転居します。",
+      "examples": [
+        {
+          "text": "来月、会社の近くの町へ転居します。",
+          "translations": {
+            "zh-Hant": "下個月我要搬到公司附近的城鎮。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-801eb3b242c5",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "寛ぐ（くつろぐ）",
+      "headword": "寛ぐ",
+      "reading": "くつろぐ",
+      "meanings": {
+        "zh-Hant": "放鬆、舒適地休息"
+      },
+      "example": "休みの日は、家で音楽を聴きながら寛いでいます。",
+      "examples": [
+        {
+          "text": "休みの日は、家で音楽を聴きながら寛いでいます。",
+          "translations": {
+            "zh-Hant": "休假的日子，我會在家一邊聽音樂一邊放鬆。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-70c037170594",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "気まぐれ（きまぐれ）",
+      "headword": "気まぐれ",
+      "reading": "きまぐれ",
+      "meanings": {
+        "zh-Hant": "心血來潮、反覆無常"
+      },
+      "example": "彼の気まぐれで、旅行の行き先が何度も変わりました。",
+      "examples": [
+        {
+          "text": "彼の気まぐれで、旅行の行き先が何度も変わりました。",
+          "translations": {
+            "zh-Hant": "因為他反覆無常，旅行目的地改了好幾次。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-ff060accf1e8",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "未だに（いまだに）",
+      "headword": "未だに",
+      "reading": "いまだに",
+      "meanings": {
+        "zh-Hant": "至今仍然"
+      },
+      "example": "十年前にもらった手紙を、未だに大切にしています。",
+      "examples": [
+        {
+          "text": "十年前にもらった手紙を、未だに大切にしています。",
+          "translations": {
+            "zh-Hant": "十年前收到的信，我至今仍十分珍惜。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-e5e32a395573",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "たくましい（たくましい）",
+      "headword": "たくましい",
+      "reading": "たくましい",
+      "meanings": {
+        "zh-Hant": "健壯；堅強、有韌性"
+      },
+      "example": "庭の木は強い風にも負けず、たくましく育っています。",
+      "examples": [
+        {
+          "text": "庭の木は強い風にも負けず、たくましく育っています。",
+          "translations": {
+            "zh-Hant": "庭院裡的樹木不畏強風，正茁壯地成長。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-65720d6b86b1",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "批評（ひひょう）",
+      "headword": "批評",
+      "reading": "ひひょう",
+      "meanings": {
+        "zh-Hant": "評論、批評"
+      },
+      "example": "新聞に、この映画を厳しく批評する記事が載っていました。",
+      "examples": [
+        {
+          "text": "新聞に、この映画を厳しく批評する記事が載っていました。",
+          "translations": {
+            "zh-Hant": "報紙上刊登了一篇嚴厲批評這部電影的文章。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-7b29435a200a",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "適応（てきおう）",
+      "headword": "適応",
+      "reading": "てきおう",
+      "meanings": {
+        "zh-Hant": "適應"
+      },
+      "example": "新しい職場の環境に適応するまで、少し時間がかかりました。",
+      "examples": [
+        {
+          "text": "新しい職場の環境に適応するまで、少し時間がかかりました。",
+          "translations": {
+            "zh-Hant": "我花了一點時間才適應新職場的環境。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-eae514537f92",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "改築（かいちく）",
+      "headword": "改築",
+      "reading": "かいちく",
+      "meanings": {
+        "zh-Hant": "改建建築物"
+      },
+      "example": "古い家を改築して、小さな図書館にしました。",
+      "examples": [
+        {
+          "text": "古い家を改築して、小さな図書館にしました。",
+          "translations": {
+            "zh-Hant": "我們把老房子改建成了一間小圖書館。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-5db1adb8961e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "改装（かいそう）",
+      "headword": "改装",
+      "reading": "かいそう",
+      "meanings": {
+        "zh-Hant": "重新裝修、改裝"
+      },
+      "example": "店内を明るく改装してから、お客さんが増えました。",
+      "examples": [
+        {
+          "text": "店内を明るく改装してから、お客さんが増えました。",
+          "translations": {
+            "zh-Hant": "把店內重新裝修得明亮之後，顧客增加了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-3443010e202c",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "よほど・よっぽど（よほど・よっぽど）",
+      "headword": "よほど・よっぽど",
+      "reading": "よほど・よっぽど",
+      "meanings": {
+        "zh-Hant": "相當、很；多麼"
+      },
+      "example": "昼食を食べる時間もなかったなんて、よほど忙しかったんですね。",
+      "examples": [
+        {
+          "text": "昼食を食べる時間もなかったなんて、よほど忙しかったんですね。",
+          "translations": {
+            "zh-Hant": "竟然連吃午餐的時間都沒有，想必相當忙吧。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-c286c86c20ec",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "大いに（おおいに）",
+      "headword": "大いに",
+      "reading": "おおいに",
+      "meanings": {
+        "zh-Hant": "大大地、盡情地"
+      },
+      "example": "新しい仕事には不安もありますが、大いに期待しています。",
+      "examples": [
+        {
+          "text": "新しい仕事には不安もありますが、大いに期待しています。",
+          "translations": {
+            "zh-Hant": "對新工作雖然有些不安，但我也抱著很大的期待。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-b9cf498e8ee0",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "なおさら（なおさら）",
+      "headword": "なおさら",
+      "reading": "なおさら",
+      "meanings": {
+        "zh-Hant": "更加、越發"
+      },
+      "example": "一人でも大変なのに、子供を連れていればなおさらです。",
+      "examples": [
+        {
+          "text": "一人でも大変なのに、子供を連れていればなおさらです。",
+          "translations": {
+            "zh-Hant": "光是一個人就已經很辛苦了，帶著孩子就更不用說了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-0674f1f2a6d3",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "ぐっと（ぐっと）",
+      "headword": "ぐっと",
+      "reading": "ぐっと",
+      "meanings": {
+        "zh-Hant": "猛然；大幅度地"
+      },
+      "example": "秋になって、朝の気温がぐっと下がりました。",
+      "examples": [
+        {
+          "text": "秋になって、朝の気温がぐっと下がりました。",
+          "translations": {
+            "zh-Hant": "入秋後，早晨的氣溫大幅下降了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-d0e037670079",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "めっきり（めっきり）",
+      "headword": "めっきり",
+      "reading": "めっきり",
+      "meanings": {
+        "zh-Hant": "明顯地、顯著地"
+      },
+      "example": "引っ越してから、彼に会う機会がめっきり減りました。",
+      "examples": [
+        {
+          "text": "引っ越してから、彼に会う機会がめっきり減りました。",
+          "translations": {
+            "zh-Hant": "搬家後，見到他的機會明顯減少了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-f61c8dbcebee",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "割合（わりあい）",
+      "headword": "割合",
+      "reading": "わりあい",
+      "meanings": {
+        "zh-Hant": "比例；比較、相當"
+      },
+      "example": "この学校は、電車で通う生徒の割合が高いです。",
+      "examples": [
+        {
+          "text": "この学校は、電車で通う生徒の割合が高いです。",
+          "translations": {
+            "zh-Hant": "這所學校搭電車通學的學生比例很高。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-9de0dddf70ab",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "あらかじめ（あらかじめ）",
+      "headword": "あらかじめ",
+      "reading": "あらかじめ",
+      "meanings": {
+        "zh-Hant": "預先、事先"
+      },
+      "example": "会議の資料は、あらかじめメールで送っておきます。",
+      "examples": [
+        {
+          "text": "会議の資料は、あらかじめメールで送っておきます。",
+          "translations": {
+            "zh-Hant": "我會事先透過電子郵件寄出會議資料。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-6d6f19212be7",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "絶えず（たえず）",
+      "headword": "絶えず",
+      "reading": "たえず",
+      "meanings": {
+        "zh-Hant": "不斷地、始終"
+      },
+      "example": "窓の外から、絶えず車の音が聞こえてきます。",
+      "examples": [
+        {
+          "text": "窓の外から、絶えず車の音が聞こえてきます。",
+          "translations": {
+            "zh-Hant": "窗外不斷傳來車輛的聲音。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-9ebb3678a436",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "終始（しゅうし）",
+      "headword": "終始",
+      "reading": "しゅうし",
+      "meanings": {
+        "zh-Hant": "始終、從頭到尾"
+      },
+      "example": "彼女は終始笑顔で、私たちの質問に答えてくれました。",
+      "examples": [
+        {
+          "text": "彼女は終始笑顔で、私たちの質問に答えてくれました。",
+          "translations": {
+            "zh-Hant": "她從頭到尾都帶著笑容回答我們的問題。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-c1bb6c5062de",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "時折（ときおり）",
+      "headword": "時折",
+      "reading": "ときおり",
+      "meanings": {
+        "zh-Hant": "偶爾、時而"
+      },
+      "example": "祖父は時折、子供の頃の話をしてくれます。",
+      "examples": [
+        {
+          "text": "祖父は時折、子供の頃の話をしてくれます。",
+          "translations": {
+            "zh-Hant": "祖父偶爾會跟我們說他小時候的故事。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-10554f0a252e",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "度々（たびたび）",
+      "headword": "度々",
+      "reading": "たびたび",
+      "meanings": {
+        "zh-Hant": "屢次、多次"
+      },
+      "example": "彼には度々助けてもらったので、今度は私が力になりたいです。",
+      "examples": [
+        {
+          "text": "彼には度々助けてもらったので、今度は私が力になりたいです。",
+          "translations": {
+            "zh-Hant": "他曾多次幫助我，這次我也想助他一臂之力。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-28f0c76c5bd7",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "しきりに（しきりに）",
+      "headword": "しきりに",
+      "reading": "しきりに",
+      "meanings": {
+        "zh-Hant": "頻頻地、不停地"
+      },
+      "example": "猫がしきりに窓の外を見ているので、何かいるのかもしれません。",
+      "examples": [
+        {
+          "text": "猫がしきりに窓の外を見ているので、何かいるのかもしれません。",
+          "translations": {
+            "zh-Hant": "貓不停地往窗外看，外面可能有什麼東西。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-ba00d2753220",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "大して（たいして）",
+      "headword": "大して",
+      "reading": "たいして",
+      "meanings": {
+        "zh-Hant": "並不怎麼（後接否定）"
+      },
+      "example": "この問題は大して難しくないので、一人でも解けます。",
+      "examples": [
+        {
+          "text": "この問題は大して難しくないので、一人でも解けます。",
+          "translations": {
+            "zh-Hant": "這道題並不怎麼難，一個人也能解開。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-964fecdfb0d2",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "めったに（めったに）",
+      "headword": "めったに",
+      "reading": "めったに",
+      "meanings": {
+        "zh-Hant": "很少、難得（後接否定）"
+      },
+      "example": "仕事が忙しくて、平日はめったに自炊しません。",
+      "examples": [
+        {
+          "text": "仕事が忙しくて、平日はめったに自炊しません。",
+          "translations": {
+            "zh-Hant": "工作很忙，我平日很少自己做飯。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-0bcb681ce00b",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "果たして（はたして）",
+      "headword": "果たして",
+      "reading": "はたして",
+      "meanings": {
+        "zh-Hant": "究竟、到底；果然"
+      },
+      "example": "この小さな船で、果たして海を渡れるだろうか。",
+      "examples": [
+        {
+          "text": "この小さな船で、果たして海を渡れるだろうか。",
+          "translations": {
+            "zh-Hant": "靠這艘小船，究竟能不能渡過大海呢？"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-f4bfa6786a6c",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "だろうか（だろうか）",
+      "headword": "だろうか",
+      "reading": "だろうか",
+      "meanings": {
+        "zh-Hant": "會是……嗎、是否……呢"
+      },
+      "example": "あの店は、日曜日も開いているのだろうか。",
+      "examples": [
+        {
+          "text": "あの店は、日曜日も開いているのだろうか。",
+          "translations": {
+            "zh-Hant": "那家店星期天也有營業嗎？"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-f59a795eef0b",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "あたかも（あたかも）",
+      "headword": "あたかも",
+      "reading": "あたかも",
+      "meanings": {
+        "zh-Hant": "宛如、彷彿"
+      },
+      "example": "彼はあたかも何も知らないかのように振る舞いました。",
+      "examples": [
+        {
+          "text": "彼はあたかも何も知らないかのように振る舞いました。",
+          "translations": {
+            "zh-Hant": "他的表現宛如什麼都不知道似的。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-b93e4fed073c",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "ふと（ふと）",
+      "headword": "ふと",
+      "reading": "ふと",
+      "meanings": {
+        "zh-Hant": "忽然、偶然"
+      },
+      "example": "電車に乗っているとき、ふと昔の友人を思い出しました。",
+      "examples": [
+        {
+          "text": "電車に乗っているとき、ふと昔の友人を思い出しました。",
+          "translations": {
+            "zh-Hant": "搭電車時，我忽然想起了一位老朋友。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-ac3ac08dd2a8",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "やむを得ず（やむをえず）",
+      "headword": "やむを得ず",
+      "reading": "やむをえず",
+      "meanings": {
+        "zh-Hant": "不得已地"
+      },
+      "example": "子供が熱を出したので、やむを得ず出張を取りやめました。",
+      "examples": [
+        {
+          "text": "子供が熱を出したので、やむを得ず出張を取りやめました。",
+          "translations": {
+            "zh-Hant": "因為孩子發燒了，我不得已取消了出差。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-1199182a46d4",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "まして（まして）",
+      "headword": "まして",
+      "reading": "まして",
+      "meanings": {
+        "zh-Hant": "何況、更不用說"
+      },
+      "example": "私には三キロも走れないのだから、まして十キロは無理です。",
+      "examples": [
+        {
+          "text": "私には三キロも走れないのだから、まして十キロは無理です。",
+          "translations": {
+            "zh-Hant": "我連三公里都跑不了，更不用說十公里了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-05c73da918e5",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "かえって（かえって）",
+      "headword": "かえって",
+      "reading": "かえって",
+      "meanings": {
+        "zh-Hant": "反而"
+      },
+      "example": "急いで説明したら、かえって相手を混乱させてしまいました。",
+      "examples": [
+        {
+          "text": "急いで説明したら、かえって相手を混乱させてしまいました。",
+          "translations": {
+            "zh-Hant": "我匆忙解釋，反而讓對方更混亂了。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ja-vocab-f30637799e39",
+      "category": "1",
+      "subcategory": "1.01",
+      "term": "あいにく（あいにく）",
+      "headword": "あいにく",
+      "reading": "あいにく",
+      "meanings": {
+        "zh-Hant": "不巧、偏偏"
+      },
+      "example": "あいにく今日は店長が休みなので、明日お電話いただけますか。",
+      "examples": [
+        {
+          "text": "あいにく今日は店長が休みなので、明日お電話いただけますか。",
+          "translations": {
+            "zh-Hant": "不巧店長今天休假，可以請您明天再來電嗎？"
+          }
+        }
+      ]
+    }
+  ]
+}

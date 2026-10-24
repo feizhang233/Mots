@@ -1,0 +1,22 @@
+{
+  "success": true,
+  "errors": [],
+  "viewports": [
+    1440,
+    390,
+    320
+  ],
+  "checks": [
+    "keyboard disclosure",
+    "rating persistence and focus",
+    "detail Escape/focus",
+    "small flashcards and resume",
+    "per-book has/none reload",
+    "native select",
+    "search and empty state",
+    "mobile first-level category drawer",
+    "dark/reduced motion",
+    "rating/deletion last-child focus and undo",
+    "vocabulary unchanged"
+  ]
+}

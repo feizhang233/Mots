@@ -1,0 +1,49 @@
+{
+  "info" : {
+    "arguments" : [
+      "devicectl",
+      "device",
+      "info",
+      "apps",
+      "--device",
+      "00008140-000948C13468801C",
+      "--bundle-id",
+      "com.feizhang.mots",
+      "--timeout",
+      "30",
+      "--json-output",
+      "qa/ios/thematic-grammar-books/device-release-installed-app.json"
+    ],
+    "commandType" : "devicectl.device.info.apps",
+    "environment" : {
+      "TERM" : "dumb"
+    },
+    "jsonVersion" : 5,
+    "outcome" : "success",
+    "version" : "642.16"
+  },
+  "result" : {
+    "apps" : [
+      {
+        "appClip" : false,
+        "builtByDeveloper" : true,
+        "bundleIdentifier" : "com.feizhang.mots",
+        "bundleVersion" : "2",
+        "containerAccessible" : true,
+        "defaultApp" : false,
+        "hidden" : false,
+        "internalApp" : false,
+        "name" : "Mots",
+        "removable" : true,
+        "url" : "file:///private/var/containers/Bundle/Application/4F9C0443-3898-41C7-83AE-D468981E565C/Mots.app/",
+        "version" : "1.0"
+      }
+    ],
+    "defaultAppsIncluded" : false,
+    "deviceIdentifier" : "2D0B8EAD-0830-53A2-BBF5-32CFD59F6E0A",
+    "hiddenAppsIncluded" : false,
+    "internalAppsIncluded" : false,
+    "matchingBundleIdentifier" : "com.feizhang.mots",
+    "removableAppsIncluded" : true
+  }
+}

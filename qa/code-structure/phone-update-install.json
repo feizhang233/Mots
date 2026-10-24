@@ -1,0 +1,39 @@
+{
+  "info" : {
+    "arguments" : [
+      "devicectl",
+      "device",
+      "install",
+      "app",
+      "--device",
+      "00008140-000948C13468801C",
+      "/Users/zhangfei/Library/Developer/Xcode/DerivedData/Mots-gdmsgsweqznrijcvsfsozhtrydqe/Build/Products/Debug-iphoneos/Mots.app",
+      "--json-output",
+      "qa/code-structure/phone-update-install.json",
+      "--timeout",
+      "60"
+    ],
+    "commandType" : "devicectl.device.install.app",
+    "environment" : {
+      "TERM" : "dumb"
+    },
+    "jsonVersion" : 5,
+    "outcome" : "success",
+    "version" : "642.16"
+  },
+  "result" : {
+    "deviceIdentifier" : "2D0B8EAD-0830-53A2-BBF5-32CFD59F6E0A",
+    "installedApplications" : [
+      {
+        "bundleID" : "com.feizhang.mots",
+        "databaseSequenceNumber" : 5016,
+        "databaseUUID" : "6AB6720B-7869-473D-B722-45DFD5272C14",
+        "installationURL" : "file:///private/var/containers/Bundle/Application/2369AB1E-08B7-411A-A186-730CC687DFE2/Mots.app/",
+        "launchServicesIdentifier" : "unknown",
+        "options" : {
+
+        }
+      }
+    ]
+  }
+}

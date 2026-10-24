@@ -1,0 +1,18 @@
+test_manifest_sources_exist_once_and_match_project_groups (__main__.ProjectTests.test_manifest_sources_exist_once_and_match_project_groups) ... ok
+test_mode_presentation_typechecks_against_existing_domain_members (__main__.ProjectTests.test_mode_presentation_typechecks_against_existing_domain_members) ... ok
+test_model_harness_scope_excludes_application_ui (__main__.ProjectTests.test_model_harness_scope_excludes_application_ui) ... ok
+test_native_app_icon_is_an_opaque_full_size_asset (__main__.ProjectTests.test_native_app_icon_is_an_opaque_full_size_asset) ... ok
+test_regeneration_preserves_team_and_bundle_identity (__main__.ProjectTests.test_regeneration_preserves_team_and_bundle_identity) ... ok
+test_resources_do_not_create_reserved_top_level_directory (__main__.ProjectTests.test_resources_do_not_create_reserved_top_level_directory) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 2.870s
+
+OK
+Generated mobile/ios/Mots.xcodeproj
+Generated mobile/ios/Mots.xcodeproj
+Generated mobile/ios/Mots.xcodeproj
+Generated mobile/ios/Mots.xcodeproj
+Generated mobile/ios/Mots.xcodeproj
+Generated mobile/ios/Mots.xcodeproj
+Generated mobile/ios/Mots.xcodeproj

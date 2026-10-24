@@ -1,0 +1,27 @@
+python3 scripts/build.py --check
+Build is current: 14 generated files.
+node --check dist/data.js
+node --check dist/audio-manifest.js
+node --check dist/extra-audio.js
+node --check dist/select.js
+node tests/run.cjs
+Navigation, isolated dictionaries, search, and captured review queues passed.
+Dictionary imports, v1/v2/v3 backups, atomic validation, storage events, and quota feedback passed.
+Card resume, paging, wraparound, filters, shuffled order, and dictionary isolation passed.
+Native select values, safe labels, stable options, disabled/empty fallbacks and accessible markup passed.
+Audio playback, cancellation, stale callbacks, single fallback, and permission errors passed.
+All 5 regression suites passed.
+python3 tests/deploy_test.py
+test_corrupt_upload_is_rejected_before_service_commands (__main__.DeploymentTests.test_corrupt_upload_is_rejected_before_service_commands) ... ok
+test_manifest_cannot_hide_outside_file_behind_symlink (__main__.DeploymentTests.test_manifest_cannot_hide_outside_file_behind_symlink) ... ok
+test_manifest_rejects_paths_outside_public_release_directories (__main__.DeploymentTests.test_manifest_rejects_paths_outside_public_release_directories) ... ok
+test_nginx_preflight_failure_leaves_active_release_untouched (__main__.DeploymentTests.test_nginx_preflight_failure_leaves_active_release_untouched) ... ok
+test_rollback_preserves_disabled_stopped_service (__main__.DeploymentTests.test_rollback_preserves_disabled_stopped_service) ... ok
+test_tunnel_preflight_failure_leaves_active_release_untouched (__main__.DeploymentTests.test_tunnel_preflight_failure_leaves_active_release_untouched) ... ok
+test_valid_release_activates_without_rewriting_dns (__main__.DeploymentTests.test_valid_release_activates_without_rewriting_dns) ... ok
+test_wrong_origin_content_restores_release_config_and_permissions (__main__.DeploymentTests.test_wrong_origin_content_restores_release_config_and_permissions) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.028s
+
+OK

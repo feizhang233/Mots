@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "version": "07740f3e3bedc53d0ef0d9c15c6f0ada11758eca7e8f9f1e6b43061aef6c9b6f",
+  "catalogPath": "/database/catalog.json",
+  "catalogSHA256": "1bf7381565d9759e7853b4f7f1559b45a6fe56e3765f799907e44baae77f913e",
+  "dictionaries": [
+    {
+      "id": "fr",
+      "kind": "vocabulary",
+      "language": "fr",
+      "entryCount": 3846
+    },
+    {
+      "id": "de",
+      "kind": "vocabulary",
+      "language": "de",
+      "entryCount": 12
+    },
+    {
+      "id": "ja",
+      "kind": "vocabulary",
+      "language": "ja",
+      "entryCount": 414
+    },
+    {
+      "id": "grammar-fr",
+      "kind": "grammar",
+      "language": "fr",
+      "entryCount": 6,
+      "grammarMode": "standard"
+    },
+    {
+      "id": "grammar-de",
+      "kind": "grammar",
+      "language": "de",
+      "entryCount": 6,
+      "grammarMode": "standard"
+    },
+    {
+      "id": "grammar-ja",
+      "kind": "grammar",
+      "language": "ja",
+      "entryCount": 6,
+      "grammarMode": "standard"
+    },
+    {
+      "id": "grammar-theme-fr",
+      "kind": "grammar",
+      "language": "fr",
+      "entryCount": 0,
+      "grammarMode": "thematic"
+    },
+    {
+      "id": "grammar-theme-de",
+      "kind": "grammar",
+      "language": "de",
+      "entryCount": 0,
+      "grammarMode": "thematic"
+    },
+    {
+      "id": "grammar-theme-ja",
+      "kind": "grammar",
+      "language": "ja",
+      "entryCount": 0,
+      "grammarMode": "thematic"
+    }
+  ],
+  "database": {
+    "unitCount": 16,
+    "entryCount": 3846,
+    "sourceFiles": 32
+  },
+  "files": {
+    "database/runtime/data.js": "c0c5ea303df43e8bd4f52c16081e50e966b7d4b692ff16569be7b6ca8ae32762",
+    "database/runtime/extra-audio.js": "7d2a754d6cda9f8c21ca3dc2a3e12717d153dcd14550fdc97221e67df40ef1c4",
+    "database/runtime/audio-manifest.js": "bb45c3104e660e04bd6f05e1e11b095b675628ab3bb1e907115391639f5a2637",
+    "database/manifest.json": "880ccc6f0fb6359586a87ba9acee26b81bf9e4a1aaf494050f5a074c73130b34",
+    "database/japanese/source.md": "206a70a8bb0b4d1d3a05393ab5bcf74d0cd23dedf937865c61fbef4749925afc",
+    "database/japanese/vocabulary.json": "a32a21cc03945350717209511fe45b80f7598d3af1471a0b1a0135b10fec3862",
+    "database/japanese/examples.json": "9d2d686687bd75e7d96f7265da76aaa45c5ddd170cd661e0042e41d8fb6ef36d",
+    "web/src/js/languages.js": "fb321935c01189fb035ac1a7b4d071ed8bd903defed0fc738a5f644f4003db7e",
+    "web/src/js/dictionaries.js": "a1fdf9db604b2190d9ac03dc741e1d0e43abd07912df3cec6e8219ad99c7f353",
+    "web/src/js/grammar.js": "09078d01531a8c362c3d8932829adb66775e3bd0aaf2621a8e0b530fb45c8606",
+    "database/catalog.json": "1bf7381565d9759e7853b4f7f1559b45a6fe56e3765f799907e44baae77f913e"
+  }
+}

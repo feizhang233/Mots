@@ -1,0 +1,37 @@
+{
+  "app" : "mots",
+  "customBanks" : {
+    "de" : [
+
+    ],
+    "fr" : [
+
+    ],
+    "ja" : [
+
+    ]
+  },
+  "dictionaries" : [
+
+  ],
+  "exportedAt" : "2026-10-23T10:15:38Z",
+  "progress" : {
+    "fr" : {
+      "book-1.01-001" : 2
+    }
+  },
+  "ratings" : {
+    "book-1.01-001" : 2
+  },
+  "settings" : {
+    "autoAdvance" : false,
+    "defaultHideMastered" : false,
+    "dictionaryId" : "ja",
+    "meaningLanguage" : "zh-Hant",
+    "order" : "ordered",
+    "pageSize" : 20,
+    "speechRate" : 0.45000000000000001,
+    "view" : "list"
+  },
+  "version" : 3
+}

@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-24",
+  "cause": "Active filter used a filled circular SF Symbol inside a second circular glass button; the previous visual check missed the active state.",
+  "fix": "Borderless native Menu with one stable line icon, an active dot overlay, and a 44 pt rectangular label touch area.",
+  "simulator": "Mots Test iPhone 17 / iOS 27.0",
+  "runtimeChecks": [
+    "Reproduced old inactive and active presentation.",
+    "Verified corrected active, inactive and active-again states.",
+    "Toggling hide-mastered changed the displayed subcategory count 26 -> 28 -> 26.",
+    "Opened menu by tapping left of the visible glyph, inside the 44 pt label hit region.",
+    "Native menu selection checkmarks and accessible active/inactive labels are retained."
+  ],
+  "simulatorBuildPassed": true,
+  "signedDeviceBuildPassed": true,
+  "physicalInstallationConfirmed": false,
+  "physicalAuthorization": "User explicitly approved updating iPhone earlier in this ongoing layout-fix session.",
+  "dataHandling": "Standard in-place installation only; no learning data read, export or uninstall.",
+  "designLint": {
+    "errors": 0,
+    "warnings": 16,
+    "infos": 1
+  },
+  "formatCheck": "DESIGN.md Prettier and Swift trailing-whitespace checks passed.",
+  "sourceSha256": "b5cb11a7d1d29a09edac51cce9bd362710fd78111d69cdb30622ea0687a864a4",
+  "verificationLimit": "Appearance and touch behavior verified in simulator; physical installation confirmed separately.",
+  "physicalInstallationStatus": "Not completed: CoreDevice connection timed out; final device listing reports the physical iPhone unavailable.",
+  "screenshots": [
+    "active-before.png",
+    "inactive-after.png",
+    "active-after.png"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "info" : {
+    "arguments" : [
+      "devicectl",
+      "device",
+      "info",
+      "processes",
+      "--device",
+      "00008140-000948C13468801C",
+      "--filter",
+      "processIdentifier == 78376",
+      "--timeout",
+      "30",
+      "--json-output",
+      "qa/ios/thematic-grammar-books/device-release-process.json"
+    ],
+    "commandType" : "devicectl.device.info.processes",
+    "environment" : {
+      "TERM" : "dumb"
+    },
+    "jsonVersion" : 5,
+    "outcome" : "success",
+    "version" : "642.16"
+  },
+  "result" : {
+    "deviceIdentifier" : "2D0B8EAD-0830-53A2-BBF5-32CFD59F6E0A",
+    "runningProcesses" : [
+      {
+        "executable" : "file:///private/var/containers/Bundle/Application/4F9C0443-3898-41C7-83AE-D468981E565C/Mots.app/Mots",
+        "processIdentifier" : 78376
+      }
+    ]
+  }
+}

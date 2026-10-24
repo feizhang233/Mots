@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-24",
+  "bundleIdentifier": "com.feizhang.mots",
+  "version": "1.0",
+  "build": "2",
+  "source": "Current maintained native source and nine-book shared catalog",
+  "catalogSHA256": "1bf7381565d9759e7853b4f7f1559b45a6fe56e3765f799907e44baae77f913e",
+  "catalogMatchesSource": true,
+  "books": [
+    {
+      "id": "fr",
+      "kind": "vocabulary",
+      "grammarMode": "standard",
+      "entryCount": 3846
+    },
+    {
+      "id": "de",
+      "kind": "vocabulary",
+      "grammarMode": "standard",
+      "entryCount": 12
+    },
+    {
+      "id": "ja",
+      "kind": "vocabulary",
+      "grammarMode": "standard",
+      "entryCount": 414
+    },
+    {
+      "id": "grammar-fr",
+      "kind": "grammar",
+      "grammarMode": "standard",
+      "entryCount": 6
+    },
+    {
+      "id": "grammar-de",
+      "kind": "grammar",
+      "grammarMode": "standard",
+      "entryCount": 6
+    },
+    {
+      "id": "grammar-ja",
+      "kind": "grammar",
+      "grammarMode": "standard",
+      "entryCount": 6
+    },
+    {
+      "id": "grammar-theme-fr",
+      "kind": "grammar",
+      "grammarMode": "thematic",
+      "entryCount": 0
+    },
+    {
+      "id": "grammar-theme-de",
+      "kind": "grammar",
+      "grammarMode": "thematic",
+      "entryCount": 0
+    },
+    {
+      "id": "grammar-theme-ja",
+      "kind": "grammar",
+      "grammarMode": "thematic",
+      "entryCount": 0
+    }
+  ],
+  "signingBuild": "Xcode signed build succeeded using preserved configured team and bundle ID",
+  "hostCodesignVerification": "CSSMERR_TP_NOT_TRUSTED; iOS device install and launch results recorded separately",
+  "dataHandling": "In-place update only. No uninstall, erase, personal-data read or export."
+}

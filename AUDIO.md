@@ -12,9 +12,9 @@
 
 ## 內建資源
 
-法語採用 macOS Thomas（fr-FR）合成語音，實際詞條與音訊映射依持續更新的 `dist/data.js`、`dist/audio-manifest.js` 為準。主清單仍保留法語例句音訊以相容既有資料，但目前介面沒有例句朗讀按鈕。
+法語採用 macOS Thomas（fr-FR）合成語音，實際詞條與音訊映射依持續更新的 `web/dist/data.js`、`web/dist/audio-manifest.js` 為準。主清單仍保留法語例句音訊以相容既有資料，但目前介面沒有例句朗讀按鈕。
 
-德語與日語各 12 個示例分別使用 Anna（de-DE）、Kyoko（ja-JP），共 24 段單字音訊，由 `dist/extra-audio.js` 映射。這些均為合成語音，不是真人錄音，也不表示德日詞庫或多語釋義已完整翻譯。
+德語 12 個示例使用 Anna（de-DE），日語詞彙總表 414 詞使用 Kyoko（ja-JP），共 426 段單字音訊，由 `web/dist/extra-audio.js` 映射。日語音訊對應原表讀音，已替換原有 12 個日語示例的活動引用；顯示文字仍保留「詞彙（讀音）」及待確認標記。這些均為合成語音，不是真人錄音，也不表示德日詞庫或多語釋義已完整翻譯。
 
 打包器把兩份清單引用的音訊內嵌為資料 URI。單文件版的內建音訊不依賴網路、API 密鑰或裝置已安裝的聲線；分離文件版需可讀取對應資源。ZIP 僅收錄目前引用的音訊，未引用舊檔保留在來源目錄。
 
@@ -24,7 +24,11 @@
 
 Google Cloud Text-to-Speech 是另一種服務方案，但需要啟用服務、身份驗證及計費設定；超出免費額度可能收費。此靜態工具沒有引入該服務。[Google Cloud 官方說明](https://docs.cloud.google.com/text-to-speech/docs/get-started)。
 
-主音訊的歷史解碼／波形記錄保存在 `dist/audio/validation.json`，後續原書單元的檢查記錄位於 `qa/`；歷史記錄不能證明後來新增的全部檔案均做過相同檢查。德日 24 段檔案另有解碼與非靜音檢查記錄。打包時再驗證當前引用的容器簽名與 Base64 完整性。這些檢查不能證明發音自然度或教學準確性；本輪不宣稱逐條真人聽辨或真實手機測試。
+主音訊的歷史解碼／波形記錄保存在 `web/dist/audio/validation.json`，後續原書單元的檢查記錄位於 `qa/`；歷史記錄不能證明後來新增的全部檔案均做過相同檢查。原德日 24 段示例的解碼與非靜音檢查記錄只適用於當時的檔案，日語新增 414 段音訊另以[日語音訊驗證記錄](database/runtime/extra-audio/japanese-validation.json)為準。打包時再驗證當前引用的容器簽名與 Base64 完整性。這些檢查不能證明發音自然度或教學準確性；本輪不宣稱逐條真人聽辨或真實手機測試。
+
+## 日語詞彙總表更新
+
+日語來源為 `database/japanese/source.md`，結構化詞庫為 `database/japanese/vocabulary.json`，由 `scripts/import-japanese.py` 重建。414 詞依左欄再右欄的順序匯入，原表未提供例句，因此這批只生成單字讀音。來源「溶く〔待確認〕（とく）」仍保留待確認標記，音訊檢查不會消除原始辨字的不確定性。
 
 ## 第四單元更新
 

@@ -24,7 +24,7 @@ import zipfile
 
 
 ROOT = Path(__file__).resolve().parent.parent
-DIST = ROOT / "dist"
+DIST = ROOT / "web/dist"
 HTML_NAME = "Mots法语词库.html"
 ZIP_NAME = "Mots法语词库.zip"
 MIME_TYPES = {
@@ -275,10 +275,15 @@ def archive_files() -> list[Path]:
             for reference in entries.values():
                 if not isinstance(reference, str):
                     raise PackagingError("Audio manifest paths must be strings")
-                active_audio.add(local_asset(reference))
+                active_audio.add((ROOT / "database/runtime" / reference).resolve())
     candidates = [ROOT / HTML_NAME]
-    for directory in ("src", "dist", "tests", "docs", "deploy", "qa", "scripts", "database"):
+    # Native sources travel with the portable project; Xcode build products do not.
+    # Client audio copies are excluded below; canonical database audio travels once.
+    for directory in ("web", "tests", "docs", "deploy", "sync", "qa", "scripts", "database",
+                      "mobile/ios/Mots", "mobile/ios/Mots.xcodeproj", "mobile/ios/scripts", "mobile/ios/Tests"):
         candidates.extend(path for path in (ROOT / directory).rglob("*") if path.is_file())
+    candidates.append(ROOT / "mobile/ios/README.md")
+    candidates.append(ROOT / "mobile/README.md")
     candidates.extend(ROOT.glob("*.md"))
     candidates.extend(ROOT.glob("premium-*.json"))
     candidates.extend(ROOT / name for name in ("Makefile", ".prettierrc.json", ".prettierignore"))
@@ -286,15 +291,16 @@ def archive_files() -> list[Path]:
         path for path in candidates
         if path.is_file()
         and (path.name in {".prettierrc.json", ".prettierignore"} or not any(
-            part.startswith(".") or part == "__pycache__" for part in path.relative_to(ROOT).parts
+            part.startswith(".") or part in {"__pycache__", "xcuserdata"} for part in path.relative_to(ROOT).parts
         ))
-        and path.suffix.lower() not in {".tmp", ".pyc", ".aiff", ".aif"}
+        and path.suffix.lower() not in {".tmp", ".pyc", ".aiff", ".aif", ".sqlite", ".sqlite3", ".db", ".sqlite-wal", ".sqlite-shm", ".sqlite3-wal", ".sqlite3-shm", ".db-wal", ".db-shm"}
         and (path.suffix.lower() not in {".m4a", ".mp3", ".wav"} or path.resolve() in active_audio)
     })
 
 
 def main() -> None:
-    subprocess.run([sys.executable, str(ROOT / "scripts/build.py")], check=True, stdout=sys.stderr)
+    subprocess.run([sys.executable, str(ROOT / "web/scripts/build.py")], check=True, stdout=sys.stderr)
+    subprocess.run([sys.executable, str(ROOT / "scripts/sync-data.py")], check=True, stdout=sys.stderr)
     builder = StandaloneBuilder()
     builder.feed((DIST / "index.html").read_text(encoding="utf-8"))
     builder.close()

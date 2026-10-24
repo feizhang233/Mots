@@ -1,0 +1,9 @@
+{
+  "archive_sha256": "78ae71659e50738612b5b083cefcbf8a80c67ef9be3c911a76730fd811ed8e7a",
+  "files": 7949,
+  "canonical_audio_files": 7693,
+  "duplicate_client_audio_files": 0,
+  "legacy_component_roots": false,
+  "extracted_build_and_regressions": "passed",
+  "native_resource_check": "passed"
+}

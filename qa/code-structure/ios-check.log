@@ -1,0 +1,29 @@
+node mobile/ios/scripts/export-content.cjs
+Exported fr: 3846, de: 12, ja: 12; 3870 bundled word clips.
+python3 mobile/ios/scripts/generate-project.py
+Generated mobile/ios/Mots.xcodeproj
+node mobile/ios/scripts/export-content.cjs --check
+Verified fr: 3846, de: 12, ja: 12; 3870 bundled word clips.
+bash mobile/ios/scripts/test.sh
+PASS: content/audio counts; search; lookup visibility; selected-card persistence; scoped progress; unconditional card advancement and list selection; manual page navigation and unrated review completion; card/search isolation and boundary handling; dictionary identity; atomic backup merge; v1/v2/v3 compatibility; legacy extension navigation; source/random order; live mastery filters without skipping; POS preservation; stable review and skipped counts; independent safe CSV; array import; storage failure and quarantined corrupt-state recovery.
+PASS: paired sync protocol validation; legacy seeding; deterministic ties; zero tombstones; Lamport counters; unknown-record retention; atomic persistence; review/random/page preservation; mastery membership; persistence failure; HTTPS private auth; create/join; in-flight local changes; stale response/disconnect; invalid envelopes; independent deletion/restore transport; two-channel pairing; in-flight deletion edits; no partial-sync success.
+PASS: deletion/undo/restore source and familiarity preservation; dictionary identity; stats/filter/lookup/CSV; current/last/empty neighbour boundaries; random order; stable review removal; relaunch/migration; unknown deletion records; observed counters and deterministic ties; v3 backup restamping/legacy preservation/atomic rejection; persistence failure blocks sync.
+python3 mobile/ios/Tests/project_test.py
+test_manifest_sources_exist_once_and_match_project_groups (__main__.ProjectTests.test_manifest_sources_exist_once_and_match_project_groups) ... ok
+test_mode_presentation_typechecks_against_existing_domain_members (__main__.ProjectTests.test_mode_presentation_typechecks_against_existing_domain_members) ... ok
+test_model_harness_scope_excludes_application_ui (__main__.ProjectTests.test_model_harness_scope_excludes_application_ui) ... ok
+test_native_app_icon_is_an_opaque_full_size_asset (__main__.ProjectTests.test_native_app_icon_is_an_opaque_full_size_asset) ... ok
+test_regeneration_preserves_team_and_bundle_identity (__main__.ProjectTests.test_regeneration_preserves_team_and_bundle_identity) ... ok
+test_resources_do_not_create_reserved_top_level_directory (__main__.ProjectTests.test_resources_do_not_create_reserved_top_level_directory) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.452s
+
+OK
+Generated mobile/ios/Mots.xcodeproj
+Generated mobile/ios/Mots.xcodeproj
+Generated mobile/ios/Mots.xcodeproj
+Generated mobile/ios/Mots.xcodeproj
+Generated mobile/ios/Mots.xcodeproj
+Generated mobile/ios/Mots.xcodeproj
+Generated mobile/ios/Mots.xcodeproj

@@ -1,0 +1,19 @@
+Window: "Mots — SpeechPlayer.swift", App: Xcode.
+0 standard window Mots — SpeechPlayer.swift, ID: Xcode.WorkspaceWindow, Secondary Actions: Raise, URL: file:///Users/zhangfei/Documents/ChatGPT/%E5%8D%95%E8%AF%8D%E4%B9%A6/french-atelier/mobile/ios/Mots/SpeechPlayer.swift
+					14 row (selected) 0 SpeechPlayer.speak(word:)
+				42 tab Description: Breakpoints, Help: Show the Breakpoints Navigator, Value: 0
+				47 container SpeechPlayer.swift
+					48 container Description: SpeechPlayer.swift, ID: editor context
+final class SpeechPlayer: NSObject, AVAudioPlayerDelegate, AVSpeechSynthesizerDelegate {
+    static let shared = SpeechPlayer()
+    func speak(word: StudyWord) {
+									55 button (disabled) ID: Line Annotation, Description: Program Counter Annotation Identifier Line 44: Thread 1: one-shot breakpoint 1, SpeechPlayer.swift:44
+								62 text Thread 1: one-shot breakpoint 1
+									72 text Minimap Landmark, Description: SpeechPlayer
+									82 text Minimap Landmark, Description: speak(word:)
+								90 pop up button SpeechPlayer
+				96 button Description: Breakpoints, Help: Deactivate Breakpoints, Value: 1
+					109 pop up button 0 SpeechPlayer.speak(word:)
+(lldb) breakpoint set --file SpeechPlayer.swift --line 44 --one-shot true
+Breakpoint 1: where = Mots.debug.dylib`SpeechPlayer.speak(word:) + 2216 at SpeechPlayer.swift:44:25, address = 0x0000000105698274
+			156 text Mots Paused Mots on Mots Test iPhone 17

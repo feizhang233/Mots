@@ -1,0 +1,13 @@
+Built 14 interface files (0 changed), 8050 database assets (0 copied); asset versions updated.
+Exported fr: 3846, de: 12, ja: 12; 3870 bundled word clips.
+Data synchronized: 9baa87240d5442e7; 3846 French entries, 32 source files; native/web catalog matches.
+{
+  "standalone": "/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/Mots法语词库.html",
+  "html_bytes": 171950224,
+  "zip": "/Users/zhangfei/Documents/ChatGPT/单词书/Mots法语词库.zip",
+  "zip_bytes": 208902211,
+  "archive_files": 7949,
+  "inline_scripts": 12,
+  "embedded_audio_files": 7693,
+  "javascript_syntax": "passed"
+}

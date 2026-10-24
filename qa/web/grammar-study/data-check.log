@@ -1,0 +1,1044 @@
+Verified 414 Japanese entries in source column order.
+node:internal/assert/utils:146
+  throw error;
+  ^
+
+AssertionError [ERR_ASSERTION]: Generated catalog differs from current web source; run make ios-assets.
++ actual - expected
+... Skipped lines
+
+  '[\n' +
+    '  {\n' +
+    '    "id": "fr",\n' +
+    '    "title": "法語基礎詞彙分類學習手冊",\n' +
+    '    "language": "fr",\n' +
+...
+    '        "language": "fr",\n' +
++   '     '... 1673102 more characters
+-   '     '... 1826423 more characters
+
+    at Object.<anonymous> (/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/scripts/export-content.cjs:55:10)
+    at Module._compile (node:internal/modules/cjs/loader:1829:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1969:10)
+    at Module.load (node:internal/modules/cjs/loader:1552:32)
+    at Module._load (node:internal/modules/cjs/loader:1354:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: '[\n' +
+    '  {\n' +
+    '    "id": "fr",\n' +
+    '    "title": "法語基礎詞彙分類學習手冊",\n' +
+    '    "language": "fr",\n' +
+    '    "categories": [\n' +
+    '      {\n' +
+    '        "id": "1",\n' +
+    '        "name": "履歷、個人信息",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "1.01",\n' +
+    '            "name": "個人數據"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "1.02",\n' +
+    '            "name": "國籍和民族"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "1.03",\n' +
+    '            "name": "家庭"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "1.04",\n' +
+    '            "name": "外在形象"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "1.05",\n' +
+    '            "name": "性格和脾氣"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "1.06",\n' +
+    '            "name": "業餘活動、興趣和愛好"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "1.07",\n' +
+    '            "name": "宗教"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "2",\n' +
+    '        "name": "居住",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "2.01",\n' +
+    '            "name": "房子"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "2.02",\n' +
+    '            "name": "家政"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "2.03",\n' +
+    '            "name": "房間和佈置陳設"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "2.04",\n' +
+    '            "name": "材料"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "3",\n' +
+    '        "name": "環境",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "3.01",\n' +
+    '            "name": "城市和鄉村"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "3.02",\n' +
+    '            "name": "風景"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "3.03",\n' +
+    '            "name": "氣候和天氣"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "3.04",\n' +
+    '            "name": "植物和動物"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "4",\n' +
+    '        "name": "旅遊和交通",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "4.01",\n' +
+    '            "name": "路線描述"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "4.02",\n' +
+    '            "name": "旅遊業"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "4.03",\n' +
+    '            "name": "交通"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "4.04",\n' +
+    '            "name": "運輸工具"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "5",\n' +
+    '        "name": "膳食",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "5.01",\n' +
+    '            "name": "食品"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "5.02",\n' +
+    '            "name": "餐飲"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "6",\n' +
+    '        "name": "購物",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "6.01",\n' +
+    '            "name": "生意"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "6.02",\n' +
+    '            "name": "價格和貨幣往來"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "6.03",\n' +
+    '            "name": "服裝和飾品"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "7",\n' +
+    '        "name": "公共和私人服務業",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "7.01",\n' +
+    '            "name": "政府機關和管理"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "7.02",\n' +
+    '            "name": "公共和社會服務"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "7.03",\n' +
+    '            "name": "警察"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "7.04",\n' +
+    '            "name": "犯罪"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "8",\n' +
+    '        "name": "身體健康和衛生",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "8.01",\n' +
+    '            "name": "身體"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "8.02",\n' +
+    '            "name": "健康和疾病"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "8.03",\n' +
+    '            "name": "身體健康和需求"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "8.04",\n' +
+    '            "name": "醫學和醫學護理"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "9",\n' +
+    '        "name": "感覺和運動",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "9.01",\n' +
+    '            "name": "感官感覺和感知表述"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "9.02",\n' +
+    '            "name": "心理感覺"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "9.03",\n' +
+    '            "name": "情感"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "9.04",\n' +
+    '            "name": "身體活動"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "9.05",\n' +
+    '            "name": "感覺特徵"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "10",\n' +
+    '        "name": "學習培訓",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "10.01",\n' +
+    '            "name": "學校"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "10.02",\n' +
+    '            "name": "課堂"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "10.03",\n' +
+    '            "name": "大學學習"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "10.04",\n' +
+    '            "name": "考試"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "11",\n' +
+    '        "name": "工作領域",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "11.01",\n' +
+    '            "name": "職業名稱"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "11.02",\n' +
+    '            "name": "工作內容和活動"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "11.03",\n' +
+    '            "name": "工作場所和工作條件"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "12",\n' +
+    '        "name": "語言",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "12.01",\n' +
+    '            "name": "學習語言和掌握語言"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "12.02",\n' +
+    '            "name": "溝通理解"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "12.03",\n' +
+    '            "name": "講話行為方式"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "12.04",\n' +
+    '            "name": "討論"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "12.05",\n' +
+    '            "name": "意見"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "12.06",\n' +
+    '            "name": "可能性"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "13",\n' +
+    '        "name": "業餘時間和娛樂",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "13.01",\n' +
+    '            "name": "活動"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "13.02",\n' +
+    '            "name": "博物館，展覽和名勝古跡"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "13.03",\n' +
+    '            "name": "劇院，電影院和音樂會"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "13.04",\n' +
+    '            "name": "遠程通信，廣播和電視"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "13.05",\n' +
+    '            "name": "讀物和媒體"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "13.06",\n' +
+    '            "name": "體育"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "13.07",\n' +
+    '            "name": "競賽"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "14",\n' +
+    '        "name": "私人關係和聯絡",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "14.01",\n' +
+    '            "name": "私人關係的類型"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "14.02",\n' +
+    '            "name": "愛情和分離"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "14.03",\n' +
+    '            "name": "邀請和約會"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "14.04",\n' +
+    '            "name": "所有"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "15",\n' +
+    '        "name": "政治和社會",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "15.01",\n' +
+    '            "name": "時事"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "15.02",\n' +
+    '            "name": "社會"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "15.03",\n' +
+    '            "name": "內政"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "15.04",\n' +
+    '            "name": "政策，國家和國際事務"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "15.05",\n' +
+    '            "name": "戰爭和和平"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "15.06",\n' +
+    '            "name": "經濟"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "15.07",\n' +
+    '            "name": "法律"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "16",\n' +
+    '        "name": "一般性概念",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "16.01",\n' +
+    '            "name": "時間"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.02",\n' +
+    '            "name": "時間的分配"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.03",\n' +
+    '            "name": "時間表述"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.04",\n' +
+    '            "name": "數量"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.05",\n' +
+    '            "name": "數量表述"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.06",\n' +
+    '            "name": "數量分配"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.07",\n' +
+    '            "name": "特點、類型和方式"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.08",\n' +
+    '            "name": "空間"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.09",\n' +
+    '            "name": "顏色和形態"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.10",\n' +
+    '            "name": "共同點和區別"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.11",\n' +
+    '            "name": "頻率和順序"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.12",\n' +
+    '            "name": "命運和偶然"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.13",\n' +
+    '            "name": "狀態和改變"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      }\n' +
+    '    ],\n' +
+    '    "words": [\n' +
+    '      {\n' +
+    '        "id": "book-1.01-001",\n' +
+    '        "term": "l’âge",\n' +
+    '        "meaning": "年齡",\n' +
+    '        "meanings": {\n' +
+    '          "zh-Hans": "年龄",\n' +
+    '          "zh-Hant": "年齡"\n' +
+    '        },\n' +
+    '        "example": "Quel âge as-tu ? — J’ai 18 ans.",\n' +
+    '        "category": "1",\n' +
+    '        "subcategory": "1.01",\n' +
+    '        "language": "fr",\n' +
+    '        "audio": "audio/book-1.01-001-20e7b35d.m4a",\n' +
+    '        "part": "n. m."\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "book-1.01-002",\n' +
+    '        "term": "âgé, âgée",\n' +
+    '        "meaning": "年齡為……的",\n' +
+    '        "meanings": {\n' +
+    '          "zh-Hans": "年龄为……的",\n' +
+    '          "zh-Hant": "年齡為……的"\n' +
+    '        },\n' +
+    '        "example": "Son fils doit être âgé de 17 ans.",\n' +
+    '        "category": "1",\n' +
+    '        "subcategory": "1.01",\n' +
+    '        "language": "fr",\n' +
+    '        "audio": "audio/book-1.01-002-8895df7b.m4a",\n' +
+    '        "part": "adj."\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "book-1.01-003",\n' +
+    '        "term": "s’appeler",\n' +
+    '        "meaning": "名叫",\n' +
+    '        "meanings": {\n' +
+    '          "zh-Hans": "名叫",\n' +
+    '          "zh-Hant": "名叫"\n' +
+    '        },\n' +
+    '        "example": "Je m’appelle Pierre.",\n' +
+    '        "category": "1",\n' +
+    '        "subcategory": "1.01",\n' +
+    '        "language": "fr",\n' +
+    '        "audio": "audio/book-1.01-003-70c7825d.m4a",\n' +
+    '        "part": "v. pron."\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "book-1.01-004",\n' +
+    '        "term": "la dame",\n' +
+    '        "meaning": "女士，夫人",\n' +
+    '        "meanings": {\n' +
+    '          "zh-Hans": "女士，夫人",\n' +
+    '          "zh-Hant": "女士，夫人"\n' +
+    '        },\n' +
+    '        "example": "J’ai déjà vu cette dame quelque part.",\n' +
+    '        "category": "1",\n' +
+    '        "subcategory": "1.01",\n' +
+    '        "language": "fr",\n' +
+    '        "audio": "audio/book-1.01-004-af3e98f9.m4a",\n' +
+    '        "part": "n. f."\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "book-1.01-005",\n' +
+    '        "term": "demeurer",\n' +
+    '        "meaning": "居住",\n' +
+    '        "meanings": {\n' +
+    '          "zh-Hans": "居住",\n' +
+    '          "zh-Hant": "居住"\n' +
+    '        },\n' +
+    '        "example": "Elle demeure dans un grand château.",\n' +
+    '        "category": "1",\n' +
+    '        "subcategory": "1.01",\n' +
+    '        "language": "fr",\n' +
+    '     '... 1673102 more characters,
+  expected: '[\n' +
+    '  {\n' +
+    '    "id": "fr",\n' +
+    '    "title": "法語基礎詞彙分類學習手冊",\n' +
+    '    "language": "fr",\n' +
+    '    "categories": [\n' +
+    '      {\n' +
+    '        "id": "1",\n' +
+    '        "name": "履歷、個人信息",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "1.01",\n' +
+    '            "name": "個人數據"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "1.02",\n' +
+    '            "name": "國籍和民族"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "1.03",\n' +
+    '            "name": "家庭"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "1.04",\n' +
+    '            "name": "外在形象"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "1.05",\n' +
+    '            "name": "性格和脾氣"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "1.06",\n' +
+    '            "name": "業餘活動、興趣和愛好"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "1.07",\n' +
+    '            "name": "宗教"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "2",\n' +
+    '        "name": "居住",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "2.01",\n' +
+    '            "name": "房子"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "2.02",\n' +
+    '            "name": "家政"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "2.03",\n' +
+    '            "name": "房間和佈置陳設"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "2.04",\n' +
+    '            "name": "材料"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "3",\n' +
+    '        "name": "環境",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "3.01",\n' +
+    '            "name": "城市和鄉村"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "3.02",\n' +
+    '            "name": "風景"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "3.03",\n' +
+    '            "name": "氣候和天氣"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "3.04",\n' +
+    '            "name": "植物和動物"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "4",\n' +
+    '        "name": "旅遊和交通",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "4.01",\n' +
+    '            "name": "路線描述"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "4.02",\n' +
+    '            "name": "旅遊業"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "4.03",\n' +
+    '            "name": "交通"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "4.04",\n' +
+    '            "name": "運輸工具"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "5",\n' +
+    '        "name": "膳食",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "5.01",\n' +
+    '            "name": "食品"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "5.02",\n' +
+    '            "name": "餐飲"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "6",\n' +
+    '        "name": "購物",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "6.01",\n' +
+    '            "name": "生意"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "6.02",\n' +
+    '            "name": "價格和貨幣往來"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "6.03",\n' +
+    '            "name": "服裝和飾品"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "7",\n' +
+    '        "name": "公共和私人服務業",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "7.01",\n' +
+    '            "name": "政府機關和管理"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "7.02",\n' +
+    '            "name": "公共和社會服務"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "7.03",\n' +
+    '            "name": "警察"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "7.04",\n' +
+    '            "name": "犯罪"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "8",\n' +
+    '        "name": "身體健康和衛生",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "8.01",\n' +
+    '            "name": "身體"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "8.02",\n' +
+    '            "name": "健康和疾病"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "8.03",\n' +
+    '            "name": "身體健康和需求"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "8.04",\n' +
+    '            "name": "醫學和醫學護理"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "9",\n' +
+    '        "name": "感覺和運動",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "9.01",\n' +
+    '            "name": "感官感覺和感知表述"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "9.02",\n' +
+    '            "name": "心理感覺"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "9.03",\n' +
+    '            "name": "情感"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "9.04",\n' +
+    '            "name": "身體活動"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "9.05",\n' +
+    '            "name": "感覺特徵"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "10",\n' +
+    '        "name": "學習培訓",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "10.01",\n' +
+    '            "name": "學校"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "10.02",\n' +
+    '            "name": "課堂"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "10.03",\n' +
+    '            "name": "大學學習"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "10.04",\n' +
+    '            "name": "考試"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "11",\n' +
+    '        "name": "工作領域",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "11.01",\n' +
+    '            "name": "職業名稱"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "11.02",\n' +
+    '            "name": "工作內容和活動"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "11.03",\n' +
+    '            "name": "工作場所和工作條件"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "12",\n' +
+    '        "name": "語言",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "12.01",\n' +
+    '            "name": "學習語言和掌握語言"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "12.02",\n' +
+    '            "name": "溝通理解"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "12.03",\n' +
+    '            "name": "講話行為方式"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "12.04",\n' +
+    '            "name": "討論"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "12.05",\n' +
+    '            "name": "意見"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "12.06",\n' +
+    '            "name": "可能性"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "13",\n' +
+    '        "name": "業餘時間和娛樂",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "13.01",\n' +
+    '            "name": "活動"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "13.02",\n' +
+    '            "name": "博物館，展覽和名勝古跡"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "13.03",\n' +
+    '            "name": "劇院，電影院和音樂會"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "13.04",\n' +
+    '            "name": "遠程通信，廣播和電視"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "13.05",\n' +
+    '            "name": "讀物和媒體"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "13.06",\n' +
+    '            "name": "體育"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "13.07",\n' +
+    '            "name": "競賽"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "14",\n' +
+    '        "name": "私人關係和聯絡",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "14.01",\n' +
+    '            "name": "私人關係的類型"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "14.02",\n' +
+    '            "name": "愛情和分離"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "14.03",\n' +
+    '            "name": "邀請和約會"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "14.04",\n' +
+    '            "name": "所有"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "15",\n' +
+    '        "name": "政治和社會",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "15.01",\n' +
+    '            "name": "時事"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "15.02",\n' +
+    '            "name": "社會"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "15.03",\n' +
+    '            "name": "內政"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "15.04",\n' +
+    '            "name": "政策，國家和國際事務"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "15.05",\n' +
+    '            "name": "戰爭和和平"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "15.06",\n' +
+    '            "name": "經濟"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "15.07",\n' +
+    '            "name": "法律"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "16",\n' +
+    '        "name": "一般性概念",\n' +
+    '        "subcategories": [\n' +
+    '          {\n' +
+    '            "id": "16.01",\n' +
+    '            "name": "時間"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.02",\n' +
+    '            "name": "時間的分配"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.03",\n' +
+    '            "name": "時間表述"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.04",\n' +
+    '            "name": "數量"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.05",\n' +
+    '            "name": "數量表述"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.06",\n' +
+    '            "name": "數量分配"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.07",\n' +
+    '            "name": "特點、類型和方式"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.08",\n' +
+    '            "name": "空間"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.09",\n' +
+    '            "name": "顏色和形態"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.10",\n' +
+    '            "name": "共同點和區別"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.11",\n' +
+    '            "name": "頻率和順序"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.12",\n' +
+    '            "name": "命運和偶然"\n' +
+    '          },\n' +
+    '          {\n' +
+    '            "id": "16.13",\n' +
+    '            "name": "狀態和改變"\n' +
+    '          }\n' +
+    '        ]\n' +
+    '      }\n' +
+    '    ],\n' +
+    '    "words": [\n' +
+    '      {\n' +
+    '        "id": "book-1.01-001",\n' +
+    '        "term": "l’âge",\n' +
+    '        "meaning": "年齡",\n' +
+    '        "meanings": {\n' +
+    '          "zh-Hans": "年龄",\n' +
+    '          "zh-Hant": "年齡"\n' +
+    '        },\n' +
+    '        "example": "Quel âge as-tu ? — J’ai 18 ans.",\n' +
+    '        "category": "1",\n' +
+    '        "subcategory": "1.01",\n' +
+    '        "language": "fr",\n' +
+    '        "audio": "audio/book-1.01-001-20e7b35d.m4a",\n' +
+    '        "part": "n. m."\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "book-1.01-002",\n' +
+    '        "term": "âgé, âgée",\n' +
+    '        "meaning": "年齡為……的",\n' +
+    '        "meanings": {\n' +
+    '          "zh-Hans": "年龄为……的",\n' +
+    '          "zh-Hant": "年齡為……的"\n' +
+    '        },\n' +
+    '        "example": "Son fils doit être âgé de 17 ans.",\n' +
+    '        "category": "1",\n' +
+    '        "subcategory": "1.01",\n' +
+    '        "language": "fr",\n' +
+    '        "audio": "audio/book-1.01-002-8895df7b.m4a",\n' +
+    '        "part": "adj."\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "book-1.01-003",\n' +
+    '        "term": "s’appeler",\n' +
+    '        "meaning": "名叫",\n' +
+    '        "meanings": {\n' +
+    '          "zh-Hans": "名叫",\n' +
+    '          "zh-Hant": "名叫"\n' +
+    '        },\n' +
+    '        "example": "Je m’appelle Pierre.",\n' +
+    '        "category": "1",\n' +
+    '        "subcategory": "1.01",\n' +
+    '        "language": "fr",\n' +
+    '        "audio": "audio/book-1.01-003-70c7825d.m4a",\n' +
+    '        "part": "v. pron."\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "book-1.01-004",\n' +
+    '        "term": "la dame",\n' +
+    '        "meaning": "女士，夫人",\n' +
+    '        "meanings": {\n' +
+    '          "zh-Hans": "女士，夫人",\n' +
+    '          "zh-Hant": "女士，夫人"\n' +
+    '        },\n' +
+    '        "example": "J’ai déjà vu cette dame quelque part.",\n' +
+    '        "category": "1",\n' +
+    '        "subcategory": "1.01",\n' +
+    '        "language": "fr",\n' +
+    '        "audio": "audio/book-1.01-004-af3e98f9.m4a",\n' +
+    '        "part": "n. f."\n' +
+    '      },\n' +
+    '      {\n' +
+    '        "id": "book-1.01-005",\n' +
+    '        "term": "demeurer",\n' +
+    '        "meaning": "居住",\n' +
+    '        "meanings": {\n' +
+    '          "zh-Hans": "居住",\n' +
+    '          "zh-Hant": "居住"\n' +
+    '        },\n' +
+    '        "example": "Elle demeure dans un grand château.",\n' +
+    '        "category": "1",\n' +
+    '        "subcategory": "1.01",\n' +
+    '        "language": "fr",\n' +
+    '     '... 1826423 more characters,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v26.0.0
+Traceback (most recent call last):
+  File "/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/scripts/sync-data.py", line 99, in <module>
+    main()
+  File "/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/scripts/sync-data.py", line 86, in main
+    subprocess.run(command, check=True)
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['node', '/Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/mobile/ios/scripts/export-content.cjs', '--check', '--catalog-only']' returned non-zero exit status 1.

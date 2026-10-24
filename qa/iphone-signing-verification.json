@@ -1,0 +1,13 @@
+{
+  "signature_verification_exit_code": 0,
+  "signature_verification_message": "",
+  "catalog_matches_source": true,
+  "audio_files": 3870,
+  "reserved_Resources_directory": false,
+  "launch_status": "waiting for user to trust Developer App Certificate on iPhone",
+  "installed_app": {
+    "bundleIdentifier": "com.feizhang.mots",
+    "name": "Mots",
+    "version": "1.0"
+  }
+}

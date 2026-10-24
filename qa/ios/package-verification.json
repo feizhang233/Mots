@@ -1,0 +1,10 @@
+{
+  "zip": "/Users/zhangfei/Documents/ChatGPT/单词书/Mots法语词库.zip",
+  "zip_sha256": "f01ae32c0dde013cf4c0af64b1bf3423fa4b2f169645bffc0f1327885cc4d3ad",
+  "archive_files": 7923,
+  "native_sources_and_scheme": "verified",
+  "extracted_native_assets_and_swift_tests": "passed",
+  "ios_build_products": "excluded",
+  "duplicate_native_audio": "excluded",
+  "standalone_material_components": "absent"
+}

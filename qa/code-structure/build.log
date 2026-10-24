@@ -1,0 +1,5 @@
+python3 web/scripts/build.py
+Built 18 interface files (7 changed), 8050 database assets (0 copied); asset versions updated.
+python3 scripts/sync-data.py
+Exported fr: 3846, de: 12, ja: 12; 3870 bundled word clips.
+Data synchronized: 9baa87240d5442e7; 3846 French entries, 32 source files; native/web catalog matches.

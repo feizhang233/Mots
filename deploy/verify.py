@@ -15,7 +15,7 @@ from common import ROOT, SITE_HOST, SITE_URL, load_manifest
 
 
 def audio_samples() -> list[str]:
-    source = (ROOT / "dist/audio-manifest.js").read_text(encoding="utf-8")
+    source = (ROOT / "web/dist/audio-manifest.js").read_text(encoding="utf-8")
     audio = json.loads(re.sub(r"^window\.MOTS_AUDIO\s*=\s*", "", source).rstrip(";\n "))
     samples = []
     for section in ("words", "examples"):
@@ -30,14 +30,16 @@ def verify(resolve_ip: str | None = None) -> dict:
     if resolve_ip:
         ipaddress.IPv4Address(resolve_ip)
         curl += ["--resolve", f"{SITE_HOST}:443:{resolve_ip}"]
-    # Include nested code assets if the build layout grows beyond flat dist/.
-    paths = [path for path in manifest["files"] if path.startswith("database/") or path.startswith("dist/") and ("/" not in path[5:] or Path(path).suffix in {".js", ".css"})]
+    # Include nested code assets if the build layout grows beyond flat web/dist/.
+    paths = [path for path in manifest["files"] if
+             path.startswith("database/") and Path(path).suffix not in {".m4a", ".mp3", ".wav"}
+             or path.startswith("web/dist/") and ("/" not in path.removeprefix("web/dist/") or Path(path).suffix in {".js", ".css"})]
     samples = audio_samples()
-    paths.extend("dist/" + path for path in samples)
+    paths.extend("web/dist/" + path for path in samples)
 
     def check(path: str) -> dict:
-        public = path[5:] if path.startswith("dist/") else path
-        version = "?v=" + manifest["files"][path][:16] if path.startswith("dist/") and Path(path).suffix in {".js", ".css"} else ""
+        public = path.removeprefix("web/dist/") if path.startswith("web/dist/") else path
+        version = "?v=" + manifest["files"][path][:16] if path.startswith("web/dist/") and Path(path).suffix in {".js", ".css"} else ""
         data = subprocess.check_output(curl + [SITE_URL + quote(public) + version])
         if hashlib.sha256(data).hexdigest() != manifest["files"][path]:
             raise RuntimeError(f"Public resource differs from release: {public}")
@@ -54,7 +56,11 @@ def verify(resolve_ip: str | None = None) -> dict:
         content_range = re.search(r"^content-range: (.+)", headers, re.I | re.M)
         if not re.search(r"^HTTP/\S+ 206", headers, re.M) or not re.search(r"^content-type: audio/(mp4|x-m4a)", headers, re.I | re.M) or len(data) != 32 or content_range is None:
             raise RuntimeError(f"Invalid audio range response: {headers}")
-    return {"url": SITE_URL, "public_ipv4_override": resolve_ip, "checked": len(results), "sha256_match": True, "audio_range_status": 206, "content_range": content_range.group(1).strip(), "checks": results}
+        sync_header_path = Path(directory) / "sync-headers"
+        health = json.loads(subprocess.check_output(curl + ["--dump-header", str(sync_header_path), SITE_URL + "api/sync/health"]))
+        if health != {"version": 1, "status": "ok"} or not re.search(r"^cache-control:.*no-store", sync_header_path.read_text(), re.I | re.M):
+            raise RuntimeError("Public progress synchronization health or cache policy is incorrect")
+    return {"url": SITE_URL, "public_ipv4_override": resolve_ip, "checked": len(results), "sha256_match": True, "audio_range_status": 206, "content_range": content_range.group(1).strip(), "sync_health": health, "checks": results}
 
 
 def main() -> None:

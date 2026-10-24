@@ -10,6 +10,7 @@ import stat
 import subprocess
 import sys
 import tempfile
+import time
 import urllib.request
 import uuid
 
@@ -17,7 +18,7 @@ from common import SITE_HOST, load_manifest, verify_release
 
 BASE = Path("/home/fei/Work/Mots")
 TUNNEL_ID = "568fa3b6-c349-42d1-9f4f-a0c3da928dc0"
-SERVICES = ("mots-web.service", "mots-tunnel.service")
+SERVICES = ("mots-web.service", "mots-tunnel.service", "mots-progress.service")
 
 
 def run(*args: str) -> None:
@@ -26,6 +27,20 @@ def run(*args: str) -> None:
 
 def service_state(action: str, service: str) -> bool:
     return subprocess.run(["systemctl", "--user", action, "--quiet", service], check=False).returncode == 0
+
+
+def wait_for_progress() -> None:
+    deadline = time.monotonic() + 15
+    while True:
+        try:
+            with urllib.request.urlopen("http://127.0.0.1:8011/api/sync/health", timeout=2) as response:
+                if response.status == 200:
+                    return
+        except OSError:
+            pass
+        if time.monotonic() >= deadline:
+            raise RuntimeError("Progress synchronization service is not ready")
+        time.sleep(0.2)
 
 
 def switch_current(base: Path, target: Path | None) -> None:
@@ -86,10 +101,14 @@ def activate(release_name: str, *, configure_dns: bool = False) -> None:
             replace_file(path, source.read_bytes(), stat.S_IMODE(source.stat().st_mode))
         switch_current(BASE, release)
         run("systemctl", "--user", "daemon-reload")
+        run("systemctl", "--user", "enable", "--now", SERVICES[2])
+        run("systemctl", "--user", "restart", SERVICES[2])
+        # Backend data lives outside releases and survives both upgrades and rollback.
+        wait_for_progress()
         run("systemctl", "--user", "enable", "--now", SERVICES[0])
         run("systemctl", "--user", "restart" if units / SERVICES[0] in changed else "reload", SERVICES[0])
         with urllib.request.urlopen("http://127.0.0.1:8010/", timeout=15) as response:
-            if response.status != 200 or hashlib.sha256(response.read()).hexdigest() != manifest["files"]["dist/index.html"]:
+            if response.status != 200 or hashlib.sha256(response.read()).hexdigest() != manifest["files"]["web/dist/index.html"]:
                 raise RuntimeError("Origin does not serve the new release")
         print("Origin HTTP 200 and homepage SHA-256 matched", flush=True)
         if configure_dns or previous is None:

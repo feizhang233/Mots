@@ -1,0 +1,8 @@
+node ios/scripts/export-content.cjs
+Exported fr: 3846, de: 12, ja: 12; 3870 bundled word clips.
+python3 ios/scripts/generate-project.py
+Generated ios/Mots.xcodeproj
+node ios/scripts/export-content.cjs --check
+Verified fr: 3846, de: 12, ja: 12; 3870 bundled word clips.
+bash ios/scripts/test.sh
+PASS: content/audio counts; search; lookup visibility; selected-card persistence; dictionary identity; atomic backup merge; v1/v2/v3 compatibility; legacy extension navigation; source/random order; live mastery filters without skipping; POS preservation; stable review and skipped counts; independent safe CSV; array import; storage failure and quarantined corrupt-state recovery.

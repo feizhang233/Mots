@@ -1,0 +1,117 @@
+Window: "Mots Test iPhone 17", App: Device Hub.
+0 standard window Mots Test iPhone 17 – iOS 27.0, ID: com.apple.dt.DeviceKit.DeviceManagementWindow-AppWindow-2, Secondary Actions: Raise
+	1 split group
+		2 split group com.apple.dt.DeviceKit.DeviceManagementWindow-AppWindow-2, SidebarNavigationSplitView
+			3 scroll area
+				4 list Sidebar
+					5 row (selectable) Expanded
+					6 row (selected) Mots Test iPhone 17
+27.0
+Simulator
+					7 row (selectable) 👾Fei-iPhone👾
+27.0
+iPhone 16 Pro Max
+			8 search text field (settable) Search
+				9 button Search
+			10 splitter (settable, float) 240
+			11 container
+				12 container
+					13 text Description: 全部單字, Secondary Actions: Cancel
+					14 tab group ID: study.layout, Secondary Actions: Cancel
+					15 pop up button Description: 篩選單字, Secondary Actions: Cancel
+					16 text Description: 3,846 個單字, Secondary Actions: Cancel
+					17 text Description: 1 / 193, Secondary Actions: Cancel
+					18 button Description: 朗讀 l’âge, ID: speaker.wave.2, Secondary Actions: Cancel
+					19 text Description: l’âge, Secondary Actions: Cancel
+					20 text Description: 年齡, Secondary Actions: Cancel
+					21 button Description: 用卡片學習 l’âge, ID: rectangle.portrait, Secondary Actions: Cancel
+					22 text Description: Quel âge as-tu ? — J’ai 18 ans., Secondary Actions: Cancel
+					23 button Description: l’âge，不熟悉, Value: 未選取, ID: rating.book-1.01-001.1, Secondary Actions: Cancel
+					24 button Description: l’âge，有印象, Value: 未選取, ID: rating.book-1.01-001.2, Secondary Actions: Cancel
+					25 button (selected) Description: l’âge，已掌握, Value: 已選取，再點一次清除標記, ID: rating.book-1.01-001.3, Secondary Actions: Cancel
+					26 button Description: 朗讀 âgé, âgée, ID: speaker.wave.2, Secondary Actions: Cancel
+					27 text Description: âgé, âgée, Secondary Actions: Cancel
+					28 text Description: 年齡為……的, Secondary Actions: Cancel
+					29 button Description: 用卡片學習 âgé, âgée, ID: rectangle.portrait, Secondary Actions: Cancel
+					30 text Description: Son fils doit être âgé de 17 ans., Secondary Actions: Cancel
+					31 button Description: âgé, âgée，不熟悉, Value: 未選取, ID: rating.book-1.01-002.1, Secondary Actions: Cancel
+					32 button (selected) Description: âgé, âgée，有印象, Value: 已選取，再點一次清除標記, ID: rating.book-1.01-002.2, Secondary Actions: Cancel
+					33 button Description: âgé, âgée，已掌握, Value: 未選取, ID: rating.book-1.01-002.3, Secondary Actions: Cancel
+					34 button Description: 朗讀 s’appeler, ID: speaker.wave.2, Secondary Actions: Cancel
+					35 text Description: s’appeler, Secondary Actions: Cancel
+					36 text Description: 名叫, Secondary Actions: Cancel
+					37 button Description: 用卡片學習 s’appeler, ID: rectangle.portrait, Secondary Actions: Cancel
+					38 text Description: Je m’appelle Pierre., Secondary Actions: Cancel
+					39 button Description: s’appeler，不熟悉, Value: 未選取, ID: rating.book-1.01-003.1, Secondary Actions: Cancel
+					40 button Description: s’appeler，有印象, Value: 未選取, ID: rating.book-1.01-003.2, Secondary Actions: Cancel
+					41 button (selected) Description: s’appeler，已掌握, Value: 已選取，再點一次清除標記, ID: rating.book-1.01-003.3, Secondary Actions: Cancel
+					42 button Description: 朗讀 la dame, ID: speaker.wave.2, Secondary Actions: Cancel
+					43 text Description: la dame, Secondary Actions: Cancel
+					44 text Description: 女士，夫人, Secondary Actions: Cancel
+					45 button Description: 用卡片學習 la dame, ID: rectangle.portrait, Secondary Actions: Cancel
+					46 text Description: J’ai déjà vu cette dame quelque part., Secondary Actions: Cancel
+					47 button Description: la dame，不熟悉, Value: 未選取, ID: rating.book-1.01-004.1, Secondary Actions: Cancel
+					48 button Description: la dame，有印象, Value: 未選取, ID: rating.book-1.01-004.2, Secondary Actions: Cancel
+					49 button (selected) Description: la dame，已掌握, Value: 已選取，再點一次清除標記, ID: rating.book-1.01-004.3, Secondary Actions: Cancel
+					50 button Description: 朗讀 demeurer, ID: speaker.wave.2, Secondary Actions: Cancel
+					51 text Description: demeurer, Secondary Actions: Cancel
+					52 text Description: 居住, Secondary Actions: Cancel
+					53 button Description: 用卡片學習 demeurer, ID: rectangle.portrait, Secondary Actions: Cancel
+					54 text Description: Elle demeure dans un grand château., Secondary Actions: Cancel
+					55 button Description: demeurer，不熟悉, Value: 未選取, ID: rating.book-1.01-005.1, Secondary Actions: Cancel
+					56 button Description: demeurer，有印象, Value: 未選取, ID: rating.book-1.01-005.2, Secondary Actions: Cancel
+					57 button Description: demeurer，已掌握, Value: 未選取, ID: rating.book-1.01-005.3, Secondary Actions: Cancel
+					58 button Description: 朗讀 l’enfance, ID: speaker.wave.2, Secondary Actions: Cancel
+					59 text Description: l’enfance, Secondary Actions: Cancel
+					60 text Description: 童年, Secondary Actions: Cancel
+					61 button Description: 用卡片學習 l’enfance, ID: rectangle.portrait, Secondary Actions: Cancel
+					62 text Description: J’ai passé mon enfance en Autriche., Secondary Actions: Cancel
+					63 button Description: l’enfance，不熟悉, Value: 未選取, ID: rating.book-1.01-006.1, Secondary Actions: Cancel
+					64 button Description: l’enfance，有印象, Value: 未選取, ID: rating.book-1.01-006.2, Secondary Actions: Cancel
+					65 button Description: l’enfance，已掌握, Value: 未選取, ID: rating.book-1.01-006.3, Secondary Actions: Cancel
+					66 button Description: 朗讀 féminin, féminine, ID: speaker.wave.2, Secondary Actions: Cancel
+					67 text Description: féminin, féminine, Secondary Actions: Cancel
+					68 button Description: 用卡片學習 féminin, féminine, ID: rectangle.portrait, Secondary Actions: Cancel
+					69 text Description: 陰性的, Secondary Actions: Cancel
+					70 text Description: Le mot « table » est un mot féminin., Secondary Actions: Cancel
+					71 button Description: féminin, féminine，不熟悉, Value: 未選取, ID: rating.book-1.01-007.1, Secondary Actions: Cancel
+					72 button Description: féminin, féminine，有印象, Value: 未選取, ID: rating.book-1.01-007.2, Secondary Actions: Cancel
+					73 button Description: féminin, féminine，已掌握, Value: 未選取, ID: rating.book-1.01-007.3, Secondary Actions: Cancel
+					74 button (disabled) Description: 上一頁, Secondary Actions: Cancel
+					75 text Description: 顯示第 1 至 20 個單字, Secondary Actions: Cancel
+					76 button Description: 下一頁, Secondary Actions: Cancel
+				77 button app.grid.3x3
+				78 button camera.viewfinder
+				79 button record.circle
+				80 button
+		81 splitter (settable, float) 1100
+	82 toolbar
+		83 menu button Add Device, ID: plus
+		84 toggle button Description: Filter, Help: Sort and Filter, Value: off
+		85 button Description: Hide Sidebar, Secondary Actions: Increment, Decrement, Delete, Cancel
+		86 toggle button Description: Capture Keyboard, Value: off
+		87 toggle button Description: Resize mode, Help: Enter resize mode, Value: off
+		88 Zoom
+			89 radio button Description: Zoom Out, Value: 0, ID: minus.magnifyingglass
+			90 radio button Description: Up, Right, Down, And Left Triangles In A Magnifying Glass, Help: Zoom to Fit, Value: 0, ID: arrowtriangles.up.right.down.left.magnifyingglass
+			91 radio button Description: Zoom To Actual Size, Help: Physical Size, Value: 1, ID: 1.magnifyingglass
+			92 radio button Description: Zoom In, Value: 0, ID: plus.magnifyingglass
+		93 button Description: Open in New Window, Help: Switch to compact window, Secondary Actions: Increment, Decrement, Delete, Cancel, Move previous, Move next, Remove from toolbar
+		94 menu button More Actions, ID: ellipsis
+		95 Inspector Category
+			96 radio button Description: Edit, Help: Settings, Value: 0, ID: slider.horizontal.3
+			97 radio button Description: Text Document, Help: Reports, Value: 0, ID: text.document
+			98 radio button Description: Info, Value: 0, ID: info
+	99 close button
+	100 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	101 minimize button
+	102 text Mots Test iPhone 17 iOS 27.0
+103 menu bar
+	104 Device Hub
+	105 File
+	106 Edit
+	107 View
+	108 Device
+	109 Controls
+	110 Window
+	111 Help

@@ -1,0 +1,5 @@
+The following is a diff from the previous accessibility tree for Window: "Mots Test iPhone 17" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 104
++					106 text Description: 居住, ID: study.meaning, Secondary Actions: Cancel
++					107 text Description: 例句, Secondary Actions: Cancel
++					108 text Description: Elle demeure dans un grand château., Secondary Actions: Cancel

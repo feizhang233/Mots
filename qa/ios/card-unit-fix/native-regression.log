@@ -1,0 +1,6 @@
+Command: bash mobile/ios/scripts/test.sh
+Working directory: /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier
+Exit status: 0
+Execution: Swift observation macro compilation required access outside the nested execution sandbox.
+
+PASS: content/audio counts; search; lookup visibility; selected-card persistence; scoped progress; unconditional card advancement and list selection; card/search isolation and boundary handling; dictionary identity; atomic backup merge; v1/v2/v3 compatibility; legacy extension navigation; source/random order; live mastery filters without skipping; POS preservation; stable review and skipped counts; independent safe CSV; array import; storage failure and quarantined corrupt-state recovery.

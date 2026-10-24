@@ -1,4 +1,4 @@
-dist/
+web/dist/
 database/
 qa/
 scripts/vendor/

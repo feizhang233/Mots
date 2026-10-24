@@ -1,0 +1,1 @@
+PASS: release checksums; 35 refactored source/configuration/archive byte comparisons; no obsolete flat AppView or private database.

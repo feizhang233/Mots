@@ -1,0 +1,12 @@
+{
+  "mobile/ios/Mots/Shared/Theme.swift": "00eeb35bdf1772056a5646624a9f96762209f41610490f53104d60dbb3af55e2",
+  "mobile/ios/Mots/Features/Study/StudyWorkbench.swift": "14d31c5d1f89573df105f26ac41fd54ee3be27e6ba2bc5e63f325f8373b74012",
+  "mobile/ios/Mots/Features/Study/List/VocabularyList.swift": "2803064aa267eca048a85698138a12afe944eb248415a407a37c9aca9d5a2d36",
+  "mobile/ios/Mots/Features/Study/Cards/StudyCard.swift": "feb86f1e581af1c8132ccd5f11b60501b157593734b9d5cd36c4e428fd4e3afa",
+  "trailingWhitespace": {
+    "mobile/ios/Mots/Shared/Theme.swift": [],
+    "mobile/ios/Mots/Features/Study/StudyWorkbench.swift": [],
+    "mobile/ios/Mots/Features/Study/List/VocabularyList.swift": [],
+    "mobile/ios/Mots/Features/Study/Cards/StudyCard.swift": []
+  }
+}

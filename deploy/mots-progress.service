@@ -1,0 +1,16 @@
+[Unit]
+Description=Mots private paired progress synchronization
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 %h/Work/Mots/current/sync/server.py --host 127.0.0.1 --port 8011 --database %h/Work/Mots/private/progress.sqlite3
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+UMask=0077
+TimeoutStopSec=15
+
+[Install]
+WantedBy=default.target

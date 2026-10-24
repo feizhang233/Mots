@@ -1,0 +1,22 @@
+{
+  "success": true,
+  "errors": [],
+  "viewports": [
+    1440,
+    320
+  ],
+  "checks": [
+    "ordinary UI restored despite stale setting",
+    "nine separate books",
+    "empty theme import entry",
+    "thematic import inherits type",
+    "same-ID ratings isolated",
+    "individual card and group resume",
+    "details keyboard/focus",
+    "reload preserves metadata",
+    "search auto-expansion and empty recovery",
+    "narrow dark layout",
+    "ordinary mobile subcategories",
+    "vocabulary unchanged"
+  ]
+}

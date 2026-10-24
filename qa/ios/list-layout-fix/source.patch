@@ -1,0 +1,156 @@
+--- /tmp/mots-list-layout-before/Theme.swift	2026-10-24 08:41:44
++++ mobile/ios/Mots/Shared/Theme.swift	2026-10-24 08:44:12
+@@ -16,6 +16,7 @@
+     static let mastered = adaptive(0x386A48, 0xA7DCC3)
+     static let contentWidth: CGFloat = 780
+     static let cardRadius: CGFloat = 28
++    static let iconControlSize: CGFloat = 44
+ 
+     static func ratingColor(_ level: Int) -> Color {
+         switch level {
+@@ -92,7 +93,20 @@
+     }
+ }
+ 
++/// Size the styled control, rather than adding a touch target inside the glass padding.
++struct MotsGlassIconControl: ViewModifier {
++    func body(content: Content) -> some View {
++        content
++            .buttonStyle(.glass)
++            .controlSize(.large)
++            .buttonBorderShape(.circle)
++            .buttonSizing(.flexible)
++            .frame(width: MotsTheme.iconControlSize, height: MotsTheme.iconControlSize)
++    }
++}
++
+ extension View {
+     func motsCardSurface() -> some View { modifier(MotsCardSurface()) }
+     func motsGlassChrome() -> some View { modifier(MotsGlassChrome()) }
++    func motsGlassIconControl() -> some View { modifier(MotsGlassIconControl()) }
+ }
+--- /tmp/mots-list-layout-before/StudyWorkbench.swift	2026-10-24 08:41:44
++++ mobile/ios/Mots/Features/Study/StudyWorkbench.swift	2026-10-24 08:41:44
+@@ -98,6 +98,9 @@
+                 .font(.title3.weight(.semibold))
+                 .foregroundStyle(MotsTheme.ink)
+                 .fixedSize(horizontal: false, vertical: true)
++                .frame(maxWidth: .infinity, alignment: .leading)
++                .accessibilityAddTraits(.isHeader)
++                .accessibilityIdentifier("study.scope")
+             HStack(spacing: 12) {
+                 Picker("顯示方式", selection: $store.listMode) {
+                     Label("卡片", systemImage: "rectangle.portrait").tag(false)
+@@ -124,12 +127,13 @@
+                     }
+                 } label: {
+                     Image(systemName: store.hideMastered ? "line.3.horizontal.decrease.circle.fill" : "line.3.horizontal.decrease")
+-                        .frame(minWidth: 44, minHeight: 44)
+                 }
+-                .buttonStyle(.glass)
++                .motsGlassIconControl()
+                 .accessibilityLabel(store.hideMastered ? "篩選，已隱藏已掌握單字" : "篩選單字")
++                .accessibilityIdentifier("study.filter")
+             }
+         }
++        .padding(.horizontal, 14)
+     }
+ 
+     private var reviewCompletion: some View {
+--- /tmp/mots-list-layout-before/VocabularyList.swift	2026-10-24 08:41:44
++++ mobile/ios/Mots/Features/Study/List/VocabularyList.swift	2026-10-24 08:41:44
+@@ -60,10 +60,7 @@
+                     .padding(.bottom, 6)
+                 }
+                 Section {
+-                    ViewThatFits(in: .horizontal) {
+-                        pagination(showLabels: true)
+-                        pagination(showLabels: false)
+-                    }
++                    pagination
+                 }
+                 .listRowBackground(Color.clear)
+                 .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+@@ -72,6 +69,7 @@
+         }
+         .listStyle(.insetGrouped)
+         .listSectionSpacing(16)
++        .contentMargins(.top, 12, for: .scrollContent)
+         .scrollContentBackground(.hidden)
+         .scrollDismissesKeyboard(.interactively)
+         .background(MotsTheme.background)
+@@ -133,34 +131,30 @@
+         }
+     }
+ 
+-    private func pagination(showLabels: Bool) -> some View {
+-        HStack {
++    private var pagination: some View {
++        HStack(spacing: 12) {
+             Button { selectPage(max(0, effectivePage - 1)) } label: {
+-                if showLabels {
+-                    Label("上一頁", systemImage: "chevron.left").fixedSize().frame(minHeight: 32)
+-                } else {
+-                    Image(systemName: "chevron.left").frame(width: 44, height: 44)
+-                }
++                Image(systemName: "chevron.left")
+             }
++            .motsGlassIconControl()
+             .disabled(effectivePage == 0)
+             .accessibilityLabel("上一頁")
+-            Spacer(minLength: 6)
++            .accessibilityIdentifier("list.previous")
+             Text("\(start + 1)–\(min(start + pageSize, store.filteredWords.count))")
+                 .font(.footnote.monospacedDigit())
+                 .foregroundStyle(MotsTheme.muted)
++                .frame(maxWidth: .infinity)
+                 .accessibilityLabel("顯示第 \(start + 1) 至 \(min(start + pageSize, store.filteredWords.count)) 個單字")
+-            Spacer(minLength: 6)
++                .accessibilityIdentifier("list.range")
+             Button { selectPage(min(pageCount - 1, effectivePage + 1)) } label: {
+-                if showLabels {
+-                    Label("下一頁", systemImage: "chevron.right").fixedSize().frame(minHeight: 32)
+-                } else {
+-                    Image(systemName: "chevron.right").frame(width: 44, height: 44)
+-                }
++                Image(systemName: "chevron.right")
+             }
++            .motsGlassIconControl()
+             .disabled(effectivePage == pageCount - 1)
+             .accessibilityLabel("下一頁")
++            .accessibilityIdentifier("list.next")
+         }
+-        .buttonStyle(.glass)
++        .padding(.vertical, 4)
+     }
+ }
+ 
+--- /tmp/mots-list-layout-before/StudyCard.swift	2026-10-24 08:41:44
++++ mobile/ios/Mots/Features/Study/Cards/StudyCard.swift	2026-10-24 08:41:44
+@@ -97,8 +97,9 @@
+     var body: some View {
+         HStack {
+             Button { store.previous() } label: {
+-                Image(systemName: "chevron.left").frame(width: 44, height: 44)
++                Image(systemName: "chevron.left")
+             }
++            .motsGlassIconControl()
+             .disabled(store.currentIndex == 0)
+             .accessibilityLabel("上一個單字")
+             .accessibilityIdentifier("study.previous")
+@@ -108,13 +109,13 @@
+             }
+             Spacer()
+             Button { store.next() } label: {
+-                Image(systemName: finishesReview ? "checkmark" : "chevron.right").frame(width: 44, height: 44)
++                Image(systemName: finishesReview ? "checkmark" : "chevron.right")
+             }
++            .motsGlassIconControl()
+             .disabled(store.mode != .review && store.currentIndex >= store.filteredWords.count - 1)
+             .accessibilityLabel(finishesReview ? "完成本輪" : "下一個單字")
+             .accessibilityIdentifier("study.next")
+         }
+-        .buttonStyle(.glass)
+         .foregroundStyle(MotsTheme.accent)
+         .frame(maxWidth: MotsTheme.contentWidth)
+         .frame(maxWidth: .infinity)

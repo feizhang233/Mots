@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-10-24T20:08:34.181878+00:00",
+  "url": "https://mots.feizhang233.com/",
+  "contentVersion": "f6b81922211dbed08fcc879b178820bcb48785853e774f17bdb1e8a9b0a0cfd3",
+  "entryCount": 414,
+  "publicExamples": 414,
+  "uniqueExamples": 414,
+  "referenceTranslations": 414,
+  "allExamplesMatchReviewedSource": true,
+  "firstExample": "医師が患者を診察している間、家族は外で待っていた。",
+  "lastExample": "あいにく今日は店長が休みなので、明日お電話いただけますか。",
+  "checks": [
+    {
+      "path": "database/catalog.json",
+      "sha256": "69ada91987bcf681104bc2afa36b1b1ba5717c4740057099d5bcb40ddc54317f",
+      "status": 200
+    },
+    {
+      "path": "database/content-version.json",
+      "sha256": "650cf63ae2d4b5edcaf89eb7ed8dcaffa60f81f5076b876725d7e6d9b711e3b2",
+      "status": 200
+    },
+    {
+      "path": "database/japanese/vocabulary.json",
+      "sha256": "a32a21cc03945350717209511fe45b80f7598d3af1471a0b1a0135b10fec3862",
+      "status": 200
+    },
+    {
+      "path": "database/japanese/examples.json",
+      "sha256": "9d2d686687bd75e7d96f7265da76aaa45c5ddd170cd661e0042e41d8fb6ef36d",
+      "status": 200
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+test_corrupt_upload_is_rejected_before_service_commands (__main__.DeploymentTests.test_corrupt_upload_is_rejected_before_service_commands) ... ok
+test_existing_backend_cannot_be_omitted_from_manifest (__main__.DeploymentTests.test_existing_backend_cannot_be_omitted_from_manifest) ... ok
+test_manifest_cannot_hide_outside_file_behind_symlink (__main__.DeploymentTests.test_manifest_cannot_hide_outside_file_behind_symlink) ... ok
+test_manifest_rejects_paths_outside_public_release_directories (__main__.DeploymentTests.test_manifest_rejects_paths_outside_public_release_directories) ... ok
+test_missing_backend_and_manifest_entry_fail_before_activation (__main__.DeploymentTests.test_missing_backend_and_manifest_entry_fail_before_activation) ... ok
+test_nginx_preflight_failure_leaves_active_release_untouched (__main__.DeploymentTests.test_nginx_preflight_failure_leaves_active_release_untouched) ... ok
+test_progress_failure_restores_stopped_service_and_keeps_private_data (__main__.DeploymentTests.test_progress_failure_restores_stopped_service_and_keeps_private_data) ... ok
+test_progress_readiness_retries_startup (__main__.DeploymentTests.test_progress_readiness_retries_startup) ... ok
+test_rollback_preserves_disabled_stopped_service (__main__.DeploymentTests.test_rollback_preserves_disabled_stopped_service) ... ok
+test_sync_backend_upload_is_verified (__main__.DeploymentTests.test_sync_backend_upload_is_verified) ... ok
+test_sync_module_corruption_is_rejected_before_activation (__main__.DeploymentTests.test_sync_module_corruption_is_rejected_before_activation) ... ok
+test_tunnel_preflight_failure_leaves_active_release_untouched (__main__.DeploymentTests.test_tunnel_preflight_failure_leaves_active_release_untouched) ... ok
+test_valid_release_activates_without_rewriting_dns (__main__.DeploymentTests.test_valid_release_activates_without_rewriting_dns) ... ok
+test_wrong_origin_content_restores_release_config_and_permissions (__main__.DeploymentTests.test_wrong_origin_content_restores_release_config_and_permissions) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.067s
+
+OK

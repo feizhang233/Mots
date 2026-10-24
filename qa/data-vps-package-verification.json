@@ -1,0 +1,8 @@
+{
+  "zip_sha256": "2915e2e31b6183e17c13c6ca80861a7d70f80bdd526107c2f95d90b7f3c307e3",
+  "bytes": 207996018,
+  "archive_files": 7935,
+  "catalog_matches_native_and_vps_snapshot": true,
+  "sync_scripts_match": true,
+  "zip_integrity": "passed by package.py"
+}

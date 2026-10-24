@@ -1,0 +1,54 @@
+python3 deploy/sync.py
+python3 web/scripts/build.py --check
+Build is current: 14 generated files.
+python3 scripts/sync-data.py --check
+Verified fr: 3846, de: 12, ja: 12; 3870 bundled word clips.
+Data synchronized: 9baa87240d5442e7; 3846 French entries, 32 source files; native/web catalog matches.
+node --check web/dist/data.js
+node --check web/dist/audio-manifest.js
+node --check web/dist/extra-audio.js
+node --check web/dist/select.js
+node web/tests/run.cjs
+Navigation, isolated dictionaries, search, and captured review queues passed.
+Dictionary imports, v1/v2/v3 backups, atomic validation, storage events, and quota feedback passed.
+Card resume, paging, wraparound, filters, shuffled order, and dictionary isolation passed.
+Native select values, safe labels, stable options, disabled/empty fallbacks and accessible markup passed.
+Audio playback, cancellation, stale callbacks, single fallback, and permission errors passed.
+All 5 regression suites passed.
+python3 tests/deploy_test.py
+test_corrupt_upload_is_rejected_before_service_commands (__main__.DeploymentTests.test_corrupt_upload_is_rejected_before_service_commands) ... ok
+test_manifest_cannot_hide_outside_file_behind_symlink (__main__.DeploymentTests.test_manifest_cannot_hide_outside_file_behind_symlink) ... ok
+test_manifest_rejects_paths_outside_public_release_directories (__main__.DeploymentTests.test_manifest_rejects_paths_outside_public_release_directories) ... ok
+test_nginx_preflight_failure_leaves_active_release_untouched (__main__.DeploymentTests.test_nginx_preflight_failure_leaves_active_release_untouched) ... ok
+test_rollback_preserves_disabled_stopped_service (__main__.DeploymentTests.test_rollback_preserves_disabled_stopped_service) ... ok
+test_tunnel_preflight_failure_leaves_active_release_untouched (__main__.DeploymentTests.test_tunnel_preflight_failure_leaves_active_release_untouched) ... ok
+test_valid_release_activates_without_rewriting_dns (__main__.DeploymentTests.test_valid_release_activates_without_rewriting_dns) ... ok
+test_wrong_origin_content_restores_release_config_and_permissions (__main__.DeploymentTests.test_wrong_origin_content_restores_release_config_and_permissions) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.026s
+
+OK
+python3 tests/data_sync_test.py
+test_all_database_sources_match_web_fields (__main__.DataSyncTests.test_all_database_sources_match_web_fields) ... ok
+test_changed_meaning_is_rejected_even_when_id_is_preserved (__main__.DataSyncTests.test_changed_meaning_is_rejected_even_when_id_is_preserved) ... ok
+test_changed_xlsx_is_rejected (__main__.DataSyncTests.test_changed_xlsx_is_rejected) ... ok
+test_duplicate_word_identity_is_rejected (__main__.DataSyncTests.test_duplicate_word_identity_is_rejected) ... ok
+test_unlisted_source_cannot_be_published_silently (__main__.DataSyncTests.test_unlisted_source_cannot_be_published_silently) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.068s
+
+OK
+Built 14 interface files (0 changed), 8050 database assets (0 copied); asset versions updated.
+Exported fr: 3846, de: 12, ja: 12; 3870 bundled word clips.
+Data synchronized: 9baa87240d5442e7; 3846 French entries, 32 source files; native/web catalog matches.
+Validated 7693 audio references and 16150 files.
+nginx: the configuration file /home/fei/Work/Mots/releases/20261023-104552-18d2f50f/deploy/nginx.conf syntax is ok
+nginx: configuration file /home/fei/Work/Mots/releases/20261023-104552-18d2f50f/deploy/nginx.conf test is successful
+Verified 16150 files
+Validating rules from /home/fei/Work/Mots/releases/20261023-104552-18d2f50f/deploy/config-mots.yml
+OK
+Origin HTTP 200 and homepage SHA-256 matched
+Activated 20261023-104552-18d2f50f
+Synchronized 9baa87240d5442e7: 16150 server files, 92 public checks. Report: /Users/zhangfei/Documents/ChatGPT/单词书/french-atelier/qa/data-vps-sync.json
