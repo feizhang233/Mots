@@ -102,7 +102,9 @@ async function run() {
     ordinary.$('category-dialog').showModal();
     for (let repeat = 0; repeat < 2; repeat++) {
       for (const handler of ordinary.$(navID).events.click)
-        handler({ target: { closest: (selector) => selector === '[data-category]' ? parent : null } });
+        handler({
+          target: { closest: (selector) => (selector === '[data-category]' ? parent : null) },
+        });
       assert.equal(ordinary.run('state.category'), 'y');
       assert.equal(ordinary.run('state.subcategory'), 'all');
       assert.equal(ordinary.run('deck.length'), 8);
@@ -144,7 +146,11 @@ async function run() {
     assert.equal(empty.run('deck.length'), 0);
     assert.equal(groups(empty), 0);
     assert(empty.$('dictionary-switcher').options.some((option) => option.value === id));
-    assert(htmlOf(empty).includes('data-action="import-dictionary"'));
+    assert(!htmlOf(empty).includes('data-action="import-dictionary"'));
+    assert(
+      htmlOf(empty).includes('設定'),
+      'Empty books explain where to import without a main-screen action',
+    );
     assert.equal(empty.$('vocabulary-extension-section').hidden, true);
   }
   click(empty, 'download-dictionary-template');
@@ -155,10 +161,16 @@ async function run() {
   assert.equal(template.words[0].subcategory, template.categories[0].subcategories[0].id);
 
   // The supplied Japanese notes populate the existing independent grammar books.
-  const japanese = context({ url: 'http://localhost/Mots.html?screen=study&dict=grammar-theme-ja&view=list&category=gt27' });
+  const japanese = context({
+    url: 'http://localhost/Mots.html?screen=study&dict=grammar-theme-ja&view=list&category=gt27',
+  });
   assert.equal(japanese.run('dictionaryOf(state.dictionary).categories.length'), 17);
   assert.equal(japanese.run('sourceWords().length'), 229);
-  assert(japanese.run('dictionaryOf(state.dictionary).categories.every(category => Number(category.id.slice(2)) >= 27)'));
+  assert(
+    japanese.run(
+      'dictionaryOf(state.dictionary).categories.every(category => Number(category.id.slice(2)) >= 27)',
+    ),
+  );
   assert.equal(japanese.run('deck.length'), 20);
   assert.equal(groups(japanese), 1);
   assert(htmlOf(japanese).includes('從原動詞理解語法'));
@@ -167,19 +179,35 @@ async function run() {
   japanese.run(`rate(${JSON.stringify(japaneseID)}, 2, "dot")`);
   change(japanese, 'book-switcher', 'grammar-ja');
   assert.equal(japanese.run('deck.length'), 141);
-  assert(japanese.run('dictionaryOf(state.dictionary).categories.every(category => Number(category.id.slice(2)) <= 26)'));
+  assert(
+    japanese.run(
+      'dictionaryOf(state.dictionary).categories.every(category => Number(category.id.slice(2)) <= 26)',
+    ),
+  );
   assert.equal(groups(japanese), 0);
   assert.equal(japanese.run(`levelOf(${JSON.stringify(japaneseID)})`), 0);
   change(japanese, 'book-switcher', 'grammar-theme-ja');
   japanese.run('state.category = "gt27"; state.subcategory = "all"; buildDeck()');
   assert.equal(japanese.run('deck.length'), 20);
   assert(htmlOf(japanese).includes('從原動詞理解語法'));
-  japanese.run('state.dictionary = "grammar-theme-ja"; state.category = "gt42"; state.subcategory = "all"; buildDeck()');
-  assert(japanese.run('deck.find(word => word.id.endsWith("-notes")).explanation.includes("学生は先生に")'));
-  assert(!japanese.run('deck.find(word => word.id.endsWith("-notes")).explanation.includes("學生は先生に")'));
+  japanese.run(
+    'state.dictionary = "grammar-theme-ja"; state.category = "gt42"; state.subcategory = "all"; buildDeck()',
+  );
+  assert(
+    japanese.run(
+      'deck.find(word => word.id.endsWith("-notes")).explanation.includes("学生は先生に")',
+    ),
+  );
+  assert(
+    !japanese.run(
+      'deck.find(word => word.id.endsWith("-notes")).explanation.includes("學生は先生に")',
+    ),
+  );
 
   // Old links to removed thematic lessons recover to the remaining lesson list.
-  const oldJapaneseTopic = context({ url: 'http://localhost/Mots.html?screen=study&dict=grammar-theme-ja&view=list&category=gt01' });
+  const oldJapaneseTopic = context({
+    url: 'http://localhost/Mots.html?screen=study&dict=grammar-theme-ja&view=list&category=gt01',
+  });
   assert.equal(oldJapaneseTopic.run('state.category'), 'all');
   assert.equal(oldJapaneseTopic.run('deck.length'), 229);
   assert(oldJapaneseTopic.run('deck.every(word => Number(word.category.slice(2)) >= 27)'));
@@ -212,7 +240,10 @@ async function run() {
   app.run('changeDeletion(state.dictionary, "g13", false)');
   change(app, 'book-switcher', 'fr');
   assert.equal(groups(app), 0, 'Vocabulary does not acquire grammar group cards');
-  assert(!app.$('category-nav').innerHTML.includes('data-sub='), 'Empty child categories do not create a menu');
+  assert(
+    !app.$('category-nav').innerHTML.includes('data-sub='),
+    'Empty child categories do not create a menu',
+  );
   change(app, 'book-switcher', dictionary.id);
   const resumed = context({ storage: stored(app), url });
   assert.equal(groups(resumed), 3);

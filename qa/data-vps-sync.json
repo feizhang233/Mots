@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-10-24T19:30:37.922001+00:00",
-  "previousRelease": "/home/fei/Work/Mots/releases/20261024-185059-60dc8790",
-  "contentVersion": "9baa87240d5442e79ef0906728f6d2414bc9a32b618a632a72a1808e8419ea9a",
+  "checkedAt": "2026-10-28T14:51:09.674062+00:00",
+  "previousRelease": "/home/fei/Work/Mots/releases/20261026-213818-compact-grammar-129914b8",
+  "contentVersion": "a3c5cb85b75d7d1b45e94492f3b716658d684ac57afbf7ce20ed00c272a5dbf6",
   "database": {
     "unitCount": 16,
     "entryCount": 3846,
@@ -10,23 +10,68 @@
   "dictionaries": [
     {
       "id": "fr",
+      "kind": "vocabulary",
       "language": "fr",
       "entryCount": 3846
     },
     {
       "id": "de",
+      "kind": "vocabulary",
       "language": "de",
       "entryCount": 12
     },
     {
       "id": "ja",
+      "kind": "vocabulary",
       "language": "ja",
-      "entryCount": 12
+      "entryCount": 414
+    },
+    {
+      "id": "grammar-fr",
+      "kind": "grammar",
+      "language": "fr",
+      "entryCount": 6,
+      "grammarMode": "standard"
+    },
+    {
+      "id": "grammar-de",
+      "kind": "grammar",
+      "language": "de",
+      "entryCount": 6,
+      "grammarMode": "standard"
+    },
+    {
+      "id": "grammar-ja",
+      "kind": "grammar",
+      "language": "ja",
+      "entryCount": 141,
+      "grammarMode": "standard"
+    },
+    {
+      "id": "grammar-theme-fr",
+      "kind": "grammar",
+      "language": "fr",
+      "entryCount": 0,
+      "grammarMode": "thematic"
+    },
+    {
+      "id": "grammar-theme-de",
+      "kind": "grammar",
+      "language": "de",
+      "entryCount": 0,
+      "grammarMode": "thematic"
+    },
+    {
+      "id": "grammar-theme-ja",
+      "kind": "grammar",
+      "language": "ja",
+      "entryCount": 229,
+      "grammarMode": "thematic"
     }
   ],
   "server": {
-    "release": "/home/fei/Work/Mots/releases/20261024-192909-ba348237",
-    "files": 16161,
+    "release": "/home/fei/Work/Mots/releases/20261028-144546-7c9aa5de",
+    "files": 17000,
     "sha256_match": true,
     "services": {
       "mots-web": "active",
@@ -37,7 +82,7 @@
   "public": {
     "url": "https://mots.feizhang233.com/",
     "public_ipv4_override": null,
-    "checked": 96,
+    "checked": 89,
     "sha256_match": true,
     "audio_range_status": 206,
     "content_range": "bytes 0-31/8563",
@@ -47,23 +92,23 @@
     },
     "checks": [
       {
-        "path": "app.js?v=dbe054860ff6d707",
+        "path": "app.js?v=0549a62addfc7a22",
         "status": 200
       },
       {
-        "path": "audio-manifest.js?v=bb45c3104e660e04",
+        "path": "audio-manifest.js?v=2415420e385eafc4",
         "status": 200
       },
       {
-        "path": "audio.js?v=0631d97562665aec",
+        "path": "audio.js?v=9334e358d6bb7dfc",
         "status": 200
       },
       {
-        "path": "core.js?v=8bb26bd05589a8c7",
+        "path": "core.js?v=7c72fb0139b35234",
         "status": 200
       },
       {
-        "path": "data.js?v=c0c5ea303df43e8b",
+        "path": "data.js?v=ce94fca52c83a2a7",
         "status": 200
       },
       {
@@ -71,7 +116,7 @@
         "status": 200
       },
       {
-        "path": "dictionaries.js?v=6b636e72bbb4bc36",
+        "path": "dictionaries.js?v=255e4f9918b928bf",
         "status": 200
       },
       {
@@ -79,11 +124,15 @@
         "status": 200
       },
       {
-        "path": "entries.js?v=d3b87be61bb80a47",
+        "path": "entries.js?v=bca735aa14facac4",
         "status": 200
       },
       {
-        "path": "extra-audio.js?v=7026cb01e3e4fc78",
+        "path": "extra-audio.js?v=7d2a754d6cda9f8c",
+        "status": 200
+      },
+      {
+        "path": "grammar.js?v=9f047c78b489e3b7",
         "status": 200
       },
       {
@@ -95,7 +144,7 @@
         "status": 200
       },
       {
-        "path": "languages.js?v=253dbe723d0f5c5e",
+        "path": "languages.js?v=fbfb80f1f910853e",
         "status": 200
       },
       {
@@ -111,11 +160,11 @@
         "status": 200
       },
       {
-        "path": "settings-panel.js?v=a1e90c82f831d785",
+        "path": "settings-panel.js?v=f7ae476846178e0e",
         "status": 200
       },
       {
-        "path": "styles.css?v=08765b17465827d8",
+        "path": "styles.css?v=62af8f275284a194",
         "status": 200
       },
       {
@@ -123,11 +172,11 @@
         "status": 200
       },
       {
-        "path": "workspace.css?v=aee4c0cb75ea9566",
+        "path": "workspace.css?v=a2d9430cba97d5d3",
         "status": 200
       },
       {
-        "path": "workspace.js?v=a576fd46bf8a1101",
+        "path": "workspace.js?v=93eef66b5f94f880",
         "status": 200
       },
       {
@@ -140,6 +189,38 @@
       },
       {
         "path": "database/content-version.json",
+        "status": 200
+      },
+      {
+        "path": "database/french/example-network.json",
+        "status": 200
+      },
+      {
+        "path": "database/japanese/examples.json",
+        "status": 200
+      },
+      {
+        "path": "database/japanese/grammar/01 普通語法背誦.md",
+        "status": 200
+      },
+      {
+        "path": "database/japanese/grammar/02 語法類型整理.md",
+        "status": 200
+      },
+      {
+        "path": "database/japanese/grammar/books.json",
+        "status": 200
+      },
+      {
+        "path": "database/japanese/scenarios.json",
+        "status": 200
+      },
+      {
+        "path": "database/japanese/source.md",
+        "status": 200
+      },
+      {
+        "path": "database/japanese/vocabulary.json",
         "status": 200
       },
       {
@@ -156,6 +237,10 @@
       },
       {
         "path": "database/runtime/data.js",
+        "status": 200
+      },
+      {
+        "path": "database/runtime/extra-audio/japanese-validation.json",
         "status": 200
       },
       {
@@ -360,74 +445,6 @@
       },
       {
         "path": "audio/book-16.13-053-9d4c7de0.m4a",
-        "status": 200
-      },
-      {
-        "path": "audio/book-1.01-001-699d17b1-example.m4a",
-        "status": 200
-      },
-      {
-        "path": "audio/book-1.06-018-71beda71-example.m4a",
-        "status": 200
-      },
-      {
-        "path": "audio/book-2.03-041-1157ebe4-example.m4a",
-        "status": 200
-      },
-      {
-        "path": "audio/book-3.04-058-e8b7a073-example.m4a",
-        "status": 200
-      },
-      {
-        "path": "audio/book-5.02-020-5b0975b3-example.m4a",
-        "status": 200
-      },
-      {
-        "path": "audio/book-7.02-001-00f2f0a9-example.m4a",
-        "status": 200
-      },
-      {
-        "path": "audio/book-8.03-011-8aaa77ed-example.m4a",
-        "status": 200
-      },
-      {
-        "path": "audio/9.04-1-ea709cbf-example.m4a",
-        "status": 200
-      },
-      {
-        "path": "audio/book-11.01-006-ead3b3f1-example.m4a",
-        "status": 200
-      },
-      {
-        "path": "audio/book-12.03-005-332a7e97-example.m4a",
-        "status": 200
-      },
-      {
-        "path": "audio/book-13.01-016-18162baa-example.m4a",
-        "status": 200
-      },
-      {
-        "path": "audio/book-13.06-019-1a76f842-example.m4a",
-        "status": 200
-      },
-      {
-        "path": "audio/book-15.01-022-e9e739a6-example.m4a",
-        "status": 200
-      },
-      {
-        "path": "audio/book-15.06-039-5da42c07-example.m4a",
-        "status": 200
-      },
-      {
-        "path": "audio/book-16.04-019-b455a7c2-example.m4a",
-        "status": 200
-      },
-      {
-        "path": "audio/book-16.08-052-1206e682-example.m4a",
-        "status": 200
-      },
-      {
-        "path": "audio/book-16.13-044-4a944d30-example.m4a",
         "status": 200
       }
     ]

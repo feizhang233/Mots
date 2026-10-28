@@ -1,0 +1,62 @@
+{
+  "success": true,
+  "errors": [],
+  "checks": [
+    "Settings owns picker/template/preview; keyboard expansion and focus ring; download matches preview; Escape restores opener focus.",
+    "Malformed file preserves library; retry imports real downloaded template; new book selection/content persist after reload.",
+    "Switching languages and ordinary/thematic grammar refreshes valid JSON example, including empty thematic books.",
+    "320px/390px light/dark and reduced motion preserve readable bounded preview, dialog bounds, scroll access and actions."
+  ],
+  "layouts": [
+    {
+      "label": "desktop",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "left": 460,
+      "right": 980,
+      "dialogWidth": 518,
+      "dialogScrollWidth": 518,
+      "previewHeight": 240
+    },
+    {
+      "label": "390px light",
+      "width": 390,
+      "scrollWidth": 390,
+      "left": 12,
+      "right": 378,
+      "dialogWidth": 364,
+      "dialogScrollWidth": 364,
+      "previewHeight": 240
+    },
+    {
+      "label": "390px dark reduced motion",
+      "width": 390,
+      "scrollWidth": 390,
+      "left": 12,
+      "right": 378,
+      "dialogWidth": 364,
+      "dialogScrollWidth": 364,
+      "previewHeight": 240
+    },
+    {
+      "label": "320px light",
+      "width": 320,
+      "scrollWidth": 320,
+      "left": 12,
+      "right": 308,
+      "dialogWidth": 294,
+      "dialogScrollWidth": 294,
+      "previewHeight": 240
+    },
+    {
+      "label": "320px dark reduced motion",
+      "width": 320,
+      "scrollWidth": 320,
+      "left": 12,
+      "right": 308,
+      "dialogWidth": 294,
+      "dialogScrollWidth": 294,
+      "previewHeight": 240
+    }
+  ]
+}

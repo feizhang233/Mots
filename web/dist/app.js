@@ -839,7 +839,7 @@
         ? studyView.list()
         : studyView.card()
       : grammarGroupingEnabled() && !sourceWords().length
-        ? '<div class="empty-state"><h3>這本主題語法書尚未加入內容</h3><p>主題語法與普通語法分開保存。匯入主題語法資料後，會建立有自己分類與學習進度的語法書。</p><button class="button button-tonal" data-action="import-dictionary">匯入主題語法書</button></div>'
+        ? '<div class="empty-state"><h3>這本主題語法書尚未加入內容</h3><p>請到設定的「辭典匯入與生詞」加入主題語法資料，建立有自己分類與學習進度的語法書。</p></div>'
         : deletedScope
           ? `<div class="empty-state"><h3>這裡的${item}已刪除</h3><p>可在設定中恢復，原有熟悉程度會保留。</p><button class="button button-tonal" data-action="restore-deleted">恢復已刪除內容</button></div>`
           : state.screen === 'review'
@@ -916,6 +916,7 @@
     groupWords,
   });
   const settingsPanel = window.MotsSettingsPanel.create({
+    getDictionaryTemplate: dictionaryTemplate,
     getPreferences: () => ({
       studyLanguage: state.language,
       meaningLanguage: settings.meaningLanguage,
@@ -1137,7 +1138,6 @@
     if (action === 'open-dictionary') showScreen('dictionary');
     if (action === 'open-study') showScreen('study');
     if (action === 'start-review') startReview();
-    if (action === 'import-dictionary') settingsPanel.open('settings-library');
     if (action === 'restore-deleted') {
       settingsPanel.resetDeletedPage();
       settingsPanel.open('settings-library');
@@ -1575,11 +1575,11 @@
     });
     settingsPanel.notice('vocabulary-message', '詞庫範本已準備下載；填寫後可擴充目前辭典。');
   });
-  $('download-dictionary-template').addEventListener('click', () => {
+  function dictionaryTemplate() {
     const entry = words()[0],
       m = entry ? meaning(entry) : { text: '請填入釋義', missing: true };
     const thematic = grammarGroupingEnabled();
-    download(`mots-${state.language}-dictionary-template.json`, {
+    return {
       app: 'mots-dictionary',
       version: 1,
       title: thematic
@@ -1613,12 +1613,22 @@
           explanation: entry?.explanation || '',
         },
       ],
-    });
+    };
+  }
+  $('download-dictionary-template').addEventListener('click', () => {
+    download(`mots-${state.language}-dictionary-template.json`, dictionaryTemplate());
     settingsPanel.notice('dictionary-message', '辭典範本已準備下載；填寫名稱、語言和詞條後匯入。');
   });
+  let dictionaryImportBusy = false;
   $('import-dictionary').addEventListener('change', async (event) => {
     const file = event.target.files[0];
-    if (!file) return;
+    if (!file || dictionaryImportBusy) return;
+    const input = event.target;
+    dictionaryImportBusy = true;
+    input.disabled = true;
+    input.setAttribute('aria-busy', 'true');
+    input.setAttribute('aria-invalid', 'false');
+    settingsPanel.notice('dictionary-message', '正在讀取並驗證辭典…');
     const fallbackLanguage = state.language;
     const fallbackKind = state.studyKind;
     const fallbackGrammarMode = grammarGroupingEnabled() ? 'thematic' : 'standard';
@@ -1648,12 +1658,17 @@
         `已建立「${dictionary.title}」，共 ${dictionary.words.length} 詞${saved ? '。' : '；目前僅暫存於此頁，請下載備份。'}`,
       );
     } catch (error) {
+      input.setAttribute('aria-invalid', 'true');
       settingsPanel.notice(
         'dictionary-message',
         error instanceof SyntaxError ? '無法讀取 JSON，請參照下載的辭典範本。' : error.message,
       );
+    } finally {
+      dictionaryImportBusy = false;
+      input.disabled = false;
+      input.removeAttribute('aria-busy');
+      input.value = '';
     }
-    event.target.value = '';
   });
   $('import-vocabulary').addEventListener('change', async (event) => {
     const file = event.target.files[0];

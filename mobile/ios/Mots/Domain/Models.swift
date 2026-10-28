@@ -205,6 +205,34 @@ enum StudyImport {
     static let meaningLanguages = Set(["zh-Hant", "zh-Hans", "en", "fr", "de", "ja"])
     static let unsafeKeys = Set(["__proto__", "constructor", "prototype"])
 
+    /// The settings preview and exported file share the existing dictionary import format.
+    static func dictionaryTemplate(for dictionary: StudyDictionary, meaningLanguage: String) throws -> Data {
+        let entry = dictionary.words.first
+        let meaningCode = meaningLanguages.contains(meaningLanguage) ? meaningLanguage : "zh-Hant"
+        var word: [String: Any] = [
+            "id": "word-1",
+            "term": entry?.term ?? (dictionary.isGrammar ? "請填入語法句型" : "請填入單字"),
+            "meanings": [meaningCode: entry?.meanings[meaningCode] ?? "請填入釋義"],
+            "example": entry?.example ?? "",
+            "examples": entry?.examples.map { ["text": $0.text, "translations": $0.translations] as [String: Any] } ?? [],
+            "pattern": entry?.pattern ?? "",
+            "explanation": entry?.explanation ?? ""
+        ]
+        var source: [String: Any] = [
+            "app": "mots-dictionary", "version": 1,
+            "title": dictionary.isThematicGrammar ? "我的主題語法書" : dictionary.isGrammar ? "我的語法筆記" : "我的詞彙本",
+            "kind": dictionary.kind.rawValue, "grammarMode": dictionary.grammarMode.rawValue,
+            "language": dictionary.language
+        ]
+        if dictionary.isThematicGrammar {
+            source["categories"] = [["id": "t1", "name": "主題名稱", "subcategories": [["id": "t1.01", "name": "語法歸納名稱"]]]]
+            word["category"] = "t1"
+            word["subcategory"] = "t1.01"
+        }
+        source["words"] = [word]
+        return try JSONSerialization.data(withJSONObject: source, options: [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes])
+    }
+
     static func detailText(_ value: Any?, field: String, limit: Int, required: Bool = true) throws -> String {
         if !required && (value == nil || value is NSNull) { return "" }
         let result = try text(value, field: field, limit: limit, required: required)

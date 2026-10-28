@@ -939,6 +939,28 @@
 .settings-group .settings-actions {
   justify-content: flex-start;
 }
+.dictionary-template {
+  max-height: 240px;
+  margin: 8px 0 0;
+  padding: 12px;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-control);
+  background: var(--surface-container);
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.dictionary-template:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+.settings-actions .button:has(input:disabled) {
+  cursor: wait;
+  opacity: 0.55;
+}
 .settings-group .backup-message,
 .settings-group .sync-status {
   scroll-margin-block: 78px 18px;

@@ -416,7 +416,7 @@
               <path d="M8 4v16m13-13v13" /></svg
           ></span>
           <span class="settings-group-label"
-            ><strong>辭典與生詞</strong><span>匯入辭典、擴充詞庫與匯出生詞</span></span
+            ><strong>辭典匯入與生詞</strong><span>匯入 JSON、下載範例模板與匯出生詞</span></span
           >
           <svg class="settings-group-chevron" viewBox="0 0 24 24" aria-hidden="true">
             <path d="m9 5 7 7-7 7" />
@@ -424,8 +424,8 @@
         </summary>
         <div class="settings-group-body">
           <section class="settings-subsection">
-            <h3>辭典資料庫</h3>
-            <p class="settings-note">
+            <h3>匯入新辭典</h3>
+            <p id="dictionary-import-help" class="settings-note">
               每個 JSON 檔可建立一部獨立辭典。支援法語、德語、日語，最多 2 MB／5,000 詞，最多 20
               部匯入辭典。辭典之間的學習進度分開保存。
             </p>
@@ -435,16 +435,30 @@
                   id="import-dictionary"
                   class="visually-hidden"
                   type="file"
+                  aria-describedby="dictionary-import-help dictionary-message"
                   accept="application/json,.json" /></label
               ><button
                 id="download-dictionary-template"
                 class="button button-outline"
                 type="button"
               >
-                下載辭典範本
+                下載範例模板
               </button>
             </div>
             <p id="dictionary-message" class="backup-message" role="status"></p>
+            <p class="settings-note">
+              先下載模板，修改 title（辭典名稱）、language（fr／de／ja）及 words（詞條）後匯入。
+              每筆詞條的 id 請保持唯一，term 填單字或句型，meanings 填釋義；分類可省略。
+              匯入後可在書籍選單切換。
+            </p>
+            <p id="dictionary-template-label" class="settings-note">
+              JSON 範例（依目前書籍的語言與類型產生）
+            </p>
+            <pre
+              class="dictionary-template"
+              tabindex="0"
+              aria-labelledby="dictionary-template-label"
+            ><code id="dictionary-template-preview"></code></pre>
           </section>
           <section id="vocabulary-extension-section" class="settings-subsection">
             <h3>擴充目前辭典</h3>

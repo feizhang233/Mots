@@ -144,6 +144,37 @@ struct StudyModelsTests {
         malformedWord["examples"] = [["text": "Valid", "translations": NSNull()]]
         rejects { _ = try JSONDecoder().decode(StudyWord.self, from: data(malformedWord)) }
 
+        // A downloaded settings example must import as the advertised book even when
+        // the current collection is empty or the receiving book has a different kind.
+        let sampleWord = StudyWord(id: "original-id", term: "mot \"cité\"", meaning: "詞", category: "original", subcategory: "original.01", language: "fr",
+            meanings: ["zh-Hant": "詞", "en": "word"], examples: [StudyExample(text: "Un mot.", translations: ["zh-Hant": "一個詞。", "en": "A word."])],
+            pattern: "mot + adjectif", explanation: "包含引號與\n換行。")
+        for language in ["fr", "de", "ja"] {
+            for (kind, mode) in [(StudyDictionaryKind.vocabulary, StudyGrammarMode.standard), (.grammar, .standard), (.grammar, .thematic)] {
+                for entries in [[], [sampleWord]] {
+                    let current = StudyDictionary(id: "dict-source", title: "Current book", language: language, categories: [], words: entries, kind: kind, grammarMode: mode)
+                    let bytes = try StudyImport.dictionaryTemplate(for: current, meaningLanguage: "en")
+                    let source = try StudyImport.object(bytes, limit: 2 * 1024 * 1024)
+                    precondition(source["app"] as? String == "mots-dictionary" && source["version"] as? Int == 1)
+                    precondition(source["id"] == nil && source["progress"] == nil && source["ratings"] == nil, "Templates contain source content only")
+                    let restored = try StudyImport.dictionary(source, id: "dict-template", fallbackLanguage: "de", fallbackKind: kind == .grammar ? .vocabulary : .grammar)
+                    precondition(restored.kind == kind && restored.grammarMode == mode && restored.language == language)
+                    precondition(restored.title == (mode == .thematic ? "我的主題語法書" : kind == .grammar ? "我的語法筆記" : "我的詞彙本"))
+                    precondition(restored.words.count == 1 && restored.words[0].id == "word-1")
+                    precondition(restored.words[0].meanings["en"] == (entries.isEmpty ? "請填入釋義" : "word"))
+                    precondition(!restored.categories.isEmpty, "A template always creates usable navigation")
+                    if mode == .thematic {
+                        precondition(restored.words[0].category == "t1" && restored.words[0].subcategory == "t1.01")
+                        precondition(restored.categories[0].name == "主題名稱" && restored.categories[0].subcategories[0].name == "語法歸納名稱")
+                    }
+                    if !entries.isEmpty {
+                        precondition(restored.words[0].term == sampleWord.term && restored.words[0].examples == sampleWord.examples)
+                        precondition(restored.words[0].pattern == sampleWord.pattern && restored.words[0].explanation == sampleWord.explanation)
+                    }
+                }
+            }
+        }
+
         print("Native study models: legacy decoding, grammar identity, rich examples and validation passed.")
     }
 }

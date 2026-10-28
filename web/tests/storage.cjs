@@ -1,4 +1,6 @@
 const { context, read, upload, click, assert } = require('./helpers/app.cjs');
+const fs = require('node:fs');
+const path = require('node:path');
 
 const library = [
   {
@@ -38,6 +40,93 @@ const snapshot = (app) =>
   });
 
 async function run() {
+  const sourceHTML = fs.readFileSync(path.join(__dirname, '../src/index.html'), 'utf8');
+  const settingsStart = sourceHTML.indexOf('id="settings-dialog"');
+  const settingsEnd = sourceHTML.indexOf('</dialog>', settingsStart);
+  for (const id of [
+    'import-dictionary',
+    'download-dictionary-template',
+    'dictionary-template-preview',
+  ]) {
+    const position = sourceHTML.indexOf(`id="${id}"`);
+    assert(position > settingsStart && position < settingsEnd, `${id} belongs only to settings`);
+    assert.equal(sourceHTML.split(`id="${id}"`).length, 2, `${id} has one canonical location`);
+  }
+
+  // The visible example and the downloaded file must stay identical and importable
+  // for vocabulary, ordinary grammar and empty thematic books in every language.
+  for (const bookID of [
+    'fr',
+    'de',
+    'ja',
+    'grammar-fr',
+    'grammar-de',
+    'grammar-ja',
+    'grammar-theme-fr',
+    'grammar-theme-de',
+    'grammar-theme-ja',
+  ]) {
+    const example = context({ source: true });
+    example.run(
+      `applyDictionary(${JSON.stringify(bookID)}); settingsPanel.open('settings-library')`,
+    );
+    const preview = JSON.parse(example.$('dictionary-template-preview').textContent);
+    const originalBook = read(example, 'dictionaryOf(state.dictionary)');
+    assert.equal(preview.language, originalBook.language);
+    assert.equal(preview.kind, originalBook.kind || 'vocabulary');
+    assert.equal(preview.grammarMode, originalBook.grammarMode || 'standard');
+    assert.equal(preview.words.length, 1);
+    click(example, 'download-dictionary-template');
+    const downloaded = JSON.parse(await example.downloads.at(-1).text());
+    assert.deepEqual(downloaded, preview, `${bookID} preview matches the actual download`);
+    assert.equal(example.$('settings-library').open, true);
+    assert(
+      example.$('dictionary-message').textContent,
+      'Template download keeps feedback in settings',
+    );
+    const beforeImport = read(example, `progress[${JSON.stringify(bookID)}]`);
+    await upload(example, 'import-dictionary', downloaded);
+    const importedBook = read(example, 'dictionaryOf(state.dictionary)');
+    assert.notEqual(importedBook.id, bookID);
+    assert.equal(importedBook.language, originalBook.language);
+    assert.equal(importedBook.kind, originalBook.kind || 'vocabulary');
+    assert.equal(importedBook.grammarMode, originalBook.grammarMode || 'standard');
+    assert.equal(importedBook.words[0].term, preview.words[0].term);
+    assert.deepEqual(read(example, `progress[${JSON.stringify(bookID)}]`), beforeImport);
+    assert.equal(example.run('dictionaryLibrary.length'), 1);
+    assert.equal(example.$('settings-library').open, true);
+    assert(example.$('dictionary-message').textContent.includes('已建立'));
+  }
+
+  const pending = context({ source: true });
+  pending.run("settingsPanel.open('settings-library')");
+  const pendingInput = pending.$('import-dictionary');
+  let finishRead;
+  const delayedText = new Promise((resolve) => {
+    finishRead = resolve;
+  });
+  pendingInput.value = 'pending.json';
+  pendingInput.files = [{ size: 200, name: 'pending.json', text: () => delayedText }];
+  const importHandler = pendingInput.events.change[0];
+  const reading = importHandler({ target: pendingInput });
+  assert.equal(pendingInput.disabled, true, 'Pending import disables repeated selection');
+  assert.equal(pendingInput.getAttribute('aria-busy'), 'true');
+  assert.equal(pending.run('dictionaryLibrary.length'), 0, 'Validation precedes mutation');
+  await importHandler({ target: pendingInput });
+  finishRead(
+    JSON.stringify({
+      title: '讀取中測試',
+      language: 'fr',
+      words: [{ term: 'essai', meanings: { 'zh-Hant': '測試' } }],
+    }),
+  );
+  await reading;
+  assert.equal(pending.run('dictionaryLibrary.length'), 1, 'Repeated events cannot import twice');
+  assert.equal(pendingInput.disabled, false);
+  assert.equal(pendingInput.getAttribute('aria-busy'), null);
+  assert.equal(pendingInput.getAttribute('aria-invalid'), 'false');
+  assert.equal(pendingInput.value, '');
+
   const imported = context({
     storage: baseStorage,
     url: 'http://localhost/Mots.html?screen=study&dict=dict-old',
@@ -218,18 +307,14 @@ async function run() {
   );
   assert.equal(grouped.$('settings-sync').open, false);
   assert.equal(grouped.$('settings-sync-summary').textContent, '離線，稍後重試');
-  const importEntry = {
-    closest: (selector) =>
-      selector === '[data-action]' ? { dataset: { action: 'import-dictionary' } } : null,
-  };
-  for (const handler of grouped.$('main').events.click) handler({ target: importEntry });
-  assert.equal(
-    grouped.$('settings-library').open,
-    true,
-    'Home import entry expands the dictionary task group',
-  );
   grouped.run("settingsPanel.openGroup('settings-backup')");
+  const beforeInvalidDictionary = snapshot(grouped);
   await upload(grouped, 'import-dictionary', {}, { raw: '{' });
+  assert.equal(
+    snapshot(grouped),
+    beforeInvalidDictionary,
+    'Malformed JSON preserves all dictionary data',
+  );
   assert.equal(
     grouped.$('settings-library').open,
     true,
@@ -237,6 +322,46 @@ async function run() {
   );
   assert.equal(grouped.$('settings-backup').open, false);
   assert(grouped.$('dictionary-message').textContent.includes('JSON'));
+  assert.equal(grouped.$('import-dictionary').getAttribute('aria-invalid'), 'true');
+  assert.equal(grouped.$('import-dictionary').disabled, false, 'A failed read can be retried');
+  for (const [invalidDictionary, options] of [
+    [
+      { language: 'fr', words: [{ term: 'essai', meanings: { 'zh-Hant': '測試' } }] },
+      { size: 2 * 1024 * 1024 + 1 },
+    ],
+    [
+      {
+        title: '無效辭典',
+        language: 'invalid',
+        words: [{ term: 'essai', meanings: { 'zh-Hant': '測試' } }],
+      },
+      {},
+    ],
+    [
+      {
+        title: '重複詞條',
+        language: 'fr',
+        words: [
+          { id: 'same', term: 'un', meanings: { 'zh-Hant': '一' } },
+          { id: 'same', term: 'deux', meanings: { 'zh-Hant': '二' } },
+        ],
+      },
+      {},
+    ],
+  ]) {
+    const beforeInvalid = snapshot(grouped);
+    await upload(grouped, 'import-dictionary', invalidDictionary, options);
+    assert.equal(
+      snapshot(grouped),
+      beforeInvalid,
+      'Invalid dictionary selection cannot partially change data',
+    );
+    assert.equal(grouped.$('settings-library').open, true);
+    assert(
+      grouped.$('dictionary-message').textContent,
+      'Invalid selection has recoverable inline feedback',
+    );
+  }
   await upload(grouped, 'import-progress', {}, { raw: '{' });
   assert.equal(grouped.$('settings-backup').open, true, 'Restore errors reveal the backup group');
   assert(grouped.$('backup-message').textContent.includes('JSON'));

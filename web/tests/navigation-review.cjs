@@ -4,6 +4,11 @@ const home = context();
 assert.equal(home.run('state.screen'), 'home');
 assert(home.$('home-link').href.includes('/Mots.html?'));
 assert(home.$('home-link').href.includes('screen=home'));
+assert(home.$('home-section').innerHTML.includes('home-library-title'));
+assert(
+  !home.$('home-section').innerHTML.includes('data-action="import-dictionary"'),
+  'Dictionary imports remain in settings rather than the homepage',
+);
 
 const legacy = context({ url: 'http://localhost/Mots.html?lang=fr&category=2&sub=2.01&view=list' });
 assert.equal(legacy.run('state.screen'), 'study');

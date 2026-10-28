@@ -10,7 +10,7 @@
     <link rel="icon" href="icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css?v=62af8f275284a194" />
     <link rel="stylesheet" href="select.css?v=d9685d2e102b4476" />
-    <link rel="stylesheet" href="workspace.css?v=1fc56b29ee538841" />
+    <link rel="stylesheet" href="workspace.css?v=a2d9430cba97d5d3" />
     <script defer src="data.js?v=ce94fca52c83a2a7"></script>
     <script defer src="languages.js?v=fbfb80f1f910853e"></script>
     <script defer src="audio-manifest.js?v=2415420e385eafc4"></script>
@@ -19,15 +19,15 @@
     <script defer src="core.js?v=7c72fb0139b35234"></script>
     <script defer src="dictionaries.js?v=255e4f9918b928bf"></script>
     <script defer src="grammar.js?v=9f047c78b489e3b7"></script>
-    <script defer src="workspace.js?v=07906fcf17d6d052"></script>
+    <script defer src="workspace.js?v=93eef66b5f94f880"></script>
     <script defer src="audio.js?v=9334e358d6bb7dfc"></script>
     <script defer src="downloads.js?v=887b8391395047af"></script>
     <script defer src="entries.js?v=bca735aa14facac4"></script>
     <script defer src="sync-protocol.js?v=4935a93c70f88375"></script>
     <script defer src="deletion-state.js?v=6d8acb74e77b42d2"></script>
     <script defer src="progress-sync.js?v=194bbbc24be6d88a"></script>
-    <script defer src="settings-panel.js?v=1ff74194ce69bd6c"></script>
-    <script defer src="app.js?v=0e3f84499ca2b207"></script>
+    <script defer src="settings-panel.js?v=f7ae476846178e0e"></script>
+    <script defer src="app.js?v=0549a62addfc7a22"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">跳到背誦內容</a>
@@ -416,7 +416,7 @@
               <path d="M8 4v16m13-13v13" /></svg
           ></span>
           <span class="settings-group-label"
-            ><strong>辭典與生詞</strong><span>匯入辭典、擴充詞庫與匯出生詞</span></span
+            ><strong>辭典匯入與生詞</strong><span>匯入 JSON、下載範例模板與匯出生詞</span></span
           >
           <svg class="settings-group-chevron" viewBox="0 0 24 24" aria-hidden="true">
             <path d="m9 5 7 7-7 7" />
@@ -424,8 +424,8 @@
         </summary>
         <div class="settings-group-body">
           <section class="settings-subsection">
-            <h3>辭典資料庫</h3>
-            <p class="settings-note">
+            <h3>匯入新辭典</h3>
+            <p id="dictionary-import-help" class="settings-note">
               每個 JSON 檔可建立一部獨立辭典。支援法語、德語、日語，最多 2 MB／5,000 詞，最多 20
               部匯入辭典。辭典之間的學習進度分開保存。
             </p>
@@ -435,16 +435,30 @@
                   id="import-dictionary"
                   class="visually-hidden"
                   type="file"
+                  aria-describedby="dictionary-import-help dictionary-message"
                   accept="application/json,.json" /></label
               ><button
                 id="download-dictionary-template"
                 class="button button-outline"
                 type="button"
               >
-                下載辭典範本
+                下載範例模板
               </button>
             </div>
             <p id="dictionary-message" class="backup-message" role="status"></p>
+            <p class="settings-note">
+              先下載模板，修改 title（辭典名稱）、language（fr／de／ja）及 words（詞條）後匯入。
+              每筆詞條的 id 請保持唯一，term 填單字或句型，meanings 填釋義；分類可省略。
+              匯入後可在書籍選單切換。
+            </p>
+            <p id="dictionary-template-label" class="settings-note">
+              JSON 範例（依目前書籍的語言與類型產生）
+            </p>
+            <pre
+              class="dictionary-template"
+              tabindex="0"
+              aria-labelledby="dictionary-template-label"
+            ><code id="dictionary-template-preview"></code></pre>
           </section>
           <section id="vocabulary-extension-section" class="settings-subsection">
             <h3>擴充目前辭典</h3>

@@ -11,6 +11,7 @@
   ]);
   function create({
     getPreferences,
+    getDictionaryTemplate,
     getExport,
     getDeleted,
     getMeaning,
@@ -39,6 +40,11 @@
       $('vocabulary-extension-section').hidden = !model.canExtend;
       $('settings-bank-note').textContent =
         `目前辭典：${model.dictionaryTitle} · ${model.wordCount} 詞${model.customCount ? `，含 ${model.customCount} 個擴充單字` : ''}`;
+      $('dictionary-template-preview').textContent = JSON.stringify(
+        getDictionaryTemplate(),
+        null,
+        2,
+      );
       $('settings-learning-summary').textContent =
         `${model.studyLanguageName} · ${model.meaningLanguageName} · 每頁 ${model.pageSize} ${model.studyKind === 'grammar' ? '項' : '詞'}${model.studyKind === 'grammar' ? ` · ${model.grammarGrouping ? '主題語法' : '普通語法'}` : ''}`;
       $('settings-source-note').textContent =

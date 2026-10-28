@@ -44,7 +44,7 @@ struct SettingsView: View {
                     DisclosureGroup(isExpanded: expansion(for: .dictionaries)) {
                         dictionaryTools
                     } label: {
-                        SettingsGroupLabel("書籍與匯出", symbol: "books.vertical", summary: "匯入書籍・匯出未掌握項目")
+                        SettingsGroupLabel("辭典匯入與生詞", symbol: "books.vertical", summary: "匯入新辭典・範例模板・匯出生詞")
                     }
                     .disclosureGroupStyle(SettingsDisclosureStyle(identifier: "settings.group.dictionaries"))
                 }
@@ -172,10 +172,38 @@ struct SettingsView: View {
     }
 
     @ViewBuilder private var dictionaryTools: some View {
+        Text("匯入新辭典")
+            .font(.subheadline.weight(.semibold))
+        Text("選擇 JSON 檔案，最多 2 MB、5,000 個詞條；支援法語（fr）、德語（de）與日語（ja）。匯入後會加入獨立書籍。")
+            .font(.footnote).foregroundStyle(.secondary)
         Button { importKind = .dictionary; importing = true } label: {
-            Label("匯入書籍 JSON", systemImage: "books.vertical")
+            Label("匯入辭典 JSON", systemImage: "square.and.arrow.down")
                 .settingsActionTarget()
         }
+        .accessibilityIdentifier("settings.import-dictionary")
+        Button {
+            prepareExport(type: .json, name: "mots-\(store.currentDictionary.language)-dictionary-template") {
+                try StudyImport.dictionaryTemplate(for: store.currentDictionary, meaningLanguage: store.meaningLanguage)
+            }
+        } label: {
+            Label("下載範例模板", systemImage: "doc.badge.arrow.down")
+                .settingsActionTarget()
+        }
+        .accessibilityIdentifier("settings.dictionary-template-download")
+        Text("模板依目前書籍的語言與類型產生。填寫 title（辭典名稱）、language（語言）與 words（詞條）；每個詞條包含 term（單字或句型）和 meanings（釋義）。kind 使用 vocabulary（詞彙）或 grammar（語法），每個 id 保持唯一。")
+            .font(.footnote).foregroundStyle(.secondary)
+        VStack(alignment: .leading, spacing: 8) {
+            Text("範例模板（JSON）").font(.subheadline.weight(.semibold))
+            ScrollView {
+                Text(dictionaryTemplatePreview)
+                    .font(.system(.caption, design: .monospaced))
+                    .textSelection(.enabled)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .frame(height: 220)
+            .accessibilityIdentifier("settings.dictionary-template-preview")
+        }
+        .padding(.vertical, 6)
         Picker("匯出範圍", selection: $exportScope) {
             Text(store.currentDictionary.isGrammar ? "全部語法" : "全部單字").tag("all")
             ForEach(store.currentDictionary.categories) { category in
@@ -197,6 +225,12 @@ struct SettingsView: View {
                 .settingsActionTarget()
         }
         .accessibilityIdentifier("settings.deleted-words")
+    }
+
+    private var dictionaryTemplatePreview: String {
+        guard let data = try? StudyImport.dictionaryTemplate(for: store.currentDictionary, meaningLanguage: store.meaningLanguage),
+              let text = String(data: data, encoding: .utf8) else { return "範例模板暫時無法顯示，請重新開啟設定。" }
+        return text
     }
 
     @ViewBuilder private var backupTools: some View {
@@ -258,7 +292,7 @@ struct SettingsView: View {
                 showStatus("已合併 \(count) 個項目的進度。")
             } else {
                 _ = try store.importDictionary(data)
-                showStatus("已匯入書籍，可在「學習偏好」切換。")
+                showStatus("已匯入「\(store.currentDictionary.displayTitle)」（\(store.currentDictionary.words.count) 個詞條），已切換至新辭典。")
             }
         } catch { showStatus("匯入失敗：\(error.localizedDescription)", error: true) }
     }
