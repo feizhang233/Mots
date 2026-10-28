@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "database/japanese/source.md"
 VOCABULARY = ROOT / "database/japanese/vocabulary.json"
 EXAMPLES = ROOT / "database/japanese/examples.json"
+SCENARIOS = ROOT / "database/japanese/scenarios.json"
 LANGUAGES = ROOT / "web/src/js/languages.js"
 
 
@@ -47,6 +48,26 @@ def dictionary() -> dict:
         raise ValueError("Japanese entry count differs from Markdown declaration")
     if len({word["id"] for word in words}) != len(words):
         raise ValueError("Duplicate Japanese vocabulary identity")
+    scenarios = json.loads(SCENARIOS.read_text(encoding="utf-8"))
+    if scenarios.get("schemaVersion") != 1 or scenarios.get("dictionaryId") != "ja":
+        raise ValueError("Invalid Japanese scenario source")
+    categories = []
+    assignments = {}
+    for index, scenario in enumerate(scenarios["categories"], 1):
+        identifier = str(index)
+        if scenario["id"] != identifier or not scenario["name"].strip() or not scenario["wordIds"]:
+            raise ValueError("Japanese scenarios must have ordered IDs, names and words")
+        subcategory = identifier + ".01"
+        categories.append({"id": identifier, "name": scenario["name"],
+                           "subcategories": [{"id": subcategory, "name": "全部詞彙"}]})
+        for word_id in scenario["wordIds"]:
+            if word_id in assignments:
+                raise ValueError(f"Japanese word assigned more than once: {word_id}")
+            assignments[word_id] = (identifier, subcategory)
+    if len(categories) != 10 or set(assignments) != {word["id"] for word in words}:
+        raise ValueError("Ten Japanese scenarios must cover every source word exactly once")
+    for word in words:
+        word["category"], word["subcategory"] = assignments[word["id"]]
     supplement = json.loads(EXAMPLES.read_text(encoding="utf-8"))
     examples = supplement["entries"]
     by_id = {entry["id"]: entry for entry in examples}
@@ -73,7 +94,9 @@ def dictionary() -> dict:
         "notes": "保留原表讀音、釋義及待確認標記；原表未提供詞性。例句及繁體中文翻譯為另行編寫的學習補充，非原表內容。",
         "examplesFile": "examples.json",
         "examplesSHA256": hashlib.sha256(EXAMPLES.read_bytes()).hexdigest(),
-        "categories": [{"id": "1", "name": "日語詞彙總表", "subcategories": [{"id": "1.01", "name": "全部詞彙"}]}],
+        "scenariosFile": "scenarios.json",
+        "scenariosSHA256": hashlib.sha256(SCENARIOS.read_bytes()).hexdigest(),
+        "categories": categories,
         "words": words,
     }
 
@@ -81,6 +104,14 @@ def dictionary() -> dict:
 def outputs() -> dict[Path, bytes]:
     data = dictionary()
     languages = LANGUAGES.read_text(encoding="utf-8")
+    marker = "  window.MOTS_JAPANESE_CATEGORIES = "
+    start = languages.find(marker)
+    end = languages.index("  window.MOTS_EXTRA_BANKS = {")
+    if start == -1:
+        start = end
+    metadata = json.dumps(data["categories"], ensure_ascii=False, indent=2)
+    metadata = "\n".join("  " + line for line in metadata.splitlines())
+    languages = languages[:start] + marker + metadata.strip() + ";\n" + languages[end:]
     start = languages.index("    ja: [")
     end = languages.index("\n  };\n  const conversion", start)
     bank = json.dumps(data["words"], ensure_ascii=False, indent=2)

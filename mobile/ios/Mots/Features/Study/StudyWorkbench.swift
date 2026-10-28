@@ -96,7 +96,7 @@ struct StudyWorkbench: View {
     }
 
     private var studyControls: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        HStack(alignment: .center, spacing: 8) {
             Text(store.categoryID == nil ? "全部\(entryName)" : store.currentScopeTitle)
                 .font(.title3.weight(.semibold))
                 .foregroundStyle(MotsTheme.ink)
@@ -104,53 +104,56 @@ struct StudyWorkbench: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .accessibilityAddTraits(.isHeader)
                 .accessibilityIdentifier("study.scope")
-            HStack(spacing: 12) {
-                Picker("顯示方式", selection: $store.listMode) {
-                    Label("卡片", systemImage: "rectangle.portrait").tag(false)
-                    Label("列表", systemImage: "list.bullet").tag(true)
+            Menu {
+                if !isGrammar {
+                    Toggle("先隱藏翻譯", isOn: $store.hideListMeanings)
+                        .accessibilityIdentifier("study.hide-translations")
                 }
-                .pickerStyle(.segmented)
-                .accessibilityIdentifier("study.layout")
-                Menu {
-                    Toggle("隱藏已掌握", isOn: $store.hideMastered)
-                    Picker(isGrammar ? "語法順序" : "詞序", selection: $store.randomOrder) {
-                        Text("原書順序").tag(false)
-                        Text("隨機順序").tag(true)
+                Toggle("隱藏已掌握", isOn: $store.hideMastered)
+                Picker(isGrammar ? "語法順序" : "詞序", selection: $store.randomOrder) {
+                    Text("原書順序").tag(false)
+                    Text("隨機順序").tag(true)
+                }
+                if store.randomOrder {
+                    Button("重新洗牌", systemImage: "shuffle") { store.reshuffle() }
+                }
+                if store.categoryID != nil || !store.search.isEmpty || store.hideMastered {
+                    Button("顯示全部\(entryName)") {
+                        store.categoryID = nil
+                        store.subcategoryID = nil
+                        store.search = ""
+                        store.hideMastered = false
                     }
-                    if store.randomOrder {
-                        Button("重新洗牌", systemImage: "shuffle") { store.reshuffle() }
-                    }
-                    if store.categoryID != nil || !store.search.isEmpty || store.hideMastered {
-                        Button("顯示全部\(entryName)") {
-                            store.categoryID = nil
-                            store.subcategoryID = nil
-                            store.search = ""
-                            store.hideMastered = false
+                }
+            } label: {
+                Image(systemName: "line.3.horizontal.decrease")
+                    .font(.body.weight(.semibold))
+                    .foregroundStyle(MotsTheme.accent)
+                    .overlay(alignment: .topTrailing) {
+                        if store.hideMastered || (!isGrammar && store.hideListMeanings) {
+                            Circle()
+                                .fill(MotsTheme.accent)
+                                .frame(width: 6, height: 6)
+                                .offset(x: 5, y: -4)
+                                .accessibilityHidden(true)
                         }
                     }
-                } label: {
-                    Image(systemName: "line.3.horizontal.decrease")
-                        .font(.body.weight(.semibold))
-                        .foregroundStyle(MotsTheme.accent)
-                        .overlay(alignment: .topTrailing) {
-                            if store.hideMastered {
-                                Circle()
-                                    .fill(MotsTheme.accent)
-                                    .frame(width: 6, height: 6)
-                                    .offset(x: 5, y: -4)
-                                    .accessibilityHidden(true)
-                            }
-                        }
-                        .frame(width: MotsTheme.iconControlSize, height: MotsTheme.iconControlSize)
-                        .contentShape(Rectangle())
-                }
-                .buttonStyle(.plain)
-                .menuIndicator(.hidden)
-                .accessibilityLabel(store.hideMastered ? "篩選，已隱藏已掌握\(entryName)" : "篩選\(entryName)")
-                .accessibilityIdentifier("study.filter")
+                    .frame(width: MotsTheme.iconControlSize, height: MotsTheme.iconControlSize)
+                    .contentShape(Rectangle())
             }
+            .buttonStyle(.plain)
+            .menuIndicator(.hidden)
+            .accessibilityLabel(filterAccessibilityLabel)
+            .accessibilityIdentifier("study.filter")
         }
         .padding(.horizontal, 14)
+    }
+
+    private var filterAccessibilityLabel: String {
+        var parts = ["篩選\(entryName)"]
+        if store.hideMastered { parts.append("已隱藏已掌握") }
+        if !isGrammar && store.hideListMeanings { parts.append("已隱藏翻譯") }
+        return parts.joined(separator: "，")
     }
 
     private var reviewCompletion: some View {

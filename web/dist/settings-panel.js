@@ -31,6 +31,7 @@
       }))
         MotsSelect.setValue(id, value);
       $('default-hide-mastered').checked = model.defaultHideMastered;
+      $('show-example-translations').checked = model.showExampleTranslations;
       $('grammar-book-type').hidden = model.studyKind !== 'grammar';
       $('grammar-book-type').textContent = model.grammarGrouping
         ? '目前為主題語法書：依二級分類展開小卡片，內容與普通語法書分開保存。'

@@ -29,6 +29,8 @@ final class SpeechPlayer: NSObject, AVAudioPlayerDelegate, AVSpeechSynthesizerDe
         if activeWordID == word.id { stop(); return }
         stop()
         message = nil
+        let text = word.speechText
+        guard !text.isEmpty else { return }
         try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .spokenAudio, options: [.duckOthers])
         try? AVAudioSession.sharedInstance().setActive(true)
         activeWordID = word.id
@@ -51,7 +53,7 @@ final class SpeechPlayer: NSObject, AVAudioPlayerDelegate, AVSpeechSynthesizerDe
             message = "沒有可用的語音。請在系統設定下載對應語言的語音後再試。"
             return
         }
-        let speech = AVSpeechUtterance(string: word.term)
+        let speech = AVSpeechUtterance(string: text)
         speech.voice = voice
         speech.rate = Float(rate)
         utterance = speech

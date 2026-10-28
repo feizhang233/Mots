@@ -16,7 +16,7 @@
     "基础": 54,
     "进阶": 77
   },
-  "method": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，旧统计和科学表述的范围说明记入 note。",
+  "method": "詞條、分類、原書頁碼與校對註記保留原整理；例句於 2026-10-25 改為 Mots 原創詞彙關聯例句。原例句保存在 french/example-network.json 的 originalText，XLSX 保留原書轉錄版本。",
   "subcategories": [
     {
       "id": "7.01",
@@ -42,13 +42,29 @@
       "subcategory": "7.01",
       "french": "l’administration",
       "chinese": "国家行政，行政机关，政府",
-      "example": "Il a des problèmes avec l’Administration.",
+      "example": "L’administration demande un justificatif de domicile avant de délivrer le document nécessaire à notre inscription.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 53,
       "pdfPage": 60,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-025",
+          "form": "inscription"
+        },
+        {
+          "id": "book-2.01-030",
+          "form": "domicile"
+        },
+        {
+          "id": "book-7.01-006",
+          "form": "document"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-002",
@@ -56,13 +72,29 @@
       "subcategory": "7.01",
       "french": "adresser",
       "chinese": "寄给，致送",
-      "example": "Cette lettre est adressée à mon père.",
+      "example": "J’ai adressé une lettre à la mairie pour demander la réparation du trottoir devant l’école.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 53,
       "pdfPage": 60,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-021",
+          "form": "trottoir"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        },
+        {
+          "id": "book-7.01-013",
+          "form": "lettre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-003",
@@ -70,13 +102,29 @@
       "subcategory": "7.01",
       "french": "ci-",
       "chinese": "这，此",
-      "example": "Vous trouverez ci-incluse la copie du dossier.",
+      "example": "Le document ci-joint présente le budget et précise les conditions de livraison du matériel scolaire.",
       "part": "adv. / élément",
       "level": "基础",
       "bookPage": 53,
       "pdfPage": 60,
       "source": "法语基础词汇分类学习手册",
-      "note": "保留原书 ci- 写法；常见于 ci-joint、ci-inclus 等表达，不作为独立单词使用。"
+      "note": "保留原书 ci- 写法；常见于 ci-joint、ci-inclus 等表达，不作为独立单词使用。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-005",
+          "form": "conditions"
+        },
+        {
+          "id": "book-6.01-036",
+          "form": "livraison"
+        },
+        {
+          "id": "book-6.02-006",
+          "form": "budget"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-004",
@@ -84,13 +132,29 @@
       "subcategory": "7.01",
       "french": "la copie",
       "chinese": "副本，复印件；复制",
-      "example": "La secrétaire m’a demandé une copie de ma carte d’identité.",
+      "example": "La secrétaire conservera une copie du certificat dans votre dossier avant de vous rendre le document original.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 53,
       "pdfPage": 60,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“复印”；本例为名词“复印件、副本”。"
+      "note": "原书译“复印”；本例为名词“复印件、副本”。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-017",
+          "form": "secrétaire"
+        },
+        {
+          "id": "book-7.01-022",
+          "form": "certificat"
+        },
+        {
+          "id": "book-7.01-025",
+          "form": "dossier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-005",
@@ -98,13 +162,29 @@
       "subcategory": "7.01",
       "french": "correspondre",
       "chinese": "通信",
-      "example": "Nous correspondons depuis deux ans.",
+      "example": "Ma grand-mère correspond avec une amie allemande et garde ses lettres dans une boîte en bois.",
       "part": "v. i.",
       "level": "基础",
       "bookPage": 53,
       "pdfPage": 60,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-003",
+          "form": "boîte"
+        },
+        {
+          "id": "book-1.03-036",
+          "form": "grand-mère"
+        },
+        {
+          "id": "2.04-1",
+          "form": "bois"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-006",
@@ -112,13 +192,29 @@
       "subcategory": "7.01",
       "french": "le document",
       "chinese": "材料，文件",
-      "example": "Mon dossier n’est pas encore complet, il me manque un document.",
+      "example": "Ce document expliquait les conditions du stage, mais aucun étudiant n’avait remarqué la date de signature.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 53,
       "pdfPage": 60,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-1.01-027",
+          "form": "signature"
+        },
+        {
+          "id": "book-10.01-039",
+          "form": "stage"
+        },
+        {
+          "id": "book-11.03-005",
+          "form": "conditions"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-007",
@@ -126,13 +222,25 @@
       "subcategory": "7.01",
       "french": "la douane",
       "chinese": "海关",
-      "example": "La douane surveille les frontières.",
+      "example": "À la douane, le voyageur présente son passeport et explique pourquoi il transporte du matériel scientifique.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 53,
       "pdfPage": 60,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.04-012",
+          "form": "matériel"
+        },
+        {
+          "id": "book-4.02-016",
+          "form": "voyageur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-008",
@@ -140,13 +248,29 @@
       "subcategory": "7.01",
       "french": "envoyer",
       "chinese": "寄，发送",
-      "example": "Je lui ai envoyé une lettre ce matin.",
+      "example": "Nous enverrons les invitations après avoir réservé la salle et confirmé la date avec les musiciens.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 53,
       "pdfPage": 60,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-14.03-027",
+          "form": "invitations"
+        },
+        {
+          "id": "book-16.01-005",
+          "form": "date"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-009",
@@ -154,13 +278,29 @@
       "subcategory": "7.01",
       "french": "examiner",
       "chinese": "检查，审核",
-      "example": "Son dossier sera examiné dans les prochains jours.",
+      "example": "Une fonctionnaire examine mon dossier pendant que je cherche la facture qui prouve mon adresse.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 53,
       "pdfPage": 60,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-022",
+          "form": "facture"
+        },
+        {
+          "id": "book-7.01-011",
+          "form": "fonctionnaire"
+        },
+        {
+          "id": "book-7.01-025",
+          "form": "dossier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-010",
@@ -168,13 +308,25 @@
       "subcategory": "7.01",
       "french": "l’expéditeur, l’expéditrice",
       "chinese": "寄信人，寄件人",
-      "example": "Le nom de l’expéditeur doit être indiqué au dos de la lettre.",
+      "example": "L’expéditrice a oublié d’indiquer son adresse sur l’enveloppe, alors le facteur n’a pas pu la renvoyer.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 53,
       "pdfPage": 60,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-7.02-008",
+          "form": "facteur"
+        },
+        {
+          "id": "book-7.02-024",
+          "form": "enveloppe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-011",
@@ -182,13 +334,25 @@
       "subcategory": "7.01",
       "french": "le fonctionnaire, la fonctionnaire",
       "chinese": "公务员",
-      "example": "Les fonctionnaires sont payés par l’État.",
+      "example": "Cette fonctionnaire aide les habitants du quartier à comprendre les formulaires et à préparer leurs demandes.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 53,
       "pdfPage": 60,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-012",
@@ -196,13 +360,29 @@
       "subcategory": "7.01",
       "french": "l’impôt",
       "chinese": "税，税收",
-      "example": "Le ministre de l’Économie a décidé d’augmenter les impôts.",
+      "example": "L’impôt représentait une charge importante pour son entreprise, qui venait d’acheter de nouvelles machines.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 53,
       "pdfPage": 60,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-16.04-001",
+          "form": "charge"
+        },
+        {
+          "id": "book-11.03-012",
+          "form": "entreprise"
+        },
+        {
+          "id": "book-15.06-020",
+          "form": "machines"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-013",
@@ -210,13 +390,29 @@
       "subcategory": "7.01",
       "french": "la lettre",
       "chinese": "信",
-      "example": "J’ai reçu une lettre de mon frère.",
+      "example": "Dans sa lettre, mon frère décrit son appartement et raconte ses premiers jours à l’université.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 53,
       "pdfPage": 60,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-019",
+          "form": "jours"
+        },
+        {
+          "id": "2.01-2",
+          "form": "appartement"
+        },
+        {
+          "id": "10.03-1",
+          "form": "université"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-014",
@@ -224,13 +420,29 @@
       "subcategory": "7.01",
       "french": "l’office",
       "chinese": "事务所，办事处，办公室",
-      "example": "Les offices de tourisme sont fermés le dimanche.",
+      "example": "L’office du tourisme publiera une carte des sentiers et organisera des visites du vieux quartier.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 53,
       "pdfPage": 60,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-040",
+          "form": "sentiers"
+        },
+        {
+          "id": "book-4.02-014",
+          "form": "visites"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-015",
@@ -238,13 +450,29 @@
       "subcategory": "7.01",
       "french": "la section",
       "chinese": "部门，科，处",
-      "example": "Je dois me renseigner auprès de la section administrative de l’entreprise.",
+      "example": "La section consacrée aux transports accueille les habitants qui souhaitent discuter du nouveau trajet des bus.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 53,
       "pdfPage": 60,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.01-030",
+          "form": "trajet"
+        },
+        {
+          "id": "book-4.03-020",
+          "form": "transports"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-016",
@@ -252,13 +480,29 @@
       "subcategory": "7.01",
       "french": "signer",
       "chinese": "签字，署名",
-      "example": "Aurélie a oublié de signer la lettre.",
+      "example": "Le propriétaire a signé le contrat après avoir vérifié le montant du loyer et la durée du bail.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 53,
       "pdfPage": 60,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-16.01-008",
+          "form": "durée"
+        },
+        {
+          "id": "book-6.02-030",
+          "form": "loyer"
+        },
+        {
+          "id": "book-14.04-019",
+          "form": "propriétaire"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-017",
@@ -266,13 +510,25 @@
       "subcategory": "7.01",
       "french": "le timbre",
       "chinese": "邮票",
-      "example": "J’ai collé un timbre sur l’enveloppe.",
+      "example": "Je colle un timbre sur l’enveloppe et vérifie l’adresse avant de partir à la poste.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 53,
       "pdfPage": 60,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-7.02-024",
+          "form": "enveloppe"
+        },
+        {
+          "id": "7.02-1",
+          "form": "poste"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-018",
@@ -280,13 +536,29 @@
       "subcategory": "7.01",
       "french": "vérifier",
       "chinese": "核实，检查",
-      "example": "La secrétaire vérifie si mon dossier est complet.",
+      "example": "Vérifiez le numéro du train et l’heure du départ avant d’acheter vos billets pour le voyage.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 53,
       "pdfPage": 60,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-16.04-014",
+          "form": "numéro"
+        },
+        {
+          "id": "book-16.02-015",
+          "form": "heure"
+        },
+        {
+          "id": "4.04-1",
+          "form": "train"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-019",
@@ -294,13 +566,25 @@
       "subcategory": "7.01",
       "french": "administratif, administrative",
       "chinese": "行政的",
-      "example": "L’oncle de Pierre est conseiller administratif.",
+      "example": "Les démarches administratives prennent du temps, mais la bibliothèque propose une aide gratuite pour remplir les formulaires.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 53,
       "pdfPage": 60,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        },
+        {
+          "id": "book-7.02-003",
+          "form": "aide"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-020",
@@ -308,13 +592,29 @@
       "subcategory": "7.01",
       "french": "administrer",
       "chinese": "管理",
-      "example": "Le maire et le conseil municipal administrent la commune.",
+      "example": "Une équipe plus nombreuse pourrait administrer ce service sans imposer de longues attentes aux habitants du village.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 53,
       "pdfPage": 60,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-14.01-021",
+          "form": "attentes"
+        },
+        {
+          "id": "book-13.07-007",
+          "form": "équipe"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-021",
@@ -322,13 +622,25 @@
       "subcategory": "7.01",
       "french": "l’ambassade",
       "chinese": "使馆，大使馆",
-      "example": "L’ambassade est une représentation diplomatique d’un État.",
+      "example": "Devant l’ambassade, des étudiants attendent pour demander un visa et apporter les pièces de leur dossier.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        },
+        {
+          "id": "book-7.01-025",
+          "form": "dossier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-022",
@@ -336,13 +648,29 @@
       "subcategory": "7.01",
       "french": "le certificat",
       "chinese": "证明，证明书",
-      "example": "Il doit présenter un certificat de propriété.",
+      "example": "La médecin a rédigé un certificat que la famille a transmis à l’école pour expliquer l’absence de l’enfant.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-10.02-001",
+          "form": "absence"
+        },
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-023",
@@ -350,13 +678,29 @@
       "subcategory": "7.01",
       "french": "classer",
       "chinese": "分类，归档",
-      "example": "La secrétaire classe les papiers administratifs.",
+      "example": "La secrétaire classe les factures par date et garde les contrats dans une armoire fermée à clé.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "2.03-3",
+          "form": "armoire"
+        },
+        {
+          "id": "book-11.01-017",
+          "form": "secrétaire"
+        },
+        {
+          "id": "book-11.03-028",
+          "form": "contrats"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-024",
@@ -364,13 +708,29 @@
       "subcategory": "7.01",
       "french": "délivrer",
       "chinese": "发给，签发，交付",
-      "example": "On lui a délivré une nouvelle carte d’identité.",
+      "example": "La mairie délivrera le certificat dès que notre dossier comportera tous les documents demandés.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-7.01-022",
+          "form": "certificat"
+        },
+        {
+          "id": "book-7.01-025",
+          "form": "dossier"
+        },
+        {
+          "id": "book-7.01-006",
+          "form": "documents"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-025",
@@ -378,13 +738,25 @@
       "subcategory": "7.01",
       "french": "le dossier",
       "chinese": "卷宗，材料，档案",
-      "example": "L’Administration examine plusieurs centaines de dossiers par jour.",
+      "example": "Mon dossier a été renvoyé parce que la copie du certificat ne portait pas la signature demandée.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-1.01-027",
+          "form": "signature"
+        },
+        {
+          "id": "book-7.01-022",
+          "form": "certificat"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-026",
@@ -392,13 +764,29 @@
       "subcategory": "7.01",
       "french": "la fondation",
       "chinese": "基金会",
-      "example": "Il est le directeur d’une fondation pour la défense des animaux.",
+      "example": "Cette fondation finance des bourses et aide les jeunes chercheurs à préparer leur premier séjour à l’étranger.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-026",
+          "form": "chercheurs"
+        },
+        {
+          "id": "book-1.04-017",
+          "form": "jeunes"
+        },
+        {
+          "id": "book-4.02-010",
+          "form": "séjour"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-027",
@@ -406,13 +794,29 @@
       "subcategory": "7.01",
       "french": "le registre",
       "chinese": "登记簿，记事簿",
-      "example": "Je note mes dépenses dans un registre.",
+      "example": "Le gardien notait chaque visite dans un registre avant d’ouvrir la porte du laboratoire.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“记事本，索引”；根据例句补充“登记簿、记事簿”义。"
+      "note": "原书译“记事本，索引”；根据例句补充“登记簿、记事簿”义。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-014",
+          "form": "laboratoire"
+        },
+        {
+          "id": "book-11.01-036",
+          "form": "gardien"
+        },
+        {
+          "id": "book-4.02-014",
+          "form": "visite"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-028",
@@ -420,13 +824,25 @@
       "subcategory": "7.01",
       "french": "renvoyer",
       "chinese": "退回，寄回",
-      "example": "L’Administration lui a renvoyé son dossier.",
+      "example": "La libraire renvoie les livres abîmés au fournisseur et demande une nouvelle livraison pour ses clients.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-036",
+          "form": "livraison"
+        },
+        {
+          "id": "book-6.01-003",
+          "form": "clients"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-029",
@@ -434,13 +850,29 @@
       "subcategory": "7.01",
       "french": "le statut",
       "chinese": "法规，章程；身份，地位",
-      "example": "Le statut de l’entreprise a été modifié.",
+      "example": "Les membres de l’association ont relu ses statuts avant de voter sur le projet de jardin partagé.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "11.02-2",
+          "form": "projet"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.01-030",
@@ -448,13 +880,25 @@
       "subcategory": "7.01",
       "french": "valable",
       "chinese": "有效的",
-      "example": "Sa carte d’identité n’est plus valable.",
+      "example": "Ce billet reste valable pendant tout le week-end et permet de visiter plusieurs musées de la ville.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-007",
+          "form": "musées"
+        },
+        {
+          "id": "3.01-1",
+          "form": "ville"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-001",
@@ -462,13 +906,29 @@
       "subcategory": "7.02",
       "french": "accorder",
       "chinese": "给，给予，批准给予",
-      "example": "La commune du village accorde une allocation aux étudiants.",
+      "example": "Le directeur accordera un congé à la salariée lorsque son équipe aura organisé le remplacement.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-008",
+          "form": "directeur"
+        },
+        {
+          "id": "book-11.03-026",
+          "form": "congé"
+        },
+        {
+          "id": "book-13.07-007",
+          "form": "équipe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-002",
@@ -476,13 +936,29 @@
       "subcategory": "7.02",
       "french": "affranchir",
       "chinese": "付邮资，贴邮票",
-      "example": "La lettre a été affranchie avec un timbre à 70 centimes.",
+      "example": "À la poste, je demande combien de timbres il faut pour affranchir cette lettre destinée au Canada.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": "邮资为原书语言例句中的金额，不作为当前邮费。"
+      "note": "邮资为原书语言例句中的金额，不作为当前邮费。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.02-010",
+          "form": "Canada"
+        },
+        {
+          "id": "book-7.01-017",
+          "form": "timbres"
+        },
+        {
+          "id": "book-7.01-013",
+          "form": "lettre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-003",
@@ -490,13 +966,29 @@
       "subcategory": "7.02",
       "french": "l’aide",
       "chinese": "帮助，帮忙",
-      "example": "Les secours lui sont venus en aide.",
+      "example": "Grâce à l’aide de ses voisins, cette famille a pu installer les meubles avant la rentrée scolaire.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-013",
+          "form": "meubles"
+        },
+        {
+          "id": "book-2.01-023",
+          "form": "voisins"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-004",
@@ -504,13 +996,29 @@
       "subcategory": "7.02",
       "french": "aider",
       "chinese": "帮助",
-      "example": "La secrétaire m’a aidé à remplir le dossier.",
+      "example": "Des étudiants aident les enfants à faire leurs devoirs et préparent avec eux une petite exposition.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.01-007",
+          "form": "devoirs"
+        },
+        {
+          "id": "book-13.02-006",
+          "form": "exposition"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-005",
@@ -518,13 +1026,29 @@
       "subcategory": "7.02",
       "french": "l’assistance",
       "chinese": "援助，帮助，救济",
-      "example": "Ils ont créé une organisation d’assistance aux personnes atteintes d’un cancer.",
+      "example": "L’assistance proposée par l’association comprenait des repas, un logement provisoire et un accompagnement administratif.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-035",
+          "form": "logement"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        },
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-006",
@@ -532,13 +1056,25 @@
       "subcategory": "7.02",
       "french": "l’assurance",
       "chinese": "保险",
-      "example": "Pierre a pris rendez-vous avec une compagnie d’assurances.",
+      "example": "Mon assurance couvre les dégâts causés dans l’appartement, mais je dois conserver les factures des réparations.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "2.01-2",
+          "form": "appartement"
+        },
+        {
+          "id": "book-6.02-022",
+          "form": "factures"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-007",
@@ -546,13 +1082,29 @@
       "subcategory": "7.02",
       "french": "la communauté",
       "chinese": "社团，团体，社区",
-      "example": "Il travaille pour la communauté urbaine.",
+      "example": "La communauté organisera une fête sur la place pour accueillir les familles récemment installées dans le quartier.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-008",
+          "form": "fête"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        },
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-008",
@@ -560,13 +1112,29 @@
       "subcategory": "7.02",
       "french": "le facteur, la factrice",
       "chinese": "邮递员",
-      "example": "Le facteur passe tous les matins à 9 h 30.",
+      "example": "La factrice dépose le courrier à la mairie avant de poursuivre sa tournée vers les fermes isolées.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-045",
+          "form": "tournée"
+        },
+        {
+          "id": "book-3.01-009",
+          "form": "fermes"
+        },
+        {
+          "id": "book-7.02-020",
+          "form": "courrier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-009",
@@ -574,13 +1142,29 @@
       "subcategory": "7.02",
       "french": "la mission",
       "chinese": "任务",
-      "example": "Le médecin est envoyé en mission en Afrique.",
+      "example": "Sa mission a consisté à vérifier les installations électriques de l’école et à rédiger un rapport.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.04-013",
+          "form": "installations"
+        },
+        {
+          "id": "book-11.02-021",
+          "form": "rapport"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-010",
@@ -588,13 +1172,29 @@
       "subcategory": "7.02",
       "french": "l’organisme",
       "chinese": "机构，组织",
-      "example": "Pierre fait un stage dans un organisme chargé de la protection de l’environnement.",
+      "example": "Cet organisme propose une formation aux personnes qui cherchent un emploi et souhaitent changer de profession.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-047",
+          "form": "profession"
+        },
+        {
+          "id": "book-1.04-021",
+          "form": "personnes"
+        },
+        {
+          "id": "book-11.03-008",
+          "form": "emploi"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "7.02-1",
@@ -602,14 +1202,30 @@
       "subcategory": "7.02",
       "french": "la poste",
       "chinese": "邮局，邮政",
-      "example": "La poste est située près de l’église.",
+      "example": "Une poste plus proche faciliterait la vie des habitants qui n’ont pas de voiture pour rejoindre la ville.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/pɔst/"
+      "ipa": "/pɔst/",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-023",
+          "form": "voiture"
+        },
+        {
+          "id": "book-8.02-021",
+          "form": "vie"
+        },
+        {
+          "id": "3.01-1",
+          "form": "ville"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-012",
@@ -617,13 +1233,25 @@
       "subcategory": "7.02",
       "french": "poster",
       "chinese": "邮寄，投寄",
-      "example": "Je viens de poster une lettre pour mon frère.",
+      "example": "Je poste la lettre de ma mère avant de prendre le bus pour aller travailler.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-016",
+          "form": "mère"
+        },
+        {
+          "id": "book-7.01-013",
+          "form": "lettre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-013",
@@ -631,13 +1259,29 @@
       "subcategory": "7.02",
       "french": "le service",
       "chinese": "服务",
-      "example": "Les services sociaux aident des familles en difficulté.",
+      "example": "Le service de livraison a prévenu les clients qu’un accident retardait l’arrivée de leurs commandes.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-14.03-003",
+          "form": "arrivée"
+        },
+        {
+          "id": "book-4.03-001",
+          "form": "accident"
+        },
+        {
+          "id": "book-6.01-025",
+          "form": "commandes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-014",
@@ -645,13 +1289,29 @@
       "subcategory": "7.02",
       "french": "social, sociale",
       "chinese": "社会的，社会福利的",
-      "example": "On lui a accordé un logement social.",
+      "example": "Le centre social du quartier accueille les enfants après l’école et organise des cours pour leurs parents.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 54,
       "pdfPage": 61,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-002",
+          "form": "centre"
+        },
+        {
+          "id": "1.03-2",
+          "form": "parents"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-015",
@@ -659,13 +1319,29 @@
       "subcategory": "7.02",
       "french": "accordé, accordée",
       "chinese": "获给予的，获批准的",
-      "example": "Une allocation de 150 euros par mois lui a été accordée.",
+      "example": "Le crédit accordé par la banque permettra à l’artisane d’acheter une machine et d’agrandir son atelier.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“给，供给”，词条为过去分词阴阳性形式；例句用于被动语态。补助金额保留作语言例句。"
+      "note": "原书译“给，供给”，词条为过去分词阴阳性形式；例句用于被动语态。补助金额保留作语言例句。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-004",
+          "form": "banque"
+        },
+        {
+          "id": "book-6.02-014",
+          "form": "crédit"
+        },
+        {
+          "id": "book-11.01-023",
+          "form": "artisane"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-016",
@@ -673,13 +1349,29 @@
       "subcategory": "7.02",
       "french": "l’allocation",
       "chinese": "补助，津贴",
-      "example": "Je touche une allocation pour mes enfants.",
+      "example": "Cette allocation complète son salaire et lui permet de payer une partie des frais de garde.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "11.03-3",
+          "form": "salaire"
+        },
+        {
+          "id": "book-16.04-015",
+          "form": "partie"
+        },
+        {
+          "id": "book-6.02-026",
+          "form": "frais"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-017",
@@ -687,13 +1379,29 @@
       "subcategory": "7.02",
       "french": "auxiliaire",
       "chinese": "辅助的",
-      "example": "Des troupes auxiliaires ont porté secours aux personnes en danger.",
+      "example": "Une équipe auxiliaire préparait les repas pendant que les volontaires installaient les lits dans le gymnase.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-011",
+          "form": "lits"
+        },
+        {
+          "id": "book-13.07-007",
+          "form": "équipe"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-018",
@@ -701,13 +1409,29 @@
       "subcategory": "7.02",
       "french": "le bénéficiaire, la bénéficiaire",
       "chinese": "受益人",
-      "example": "Ma tante est bénéficiaire d’aides sociales.",
+      "example": "Chaque bénéficiaire reçoit une lettre qui indique le montant de l’aide et les pièces à fournir.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-031",
+          "form": "montant"
+        },
+        {
+          "id": "book-7.02-003",
+          "form": "aide"
+        },
+        {
+          "id": "book-7.01-013",
+          "form": "lettre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-019",
@@ -715,13 +1439,25 @@
       "subcategory": "7.02",
       "french": "bénévole",
       "chinese": "志愿的，义务的；志愿者",
-      "example": "Il est bénévole dans une association qui s’occupe de personnes âgées.",
+      "example": "Une bénévole a accompagné mon voisin à la mairie pour l’aider à comprendre les documents.",
       "part": "adj. / n. m. / f.",
       "level": "进阶",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书词条未加冠词；bénévole 可作形容词，也可作名词指志愿者。"
+      "note": "原书词条未加冠词；bénévole 可作形容词，也可作名词指志愿者。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-023",
+          "form": "voisin"
+        },
+        {
+          "id": "book-7.01-006",
+          "form": "documents"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-020",
@@ -729,13 +1465,29 @@
       "subcategory": "7.02",
       "french": "le courrier",
       "chinese": "信件，邮件",
-      "example": "Je regarde tous les matins, s’il y a du courrier dans ma boîte aux lettres.",
+      "example": "Le courrier s’accumule sur la table depuis que notre collègue est parti en congé.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-026",
+          "form": "congé"
+        },
+        {
+          "id": "book-11.01-028",
+          "form": "collègue"
+        },
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-021",
@@ -743,13 +1495,29 @@
       "subcategory": "7.02",
       "french": "l’électricité",
       "chinese": "电，电力",
-      "example": "L’électricité permet, par exemple, de s’éclairer.",
+      "example": "Coupez l’électricité avant l’arrivée de l’artisan et gardez les enfants à distance de ses outils.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-14.03-003",
+          "form": "arrivée"
+        },
+        {
+          "id": "book-2.02-052",
+          "form": "outils"
+        },
+        {
+          "id": "book-11.01-023",
+          "form": "artisan"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-022",
@@ -757,13 +1525,29 @@
       "subcategory": "7.02",
       "french": "engagé, engagée",
       "chinese": "参与的，投入的",
-      "example": "Il est engagé dans plusieurs associations.",
+      "example": "Très engagée dans la vie du quartier, ma sœur participe aux réunions et anime un atelier de lecture.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-8.02-021",
+          "form": "vie"
+        },
+        {
+          "id": "11.02-1",
+          "form": "réunions"
+        },
+        {
+          "id": "1.03-3",
+          "form": "sœur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-023",
@@ -771,13 +1555,29 @@
       "subcategory": "7.02",
       "french": "l’engagement",
       "chinese": "投入，参与，奉献",
-      "example": "Il fait preuve d’un engagement admirable.",
+      "example": "L’engagement des habitants a permis de transformer un terrain abandonné en jardin ouvert à tous.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-020",
+          "form": "terrain"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-024",
@@ -785,13 +1585,29 @@
       "subcategory": "7.02",
       "french": "l’enveloppe",
       "chinese": "信封",
-      "example": "J’ai oublié de coller un timbre sur l’enveloppe.",
+      "example": "Dans cette enveloppe, je range les billets de train et les factures à remettre à mon employeur.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-031",
+          "form": "employeur"
+        },
+        {
+          "id": "4.04-1",
+          "form": "train"
+        },
+        {
+          "id": "book-6.02-022",
+          "form": "factures"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-025",
@@ -799,13 +1615,25 @@
       "subcategory": "7.02",
       "french": "envelopper",
       "chinese": "包装，包裹",
-      "example": "Le paquet était enveloppé d’un papier épais.",
+      "example": "Nous envelopperons les livres dans du papier avant de les déposer chez les enfants de l’association.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-026",
@@ -813,13 +1641,29 @@
       "subcategory": "7.02",
       "french": "expédier",
       "chinese": "寄，发送，寄出",
-      "example": "J’ai expédié un paquet par la poste.",
+      "example": "La librairie expédie les commandes chaque matin et avertit les clients lorsque leur paquet quitte le magasin.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-026",
+          "form": "matin"
+        },
+        {
+          "id": "book-6.01-038",
+          "form": "paquet"
+        },
+        {
+          "id": "book-6.01-025",
+          "form": "commandes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-027",
@@ -827,13 +1671,29 @@
       "subcategory": "7.02",
       "french": "l’indemnité",
       "chinese": "津贴，补贴；补偿金",
-      "example": "Mon père n’a plus de travail, il reçoit des indemnités de fin de contrat.",
+      "example": "L’indemnité couvrait les frais de transport, mais elle ne suffisait pas pour louer une chambre en ville.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": "例句中的 indemnités de fin de contrat 指合同结束补偿金，补充对应释义。"
+      "note": "例句中的 indemnités de fin de contrat 指合同结束补偿金，补充对应释义。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-026",
+          "form": "frais"
+        },
+        {
+          "id": "book-4.03-020",
+          "form": "transport"
+        },
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-028",
@@ -841,13 +1701,29 @@
       "subcategory": "7.02",
       "french": "la prime",
       "chinese": "奖金",
-      "example": "À la fin de l’année, les employés de l’entreprise reçoivent une prime.",
+      "example": "Cette prime récompense le travail de toute l’équipe et sera partagée entre les salariés de l’atelier.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-048",
+          "form": "salariés"
+        },
+        {
+          "id": "book-13.07-007",
+          "form": "équipe"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-029",
@@ -855,13 +1731,29 @@
       "subcategory": "7.02",
       "french": "la protection",
       "chinese": "保护",
-      "example": "Il existe de nombreuses associations pour la protection des animaux.",
+      "example": "Une meilleure protection des documents éviterait leur destruction si la pluie entrait encore par le toit.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-045",
+          "form": "toit"
+        },
+        {
+          "id": "3.03-1",
+          "form": "pluie"
+        },
+        {
+          "id": "book-7.01-006",
+          "form": "documents"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.02-030",
@@ -869,13 +1761,29 @@
       "subcategory": "7.02",
       "french": "le volontaire, la volontaire",
       "chinese": "志愿者",
-      "example": "Elle s’est engagée comme volontaire pour une mission scientifique.",
+      "example": "Une volontaire prépare le café pendant que ses collègues distribuent les repas aux familles accueillies.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        },
+        {
+          "id": "book-11.01-028",
+          "form": "collègues"
+        },
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-001",
@@ -883,13 +1791,25 @@
       "subcategory": "7.03",
       "french": "avouer",
       "chinese": "承认，供认",
-      "example": "Le suspect a avoué son acte.",
+      "example": "Le témoin a avoué avoir menti sur l’heure du vol après avoir relu sa déposition.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-15.07-022",
+          "form": "témoin"
+        },
+        {
+          "id": "book-16.02-015",
+          "form": "heure"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-002",
@@ -897,13 +1817,29 @@
       "subcategory": "7.03",
       "french": "chercher",
       "chinese": "寻找",
-      "example": "La police a cherché pendant des mois le coupable.",
+      "example": "Je cherche mes clés pendant que mon frère vérifie les poches des vêtements laissés dans l’entrée.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-034",
+          "form": "clés"
+        },
+        {
+          "id": "book-6.03-011",
+          "form": "poches"
+        },
+        {
+          "id": "book-2.01-009",
+          "form": "entrée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-003",
@@ -911,13 +1847,29 @@
       "subcategory": "7.03",
       "french": "le contrôle",
       "chinese": "检查，核查；控制",
-      "example": "Les gendarmes effectuent un contrôle de vitesse.",
+      "example": "Le contrôle des billets ralentissait l’entrée du public, mais les employés répondaient patiemment aux questions.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“控制”；例句指车速检查，补充对应释义。"
+      "note": "原书译“控制”；例句指车速检查，补充对应释义。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-009",
+          "form": "entrée"
+        },
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        },
+        {
+          "id": "book-11.03-009",
+          "form": "employés"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-004",
@@ -925,13 +1877,29 @@
       "subcategory": "7.03",
       "french": "effectuer",
       "chinese": "施行，进行，完成",
-      "example": "Le policier a effectué un contrôle d’identité.",
+      "example": "Le technicien effectue une visite de l’usine pour vérifier les machines et préparer leur entretien.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-020",
+          "form": "usine"
+        },
+        {
+          "id": "book-11.01-049",
+          "form": "technicien"
+        },
+        {
+          "id": "book-4.02-014",
+          "form": "visite"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-005",
@@ -939,13 +1907,25 @@
       "subcategory": "7.03",
       "french": "l’enquête",
       "chinese": "调查",
-      "example": "La police a mené une enquête sur le vol d’une banque.",
+      "example": "L’enquête devra expliquer pourquoi les alarmes du musée ne fonctionnaient pas le soir du vol.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 55,
       "pdfPage": 62,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-039",
+          "form": "soir"
+        },
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-006",
@@ -953,13 +1933,29 @@
       "subcategory": "7.03",
       "french": "la force",
       "chinese": "武力，力量",
-      "example": "Ils ont été obligés d’employer la force.",
+      "example": "Les habitants demandent à la police de ne pas employer la force pour disperser le rassemblement du quartier.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "book-7.03-007",
+          "form": "police"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-007",
@@ -967,13 +1963,29 @@
       "subcategory": "7.03",
       "french": "la police",
       "chinese": "警方，警察机构",
-      "example": "On m’a volé ma voiture, j’ai appelé la police.",
+      "example": "La police a retrouvé le vélo volé grâce au numéro inscrit sur la facture conservée par son propriétaire.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-14.04-019",
+          "form": "propriétaire"
+        },
+        {
+          "id": "book-16.04-014",
+          "form": "numéro"
+        },
+        {
+          "id": "4.04-2",
+          "form": "vélo"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-008",
@@ -981,13 +1993,29 @@
       "subcategory": "7.03",
       "french": "le policier, la policière",
       "chinese": "警察",
-      "example": "Les policiers ont arrêté le suspect.",
+      "example": "Une policière aide les voyageurs à retrouver leur chemin après la fermeture inattendue de la gare.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.01-002",
+          "form": "chemin"
+        },
+        {
+          "id": "book-4.02-016",
+          "form": "voyageurs"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-009",
@@ -995,13 +2023,29 @@
       "subcategory": "7.03",
       "french": "poursuivre",
       "chinese": "追，追赶，追捕",
-      "example": "Les gendarmes ont poursuivi le voleur.",
+      "example": "Dans le film, une inspectrice a poursuivi le voleur à travers le marché avant de perdre sa trace.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-067",
+          "form": "trace"
+        },
+        {
+          "id": "book-13.03-008",
+          "form": "film"
+        },
+        {
+          "id": "book-3.01-012",
+          "form": "marché"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-010",
@@ -1009,13 +2053,29 @@
       "subcategory": "7.03",
       "french": "protéger",
       "chinese": "保护",
-      "example": "La police est chargée de protéger les citoyens.",
+      "example": "Ce casque protège la tête des ouvriers qui travaillent près des machines et des charges suspendues.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "8.01-1",
+          "form": "tête"
+        },
+        {
+          "id": "book-16.04-001",
+          "form": "charges"
+        },
+        {
+          "id": "book-11.01-011",
+          "form": "ouvriers"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-011",
@@ -1023,13 +2083,29 @@
       "subcategory": "7.03",
       "french": "l’accusation",
       "chinese": "控告，指控，起诉",
-      "example": "L’accusation de vol était fausse.",
+      "example": "L’accusation reposait sur une lettre dont la police cherchait encore à vérifier l’origine et la date.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-1.02-024",
+          "form": "origine"
+        },
+        {
+          "id": "book-16.01-005",
+          "form": "date"
+        },
+        {
+          "id": "book-7.03-007",
+          "form": "police"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-012",
@@ -1037,13 +2113,29 @@
       "subcategory": "7.03",
       "french": "l’arrestation",
       "chinese": "逮捕，拘捕",
-      "example": "L’arrestation du coupable a eu lieu le matin très tôt.",
+      "example": "Le journaliste décrit l’arrestation du suspect sans révéler les noms des enfants présents sur les lieux.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-009",
+          "form": "journaliste"
+        },
+        {
+          "id": "1.01-1",
+          "form": "noms"
+        },
+        {
+          "id": "book-4.01-012",
+          "form": "lieux"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-013",
@@ -1051,13 +2143,29 @@
       "subcategory": "7.03",
       "french": "le cadavre",
       "chinese": "尸体",
-      "example": "Le cadavre d’un homme a été trouvé en forêt.",
+      "example": "Dans ce roman, les enquêteurs ont découvert un cadavre près de la rivière après plusieurs jours de recherches.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "3.02-2",
+          "form": "rivière"
+        },
+        {
+          "id": "book-16.02-019",
+          "form": "jours"
+        },
+        {
+          "id": "book-13.05-024",
+          "form": "roman"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-014",
@@ -1065,13 +2173,29 @@
       "subcategory": "7.03",
       "french": "le commissaire, madame le commissaire",
       "chinese": "警察局长，警察分局局长",
-      "example": "Le commissaire est chargé des enquêtes.",
+      "example": "La commissaire présente les résultats de l’enquête aux journalistes réunis devant le commissariat du quartier.",
       "part": "n. m. / appellation f.",
       "level": "进阶",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": "保留原书 le commissaire、madame le commissaire 两种称谓写法，不改写原书阴性称谓。"
+      "note": "保留原书 le commissaire、madame le commissaire 两种称谓写法，不改写原书阴性称谓。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-009",
+          "form": "journalistes"
+        },
+        {
+          "id": "book-10.04-016",
+          "form": "résultats"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-015",
@@ -1079,13 +2203,29 @@
       "subcategory": "7.03",
       "french": "contrôler",
       "chinese": "检查，查验；控制，管制",
-      "example": "J’ai été contrôlé par les gendarmes, j’ai dû montrer mon permis de conduire.",
+      "example": "Les agents contrôleront les billets à l’entrée du théâtre afin de faciliter l’installation du public.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“控制，管制”；本例指检查证件，补充“检查、查验”义。"
+      "note": "原书译“控制，管制”；本例指检查证件，补充“检查、查验”义。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-001",
+          "form": "agents"
+        },
+        {
+          "id": "book-13.04-013",
+          "form": "installation"
+        },
+        {
+          "id": "book-13.03-019",
+          "form": "théâtre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-016",
@@ -1093,13 +2233,29 @@
       "subcategory": "7.03",
       "french": "dénoncer",
       "chinese": "揭发，检举",
-      "example": "Le voleur a dénoncé à la police les hommes qui l’ont aidé.",
+      "example": "L’association dénonce les violences et accompagne les victimes qui souhaitent déposer une plainte auprès de la police.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        },
+        {
+          "id": "book-7.04-036",
+          "form": "violences"
+        },
+        {
+          "id": "7.04-3",
+          "form": "victimes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-017",
@@ -1107,13 +2263,29 @@
       "subcategory": "7.03",
       "french": "déployer",
       "chinese": "展开，部署",
-      "example": "La police a déployé d’importantes mesures de sécurité.",
+      "example": "Les secours ont déployé plusieurs équipes pour rechercher les promeneurs disparus dans la montagne.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-008",
+          "form": "montagne"
+        },
+        {
+          "id": "book-8.04-036",
+          "form": "secours"
+        },
+        {
+          "id": "book-13.07-007",
+          "form": "équipes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-018",
@@ -1121,13 +2293,29 @@
       "subcategory": "7.03",
       "french": "le détenu, la détenue",
       "chinese": "犯人，被拘留者",
-      "example": "Le détenu sortira de prison dans une semaine.",
+      "example": "Le détenu échange des lettres avec sa famille et suit une formation dans l’atelier de la prison.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-022",
+          "form": "atelier"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        },
+        {
+          "id": "book-7.04-008",
+          "form": "prison"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-019",
@@ -1135,13 +2323,29 @@
       "subcategory": "7.03",
       "french": "enfermer",
       "chinese": "关起来，拘禁",
-      "example": "Le policier a enfermé le suspect.",
+      "example": "Dans le récit, les gardes enfermaient les prisonniers dans une tour dont les fenêtres donnaient sur la mer.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“关闭”；例句指把嫌疑人关起来，按语境校正。"
+      "note": "原书译“关闭”；例句指把嫌疑人关起来，按语境校正。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-011",
+          "form": "mer"
+        },
+        {
+          "id": "book-13.05-048",
+          "form": "récit"
+        },
+        {
+          "id": "book-2.01-011",
+          "form": "fenêtres"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-020",
@@ -1149,13 +2353,29 @@
       "subcategory": "7.03",
       "french": "fouiller",
       "chinese": "搜查，翻查",
-      "example": "Les policiers de la douane ont fouillé les valises des voyageurs.",
+      "example": "Les enquêteurs fouillent le bureau en présence du propriétaire et dressent la liste des documents emportés.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.02-020",
+          "form": "présence"
+        },
+        {
+          "id": "book-13.01-036",
+          "form": "liste"
+        },
+        {
+          "id": "book-14.04-019",
+          "form": "propriétaire"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-021",
@@ -1163,13 +2383,29 @@
       "subcategory": "7.03",
       "french": "le gendarme",
       "chinese": "宪兵",
-      "example": "Les gendarmes sont employés par l’armée.",
+      "example": "Un gendarme a indiqué aux touristes une autre route après la fermeture du pont endommagé.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": "保留原书概括性例句，未作为各国宪兵隶属关系的统一说明。"
+      "note": "保留原书概括性例句，未作为各国宪兵隶属关系的统一说明。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-029",
+          "form": "touristes"
+        },
+        {
+          "id": "book-4.03-017",
+          "form": "route"
+        },
+        {
+          "id": "book-4.03-012",
+          "form": "pont"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-022",
@@ -1177,13 +2413,29 @@
       "subcategory": "7.03",
       "french": "identifier",
       "chinese": "辨认，验明，确认身份",
-      "example": "La police a identifié le coupable.",
+      "example": "Cette photographie permet d’identifier le conducteur, mais le numéro de la voiture reste illisible.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-033",
+          "form": "conducteur"
+        },
+        {
+          "id": "book-4.04-023",
+          "form": "voiture"
+        },
+        {
+          "id": "book-16.04-014",
+          "form": "numéro"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-023",
@@ -1191,13 +2443,29 @@
       "subcategory": "7.03",
       "french": "l’indice",
       "chinese": "线索，痕迹",
-      "example": "La police cherche des indices sur le lieu du crime.",
+      "example": "Un indice supplémentaire aiderait l’inspectrice à comprendre le trajet du voleur entre la gare et le musée.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“痕迹，形迹”；本例为侦查线索、迹象义。"
+      "note": "原书译“痕迹，形迹”；本例为侦查线索、迹象义。",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-4.01-030",
+          "form": "trajet"
+        },
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-024",
@@ -1205,13 +2473,29 @@
       "subcategory": "7.03",
       "french": "l’inspecteur, l’inspectrice",
       "chinese": "监察员，警探",
-      "example": "L’inspecteur de police est chargé de mener l’enquête.",
+      "example": "L’inspecteur compare les témoignages avec les horaires de train et cherche à expliquer leurs contradictions.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.10-029",
+          "form": "contradictions"
+        },
+        {
+          "id": "book-15.07-021",
+          "form": "témoignages"
+        },
+        {
+          "id": "book-16.02-047",
+          "form": "horaires"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-025",
@@ -1219,13 +2503,25 @@
       "subcategory": "7.03",
       "french": "le piège",
       "chinese": "陷阱",
-      "example": "La police a tendu un piège au coupable.",
+      "example": "Le promeneur a découvert un piège rouillé près du sentier et averti le gardien de la réserve.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-036",
+          "form": "gardien"
+        },
+        {
+          "id": "book-3.01-040",
+          "form": "sentier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-026",
@@ -1233,13 +2529,29 @@
       "subcategory": "7.03",
       "french": "la poursuite",
       "chinese": "追赶，追捕",
-      "example": "Le gendarme a couru à la poursuite du voleur.",
+      "example": "Le roman raconte une poursuite dans les rues de la ville du point de vue d’une passante.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 56,
       "pdfPage": 63,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-013",
+          "form": "passante"
+        },
+        {
+          "id": "book-16.09-021",
+          "form": "point"
+        },
+        {
+          "id": "book-4.01-020",
+          "form": "rues"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-027",
@@ -1247,13 +2559,25 @@
       "subcategory": "7.03",
       "french": "protégé, protégée",
       "chinese": "受保护的，被保护的",
-      "example": "Le président est protégé par de nombreux policiers.",
+      "example": "Les documents seront mieux protégés dans l’armoire que la mairie installera après les travaux du bureau.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“保护”；词条为过去分词阴阳性形式，例句为被动语态。"
+      "note": "原书译“保护”；词条为过去分词阴阳性形式，例句为被动语态。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "2.03-3",
+          "form": "armoire"
+        },
+        {
+          "id": "book-7.01-006",
+          "form": "documents"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-028",
@@ -1261,13 +2585,29 @@
       "subcategory": "7.03",
       "french": "rechercher",
       "chinese": "搜寻，寻找",
-      "example": "La police recherche les voleurs.",
+      "example": "Les secours recherchent les voyageurs dont le bateau n’est pas revenu au port avant la nuit.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-013",
+          "form": "port"
+        },
+        {
+          "id": "book-16.02-030",
+          "form": "nuit"
+        },
+        {
+          "id": "book-8.04-036",
+          "form": "secours"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-029",
@@ -1275,13 +2615,29 @@
       "subcategory": "7.03",
       "french": "repousser",
       "chinese": "使退后，击退，驱退",
-      "example": "La police a repoussé la foule qui manifestait.",
+      "example": "La barrière a repoussé le troupeau vers le pré et empêché les animaux de traverser la route.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-026",
+          "form": "troupeau"
+        },
+        {
+          "id": "book-3.04-003",
+          "form": "animaux"
+        },
+        {
+          "id": "book-4.03-017",
+          "form": "route"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-030",
@@ -1289,13 +2645,29 @@
       "subcategory": "7.03",
       "french": "soupçonner",
       "chinese": "怀疑",
-      "example": "La police soupçonne cet homme d’avoir volé une voiture.",
+      "example": "La police soupçonne le vendeur d’avoir falsifié les factures pour cacher l’origine des tableaux.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.02-024",
+          "form": "origine"
+        },
+        {
+          "id": "book-11.01-050",
+          "form": "vendeur"
+        },
+        {
+          "id": "book-6.02-022",
+          "form": "factures"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-031",
@@ -1303,13 +2675,29 @@
       "subcategory": "7.03",
       "french": "la sûreté",
       "chinese": "安全，稳妥，可靠",
-      "example": "Il a mis son argent et les bijoux de sa femme en sûreté.",
+      "example": "La sûreté des voyageurs dépendait notamment de l’entretien du pont et du respect des limitations de vitesse.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“准确，可靠，稳当”；例句 en sûreté 指处于安全之中，补充“安全”义。"
+      "note": "原书译“准确，可靠，稳当”；例句 en sûreté 指处于安全之中，补充“安全”义。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-14.01-011",
+          "form": "respect"
+        },
+        {
+          "id": "book-4.03-024",
+          "form": "vitesse"
+        },
+        {
+          "id": "book-4.03-012",
+          "form": "pont"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-032",
@@ -1317,13 +2705,29 @@
       "subcategory": "7.03",
       "french": "la surveillance",
       "chinese": "监督，监视",
-      "example": "Trois policiers assurent la surveillance de la gare la nuit.",
+      "example": "La surveillance du musée continue pendant les travaux pour protéger les tableaux et le matériel des artisans.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-023",
+          "form": "artisans"
+        },
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        },
+        {
+          "id": "book-2.04-012",
+          "form": "matériel"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.03-033",
@@ -1331,13 +2735,29 @@
       "subcategory": "7.03",
       "french": "surveiller",
       "chinese": "监视，监督",
-      "example": "La police surveille un suspect, elle l’observe.",
+      "example": "Surveille le portail pendant que je cherche le gardien qui doit ouvrir la salle de réunion.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-018",
+          "form": "portail"
+        },
+        {
+          "id": "11.02-1",
+          "form": "réunion"
+        },
+        {
+          "id": "book-11.01-036",
+          "form": "gardien"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-001",
@@ -1345,13 +2765,29 @@
       "subcategory": "7.04",
       "french": "assassiner",
       "chinese": "暗杀，谋杀，杀害",
-      "example": "Un homme a été assassiné dans sa voiture.",
+      "example": "Dans cette pièce, un témoin affirme que le ministre a été assassiné, mais son récit contredit les preuves.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-015",
+          "form": "ministre"
+        },
+        {
+          "id": "book-15.07-017",
+          "form": "preuves"
+        },
+        {
+          "id": "book-15.07-022",
+          "form": "témoin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-002",
@@ -1359,13 +2795,29 @@
       "subcategory": "7.04",
       "french": "l’attaque",
       "chinese": "袭击，攻击",
-      "example": "L’attaque militaire a détruit un village entier.",
+      "example": "L’attaque du village a obligé plusieurs familles à quitter leur maison et chercher refuge près de l’école.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "2.01-1",
+          "form": "maison"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-003",
@@ -1373,13 +2825,29 @@
       "subcategory": "7.04",
       "french": "attaquer",
       "chinese": "袭击，攻击",
-      "example": "L’homme a attaqué une vieille femme et lui a volé son sac.",
+      "example": "Dans le documentaire, les témoins racontent comment des hommes ont attaqué le convoi à l’entrée de la ville.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.04-013",
+          "form": "hommes"
+        },
+        {
+          "id": "book-15.07-022",
+          "form": "témoins"
+        },
+        {
+          "id": "book-2.01-009",
+          "form": "entrée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-004",
@@ -1387,13 +2855,29 @@
       "subcategory": "7.04",
       "french": "le coup",
       "chinese": "一下，击打",
-      "example": "L’homme a reçu un coup sur la tête.",
+      "example": "Après le coup reçu au bras, le joueur attendait le médecin sur un banc près du terrain.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-028",
+          "form": "banc"
+        },
+        {
+          "id": "book-1.06-013",
+          "form": "joueur"
+        },
+        {
+          "id": "book-3.01-020",
+          "form": "terrain"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-005",
@@ -1401,13 +2885,29 @@
       "subcategory": "7.04",
       "french": "le crime",
       "chinese": "犯罪，罪行",
-      "example": "Le crime a eu lieu dans la nuit de dimanche à lundi.",
+      "example": "Ce roman suit une journaliste qui enquête sur un crime oublié et interroge les habitants du quartier.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-009",
+          "form": "journaliste"
+        },
+        {
+          "id": "book-13.05-024",
+          "form": "roman"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-006",
@@ -1415,13 +2915,29 @@
       "subcategory": "7.04",
       "french": "exécuter",
       "chinese": "执行死刑，处决；执行",
-      "example": "Dans certains États, les prisonniers sont exécutés.",
+      "example": "Les archives indiquent que le régime a exécuté des prisonniers sans permettre à leurs familles de les revoir.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": "此处采用“处决”义，例句保留原书概括表述。"
+      "note": "此处采用“处决”义，例句保留原书概括表述。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-025",
+          "form": "régime"
+        },
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        },
+        {
+          "id": "book-7.04-032",
+          "form": "prisonniers"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-007",
@@ -1429,13 +2945,29 @@
       "subcategory": "7.04",
       "french": "frapper",
       "chinese": "打，击打",
-      "example": "Les voleurs ont frappé la victime avant de s’enfuir.",
+      "example": "Personne ne doit frapper un enfant ; cette association propose une aide aux familles confrontées à la violence.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfant"
+        },
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-008",
@@ -1443,13 +2975,25 @@
       "subcategory": "7.04",
       "french": "la prison",
       "chinese": "监狱，监禁",
-      "example": "Il a été condamné à deux ans de prison.",
+      "example": "La bibliothèque de la prison recevra des livres et accueillera un atelier animé par des bénévoles.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        },
+        {
+          "id": "book-11.03-022",
+          "form": "atelier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-009",
@@ -1457,13 +3001,29 @@
       "subcategory": "7.04",
       "french": "tuer",
       "chinese": "杀死，杀害",
-      "example": "Il a menacé de tuer l’otage.",
+      "example": "Le témoin explique au tribunal que le conducteur n’avait pas l’intention de tuer le piéton.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": "本单元为及物动词，与第四单元 se tuer（事故中丧生等）区分。"
+      "note": "本单元为及物动词，与第四单元 se tuer（事故中丧生等）区分。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-12.05-024",
+          "form": "intention"
+        },
+        {
+          "id": "book-15.07-024",
+          "form": "tribunal"
+        },
+        {
+          "id": "book-4.04-033",
+          "form": "conducteur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "7.04-3",
@@ -1471,14 +3031,26 @@
       "subcategory": "7.04",
       "french": "la victime",
       "chinese": "受害者",
-      "example": "La victime a reconnu le coupable.",
+      "example": "La victime du vol a retrouvé son sac, mais ses papiers et sa carte bancaire avaient disparu.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/viktim/"
+      "ipa": "/viktim/",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-044",
+          "form": "carte bancaire"
+        },
+        {
+          "id": "book-6.03-053",
+          "form": "sac"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-011",
@@ -1486,13 +3058,29 @@
       "subcategory": "7.04",
       "french": "voler",
       "chinese": "偷，盗窃",
-      "example": "Un groupe d’hommes a volé des dizaines de voitures.",
+      "example": "Le propriétaire découvre que quelqu’un a volé ses outils pendant qu’il réparait le toit de l’école.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-052",
+          "form": "outils"
+        },
+        {
+          "id": "book-14.04-019",
+          "form": "propriétaire"
+        },
+        {
+          "id": "book-2.01-045",
+          "form": "toit"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-012",
@@ -1500,13 +3088,29 @@
       "subcategory": "7.04",
       "french": "le voleur, la voleuse",
       "chinese": "小偷，窃贼",
-      "example": "Les voleurs ont été arrêtés par la police.",
+      "example": "La voleuse du roman passait pour une voyageuse ordinaire et connaissait tous les horaires des trains.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-024",
+          "form": "roman"
+        },
+        {
+          "id": "book-16.02-047",
+          "form": "horaires"
+        },
+        {
+          "id": "4.04-1",
+          "form": "trains"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-013",
@@ -1514,13 +3118,29 @@
       "subcategory": "7.04",
       "french": "abattre",
       "chinese": "击倒，击毙；推倒",
-      "example": "La police a abattu le voleur.",
+      "example": "Dans ce récit historique, les soldats reçoivent l’ordre d’abattre le mur pour ouvrir un passage aux civils.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“打，推倒，按倒”；本例采用击毙义，补充对应释义。"
+      "note": "原书译“打，推倒，按倒”；本例采用击毙义，补充对应释义。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.05-017",
+          "form": "soldats"
+        },
+        {
+          "id": "book-4.01-018",
+          "form": "passage"
+        },
+        {
+          "id": "book-2.01-016",
+          "form": "mur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-014",
@@ -1528,13 +3148,29 @@
       "subcategory": "7.04",
       "french": "l’assassinat",
       "chinese": "谋杀，暗杀",
-      "example": "Il a été accusé d’assassinat.",
+      "example": "L’assassinat du journaliste a provoqué une manifestation silencieuse devant la mairie et plusieurs témoignages de soutien.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-009",
+          "form": "journaliste"
+        },
+        {
+          "id": "book-15.07-021",
+          "form": "témoignages"
+        },
+        {
+          "id": "book-14.01-051",
+          "form": "soutien"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-015",
@@ -1542,13 +3178,29 @@
       "subcategory": "7.04",
       "french": "le bandit",
       "chinese": "强盗，匪徒",
-      "example": "Le commerçant a été attaqué par trois bandits.",
+      "example": "Le bandit de cette histoire abandonne son arme lorsque les enfants sortent de la maison.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 57,
       "pdfPage": 64,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.05-001",
+          "form": "arme"
+        },
+        {
+          "id": "book-13.05-006",
+          "form": "histoire"
+        },
+        {
+          "id": "2.01-1",
+          "form": "maison"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-016",
@@ -1556,13 +3208,29 @@
       "subcategory": "7.04",
       "french": "brutal, brutale",
       "chinese": "粗暴的",
-      "example": "Il est brutal avec sa femme et ses enfants.",
+      "example": "Un geste brutal a fait tomber la chaise et effrayé les clients installés près du comptoir.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-12.02-022",
+          "form": "geste"
+        },
+        {
+          "id": "book-6.01-026",
+          "form": "comptoir"
+        },
+        {
+          "id": "book-2.03-029",
+          "form": "chaise"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-017",
@@ -1570,13 +3238,29 @@
       "subcategory": "7.04",
       "french": "brutalement",
       "chinese": "粗暴地，暴力地",
-      "example": "L’homme a frappé brutalement sa victime.",
+      "example": "Le témoin affirme que le gardien a brutalement repoussé le voyageur qui demandait à entrer dans la gare.",
       "part": "adv.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.07-022",
+          "form": "témoin"
+        },
+        {
+          "id": "book-11.01-036",
+          "form": "gardien"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-018",
@@ -1584,13 +3268,29 @@
       "subcategory": "7.04",
       "french": "commettre",
       "chinese": "犯（罪），干（坏事）",
-      "example": "Cet homme a commis plusieurs meurtres.",
+      "example": "Le tribunal examinera les circonstances dans lesquelles le jeune homme aurait commis ce délit.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-16.13-005",
+          "form": "circonstances"
+        },
+        {
+          "id": "book-15.07-024",
+          "form": "tribunal"
+        },
+        {
+          "id": "book-1.04-013",
+          "form": "homme"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-019",
@@ -1598,13 +3298,29 @@
       "subcategory": "7.04",
       "french": "compromettre",
       "chinese": "连累，牵连",
-      "example": "Il est compromis dans une affaire de vol d’argent.",
+      "example": "Une fausse déclaration peut compromettre ses collègues et rendre plus difficile la recherche de la vérité.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-12.03-004",
+          "form": "déclaration"
+        },
+        {
+          "id": "book-12.05-038",
+          "form": "vérité"
+        },
+        {
+          "id": "book-11.01-028",
+          "form": "collègues"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-020",
@@ -1612,13 +3328,29 @@
       "subcategory": "7.04",
       "french": "criminel, criminelle",
       "chinese": "有罪的，犯罪的",
-      "example": "L’acte qu’il a commis est de nature criminelle.",
+      "example": "Les enquêteurs cherchaient à déterminer si cette entreprise participait à une activité criminelle ou transportait des marchandises ordinaires.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-010",
+          "form": "marchandises"
+        },
+        {
+          "id": "book-1.06-001",
+          "form": "activité"
+        },
+        {
+          "id": "book-11.03-012",
+          "form": "entreprise"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-021",
@@ -1626,13 +3358,29 @@
       "subcategory": "7.04",
       "french": "cruel, cruelle",
       "chinese": "残暴的，残忍的",
-      "example": "Il s’agit d’une attaque cruelle.",
+      "example": "Le traitement cruel des prisonniers est dénoncé dans les lettres que l’historienne étudie avec ses étudiants.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-8.04-012",
+          "form": "traitement"
+        },
+        {
+          "id": "book-11.01-037",
+          "form": "historienne"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-022",
@@ -1640,13 +3388,29 @@
       "subcategory": "7.04",
       "french": "le délinquant, la délinquante",
       "chinese": "违法者，轻罪犯",
-      "example": "Le délinquant a été arrêté par la police hier soir.",
+      "example": "Le jeune délinquant a suivi une formation et retrouvé un emploi grâce à l’aide d’une association.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-008",
+          "form": "emploi"
+        },
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        },
+        {
+          "id": "book-7.02-003",
+          "form": "aide"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-023",
@@ -1654,13 +3418,29 @@
       "subcategory": "7.04",
       "french": "le délit",
       "chinese": "轻罪，不法行为",
-      "example": "Voler et tuer sont des délits.",
+      "example": "L’avocate explique la différence entre un délit et un crime aux étudiants réunis pour la conférence.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": "例句沿用原书概括用语，未作为法律上 crime、délit 等罪行类别的分类依据。"
+      "note": "例句沿用原书概括用语，未作为法律上 crime、délit 等罪行类别的分类依据。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.10-009",
+          "form": "différence"
+        },
+        {
+          "id": "book-15.07-002",
+          "form": "avocate"
+        },
+        {
+          "id": "book-11.02-007",
+          "form": "conférence"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-024",
@@ -1668,13 +3448,29 @@
       "subcategory": "7.04",
       "french": "détourner",
       "chinese": "转移，侵吞，挪用",
-      "example": "Cet homme a détourné plusieurs milliers d’euros.",
+      "example": "Le comptable a détourné de l’argent destiné à la réparation des logements, selon les documents présentés au procès.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-15.07-054",
+          "form": "procès"
+        },
+        {
+          "id": "book-2.01-035",
+          "form": "logements"
+        },
+        {
+          "id": "book-7.01-006",
+          "form": "documents"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-025",
@@ -1682,13 +3478,25 @@
       "subcategory": "7.04",
       "french": "s’enfuir",
       "chinese": "逃跑，逃走",
-      "example": "Les bandits ont réussi à s’enfuir.",
+      "example": "Dans le film, la prisonnière cherche à s’enfuir avant que les gardes découvrent la porte ouverte.",
       "part": "v. pron.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书写 enfuir (s)，统一为自反动词 s’enfuir。"
+      "note": "原书写 enfuir (s)，统一为自反动词 s’enfuir。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-008",
+          "form": "film"
+        },
+        {
+          "id": "book-7.04-032",
+          "form": "prisonnière"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-026",
@@ -1696,13 +3504,29 @@
       "subcategory": "7.04",
       "french": "fuir",
       "chinese": "逃跑，逃走",
-      "example": "Le voleur a réussi à fuir avant que la police arrive.",
+      "example": "Les habitants fuiront le village si la menace se rapproche encore des maisons et de l’école.",
       "part": "v. i.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "2.01-1",
+          "form": "maisons"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-027",
@@ -1710,13 +3534,29 @@
       "subcategory": "7.04",
       "french": "impliquer",
       "chinese": "牵连，牵涉",
-      "example": "Il a été impliqué dans une affaire de vol.",
+      "example": "Cette lettre semble impliquer un employé, mais l’inspectrice veut vérifier son authenticité avant de l’interroger.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-009",
+          "form": "employé"
+        },
+        {
+          "id": "book-7.03-024",
+          "form": "inspectrice"
+        },
+        {
+          "id": "book-7.01-013",
+          "form": "lettre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-028",
@@ -1724,13 +3564,29 @@
       "subcategory": "7.04",
       "french": "la menace",
       "chinese": "威胁",
-      "example": "Le ministre a reçu des menaces de mort.",
+      "example": "La menace pesait sur toute la famille, qui hésitait à quitter son logement et son travail.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        },
+        {
+          "id": "book-2.01-035",
+          "form": "logement"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-029",
@@ -1738,13 +3594,25 @@
       "subcategory": "7.04",
       "french": "menacer",
       "chinese": "威胁",
-      "example": "Le voleur a menacé une femme avant de fuir avec sa voiture.",
+      "example": "Le témoin raconte qu’un inconnu l’a menacé devant le magasin après lui avoir demandé de l’argent.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.07-022",
+          "form": "témoin"
+        },
+        {
+          "id": "6.01-1",
+          "form": "magasin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-030",
@@ -1752,13 +3620,25 @@
       "subcategory": "7.04",
       "french": "le meurtre",
       "chinese": "杀人，凶杀",
-      "example": "Le meurtre date de six mois.",
+      "example": "Le meurtre décrit dans ce roman a été résolu grâce à une photographie oubliée dans un dossier.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-024",
+          "form": "roman"
+        },
+        {
+          "id": "book-7.01-025",
+          "form": "dossier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-031",
@@ -1766,13 +3646,29 @@
       "subcategory": "7.04",
       "french": "le pistolet",
       "chinese": "手枪",
-      "example": "Le bandit a tiré plusieurs coups de pistolet.",
+      "example": "Au musée, un pistolet ancien est présenté derrière une vitre avec des documents sur l’histoire de la ville.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-045",
+          "form": "vitre"
+        },
+        {
+          "id": "book-13.05-006",
+          "form": "histoire"
+        },
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-032",
@@ -1780,13 +3676,29 @@
       "subcategory": "7.04",
       "french": "le prisonnier, la prisonnière",
       "chinese": "犯人，囚犯",
-      "example": "Le prisonnier sera libéré dans deux semaines.",
+      "example": "La prisonnière pourra rencontrer sa famille après l’entretien prévu avec son avocate dans la matinée.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-15.07-002",
+          "form": "avocate"
+        },
+        {
+          "id": "book-16.02-052",
+          "form": "matinée"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-033",
@@ -1794,13 +3706,29 @@
       "subcategory": "7.04",
       "french": "le revolver",
       "chinese": "左轮手枪，转轮手枪",
-      "example": "Le voleur a menacé le commerçant avec un revolver.",
+      "example": "Le revolver retrouvé dans la cave figure sur l’inventaire des objets que les enquêteurs ont emportés.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“手枪”，补充转轮手枪义，与 pistolet 区分。"
+      "note": "原书译“手枪”，补充转轮手枪义，与 pistolet 区分。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-035",
+          "form": "inventaire"
+        },
+        {
+          "id": "book-2.02-015",
+          "form": "objets"
+        },
+        {
+          "id": "book-2.01-026",
+          "form": "cave"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-034",
@@ -1808,13 +3736,29 @@
       "subcategory": "7.04",
       "french": "suspect, suspecte",
       "chinese": "可疑的，涉嫌的；嫌疑人",
-      "example": "Il est suspect dans une affaire d’assassinat.",
+      "example": "Un colis suspect a retardé le départ du train pendant que les voyageurs attendaient dans la gare.",
       "part": "adj. / n. m. / f.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“嫌疑犯”；词条未加冠词，例句为形容词用法，补充对应释义和词性。"
+      "note": "原书译“嫌疑犯”；词条未加冠词，例句为形容词用法，补充对应释义和词性。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-016",
+          "form": "voyageurs"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        },
+        {
+          "id": "4.04-1",
+          "form": "train"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-035",
@@ -1822,13 +3766,29 @@
       "subcategory": "7.04",
       "french": "la tentative",
       "chinese": "尝试，未遂行为",
-      "example": "L’homme a été condamné pour tentative de meurtre.",
+      "example": "Cette tentative de vol a échoué parce qu’une employée a reconnu le faux document présenté au comptoir.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-026",
+          "form": "comptoir"
+        },
+        {
+          "id": "book-11.03-009",
+          "form": "employée"
+        },
+        {
+          "id": "book-7.01-006",
+          "form": "document"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-036",
@@ -1836,13 +3796,29 @@
       "subcategory": "7.04",
       "french": "la violence",
       "chinese": "暴力",
-      "example": "La violence est de plus en plus grande chez les jeunes.",
+      "example": "La violence inquiétait les habitants, qui demandaient davantage d’aide pour les jeunes et de présence dans le quartier.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": "保留原书练习例句，不作为当前青年暴力情况的统计判断。"
+      "note": "保留原书练习例句，不作为当前青年暴力情况的统计判断。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-10.02-020",
+          "form": "présence"
+        },
+        {
+          "id": "book-1.04-017",
+          "form": "jeunes"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-7.04-037",
@@ -1850,13 +3826,29 @@
       "subcategory": "7.04",
       "french": "violent, violente",
       "chinese": "暴力的，粗暴的",
-      "example": "Quand il boit de l’alcool, il devient violent.",
+      "example": "Le personnage devient violent lorsqu’il boit, et sa famille cherche de l’aide auprès d’une association.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-013",
+          "form": "personnage"
+        },
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "7.04-1",
@@ -1864,14 +3856,32 @@
       "subcategory": "7.04",
       "french": "le vol",
       "chinese": "偷，盗窃",
-      "example": "Le vol du musée s’est déroulé la nuit dernière.",
+      "example": "Le vol de son ordinateur a obligé la chercheuse à retrouver les copies de ses documents au laboratoire.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 58,
       "pdfPage": 65,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/vɔl/"
+      "ipa": "/vɔl/",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.04-018",
+          "form": "ordinateur"
+        },
+        {
+          "id": "book-11.01-026",
+          "form": "chercheuse"
+        },
+        {
+          "id": "book-11.03-014",
+          "form": "laboratoire"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     }
-  ]
+  ],
+  "originalMethod": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，旧统计和科学表述的范围说明记入 note。",
+  "exampleMethod": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
 }

@@ -39,7 +39,7 @@ const dictionaries = [...w.MotsDictionaries.builtins(), ...grammar].map(metadata
       assert(fs.existsSync(sourceFile), `Missing source clip: ${relative}`);
       audioFiles.push({ sourceFile, target });
     } else assert.equal(metadata.kind, 'grammar', `Missing vocabulary audio manifest: ${metadata.id}`);
-    const details = w.MotsDictionaries.normalizeDetails(word);
+    const details = w.MotsDictionaries.normalizeDetails(word, 0, metadata.language);
     return {
       id: String(word.id), term: word.term || word.french, meaning: meanings['zh-Hant'] || Object.values(meanings)[0], meanings,
       ...details, category: String(word.category), subcategory: String(word.subcategory),
@@ -53,6 +53,7 @@ const dictionaries = [...w.MotsDictionaries.builtins(), ...grammar].map(metadata
 });
 const japanese = JSON.parse(fs.readFileSync(path.join(root, 'database/japanese/vocabulary.json'), 'utf8'));
 assert.deepEqual(JSON.parse(JSON.stringify(w.MOTS_EXTRA_BANKS.ja)), japanese.words, 'Japanese runtime must match its source dictionary');
+assert.deepEqual(JSON.parse(JSON.stringify(w.MotsDictionaries.builtins().find(dictionary => dictionary.id === 'ja').categories)), japanese.categories, 'Japanese scenario metadata must match its source dictionary');
 assert.deepEqual(Array.from(dictionaries, dictionary => dictionary.words.length), [3846, 12, japanese.entryCount, ...grammar.map(dictionary => dictionary.words.length)]);
 assert.equal(new Set(dictionaries.map(dictionary => dictionary.id)).size, dictionaries.length, 'Dictionary identities are unique');
 for (const source of grammar) {

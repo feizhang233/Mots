@@ -128,6 +128,7 @@
       order: source.order === 'random' ? 'random' : 'ordered',
       pageSize: pageSizes.includes(Number(source.pageSize)) ? Number(source.pageSize) : 20,
       defaultHideMastered: source.defaultHideMastered === true,
+      showExampleTranslations: source.showExampleTranslations !== false,
       sidebarCollapsed: source.sidebarCollapsed === true,
       visibility,
     };
@@ -164,7 +165,7 @@
     if (meanings['zh-Hant'] && !meanings['zh-Hans']) meanings['zh-Hans'] = sc(meanings['zh-Hant']);
     let details;
     try {
-      details = MotsDictionaries.normalizeDetails(word);
+      details = MotsDictionaries.normalizeDetails(word, 0, language);
     } catch {
       // Keep damaged local extensions readable without overwriting the stored record.
       // New imports are still validated before any state is changed.
@@ -482,7 +483,7 @@
               expanded = expandedCategory === c.id,
               id = `${target}-children-${c.id}`;
             const subs = c.subcategories.filter((s) => words().some((w) => w.subcategory === s.id));
-            if (grammarGroupingEnabled())
+            if (grammarGroupingEnabled() || subs.length < 2)
               return `<div class="nav-group"><button class="nav-item chapter-button" data-category="${esc(c.id)}" aria-pressed="${selected}"><span class="chapter-num">${esc(/^\d+$/.test(c.id) ? c.id.padStart(2, '0') : c.id)}</span><span class="chapter-name">${esc(categoryLabel(c.name))}</span><span class="nav-count">${words().filter((w) => w.category === c.id).length}</span></button></div>`;
             return `<div class="nav-group"><button class="nav-item chapter-button" data-category="${c.id}" aria-pressed="${selected}" aria-expanded="${expanded}" aria-controls="${id}"><span class="chapter-num">${/^\d+$/.test(c.id) ? c.id.padStart(2, '0') : c.id}</span><span class="chapter-name">${esc(categoryLabel(c.name))}</span><span class="nav-count">${words().filter((w) => w.category === c.id).length}</span><span class="nav-chevron">${icons.chevron}</span></button><div class="nav-children" id="${id}" role="group" aria-label="${esc(categoryLabel(c.name))}的子類" ${expanded ? '' : 'hidden'}><button class="nav-child" data-parent="${c.id}" data-sub="all" aria-pressed="${selected && state.subcategory === 'all'}">全部子類</button>${subs.map((s) => `<button class="nav-child" data-parent="${c.id}" data-sub="${s.id}" aria-pressed="${selected && state.subcategory === s.id}"><span class="sub-code">${s.id}</span><span>${esc(categoryLabel(s.name))}</span></button>`).join('')}</div></div>`;
           })
@@ -911,6 +912,7 @@
     levelOf,
     subcategoryOf,
     categoryLabel,
+    traditional: tc,
     groupWords,
   });
   const settingsPanel = window.MotsSettingsPanel.create({
@@ -920,6 +922,7 @@
       audioMode: settings.audioMode,
       pageSize: settings.pageSize,
       defaultHideMastered: settings.defaultHideMastered,
+      showExampleTranslations: settings.showExampleTranslations,
       studyKind: state.studyKind,
       grammarGrouping: grammarGroupingEnabled(),
       canExtend: categories.length > 0,
@@ -1085,7 +1088,7 @@
         child = event.target.closest('[data-sub]');
       if (parent) {
         const id = parent.dataset.category;
-        if (id === 'all' || grammarGroupingEnabled()) {
+        if (id === 'all' || parent.getAttribute('aria-expanded') === null) {
           chooseCategory(id);
           if (navID === 'mobile-category-nav') closeCategories();
         } else if (state.category === id) {
@@ -1250,6 +1253,11 @@
         : (settings.visibility[id] || []).filter((level) => level !== 3);
     saveSettings();
     buildDeck();
+  });
+  $('show-example-translations').addEventListener('change', (event) => {
+    settings.showExampleTranslations = event.target.checked;
+    saveSettings();
+    render();
   });
   $('visibility-options').addEventListener('change', (event) => {
     if (!event.target.matches('[data-hide-level]')) return;

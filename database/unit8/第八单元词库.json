@@ -16,7 +16,7 @@
     "基础": 110,
     "进阶": 97
   },
-  "method": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，医学和科学例句依原文保留；8.03 第64页第二组仍标基础词汇，依原标注保留并注明。",
+  "method": "詞條、分類、原書頁碼與校對註記保留原整理；例句於 2026-10-25 改為 Mots 原創詞彙關聯例句。原例句保存在 french/example-network.json 的 originalText，XLSX 保留原書轉錄版本。",
   "subcategories": [
     {
       "id": "8.01",
@@ -42,13 +42,29 @@
       "subcategory": "8.01",
       "french": "la bouche",
       "chinese": "嘴，口",
-      "example": "L’enfant a du chocolat tout autour de la bouche.",
+      "example": "La dentiste demande à l’enfant d’ouvrir la bouche pendant que son père attend près de la fenêtre.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-023",
+          "form": "père"
+        },
+        {
+          "id": "book-2.01-011",
+          "form": "fenêtre"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfant"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-002",
@@ -56,13 +72,29 @@
       "subcategory": "8.01",
       "french": "le bras",
       "chinese": "胳膊，手臂",
-      "example": "Il m’a pris dans ses bras avant de partir.",
+      "example": "Après sa chute de vélo, Camille a gardé le bras contre sa poitrine pendant le trajet vers l’hôpital.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.06-017",
+          "form": "chute"
+        },
+        {
+          "id": "4.04-2",
+          "form": "vélo"
+        },
+        {
+          "id": "book-4.01-030",
+          "form": "trajet"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-003",
@@ -70,13 +102,29 @@
       "subcategory": "8.01",
       "french": "brosser",
       "chinese": "梳，刷",
-      "example": "La mère brosse les cheveux de sa fille.",
+      "example": "Je brosse les cheveux de ma fille pendant qu’elle raconte sa journée d’école et prépare son spectacle.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-020",
+          "form": "spectacle"
+        },
+        {
+          "id": "book-1.03-007",
+          "form": "fille"
+        },
+        {
+          "id": "book-16.02-020",
+          "form": "journée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-004",
@@ -84,13 +132,29 @@
       "subcategory": "8.01",
       "french": "le cheveu",
       "chinese": "头发",
-      "example": "Les cheveux de Pierre sont blonds.",
+      "example": "Un cheveu blond restait accroché à la manche du manteau que le voyageur avait oublié dans le train.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-043",
+          "form": "manche"
+        },
+        {
+          "id": "book-6.03-044",
+          "form": "manteau"
+        },
+        {
+          "id": "book-4.02-016",
+          "form": "voyageur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "8.01-4",
@@ -98,14 +162,30 @@
       "subcategory": "8.01",
       "french": "le cœur",
       "chinese": "心，心脏",
-      "example": "Son cœur s’est arrêté de battre.",
+      "example": "Le professeur montre un dessin du cœur et explique aux élèves comment le sang circule dans le corps.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/kœʁ/"
+      "ipa": "/kœʁ/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-018",
+          "form": "dessin"
+        },
+        {
+          "id": "book-10.03-012",
+          "form": "professeur"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-006",
@@ -113,13 +193,29 @@
       "subcategory": "8.01",
       "french": "le corps",
       "chinese": "身体",
-      "example": "Le corps humain est très compliqué.",
+      "example": "Les danseurs prépareront leur corps par des exercices doux avant de répéter les mouvements du spectacle.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-020",
+          "form": "spectacle"
+        },
+        {
+          "id": "book-11.01-032",
+          "form": "danseurs"
+        },
+        {
+          "id": "book-13.06-008",
+          "form": "mouvements"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-007",
@@ -127,13 +223,29 @@
       "subcategory": "8.01",
       "french": "la côte",
       "chinese": "肋骨",
-      "example": "Je me suis cassé une côte en tombant.",
+      "example": "Sur cette radiographie, la médecin montre une côte cassée au patient qui raconte sa chute dans l’escalier.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": "本单元为“肋骨”义，与第三单元“海岸”义区分。"
+      "note": "本单元为“肋骨”义，与第三单元“海岸”义区分。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-007",
+          "form": "escalier"
+        },
+        {
+          "id": "book-13.06-017",
+          "form": "chute"
+        },
+        {
+          "id": "book-8.02-012",
+          "form": "patient"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-008",
@@ -141,13 +253,29 @@
       "subcategory": "8.01",
       "french": "la dent",
       "chinese": "牙，牙齿",
-      "example": "Je me lave les dents matin et soir.",
+      "example": "Ma fille a perdu une dent pendant le repas et l’a enveloppée soigneusement dans une serviette.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-065",
+          "form": "serviette"
+        },
+        {
+          "id": "book-1.03-007",
+          "form": "fille"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-009",
@@ -155,13 +283,29 @@
       "subcategory": "8.01",
       "french": "le doigt",
       "chinese": "手指",
-      "example": "La main de l’homme a cinq doigts.",
+      "example": "L’enfant suit chaque ligne du livre avec son doigt et demande à son frère de lire plus lentement.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.09-017",
+          "form": "ligne"
+        },
+        {
+          "id": "1.03-4",
+          "form": "frère"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfant"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "8.01-3",
@@ -169,14 +313,30 @@
       "subcategory": "8.01",
       "french": "le dos",
       "chinese": "后背，背部",
-      "example": "Mon père ne peut pas porter d’objets lourds, car il a mal au dos.",
+      "example": "Après une journée passée au chantier, mon père avait mal au dos et préférait dîner dans le fauteuil.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/do/"
+      "ipa": "/do/",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-020",
+          "form": "journée"
+        },
+        {
+          "id": "book-2.03-008",
+          "form": "fauteuil"
+        },
+        {
+          "id": "11.03-2",
+          "form": "chantier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-011",
@@ -184,13 +344,29 @@
       "subcategory": "8.01",
       "french": "l’épaule",
       "chinese": "肩，肩膀",
-      "example": "Cet homme est grand et a de larges épaules.",
+      "example": "Le photographe pose son appareil sur l’épaule et cherche un passage entre les voyageurs de la gare.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.01-018",
+          "form": "passage"
+        },
+        {
+          "id": "book-13.04-003",
+          "form": "appareil"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-012",
@@ -198,13 +374,29 @@
       "subcategory": "8.01",
       "french": "l’estomac",
       "chinese": "胃",
-      "example": "Il n’a rien mangé, il a l’estomac vide.",
+      "example": "Un bruit dans son estomac a fait rire la classe pendant que le professeur distribuait les exercices.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-10.01-004",
+          "form": "classe"
+        },
+        {
+          "id": "book-10.02-013",
+          "form": "exercices"
+        },
+        {
+          "id": "book-9.01-003",
+          "form": "bruit"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-013",
@@ -212,13 +404,29 @@
       "subcategory": "8.01",
       "french": "la figure",
       "chinese": "脸，面容",
-      "example": "L’enfant va se laver la figure.",
+      "example": "Sa figure apparaît sur les photographies de famille, mais personne ne se rappelle le nom de son village.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "1.01-1",
+          "form": "nom"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-014",
@@ -226,13 +434,25 @@
       "subcategory": "8.01",
       "french": "le front",
       "chinese": "前额，额头",
-      "example": "Il a une tache brune sur le front.",
+      "example": "Le peintre ajoutera de la lumière sur le front du modèle pour faire ressortir son regard.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-009",
+          "form": "peintre"
+        },
+        {
+          "id": "book-3.02-010",
+          "form": "lumière"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-015",
@@ -240,13 +460,29 @@
       "subcategory": "8.01",
       "french": "le genou",
       "chinese": "膝，膝盖",
-      "example": "En tombant, il s’est blessé au genou.",
+      "example": "Mon genou touche le bureau lorsque je rapproche ma chaise pour lire les documents de mon collègue.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-029",
+          "form": "chaise"
+        },
+        {
+          "id": "book-11.01-028",
+          "form": "collègue"
+        },
+        {
+          "id": "book-7.01-006",
+          "form": "documents"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-016",
@@ -254,13 +490,29 @@
       "subcategory": "8.01",
       "french": "la jambe",
       "chinese": "腿",
-      "example": "Certaines personnes ont une jambe plus courte que l’autre.",
+      "example": "La joueuse s’est blessée à la jambe en courant et a quitté le terrain avec son entraîneur.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-1.06-013",
+          "form": "joueuse"
+        },
+        {
+          "id": "book-3.02-005",
+          "form": "courant"
+        },
+        {
+          "id": "book-3.01-020",
+          "form": "terrain"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-017",
@@ -268,13 +520,29 @@
       "subcategory": "8.01",
       "french": "la langue",
       "chinese": "舌头",
-      "example": "J’ai dû tirer la langue pour que le médecin puisse examiner ma gorge.",
+      "example": "L’enfant tire la langue devant le miroir, puis éclate de rire en voyant la réaction de sa sœur.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": "此处指舌头，区别于“语言”义。"
+      "note": "此处指舌头，区别于“语言”义。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-9.03-015",
+          "form": "rire"
+        },
+        {
+          "id": "book-2.03-038",
+          "form": "miroir"
+        },
+        {
+          "id": "book-9.02-017",
+          "form": "réaction"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-018",
@@ -282,13 +550,25 @@
       "subcategory": "8.01",
       "french": "la lèvre",
       "chinese": "唇，嘴唇",
-      "example": "Elle s’est mis du rouge sur les lèvres.",
+      "example": "Sa lèvre tremblait lorsqu’elle cherchait les mots pour annoncer son départ à ses collègues.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-028",
+          "form": "collègues"
+        },
+        {
+          "id": "book-12.02-024",
+          "form": "mots"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "8.01-2",
@@ -296,14 +576,26 @@
       "subcategory": "8.01",
       "french": "la main",
       "chinese": "手",
-      "example": "Je serre la main à mon patron.",
+      "example": "La couturière tient le tissu d’une main et guide les ciseaux de l’autre pour préparer la manche.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/mɛ̃/"
+      "ipa": "/mɛ̃/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-043",
+          "form": "manche"
+        },
+        {
+          "id": "book-6.03-015",
+          "form": "tissu"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-020",
@@ -311,13 +603,25 @@
       "subcategory": "8.01",
       "french": "le membre",
       "chinese": "肢体",
-      "example": "Les pieds et les bras sont des membres du corps humain.",
+      "example": "Une prothèse adaptée lui permettrait de bouger son membre plus facilement et de reprendre certaines activités.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-9.04-008",
+          "form": "bouger"
+        },
+        {
+          "id": "book-1.06-001",
+          "form": "activités"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-021",
@@ -325,13 +629,29 @@
       "subcategory": "8.01",
       "french": "le nez",
       "chinese": "鼻子",
-      "example": "Quand il fait froid, j’ai le nez rouge.",
+      "example": "Le bébé fronce le nez quand sa sœur approche le fromage qu’elle vient de rapporter du marché.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "5.01-2",
+          "form": "fromage"
+        },
+        {
+          "id": "book-1.03-031",
+          "form": "bébé"
+        },
+        {
+          "id": "book-3.01-012",
+          "form": "marché"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-022",
@@ -339,13 +659,29 @@
       "subcategory": "8.01",
       "french": "nu, nue",
       "chinese": "光着的，裸露的",
-      "example": "Il s’est mis nu pour se laver.",
+      "example": "Pieds nus dans le jardin, les enfants ont traversé l’herbe pour regarder les oiseaux près de la fontaine.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "3.04-4",
+          "form": "oiseaux"
+        },
+        {
+          "id": "book-3.04-042",
+          "form": "herbe"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-023",
@@ -353,13 +689,29 @@
       "subcategory": "8.01",
       "french": "l’œil",
       "chinese": "眼，眼睛",
-      "example": "Aurélie a les yeux bleus.",
+      "example": "Un œil sur le plan, l’architecte vérifie la position de la fenêtre et la largeur de la porte.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": "复数为 les yeux，例句采用复数。"
+      "note": "复数为 les yeux，例句采用复数。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.08-028",
+          "form": "position"
+        },
+        {
+          "id": "book-16.04-040",
+          "form": "largeur"
+        },
+        {
+          "id": "book-11.01-022",
+          "form": "architecte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-024",
@@ -367,13 +719,29 @@
       "subcategory": "8.01",
       "french": "l’oreille",
       "chinese": "耳朵",
-      "example": "Mon père a de grandes oreilles.",
+      "example": "Le technicien protégera ses oreilles pendant les essais de la machine installée dans le nouvel atelier.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-10.04-006",
+          "form": "essais"
+        },
+        {
+          "id": "book-11.01-049",
+          "form": "technicien"
+        },
+        {
+          "id": "book-15.06-020",
+          "form": "machine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-025",
@@ -381,13 +749,29 @@
       "subcategory": "8.01",
       "french": "l’organisme",
       "chinese": "有机体，生物体",
-      "example": "L’organisme est l’ensemble des éléments constituant un être vivant.",
+      "example": "La biologiste étudie un organisme marin avec ses étudiants et note ses réactions dans un cahier.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": "与第七单元“机构、组织”义区分。"
+      "note": "与第七单元“机构、组织”义区分。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-9.02-017",
+          "form": "réactions"
+        },
+        {
+          "id": "book-10.01-029",
+          "form": "cahier"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-026",
@@ -395,13 +779,29 @@
       "subcategory": "8.01",
       "french": "la peau",
       "chinese": "皮肤",
-      "example": "Une trop longue exposition au soleil peut entraîner des maladies de la peau.",
+      "example": "La peau de ses mains devenait sèche après les longues journées passées à laver les vêtements du restaurant.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-063",
+          "form": "restaurant"
+        },
+        {
+          "id": "book-16.02-020",
+          "form": "journées"
+        },
+        {
+          "id": "book-6.03-017",
+          "form": "vêtements"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-027",
@@ -409,13 +809,29 @@
       "subcategory": "8.01",
       "french": "le peigne",
       "chinese": "梳子",
-      "example": "Mon grand-père a toujours un petit peigne dans la poche de son manteau.",
+      "example": "Je cherche mon peigne dans le sac de voyage pendant que ma sœur prépare la salle de bains.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-002",
+          "form": "bains"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        },
+        {
+          "id": "book-6.03-053",
+          "form": "sac"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-028",
@@ -423,13 +839,25 @@
       "subcategory": "8.01",
       "french": "le pied",
       "chinese": "脚",
-      "example": "Il s’est blessé au pied gauche.",
+      "example": "Le promeneur a posé le pied sur une pierre instable et perdu l’équilibre près du ruisseau.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-016",
+          "form": "pierre"
+        },
+        {
+          "id": "book-8.03-005",
+          "form": "équilibre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-029",
@@ -437,13 +865,29 @@
       "subcategory": "8.01",
       "french": "le poil",
       "chinese": "毛，体毛",
-      "example": "Mon oncle a des poils dans les oreilles.",
+      "example": "Un poil de chat reste collé au pantalon du professeur, qui le retire avant sa conférence.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 59,
       "pdfPage": 66,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "6.03-2",
+          "form": "pantalon"
+        },
+        {
+          "id": "book-3.04-031",
+          "form": "chat"
+        },
+        {
+          "id": "book-11.02-007",
+          "form": "conférence"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-030",
@@ -451,13 +895,25 @@
       "subcategory": "8.01",
       "french": "le pouce",
       "chinese": "大拇指",
-      "example": "Le pouce est le doigt le plus gros de la main.",
+      "example": "Pose ton pouce sur la page pour garder ta place pendant que tu cherches le mot dans le dictionnaire.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-017",
+          "form": "page"
+        },
+        {
+          "id": "book-12.02-024",
+          "form": "mot"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-031",
@@ -465,13 +921,29 @@
       "subcategory": "8.01",
       "french": "le sang",
       "chinese": "血，血液",
-      "example": "Il s’est blessé et a perdu beaucoup de sang.",
+      "example": "Le laboratoire analyse un échantillon de sang et transmet les résultats au médecin chargé du dossier.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.04-030",
+          "form": "échantillon"
+        },
+        {
+          "id": "book-10.04-016",
+          "form": "résultats"
+        },
+        {
+          "id": "book-11.03-014",
+          "form": "laboratoire"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-032",
@@ -479,13 +951,29 @@
       "subcategory": "8.01",
       "french": "le savon",
       "chinese": "香皂，肥皂",
-      "example": "Le savon de Marseille sent très bon.",
+      "example": "Nous avons acheté du savon et des serviettes pour accueillir les voyageurs bloqués par la neige.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-065",
+          "form": "serviettes"
+        },
+        {
+          "id": "book-3.03-010",
+          "form": "neige"
+        },
+        {
+          "id": "book-4.02-016",
+          "form": "voyageurs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-033",
@@ -493,13 +981,29 @@
       "subcategory": "8.01",
       "french": "le sein",
       "chinese": "乳房",
-      "example": "Une mère donne le sein à son enfant.",
+      "example": "La médecin explique l’examen du sein avec un schéma et prend le temps de répondre aux questions.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.02-064",
+          "form": "schéma"
+        },
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        },
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "8.01-1",
@@ -507,14 +1011,30 @@
       "subcategory": "8.01",
       "french": "la tête",
       "chinese": "头",
-      "example": "La fumée de cigarette lui donne mal à la tête.",
+      "example": "La tête appuyée contre la vitre, le voyageur regardait les champs défiler jusqu’à la prochaine gare.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/tɛt/"
+      "ipa": "/tɛt/",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-003",
+          "form": "champs"
+        },
+        {
+          "id": "book-4.04-045",
+          "form": "vitre"
+        },
+        {
+          "id": "book-4.02-016",
+          "form": "voyageur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-035",
@@ -522,13 +1042,29 @@
       "subcategory": "8.01",
       "french": "le visage",
       "chinese": "脸，面容",
-      "example": "Il a le visage tout rouge.",
+      "example": "Sur son visage, un sourire remplace peu à peu la fatigue quand elle aperçoit sa famille sur le quai.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-9.02-021",
+          "form": "sourire"
+        },
+        {
+          "id": "book-4.03-052",
+          "form": "quai"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-036",
@@ -536,13 +1072,29 @@
       "subcategory": "8.01",
       "french": "la voix",
       "chinese": "声音，嗓音",
-      "example": "Mon oncle a une voix grave.",
+      "example": "La chanteuse reposera sa voix avant le concert et laissera son collègue présenter le programme au public.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-017",
+          "form": "programme"
+        },
+        {
+          "id": "book-13.03-027",
+          "form": "chanteuse"
+        },
+        {
+          "id": "book-13.03-030",
+          "form": "concert"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-037",
@@ -550,13 +1102,25 @@
       "subcategory": "8.01",
       "french": "l’A.D.N.",
       "chinese": "脱氧核糖核酸，DNA",
-      "example": "L’A.D.N. est une molécule présente chez les êtres vivants.",
+      "example": "Dans le laboratoire, les étudiants observent un modèle de l’A.D.N. et comparent leurs notes après le cours.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": "保留原书带点缩写写法；ADN 为 acide désoxyribonucléique 的缩写。"
+      "note": "保留原书带点缩写写法；ADN 为 acide désoxyribonucléique 的缩写。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-014",
+          "form": "laboratoire"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-038",
@@ -564,13 +1128,25 @@
       "subcategory": "8.01",
       "french": "la barbe",
       "chinese": "胡子，胡须",
-      "example": "Le père Noël porte une longue barbe blanche.",
+      "example": "Mon frère a rasé sa barbe avant l’entretien, mais son fils l’a reconnu immédiatement sur la photographie.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "1.03-4",
+          "form": "frère"
+        },
+        {
+          "id": "book-1.03-008",
+          "form": "fils"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-039",
@@ -578,13 +1154,29 @@
       "subcategory": "8.01",
       "french": "le buste",
       "chinese": "上半身",
-      "example": "Le buste va de la tête à la taille.",
+      "example": "La danseuse incline le buste sans bouger les pieds pendant que son professeur corrige la position des épaules.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.08-028",
+          "form": "position"
+        },
+        {
+          "id": "book-11.01-032",
+          "form": "danseuse"
+        },
+        {
+          "id": "book-10.03-012",
+          "form": "professeur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-040",
@@ -592,13 +1184,29 @@
       "subcategory": "8.01",
       "french": "cellulaire",
       "chinese": "细胞的",
-      "example": "L’origine cellulaire du cancer du foie a été identifiée par des chercheurs.",
+      "example": "Le cours de biologie abordait la division cellulaire à partir de dessins réalisés par les élèves.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": "保留原书未注明研究来源和日期的语言例句，未作医学研究结论核实。"
+      "note": "保留原书未注明研究来源和日期的语言例句，未作医学研究结论核实。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-10.02-009",
+          "form": "division"
+        },
+        {
+          "id": "book-13.02-018",
+          "form": "dessins"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-041",
@@ -606,13 +1214,29 @@
       "subcategory": "8.01",
       "french": "cérébral, cérébrale",
       "chinese": "大脑的",
-      "example": "L’activité cérébrale, c’est l’activité du cerveau.",
+      "example": "Cette chercheuse compare l’activité cérébrale de volontaires pendant un exercice de mémoire et une tâche de lecture.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.02-028",
+          "form": "tâche"
+        },
+        {
+          "id": "book-1.06-001",
+          "form": "activité"
+        },
+        {
+          "id": "book-11.01-026",
+          "form": "chercheuse"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-042",
@@ -620,13 +1244,29 @@
       "subcategory": "8.01",
       "french": "le cerveau",
       "chinese": "大脑",
-      "example": "Le cerveau est l’organe de la pensée.",
+      "example": "Le musée présentera une maquette du cerveau et proposera aux enfants des jeux sur les cinq sens.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-1.06-012",
+          "form": "jeux"
+        },
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-043",
@@ -634,13 +1274,25 @@
       "subcategory": "8.01",
       "french": "corporel, corporelle",
       "chinese": "身体的",
-      "example": "Il a calculé sa masse corporelle.",
+      "example": "Le mouvement corporel occupe une place importante dans la formation des acteurs qui préparent cette pièce.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.06-008",
+          "form": "mouvement"
+        },
+        {
+          "id": "book-13.03-020",
+          "form": "acteurs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-044",
@@ -648,13 +1300,25 @@
       "subcategory": "8.01",
       "french": "le cou",
       "chinese": "脖子，颈部",
-      "example": "Il a mis sa veste d’été pour sortir. Le vent soufflait fort, il a eu froid au cou.",
+      "example": "J’ai enroulé mon écharpe autour du cou avant de sortir attendre le bus près de la gare sous la neige.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.03-010",
+          "form": "neige"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-045",
@@ -662,13 +1326,29 @@
       "subcategory": "8.01",
       "french": "le coude",
       "chinese": "肘，肘部",
-      "example": "Le bras plie au niveau du coude.",
+      "example": "Son coude heurte la tasse quand elle se retourne pour saluer une collègue à l’entrée du café.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-065",
+          "form": "tasse"
+        },
+        {
+          "id": "book-2.01-009",
+          "form": "entrée"
+        },
+        {
+          "id": "book-11.01-028",
+          "form": "collègue"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-046",
@@ -676,13 +1356,29 @@
       "subcategory": "8.01",
       "french": "le crâne",
       "chinese": "颅骨，头骨",
-      "example": "Le cerveau est situé dans le crâne.",
+      "example": "L’étudiant dessinait le crâne humain pendant que sa camarade cherchait les noms des os dans le manuel.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“头”，校正为“颅骨、头骨”。"
+      "note": "原书译“头”，校正为“颅骨、头骨”。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-10.02-033",
+          "form": "manuel"
+        },
+        {
+          "id": "book-10.01-002",
+          "form": "camarade"
+        },
+        {
+          "id": "1.01-1",
+          "form": "noms"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-047",
@@ -690,13 +1386,29 @@
       "subcategory": "8.01",
       "french": "le foie",
       "chinese": "肝，肝脏",
-      "example": "L’alcool provoque des maladies du foie.",
+      "example": "Un schéma du foie aide le professeur à expliquer la digestion sans multiplier les termes techniques.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-12.01-018",
+          "form": "termes"
+        },
+        {
+          "id": "book-11.02-064",
+          "form": "schéma"
+        },
+        {
+          "id": "book-10.03-012",
+          "form": "professeur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-048",
@@ -704,13 +1416,25 @@
       "subcategory": "8.01",
       "french": "la gorge",
       "chinese": "喉咙",
-      "example": "J’ai mal à la gorge et je tousse.",
+      "example": "La chanteuse a signalé une douleur à la gorge et demandé le report de la répétition.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-027",
+          "form": "chanteuse"
+        },
+        {
+          "id": "8.02-3",
+          "form": "douleur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-049",
@@ -718,13 +1442,29 @@
       "subcategory": "8.01",
       "french": "l’index",
       "chinese": "食指",
-      "example": "L’index est l’un des doigts de la main.",
+      "example": "L’élève pointe son index vers le tableau pour montrer la faute qu’il vient de remarquer dans le calcul.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.02-014",
+          "form": "faute"
+        },
+        {
+          "id": "book-10.02-003",
+          "form": "calcul"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élève"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-050",
@@ -732,13 +1472,29 @@
       "subcategory": "8.01",
       "french": "interne",
       "chinese": "内部的",
-      "example": "Le cœur est un organe interne.",
+      "example": "Un examen interne du moteur serait nécessaire pour comprendre le bruit qui inquiète le conducteur.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-008",
+          "form": "moteur"
+        },
+        {
+          "id": "book-4.04-033",
+          "form": "conducteur"
+        },
+        {
+          "id": "book-9.01-003",
+          "form": "bruit"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-051",
@@ -746,13 +1502,29 @@
       "subcategory": "8.01",
       "french": "la joue",
       "chinese": "脸颊",
-      "example": "Après avoir joué dans le jardin, l’enfant a les joues roses.",
+      "example": "La joue de mon fils porte encore une trace de peinture après l’atelier organisé à l’école.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-067",
+          "form": "trace"
+        },
+        {
+          "id": "book-13.02-010",
+          "form": "peinture"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-052",
@@ -760,13 +1532,29 @@
       "subcategory": "8.01",
       "french": "la maturité",
       "chinese": "成熟，成熟度",
-      "example": "Aurélie fait preuve d’une grande maturité.",
+      "example": "La maturité de son jugement étonnait ses collègues, surtout pendant les réunions où chacun défendait son projet.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-15.07-009",
+          "form": "jugement"
+        },
+        {
+          "id": "11.02-1",
+          "form": "réunions"
+        },
+        {
+          "id": "11.02-2",
+          "form": "projet"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-053",
@@ -774,13 +1562,29 @@
       "subcategory": "8.01",
       "french": "la mémoire",
       "chinese": "记忆，记忆力",
-      "example": "Il a une mémoire incroyable, il se souvient toujours de tout.",
+      "example": "Pour exercer sa mémoire, ma grand-mère apprend une chanson et raconte son enfance à ses petits-enfants.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-026",
+          "form": "petits-enfants"
+        },
+        {
+          "id": "book-1.01-006",
+          "form": "enfance"
+        },
+        {
+          "id": "book-13.03-025",
+          "form": "chanson"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-054",
@@ -788,13 +1592,29 @@
       "subcategory": "8.01",
       "french": "le menton",
       "chinese": "下颏，下巴",
-      "example": "Le menton est situé à la base du visage.",
+      "example": "La costumière a fixé une fausse barbe sous le menton de l’acteur avant son entrée sur scène.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-020",
+          "form": "acteur"
+        },
+        {
+          "id": "book-2.01-009",
+          "form": "entrée"
+        },
+        {
+          "id": "book-8.01-038",
+          "form": "barbe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-055",
@@ -802,13 +1622,29 @@
       "subcategory": "8.01",
       "french": "le muscle",
       "chinese": "肌肉",
-      "example": "Pierre fait du sport pour développer ses muscles.",
+      "example": "Ce dessin représente un muscle du bras et montre comment il participe au mouvement de la main.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-018",
+          "form": "dessin"
+        },
+        {
+          "id": "book-13.06-008",
+          "form": "mouvement"
+        },
+        {
+          "id": "8.01-2",
+          "form": "main"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-056",
@@ -816,13 +1652,29 @@
       "subcategory": "8.01",
       "french": "le nerf",
       "chinese": "神经",
-      "example": "Les nerfs relient le cerveau au reste du corps.",
+      "example": "La spécialiste expliquera le rôle du nerf sur le schéma avant de commenter les résultats de l’examen.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-016",
+          "form": "rôle"
+        },
+        {
+          "id": "book-11.02-064",
+          "form": "schéma"
+        },
+        {
+          "id": "book-11.01-018",
+          "form": "spécialiste"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-057",
@@ -830,13 +1682,25 @@
       "subcategory": "8.01",
       "french": "l’organe",
       "chinese": "器官",
-      "example": "Les yeux sont les organes de la vue.",
+      "example": "Les élèves choisissent un organe et préparent une affiche pour expliquer sa fonction aux autres classes.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 60,
       "pdfPage": 67,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.01-004",
+          "form": "classes"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-058",
@@ -844,13 +1708,29 @@
       "subcategory": "8.01",
       "french": "organique",
       "chinese": "器官的，有机的",
-      "example": "Les matières organiques proviennent des êtres vivants.",
+      "example": "La chercheuse comparait les matières organiques présentes dans le sol après la récolte et au début du printemps.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-032",
+          "form": "printemps"
+        },
+        {
+          "id": "book-16.01-006",
+          "form": "début"
+        },
+        {
+          "id": "book-3.02-021",
+          "form": "sol"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-059",
@@ -858,13 +1738,29 @@
       "subcategory": "8.01",
       "french": "la paume",
       "chinese": "手掌，掌心",
-      "example": "Pierre a une pièce dans la paume de sa main.",
+      "example": "Dans sa paume, l’enfant cache une pièce qu’il veut dépenser pour acheter un cadeau à sa sœur.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-025",
+          "form": "cadeau"
+        },
+        {
+          "id": "1.03-3",
+          "form": "sœur"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfant"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-060",
@@ -872,13 +1768,25 @@
       "subcategory": "8.01",
       "french": "la paupière",
       "chinese": "眼睑，眼皮",
-      "example": "La paupière protège l’œil.",
+      "example": "Une poussière s’est glissée sous sa paupière pendant qu’il rangeait les livres de la bibliothèque.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-058",
+          "form": "poussière"
+        },
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-061",
@@ -886,13 +1794,29 @@
       "subcategory": "8.01",
       "french": "le poignet",
       "chinese": "手腕",
-      "example": "Le poignet relie la main au bras.",
+      "example": "La montre serre mon poignet depuis que j’ai remplacé le bracelet dans une petite boutique du quartier.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-022",
+          "form": "boutique"
+        },
+        {
+          "id": "book-6.03-007",
+          "form": "montre"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-062",
@@ -900,13 +1824,29 @@
       "subcategory": "8.01",
       "french": "le poing",
       "chinese": "拳头",
-      "example": "Pierre a reçu un coup de poing dans le nez.",
+      "example": "Le boxeur levait le poing après le combat, puis rejoignait sa famille et ses collègues près de la salle.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-15.05-026",
+          "form": "combat"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        },
+        {
+          "id": "book-11.01-028",
+          "form": "collègues"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-063",
@@ -914,13 +1854,29 @@
       "subcategory": "8.01",
       "french": "la poitrine",
       "chinese": "胸部",
-      "example": "Mon frère a une douleur dans la poitrine.",
+      "example": "Le bébé dort contre la poitrine de son père pendant que le train traverse la campagne.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.01-4",
+          "form": "campagne"
+        },
+        {
+          "id": "book-1.03-031",
+          "form": "bébé"
+        },
+        {
+          "id": "book-1.03-023",
+          "form": "père"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-064",
@@ -928,13 +1884,29 @@
       "subcategory": "8.01",
       "french": "la reproduction",
       "chinese": "生殖，繁殖",
-      "example": "Les élèves ont étudié en cours de sciences naturelles la reproduction humaine.",
+      "example": "Le cours abordera la reproduction des plantes avant la visite du jardin botanique avec les élèves.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "book-4.02-014",
+          "form": "visite"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-065",
@@ -942,13 +1914,29 @@
       "subcategory": "8.01",
       "french": "le shampooing",
       "chinese": "洗发水，香波",
-      "example": "Aurélie utilise un shampooing pour cheveux secs.",
+      "example": "Ce shampooing se trouve dans le même rayon que le savon et les brosses du magasin.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-029",
+          "form": "brosses"
+        },
+        {
+          "id": "6.01-1",
+          "form": "magasin"
+        },
+        {
+          "id": "book-8.01-032",
+          "form": "savon"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-066",
@@ -956,13 +1944,29 @@
       "subcategory": "8.01",
       "french": "la sueur",
       "chinese": "汗，汗水",
-      "example": "Des gouttes de sueur coulent sur son front.",
+      "example": "La sueur a mouillé sa chemise après la longue montée entre la gare et le village.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-013",
+          "form": "montée"
+        },
+        {
+          "id": "6.03-1",
+          "form": "chemise"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-067",
@@ -970,13 +1974,29 @@
       "subcategory": "8.01",
       "french": "la tension",
       "chinese": "血压；紧张，张力",
-      "example": "Ma grand-mère a des problèmes de tension.",
+      "example": "L’infirmière mesure la tension du patient et inscrit le résultat dans son dossier avant la consultation.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": "本例指血压（tension artérielle）。"
+      "note": "本例指血压（tension artérielle）。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.04-016",
+          "form": "résultat"
+        },
+        {
+          "id": "book-7.01-025",
+          "form": "dossier"
+        },
+        {
+          "id": "book-8.04-019",
+          "form": "consultation"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-068",
@@ -984,13 +2004,29 @@
       "subcategory": "8.01",
       "french": "la toilette",
       "chinese": "梳洗，打扮",
-      "example": "L’enfant sait maintenant faire sa toilette seul.",
+      "example": "Ma grand-mère faisait sa toilette près de la fenêtre pendant que mon grand-père préparait le petit déjeuner.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": "faire sa toilette 指梳洗，区别于 les toilettes（厕所）。"
+      "note": "faire sa toilette 指梳洗，区别于 les toilettes（厕所）。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-037",
+          "form": "grand-père"
+        },
+        {
+          "id": "book-2.01-011",
+          "form": "fenêtre"
+        },
+        {
+          "id": "book-1.03-036",
+          "form": "grand-mère"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-069",
@@ -998,13 +2034,29 @@
       "subcategory": "8.01",
       "french": "le vaisseau",
       "chinese": "血管",
-      "example": "Le sang circule à travers le corps dans les vaisseaux.",
+      "example": "Sur le dessin, chaque vaisseau apparaît en couleur pour que les élèves suivent la circulation du sang.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "4.03-1",
+          "form": "circulation"
+        },
+        {
+          "id": "book-13.02-018",
+          "form": "dessin"
+        },
+        {
+          "id": "book-16.09-009",
+          "form": "couleur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-070",
@@ -1012,13 +2064,25 @@
       "subcategory": "8.01",
       "french": "la veine",
       "chinese": "静脉",
-      "example": "Une veine, c’est un vaisseau qui transporte le sang.",
+      "example": "La médecin a montré une veine sur le bras du mannequin utilisé pendant la formation.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        },
+        {
+          "id": "book-8.01-002",
+          "form": "bras"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.01-071",
@@ -1026,13 +2090,29 @@
       "subcategory": "8.01",
       "french": "le ventre",
       "chinese": "肚子，腹部",
-      "example": "J’ai mangé trop de chocolat, j’ai mal au ventre maintenant.",
+      "example": "Le chat se couche sur le ventre de ma sœur pendant qu’elle lit son livre dans le fauteuil.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-031",
+          "form": "chat"
+        },
+        {
+          "id": "book-2.03-008",
+          "form": "fauteuil"
+        },
+        {
+          "id": "1.03-3",
+          "form": "sœur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-001",
@@ -1040,13 +2120,29 @@
       "subcategory": "8.02",
       "french": "avoir mal",
       "chinese": "疼，不舒服",
-      "example": "J’ai mal à la tête.",
+      "example": "J’ai eu mal à l’épaule après le déménagement et demandé à mon frère de porter les derniers cartons.",
       "part": "loc. v.",
       "level": "基础",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.04-018",
+          "form": "cartons"
+        },
+        {
+          "id": "1.03-4",
+          "form": "frère"
+        },
+        {
+          "id": "book-8.01-011",
+          "form": "épaule"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-002",
@@ -1054,13 +2150,29 @@
       "subcategory": "8.02",
       "french": "le cigare",
       "chinese": "雪茄",
-      "example": "Mon oncle fume un cigare le soir devant la télévision.",
+      "example": "Un cigare oublié dans une boîte rappelle à mon père les voyages de son grand-père à Cuba.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-003",
+          "form": "boîte"
+        },
+        {
+          "id": "book-1.03-037",
+          "form": "grand-père"
+        },
+        {
+          "id": "book-1.03-023",
+          "form": "père"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "8.02-3",
@@ -1068,14 +2180,26 @@
       "subcategory": "8.02",
       "french": "la douleur",
       "chinese": "疼痛",
-      "example": "Ces médicaments calment les douleurs.",
+      "example": "La douleur l’empêchait de dormir, alors sa sœur l’accompagnait aux consultations et prenait des notes.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/dulœʁ/"
+      "ipa": "/dulœʁ/",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "1.03-3",
+          "form": "sœur"
+        },
+        {
+          "id": "book-8.04-019",
+          "form": "consultations"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-004",
@@ -1083,13 +2207,29 @@
       "subcategory": "8.02",
       "french": "la faiblesse",
       "chinese": "弱，虚弱",
-      "example": "Le malade a une faiblesse au cœur.",
+      "example": "Le patient décrit sa faiblesse au médecin et explique pourquoi il a quitté son travail plus tôt.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        },
+        {
+          "id": "book-8.02-012",
+          "form": "patient"
+        },
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-005",
@@ -1097,13 +2237,29 @@
       "subcategory": "8.02",
       "french": "fou, fol, folle",
       "chinese": "疯的，疯狂的",
-      "example": "Après la mort de sa femme, il est devenu fou.",
+      "example": "Dans ce roman, le village a cru l’inventeur fou avant de comprendre l’utilité de sa machine.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": "保留原书 fou、fol、folle 三种形式及例句。"
+      "note": "保留原书 fou、fol、folle 三种形式及例句。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-15.06-050",
+          "form": "utilité"
+        },
+        {
+          "id": "book-13.05-024",
+          "form": "roman"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-006",
@@ -1111,13 +2267,29 @@
       "subcategory": "8.02",
       "french": "le fumeur, la fumeuse",
       "chinese": "吸烟的人，吸烟者",
-      "example": "Les fumeurs ont un jour ou l’autre des problèmes de santé.",
+      "example": "Un ancien fumeur raconte son expérience aux étudiants qui préparent une exposition sur la santé.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-006",
+          "form": "exposition"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        },
+        {
+          "id": "book-8.02-016",
+          "form": "santé"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-007",
@@ -1125,13 +2297,29 @@
       "subcategory": "8.02",
       "french": "le malade, la malade",
       "chinese": "病人",
-      "example": "Le malade espère guérir vite.",
+      "example": "Les bénévoles apporteront des livres aux malades et organiseront un petit concert dans la salle commune de l’hôpital.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-030",
+          "form": "concert"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        },
+        {
+          "id": "book-8.04-006",
+          "form": "hôpital"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-008",
@@ -1139,13 +2327,29 @@
       "subcategory": "8.02",
       "french": "la maladie",
       "chinese": "疾病",
-      "example": "Elle mourut suite à une longue maladie.",
+      "example": "La maladie bouleverse leur vie, mais la famille organise les visites et partage les tâches quotidiennes.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.02-028",
+          "form": "tâches"
+        },
+        {
+          "id": "book-4.02-014",
+          "form": "visites"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-009",
@@ -1153,13 +2357,29 @@
       "subcategory": "8.02",
       "french": "la mort",
       "chinese": "死亡",
-      "example": "La mort est inévitable.",
+      "example": "Après la mort de son ami, le musicien retrouvait du réconfort dans les répétitions avec son groupe.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-10.01-014",
+          "form": "groupe"
+        },
+        {
+          "id": "book-14.01-002",
+          "form": "ami"
+        },
+        {
+          "id": "book-13.03-038",
+          "form": "musicien"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-010",
@@ -1167,13 +2387,29 @@
       "subcategory": "8.02",
       "french": "mourir",
       "chinese": "死亡，去世",
-      "example": "Il est mort dans un accident de voiture.",
+      "example": "Le personnage apprend que son père est en train de mourir et décide de rentrer au village.",
       "part": "v. i.",
       "level": "基础",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-013",
+          "form": "personnage"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        },
+        {
+          "id": "book-1.03-023",
+          "form": "père"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-011",
@@ -1181,13 +2417,29 @@
       "subcategory": "8.02",
       "french": "normal, normale",
       "chinese": "正常的",
-      "example": "La taille de cet enfant est normale pour son âge.",
+      "example": "Le médecin a expliqué que le résultat était normal, puis répondu aux questions restées sans réponse.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-10.04-016",
+          "form": "résultat"
+        },
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        },
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-012",
@@ -1195,13 +2447,29 @@
       "subcategory": "8.02",
       "french": "le patient, la patiente",
       "chinese": "病人，患者",
-      "example": "Ce médecin s’occupe très bien de ses patients.",
+      "example": "La patiente prépare ses questions dans un cahier et apporte les résultats de ses examens à la consultation.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.01-029",
+          "form": "cahier"
+        },
+        {
+          "id": "book-10.04-016",
+          "form": "résultats"
+        },
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-013",
@@ -1209,13 +2477,29 @@
       "subcategory": "8.02",
       "french": "la pipe",
       "chinese": "烟斗",
-      "example": "Mon grand-père fume la pipe.",
+      "example": "La pipe de mon grand-père reposait dans un tiroir avec sa montre et ses anciennes lunettes.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 61,
       "pdfPage": 68,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-042",
+          "form": "lunettes"
+        },
+        {
+          "id": "book-1.03-037",
+          "form": "grand-père"
+        },
+        {
+          "id": "book-6.03-007",
+          "form": "montre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-014",
@@ -1223,13 +2507,29 @@
       "subcategory": "8.02",
       "french": "se porter",
       "chinese": "处于……健康状况",
-      "example": "La mère et le bébé se portent bien.",
+      "example": "Depuis son retour à la maison, notre voisine se porte mieux et reprend les promenades avec son chien.",
       "part": "v. pron.",
       "level": "基础",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书写 porter (se)，统一为 se porter。"
+      "note": "原书写 porter (se)，统一为 se porter。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-009",
+          "form": "retour"
+        },
+        {
+          "id": "book-3.04-009",
+          "form": "chien"
+        },
+        {
+          "id": "book-4.02-025",
+          "form": "promenades"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "8.02-2",
@@ -1237,14 +2537,30 @@
       "subcategory": "8.02",
       "french": "le rhume",
       "chinese": "感冒",
-      "example": "J’ai un rhume et je tousse.",
+      "example": "Si son rhume persiste, le chanteur demandera conseil avant de confirmer sa participation au concert.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/ʁym/"
+      "ipa": "/ʁym/",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-038",
+          "form": "participation"
+        },
+        {
+          "id": "book-13.03-027",
+          "form": "chanteur"
+        },
+        {
+          "id": "book-13.03-030",
+          "form": "concert"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-016",
@@ -1252,13 +2568,29 @@
       "subcategory": "8.02",
       "french": "la santé",
       "chinese": "健康",
-      "example": "Être en bonne santé, c’est le plus important.",
+      "example": "La santé des salariés figure à l’ordre du jour de la réunion consacrée aux conditions de travail.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-019",
+          "form": "jour"
+        },
+        {
+          "id": "book-11.03-005",
+          "form": "conditions"
+        },
+        {
+          "id": "book-11.01-048",
+          "form": "salariés"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-017",
@@ -1266,13 +2598,29 @@
       "subcategory": "8.02",
       "french": "se sentir",
       "chinese": "感觉，自觉",
-      "example": "Il ne se sent pas très bien aujourd’hui.",
+      "example": "Je me suis senti fatigué dans le train et j’ai dormi jusqu’à l’arrivée à la gare.",
       "part": "v. pron.",
       "level": "基础",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书写 sentir (se)，统一为 se sentir。"
+      "note": "原书写 sentir (se)，统一为 se sentir。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-14.03-003",
+          "form": "arrivée"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        },
+        {
+          "id": "4.04-1",
+          "form": "train"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-018",
@@ -1280,13 +2628,29 @@
       "subcategory": "8.02",
       "french": "souffrir",
       "chinese": "遭受，感到痛苦",
-      "example": "Il souffre d’une douleur au genou.",
+      "example": "L’association accompagne les personnes qui souffrent et propose aussi une aide aux membres de leur famille.",
       "part": "v. i.",
       "level": "基础",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.04-021",
+          "form": "personnes"
+        },
+        {
+          "id": "book-7.02-003",
+          "form": "aide"
+        },
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-019",
@@ -1294,13 +2658,29 @@
       "subcategory": "8.02",
       "french": "le tabac",
       "chinese": "烟草",
-      "example": "Le tabac est dangereux pour la santé.",
+      "example": "L’odeur du tabac restait dans les rideaux de l’ancien café malgré les fenêtres ouvertes sur le jardin.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-9.01-034",
+          "form": "odeur"
+        },
+        {
+          "id": "book-2.03-043",
+          "form": "rideaux"
+        },
+        {
+          "id": "book-2.01-011",
+          "form": "fenêtres"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-020",
@@ -1308,13 +2688,29 @@
       "subcategory": "8.02",
       "french": "tousser",
       "chinese": "咳嗽",
-      "example": "La fumée de cigarette le fait tousser.",
+      "example": "L’enfant tousse pendant la lecture ; son père ferme le livre et l’accompagne auprès de l’infirmière scolaire.",
       "part": "v. i.",
       "level": "基础",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-023",
+          "form": "père"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfant"
+        },
+        {
+          "id": "book-8.04-007",
+          "form": "infirmière"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-021",
@@ -1322,13 +2718,25 @@
       "subcategory": "8.02",
       "french": "la vie",
       "chinese": "生活，生命",
-      "example": "Mon père a passé toute sa vie à travailler.",
+      "example": "Une vie moins chargée permettrait à notre collègue de consacrer davantage de temps à ses enfants.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-028",
+          "form": "collègue"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-022",
@@ -1336,13 +2744,25 @@
       "subcategory": "8.02",
       "french": "vif, vive",
       "chinese": "强烈的，剧烈的",
-      "example": "Il a une douleur vive à la jambe.",
+      "example": "Une vive douleur au poignet surprend le violoniste pendant la répétition ; il prévient aussitôt sa professeure.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-8.01-061",
+          "form": "poignet"
+        },
+        {
+          "id": "8.02-3",
+          "form": "douleur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-023",
@@ -1350,13 +2770,25 @@
       "subcategory": "8.02",
       "french": "vivant, vivante",
       "chinese": "活着的",
-      "example": "L’homme est gravement blessé mais vivant.",
+      "example": "Les secours ont retrouvé le promeneur vivant près d’une cabane où il avait passé la nuit.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-030",
+          "form": "nuit"
+        },
+        {
+          "id": "book-8.04-036",
+          "form": "secours"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-024",
@@ -1364,13 +2796,29 @@
       "subcategory": "8.02",
       "french": "vivre",
       "chinese": "生活，活着",
-      "example": "Mon grand-père a vécu presque 100 ans.",
+      "example": "Ma tante vit seule, mais partage souvent ses repas avec les voisins et participe aux activités du quartier.",
       "part": "v. i.",
       "level": "基础",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.06-001",
+          "form": "activités"
+        },
+        {
+          "id": "book-1.03-039",
+          "form": "tante"
+        },
+        {
+          "id": "book-2.01-023",
+          "form": "voisins"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-025",
@@ -1378,13 +2826,29 @@
       "subcategory": "8.02",
       "french": "anormal, anormale",
       "chinese": "不正常的，异常的",
-      "example": "Cet enfant tousse depuis plusieurs semaines. C’est anormal.",
+      "example": "Le bruit paraissait anormal au technicien, qui comparait les mesures avant d’arrêter la machine.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-16.04-011",
+          "form": "mesures"
+        },
+        {
+          "id": "book-9.01-003",
+          "form": "bruit"
+        },
+        {
+          "id": "book-11.01-049",
+          "form": "technicien"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-026",
@@ -1392,13 +2856,29 @@
       "subcategory": "8.02",
       "french": "atteint, atteinte",
       "chinese": "患有……的，受侵袭的",
-      "example": "Il est atteint d’une maladie au cœur.",
+      "example": "Cette association aide les familles dont un enfant est atteint d’une maladie qui nécessite des soins réguliers.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": "例句 être atteint de 指患有……；词条为过去分词阴阳性形式。"
+      "note": "例句 être atteint de 指患有……；词条为过去分词阴阳性形式。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfant"
+        },
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-027",
@@ -1406,13 +2886,29 @@
       "subcategory": "8.02",
       "french": "aveugle",
       "chinese": "瞎的，盲的",
-      "example": "Cet enfant est aveugle de naissance.",
+      "example": "Une voyageuse aveugle a demandé au personnel de la gare de l’accompagner jusqu’à son train.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-012",
+          "form": "personnel"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        },
+        {
+          "id": "4.04-1",
+          "form": "train"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-028",
@@ -1420,13 +2916,29 @@
       "subcategory": "8.02",
       "french": "blesser",
       "chinese": "伤害，使……受伤",
-      "example": "Le chien a blessé un enfant.",
+      "example": "Une chaussure mal adaptée peut blesser le pied et rendre la promenade pénible avant même la première pause.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-025",
+          "form": "promenade"
+        },
+        {
+          "id": "book-6.03-026",
+          "form": "chaussure"
+        },
+        {
+          "id": "book-8.03-010",
+          "form": "pause"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-029",
@@ -1434,13 +2946,29 @@
       "subcategory": "8.02",
       "french": "la blessure",
       "chinese": "伤，伤痛，伤口",
-      "example": "Il souffre d’une blessure au bras droit.",
+      "example": "Le médecin examinera la blessure après avoir écouté le récit de la chute sur le chantier.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.06-017",
+          "form": "chute"
+        },
+        {
+          "id": "book-13.05-048",
+          "form": "récit"
+        },
+        {
+          "id": "11.03-2",
+          "form": "chantier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-030",
@@ -1448,13 +2976,29 @@
       "subcategory": "8.02",
       "french": "le cancer",
       "chinese": "癌，癌症",
-      "example": "Mon oncle est mort d’un cancer du foie.",
+      "example": "Le laboratoire étudie le cancer et accueille des chercheurs qui présentent leurs travaux aux étudiants en médecine.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-026",
+          "form": "chercheurs"
+        },
+        {
+          "id": "book-11.03-014",
+          "form": "laboratoire"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-031",
@@ -1462,13 +3006,25 @@
       "subcategory": "8.02",
       "french": "cardiaque",
       "chinese": "心脏的",
-      "example": "Il souffre de troubles cardiaques.",
+      "example": "La spécialiste a commenté l’examen cardiaque avant de parler avec la patiente de ses prochaines consultations.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-018",
+          "form": "spécialiste"
+        },
+        {
+          "id": "book-8.02-012",
+          "form": "patiente"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-032",
@@ -1476,13 +3032,29 @@
       "subcategory": "8.02",
       "french": "la cigarette",
       "chinese": "香烟",
-      "example": "La cigarette tue.",
+      "example": "Une cigarette éteinte reste dans le cendrier du balcon, à côté du journal que mon oncle a oublié.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-003",
+          "form": "balcon"
+        },
+        {
+          "id": "book-13.05-008",
+          "form": "journal"
+        },
+        {
+          "id": "book-1.03-019",
+          "form": "oncle"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-033",
@@ -1490,13 +3062,29 @@
       "subcategory": "8.02",
       "french": "le décès",
       "chinese": "去世，死亡",
-      "example": "Le décès de sa mère l’a rendu très triste.",
+      "example": "L’annonce du décès avait interrompu la réunion, et chacun cherchait les mots pour soutenir sa collègue.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-027",
+          "form": "annonce"
+        },
+        {
+          "id": "book-12.02-024",
+          "form": "mots"
+        },
+        {
+          "id": "11.02-1",
+          "form": "réunion"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-034",
@@ -1504,13 +3092,29 @@
       "subcategory": "8.02",
       "french": "le délire",
       "chinese": "谵妄，妄想，胡言乱语",
-      "example": "Un délire est dû à une forte fièvre.",
+      "example": "L’infirmier signale un épisode de délire et décrit précisément les paroles du patient à l’équipe médicale.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“（医）妄想”；补充“谵妄”义以对应发热语境，例句照录原书。"
+      "note": "原书译“（医）妄想”；补充“谵妄”义以对应发热语境，例句照录原书。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.04-037",
+          "form": "épisode"
+        },
+        {
+          "id": "book-12.02-025",
+          "form": "paroles"
+        },
+        {
+          "id": "book-13.07-007",
+          "form": "équipe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-035",
@@ -1518,13 +3122,29 @@
       "subcategory": "8.02",
       "french": "la dépression",
       "chinese": "抑郁，抑郁症，消沉",
-      "example": "Après la mort de son ami, elle a fait une dépression.",
+      "example": "La conférence sur la dépression réunira des professionnels, des étudiants et des personnes qui souhaitent partager leur expérience.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-11.02-007",
+          "form": "conférence"
+        },
+        {
+          "id": "book-1.04-021",
+          "form": "personnes"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-036",
@@ -1532,13 +3152,25 @@
       "subcategory": "8.02",
       "french": "douloureux, douloureuse",
       "chinese": "疼痛的，痛苦的",
-      "example": "Cette maladie est très douloureuse.",
+      "example": "Cette séparation reste douloureuse, mais les amis de Samira l’invitent régulièrement à dîner ou à se promener.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-14.02-039",
+          "form": "séparation"
+        },
+        {
+          "id": "book-14.01-002",
+          "form": "amis"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-037",
@@ -1546,13 +3178,29 @@
       "subcategory": "8.02",
       "french": "étouffer",
       "chinese": "窒息，闷得喘不过气",
-      "example": "Il fait trop chaud, j’étouffe.",
+      "example": "L’actrice a dit qu’elle étouffait sous son costume et demandé une pause avant de reprendre la scène.",
       "part": "v. i.",
       "level": "进阶",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-017",
+          "form": "scène"
+        },
+        {
+          "id": "book-13.03-020",
+          "form": "actrice"
+        },
+        {
+          "id": "book-6.03-030",
+          "form": "costume"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "8.02-1",
@@ -1560,14 +3208,30 @@
       "subcategory": "8.02",
       "french": "la fièvre",
       "chinese": "发烧，发热",
-      "example": "Pierre tousse et a de la fièvre.",
+      "example": "La mère note l’heure à laquelle la fièvre apparaît et prépare ses questions pour le médecin.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/fjɛvʁ/"
+      "ipa": "/fjɛvʁ/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-016",
+          "form": "mère"
+        },
+        {
+          "id": "book-16.02-015",
+          "form": "heure"
+        },
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-039",
@@ -1575,13 +3239,29 @@
       "subcategory": "8.02",
       "french": "la folie",
       "chinese": "疯狂，精神失常",
-      "example": "La folie est difficile à soigner.",
+      "example": "Dans la pièce, la folie du roi inquiétait ses conseillers, qui hésitaient à révéler la vérité au peuple.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“精神病”；保留一般词汇义，不作为具体疾病名称。"
+      "note": "原书译“精神病”；保留一般词汇义，不作为具体疾病名称。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-15.04-016",
+          "form": "peuple"
+        },
+        {
+          "id": "book-15.03-023",
+          "form": "roi"
+        },
+        {
+          "id": "book-12.05-038",
+          "form": "vérité"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-040",
@@ -1589,13 +3269,29 @@
       "subcategory": "8.02",
       "french": "le handicap",
       "chinese": "残疾，障碍",
-      "example": "Son handicap physique l’empêche de trouver un travail.",
+      "example": "Son handicap ne l’empêche pas de travailler au laboratoire, dont l’équipe a adapté le matériel et les horaires.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.04-012",
+          "form": "matériel"
+        },
+        {
+          "id": "book-16.02-047",
+          "form": "horaires"
+        },
+        {
+          "id": "book-11.03-014",
+          "form": "laboratoire"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-041",
@@ -1603,13 +3299,25 @@
       "subcategory": "8.02",
       "french": "incapable",
       "chinese": "不能的，无能力的",
-      "example": "Le malade est incapable de marcher.",
+      "example": "Sans traduction, je serais incapable de remplir ce formulaire et de comprendre les conditions du contrat.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-005",
+          "form": "conditions"
+        },
+        {
+          "id": "book-11.03-028",
+          "form": "contrat"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-042",
@@ -1617,13 +3325,29 @@
       "subcategory": "8.02",
       "french": "l’infection",
       "chinese": "感染",
-      "example": "Il faut soigner rapidement la plaie pour éviter une infection.",
+      "example": "Le médecin recherche l’origine de l’infection et demande au patient quels symptômes sont apparus pendant le voyage.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.02-024",
+          "form": "origine"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyage"
+        },
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-043",
@@ -1631,13 +3355,29 @@
       "subcategory": "8.02",
       "french": "la lésion",
       "chinese": "损伤",
-      "example": "Une blessure est une lésion.",
+      "example": "La radiographie a révélé une lésion que la spécialiste a expliquée à l’aide d’un dessin.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 62,
       "pdfPage": 69,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-018",
+          "form": "dessin"
+        },
+        {
+          "id": "book-11.01-018",
+          "form": "spécialiste"
+        },
+        {
+          "id": "book-7.02-003",
+          "form": "aide"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-044",
@@ -1645,13 +3385,29 @@
       "subcategory": "8.02",
       "french": "le malaise",
       "chinese": "身体不适，不舒服",
-      "example": "Une femme n’a pas supporté la chaleur, elle a fait un malaise.",
+      "example": "La voyageuse décrit son malaise au personnel de la gare pendant que son amie appelle les secours.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-012",
+          "form": "personnel"
+        },
+        {
+          "id": "book-14.01-002",
+          "form": "amie"
+        },
+        {
+          "id": "book-4.02-016",
+          "form": "voyageuse"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-045",
@@ -1659,13 +3415,29 @@
       "subcategory": "8.02",
       "french": "le mort, la morte",
       "chinese": "死者",
-      "example": "L’accident de car a fait 32 morts.",
+      "example": "Dans le roman, les habitants veillaient le mort et apportaient des repas à sa famille.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“死亡”；本词条带冠词，为指人的名词，校正为“死者”，与 la mort 区分。"
+      "note": "原书译“死亡”；本词条带冠词，为指人的名词，校正为“死者”，与 la mort 区分。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-024",
+          "form": "roman"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-046",
@@ -1673,13 +3445,29 @@
       "subcategory": "8.02",
       "french": "la mortalité",
       "chinese": "死亡率",
-      "example": "Le taux de mortalité a baissé.",
+      "example": "Le rapport compare la mortalité dans plusieurs régions et souligne les limites des données disponibles.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.04-006",
+          "form": "données"
+        },
+        {
+          "id": "book-16.07-017",
+          "form": "limites"
+        },
+        {
+          "id": "book-3.01-018",
+          "form": "régions"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-047",
@@ -1687,13 +3475,29 @@
       "subcategory": "8.02",
       "french": "mortel, mortelle",
       "chinese": "必死的，致命的",
-      "example": "Tous les hommes sont mortels.",
+      "example": "Le documentaire évoquera cet accident mortel en donnant la parole aux familles et aux enquêteurs.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-001",
+          "form": "accident"
+        },
+        {
+          "id": "book-12.02-025",
+          "form": "parole"
+        },
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-048",
@@ -1701,13 +3505,29 @@
       "subcategory": "8.02",
       "french": "muet, muette",
       "chinese": "哑的，不能说话的",
-      "example": "Il est muet, il ne peut pas parler.",
+      "example": "L’enfant, muet depuis sa naissance, raconte ses histoires avec des images que ses camarades comprennent facilement.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-017",
+          "form": "naissance"
+        },
+        {
+          "id": "book-13.05-007",
+          "form": "images"
+        },
+        {
+          "id": "book-10.01-002",
+          "form": "camarades"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-049",
@@ -1715,13 +3535,29 @@
       "subcategory": "8.02",
       "french": "la plaie",
       "chinese": "伤口，创伤",
-      "example": "Le médecin soigne les plaies d’une des victimes de l’accident.",
+      "example": "L’infirmière a examiné la plaie et demandé comment l’accident s’était produit pendant les travaux du jardin.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-001",
+          "form": "accident"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "book-8.04-007",
+          "form": "infirmière"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-050",
@@ -1729,13 +3565,29 @@
       "subcategory": "8.02",
       "french": "sain, saine",
       "chinese": "健康的",
-      "example": "Pierre est sain de corps et d’esprit.",
+      "example": "La cantine cherche à proposer un repas sain sans dépasser le budget des familles du quartier.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-006",
+          "form": "budget"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-051",
@@ -1743,13 +3595,25 @@
       "subcategory": "8.02",
       "french": "la souffrance",
       "chinese": "痛苦",
-      "example": "La souffrance des malades est terrible.",
+      "example": "La souffrance de son frère l’inquiétait, mais elle ne savait pas comment aborder le sujet avec lui.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-12.04-065",
+          "form": "sujet"
+        },
+        {
+          "id": "1.03-4",
+          "form": "frère"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-052",
@@ -1757,13 +3621,29 @@
       "subcategory": "8.02",
       "french": "sourd, sourde",
       "chinese": "聋的",
-      "example": "Une personne qui n’entend pas est sourde.",
+      "example": "Une guide sourde présente le musée en langue des signes et répond aux questions du groupe.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-12.02-032",
+          "form": "signes"
+        },
+        {
+          "id": "book-4.02-020",
+          "form": "guide"
+        },
+        {
+          "id": "book-10.01-014",
+          "form": "groupe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-053",
@@ -1771,13 +3651,29 @@
       "subcategory": "8.02",
       "french": "surmonter",
       "chinese": "战胜，克服",
-      "example": "Il a finalement réussi à surmonter la maladie.",
+      "example": "Avec l’aide de ses proches, cette étudiante a surmonté une période difficile et repris ses études.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-16.01-017",
+          "form": "période"
+        },
+        {
+          "id": "book-10.03-003",
+          "form": "études"
+        },
+        {
+          "id": "book-7.02-003",
+          "form": "aide"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-054",
@@ -1785,13 +3681,29 @@
       "subcategory": "8.02",
       "french": "survivre",
       "chinese": "幸存，生还",
-      "example": "Cet homme a survécu à un accident de voiture.",
+      "example": "Le témoin raconte comment sa famille a survécu à l’inondation et trouvé refuge dans l’école du village.",
       "part": "v. i.",
       "level": "进阶",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.07-022",
+          "form": "témoin"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-055",
@@ -1799,13 +3711,29 @@
       "subcategory": "8.02",
       "french": "trembler",
       "chinese": "发抖，打颤",
-      "example": "Il tremble à cause du froid.",
+      "example": "Après cette nuit dans la montagne, les enfants trembleront peut-être encore en racontant leur aventure à leurs parents.",
       "part": "v. i.",
       "level": "进阶",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-002",
+          "form": "aventure"
+        },
+        {
+          "id": "book-16.02-030",
+          "form": "nuit"
+        },
+        {
+          "id": "book-4.02-008",
+          "form": "montagne"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.02-056",
@@ -1813,13 +3741,29 @@
       "subcategory": "8.02",
       "french": "le trouble",
       "chinese": "障碍，紊乱",
-      "example": "Il souffre de troubles du comportement.",
+      "example": "La consultation permet de parler du trouble du sommeil qui perturbe son travail et ses relations familiales.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-14.01-010",
+          "form": "relations"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        },
+        {
+          "id": "8.03-4",
+          "form": "sommeil"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-001",
@@ -1827,13 +3771,29 @@
       "subcategory": "8.03",
       "french": "le besoin",
       "chinese": "需要，需求",
-      "example": "Mon père travaille de trop, il a besoin de repos.",
+      "example": "Le besoin de calme a conduit ma sœur à louer une chambre loin du centre et de la circulation.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-002",
+          "form": "centre"
+        },
+        {
+          "id": "4.03-1",
+          "form": "circulation"
+        },
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-002",
@@ -1841,13 +3801,29 @@
       "subcategory": "8.03",
       "french": "se coucher",
       "chinese": "就寝，上床睡觉",
-      "example": "En vacances Pierre se couche tous les soirs vers 22 h 00.",
+      "example": "Je me couche après avoir préparé mon sac et vérifié l’horaire du premier train du matin.",
       "part": "v. pron.",
       "level": "基础",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书写 coucher (se)，统一为 se coucher；区别于 dormir（睡觉）。"
+      "note": "原书写 coucher (se)，统一为 se coucher；区别于 dormir（睡觉）。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-026",
+          "form": "matin"
+        },
+        {
+          "id": "book-16.02-047",
+          "form": "horaire"
+        },
+        {
+          "id": "book-6.03-053",
+          "form": "sac"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-003",
@@ -1855,13 +3831,29 @@
       "subcategory": "8.03",
       "french": "la croissance",
       "chinese": "生长，发育",
-      "example": "Cet enfant est en âge de croissance.",
+      "example": "La croissance des enfants obligeait leurs parents à acheter de nouvelles chaussures avant chaque rentrée scolaire.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "1.03-2",
+          "form": "parents"
+        },
+        {
+          "id": "book-6.03-026",
+          "form": "chaussures"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-004",
@@ -1869,13 +3861,29 @@
       "subcategory": "8.03",
       "french": "dormir",
       "chinese": "睡觉",
-      "example": "La nuit, mon père n’arrive pas à dormir.",
+      "example": "Le bébé dort dans la chambre pendant que nous parlons doucement des préparatifs du voyage.",
       "part": "v. i.",
       "level": "基础",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-031",
+          "form": "bébé"
+        },
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-005",
@@ -1883,13 +3891,25 @@
       "subcategory": "8.03",
       "french": "l’équilibre",
       "chinese": "平衡",
-      "example": "Pierre a perdu l’équilibre et est tombé.",
+      "example": "Les danseurs travailleront leur équilibre avant d’apprendre les mouvements plus complexes du prochain spectacle.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-032",
+          "form": "danseurs"
+        },
+        {
+          "id": "book-13.06-008",
+          "form": "mouvements"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-006",
@@ -1897,13 +3917,25 @@
       "subcategory": "8.03",
       "french": "l’existence",
       "chinese": "存在；一生，生活",
-      "example": "Il a eu de nombreux problèmes dans son existence.",
+      "example": "L’existence de cette archive change notre lecture de l’histoire et ouvre de nouvelles pistes de recherche.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“存在”；本例指一生、生活，补充对应释义。"
+      "note": "原书译“存在”；本例指一生、生活，补充对应释义。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-006",
+          "form": "histoire"
+        },
+        {
+          "id": "book-13.06-027",
+          "form": "pistes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-007",
@@ -1911,13 +3943,29 @@
       "subcategory": "8.03",
       "french": "faible",
       "chinese": "弱的，虚弱的",
-      "example": "Le malade est de plus en plus faible.",
+      "example": "Encore faible après sa maladie, notre voisine a demandé de l’aide pour porter les courses jusqu’à sa porte.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-023",
+          "form": "voisine"
+        },
+        {
+          "id": "book-7.02-003",
+          "form": "aide"
+        },
+        {
+          "id": "book-8.02-008",
+          "form": "maladie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-008",
@@ -1925,13 +3973,29 @@
       "subcategory": "8.03",
       "french": "l’influence",
       "chinese": "影响",
-      "example": "Il exerce une mauvaise influence sur son ami.",
+      "example": "L’influence du bruit sur le sommeil intéresse les chercheurs qui étudient les logements proches de l’aéroport.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-002",
+          "form": "aéroport"
+        },
+        {
+          "id": "book-9.01-003",
+          "form": "bruit"
+        },
+        {
+          "id": "book-2.01-035",
+          "form": "logements"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-009",
@@ -1939,13 +4003,29 @@
       "subcategory": "8.03",
       "french": "se lever",
       "chinese": "起床，起来",
-      "example": "Aurélie se lève le matin à 8 h 00.",
+      "example": "Quand il travaillait à l’usine, mon père se levait avant le soleil pour prendre le premier bus.",
       "part": "v. pron.",
       "level": "基础",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书写 lever (se)，统一为 se lever。"
+      "note": "原书写 lever (se)，统一为 se lever。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-020",
+          "form": "usine"
+        },
+        {
+          "id": "3.03-2",
+          "form": "soleil"
+        },
+        {
+          "id": "book-1.03-023",
+          "form": "père"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-010",
@@ -1953,13 +4033,25 @@
       "subcategory": "8.03",
       "french": "la pause",
       "chinese": "暂停，休息",
-      "example": "Je fais une pause le midi pour manger.",
+      "example": "Pendant la pause, les ouvriers prennent un café et discutent des travaux prévus pour la semaine.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-011",
+          "form": "ouvriers"
+        },
+        {
+          "id": "book-16.02-036",
+          "form": "semaine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-011",
@@ -1967,13 +4059,29 @@
       "subcategory": "8.03",
       "french": "physique",
       "chinese": "身体的",
-      "example": "Aurélie a des problèmes physiques.",
+      "example": "Une activité physique régulière trouverait mieux sa place dans mon emploi du temps si le gymnase était plus proche.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 63,
       "pdfPage": 70,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-10.01-010",
+          "form": "emploi du temps"
+        },
+        {
+          "id": "book-1.06-001",
+          "form": "activité"
+        },
+        {
+          "id": "book-11.03-008",
+          "form": "emploi"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-012",
@@ -1981,13 +4089,29 @@
       "subcategory": "8.03",
       "french": "la pression",
       "chinese": "压力",
-      "example": "Il ressent une pression dans l’oreille.",
+      "example": "La pression au travail inquiète cette salariée, qui souhaite discuter de ses horaires avec sa responsable.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-048",
+          "form": "salariée"
+        },
+        {
+          "id": "book-16.02-047",
+          "form": "horaires"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "8.03-3",
@@ -1995,13 +4119,29 @@
       "subcategory": "8.03",
       "french": "se reposer",
       "chinese": "休息",
-      "example": "Le dimanche, je me repose dans mon jardin.",
+      "example": "Nous nous sommes reposés à l’ombre avant de reprendre le sentier qui mène au sommet.",
       "part": "v. pron.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书写 reposer (se)，统一为 se reposer。"
+      "note": "原书写 reposer (se)，统一为 se reposer。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-061",
+          "form": "sommet"
+        },
+        {
+          "id": "book-3.03-012",
+          "form": "ombre"
+        },
+        {
+          "id": "book-3.01-040",
+          "form": "sentier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-014",
@@ -2009,13 +4149,29 @@
       "subcategory": "8.03",
       "french": "respirer",
       "chinese": "呼吸",
-      "example": "On peut respirer par le nez ou par la bouche.",
+      "example": "Le médecin observe comment le patient respire et lui demande de décrire la gêne ressentie pendant l’effort.",
       "part": "v. i.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.06-004",
+          "form": "effort"
+        },
+        {
+          "id": "book-8.02-012",
+          "form": "patient"
+        },
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-015",
@@ -2023,13 +4179,25 @@
       "subcategory": "8.03",
       "french": "se réveiller",
       "chinese": "醒，醒来",
-      "example": "Je me suis réveillé au milieu de la nuit, car j’ai entendu du bruit.",
+      "example": "Je me réveillerai plus tôt demain pour préparer le déjeuner avant le départ des enfants.",
       "part": "v. pron.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书写 réveiller (se)，统一为 se réveiller，与下组及物动词 réveiller（叫醒）区分。"
+      "note": "原书写 réveiller (se)，统一为 se réveiller，与下组及物动词 réveiller（叫醒）区分。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-5.02-045",
+          "form": "déjeuner"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-016",
@@ -2037,13 +4205,29 @@
       "subcategory": "8.03",
       "french": "souffler",
       "chinese": "吹，吹气",
-      "example": "Il a soufflé les bougies.",
+      "example": "Ma fille souffle sur la soupe pendant que son frère coupe le pain et remplit les verres.",
       "part": "v. t. / i.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-035",
+          "form": "verres"
+        },
+        {
+          "id": "book-5.02-029",
+          "form": "soupe"
+        },
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-017",
@@ -2051,13 +4235,29 @@
       "subcategory": "8.03",
       "french": "subir",
       "chinese": "遭受，经受，接受",
-      "example": "Mon grand-père a subi une opération du cœur.",
+      "example": "Le village a subi une longue coupure d’électricité après la chute d’un arbre sur la route.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "例句 subir une opération 指接受、经受手术。"
+      "note": "例句 subir une opération 指接受、经受手术。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-7.02-021",
+          "form": "électricité"
+        },
+        {
+          "id": "3.04-1",
+          "form": "arbre"
+        },
+        {
+          "id": "book-13.06-017",
+          "form": "chute"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-018",
@@ -2065,13 +4265,29 @@
       "subcategory": "8.03",
       "french": "l’aspiration",
       "chinese": "吸气，吸入",
-      "example": "L’aspiration est l’action d’aspirer de l’air.",
+      "example": "Le professeur décrit l’aspiration de l’air dans les poumons à l’aide d’un schéma projeté au tableau.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“呼吸”；例句侧重吸气动作，按语境调整。；原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。"
+      "note": "原书译“呼吸”；例句侧重吸气动作，按语境调整。；原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.02-064",
+          "form": "schéma"
+        },
+        {
+          "id": "book-10.03-012",
+          "form": "professeur"
+        },
+        {
+          "id": "book-7.02-003",
+          "form": "aide"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-019",
@@ -2079,13 +4295,29 @@
       "subcategory": "8.03",
       "french": "aspirer",
       "chinese": "吸气，吸入",
-      "example": "Il aspire de l’air.",
+      "example": "Avant chaque réplique, le comédien aspirait lentement l’air puis projetait sa voix vers le fond du théâtre.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。"
+      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-007",
+          "form": "comédien"
+        },
+        {
+          "id": "book-13.03-019",
+          "form": "théâtre"
+        },
+        {
+          "id": "book-16.08-015",
+          "form": "fond"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-020",
@@ -2093,13 +4325,29 @@
       "subcategory": "8.03",
       "french": "blessé, blessée",
       "chinese": "受伤的",
-      "example": "Ils transportent l’homme blessé à l’hôpital.",
+      "example": "Le promeneur blessé attend les secours dans une cabane, accompagné de deux amis qui connaissent le sentier.",
       "part": "adj. / p. p.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。"
+      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-040",
+          "form": "sentier"
+        },
+        {
+          "id": "book-14.01-002",
+          "form": "amis"
+        },
+        {
+          "id": "book-8.04-036",
+          "form": "secours"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-021",
@@ -2107,13 +4355,29 @@
       "subcategory": "8.03",
       "french": "s’endormir",
       "chinese": "入睡，睡着",
-      "example": "Il était fatigué, il s’est endormi devant la télévision.",
+      "example": "Ma sœur s’est endormie sur le canapé avant la fin du film que nous avions choisi ensemble.",
       "part": "v. pron.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书写 endormir (s’)，统一为 s’endormir。；原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。"
+      "note": "原书写 endormir (s’)，统一为 s’endormir。；原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-014",
+          "form": "fin"
+        },
+        {
+          "id": "book-13.03-008",
+          "form": "film"
+        },
+        {
+          "id": "1.03-3",
+          "form": "sœur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-022",
@@ -2121,13 +4385,29 @@
       "subcategory": "8.03",
       "french": "la fatigue",
       "chinese": "疲劳",
-      "example": "Il continue le travail malgré la fatigue.",
+      "example": "La fatigue rend la lecture difficile après une journée de travail et deux heures de transport.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。"
+      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-020",
+          "form": "transport"
+        },
+        {
+          "id": "book-16.02-020",
+          "form": "journée"
+        },
+        {
+          "id": "book-16.02-015",
+          "form": "heures"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-023",
@@ -2135,13 +4415,29 @@
       "subcategory": "8.03",
       "french": "fatigué, fatiguée",
       "chinese": "累的，疲劳的",
-      "example": "Elle a toujours l’air fatigué.",
+      "example": "Fatiguée par le voyage, elle préférerait dîner à l’hôtel plutôt que traverser encore toute la ville.",
       "part": "adj. / p. p.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。"
+      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "3.01-1",
+          "form": "ville"
+        },
+        {
+          "id": "4.02-3",
+          "form": "hôtel"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-024",
@@ -2149,13 +4445,29 @@
       "subcategory": "8.03",
       "french": "grandir",
       "chinese": "长大，生长",
-      "example": "Cet enfant n’arrête pas de grandir.",
+      "example": "Les enfants grandissent vite, alors les familles échangent leurs vêtements à la fête organisée par l’école.",
       "part": "v. i.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。"
+      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-008",
+          "form": "fête"
+        },
+        {
+          "id": "book-6.03-017",
+          "form": "vêtements"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-025",
@@ -2163,13 +4475,29 @@
       "subcategory": "8.03",
       "french": "inconscient, inconsciente",
       "chinese": "无意识的，失去知觉的",
-      "example": "Le malade a fait un malaise, il était inconscient.",
+      "example": "Les secours ont trouvé le conducteur inconscient et transmis les premières informations à l’équipe de l’hôpital.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。"
+      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-033",
+          "form": "conducteur"
+        },
+        {
+          "id": "book-4.02-007",
+          "form": "informations"
+        },
+        {
+          "id": "book-13.07-007",
+          "form": "équipe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-026",
@@ -2177,13 +4505,29 @@
       "subcategory": "8.03",
       "french": "las, lasse",
       "chinese": "累的，疲倦的",
-      "example": "Pierre se sent las après une journée de travail.",
+      "example": "Las d’attendre sous la pluie, les voyageurs cherchent un café près de la gare pour se réchauffer.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。"
+      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.03-1",
+          "form": "pluie"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        },
+        {
+          "id": "book-4.02-016",
+          "form": "voyageurs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-027",
@@ -2191,13 +4535,29 @@
       "subcategory": "8.03",
       "french": "nécessiter",
       "chinese": "需要",
-      "example": "Son état de santé nécessite la prise de plusieurs médicaments.",
+      "example": "La réparation nécessitera plusieurs pièces neuves et l’intervention d’un technicien formé à ce modèle de machine.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。"
+      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-049",
+          "form": "technicien"
+        },
+        {
+          "id": "book-15.06-020",
+          "form": "machine"
+        },
+        {
+          "id": "book-8.04-025",
+          "form": "intervention"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-028",
@@ -2205,13 +4565,29 @@
       "subcategory": "8.03",
       "french": "physiologique",
       "chinese": "生理学的，生理的",
-      "example": "Aurélie a des troubles physiologiques.",
+      "example": "Ce cours explique les changements physiologiques liés au sommeil à partir d’exemples accessibles aux étudiants.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。"
+      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.13-003",
+          "form": "changements"
+        },
+        {
+          "id": "book-10.02-012",
+          "form": "exemples"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-029",
@@ -2219,13 +4595,29 @@
       "subcategory": "8.03",
       "french": "le repos",
       "chinese": "休息",
-      "example": "Une bonne nuit de repos est essentielle.",
+      "example": "Après la récolte, les agriculteurs profitaient de quelques jours de repos pour retrouver leur famille.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。"
+      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-001",
+          "form": "agriculteurs"
+        },
+        {
+          "id": "book-15.06-047",
+          "form": "récolte"
+        },
+        {
+          "id": "book-16.02-019",
+          "form": "jours"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-030",
@@ -2233,13 +4625,29 @@
       "subcategory": "8.03",
       "french": "la respiration",
       "chinese": "呼吸",
-      "example": "Elle fait des exercices de respiration.",
+      "example": "La respiration du bébé devient plus calme pendant que sa mère lui chante une chanson près du lit.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。"
+      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-011",
+          "form": "lit"
+        },
+        {
+          "id": "book-13.03-025",
+          "form": "chanson"
+        },
+        {
+          "id": "book-1.03-016",
+          "form": "mère"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-031",
@@ -2247,13 +4655,29 @@
       "subcategory": "8.03",
       "french": "réveiller",
       "chinese": "叫醒，唤醒",
-      "example": "Elle réveille ses enfants à 6 h 30.",
+      "example": "Réveille ton frère avant de préparer le petit déjeuner ; le bus pour l’école part dans une heure.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。"
+      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "10.01-1",
+          "form": "école"
+        },
+        {
+          "id": "book-16.02-015",
+          "form": "heure"
+        },
+        {
+          "id": "1.03-4",
+          "form": "frère"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-032",
@@ -2261,13 +4685,29 @@
       "subcategory": "8.03",
       "french": "la solitude",
       "chinese": "孤独",
-      "example": "Les personnes âgées font souvent face à la solitude.",
+      "example": "Pour rompre sa solitude, mon voisin s’inscrit à un atelier de cuisine et invite parfois ses collègues.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。"
+      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-023",
+          "form": "voisin"
+        },
+        {
+          "id": "book-11.03-022",
+          "form": "atelier"
+        },
+        {
+          "id": "book-11.01-028",
+          "form": "collègues"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "8.03-4",
@@ -2275,14 +4715,26 @@
       "subcategory": "8.03",
       "french": "le sommeil",
       "chinese": "睡眠",
-      "example": "J’ai besoin de huit heures de sommeil par nuit.",
+      "example": "Le bruit des travaux a interrompu mon sommeil, alors j’ai quitté la chambre pour lire dans la cuisine.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
       "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
-      "ipa": "/sɔmɛj/"
+      "ipa": "/sɔmɛj/",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        },
+        {
+          "id": "book-9.01-003",
+          "form": "bruit"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-034",
@@ -2290,13 +4742,29 @@
       "subcategory": "8.03",
       "french": "le souffle",
       "chinese": "气息，呼吸，肺活量",
-      "example": "Il faut avoir du souffle pour pouvoir gonfler un ballon.",
+      "example": "Après la montée, le promeneur reprend son souffle et regarde la vallée avant de photographier le village.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“吹气”；avoir du souffle 在此指有足够气力、肺活量。；原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。"
+      "note": "原书译“吹气”；avoir du souffle 在此指有足够气力、肺活量。；原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-013",
+          "form": "montée"
+        },
+        {
+          "id": "book-3.02-063",
+          "form": "vallée"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-035",
@@ -2304,13 +4772,29 @@
       "subcategory": "8.03",
       "french": "la souplesse",
       "chinese": "柔软，灵活性",
-      "example": "La danseuse fait preuve d’une grande souplesse.",
+      "example": "La professeure observera la souplesse des danseurs avant de choisir les exercices adaptés à leur niveau.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。"
+      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-10.04-013",
+          "form": "niveau"
+        },
+        {
+          "id": "book-10.02-013",
+          "form": "exercices"
+        },
+        {
+          "id": "book-11.01-032",
+          "form": "danseurs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-036",
@@ -2318,13 +4802,29 @@
       "subcategory": "8.03",
       "french": "supporter",
       "chinese": "忍受，承受",
-      "example": "Je ne supporte pas la fumée de cigarette.",
+      "example": "Je supporte mal le bruit du chantier, surtout lorsque je prépare mes examens dans ma chambre.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。"
+      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "11.03-2",
+          "form": "chantier"
+        },
+        {
+          "id": "book-9.01-003",
+          "form": "bruit"
+        },
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-037",
@@ -2332,13 +4832,29 @@
       "subcategory": "8.03",
       "french": "vieillir",
       "chinese": "变老，衰老",
-      "example": "Je n’ai pas envie de vieillir.",
+      "example": "En vieillissant, mon grand-père consacrait davantage de temps au jardin et moins aux longs voyages.",
       "part": "v. i.",
       "level": "基础",
       "bookPage": 64,
       "pdfPage": 71,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。"
+      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-037",
+          "form": "grand-père"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyages"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.03-038",
@@ -2346,13 +4862,29 @@
       "subcategory": "8.03",
       "french": "vital, vitale",
       "chinese": "必需的，必要的，维持生命的",
-      "example": "Manger et boire sont des besoins vitaux.",
+      "example": "L’accès à l’eau reste vital pour les habitants dont les maisons ont été détruites par l’inondation.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 65,
       "pdfPage": 72,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。"
+      "note": "原书第64页第二组仍标“基础词汇”，依原标注保留；未推定改为进阶。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-027",
+          "form": "accès"
+        },
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "2.01-1",
+          "form": "maisons"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-001",
@@ -2360,13 +4892,29 @@
       "subcategory": "8.04",
       "french": "appliquer",
       "chinese": "用，涂抹，敷",
-      "example": "Elle applique de la crème sur la plaie.",
+      "example": "L’infirmière a appliqué une compresse sur le bras du patient et expliqué ce qu’elle faisait à son enfant.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 65,
       "pdfPage": 72,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfant"
+        },
+        {
+          "id": "book-8.01-002",
+          "form": "bras"
+        },
+        {
+          "id": "book-8.04-007",
+          "form": "infirmière"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-002",
@@ -2374,13 +4922,25 @@
       "subcategory": "8.04",
       "french": "le dentiste, la dentiste",
       "chinese": "牙医",
-      "example": "Les enfants n’aiment pas aller chez le dentiste.",
+      "example": "La dentiste montre la radiographie à ma fille et lui explique patiemment le déroulement de l’examen.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 65,
       "pdfPage": 72,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-007",
+          "form": "fille"
+        },
+        {
+          "id": "book-8.04-004",
+          "form": "examen"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-003",
@@ -2388,13 +4948,29 @@
       "subcategory": "8.04",
       "french": "le docteur, la doctoresse",
       "chinese": "医生",
-      "example": "J’ai de la fièvre depuis deux jours, c’est pour cela que j’ai pris un rendez-vous chez le docteur.",
+      "example": "Le docteur recevra mon père après la réunion médicale et examinera les résultats apportés par ma sœur.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 65,
       "pdfPage": 72,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书把 doctoresse 前的冠词印为 le，校正为 la；词形 doctoresse 按原书保留。"
+      "note": "原书把 doctoresse 前的冠词印为 le，校正为 la；词形 doctoresse 按原书保留。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "11.02-1",
+          "form": "réunion"
+        },
+        {
+          "id": "book-10.04-016",
+          "form": "résultats"
+        },
+        {
+          "id": "book-1.03-023",
+          "form": "père"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-004",
@@ -2402,13 +4978,29 @@
       "subcategory": "8.04",
       "french": "l’examen",
       "chinese": "检查，检查项目",
-      "example": "Aurélie a dû faire un bilan de santé, elle attend maintenant les résultats des examens.",
+      "example": "Cet examen inquiète le patient, qui note ses questions avant de rencontrer la spécialiste à l’hôpital.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 65,
       "pdfPage": 72,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-018",
+          "form": "spécialiste"
+        },
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        },
+        {
+          "id": "book-8.04-006",
+          "form": "hôpital"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-005",
@@ -2416,13 +5008,29 @@
       "subcategory": "8.04",
       "french": "examiner",
       "chinese": "检查，诊察",
-      "example": "Le docteur examine ses patients.",
+      "example": "La médecin examinait l’enfant pendant que son père cherchait le carnet de santé dans son sac.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 65,
       "pdfPage": 72,
       "source": "法语基础词汇分类学习手册",
-      "note": "与第七单元“审核文件”语境区分。"
+      "note": "与第七单元“审核文件”语境区分。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-053",
+          "form": "sac"
+        },
+        {
+          "id": "book-1.03-023",
+          "form": "père"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfant"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-006",
@@ -2430,13 +5038,29 @@
       "subcategory": "8.04",
       "french": "l’hôpital",
       "chinese": "医院",
-      "example": "L’hôpital est un établissement où l’on soigne les malades.",
+      "example": "L’hôpital accueille des étudiants qui découvrent le travail des infirmières et participent aux réunions de service.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 65,
       "pdfPage": 72,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-7.02-013",
+          "form": "service"
+        },
+        {
+          "id": "11.02-1",
+          "form": "réunions"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-007",
@@ -2444,13 +5068,29 @@
       "subcategory": "8.04",
       "french": "l’infirmier, l’infirmière",
       "chinese": "护士",
-      "example": "L’infirmier travaille dans un hôpital.",
+      "example": "Un infirmier a accompagné la patiente jusqu’à sa chambre pendant que sa famille attendait dans le couloir.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 65,
       "pdfPage": 72,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-031",
+          "form": "couloir"
+        },
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-008",
@@ -2458,13 +5098,29 @@
       "subcategory": "8.04",
       "french": "le médecin, la médecin",
       "chinese": "医生",
-      "example": "Aurélie a fait un malaise, il faut appeler le médecin.",
+      "example": "Le médecin écoute mon récit et compare les symptômes avec les informations déjà présentes dans mon dossier.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 65,
       "pdfPage": 72,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书标注 le, la médecin，按原书保留阴阳性形式。"
+      "note": "原书标注 le, la médecin，按原书保留阴阳性形式。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-048",
+          "form": "récit"
+        },
+        {
+          "id": "book-4.02-007",
+          "form": "informations"
+        },
+        {
+          "id": "book-7.01-025",
+          "form": "dossier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-009",
@@ -2472,13 +5128,25 @@
       "subcategory": "8.04",
       "french": "l’opération",
       "chinese": "手术",
-      "example": "Le patient a subi une opération à l’estomac.",
+      "example": "L’opération aura lieu après les examens prévus et l’entretien de la famille avec l’équipe médicale.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 65,
       "pdfPage": 72,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.07-007",
+          "form": "équipe"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-010",
@@ -2486,13 +5154,25 @@
       "subcategory": "8.04",
       "french": "sauver",
       "chinese": "挽救，救助",
-      "example": "Un médecin sauve des vies.",
+      "example": "L’association forme des volontaires qui souhaitent apprendre à porter secours et à aider à sauver des vies.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 65,
       "pdfPage": 72,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        },
+        {
+          "id": "book-8.02-021",
+          "form": "vies"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-011",
@@ -2500,13 +5180,29 @@
       "subcategory": "8.04",
       "french": "le soin",
       "chinese": "照顾，关心；护理，治疗",
-      "example": "L’infirmier donne des soins au patient.",
+      "example": "La famille a partagé le soin des enfants pour permettre à leur mère de suivre sa formation.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 65,
       "pdfPage": 72,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-016",
+          "form": "mère"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-012",
@@ -2514,13 +5210,25 @@
       "subcategory": "8.04",
       "french": "le traitement",
       "chinese": "治疗，疗法",
-      "example": "Il doit prendre ce traitement pendant deux semaines.",
+      "example": "Le traitement occupe une place importante dans sa journée, mais elle garde du temps pour peindre et voir ses amis.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 65,
       "pdfPage": 72,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-020",
+          "form": "journée"
+        },
+        {
+          "id": "book-14.01-002",
+          "form": "amis"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-013",
@@ -2528,13 +5236,29 @@
       "subcategory": "8.04",
       "french": "absorber",
       "chinese": "吸收，吃，服用",
-      "example": "Il a absorbé des médicaments contre les maux de ventre.",
+      "example": "Le chercheur observait comment ce matériau absorbait l’eau et notait les résultats après chaque expérience.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 65,
       "pdfPage": 72,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-2.04-028",
+          "form": "matériau"
+        },
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "book-11.01-026",
+          "form": "chercheur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-014",
@@ -2542,13 +5266,29 @@
       "subcategory": "8.04",
       "french": "l’absorption",
       "chinese": "吸收；服用，吃，喝",
-      "example": "L’absorption de médicaments et d’alcool n’est pas recommandée.",
+      "example": "L’absorption de cette substance est étudiée au laboratoire, puis expliquée aux étudiants pendant le cours de physiologie.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 65,
       "pdfPage": 72,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.04-035",
+          "form": "substance"
+        },
+        {
+          "id": "book-11.03-014",
+          "form": "laboratoire"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-015",
@@ -2556,13 +5296,25 @@
       "subcategory": "8.04",
       "french": "l’aiguille",
       "chinese": "针",
-      "example": "L’aiguille s’est cassée.",
+      "example": "La couturière a laissé tomber son aiguille et demandé aux enfants de rester loin de la table.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 65,
       "pdfPage": 72,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-016",
@@ -2570,13 +5322,29 @@
       "subcategory": "8.04",
       "french": "artificiel, artificielle",
       "chinese": "人造的",
-      "example": "Les médecins ont essayé de créer un cœur artificiel.",
+      "example": "Une lumière artificielle éclaire les plantes que les chercheurs cultivent dans une pièce sans fenêtre du laboratoire.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 65,
       "pdfPage": 72,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-026",
+          "form": "chercheurs"
+        },
+        {
+          "id": "book-3.02-010",
+          "form": "lumière"
+        },
+        {
+          "id": "book-11.03-014",
+          "form": "laboratoire"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-017",
@@ -2584,13 +5352,29 @@
       "subcategory": "8.04",
       "french": "la bande",
       "chinese": "绷带，带子",
-      "example": "Il a mis une bande autour de son poignet.",
+      "example": "L’infirmière retirera la bande après avoir expliqué l’examen à la patiente et répondu à ses questions.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 65,
       "pdfPage": 72,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        },
+        {
+          "id": "book-8.04-007",
+          "form": "infirmière"
+        },
+        {
+          "id": "book-8.02-012",
+          "form": "patiente"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-018",
@@ -2598,13 +5382,29 @@
       "subcategory": "8.04",
       "french": "clinique",
       "chinese": "临床的",
-      "example": "L’infirmière a suivi une formation clinique.",
+      "example": "L’étude clinique présentée au séminaire réunit plusieurs équipes qui comparent leurs méthodes et discutent leurs résultats.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 65,
       "pdfPage": 72,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书未加冠词，此处为形容词，区别于 la clinique（诊所）。"
+      "note": "原书未加冠词，此处为形容词，区别于 la clinique（诊所）。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-029",
+          "form": "séminaire"
+        },
+        {
+          "id": "book-10.03-008",
+          "form": "méthodes"
+        },
+        {
+          "id": "book-10.03-003",
+          "form": "étude"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-019",
@@ -2612,13 +5412,25 @@
       "subcategory": "8.04",
       "french": "la consultation",
       "chinese": "看病，诊病，诊疗",
-      "example": "Le prix de la consultation médicale a augmenté.",
+      "example": "La consultation durait plus longtemps que prévu parce que le patient avait apporté de nombreux documents.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 65,
       "pdfPage": 72,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-7.01-006",
+          "form": "documents"
+        },
+        {
+          "id": "book-8.02-012",
+          "form": "patient"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-020",
@@ -2626,13 +5438,29 @@
       "subcategory": "8.04",
       "french": "consulter",
       "chinese": "求诊，就诊；诊病",
-      "example": "Aurélie a consulté un spécialiste, car elle a mal à la tête depuis plusieurs semaines.",
+      "example": "Mon collègue souhaite consulter un médecin avant de reprendre les déplacements que son travail lui impose.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“诊病，听诊”；本例患者 consulter un spécialiste 指向专科医生求诊，不等于“听诊”。"
+      "note": "原书译“诊病，听诊”；本例患者 consulter un spécialiste 指向专科医生求诊，不等于“听诊”。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.02-043",
+          "form": "déplacements"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        },
+        {
+          "id": "book-11.01-028",
+          "form": "collègue"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-021",
@@ -2640,13 +5468,29 @@
       "subcategory": "8.04",
       "french": "le diagnostic",
       "chinese": "诊断",
-      "example": "Le diagnostic du médecin est inquiétant.",
+      "example": "Le diagnostic a été discuté avec la spécialiste, qui a expliqué les résultats de l’examen à la famille.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-10.04-016",
+          "form": "résultats"
+        },
+        {
+          "id": "book-11.01-018",
+          "form": "spécialiste"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-022",
@@ -2654,13 +5498,29 @@
       "subcategory": "8.04",
       "french": "la gravité",
       "chinese": "严重性，严重程度",
-      "example": "Cette maladie est sans gravité.",
+      "example": "La gravité de l’accident inquiète la famille, tandis que les secours transmettent des nouvelles à l’hôpital.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-001",
+          "form": "accident"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        },
+        {
+          "id": "book-8.04-006",
+          "form": "hôpital"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-023",
@@ -2668,13 +5528,25 @@
       "subcategory": "8.04",
       "french": "guérir",
       "chinese": "治愈，康复",
-      "example": "Les médicaments aident à guérir.",
+      "example": "Si elle guérissait assez vite, la violoniste reprendrait les répétitions avec son groupe avant les vacances.",
       "part": "v. t. / i.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-013",
+          "form": "vacances"
+        },
+        {
+          "id": "book-10.01-014",
+          "form": "groupe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-024",
@@ -2682,13 +5554,29 @@
       "subcategory": "8.04",
       "french": "l’hygiène",
       "chinese": "卫生",
-      "example": "Une bonne hygiène de vie est indispensable.",
+      "example": "L’hygiène de la cuisine fait partie de la formation des employés qui préparent les repas de l’école.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-009",
+          "form": "employés"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-025",
@@ -2696,13 +5584,29 @@
       "subcategory": "8.04",
       "french": "l’intervention",
       "chinese": "手术，手术治疗；干预",
-      "example": "Il a subi une intervention au cœur.",
+      "example": "L’intervention s’est terminée dans l’après-midi, puis le chirurgien a rencontré la famille dans une salle calme.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-004",
+          "form": "après-midi"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-026",
@@ -2710,13 +5614,29 @@
       "subcategory": "8.04",
       "french": "masser",
       "chinese": "按摩，推拿",
-      "example": "L’infirmier masse la jambe du malade.",
+      "example": "La kinésithérapeute masse doucement l’épaule de la patiente et lui demande de décrire les sensations ressenties.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-9.01-038",
+          "form": "sensations"
+        },
+        {
+          "id": "book-8.01-011",
+          "form": "épaule"
+        },
+        {
+          "id": "book-8.02-012",
+          "form": "patiente"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-027",
@@ -2724,13 +5644,29 @@
       "subcategory": "8.04",
       "french": "la médecine",
       "chinese": "医学",
-      "example": "Mon cousin fait des études de médecine.",
+      "example": "L’étudiante choisira sa spécialité en médecine après les stages qui lui feront découvrir plusieurs services de l’hôpital.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": "区别于 médecin（医生）。"
+      "note": "区别于 médecin（医生）。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-7.02-013",
+          "form": "services"
+        },
+        {
+          "id": "book-10.01-039",
+          "form": "stages"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiante"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-028",
@@ -2738,13 +5674,29 @@
       "subcategory": "8.04",
       "french": "médical, médicale",
       "chinese": "医学的，医疗的",
-      "example": "Je dois passer une visite médicale avant de commencer à travailler dans la nouvelle entreprise.",
+      "example": "Le dossier médical reste sur le bureau pendant que la patiente explique les difficultés rencontrées au travail.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.04-004",
+          "form": "difficultés"
+        },
+        {
+          "id": "book-7.01-025",
+          "form": "dossier"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "8.04-4",
@@ -2752,13 +5704,29 @@
       "subcategory": "8.04",
       "french": "le médicament",
       "chinese": "药，药物",
-      "example": "Il existe un nouveau médicament contre les maux de tête.",
+      "example": "Le pharmacien a vérifié le nom du médicament avant de répondre aux questions inscrites sur mon ordonnance.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "1.01-1",
+          "form": "nom"
+        },
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        },
+        {
+          "id": "8.04-3",
+          "form": "ordonnance"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-030",
@@ -2766,13 +5734,25 @@
       "subcategory": "8.04",
       "french": "opérer",
       "chinese": "动手术，开刀",
-      "example": "Pierre a été opéré à l’hôpital.",
+      "example": "Le chirurgien explique pourquoi il propose d’opérer et discute des autres possibilités avec le patient.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-12.06-012",
+          "form": "possibilités"
+        },
+        {
+          "id": "book-8.02-012",
+          "form": "patient"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "8.04-3",
@@ -2780,13 +5760,29 @@
       "subcategory": "8.04",
       "french": "l’ordonnance",
       "chinese": "药方，处方",
-      "example": "Le médecin m’a donné une ordonnance.",
+      "example": "L’ordonnance était restée dans la poche du manteau que mon père avait oublié chez sa sœur.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-011",
+          "form": "poche"
+        },
+        {
+          "id": "book-6.03-044",
+          "form": "manteau"
+        },
+        {
+          "id": "book-1.03-023",
+          "form": "père"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-032",
@@ -2794,13 +5790,29 @@
       "subcategory": "8.04",
       "french": "l’oxygène",
       "chinese": "氧，氧气",
-      "example": "Les êtres vivants respirent de l’oxygène.",
+      "example": "Au laboratoire, le professeur montre comment mesurer l’oxygène présent dans les échantillons d’eau de la rivière.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.02-2",
+          "form": "rivière"
+        },
+        {
+          "id": "book-16.04-030",
+          "form": "échantillons"
+        },
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-033",
@@ -2808,13 +5820,29 @@
       "subcategory": "8.04",
       "french": "la précaution",
       "chinese": "预防措施，防范",
-      "example": "Il a pris ses précautions pour ne pas tomber malade.",
+      "example": "Prenez la précaution de garder une copie du dossier avant d’envoyer les documents à votre assurance.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-7.02-006",
+          "form": "assurance"
+        },
+        {
+          "id": "book-7.01-025",
+          "form": "dossier"
+        },
+        {
+          "id": "book-7.01-006",
+          "form": "documents"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-034",
@@ -2822,13 +5850,29 @@
       "subcategory": "8.04",
       "french": "le remède",
       "chinese": "药，药物；疗法",
-      "example": "Ce sirop est un bon remède, il empêche de tousser.",
+      "example": "Le personnage cherche un remède auprès du médecin du village, qui l’interroge longuement sur ses symptômes.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“药方”；此处 remède 指药物、疗法，区别于 ordonnance（处方）。"
+      "note": "原书译“药方”；此处 remède 指药物、疗法，区别于 ordonnance（处方）。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-013",
+          "form": "personnage"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        },
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-035",
@@ -2836,13 +5880,29 @@
       "subcategory": "8.04",
       "french": "sanitaire",
       "chinese": "公共卫生的，医疗卫生的",
-      "example": "Une équipe sanitaire est intervenue sur le lieu de l’accident.",
+      "example": "La crise sanitaire a obligé l’association à organiser les livraisons de repas et les réunions autrement.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-006",
+          "form": "crise"
+        },
+        {
+          "id": "book-6.01-036",
+          "form": "livraisons"
+        },
+        {
+          "id": "11.02-1",
+          "form": "réunions"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-036",
@@ -2850,13 +5910,29 @@
       "subcategory": "8.04",
       "french": "le secours",
       "chinese": "救助，救援",
-      "example": "Ils portent secours aux victimes de l’accident.",
+      "example": "Le personnel porte secours à une voyageuse tandis que son amie rassemble leurs sacs sur le quai.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-012",
+          "form": "personnel"
+        },
+        {
+          "id": "book-4.03-052",
+          "form": "quai"
+        },
+        {
+          "id": "book-14.01-002",
+          "form": "amie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-037",
@@ -2864,13 +5940,29 @@
       "subcategory": "8.04",
       "french": "le sérum",
       "chinese": "血清",
-      "example": "Le sérum est un liquide jaune.",
+      "example": "Le laboratoire analysera le sérum et transmettra les résultats au médecin qui suit le dossier du patient.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-014",
+          "form": "laboratoire"
+        },
+        {
+          "id": "book-10.04-016",
+          "form": "résultats"
+        },
+        {
+          "id": "book-7.01-025",
+          "form": "dossier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-038",
@@ -2878,13 +5970,29 @@
       "subcategory": "8.04",
       "french": "soigné, soignée",
       "chinese": "得到治疗的，受到照顾的",
-      "example": "Sa plaie a été mal soignée, elle s’est infectée.",
+      "example": "Soignée près de chez elle, ma tante peut recevoir ses voisins et garder un lien avec sa famille.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“治疗的，照顾的”；词条为过去分词阴阳性形式，本例为被动语态。"
+      "note": "原书译“治疗的，照顾的”；词条为过去分词阴阳性形式，本例为被动语态。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.10-041",
+          "form": "lien"
+        },
+        {
+          "id": "book-1.03-039",
+          "form": "tante"
+        },
+        {
+          "id": "book-2.01-023",
+          "form": "voisins"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-039",
@@ -2892,13 +6000,29 @@
       "subcategory": "8.04",
       "french": "soigner",
       "chinese": "治疗，照顾，护理",
-      "example": "Le médecin soigne ses malades.",
+      "example": "L’infirmière a soigné le promeneur blessé pendant que les secours préparaient son transport vers l’hôpital.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-020",
+          "form": "transport"
+        },
+        {
+          "id": "book-8.04-006",
+          "form": "hôpital"
+        },
+        {
+          "id": "book-8.04-036",
+          "form": "secours"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-040",
@@ -2906,13 +6030,29 @@
       "subcategory": "8.04",
       "french": "le suicide",
       "chinese": "自杀",
-      "example": "J’ai appris le suicide d’un ami.",
+      "example": "L’association organise une conférence sur la prévention du suicide avec des professionnels et des personnes engagées dans l’aide aux proches.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.02-007",
+          "form": "conférence"
+        },
+        {
+          "id": "book-1.04-021",
+          "form": "personnes"
+        },
+        {
+          "id": "book-7.02-003",
+          "form": "aide"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-041",
@@ -2920,13 +6060,29 @@
       "subcategory": "8.04",
       "french": "l’urgence",
       "chinese": "紧急，急诊",
-      "example": "On a demandé un médecin d’urgence.",
+      "example": "L’urgence de la situation obligeait les secours à dégager la route pour permettre le passage de l’ambulance.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-15.01-020",
+          "form": "situation"
+        },
+        {
+          "id": "book-4.01-018",
+          "form": "passage"
+        },
+        {
+          "id": "book-4.03-017",
+          "form": "route"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-8.04-042",
@@ -2934,13 +6090,31 @@
       "subcategory": "8.04",
       "french": "le virus",
       "chinese": "病毒",
-      "example": "Certains virus sont difficiles à soigner.",
+      "example": "Les chercheurs comparent plusieurs images du virus et expliquent aux étudiants comment ils interprètent leurs observations.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 66,
       "pdfPage": 73,
       "source": "法语基础词汇分类学习手册",
-      "note": "例句按原书保留；未将该表述作为医学治疗建议。"
+      "note": "例句按原书保留；未将该表述作为医学治疗建议。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-007",
+          "form": "images"
+        },
+        {
+          "id": "book-9.01-015",
+          "form": "observations"
+        },
+        {
+          "id": "book-11.01-026",
+          "form": "chercheurs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     }
-  ]
+  ],
+  "originalMethod": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，医学和科学例句依原文保留；8.03 第64页第二组仍标基础词汇，依原标注保留并注明。",
+  "exampleMethod": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
 }

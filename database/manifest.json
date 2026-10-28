@@ -7,7 +7,7 @@
   "entryCount": 3846,
   "jsonFileCount": 16,
   "xlsxFileCount": 16,
-  "totalFileBytes": 2296609,
+  "totalFileBytes": 4012037,
   "hashAlgorithm": "SHA-256",
   "units": [
     {
@@ -19,8 +19,8 @@
         {
           "path": "unit1/第一单元词库.json",
           "format": "json",
-          "bytes": 128725,
-          "sha256": "50f5d05fd1328e93fc8daf4184f5fddfd2f693eda982fceecb05ecd37357be39"
+          "bytes": 254887,
+          "sha256": "2a071327df0bc189c10abada71c59796f0e8f2bd026c2b01294f580ed788e9db"
         },
         {
           "path": "unit1/第一单元_法语单词库.xlsx",
@@ -39,8 +39,8 @@
         {
           "path": "unit2/第二单元词库.json",
           "format": "json",
-          "bytes": 79416,
-          "sha256": "09269065e3d7a7df0c03fa02cd3035bd155b0464322a9f0b5bf7f4167757228f"
+          "bytes": 154645,
+          "sha256": "8b77e116305137873848b4cc2d998641eb8a8e4f905fdb1dd617152fc45d73ca"
         },
         {
           "path": "unit2/第二单元_法语单词库.xlsx",
@@ -59,8 +59,8 @@
         {
           "path": "unit3/第三单元词库.json",
           "format": "json",
-          "bytes": 85175,
-          "sha256": "a147545c6472a6a776b5470003600200b468b4ab5ecf23d8510c2db49e95ba3c"
+          "bytes": 166329,
+          "sha256": "5d5c32d960e5f445de5906932cfb12a24a4fac176537b3634be9ef31c1f5915e"
         },
         {
           "path": "unit3/第三单元_法语单词库.xlsx",
@@ -79,8 +79,8 @@
         {
           "path": "unit4/第四单元词库.json",
           "format": "json",
-          "bytes": 69421,
-          "sha256": "171951fb98163188423d258bb7f988323d6a3aab630b4437b715893b4017ef7b"
+          "bytes": 133902,
+          "sha256": "cf4c2d909c1a6273a43eec53cbcbcb47562e53e2f387123d0f8e12e2e3b4b90d"
         },
         {
           "path": "unit4/第四单元_法语单词库.xlsx",
@@ -99,8 +99,8 @@
         {
           "path": "unit5/第五单元词库.json",
           "format": "json",
-          "bytes": 44386,
-          "sha256": "e5ad741f106a8537ab2b27dccf97540455df2f03f0a56a6007d903da1106eb8b"
+          "bytes": 83614,
+          "sha256": "0ae41f56c53ebe724d6e1f79fc370a0c2c0101fe711cfe8430157a0fe5068a7c"
         },
         {
           "path": "unit5/第五单元_法语单词库.xlsx",
@@ -119,8 +119,8 @@
         {
           "path": "unit6/第六单元词库.json",
           "format": "json",
-          "bytes": 67232,
-          "sha256": "94e7f35be594c038332060b509df1ef9b77e95894cd5a10ad15ab9c70eb6d635"
+          "bytes": 143674,
+          "sha256": "687ce4fe9f9b63b64ba42703734c15c2599b66a7266ed50eac4f01cf8f9b08e7"
         },
         {
           "path": "unit6/第六单元_法语单词库.xlsx",
@@ -139,8 +139,8 @@
         {
           "path": "unit7/第七单元词库.json",
           "format": "json",
-          "bytes": 55267,
-          "sha256": "ff9627c022ddb9c88e783edcb89ff718f37bcd86b76bdeb307fd6d58cc09b4a2"
+          "bytes": 118620,
+          "sha256": "57318edb49813fbea2ccde8aedf1b6dadfb16d0cddcb9140485f0ead99be410f"
         },
         {
           "path": "unit7/第七单元_法语单词库.xlsx",
@@ -159,8 +159,8 @@
         {
           "path": "unit8/第八单元词库.json",
           "format": "json",
-          "bytes": 86046,
-          "sha256": "e7c9aaec09bc7a17778f3ba5340b6f41887b57f81c781f38a721753099662e92"
+          "bytes": 186967,
+          "sha256": "a9396ef370ba2d63e40a69d2b5bf203117918b147147a71be231d189c6926a0c"
         },
         {
           "path": "unit8/第八单元_法语单词库.xlsx",
@@ -179,8 +179,8 @@
         {
           "path": "unit9/第九单元词库.json",
           "format": "json",
-          "bytes": 99473,
-          "sha256": "bb0ed95e8f37c35d6f8c9a49f37b1502e8612d8988a5d5c6c9612c5edda53767"
+          "bytes": 222416,
+          "sha256": "fbe95f744c401e0a88dd46ca2d1cc5ad5b400ad1d3da47858cb598588f021dcc"
         },
         {
           "path": "unit9/第九单元_法语单词库.xlsx",
@@ -199,8 +199,8 @@
         {
           "path": "unit10/第十单元词库.json",
           "format": "json",
-          "bytes": 66368,
-          "sha256": "4b3c255727e9bd1a9b9a73ea04e05d6eedc6efe63df3babf567daff6aaadea63"
+          "bytes": 140567,
+          "sha256": "ac8cf95f7a498a71f5724fe1bcd1ee71768375dcdf9797797358ba7974958882"
         },
         {
           "path": "unit10/第十单元_法语单词库.xlsx",
@@ -219,8 +219,8 @@
         {
           "path": "unit11/第十一单元词库.json",
           "format": "json",
-          "bytes": 66105,
-          "sha256": "1e47798c00c9aa43136f0b02bc269fc3e74fb3e34586858dfc374ca4b4800e2d"
+          "bytes": 145609,
+          "sha256": "7ec120cb57655648556335134918e0b92b3a40978aee2ffd3a9bdd26cf822edc"
         },
         {
           "path": "unit11/第十一单元_法语单词库.xlsx",
@@ -239,8 +239,8 @@
         {
           "path": "unit12/第十二单元词库.json",
           "format": "json",
-          "bytes": 130430,
-          "sha256": "a5f71a0e877d4ea4fa4e0827bc6f30408d878a773656d9915eb7dec1295a30aa"
+          "bytes": 250746,
+          "sha256": "7d8a63d0698320880bf4470bf4730d9b927a4264d3da2ca0fad774421a5f8c62"
         },
         {
           "path": "unit12/第十二单元_法语单词库.xlsx",
@@ -259,8 +259,8 @@
         {
           "path": "unit13/第十三单元词库.json",
           "format": "json",
-          "bytes": 124533,
-          "sha256": "a528a1eb959181e03f6dae227b396859db9c1bdc3c938777ab50c66b1a6f43e1"
+          "bytes": 247074,
+          "sha256": "88f6dd22863b95eb7629e2e762b6b9e81d139143013c1c779383993aedc56352"
         },
         {
           "path": "unit13/第十三单元_法语单词库.xlsx",
@@ -279,8 +279,8 @@
         {
           "path": "unit14/第十四单元词库.json",
           "format": "json",
-          "bytes": 70868,
-          "sha256": "205c9aec1f26de5ec5b289e366a2e7bb8beb3a263304cad898ec350399f259b5"
+          "bytes": 136742,
+          "sha256": "cd203d2ace932d3c7875b843983d692c04e5f4a6a8f6260a32c72a820d794208"
         },
         {
           "path": "unit14/第十四单元_法语单词库.xlsx",
@@ -299,8 +299,8 @@
         {
           "path": "unit15/第十五单元词库.json",
           "format": "json",
-          "bytes": 142244,
-          "sha256": "1ad1efdf4113819cbaf362e528ac945b9e49101d126ecb60e71c46a2331790f6"
+          "bytes": 275736,
+          "sha256": "af27ddd7d2365561a72e067532fff9f79f607eed7823c95ee4e889e4bf920460"
         },
         {
           "path": "unit15/第十五单元_法语单词库.xlsx",
@@ -319,8 +319,8 @@
         {
           "path": "unit16/第十六单元词库.json",
           "format": "json",
-          "bytes": 279121,
-          "sha256": "a8500feebef3ba24e1bf793c3628e498e5010b4670ad4e3ddf217736bef71872"
+          "bytes": 648710,
+          "sha256": "0ffe57b0ae6630846dff71daa14f6c3034cb752f4c5b81f2583d7c3a70f5de51"
         },
         {
           "path": "unit16/第十六单元_法语单词库.xlsx",
@@ -330,5 +330,7 @@
         }
       ]
     }
-  ]
+  ],
+  "exampleSource": "french/example-network.json",
+  "xlsxRole": "Original handbook transcription, including original textbook examples; current authored examples live in JSON."
 }

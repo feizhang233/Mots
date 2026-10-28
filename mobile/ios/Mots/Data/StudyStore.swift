@@ -11,20 +11,37 @@ final class StudyStore {
     var categoryID: String? { didSet { if categoryID != oldValue { if !restoring { subcategoryID = nil }; filtersChanged() } } }
     var subcategoryID: String? { didSet { if subcategoryID != oldValue { filtersChanged() } } }
     var listMode = false { didSet {
+        if oldValue != listMode { resetListMeaningReveals() }
         if !restoring && oldValue != listMode && mode == .study { layoutChanged() }
         persist()
     } }
     var randomOrder = false { didSet { if randomOrder != oldValue { filtersChanged() } } }
     var hideMastered = false { didSet { if hideMastered != oldValue { filtersChanged(preservingCardPosition: true) } } }
-    var meaningLanguage = "zh-Hant" { didSet { persist() } }
+    var hideListMeanings = false { didSet {
+        if hideListMeanings != oldValue { resetListMeaningReveals() }
+        persist()
+    } }
+    var showExampleTranslations = true { didSet { persist() } }
+    var meaningLanguage = "zh-Hant" { didSet {
+        if meaningLanguage != oldValue { resetListMeaningReveals() }
+        persist()
+    } }
     var speechRate = 0.45 { didSet { persist() } }
     // Retain the legacy saved preference for compatibility; cards always advance.
     var autoAdvance = false { didSet { persist() } }
-    var pageSize = 20 { didSet { persist() } }
+    var pageSize = 20 { didSet {
+        if pageSize != oldValue { resetListMeaningReveals() }
+        persist()
+    } }
     var currentIndex = 0 { didSet { persist() } }
     var revealed = false
     // Presentation state survives card/list swaps, but never enters backups or progress sync.
     var expandedGrammarGroupIDs = Set<String>()
+    private struct ListMeaningKey: Hashable {
+        let dictionaryID: String
+        let wordID: String
+    }
+    private var revealedListMeanings = Set<ListMeaningKey>()
     private(set) var filteredWords: [StudyWord] = []
     private(set) var completed = false
     private(set) var storageError: String?
@@ -105,6 +122,8 @@ final class StudyStore {
                 mode = state.mode; search = state.search; categoryID = state.categoryID; subcategoryID = state.subcategoryID
                 if currentDictionary.isThematicGrammar { subcategoryID = nil }
                 listMode = state.listMode; hideMastered = state.hideMastered; randomOrder = state.randomOrder ?? false
+                hideListMeanings = state.hideListMeanings ?? false
+                showExampleTranslations = state.showExampleTranslations ?? true
                 meaningLanguage = StudyImport.meaningLanguages.contains(state.meaningLanguage) ? state.meaningLanguage : "zh-Hant"
                 speechRate = min(0.6, max(0.25, state.speechRate)); autoAdvance = state.autoAdvance
                 pageSize = [10, 20, 50, 100].contains(state.pageSize) ? state.pageSize : 20
@@ -147,6 +166,14 @@ final class StudyStore {
     var currentDictionary: StudyDictionary { dictionaries.first(where: { $0.id == dictionaryID }) ?? dictionaries.first ?? .empty }
     var currentWord: StudyWord? { filteredWords.indices.contains(currentIndex) ? filteredWords[currentIndex] : nil }
     var availableWords: [StudyWord] { currentDictionary.words.filter { !isDeleted($0.id) } }
+    var availableCategories: [StudyCategory] {
+        let used = Set(availableWords.map(\.category))
+        return currentDictionary.categories.filter { used.contains($0.id) }
+    }
+    func availableSubcategories(in category: StudyCategory) -> [StudySubcategory] {
+        let used = Set(availableWords.filter { $0.category == category.id }.map(\.subcategory))
+        return category.subcategories.filter { used.contains($0.id) }
+    }
     var deletedWords: [StudyWord] { currentDictionary.words.filter { isDeleted($0.id) } }
     func isDeleted(_ wordID: String, dictionaryID: String? = nil) -> Bool {
         deletionFlags[WordDeletionRecord.key(dictionaryID: dictionaryID ?? self.dictionaryID, wordID: wordID)] == true
@@ -184,7 +211,41 @@ final class StudyStore {
     func displayMeaning(for word: StudyWord) -> String {
         word.meanings[meaningLanguage] ?? "此\(currentDictionary.isGrammar ? "語法" : "詞")尚無\(Self.meaningLanguageName(meaningLanguage))釋義"
     }
+    func cardExampleTranslation(for example: StudyExample) -> String? {
+        guard showExampleTranslations, meaningLanguage != currentDictionary.language,
+              let translation = example.translations[meaningLanguage],
+              !translation.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
+              translation != example.text else { return nil }
+        return translation
+    }
     func meaning(for word: StudyWord) -> String { displayMeaning(for: word) }
+    func compactGrammarMeaning(for word: StudyWord) -> String {
+        let text = displayMeaning(for: word)
+        guard currentDictionary.isGrammar, ["zh-Hant", "zh-Hans"].contains(meaningLanguage),
+              word.meanings[meaningLanguage] != nil else { return text }
+        let senses: [String]
+        if text.range(of: #"^\s*[①-⑳]"#, options: .regularExpression) != nil {
+            let expression = try! NSRegularExpression(pattern: "[①-⑳][^①-⑳]*")
+            let source = text as NSString
+            senses = expression.matches(in: text, range: NSRange(location: 0, length: source.length))
+                .map { source.substring(with: $0.range) }
+        } else { senses = [text] }
+        let summary = senses.map {
+            $0.components(separatedBy: "。").first!.trimmingCharacters(in: .whitespacesAndNewlines)
+        }.joined(separator: "\n")
+        return summary.isEmpty ? text : summary
+    }
+    func isListMeaningVisible(for word: StudyWord) -> Bool {
+        !hideListMeanings || currentDictionary.isGrammar ||
+            revealedListMeanings.contains(ListMeaningKey(dictionaryID: dictionaryID, wordID: word.id))
+    }
+    func revealListMeaning(for word: StudyWord) {
+        guard hideListMeanings, !currentDictionary.isGrammar, !isDeleted(word.id),
+              currentDictionary.words.contains(where: { $0.id == word.id }) else { return }
+        revealedListMeanings.insert(ListMeaningKey(dictionaryID: dictionaryID, wordID: word.id))
+    }
+    // Reveals are temporary: list pagination calls this without changing progress or selection.
+    func resetListMeaningReveals() { revealedListMeanings.removeAll() }
     static func meaningLanguageName(_ code: String) -> String {
         ["zh-Hant": "繁體中文", "zh-Hans": "簡體中文", "en": "英文", "fr": "法語", "de": "德語", "ja": "日語"][code] ?? code
     }
@@ -318,6 +379,7 @@ final class StudyStore {
         revealed = false; completed = false
     }
     private func rebuildDeck(preservingCardPosition: Bool = false) {
+        resetListMeaningReveals()
         if !preservingCardPosition { cardResumePosition = nil }
         var words = matchingWords()
         if mode == .lookup { words.sort { $0.term.compare($1.term, options: [.caseInsensitive, .diacriticInsensitive], locale: Locale(identifier: currentDictionary.locale)) == .orderedAscending } }
@@ -332,6 +394,7 @@ final class StudyStore {
         revealed = false; completed = false
     }
     private func captureReview() {
+        resetListMeaningReveals()
         let seen = availableWords.filter { (1...2).contains(rating($0)) }.shuffled()
         let unseen = availableWords.filter { rating($0) == 0 }.shuffled()
         filteredWords = Array((seen + unseen).prefix(20))
@@ -379,7 +442,8 @@ final class StudyStore {
             let state = SavedState(dictionaries: dictionaries.filter { !$0.isBuiltIn }, extensions: extensions,
                 progress: progress, dictionaryID: dictionaryID, mode: mode, search: search,
                 categoryID: categoryID, subcategoryID: subcategoryID, listMode: listMode,
-                hideMastered: hideMastered, meaningLanguage: meaningLanguage, speechRate: speechRate,
+                hideMastered: hideMastered, hideListMeanings: hideListMeanings, showExampleTranslations: showExampleTranslations,
+                meaningLanguage: meaningLanguage, speechRate: speechRate,
                 autoAdvance: autoAdvance, pageSize: pageSize, randomOrder: randomOrder, currentIndex: currentIndex, completed: completed,
                 deckIDs: filteredWords.map(\.id), reviewRatedIDs: Array(reviewRatedIDs), syncMetadata: syncMetadata, deletionMetadata: deletionMetadata)
             let data = try JSONEncoder().encode(state)
@@ -418,6 +482,7 @@ final class StudyStore {
     private func setDeletionMetadata(_ metadata: WordDeletionMetadata?) {
         deletionMetadata = metadata
         deletionFlags = Dictionary(uniqueKeysWithValues: (metadata?.records ?? []).map { ($0.key, $0.deleted) })
+        revealedListMeanings = revealedListMeanings.filter { !isDeleted($0.wordID, dictionaryID: $0.dictionaryID) }
     }
 
     /// Removing visibility never rates, reveals, shuffles or advances a surviving word.
@@ -548,7 +613,8 @@ final class StudyStore {
             "ratings": progress["fr", default: [:]], "progress": progress, "dictionaries": customJSON, "customBanks": extensionsJSON,
             "deletions": try JSONSerialization.jsonObject(with: JSONEncoder().encode(deletionMetadata?.records ?? [])),
             "settings": ["dictionaryId": dictionaryID, "meaningLanguage": meaningLanguage, "view": listMode ? "list" : "card",
-                         "defaultHideMastered": hideMastered, "pageSize": pageSize, "speechRate": speechRate, "autoAdvance": autoAdvance, "order": randomOrder ? "random" : "ordered"]]
+                         "defaultHideMastered": hideMastered, "hideListMeanings": hideListMeanings, "showExampleTranslations": showExampleTranslations,
+                         "pageSize": pageSize, "speechRate": speechRate, "autoAdvance": autoAdvance, "order": randomOrder ? "random" : "ordered"]]
         return try JSONSerialization.data(withJSONObject: data, options: [.prettyPrinted, .sortedKeys])
     }
 
@@ -635,6 +701,8 @@ final class StudyStore {
             if let view = settings["view"] as? String { listMode = view == "list" }
             if let order = settings["order"] as? String { randomOrder = order == "random" }
             if let hidden = settings["defaultHideMastered"] as? Bool { hideMastered = hidden }
+            if let hidden = settings["hideListMeanings"] as? Bool { hideListMeanings = hidden }
+            if let shown = settings["showExampleTranslations"] as? Bool { showExampleTranslations = shown }
             if let size = settings["pageSize"] as? Int, [10,20,50,100].contains(size) { pageSize = size }
             if let rate = settings["speechRate"] as? Double { speechRate = min(0.6, max(0.25, rate)) }
             if let advance = settings["autoAdvance"] as? Bool { autoAdvance = advance }
@@ -677,6 +745,8 @@ private struct SavedState: Codable {
     let subcategoryID: String?
     let listMode: Bool
     let hideMastered: Bool
+    let hideListMeanings: Bool?
+    let showExampleTranslations: Bool?
     let meaningLanguage: String
     let speechRate: Double
     let autoAdvance: Bool

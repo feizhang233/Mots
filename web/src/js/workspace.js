@@ -84,6 +84,7 @@
     levelOf,
     subcategoryOf,
     categoryLabel,
+    traditional = (text) => text,
     groupWords,
   }) {
     const esc = escape;
@@ -118,18 +119,47 @@
       return result;
     }
     function exampleHTML(example, variant = 'card') {
-      const { state } = getModel();
-      return `<div class="entry-example ${variant}-example"><p class="example-sentence" lang="${state.language}">${esc(example.text)}</p></div>`;
+      const { state, settings } = getModel();
+      const language = settings.meaningLanguage;
+      const supplied = example.translations?.[language];
+      const translation =
+        variant === 'card' &&
+        settings.showExampleTranslations &&
+        language !== state.language &&
+        typeof supplied === 'string'
+          ? supplied.trim()
+          : '';
+      const text = language === 'zh-Hant' ? traditional(translation) : translation;
+      return `<div class="entry-example ${variant}-example"><p class="example-sentence" lang="${state.language}">${esc(example.text)}</p>${text ? `<p class="example-translation" lang="${language}">${esc(text)}</p>` : ''}</div>`;
     }
     const detailButton = (word) =>
       isGrammar()
         ? `<button class="text-button entry-detail-button" type="button" data-detail="${esc(word.id)}" aria-label="查看「${esc(word.term)}」的詳情">詳情${icons.right}</button>`
         : '';
+    function compactGrammarMeaning(text) {
+      const senses = /^\s*[①-⑳]/u.test(text) ? text.match(/[①-⑳][^①-⑳]*/gu) : [text];
+      return senses.map((sense) => sense.split('。', 1)[0].trim()).join('\n');
+    }
     function renderSmallCard(w) {
       const { state, settings } = getModel();
       const m = meaning(w),
         examples = examplesOf(w);
-      return `<article class="word-row study-entry" role="listitem" data-row-word="${esc(w.id)}"><div class="entry-primary"><div class="list-term">${speaker(w)}<span class="list-word" lang="${state.language}">${formatTerm(w, state.language)}</span></div><div class="list-meaning ${m.missing ? 'missing-meaning' : ''}" lang="${m.missing ? 'zh-Hant' : settings.meaningLanguage}">${esc(m.text)}</div><div class="list-delete"><button class="icon-button delete-word" data-delete="${esc(w.id)}" type="button" title="刪除「${esc(w.term)}」（可恢復）" aria-label="刪除「${esc(w.term)}」（可恢復）"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 10v7m4-7v7" /></svg></button></div></div><div class="entry-secondary"><div class="list-example">${examples.length ? exampleHTML(examples[0], 'list') : '<span class="entry-empty-copy">尚未收錄例句</span>'}</div><div class="entry-secondary-actions">${detailButton(w)}<div class="list-status">${ratingDots(w)}</div></div></div></article>`;
+      const term = `<div class="list-term">${speaker(w)}<span class="list-word" lang="${state.language}">${formatTerm(w, state.language)}</span></div>`;
+      const compact =
+        isGrammar() && !m.missing && ['zh-Hant', 'zh-Hans'].includes(settings.meaningLanguage)
+          ? compactGrammarMeaning(m.text)
+          : m.text;
+      const translationText =
+        compact && compact !== m.text
+          ? `<span class="list-meaning-full">${esc(m.text)}</span><span class="list-meaning-summary">${esc(compact)}</span>`
+          : esc(m.text);
+      const translation = `<div class="list-meaning ${m.missing ? 'missing-meaning' : ''}" lang="${m.missing ? 'zh-Hant' : settings.meaningLanguage}">${translationText}</div>`;
+      const example = `<div class="list-example">${examples.length ? exampleHTML(examples[0], 'list') : '<span class="entry-empty-copy">尚未收錄例句</span>'}</div>`;
+      const status = `<div class="list-status">${ratingDots(w)}</div>`;
+      const deletion = `<div class="list-delete"><button class="icon-button delete-word" data-delete="${esc(w.id)}" type="button" title="刪除「${esc(w.term)}」（可恢復）" aria-label="刪除「${esc(w.term)}」（可恢復）"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 10v7m4-7v7" /></svg></button></div>`;
+      if (!isGrammar())
+        return `<article class="word-row study-entry vocabulary-entry" role="listitem" data-row-word="${esc(w.id)}">${term}${example}${translation}${status}${deletion}</article>`;
+      return `<article class="word-row study-entry" role="listitem" data-row-word="${esc(w.id)}"><div class="entry-primary">${term}${translation}${deletion}</div><div class="entry-secondary">${example}<div class="entry-secondary-actions">${detailButton(w)}${status}</div></div></article>`;
     }
     function renderList() {
       const { state, settings, deck, grammarGrouping } = getModel();
@@ -159,7 +189,9 @@
           })
           .join('')}</div>`;
       } else {
-        content = `<div class="word-table study-entry-list" role="list" aria-label="${languageOf(state.language).name}${itemLabel()}列表">${pageWords.map(renderSmallCard).join('')}</div>`;
+        content = `<div class="word-table study-entry-list${isGrammar() ? '' : ' vocabulary-entry-list'}" role="list" aria-label="${languageOf(state.language).name}${itemLabel()}列表">${pageWords.map(renderSmallCard).join('')}</div>`;
+        if (!isGrammar())
+          content = `<div class="vocabulary-list-scroll" role="region" aria-label="單字列表，可左右捲動" tabindex="0">${content}</div>`;
       }
       return `<div class="rating-legend" aria-label="熟悉程度圖例"><span><i class="legend-status green" aria-hidden="true"></i>已掌握</span><span><i class="legend-status orange" aria-hidden="true"></i>有印象</span><span><i class="legend-status red" aria-hidden="true"></i>不熟悉</span></div>${content}<div class="pagination"><span>第 ${start + 1}–${Math.min(start + settings.pageSize, deck.length)} ${unit}，共 ${deck.length} ${unit} · 每頁 ${settings.pageSize} ${unit}</span><div class="pagination-actions"><button id="previous-page" class="icon-button" aria-label="上一頁" ${state.page === 1 ? 'disabled' : ''}>${icons.left}</button><span>${state.page} / ${pages}</span><button id="next-page" class="icon-button" aria-label="下一頁" ${state.page === pages ? 'disabled' : ''}>${icons.right}</button></div></div>`;
     }

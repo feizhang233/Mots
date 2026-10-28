@@ -3,17 +3,26 @@ const path = require('node:path');
 const vm = require('node:vm');
 const assert = require('node:assert/strict');
 
-const source = fs.readFileSync(path.join(__dirname, '../dist/audio.js'), 'utf8');
+const source = fs.readFileSync(
+  path.join(__dirname, process.env.MOTS_TEST_SOURCE ? '../src/js/audio.js' : '../dist/audio.js'),
+  'utf8',
+);
 const settle = () => new Promise((resolve) => setImmediate(resolve));
 
-function setup({ sources = { first: 'audio/first.m4a', second: 'audio/second.m4a' } } = {}) {
+function setup({
+  sources = { first: 'audio/first.m4a', second: 'audio/second.m4a' },
+  language = 'fr',
+  audioMode = 'auto',
+} = {}) {
   const requests = [];
   const utterances = [];
   const notices = [];
+  const opened = [];
   const timers = new Map();
   let timerID = 0;
   const status = { textContent: '' };
-  const voice = { lang: 'fr-FR', localService: true };
+  const voiceLocale = { fr: 'fr-FR', de: 'de-DE', ja: 'ja-JP' }[language];
+  const voice = { lang: voiceLocale, localService: true };
   const words = new Map([
     ['first', { id: 'first', term: 'bonjour' }],
     ['second', { id: 'second', term: 'maison' }],
@@ -62,7 +71,7 @@ function setup({ sources = { first: 'audio/first.m4a', second: 'audio/second.m4a
       utterances.push(utterance);
     },
   };
-  const window = { speechSynthesis };
+  const window = { speechSynthesis, open: (...args) => opened.push(args) };
   vm.runInNewContext(source, {
     window,
     speechSynthesis,
@@ -81,9 +90,9 @@ function setup({ sources = { first: 'audio/first.m4a', second: 'audio/second.m4a
     player,
     status,
     getContext: () => ({
-      audioMode: 'auto',
-      language: 'fr',
-      voiceLocale: 'fr-FR',
+      audioMode,
+      language,
+      voiceLocale,
       languageName: '法語',
       meaningLanguage: 'zh-Hant',
     }),
@@ -92,7 +101,7 @@ function setup({ sources = { first: 'audio/first.m4a', second: 'audio/second.m4a
     getButtons: () => buttons,
     onNotice: (message) => notices.push(message),
   });
-  return { controller, player, status, buttons, requests, utterances, notices, timers };
+  return { controller, player, status, buttons, requests, utterances, notices, timers, words, opened };
 }
 
 async function run() {
@@ -201,8 +210,61 @@ async function run() {
   assert.equal(noBuiltInAudio.status.textContent, '正在朗讀：maison');
   assert.equal(noBuiltInAudio.buttons[1].attributes['aria-pressed'], 'true');
   assert.equal(noBuiltInAudio.notices.length, 0);
+
+  const japanese = setup({ sources: {}, language: 'ja' });
+  for (const [term, expected] of [
+    ['～かと思うと／～かと思ったら', 'かと思うと かと思ったら'],
+    ['～を通じて/～を通して', 'を通じて を通して'],
+    ['  〜やら～やら ~ / ／ ～  ', 'やらやら'],
+    ['コーヒー', 'コーヒー'],
+  ]) {
+    japanese.controller.stop();
+    japanese.words.get('first').term = term;
+    japanese.controller.speak('first');
+    await settle();
+    const utterance = japanese.utterances.at(-1);
+    assert.equal(utterance.text, expected);
+    assert.equal(utterance.lang, 'ja-JP');
+    utterance.onstart();
+    assert.equal(japanese.status.textContent, `正在朗讀：${term}`);
+    assert.equal(japanese.words.get('first').term, term, 'Display text stays intact');
+  }
+
+  const japaneseFallback = setup({ language: 'ja' });
+  japaneseFallback.words.get('first').term = '～わけではない／～というわけではない';
+  japaneseFallback.controller.speak('first');
+  japaneseFallback.player.onerror();
+  await settle();
+  assert.equal(japaneseFallback.utterances[0].text, 'わけではない というわけではない');
+
+  const google = setup({ language: 'ja', audioMode: 'google' });
+  google.words.get('first').term = '～に伴って/～とともに';
+  google.controller.speak('first');
+  assert.equal(new URL(google.opened[0][0]).searchParams.get('text'), 'に伴って とともに');
+  assert.equal(google.utterances.length, 0);
+
+  for (const audioMode of ['auto', 'device', 'google']) {
+    const symbols = setup({ language: 'ja', audioMode });
+    symbols.words.get('first').term = ' /／～〜~ ';
+    symbols.controller.speak('first');
+    await settle();
+    assert.equal(symbols.utterances.length, 0, 'Symbol-only text never starts speech');
+    assert.equal(symbols.requests.length, 0);
+    assert.equal(symbols.opened.length, 0);
+    assert.equal(symbols.timers.size, 0);
+    assert.equal(symbols.buttons[0].attributes['aria-pressed'], 'false');
+  }
+
+  for (const language of ['fr', 'de']) {
+    const other = setup({ sources: {}, language });
+    const term = 'un/deux ～ 〜 ~';
+    other.words.get('first').term = term;
+    other.controller.speak('first');
+    await settle();
+    assert.equal(other.utterances[0].text, term, 'Other languages keep their original speech');
+  }
   console.log(
-    'Audio playback, cancellation, stale callbacks, single fallback, and permission errors passed.',
+    'Audio playback, cancellation, stale callbacks, fallback, permission errors, and Japanese speech text passed.',
   );
 }
 

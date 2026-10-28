@@ -16,7 +16,7 @@
     "基础": 81,
     "进阶": 72
   },
-  "method": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，明显语法或释义错误另记于 note；对教育制度年数保留原书例句并说明未作现行制度核验；区分学位、人物及不同单元的语境义。",
+  "method": "詞條、分類、原書頁碼與校對註記保留原整理；例句於 2026-10-25 改為 Mots 原創詞彙關聯例句。原例句保存在 french/example-network.json 的 originalText，XLSX 保留原書轉錄版本。",
   "subcategories": [
     {
       "id": "10.01",
@@ -42,13 +42,29 @@
       "subcategory": "10.01",
       "french": "appliqué, appliquée",
       "chinese": "用功的，认真的",
-      "example": "Le professeur a écrit sur le bulletin scolaire d’Aurélie qu’elle est une élève très appliquée.",
+      "example": "Appliquée dans son travail, cette élève vérifie ses calculs avant d’aider sa camarade à préparer l’exposé.",
       "part": "adj. / p. p.",
       "level": "基础",
       "bookPage": 77,
       "pdfPage": 84,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        },
+        {
+          "id": "book-10.01-033",
+          "form": "exposé"
+        },
+        {
+          "id": "book-10.01-002",
+          "form": "camarade"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-002",
@@ -56,13 +72,29 @@
       "subcategory": "10.01",
       "french": "le camarade, la camarade",
       "chinese": "同学",
-      "example": "Il est important de bien s’entendre avec ses camarades de classe.",
+      "example": "Un camarade m’a prêté son cahier pour rattraper le cours manqué pendant mon voyage avec l’équipe de théâtre.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 77,
       "pdfPage": 84,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-019",
+          "form": "théâtre"
+        },
+        {
+          "id": "book-13.07-007",
+          "form": "équipe"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-003",
@@ -70,13 +102,29 @@
       "subcategory": "10.01",
       "french": "capable",
       "chinese": "有能力的",
-      "example": "L’élève est capable de répondre aux questions de l’instituteur, car il a bien appris sa leçon.",
+      "example": "Cette apprentie est capable de réparer la machine et d’expliquer son fonctionnement aux nouveaux employés de l’atelier.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 77,
       "pdfPage": 84,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.04-038",
+          "form": "fonctionnement"
+        },
+        {
+          "id": "book-11.03-009",
+          "form": "employés"
+        },
+        {
+          "id": "book-15.06-020",
+          "form": "machine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-004",
@@ -84,13 +132,29 @@
       "subcategory": "10.01",
       "french": "la classe",
       "chinese": "班级",
-      "example": "Dans une école, il y a différentes classes.",
+      "example": "Notre classe visitera une ferme pour comprendre le travail des agriculteurs et l’origine des produits vendus au marché.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 77,
       "pdfPage": 84,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-014",
+          "form": "produits"
+        },
+        {
+          "id": "book-11.01-001",
+          "form": "agriculteurs"
+        },
+        {
+          "id": "book-1.02-024",
+          "form": "origine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-005",
@@ -98,13 +162,29 @@
       "subcategory": "10.01",
       "french": "le collège",
       "chinese": "初中，中等学校",
-      "example": "Le collège est un établissement scolaire.",
+      "example": "Le collège ouvre son gymnase aux habitants du quartier et accueille une association après les cours.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 77,
       "pdfPage": 84,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“学校”；补充法国学校语境中的“初中”义。"
+      "note": "原书译“学校”；补充法国学校语境中的“初中”义。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-006",
@@ -112,13 +192,29 @@
       "subcategory": "10.01",
       "french": "le crayon",
       "chinese": "铅笔",
-      "example": "Pour écrire, les élèves ont besoin de crayons.",
+      "example": "Ma sœur dessinait au crayon les plantes du jardin pendant que je cherchais leurs noms dans le manuel.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 77,
       "pdfPage": 84,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "1.01-1",
+          "form": "noms"
+        },
+        {
+          "id": "1.03-3",
+          "form": "sœur"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-007",
@@ -126,13 +222,29 @@
       "subcategory": "10.01",
       "french": "le devoir",
       "chinese": "作业",
-      "example": "Les élèves font leurs devoirs à la maison.",
+      "example": "Je termine mon devoir à la bibliothèque avant de rentrer préparer le dîner avec mon frère.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 77,
       "pdfPage": 84,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-046",
+          "form": "dîner"
+        },
+        {
+          "id": "1.03-4",
+          "form": "frère"
+        },
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "10.01-1",
@@ -140,14 +252,30 @@
       "subcategory": "10.01",
       "french": "l’école",
       "chinese": "学校",
-      "example": "L’école n’est plus obligatoire à partir de l’âge de 16 ans.",
+      "example": "L’école a organisé une collecte de vêtements pour les familles accueillies dans le quartier après l’inondation.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 77,
       "pdfPage": 84,
       "source": "法语基础词汇分类学习手册",
       "note": "例句按原书保留；其中年龄表述未作现行教育制度核验。",
-      "ipa": "/ekɔl/"
+      "ipa": "/ekɔl/",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-017",
+          "form": "vêtements"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        },
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "10.01-3",
@@ -155,13 +283,29 @@
       "subcategory": "10.01",
       "french": "l’élève",
       "chinese": "学生",
-      "example": "Les enfants qui vont à l’école sont des élèves.",
+      "example": "Chaque élève choisit un métier et interroge une personne qui l’exerce avant de présenter son travail à la classe.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 77,
       "pdfPage": 84,
       "source": "法语基础词汇分类学习手册",
-      "note": "élève 可指男生或女生，省音冠词形式相同。"
+      "note": "élève 可指男生或女生，省音冠词形式相同。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.01-012",
+          "form": "métier"
+        },
+        {
+          "id": "book-1.04-021",
+          "form": "personne"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-010",
@@ -169,13 +313,29 @@
       "subcategory": "10.01",
       "french": "l’emploi du temps",
       "chinese": "时间表，作息时间表，课程表",
-      "example": "Aurélie n’est pas satisfaite de son nouvel emploi du temps car elle a cours le samedi matin.",
+      "example": "L’emploi du temps changera pour permettre aux étudiants de visiter le chantier avec leur professeur d’architecture.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 77,
       "pdfPage": 84,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-008",
+          "form": "emploi"
+        },
+        {
+          "id": "11.03-2",
+          "form": "chantier"
+        },
+        {
+          "id": "book-10.03-012",
+          "form": "professeur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-011",
@@ -183,13 +343,29 @@
       "subcategory": "10.01",
       "french": "enseigner",
       "chinese": "教学，教授",
-      "example": "Madame Dupont préfère enseigner dans un collège.",
+      "example": "Une ancienne cuisinière enseigne les bases du métier à des jeunes qui souhaitent travailler dans la restauration.",
       "part": "v. t. / i.",
       "level": "基础",
       "bookPage": 77,
       "pdfPage": 84,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.06-003",
+          "form": "bases"
+        },
+        {
+          "id": "book-11.01-007",
+          "form": "cuisinière"
+        },
+        {
+          "id": "book-1.01-012",
+          "form": "métier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-012",
@@ -197,13 +373,29 @@
       "subcategory": "10.01",
       "french": "l’établissement",
       "chinese": "学校，教育机构",
-      "example": "C’est un établissement très moderne.",
+      "example": "Cet établissement accueillait des enfants de plusieurs villages, qui arrivaient chaque matin par le même bus.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 77,
       "pdfPage": 84,
       "source": "法语基础词汇分类学习手册",
-      "note": "本单元教育语境，与一般“机构、单位”义区分。"
+      "note": "本单元教育语境，与一般“机构、单位”义区分。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-026",
+          "form": "matin"
+        },
+        {
+          "id": "3.01-2",
+          "form": "villages"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-013",
@@ -211,13 +403,29 @@
       "subcategory": "10.01",
       "french": "la formation",
       "chinese": "培训，培养",
-      "example": "Aurélie choisit la formation de secrétaire.",
+      "example": "La formation associe des cours à l’école et une expérience pratique dans une entreprise du quartier.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 77,
       "pdfPage": 84,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-012",
+          "form": "entreprise"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-014",
@@ -225,13 +433,29 @@
       "subcategory": "10.01",
       "french": "le groupe",
       "chinese": "队，组",
-      "example": "La classe de Madame Dupont est répartie en deux groupes.",
+      "example": "Un groupe plus petit permettrait au guide de répondre aux questions de chaque enfant pendant la visite du musée.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 77,
       "pdfPage": 84,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-020",
+          "form": "guide"
+        },
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        },
+        {
+          "id": "book-4.02-014",
+          "form": "visite"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-015",
@@ -239,13 +463,29 @@
       "subcategory": "10.01",
       "french": "ignorer",
       "chinese": "忽视，不理会",
-      "example": "C’est important que l’enseignant n’ignore pas les fautes de ses élèves. Au contraire, il doit les corriger.",
+      "example": "Le directeur ne peut pas ignorer les difficultés des salariés qui doivent traverser la ville pour venir travailler.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 77,
       "pdfPage": 84,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-008",
+          "form": "directeur"
+        },
+        {
+          "id": "book-11.01-048",
+          "form": "salariés"
+        },
+        {
+          "id": "3.01-1",
+          "form": "ville"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-016",
@@ -253,13 +493,29 @@
       "subcategory": "10.01",
       "french": "intéressé, intéressée",
       "chinese": "感兴趣的，有兴趣的",
-      "example": "C’est un élève très intéressé.",
+      "example": "Intéressée par les langues, cette lycéenne a participé à un atelier de traduction organisé dans la bibliothèque.",
       "part": "adj. / p. p.",
       "level": "基础",
       "bookPage": 77,
       "pdfPage": 84,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“有关的，谋求私利的”；本例指学习有兴趣的学生，按语境校正。"
+      "note": "原书译“有关的，谋求私利的”；本例指学习有兴趣的学生，按语境校正。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-12.01-019",
+          "form": "traduction"
+        },
+        {
+          "id": "book-11.03-022",
+          "form": "atelier"
+        },
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-017",
@@ -267,13 +523,29 @@
       "subcategory": "10.01",
       "french": "le maître, la maîtresse",
       "chinese": "老师，教师",
-      "example": "Le maître donne des devoirs aux élèves à faire pour la semaine prochaine.",
+      "example": "La maîtresse accompagne les enfants au jardin et leur demande de dessiner les plantes observées pendant la promenade.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 77,
       "pdfPage": 84,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-025",
+          "form": "promenade"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-018",
@@ -281,13 +553,29 @@
       "subcategory": "10.01",
       "french": "mal",
       "chinese": "不好，糟糕地",
-      "example": "Il ne fait pratiquement pas de fautes, mais il écrit très mal.",
+      "example": "L’élève entendait mal les explications à cause du bruit de la rue et demandait souvent de répéter.",
       "part": "adv.",
       "level": "基础",
       "bookPage": 77,
       "pdfPage": 84,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-4.01-020",
+          "form": "rue"
+        },
+        {
+          "id": "book-9.01-003",
+          "form": "bruit"
+        },
+        {
+          "id": "book-10.01-032",
+          "form": "explications"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-019",
@@ -295,13 +583,29 @@
       "subcategory": "10.01",
       "french": "la matière",
       "chinese": "学科，科目",
-      "example": "En général, les matières préférées des garçons sont les mathématiques et le sport.",
+      "example": "Cette matière me passionne parce qu’elle relie l’histoire des villes aux conditions de vie de leurs habitants.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 77,
       "pdfPage": 84,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“方面”；本例指学校科目，按语境校正。"
+      "note": "原书译“方面”；本例指学校科目，按语境校正。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-006",
+          "form": "histoire"
+        },
+        {
+          "id": "book-11.03-005",
+          "form": "conditions"
+        },
+        {
+          "id": "book-8.02-021",
+          "form": "vie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-020",
@@ -309,13 +613,29 @@
       "subcategory": "10.01",
       "french": "le modèle",
       "chinese": "模特，写生对象；模型",
-      "example": "Les élèves dessinent d’après un modèle.",
+      "example": "Le modèle posera près de la fenêtre pendant que les élèves dessineront son visage et les plis de sa veste.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 77,
       "pdfPage": 84,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-16.09-046",
+          "form": "plis"
+        },
+        {
+          "id": "book-8.01-035",
+          "form": "visage"
+        },
+        {
+          "id": "book-6.03-016",
+          "form": "veste"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-021",
@@ -323,13 +643,29 @@
       "subcategory": "10.01",
       "french": "scolaire",
       "chinese": "学校的，学制的",
-      "example": "En France, il y a douze années scolaires, tandis qu’en Allemagne il y en a treize.",
+      "example": "Le voyage scolaire permet aux enfants de découvrir la montagne et de rencontrer les habitants d’un village isolé.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 78,
       "pdfPage": 85,
       "source": "法语基础词汇分类学习手册",
-      "note": "例句按原书保留；法德学制年数未作现行制度核验。"
+      "note": "例句按原书保留；法德学制年数未作现行制度核验。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-008",
+          "form": "montagne"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyage"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-022",
@@ -337,13 +673,29 @@
       "subcategory": "10.01",
       "french": "souligner",
       "chinese": "在……下面划线；强调",
-      "example": "J’ai souligné le titre du texte.",
+      "example": "Soulignez les mots qui décrivent le paysage, puis comparez vos choix avec ceux de votre camarade.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 78,
       "pdfPage": 85,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“强调”；本例指在文字标题下划线，补充对应义。"
+      "note": "原书译“强调”；本例指在文字标题下划线，补充对应义。",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "3.02-3",
+          "form": "paysage"
+        },
+        {
+          "id": "book-12.05-007",
+          "form": "choix"
+        },
+        {
+          "id": "book-12.02-024",
+          "form": "mots"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-023",
@@ -351,13 +703,29 @@
       "subcategory": "10.01",
       "french": "le stylo",
       "chinese": "水笔，钢笔，笔",
-      "example": "Les élèves utilisent des stylos de différentes couleurs.",
+      "example": "Mon stylo ne fonctionne plus ; la secrétaire m’en prête un pour signer le contrat et noter la date.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 78,
       "pdfPage": 85,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-017",
+          "form": "secrétaire"
+        },
+        {
+          "id": "book-11.03-028",
+          "form": "contrat"
+        },
+        {
+          "id": "book-16.01-005",
+          "form": "date"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-024",
@@ -365,13 +733,29 @@
       "subcategory": "10.01",
       "french": "le surveillant, la surveillante",
       "chinese": "学监，学生监督员",
-      "example": "Le surveillant fait attention aux élèves qui jouent dans la cour.",
+      "example": "Le surveillant a retrouvé un sac dans le couloir et demandé à chaque classe si quelqu’un l’avait perdu.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 78,
       "pdfPage": 85,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-031",
+          "form": "couloir"
+        },
+        {
+          "id": "book-6.03-053",
+          "form": "sac"
+        },
+        {
+          "id": "book-10.01-004",
+          "form": "classe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-025",
@@ -379,13 +763,29 @@
       "subcategory": "10.01",
       "french": "le tableau",
       "chinese": "黑板",
-      "example": "L’instituteur écrit la leçon de mathématiques au tableau.",
+      "example": "Au tableau, une élève dessine le trajet du bus pendant que son camarade indique les lieux importants du quartier.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 78,
       "pdfPage": 85,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.01-012",
+          "form": "lieux"
+        },
+        {
+          "id": "book-4.01-030",
+          "form": "trajet"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-026",
@@ -393,13 +793,29 @@
       "subcategory": "10.01",
       "french": "l’apprentissage",
       "chinese": "学徒培训，见习；学习",
-      "example": "Pierre n’a pas envie de faire des études. Il a préféré choisir un apprentissage pour devenir boulanger.",
+      "example": "L’apprentissage du métier commençait par le rangement des outils et l’observation du travail des artisans expérimentés.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 78,
       "pdfPage": 85,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“学徒，见习”；本词为培训、学习过程，不是指人的 apprenti。"
+      "note": "原书译“学徒，见习”；本词为培训、学习过程，不是指人的 apprenti。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-9.01-015",
+          "form": "observation"
+        },
+        {
+          "id": "book-2.02-052",
+          "form": "outils"
+        },
+        {
+          "id": "book-1.01-012",
+          "form": "métier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-027",
@@ -407,13 +823,25 @@
       "subcategory": "10.01",
       "french": "l’avertissement",
       "chinese": "警告",
-      "example": "Aurélie vient de recevoir un sévère avertissement.",
+      "example": "L’avertissement affiché sur la porte explique pourquoi les élèves ne doivent pas entrer dans le laboratoire sans professeur.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 78,
       "pdfPage": 85,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-014",
+          "form": "laboratoire"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-028",
@@ -421,13 +849,29 @@
       "subcategory": "10.01",
       "french": "le bulletin",
       "chinese": "成绩单",
-      "example": "À la fin de chaque année scolaire, les élèves reçoivent leur bulletin.",
+      "example": "Le bulletin arrivera avant les vacances et permettra à la famille de discuter des difficultés rencontrées en mathématiques.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 78,
       "pdfPage": 85,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-013",
+          "form": "vacances"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        },
+        {
+          "id": "book-10.02-017",
+          "form": "mathématiques"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-029",
@@ -435,13 +879,29 @@
       "subcategory": "10.01",
       "french": "le cahier",
       "chinese": "本子，练习本",
-      "example": "Les élèves écrivent la nouvelle leçon dans leur cahier.",
+      "example": "Dans son cahier, la jeune cuisinière note les recettes et calcule le coût des repas préparés à l’atelier.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 78,
       "pdfPage": 85,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-012",
+          "form": "coût"
+        },
+        {
+          "id": "book-11.01-007",
+          "form": "cuisinière"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-030",
@@ -449,13 +909,29 @@
       "subcategory": "10.01",
       "french": "effacer",
       "chinese": "擦，擦去",
-      "example": "Le professeur efface le tableau.",
+      "example": "J’ai effacé le mauvais numéro sur le tableau avant que mes collègues commencent à préparer la livraison.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 78,
       "pdfPage": 85,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-16.04-014",
+          "form": "numéro"
+        },
+        {
+          "id": "book-6.01-036",
+          "form": "livraison"
+        },
+        {
+          "id": "book-11.01-028",
+          "form": "collègues"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-031",
@@ -463,13 +939,29 @@
       "subcategory": "10.01",
       "french": "l’enseignant, l’enseignante",
       "chinese": "教员，教师",
-      "example": "Les enseignants doivent avoir beaucoup de patience.",
+      "example": "Cette enseignante utilise les photographies du quartier pour faire parler ses élèves de leur environnement quotidien.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 78,
       "pdfPage": 85,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-007",
+          "form": "environnement"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-032",
@@ -477,13 +969,29 @@
       "subcategory": "10.01",
       "french": "l’explication",
       "chinese": "解释，说明",
-      "example": "Lorsque les élèves ont du mal à comprendre quelque chose, l’enseignant leur donne des explications supplémentaires.",
+      "example": "Une explication plus courte aiderait les visiteurs à comprendre le mécanisme sans perdre l’envie de poursuivre la visite.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 78,
       "pdfPage": 85,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-1.06-007",
+          "form": "envie"
+        },
+        {
+          "id": "book-13.01-044",
+          "form": "visiteurs"
+        },
+        {
+          "id": "book-6.03-046",
+          "form": "mécanisme"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-033",
@@ -491,13 +999,29 @@
       "subcategory": "10.01",
       "french": "l’exposé",
       "chinese": "陈述，报告",
-      "example": "Nous devions faire un exposé sur l’Europe.",
+      "example": "Notre exposé présente les dépenses d’un ménage et compare les prix des transports dans plusieurs villes.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 78,
       "pdfPage": 85,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-049",
+          "form": "ménage"
+        },
+        {
+          "id": "book-6.02-015",
+          "form": "dépenses"
+        },
+        {
+          "id": "book-4.03-020",
+          "form": "transports"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-034",
@@ -505,13 +1029,29 @@
       "subcategory": "10.01",
       "french": "inscrire",
       "chinese": "报名，注册，登记",
-      "example": "Elle a inscrit ses enfants dans une école privée.",
+      "example": "La mairie inscrira les enfants à l’atelier de musique après réception du formulaire et de l’autorisation des parents.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 78,
       "pdfPage": 85,
       "source": "法语基础词汇分类学习手册",
-      "note": "本例 inscrire ses enfants 指为孩子报名；自报名为 s’inscrire。"
+      "note": "本例 inscrire ses enfants 指为孩子报名；自报名为 s’inscrire。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-011",
+          "form": "musique"
+        },
+        {
+          "id": "1.03-2",
+          "form": "parents"
+        },
+        {
+          "id": "book-11.03-022",
+          "form": "atelier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-035",
@@ -519,13 +1059,29 @@
       "subcategory": "10.01",
       "french": "le lycée",
       "chinese": "高中",
-      "example": "Si on veut faire des études, il faut d’abord terminer le lycée.",
+      "example": "Ce lycée propose un cours de théâtre et organise chaque année un spectacle ouvert aux familles du quartier.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 78,
       "pdfPage": 85,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-002",
+          "form": "année"
+        },
+        {
+          "id": "book-13.01-020",
+          "form": "spectacle"
+        },
+        {
+          "id": "book-13.03-019",
+          "form": "théâtre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-036",
@@ -533,13 +1089,29 @@
       "subcategory": "10.01",
       "french": "la recommandation",
       "chinese": "推荐，建议",
-      "example": "C’est une recommandation du directeur.",
+      "example": "La recommandation de mon professeur m’a aidé à obtenir un stage dans le laboratoire où travaille ma sœur.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 78,
       "pdfPage": 85,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-014",
+          "form": "laboratoire"
+        },
+        {
+          "id": "1.03-3",
+          "form": "sœur"
+        },
+        {
+          "id": "book-10.01-039",
+          "form": "stage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-037",
@@ -547,13 +1119,29 @@
       "subcategory": "10.01",
       "french": "reproduire",
       "chinese": "再现，重现，重复",
-      "example": "Cet élève reproduit toujours les mêmes erreurs.",
+      "example": "Pour reproduire ce dessin, l’élève observe les ombres et compare la position des objets sur la table.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 78,
       "pdfPage": 85,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.08-028",
+          "form": "position"
+        },
+        {
+          "id": "book-3.03-012",
+          "form": "ombres"
+        },
+        {
+          "id": "book-2.02-015",
+          "form": "objets"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-038",
@@ -561,13 +1149,29 @@
       "subcategory": "10.01",
       "french": "sévère",
       "chinese": "严厉的，严格的；严重的",
-      "example": "Mon maître d’école est un homme sévère.",
+      "example": "La directrice paraissait sévère, mais elle prenait toujours le temps d’écouter les élèves qui rencontraient des difficultés.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 78,
       "pdfPage": 85,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“严重的”；形容教师时指严厉、严格，补充对应义。"
+      "note": "原书译“严重的”；形容教师时指严厉、严格，补充对应义。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-008",
+          "form": "directrice"
+        },
+        {
+          "id": "book-10.04-004",
+          "form": "difficultés"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.01-039",
@@ -575,13 +1179,29 @@
       "subcategory": "10.01",
       "french": "le stage",
       "chinese": "实习",
-      "example": "Après son stage à l’hôpital, Pierre s’est rendu compte que les médecins ont un métier très difficile.",
+      "example": "Pendant son stage, cette étudiante prépare des plans et accompagne l’architecte lors des réunions sur le chantier.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 78,
       "pdfPage": 85,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-022",
+          "form": "architecte"
+        },
+        {
+          "id": "11.02-1",
+          "form": "réunions"
+        },
+        {
+          "id": "11.03-2",
+          "form": "chantier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-001",
@@ -589,13 +1209,29 @@
       "subcategory": "10.02",
       "french": "l’absence",
       "chinese": "缺席",
-      "example": "Les parents doivent justifier par un mot d’excuses l’absence de leurs enfants.",
+      "example": "Son absence a obligé le groupe à répartir autrement le travail prévu pour la préparation du concert.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-058",
+          "form": "préparation"
+        },
+        {
+          "id": "book-13.03-030",
+          "form": "concert"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-002",
@@ -603,13 +1239,29 @@
       "subcategory": "10.02",
       "french": "apprendre",
       "chinese": "学，学习",
-      "example": "L’élève apprend ses leçons le soir à la maison.",
+      "example": "Les enfants apprennent à reconnaître les légumes en aidant les bénévoles à préparer le repas de l’association.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-012",
+          "form": "légumes"
+        },
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-003",
@@ -617,13 +1269,29 @@
       "subcategory": "10.02",
       "french": "le calcul",
       "chinese": "计算",
-      "example": "4 + 4 est un calcul simple.",
+      "example": "Le calcul du budget tiendra compte du transport, du logement et des billets nécessaires pour visiter les musées.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-006",
+          "form": "budget"
+        },
+        {
+          "id": "book-13.02-007",
+          "form": "musées"
+        },
+        {
+          "id": "book-4.03-020",
+          "form": "transport"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-004",
@@ -631,13 +1299,25 @@
       "subcategory": "10.02",
       "french": "compter",
       "chinese": "数数，计算",
-      "example": "La première chose que les élèves apprennent en mathématiques, c’est de compter jusqu’à dix.",
+      "example": "À la caisse, l’apprentie compte les pièces et vérifie la monnaie avant de la rendre au client.",
       "part": "v. t. / i.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "6.02-3",
+          "form": "monnaie"
+        },
+        {
+          "id": "book-6.01-003",
+          "form": "client"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-005",
@@ -645,13 +1325,29 @@
       "subcategory": "10.02",
       "french": "le cours",
       "chinese": "课程，课",
-      "example": "Pierre a cours de mathématiques le mercredi et le jeudi de 8 h 30 à 10 h 00.",
+      "example": "Ce cours réunissait des salariés qui souhaitaient changer de profession et reprendre confiance dans leur capacité à apprendre.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-11.02-003",
+          "form": "capacité"
+        },
+        {
+          "id": "book-11.01-047",
+          "form": "profession"
+        },
+        {
+          "id": "book-11.01-048",
+          "form": "salariés"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-006",
@@ -659,13 +1355,29 @@
       "subcategory": "10.02",
       "french": "définir",
       "chinese": "下定义，界定",
-      "example": "L’instituteur m’a demandé de définir le mot amour.",
+      "example": "Le professeur demande de définir le mot « quartier » à partir des lieux que les élèves fréquentent chaque jour.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-019",
+          "form": "jour"
+        },
+        {
+          "id": "book-12.02-024",
+          "form": "mot"
+        },
+        {
+          "id": "book-4.01-012",
+          "form": "lieux"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-007",
@@ -673,13 +1385,29 @@
       "subcategory": "10.02",
       "french": "la définition",
       "chinese": "定义",
-      "example": "Avant de commencer la leçon, le professeur écrit plusieurs définitions au tableau.",
+      "example": "La définition trouvée dans le dictionnaire a aidé notre groupe à comprendre le texte avant la réunion.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "11.02-1",
+          "form": "réunion"
+        },
+        {
+          "id": "book-13.05-025",
+          "form": "texte"
+        },
+        {
+          "id": "book-10.01-014",
+          "form": "groupe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-008",
@@ -687,13 +1415,29 @@
       "subcategory": "10.02",
       "french": "la discipline",
       "chinese": "纪律",
-      "example": "Le professeur exige de la discipline en classe.",
+      "example": "La discipline de l’atelier permet à chacun de travailler sans que les outils encombrent le passage près des machines.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-052",
+          "form": "outils"
+        },
+        {
+          "id": "book-4.01-018",
+          "form": "passage"
+        },
+        {
+          "id": "book-15.06-020",
+          "form": "machines"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-009",
@@ -701,13 +1445,29 @@
       "subcategory": "10.02",
       "french": "la division",
       "chinese": "除法",
-      "example": "Aujourd’hui, les élèves apprennent à faire des divisions.",
+      "example": "Une division bien posée rendrait ce calcul plus clair pour les élèves qui hésitent encore devant les fractions.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-10.02-028",
+          "form": "fractions"
+        },
+        {
+          "id": "book-10.02-003",
+          "form": "calcul"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-010",
@@ -715,13 +1475,29 @@
       "subcategory": "10.02",
       "french": "l’enseignement",
       "chinese": "教学，教育",
-      "example": "L’enseignement est une vocation.",
+      "example": "L’enseignement de la musique occupe une place importante dans cette école qui accueille aussi des enfants du village voisin.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-011",
+          "form": "musique"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-011",
@@ -729,13 +1505,29 @@
       "subcategory": "10.02",
       "french": "l’erreur",
       "chinese": "错误",
-      "example": "C’était une erreur de compréhension.",
+      "example": "Une erreur dans l’adresse a envoyé le paquet à une autre boutique, de l’autre côté de la ville.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-022",
+          "form": "boutique"
+        },
+        {
+          "id": "book-6.01-038",
+          "form": "paquet"
+        },
+        {
+          "id": "3.01-1",
+          "form": "ville"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-012",
@@ -743,13 +1535,29 @@
       "subcategory": "10.02",
       "french": "l’exemple",
       "chinese": "例子",
-      "example": "Le professeur donne des exemples pour que les élèves puissent mieux comprendre ses explications.",
+      "example": "Pour expliquer le crédit, la professeure prend l’exemple d’une famille qui souhaite acheter un appartement.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-014",
+          "form": "crédit"
+        },
+        {
+          "id": "2.01-2",
+          "form": "appartement"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-013",
@@ -757,13 +1565,25 @@
       "subcategory": "10.02",
       "french": "l’exercice",
       "chinese": "练习",
-      "example": "L’instituteur donne des exercices de calcul mental aux élèves.",
+      "example": "Cet exercice préparera les apprentis à expliquer un devis et à répondre aux questions d’un client.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        },
+        {
+          "id": "book-6.01-003",
+          "form": "client"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-014",
@@ -771,13 +1591,29 @@
       "subcategory": "10.02",
       "french": "la faute",
       "chinese": "错误",
-      "example": "Elle a rendu un texte plein de fautes.",
+      "example": "La secrétaire remarque une faute dans le contrat et prévient le directeur avant la signature du document.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.01-027",
+          "form": "signature"
+        },
+        {
+          "id": "book-11.01-017",
+          "form": "secrétaire"
+        },
+        {
+          "id": "book-11.03-028",
+          "form": "contrat"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-015",
@@ -785,13 +1621,29 @@
       "subcategory": "10.02",
       "french": "historique",
       "chinese": "历史的",
-      "example": "Ce monument historique est énormément visité.",
+      "example": "Le roman historique décrivait les marchés, les métiers et les logements d’une ville que nous connaissions bien.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-1.01-012",
+          "form": "métiers"
+        },
+        {
+          "id": "book-13.05-024",
+          "form": "roman"
+        },
+        {
+          "id": "book-3.01-012",
+          "form": "marchés"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-016",
@@ -799,13 +1651,29 @@
       "subcategory": "10.02",
       "french": "lever",
       "chinese": "举，抬",
-      "example": "Si les élèves veulent poser une question pendant le cours, ils doivent lever la main.",
+      "example": "L’élève lève la main pour demander pourquoi les oiseaux quittent le jardin avant l’arrivée de l’hiver.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": "本例 lever la main 指举手，区别于第八单元 se lever（起床）。"
+      "note": "本例 lever la main 指举手，区别于第八单元 se lever（起床）。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.04-4",
+          "form": "oiseaux"
+        },
+        {
+          "id": "book-16.02-016",
+          "form": "hiver"
+        },
+        {
+          "id": "book-14.03-003",
+          "form": "arrivée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-017",
@@ -813,13 +1681,29 @@
       "subcategory": "10.02",
       "french": "les mathématiques",
       "chinese": "数学",
-      "example": "On dit que les garçons sont plus forts en mathématiques que les filles, mais c’est un préjugé.",
+      "example": "Les mathématiques m’ont aidé à comparer les offres de crédit avant l’achat de notre premier appartement.",
       "part": "n. f. pl.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-15.06-043",
+          "form": "offres"
+        },
+        {
+          "id": "book-6.02-014",
+          "form": "crédit"
+        },
+        {
+          "id": "book-6.01-021",
+          "form": "achat"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-018",
@@ -827,13 +1711,29 @@
       "subcategory": "10.02",
       "french": "multiplier",
       "chinese": "乘，相乘",
-      "example": "Il multiplie 3 par 5.",
+      "example": "Pour calculer le coût du repas, les apprentis multiplient le prix d’une portion par le nombre de visiteurs attendus.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.04-013",
+          "form": "nombre"
+        },
+        {
+          "id": "book-13.01-044",
+          "form": "visiteurs"
+        },
+        {
+          "id": "book-6.02-012",
+          "form": "coût"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-019",
@@ -841,13 +1741,29 @@
       "subcategory": "10.02",
       "french": "l’opération",
       "chinese": "运算",
-      "example": "La division est une opération mathématique.",
+      "example": "Vérifiez cette opération avant de transmettre le montant de la commande au service financier de l’entreprise.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": "本单元数学语境，与第八单元“手术”义区分。"
+      "note": "本单元数学语境，与第八单元“手术”义区分。",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-025",
+          "form": "commande"
+        },
+        {
+          "id": "book-7.02-013",
+          "form": "service"
+        },
+        {
+          "id": "book-6.02-031",
+          "form": "montant"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-020",
@@ -855,13 +1771,29 @@
       "subcategory": "10.02",
       "french": "la présence",
       "chinese": "出勤，在场",
-      "example": "À l’école, la présence des élèves est contrôlée tous les jours.",
+      "example": "La présence des parents à l’atelier rassure les enfants qui découvrent pour la première fois la salle de spectacle.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-020",
+          "form": "spectacle"
+        },
+        {
+          "id": "1.03-2",
+          "form": "parents"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-021",
@@ -869,13 +1801,29 @@
       "subcategory": "10.02",
       "french": "recopier",
       "chinese": "抄写，誊写",
-      "example": "Il a recopié au propre la leçon de mathématiques dans son cahier.",
+      "example": "Le jeune secrétaire recopiait les adresses dans un registre pendant que ses collègues préparaient les enveloppes.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 79,
       "pdfPage": 86,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-7.01-027",
+          "form": "registre"
+        },
+        {
+          "id": "book-11.01-017",
+          "form": "secrétaire"
+        },
+        {
+          "id": "book-7.02-024",
+          "form": "enveloppes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-022",
@@ -883,13 +1831,25 @@
       "subcategory": "10.02",
       "french": "absent, absente",
       "chinese": "缺席的",
-      "example": "Aujourd’hui, Aurélie ne participe pas au cours de mathématiques. Elle est absente.",
+      "example": "Deux élèves sont absents aujourd’hui, et leurs camarades préparent une copie du cours pour chacun d’eux.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 80,
       "pdfPage": 87,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.01-002",
+          "form": "camarades"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-023",
@@ -897,13 +1857,29 @@
       "subcategory": "10.02",
       "french": "l’atome",
       "chinese": "原子",
-      "example": "Les élèves ont appris que la molécule d’eau contient trois atomes.",
+      "example": "Le professeur présentera un modèle de l’atome avant la visite du laboratoire avec les étudiants de première année.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 80,
       "pdfPage": 87,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-002",
+          "form": "année"
+        },
+        {
+          "id": "book-4.02-014",
+          "form": "visite"
+        },
+        {
+          "id": "book-11.03-014",
+          "form": "laboratoire"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-024",
@@ -911,13 +1887,29 @@
       "subcategory": "10.02",
       "french": "coller",
       "chinese": "粘贴",
-      "example": "Les élèves collent des images sur une grande feuille de papier.",
+      "example": "Les enfants collent leurs photographies sur une affiche qui raconte la transformation du jardin de l’école.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 80,
       "pdfPage": 87,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.13-055",
+          "form": "transformation"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-025",
@@ -925,13 +1917,29 @@
       "subcategory": "10.02",
       "french": "dispenser",
       "chinese": "免去，免除",
-      "example": "Pierre est dispensé de sport, car il est blessé à la jambe.",
+      "example": "La médecin a dispensé l’élève de sport après avoir examiné sa blessure et discuté avec ses parents.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 80,
       "pdfPage": 87,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-8.02-029",
+          "form": "blessure"
+        },
+        {
+          "id": "book-13.06-012",
+          "form": "sport"
+        },
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-026",
@@ -939,13 +1947,29 @@
       "subcategory": "10.02",
       "french": "diviser",
       "chinese": "分，划分",
-      "example": "L’institutrice a divisé la classe en deux pour cet exercice.",
+      "example": "Nous divisons les élèves en petits groupes pour que chacun puisse poser des questions pendant la visite de l’atelier.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 80,
       "pdfPage": 87,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-014",
+          "form": "visite"
+        },
+        {
+          "id": "book-11.03-022",
+          "form": "atelier"
+        },
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-027",
@@ -953,13 +1977,29 @@
       "subcategory": "10.02",
       "french": "élémentaire",
       "chinese": "初级的，基础的",
-      "example": "Ma mère ne veut pas enseigner au lycée, elle préfère enseigner les classes élémentaires.",
+      "example": "Le manuel proposait des exercices élémentaires de calcul à partir des prix affichés dans un petit magasin.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 80,
       "pdfPage": 87,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "6.01-1",
+          "form": "magasin"
+        },
+        {
+          "id": "book-10.02-033",
+          "form": "manuel"
+        },
+        {
+          "id": "book-10.02-013",
+          "form": "exercices"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-028",
@@ -967,13 +2007,29 @@
       "subcategory": "10.02",
       "french": "la fraction",
       "chinese": "分数",
-      "example": "À l’école, les élèves apprennent à multiplier et à faire des fractions.",
+      "example": "Cette fraction représente la part du budget que notre association consacre au transport des enfants vers la piscine.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 80,
       "pdfPage": 87,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-006",
+          "form": "budget"
+        },
+        {
+          "id": "book-4.03-020",
+          "form": "transport"
+        },
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-029",
@@ -981,13 +2037,29 @@
       "subcategory": "10.02",
       "french": "illustrer",
       "chinese": "加插图，图示",
-      "example": "Ce manuel scolaire est illustré de photos récentes.",
+      "example": "Des dessins illustreront le rapport et permettront aux habitants de comprendre les changements prévus dans leur quartier.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 80,
       "pdfPage": 87,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-16.13-003",
+          "form": "changements"
+        },
+        {
+          "id": "book-11.02-021",
+          "form": "rapport"
+        },
+        {
+          "id": "book-13.02-018",
+          "form": "dessins"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-030",
@@ -995,13 +2067,29 @@
       "subcategory": "10.02",
       "french": "l’instituteur, l’institutrice",
       "chinese": "小学教师",
-      "example": "Cet instituteur est aimé de ses élèves.",
+      "example": "L’institutrice accompagne ses élèves à la bibliothèque et les aide à choisir un livre adapté à leurs intérêts.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 80,
       "pdfPage": 87,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.06-011",
+          "form": "intérêts"
+        },
+        {
+          "id": "book-7.02-003",
+          "form": "aide"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-031",
@@ -1009,13 +2097,29 @@
       "subcategory": "10.02",
       "french": "la leçon",
       "chinese": "课文，功课，课",
-      "example": "Le professeur constate que les leçons n’ont pas été apprises.",
+      "example": "J’ai relu la leçon dans le train, puis expliqué les passages difficiles à ma sœur pendant le dîner.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 80,
       "pdfPage": 87,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-046",
+          "form": "dîner"
+        },
+        {
+          "id": "book-4.01-018",
+          "form": "passages"
+        },
+        {
+          "id": "4.04-1",
+          "form": "train"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-032",
@@ -1023,13 +2127,29 @@
       "subcategory": "10.02",
       "french": "logique",
       "chinese": "逻辑的，合乎逻辑的",
-      "example": "Je ne comprends pas pourquoi elle a tant de problèmes à faire cet exercice. C’est tellement logique.",
+      "example": "Son raisonnement est logique, mais le professeur lui demande encore de vérifier les nombres utilisés dans le calcul.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 80,
       "pdfPage": 87,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.04-013",
+          "form": "nombres"
+        },
+        {
+          "id": "book-10.02-003",
+          "form": "calcul"
+        },
+        {
+          "id": "book-10.03-012",
+          "form": "professeur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-033",
@@ -1037,13 +2157,29 @@
       "subcategory": "10.02",
       "french": "le manuel",
       "chinese": "课本，教材",
-      "example": "L’élève met ses manuels scolaires dans son sac.",
+      "example": "Un manuel plus récent donnerait aux apprentis des informations sur les machines qu’ils utilisent réellement dans l’atelier.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 80,
       "pdfPage": 87,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-007",
+          "form": "informations"
+        },
+        {
+          "id": "book-15.06-020",
+          "form": "machines"
+        },
+        {
+          "id": "book-11.03-022",
+          "form": "atelier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-034",
@@ -1051,13 +2187,29 @@
       "subcategory": "10.02",
       "french": "la marge",
       "chinese": "页边空白",
-      "example": "Les élèves doivent laisser une marge de dix centimètres pour que les professeurs puissent corriger les fautes.",
+      "example": "Dans la marge, ma camarade dessine une flèche pour relier l’exemple à la définition donnée par le professeur.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 80,
       "pdfPage": 87,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.06-022",
+          "form": "flèche"
+        },
+        {
+          "id": "book-10.02-007",
+          "form": "définition"
+        },
+        {
+          "id": "book-10.02-012",
+          "form": "exemple"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-035",
@@ -1065,13 +2217,29 @@
       "subcategory": "10.02",
       "french": "la molécule",
       "chinese": "分子",
-      "example": "Nous apprenons en cours les noms des molécules.",
+      "example": "La chercheuse expliquait la structure de la molécule avec une maquette fabriquée par les étudiants du laboratoire.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 80,
       "pdfPage": 87,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-16.09-024",
+          "form": "structure"
+        },
+        {
+          "id": "book-11.01-026",
+          "form": "chercheuse"
+        },
+        {
+          "id": "book-11.03-014",
+          "form": "laboratoire"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-036",
@@ -1079,13 +2247,29 @@
       "subcategory": "10.02",
       "french": "punir",
       "chinese": "惩处，惩罚",
-      "example": "Autrefois, les élèves étaient punis s’ils n’avaient pas fait leurs devoirs.",
+      "example": "Le règlement précise les comportements à punir et prévoit aussi un entretien pour comprendre les difficultés de l’élève.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 80,
       "pdfPage": 87,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.05-026",
+          "form": "comportements"
+        },
+        {
+          "id": "book-6.02-038",
+          "form": "règlement"
+        },
+        {
+          "id": "book-10.04-004",
+          "form": "difficultés"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-037",
@@ -1093,13 +2277,29 @@
       "subcategory": "10.02",
       "french": "résumer",
       "chinese": "简述，概述，总结",
-      "example": "Le devoir d’aujourd’hui, c’est de résumer l’article que nous avons lu en classe.",
+      "example": "Nous avons résumé le rapport avant de présenter ses conclusions aux habitants réunis dans la salle municipale.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 80,
       "pdfPage": 87,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-12.01-005",
+          "form": "conclusions"
+        },
+        {
+          "id": "book-11.02-021",
+          "form": "rapport"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-038",
@@ -1107,13 +2307,29 @@
       "subcategory": "10.02",
       "french": "le symbole",
       "chinese": "象征，符号",
-      "example": "Le professeur explique à ses élèves que la balance est le symbole de la justice.",
+      "example": "Chaque symbole sur la carte indique un service utile aux voyageurs, comme une banque ou un hôpital.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 80,
       "pdfPage": 87,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-004",
+          "form": "banque"
+        },
+        {
+          "id": "book-8.04-006",
+          "form": "hôpital"
+        },
+        {
+          "id": "book-7.02-013",
+          "form": "service"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.02-039",
@@ -1121,13 +2337,25 @@
       "subcategory": "10.02",
       "french": "le vecteur",
       "chinese": "向量，矢量",
-      "example": "Le vecteur est une notion mathématique.",
+      "example": "Le professeur dessinera un vecteur au tableau pour montrer la direction du mouvement observé pendant l’expérience.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 80,
       "pdfPage": 87,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.06-008",
+          "form": "mouvement"
+        },
+        {
+          "id": "book-10.03-012",
+          "form": "professeur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-001",
@@ -1135,13 +2363,29 @@
       "subcategory": "10.03",
       "french": "l’analyse",
       "chinese": "分析",
-      "example": "Les étudiants en médecine font des analyses du corps humain.",
+      "example": "L’analyse des factures permet à la famille de comprendre pourquoi ses dépenses de chauffage ont augmenté cet hiver.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-016",
+          "form": "hiver"
+        },
+        {
+          "id": "book-2.02-031",
+          "form": "chauffage"
+        },
+        {
+          "id": "book-6.02-015",
+          "form": "dépenses"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-002",
@@ -1149,13 +2393,29 @@
       "subcategory": "10.03",
       "french": "le concours",
       "chinese": "考试，选拔考试",
-      "example": "Pierre n’a pas réussi le concours, il ne pourra donc pas étudier dans cette école d’arts.",
+      "example": "Elle préparait le concours le soir après son travail et réservait le dimanche aux exercices les plus difficiles.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": "补充“选拔考试”义，与一般 examen 区分。"
+      "note": "补充“选拔考试”义，与一般 examen 区分。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-009",
+          "form": "dimanche"
+        },
+        {
+          "id": "book-16.02-039",
+          "form": "soir"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-003",
@@ -1163,13 +2423,29 @@
       "subcategory": "10.03",
       "french": "l’étude",
       "chinese": "学业，学习，研究",
-      "example": "Aurélie fait ses études à Paris.",
+      "example": "L’étude de ces lettres révèle comment les familles organisaient leurs voyages avant l’arrivée du chemin de fer.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": "faire ses études 常用复数，指求学、攻读学业。"
+      "note": "faire ses études 常用复数，指求学、攻读学业。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-033",
+          "form": "chemin de fer"
+        },
+        {
+          "id": "book-7.01-013",
+          "form": "lettres"
+        },
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-004",
@@ -1177,13 +2453,29 @@
       "subcategory": "10.03",
       "french": "l’étudiant, l’étudiante",
       "chinese": "大学生",
-      "example": "Les étudiants vont à l’université.",
+      "example": "Une étudiante a proposé d’interroger les commerçants pour mieux comprendre les besoins des habitants du quartier.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-8.03-001",
+          "form": "besoins"
+        },
+        {
+          "id": "book-11.01-029",
+          "form": "commerçants"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-005",
@@ -1191,13 +2483,29 @@
       "subcategory": "10.03",
       "french": "étudier",
       "chinese": "学习，研究",
-      "example": "Ma voisine a étudié la philosophie, elle est maintenant professeur de philosophie.",
+      "example": "Nous étudions les effets du bruit sur les enfants qui habitent près de la gare et de l’aéroport.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-002",
+          "form": "aéroport"
+        },
+        {
+          "id": "book-9.01-003",
+          "form": "bruit"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-006",
@@ -1205,13 +2513,29 @@
       "subcategory": "10.03",
       "french": "la faculté",
       "chinese": "系，学院",
-      "example": "Aurélie est inscrite en faculté de droit.",
+      "example": "La faculté organisera une rencontre entre les étudiants et les chercheurs qui travaillent sur la construction durable.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-006",
+          "form": "construction"
+        },
+        {
+          "id": "book-14.03-014",
+          "form": "rencontre"
+        },
+        {
+          "id": "book-11.01-026",
+          "form": "chercheurs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-007",
@@ -1219,13 +2543,29 @@
       "subcategory": "10.03",
       "french": "l’institut",
       "chinese": "学院，研究所，专门机构",
-      "example": "Dans beaucoup de villes étrangères, il y a un institut français.",
+      "example": "Cet institut accueille des spécialistes qui comparent les méthodes de transport des marchandises entre plusieurs régions.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-010",
+          "form": "marchandises"
+        },
+        {
+          "id": "book-3.01-018",
+          "form": "régions"
+        },
+        {
+          "id": "book-11.01-018",
+          "form": "spécialistes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-008",
@@ -1233,13 +2573,25 @@
       "subcategory": "10.03",
       "french": "la méthode",
       "chinese": "方法",
-      "example": "Il existe différentes méthodes pour analyser un résultat.",
+      "example": "Une méthode plus simple permettrait aux bénévoles de classer les documents sans suivre une longue formation.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-7.01-006",
+          "form": "documents"
+        },
+        {
+          "id": "book-7.02-019",
+          "form": "bénévoles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-009",
@@ -1247,13 +2599,29 @@
       "subcategory": "10.03",
       "french": "la notion",
       "chinese": "概念；基本知识",
-      "example": "Les élèves ont des notions de base en sciences.",
+      "example": "La notion de budget devient plus concrète quand les élèves préparent un repas pour vingt personnes.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“概念”；notions de base 在本例指基础知识，补充对应义。"
+      "note": "原书译“概念”；notions de base 在本例指基础知识，补充对应义。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-006",
+          "form": "budget"
+        },
+        {
+          "id": "book-1.04-021",
+          "form": "personnes"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-010",
@@ -1261,13 +2629,25 @@
       "subcategory": "10.03",
       "french": "la philosophie",
       "chinese": "哲学",
-      "example": "Pierre est étudiant en philosophie.",
+      "example": "Le cours de philosophie nous a conduits à discuter de la justice à partir d’un conflit entre voisins.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-15.05-006",
+          "form": "conflit"
+        },
+        {
+          "id": "book-15.07-013",
+          "form": "justice"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-011",
@@ -1275,13 +2655,29 @@
       "subcategory": "10.03",
       "french": "la pratique",
       "chinese": "实践",
-      "example": "La pratique est le contraire de la théorie.",
+      "example": "La pratique du métier complète les cours : l’apprentie accompagne chaque semaine une technicienne dans les ateliers.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-036",
+          "form": "semaine"
+        },
+        {
+          "id": "book-1.01-012",
+          "form": "métier"
+        },
+        {
+          "id": "book-11.01-049",
+          "form": "technicienne"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-012",
@@ -1289,13 +2685,29 @@
       "subcategory": "10.03",
       "french": "le professeur",
       "chinese": "教授，教师",
-      "example": "La tante de Pierre est professeur, elle donne des cours à l’université.",
+      "example": "Le professeur connaissait les difficultés de ses étudiants et proposait des exemples tirés de leur vie quotidienne.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书写 le professeur 并标注 (M, F)，词形按原书保留；例句指女性教授。"
+      "note": "原书写 le professeur 并标注 (M, F)，词形按原书保留；例句指女性教授。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-8.02-021",
+          "form": "vie"
+        },
+        {
+          "id": "book-10.02-012",
+          "form": "exemples"
+        },
+        {
+          "id": "book-10.04-004",
+          "form": "difficultés"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-013",
@@ -1303,13 +2715,29 @@
       "subcategory": "10.03",
       "french": "la théorie",
       "chinese": "理论",
-      "example": "Les étudiants apprennent à développer une théorie.",
+      "example": "Cette théorie aide les chercheurs à formuler leurs questions, mais ils doivent encore la confronter à leurs observations.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-9.01-015",
+          "form": "observations"
+        },
+        {
+          "id": "book-11.01-026",
+          "form": "chercheurs"
+        },
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-014",
@@ -1317,13 +2745,25 @@
       "subcategory": "10.03",
       "french": "universitaire",
       "chinese": "大学的",
-      "example": "La cité universitaire est située dans le centre-ville.",
+      "example": "La résidence universitaire accueillera des étudiants étrangers et proposera une cuisine commune près de la salle de lecture.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "10.03-1",
@@ -1331,13 +2771,29 @@
       "subcategory": "10.03",
       "french": "l’université",
       "chinese": "大学",
-      "example": "Si on veut faire des études, il faut aller à l’université.",
+      "example": "L’université ouvre sa bibliothèque aux habitants et organise des conférences gratuites sur l’histoire de la ville.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-006",
+          "form": "histoire"
+        },
+        {
+          "id": "book-11.02-007",
+          "form": "conférences"
+        },
+        {
+          "id": "3.01-1",
+          "form": "ville"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-016",
@@ -1345,13 +2801,29 @@
       "subcategory": "10.03",
       "french": "analyser",
       "chinese": "分析",
-      "example": "Les savants analysent un fait.",
+      "example": "Les élèves ont analysé l’eau de la rivière et comparé leurs résultats avec ceux du laboratoire voisin.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "3.02-2",
+          "form": "rivière"
+        },
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "book-11.03-014",
+          "form": "laboratoire"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-017",
@@ -1359,13 +2831,29 @@
       "subcategory": "10.03",
       "french": "la bibliothèque",
       "chinese": "图书馆",
-      "example": "La bibliothèque restera fermée pendant le mois d’août.",
+      "example": "La bibliothèque prête des livres aux enfants et accueille les habitants qui cherchent un endroit calme pour travailler.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.08-011",
+          "form": "endroit"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-018",
@@ -1373,13 +2861,29 @@
       "subcategory": "10.03",
       "french": "biologique",
       "chinese": "生物的，生物学的",
-      "example": "Ils étudient des phénomènes biologiques.",
+      "example": "La diversité biologique du jardin intéresse les enfants, qui observent les insectes avant de préparer une affiche.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-043",
+          "form": "insectes"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-019",
@@ -1387,13 +2891,29 @@
       "subcategory": "10.03",
       "french": "chimique",
       "chinese": "化学的",
-      "example": "Les produits chimiques sont à utiliser avec beaucoup de prudence.",
+      "example": "Le technicien vérifiait la composition chimique du produit avant d’autoriser son utilisation dans l’atelier.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-067",
+          "form": "utilisation"
+        },
+        {
+          "id": "book-13.01-028",
+          "form": "composition"
+        },
+        {
+          "id": "book-6.01-014",
+          "form": "produit"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-020",
@@ -1401,13 +2921,29 @@
       "subcategory": "10.03",
       "french": "le colloque",
       "chinese": "研讨会",
-      "example": "Le professeur organise un colloque sur l’histoire française contemporaine.",
+      "example": "Ce colloque réunit des architectes et des sociologues pour discuter du logement et des espaces partagés dans les villes.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.08-013",
+          "form": "espaces"
+        },
+        {
+          "id": "book-11.01-022",
+          "form": "architectes"
+        },
+        {
+          "id": "book-2.01-035",
+          "form": "logement"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-021",
@@ -1415,13 +2951,29 @@
       "subcategory": "10.03",
       "french": "le concept",
       "chinese": "概念，观念",
-      "example": "L’université a développé un nouveau concept pour mieux préparer les étudiants.",
+      "example": "Le concept de jardin partagé serait plus clair pour les élèves s’ils pouvaient rencontrer les habitants qui l’utilisent.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 81,
       "pdfPage": 88,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-022",
@@ -1429,13 +2981,25 @@
       "subcategory": "10.03",
       "french": "étudié, étudiée",
       "chinese": "精心准备的，经过推敲的",
-      "example": "Ce professeur a préparé un discours bien clair et étudié.",
+      "example": "Cette mise en scène étudiée guide le regard du public vers les lettres posées sur le bureau.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 82,
       "pdfPage": 89,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-7.01-013",
+          "form": "lettres"
+        },
+        {
+          "id": "book-9.01-018",
+          "form": "regard"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-023",
@@ -1443,13 +3007,29 @@
       "subcategory": "10.03",
       "french": "expérimental, expérimentale",
       "chinese": "实验的",
-      "example": "Le chercheur universitaire emploie des méthodes expérimentales.",
+      "example": "Le dispositif expérimental a été installé près de la fenêtre pour observer l’influence de la lumière sur les plantes.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 82,
       "pdfPage": 89,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-8.03-008",
+          "form": "influence"
+        },
+        {
+          "id": "book-3.02-010",
+          "form": "lumière"
+        },
+        {
+          "id": "book-2.01-011",
+          "form": "fenêtre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-024",
@@ -1457,13 +3037,29 @@
       "subcategory": "10.03",
       "french": "l’hypothèse",
       "chinese": "假设",
-      "example": "Le scientifique émet plusieurs hypothèses qu’il doit ensuite vérifier.",
+      "example": "Chaque hypothèse est discutée par le groupe avant que les étudiants décident des mesures à effectuer au laboratoire.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 82,
       "pdfPage": 89,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.04-011",
+          "form": "mesures"
+        },
+        {
+          "id": "book-11.03-014",
+          "form": "laboratoire"
+        },
+        {
+          "id": "book-10.01-014",
+          "form": "groupe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-025",
@@ -1471,13 +3067,29 @@
       "subcategory": "10.03",
       "french": "l’inscription",
       "chinese": "注册，报名",
-      "example": "Pour pouvoir suivre des cours, il faut d’abord effectuer son inscription à l’université.",
+      "example": "L’inscription au cours restera ouverte jusqu’à vendredi pour permettre aux salariés de vérifier leurs horaires de travail.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 82,
       "pdfPage": 89,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-048",
+          "form": "salariés"
+        },
+        {
+          "id": "book-16.02-047",
+          "form": "horaires"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-026",
@@ -1485,13 +3097,29 @@
       "subcategory": "10.03",
       "french": "orienter",
       "chinese": "为……定方向，引导",
-      "example": "Les scientifiques ont orienté leurs recherches dans une nouvelle direction.",
+      "example": "La conseillère oriente les étudiants vers des formations qui correspondent à leurs intérêts et aux métiers qu’ils souhaitent découvrir.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 82,
       "pdfPage": 89,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.06-011",
+          "form": "intérêts"
+        },
+        {
+          "id": "book-1.01-012",
+          "form": "métiers"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-027",
@@ -1499,13 +3127,29 @@
       "subcategory": "10.03",
       "french": "philosophique",
       "chinese": "哲学的",
-      "example": "Le livre que je viens de lire est une analyse philosophique de la société actuelle.",
+      "example": "La discussion philosophique se poursuivait au café, longtemps après la fin du séminaire et le départ du professeur.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 82,
       "pdfPage": 89,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-12.04-013",
+          "form": "discussion"
+        },
+        {
+          "id": "book-16.02-014",
+          "form": "fin"
+        },
+        {
+          "id": "book-10.03-029",
+          "form": "séminaire"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-028",
@@ -1513,13 +3157,29 @@
       "subcategory": "10.03",
       "french": "la psychologie",
       "chinese": "心理学",
-      "example": "Les études de psychologie sont assez complexes.",
+      "example": "La psychologie intéresse cette infirmière, qui souhaite mieux comprendre les réactions des patients et de leurs proches.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 82,
       "pdfPage": 89,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-9.02-017",
+          "form": "réactions"
+        },
+        {
+          "id": "book-8.04-007",
+          "form": "infirmière"
+        },
+        {
+          "id": "book-8.02-012",
+          "form": "patients"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-029",
@@ -1527,13 +3187,29 @@
       "subcategory": "10.03",
       "french": "le séminaire",
       "chinese": "研讨会，研讨课",
-      "example": "Ce n’est pas la peine de se charger de trop de séminaires. Cela ne mène à rien !",
+      "example": "Le séminaire nous a permis de rencontrer une historienne dont les recherches portent sur les familles de notre région.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 82,
       "pdfPage": 89,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-037",
+          "form": "historienne"
+        },
+        {
+          "id": "book-3.01-018",
+          "form": "région"
+        },
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-030",
@@ -1541,13 +3217,29 @@
       "subcategory": "10.03",
       "french": "la sociologie",
       "chinese": "社会学",
-      "example": "La sociologie est l’étude des phénomènes sociaux et des relations humaines.",
+      "example": "La sociologie apporte des outils pour étudier les relations entre les habitants et les transformations de leur quartier.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 82,
       "pdfPage": 89,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.13-055",
+          "form": "transformations"
+        },
+        {
+          "id": "book-14.01-010",
+          "form": "relations"
+        },
+        {
+          "id": "book-2.02-052",
+          "form": "outils"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-031",
@@ -1555,13 +3247,25 @@
       "subcategory": "10.03",
       "french": "théorique",
       "chinese": "理论的",
-      "example": "C’est une discussion purement théorique.",
+      "example": "Une formation seulement théorique laisserait peu de place aux gestes que les apprentis doivent maîtriser dans l’atelier.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 82,
       "pdfPage": 89,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-12.02-022",
+          "form": "gestes"
+        },
+        {
+          "id": "book-11.03-022",
+          "form": "atelier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.03-032",
@@ -1569,13 +3273,29 @@
       "subcategory": "10.03",
       "french": "la thèse",
       "chinese": "论文；论点，主张",
-      "example": "Les professeurs ont participé à un débat sur les thèses de cet auteur.",
+      "example": "Sa thèse compare les logements étudiants dans trois villes et s’appuie sur des entretiens avec leurs habitants.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 82,
       "pdfPage": 89,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“论文”；本例复数 thèses 指作者的论点、主张，补充对应义。"
+      "note": "原书译“论文”；本例复数 thèses 指作者的论点、主张，补充对应义。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-035",
+          "form": "logements"
+        },
+        {
+          "id": "3.01-1",
+          "form": "villes"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-001",
@@ -1583,13 +3303,29 @@
       "subcategory": "10.04",
       "french": "complexe",
       "chinese": "复杂的",
-      "example": "C’est une histoire bien trop complexe.",
+      "example": "Le dossier était complexe, mais la fonctionnaire nous a aidés à classer les documents avant de le déposer.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 82,
       "pdfPage": 89,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-7.01-011",
+          "form": "fonctionnaire"
+        },
+        {
+          "id": "book-7.01-025",
+          "form": "dossier"
+        },
+        {
+          "id": "book-7.01-006",
+          "form": "documents"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-002",
@@ -1597,13 +3333,29 @@
       "subcategory": "10.04",
       "french": "le contrôle",
       "chinese": "检测，测试，考试",
-      "example": "L’instituteur fait un contrôle pour évaluer les connaissances de ses élèves.",
+      "example": "Le contrôle de demain portera sur les calculs de prix que nous avons étudiés pendant le cours.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 82,
       "pdfPage": 89,
       "source": "法语基础词汇分类学习手册",
-      "note": "本单元指学校测验，与第七单元警察检查语境区分。"
+      "note": "本单元指学校测验，与第七单元警察检查语境区分。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.02-003",
+          "form": "calculs"
+        },
+        {
+          "id": "book-10.02-005",
+          "form": "cours"
+        },
+        {
+          "id": "6.02-1",
+          "form": "prix"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-003",
@@ -1611,13 +3363,29 @@
       "subcategory": "10.04",
       "french": "difficile",
       "chinese": "难的，困难的",
-      "example": "Aurélie a trouvé l’examen de mathématiques très difficile, elle ne pense pas obtenir la moyenne.",
+      "example": "Le trajet sera difficile si la neige bloque la route qui relie le village à l’école.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 82,
       "pdfPage": 89,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-3.03-010",
+          "form": "neige"
+        },
+        {
+          "id": "book-4.03-017",
+          "form": "route"
+        },
+        {
+          "id": "book-4.01-030",
+          "form": "trajet"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-004",
@@ -1625,13 +3393,29 @@
       "subcategory": "10.04",
       "french": "la difficulté",
       "chinese": "困难",
-      "example": "Aurélie a des difficultés en mathématiques.",
+      "example": "Cette difficulté de lecture inquiète l’élève, qui demande à son professeur un peu plus de temps pour l’exercice.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 82,
       "pdfPage": 89,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.02-013",
+          "form": "exercice"
+        },
+        {
+          "id": "book-10.03-012",
+          "form": "professeur"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élève"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-005",
@@ -1639,13 +3423,29 @@
       "subcategory": "10.04",
       "french": "l’épreuve",
       "chinese": "考试，试题，考核项目",
-      "example": "La secrétaire affichera les résultats des épreuves écrites demain à 14 heures.",
+      "example": "L’épreuve durait trois heures et demandait aux candidats de résoudre un problème lié au transport des marchandises.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 82,
       "pdfPage": 89,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-15.01-015",
+          "form": "problème"
+        },
+        {
+          "id": "book-6.01-010",
+          "form": "marchandises"
+        },
+        {
+          "id": "book-15.03-003",
+          "form": "candidats"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-006",
@@ -1653,13 +3453,29 @@
       "subcategory": "10.04",
       "french": "l’essai",
       "chinese": "尝试",
-      "example": "Elle a réussi cet examen après deux essais.",
+      "example": "Ce premier essai permet aux apprentis de comprendre le mécanisme avant de travailler sur la machine de l’usine.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 82,
       "pdfPage": 89,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-046",
+          "form": "mécanisme"
+        },
+        {
+          "id": "book-11.03-020",
+          "form": "usine"
+        },
+        {
+          "id": "book-15.06-020",
+          "form": "machine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-007",
@@ -1667,13 +3483,25 @@
       "subcategory": "10.04",
       "french": "excellent, excellente",
       "chinese": "优秀的",
-      "example": "Aurélie a toujours de très bonnes notes. C’est une excellente étudiante.",
+      "example": "Son excellent résultat au concours a encouragé la jeune musicienne à demander une place dans une nouvelle formation.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 82,
       "pdfPage": 89,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-038",
+          "form": "musicienne"
+        },
+        {
+          "id": "book-10.03-002",
+          "form": "concours"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-008",
@@ -1681,13 +3509,25 @@
       "subcategory": "10.04",
       "french": "facile",
       "chinese": "容易的",
-      "example": "Même bien préparé, un examen n’est pas obligatoirement facile.",
+      "example": "La recette est facile, mais les enfants doivent préparer les ingrédients et lire les étapes avant de commencer.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 82,
       "pdfPage": 89,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-011",
+          "form": "étapes"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-009",
@@ -1695,13 +3535,29 @@
       "subcategory": "10.04",
       "french": "faux, fausse",
       "chinese": "假的，错误的，不正确的",
-      "example": "L’information que la secrétaire nous a donnée est fausse.",
+      "example": "Barrez le résultat faux et expliquez dans la marge pourquoi ce calcul ne correspond pas au prix affiché.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-10.02-034",
+          "form": "marge"
+        },
+        {
+          "id": "book-10.04-016",
+          "form": "résultat"
+        },
+        {
+          "id": "book-10.02-003",
+          "form": "calcul"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-010",
@@ -1709,13 +3565,29 @@
       "subcategory": "10.04",
       "french": "inconnu, inconnue",
       "chinese": "不认识的，陌生的，未知的",
-      "example": "Ce mot m’est inconnu.",
+      "example": "Devant un mot inconnu, l’élève cherche d’abord le sens de la phrase avant d’ouvrir son dictionnaire.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-12.01-012",
+          "form": "phrase"
+        },
+        {
+          "id": "book-12.02-024",
+          "form": "mot"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élève"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-011",
@@ -1723,13 +3595,29 @@
       "subcategory": "10.04",
       "french": "interroger",
       "chinese": "询问，提问，考问",
-      "example": "Ce professeur interroge un étudiant à chaque début de cours.",
+      "example": "Le jury interrogera les candidats sur leur projet et sur l’expérience acquise pendant leurs stages en entreprise.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-003",
+          "form": "candidats"
+        },
+        {
+          "id": "11.02-2",
+          "form": "projet"
+        },
+        {
+          "id": "book-11.03-012",
+          "form": "entreprise"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-012",
@@ -1737,13 +3625,29 @@
       "subcategory": "10.04",
       "french": "moyen, moyenne",
       "chinese": "普通的，一般的，中等的",
-      "example": "Mes connaissances en langues sont assez moyennes.",
+      "example": "Malgré un résultat moyen en mathématiques, cette élève réussit très bien les travaux qui demandent du dessin.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-018",
+          "form": "dessin"
+        },
+        {
+          "id": "book-10.02-017",
+          "form": "mathématiques"
+        },
+        {
+          "id": "book-10.04-016",
+          "form": "résultat"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-013",
@@ -1751,13 +3655,25 @@
       "subcategory": "10.04",
       "french": "le niveau",
       "chinese": "水平",
-      "example": "Le niveau de Pierre en langues est faible.",
+      "example": "Le niveau du cours était trop élevé pour moi, alors le professeur me conseillait des exercices plus simples.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-10.02-013",
+          "form": "exercices"
+        },
+        {
+          "id": "book-10.03-012",
+          "form": "professeur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-014",
@@ -1765,13 +3681,29 @@
       "subcategory": "10.04",
       "french": "noter",
       "chinese": "记录，记下",
-      "example": "Pour ne pas oublier la date de l’examen je vais la noter tout de suite.",
+      "example": "Je note les questions des habitants pour que l’architecte puisse y répondre pendant la prochaine réunion.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-022",
+          "form": "architecte"
+        },
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-015",
@@ -1779,13 +3711,29 @@
       "subcategory": "10.04",
       "french": "résoudre",
       "chinese": "解决",
-      "example": "À l’université, on apprend à résoudre des problèmes.",
+      "example": "Notre collègue a résolu le problème de livraison en demandant l’aide d’un chauffeur qui connaissait le quartier.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-025",
+          "form": "chauffeur"
+        },
+        {
+          "id": "book-15.01-015",
+          "form": "problème"
+        },
+        {
+          "id": "book-6.01-036",
+          "form": "livraison"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-016",
@@ -1793,13 +3741,29 @@
       "subcategory": "10.04",
       "french": "le résultat",
       "chinese": "结果，成绩",
-      "example": "Les résultats de l’examen seront publiés demain.",
+      "example": "Le résultat de l’expérience surprend les étudiants, qui vérifient leurs mesures avant de rédiger leur rapport.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.04-011",
+          "form": "mesures"
+        },
+        {
+          "id": "book-11.02-021",
+          "form": "rapport"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-017",
@@ -1807,13 +3771,29 @@
       "subcategory": "10.04",
       "french": "résulter",
       "chinese": "是……的结果，由……得出",
-      "example": "De cette discussion, il résulte que la théorie de ce scientifique est fausse.",
+      "example": "Une baisse des dépenses pourrait résulter du changement de chauffage proposé par le technicien lors de sa visite.",
       "part": "v. i.",
       "level": "基础",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-16.13-031",
+          "form": "baisse"
+        },
+        {
+          "id": "book-16.13-003",
+          "form": "changement"
+        },
+        {
+          "id": "book-2.02-031",
+          "form": "chauffage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "10.04-3",
@@ -1821,14 +3801,30 @@
       "subcategory": "10.04",
       "french": "réussir",
       "chinese": "成功，通过考试",
-      "example": "S’il continue de sortir autant, il ne réussira jamais son examen.",
+      "example": "Cette apprentie réussit à réparer la serrure après avoir observé le travail de son maître et posé plusieurs questions.",
       "part": "v. t. / i.",
       "level": "基础",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/ʁeysiʁ/"
+      "ipa": "/ʁeysiʁ/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        },
+        {
+          "id": "book-10.01-017",
+          "form": "maître"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-019",
@@ -1836,13 +3832,29 @@
       "subcategory": "10.04",
       "french": "simple",
       "chinese": "简单的",
-      "example": "Il est beaucoup plus simple de s’inscrire sur Internet.",
+      "example": "Un plan simple aidera les visiteurs à trouver les salles du musée sans demander leur chemin à chaque étage.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-035",
+          "form": "étage"
+        },
+        {
+          "id": "book-4.01-002",
+          "form": "chemin"
+        },
+        {
+          "id": "book-13.01-044",
+          "form": "visiteurs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-020",
@@ -1850,13 +3862,29 @@
       "subcategory": "10.04",
       "french": "la solution",
       "chinese": "解决办法，解答",
-      "example": "Chaque problème a sa solution.",
+      "example": "La solution proposée par les parents permet aux enfants de rejoindre l’école sans traverser la grande route.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-017",
+          "form": "route"
+        },
+        {
+          "id": "1.03-2",
+          "form": "parents"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-021",
@@ -1864,13 +3892,29 @@
       "subcategory": "10.04",
       "french": "acquis, acquise",
       "chinese": "获得的，取得的；已确定的",
-      "example": "Malgré beaucoup de travail le résultat attendu n’est pas acquis.",
+      "example": "Les connaissances acquises pendant son stage ont aidé l’étudiante à préparer son premier projet de recherche.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-9.02-002",
+          "form": "connaissances"
+        },
+        {
+          "id": "11.02-2",
+          "form": "projet"
+        },
+        {
+          "id": "book-10.01-039",
+          "form": "stage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-022",
@@ -1878,13 +3922,29 @@
       "subcategory": "10.04",
       "french": "admis, admise",
       "chinese": "被录取的，被接纳的",
-      "example": "Pierre était très content quand il a appris qu’il était admis à l’école militaire.",
+      "example": "Admise dans cette école, ma sœur cherche maintenant un logement et compare les horaires des transports publics.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“录取”；词条为过去分词阴阳性形式，本例表示被录取的状态。"
+      "note": "原书译“录取”；词条为过去分词阴阳性形式，本例表示被录取的状态。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-047",
+          "form": "horaires"
+        },
+        {
+          "id": "book-2.01-035",
+          "form": "logement"
+        },
+        {
+          "id": "book-4.03-020",
+          "form": "transports"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-023",
@@ -1892,13 +3952,25 @@
       "subcategory": "10.04",
       "french": "compliqué, compliquée",
       "chinese": "复杂的，难懂的",
-      "example": "Pierre a échoué à l’examen, car les questions étaient trop compliquées.",
+      "example": "Le formulaire était compliqué, et les bénévoles passaient beaucoup de temps à expliquer chaque rubrique aux habitants.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-7.02-019",
+          "form": "bénévoles"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-024",
@@ -1906,13 +3978,29 @@
       "subcategory": "10.04",
       "french": "correct, correcte",
       "chinese": "对的，正确的",
-      "example": "La réponse qu’Aurélie a formulée n’était pas correcte.",
+      "example": "La réponse est correcte, mais l’élève doit montrer comment il a obtenu le montant inscrit dans son cahier.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-12.02-029",
+          "form": "réponse"
+        },
+        {
+          "id": "book-6.02-031",
+          "form": "montant"
+        },
+        {
+          "id": "book-10.01-029",
+          "form": "cahier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-025",
@@ -1920,13 +4008,29 @@
       "subcategory": "10.04",
       "french": "corriger",
       "chinese": "批改，纠正",
-      "example": "Le professeur corrige les examens.",
+      "example": "Corrigez les fautes de cette lettre avant de l’envoyer à l’entreprise qui propose le stage.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-7.01-013",
+          "form": "lettre"
+        },
+        {
+          "id": "book-11.03-012",
+          "form": "entreprise"
+        },
+        {
+          "id": "book-10.02-014",
+          "form": "fautes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-026",
@@ -1934,13 +4038,29 @@
       "subcategory": "10.04",
       "french": "difficilement",
       "chinese": "困难地，费力地",
-      "example": "Comme Pierre était souvent absent des cours, il ne pourra que difficilement passer l’examen.",
+      "example": "Le voyageur avance difficilement dans le couloir avec sa grande valise et les paquets destinés à sa famille.",
       "part": "adv.",
       "level": "进阶",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "4.02-4",
+          "form": "valise"
+        },
+        {
+          "id": "book-2.03-031",
+          "form": "couloir"
+        },
+        {
+          "id": "book-6.01-038",
+          "form": "paquets"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-027",
@@ -1948,13 +4068,25 @@
       "subcategory": "10.04",
       "french": "le diplôme",
       "chinese": "文凭",
-      "example": "Un diplôme est un titre universitaire.",
+      "example": "Elle a reçu son diplôme devant ses parents et les collègues qui l’avaient soutenue pendant sa formation.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "1.03-2",
+          "form": "parents"
+        },
+        {
+          "id": "book-11.01-028",
+          "form": "collègues"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-028",
@@ -1962,13 +4094,29 @@
       "subcategory": "10.04",
       "french": "diplômé, diplômée",
       "chinese": "获得文凭的，毕业的",
-      "example": "Elle est diplômée en droit.",
+      "example": "Diplômé en architecture, mon frère travaille dans une agence qui rénove les maisons anciennes de notre région.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-021",
+          "form": "agence"
+        },
+        {
+          "id": "book-3.01-018",
+          "form": "région"
+        },
+        {
+          "id": "2.01-1",
+          "form": "maisons"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-029",
@@ -1976,13 +4124,29 @@
       "subcategory": "10.04",
       "french": "le doctorat",
       "chinese": "博士学位",
-      "example": "La semaine prochaine, Aurélie obtiendra son doctorat.",
+      "example": "Après son doctorat, cette chercheuse rejoindra un laboratoire où plusieurs équipes étudient les matériaux utilisés dans la construction.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 83,
       "pdfPage": 90,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“博士”；本词指学位，不是指人的 docteur。"
+      "note": "原书译“博士”；本词指学位，不是指人的 docteur。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-006",
+          "form": "construction"
+        },
+        {
+          "id": "book-13.07-007",
+          "form": "équipes"
+        },
+        {
+          "id": "book-11.01-026",
+          "form": "chercheuse"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-030",
@@ -1990,13 +4154,25 @@
       "subcategory": "10.04",
       "french": "échouer",
       "chinese": "失败，不及格",
-      "example": "Pierre a échoué à l’épreuve écrite de mathématiques.",
+      "example": "Échouer à cet examen ne change pas son projet : il cherche une autre méthode et continue de travailler.",
       "part": "v. i.",
       "level": "进阶",
       "bookPage": 84,
       "pdfPage": 91,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "11.02-2",
+          "form": "projet"
+        },
+        {
+          "id": "book-10.03-008",
+          "form": "méthode"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-031",
@@ -2004,13 +4180,29 @@
       "subcategory": "10.04",
       "french": "évaluer",
       "chinese": "评估，检测，评价",
-      "example": "Deux professeurs sont chargés d’évaluer le niveau des étudiants en langues.",
+      "example": "Le jury évaluait les projets selon leur coût, leur utilité pour les habitants et leur effet sur le paysage.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 84,
       "pdfPage": 91,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "3.02-3",
+          "form": "paysage"
+        },
+        {
+          "id": "book-15.06-050",
+          "form": "utilité"
+        },
+        {
+          "id": "book-6.02-012",
+          "form": "coût"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-032",
@@ -2018,13 +4210,29 @@
       "subcategory": "10.04",
       "french": "la facilité",
       "chinese": "容易；能力，天赋",
-      "example": "Aurélie a certaines facilités pour les langues étrangères.",
+      "example": "Sa facilité à expliquer les mécanismes aide les nouveaux employés qui découvrent les machines de l’atelier.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 84,
       "pdfPage": 91,
       "source": "法语基础词汇分类学习手册",
-      "note": "本例复数 facilités 指学习语言的天赋、能力。"
+      "note": "本例复数 facilités 指学习语言的天赋、能力。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-046",
+          "form": "mécanismes"
+        },
+        {
+          "id": "book-11.03-009",
+          "form": "employés"
+        },
+        {
+          "id": "book-15.06-020",
+          "form": "machines"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-033",
@@ -2032,13 +4240,29 @@
       "subcategory": "10.04",
       "french": "faciliter",
       "chinese": "使容易，使便利",
-      "example": "Ce manuel scolaire facilite l’apprentissage des langues.",
+      "example": "Un bus direct faciliterait les déplacements des étudiants qui habitent loin de l’université et travaillent après les cours.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 84,
       "pdfPage": 91,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-11.02-043",
+          "form": "déplacements"
+        },
+        {
+          "id": "10.03-1",
+          "form": "université"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-034",
@@ -2046,13 +4270,29 @@
       "subcategory": "10.04",
       "french": "le jury",
       "chinese": "评审委员会，考试委员会",
-      "example": "Cette année, le jury est composé uniquement de femmes.",
+      "example": "Le jury écoute chaque candidat, puis lui pose des questions sur la méthode choisie pour préparer son exposé.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 84,
       "pdfPage": 91,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-003",
+          "form": "candidat"
+        },
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        },
+        {
+          "id": "book-10.01-033",
+          "form": "exposé"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-035",
@@ -2060,13 +4300,29 @@
       "subcategory": "10.04",
       "french": "médiocre",
       "chinese": "平庸的，不太好的",
-      "example": "C’est un résultat assez médiocre.",
+      "example": "Un résultat médiocre au premier test m’a poussé à revoir mon emploi du temps et mes habitudes de travail.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 84,
       "pdfPage": 91,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“一般的”；补充其偏贬义色彩，与 moyen（中等、一般）区分。"
+      "note": "原书译“一般的”；补充其偏贬义色彩，与 moyen（中等、一般）区分。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-16.11-007",
+          "form": "habitudes"
+        },
+        {
+          "id": "book-11.03-008",
+          "form": "emploi"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-036",
@@ -2074,13 +4330,29 @@
       "subcategory": "10.04",
       "french": "négatif, négative",
       "chinese": "否定的，负面的",
-      "example": "Pierre a posé sa candidature pour entrer dans une grande école. Il a reçu une réponse négative.",
+      "example": "Le personnage donne un avis négatif sur le projet, mais propose une solution moins coûteuse pour les habitants.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 84,
       "pdfPage": 91,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-12.05-004",
+          "form": "avis"
+        },
+        {
+          "id": "book-13.03-013",
+          "form": "personnage"
+        },
+        {
+          "id": "11.02-2",
+          "form": "projet"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "10.04-4",
@@ -2088,14 +4360,26 @@
       "subcategory": "10.04",
       "french": "la note",
       "chinese": "成绩，分数",
-      "example": "Pierre a eu la meilleure note de tous à l’examen écrit.",
+      "example": "La note de son devoir l’inquiétait davantage que la difficulté réelle du cours et le temps nécessaire pour progresser.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 84,
       "pdfPage": 91,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/nɔt/"
+      "ipa": "/nɔt/",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-10.01-007",
+          "form": "devoir"
+        },
+        {
+          "id": "book-10.04-004",
+          "form": "difficulté"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-038",
@@ -2103,13 +4387,29 @@
       "subcategory": "10.04",
       "french": "positif, positive",
       "chinese": "肯定的，正面的",
-      "example": "Aurélie est extrêmement contente, car elle a reçu un résultat positif.",
+      "example": "L’avis positif de ses collègues encourage la salariée à présenter son invention au directeur de l’usine.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 84,
       "pdfPage": 91,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.02-057",
+          "form": "invention"
+        },
+        {
+          "id": "book-12.05-004",
+          "form": "avis"
+        },
+        {
+          "id": "book-11.01-008",
+          "form": "directeur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "10.04-2",
@@ -2117,14 +4417,30 @@
       "subcategory": "10.04",
       "french": "réviser",
       "chinese": "复习",
-      "example": "Pour passer le test, je dois encore réviser les verbes irréguliers.",
+      "example": "Nous réviserons ensemble à la bibliothèque avant de rejoindre nos amis pour le dîner de fin d’année.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 84,
       "pdfPage": 91,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/ʁevize/"
+      "ipa": "/ʁevize/",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-002",
+          "form": "année"
+        },
+        {
+          "id": "book-16.02-014",
+          "form": "fin"
+        },
+        {
+          "id": "book-5.02-046",
+          "form": "dîner"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-040",
@@ -2132,13 +4448,29 @@
       "subcategory": "10.04",
       "french": "la révision",
       "chinese": "复习",
-      "example": "Aurélie passe des examens le mois prochain. Elle ne sort plus, car elle est en période de révisions.",
+      "example": "La révision se passe mieux quand je relie les mots nouveaux aux situations vécues au travail ou pendant mes voyages.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 84,
       "pdfPage": 91,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.01-020",
+          "form": "situations"
+        },
+        {
+          "id": "book-12.02-024",
+          "form": "mots"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyages"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-041",
@@ -2146,13 +4478,29 @@
       "subcategory": "10.04",
       "french": "satisfaisant, satisfaisante",
       "chinese": "让人满意的",
-      "example": "Les résultats de Pierre aux épreuves écrites sont satisfaisants.",
+      "example": "La visite a donné un résultat satisfaisant, mais le technicien a demandé le remplacement d’une pièce usée.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 84,
       "pdfPage": 91,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-049",
+          "form": "technicien"
+        },
+        {
+          "id": "book-4.02-014",
+          "form": "visite"
+        },
+        {
+          "id": "book-10.04-016",
+          "form": "résultat"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-042",
@@ -2160,13 +4508,29 @@
       "subcategory": "10.04",
       "french": "la simplicité",
       "chinese": "简单，简明",
-      "example": "Pierre a résolu le problème de mathématiques avec simplicité.",
+      "example": "La simplicité du plan aide les enfants à retrouver la bibliothèque et le jardin depuis l’entrée du quartier.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 84,
       "pdfPage": 91,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“容易”；本词侧重简单、简明，与 facilité 的容易义区分。"
+      "note": "原书译“容易”；本词侧重简单、简明，与 facilité 的容易义区分。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-009",
+          "form": "entrée"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-10.04-043",
@@ -2174,13 +4538,31 @@
       "subcategory": "10.04",
       "french": "le test",
       "chinese": "考试，测验",
-      "example": "Pour pouvoir participer aux cours de langues, il faut passer un test d’entrée.",
+      "example": "Un test plus court permettrait de vérifier les connaissances essentielles sans fatiguer inutilement les élèves en fin de journée.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 84,
       "pdfPage": 91,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-9.02-002",
+          "form": "connaissances"
+        },
+        {
+          "id": "book-16.02-014",
+          "form": "fin"
+        },
+        {
+          "id": "book-16.02-020",
+          "form": "journée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     }
-  ]
+  ],
+  "originalMethod": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，明显语法或释义错误另记于 note；对教育制度年数保留原书例句并说明未作现行制度核验；区分学位、人物及不同单元的语境义。",
+  "exampleMethod": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
 }

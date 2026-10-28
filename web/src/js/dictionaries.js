@@ -53,7 +53,7 @@
   }
 
   // Keep rich entries identical across dictionary, extension and backup imports.
-  function normalizeDetails(entry, index = 0) {
+  function normalizeDetails(entry, index = 0, language = '') {
     checkObject(entry, `第 ${index + 1} 詞`);
     const prefix = `第 ${index + 1} 詞`;
     const legacy = text(entry.example, `${prefix}的例句`, LIMITS.example, false);
@@ -88,7 +88,7 @@
       example: legacy || result[0]?.text || '',
       examples: result,
       pattern: text(entry.pattern, `${prefix}的接續方式`, LIMITS.pattern, false),
-      explanation: tc(text(entry.explanation, `${prefix}的解釋`, LIMITS.explanation, false)),
+      explanation: label(text(entry.explanation, `${prefix}的解釋`, LIMITS.explanation, false), language),
     };
   }
 
@@ -130,9 +130,7 @@
         id: 'ja',
         title: '日語詞彙總表',
         language: 'ja',
-        categories: [
-          { id: '1', name: '日語詞彙總表', subcategories: [{ id: '1.01', name: '全部詞彙' }] },
-        ],
+        categories: window.MOTS_JAPANESE_CATEGORIES,
       },
     ];
   }
@@ -267,7 +265,7 @@
         if (meaning && !meanings[meaningLanguage]) meanings[meaningLanguage] = meaning;
       }
       if (!Object.keys(meanings).length) throw new Error(`第 ${index + 1} 詞缺少釋義。`);
-      const details = normalizeDetails(entry, index);
+      const details = normalizeDetails(entry, index, language);
       const explicitCategory =
         own(entry, 'category') && entry.category !== '' && entry.category !== null;
       const explicitSub =

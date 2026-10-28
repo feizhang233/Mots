@@ -92,13 +92,35 @@ async function run() {
   assert.equal(ordinary.run('deck.length'), 8);
   assert(ordinary.$('category-nav').innerHTML.includes('data-sub="x.1"'));
   assert.equal(ordinary.run('dictionaryOf(state.dictionary).grammarMode'), 'standard');
+  for (const navID of ['category-nav', 'mobile-category-nav']) {
+    const navigation = ordinary.$(navID).innerHTML;
+    assert(navigation.includes('data-sub="x.2"'), 'Multiple children retain their menu');
+    assert(!navigation.includes('data-sub="y.1"'), 'A single child has no redundant menu');
+    assert(!navigation.includes(`${navID}-children-y`));
+    const parent = ordinary.$('single-child-category');
+    parent.dataset.category = 'y';
+    ordinary.$('category-dialog').showModal();
+    for (let repeat = 0; repeat < 2; repeat++) {
+      for (const handler of ordinary.$(navID).events.click)
+        handler({ target: { closest: (selector) => selector === '[data-category]' ? parent : null } });
+      assert.equal(ordinary.run('state.category'), 'y');
+      assert.equal(ordinary.run('state.subcategory'), 'all');
+      assert.equal(ordinary.run('deck.length'), 8);
+      if (navID === 'mobile-category-nav') assert.equal(ordinary.$('category-dialog').open, false);
+    }
+  }
   for (const language of ['fr', 'de', 'ja']) {
     change(ordinary, 'book-switcher', `grammar-${language}`);
     assert.equal(groups(ordinary), 0);
-    assert.equal(ordinary.run('deck.length'), 6);
+    assert.equal(ordinary.run('deck.length'), language === 'ja' ? 141 : 6);
     assert.equal(ordinary.run('dictionaryOf(state.dictionary).grammarMode'), 'standard');
-    assert(ordinary.$('category-nav').innerHTML.includes('data-sub='));
-    assert(ordinary.$('mobile-category-nav').innerHTML.includes('data-sub='));
+    for (const navID of ['category-nav', 'mobile-category-nav']) {
+      const navigation = ordinary.$(navID).innerHTML;
+      assert(navigation.includes('data-category='));
+      assert(!navigation.includes('data-sub='), 'Single-child grammar categories select directly');
+      assert(!navigation.includes('aria-expanded='));
+      assert(!navigation.includes('nav-chevron'));
+    }
   }
   fireStorage(ordinary, settingsKey, {
     ...read(ordinary, 'settings'),
@@ -107,9 +129,9 @@ async function run() {
   });
   assert.equal(groups(ordinary), 0, 'Old cross-tab settings cannot convert a grammar book');
 
-  // Three separate thematic entry points start empty; they do not copy starter grammar.
+  // French/German thematic entry points still await their own source material.
   const empty = context({ url: 'http://localhost/Mots.html?screen=study&view=list' });
-  for (const language of ['fr', 'de', 'ja']) {
+  for (const language of ['fr', 'de']) {
     const id = `grammar-theme-${language}`;
     change(empty, 'book-switcher', id);
     const book = read(empty, 'dictionaryOf(state.dictionary)');
@@ -131,6 +153,36 @@ async function run() {
   assert.equal(template.grammarMode, 'thematic');
   assert.equal(template.words[0].category, template.categories[0].id);
   assert.equal(template.words[0].subcategory, template.categories[0].subcategories[0].id);
+
+  // The supplied Japanese notes populate the existing independent grammar books.
+  const japanese = context({ url: 'http://localhost/Mots.html?screen=study&dict=grammar-theme-ja&view=list&category=gt27' });
+  assert.equal(japanese.run('dictionaryOf(state.dictionary).categories.length'), 17);
+  assert.equal(japanese.run('sourceWords().length'), 229);
+  assert(japanese.run('dictionaryOf(state.dictionary).categories.every(category => Number(category.id.slice(2)) >= 27)'));
+  assert.equal(japanese.run('deck.length'), 20);
+  assert.equal(groups(japanese), 1);
+  assert(htmlOf(japanese).includes('從原動詞理解語法'));
+  assert(htmlOf(japanese).includes('區分方法'));
+  const japaneseID = japanese.run('deck[1].id');
+  japanese.run(`rate(${JSON.stringify(japaneseID)}, 2, "dot")`);
+  change(japanese, 'book-switcher', 'grammar-ja');
+  assert.equal(japanese.run('deck.length'), 141);
+  assert(japanese.run('dictionaryOf(state.dictionary).categories.every(category => Number(category.id.slice(2)) <= 26)'));
+  assert.equal(groups(japanese), 0);
+  assert.equal(japanese.run(`levelOf(${JSON.stringify(japaneseID)})`), 0);
+  change(japanese, 'book-switcher', 'grammar-theme-ja');
+  japanese.run('state.category = "gt27"; state.subcategory = "all"; buildDeck()');
+  assert.equal(japanese.run('deck.length'), 20);
+  assert(htmlOf(japanese).includes('從原動詞理解語法'));
+  japanese.run('state.dictionary = "grammar-theme-ja"; state.category = "gt42"; state.subcategory = "all"; buildDeck()');
+  assert(japanese.run('deck.find(word => word.id.endsWith("-notes")).explanation.includes("学生は先生に")'));
+  assert(!japanese.run('deck.find(word => word.id.endsWith("-notes")).explanation.includes("學生は先生に")'));
+
+  // Old links to removed thematic lessons recover to the remaining lesson list.
+  const oldJapaneseTopic = context({ url: 'http://localhost/Mots.html?screen=study&dict=grammar-theme-ja&view=list&category=gt01' });
+  assert.equal(oldJapaneseTopic.run('state.category'), 'all');
+  assert.equal(oldJapaneseTopic.run('deck.length'), 229);
+  assert(oldJapaneseTopic.run('deck.every(word => Number(word.category.slice(2)) >= 27)'));
 
   // Explicit thematic metadata renders group cards while retaining individual entry IDs.
   const app = make();
@@ -160,7 +212,7 @@ async function run() {
   app.run('changeDeletion(state.dictionary, "g13", false)');
   change(app, 'book-switcher', 'fr');
   assert.equal(groups(app), 0, 'Vocabulary does not acquire grammar group cards');
-  assert(app.$('category-nav').innerHTML.includes('data-sub="1.01"'));
+  assert(!app.$('category-nav').innerHTML.includes('data-sub='), 'Empty child categories do not create a menu');
   change(app, 'book-switcher', dictionary.id);
   const resumed = context({ storage: stored(app), url });
   assert.equal(groups(resumed), 3);

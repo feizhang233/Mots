@@ -5,6 +5,7 @@ help:
 	@printf '%s\n' 'build       Build Web and shared catalogs' 'test        Check generated output and run all Web/server/tool tests' 'test-web    Run Web regression suites' 'test-sync   Run synchronization HTTP tests' 'test-tools  Run deployment and data integrity tests' 'ios-check   Generate Xcode project and run native tests' 'serve       Build and serve Web on localhost:4173' 'package     Verify and generate offline HTML/project ZIP' 'prepare     Verify and prepare release checksums' 'sync-vps    Verify and deploy to the configured Mots server'
 
 build:
+	python3 scripts/import-japanese-grammar.py
 	python3 web/scripts/build.py
 	python3 scripts/sync-data.py
 
@@ -24,6 +25,7 @@ test-sync:
 test-tools:
 	python3 tests/deploy_test.py
 	python3 tests/data_sync_test.py
+	python3 tests/french_examples_test.py
 
 serve: build
 	python3 -m http.server 4173 --bind 127.0.0.1 --directory web/dist

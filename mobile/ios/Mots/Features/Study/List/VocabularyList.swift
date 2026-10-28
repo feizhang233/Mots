@@ -138,6 +138,8 @@ struct VocabularyList<Header: View, EmptyContent: View>: View {
         .onChange(of: store.pageSize) { _, newValue in
             page = store.currentIndex / max(newValue, 1)
         }
+        .onChange(of: effectivePage) { store.resetListMeaningReveals() }
+        .onDisappear { store.resetListMeaningReveals() }
         .sheet(item: $detailWord) { word in
             EntryDetailView(store: store, word: word)
         }
@@ -261,10 +263,23 @@ private struct VocabularyRow: View {
     let word: StudyWord
 
     private var isPlaying: Bool { SpeechPlayer.shared.activeWordID == word.id }
+    private var meaningIsVisible: Bool { store.isListMeaningVisible(for: word) }
+    private var pronunciationLabel: String {
+        if !meaningIsVisible { return "朗讀 \(word.term) 並顯示翻譯" }
+        return isPlaying ? "停止朗讀 \(word.term)" : "朗讀 \(word.term)"
+    }
+    private var pronunciationValue: String {
+        guard meaningIsVisible else { return "翻譯已隱藏" }
+        return store.displayMeaning(for: word) + (isPlaying ? "，播放中" : "")
+    }
 
     var body: some View {
         HStack(alignment: .center, spacing: 8) {
-            Button { SpeechPlayer.shared.speak(word: word) } label: {
+            Button {
+                if !meaningIsVisible && isPlaying { SpeechPlayer.shared.stop() }
+                store.revealListMeaning(for: word)
+                SpeechPlayer.shared.speak(word: word)
+            } label: {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(word.term)
                         .font(.system(.headline, design: .rounded))
@@ -274,6 +289,10 @@ private struct VocabularyRow: View {
                         .font(.subheadline)
                         .foregroundStyle(MotsTheme.muted)
                         .fixedSize(horizontal: false, vertical: true)
+                        // Reserve its space so revealing an answer keeps the rating targets stable.
+                        .opacity(meaningIsVisible ? 1 : 0)
+                        .accessibilityHidden(!meaningIsVisible)
+                        .accessibilityIdentifier("list.meaning.\(word.id)")
                 }
                 .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
                 .padding(.leading, 14)
@@ -281,8 +300,8 @@ private struct VocabularyRow: View {
                 .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
-            .accessibilityLabel(isPlaying ? "停止朗讀 \(word.term)" : "朗讀 \(word.term)")
-            .accessibilityValue(isPlaying ? "播放中" : store.displayMeaning(for: word))
+            .accessibilityLabel(pronunciationLabel)
+            .accessibilityValue(pronunciationValue)
             .accessibilityIdentifier("list.speak.\(word.id)")
 
             RatingControls(store: store, word: word)
@@ -291,14 +310,19 @@ private struct VocabularyRow: View {
     }
 }
 
-/// Grammar adds an example band while the accepted vocabulary row stays unchanged.
+/// Compact grammar rows keep core meaning and actions; details retain all examples.
 private struct GrammarRow: View {
     let store: StudyStore
     let word: StudyWord
     let openDetail: () -> Void
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
 
     private var isPlaying: Bool { SpeechPlayer.shared.activeWordID == word.id }
+    private var compact: Bool { horizontalSizeClass == .compact }
+    private var displayedMeaning: String {
+        compact ? store.compactGrammarMeaning(for: word) : store.displayMeaning(for: word)
+    }
     private var primaryLayout: AnyLayout {
         dynamicTypeSize.isAccessibilitySize
             ? AnyLayout(VStackLayout(alignment: .leading, spacing: 4))
@@ -314,7 +338,7 @@ private struct GrammarRow: View {
                         .foregroundStyle(isPlaying ? MotsTheme.accent : MotsTheme.ink)
                         .fixedSize(horizontal: false, vertical: true)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                    Text(store.displayMeaning(for: word))
+                    Text(displayedMeaning)
                         .font(.subheadline)
                         .foregroundStyle(MotsTheme.muted)
                         .fixedSize(horizontal: false, vertical: true)
@@ -325,10 +349,16 @@ private struct GrammarRow: View {
             }
             .buttonStyle(.plain)
             .accessibilityLabel(isPlaying ? "停止朗讀 \(word.term)" : "朗讀 \(word.term)")
-            .accessibilityValue(isPlaying ? "播放中" : store.displayMeaning(for: word))
+            .accessibilityValue(isPlaying ? "播放中" : displayedMeaning)
             .accessibilityIdentifier("list.speak.\(word.id)")
 
-            if dynamicTypeSize.isAccessibilitySize {
+            if compact {
+                HStack(spacing: 8) {
+                    Spacer(minLength: 0)
+                    detailButton
+                    RatingControls(store: store, word: word)
+                }
+            } else if dynamicTypeSize.isAccessibilitySize {
                 VStack(alignment: .leading, spacing: 4) {
                     example
                     HStack(spacing: 8) {

@@ -1,6 +1,7 @@
 {
   "model": [
     "Data/StudyStore.swift",
+    "Domain/CardPagingState.swift",
     "Domain/Models.swift",
     "Sync/PairingCredentials.swift",
     "Sync/ProgressSyncController.swift",

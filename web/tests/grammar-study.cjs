@@ -145,12 +145,46 @@ async function run() {
   assert(!cardHTML.includes('Nous ne prenons plus le bus.'));
   assert(cardHTML.includes('不再'));
   assert(cardHTML.includes('ne + verbe conjugué + plus'));
-  assertOriginalExamples(cardHTML);
+  assert(cardHTML.includes('我不再在這裡工作。'));
+  assert(cardHTML.includes('雨已經停了。'));
   click(rich, 'list-view');
   assertOriginalExamples(rich.$('study-content').innerHTML);
   assert(rich.$('study-content').innerHTML.includes('Je ne travaille plus ici.'));
   assert(rich.$('study-content').innerHTML.includes('不再'));
   click(rich, 'card-view');
+
+  // Mobile summaries keep every meaning; full text remains available in details/cards.
+  const longMeaning = '在……的時候；趁……之際。語氣較正式，常見於通知、說明或服務場合。';
+  const numberedMeaning = '① 有可能……。表示客觀上的可能性。\n② 不可能……。表示沒有發生的可能性。';
+  const compact = context({
+    storage: {
+      'mots.dictionaries.v1': [{
+        ...grammarDictionary,
+        words: [
+          { ...entry, meanings: { 'zh-Hant': longMeaning, 'zh-Hans': '在……的时候。语气正式。' } },
+          { ...entry, id: 'numbered', meanings: { 'zh-Hant': numberedMeaning } },
+          { ...entry, id: 'plain', meanings: { 'zh-Hant': '不再；不復；已經不' } },
+        ],
+      }],
+    },
+    url: `http://localhost/Mots.html?screen=study&dict=${grammarDictionary.id}&view=list`,
+  });
+  const compactHTML = compact.$('study-content').innerHTML;
+  assert(compactHTML.includes(`<span class="list-meaning-full">${longMeaning}</span>`));
+  assert(compactHTML.includes('<span class="list-meaning-summary">在……的時候；趁……之際</span>'));
+  assert(compactHTML.includes('<span class="list-meaning-summary">① 有可能……\n② 不可能……</span>'));
+  assert(compactHTML.includes('不再；不復；已經不'));
+  compact.run('openEntryDetail("same")');
+  assert(compact.$('entry-detail-content').innerHTML.includes(longMeaning));
+  click(compact, 'close-entry-detail');
+  click(compact, 'card-view');
+  compact.run('state.revealed = true; render()');
+  assert(compact.$('study-content').innerHTML.includes(longMeaning));
+  compact.run('settings.meaningLanguage = "zh-Hans"; state.view = "list"; render()');
+  assert(compact.$('study-content').innerHTML.includes('<span class="list-meaning-summary">在……的时候</span>'));
+  compact.run('settings.meaningLanguage = "en"; render()');
+  assert(compact.$('study-content').innerHTML.includes('尚無英語釋義'));
+  assert(!compact.$('study-content').innerHTML.includes('list-meaning-summary'));
 
   // Exercise the delegated detail action, its modal shortcut guard and focus return.
   const opener = rich.$('test-detail-opener');

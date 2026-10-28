@@ -68,8 +68,12 @@ def snapshot(root: Path) -> dict[Path, bytes]:
     runtime = json.loads(subprocess.check_output(["node", "-e", javascript, str(root / "database/runtime/data.js")]))
     totals = validate_database(root, runtime)
     catalog = (root / "mobile/ios/Mots/Resources/catalog.json").read_bytes()
-    hashes = {name: sha((root / name).read_bytes()) for name in ["database/runtime/data.js", "database/runtime/extra-audio.js", "database/runtime/audio-manifest.js", "database/manifest.json", "database/japanese/source.md", "database/japanese/vocabulary.json", "database/japanese/examples.json", "web/src/js/languages.js", "web/src/js/dictionaries.js", "web/src/js/grammar.js"]}
+    hashes = {name: sha((root / name).read_bytes()) for name in ["database/runtime/data.js", "database/runtime/extra-audio.js", "database/runtime/audio-manifest.js", "database/manifest.json", "database/japanese/source.md", "database/japanese/vocabulary.json", "database/japanese/examples.json", "database/japanese/grammar/01 普通語法背誦.md", "database/japanese/grammar/02 語法類型整理.md", "database/japanese/grammar/books.json", "web/src/js/languages.js", "web/src/js/dictionaries.js", "web/src/js/grammar.js"]}
     hashes["database/catalog.json"] = sha(catalog)
+    hashes["database/japanese/scenarios.json"] = sha((root / "database/japanese/scenarios.json").read_bytes())
+    network = root / "database/french/example-network.json"
+    if network.exists():
+        hashes["database/french/example-network.json"] = sha(network.read_bytes())
     version = sha(json.dumps(hashes, sort_keys=True, separators=(",", ":")).encode())
     dictionaries = []
     for dictionary in json.loads(catalog):
@@ -91,6 +95,9 @@ def main() -> None:
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     subprocess.run(["python3", str(ROOT / "scripts/import-japanese.py"), "--check"], check=True)
+    subprocess.run(["python3", str(ROOT / "scripts/import-japanese-grammar.py"), "--check"], check=True)
+    if (ROOT / "database/french/example-network.json").exists():
+        subprocess.run(["python3", str(ROOT / "scripts/update-french-examples.py"), "--check"], check=True)
     command = ["node", str(ROOT / "mobile/ios/scripts/export-content.cjs")]
     if args.check:
         command += ["--check", "--catalog-only"]

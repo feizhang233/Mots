@@ -1,7 +1,7 @@
 import SwiftUI
 import UIKit
 
-/// UIKit owns the interactive page curl. Only a completed turn commits study state.
+/// UIKit owns horizontal page gestures. Only a completed turn commits study state.
 struct StudyCardPager: UIViewControllerRepresentable {
     @Bindable var store: StudyStore
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
@@ -17,81 +17,129 @@ struct StudyCardPager: UIViewControllerRepresentable {
         pager.dataSource = context.coordinator
         pager.delegate = context.coordinator
         pager.view.backgroundColor = UIColor(MotsTheme.background)
-        context.coordinator.synchronize(pager, animated: false)
+        context.coordinator.synchronize(pager, requested: store.cardPagingContext)
         return pager
     }
 
     func updateUIViewController(_ pager: UIPageViewController, context: Context) {
         context.coordinator.store = store
-        context.coordinator.synchronize(pager, animated: !reduceMotion)
+        // Read selection in SwiftUI's update even while UIKit is turning a page.
+        // Reading it only after the coordinator's transition guard drops Observation
+        // tracking on that update; subsequent buttons then advance only the footer.
+        context.coordinator.synchronize(pager, requested: store.cardPagingContext)
+    }
+
+    static func dismantleUIViewController(_ pager: UIPageViewController, coordinator: Coordinator) {
+        coordinator.stop(pager)
     }
 
     @MainActor final class Coordinator: NSObject, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
         var store: StudyStore
-        private var transitioning = false
+        private var paging = CardPagingState()
         private var deckIDs: [String] = []
         private var deckWords: [StudyWord] = []
         private var dictionaryID: String?
+        private var recoveryTask: Task<Void, Never>?
         init(store: StudyStore) { self.store = store }
 
         private func page(for word: StudyWord) -> CardPageController {
             CardPageController(store: store, word: word)
         }
 
-        func synchronize(_ pager: UIPageViewController, animated: Bool) {
-            guard !transitioning, let word = store.currentWord else { return }
-            let ids = store.filteredWords.map(\.id)
-            let deckChanged = dictionaryID != store.dictionaryID || deckWords != store.filteredWords
+        private var context: CardPagingState.Context { store.cardPagingContext }
+
+        func stop(_ pager: UIPageViewController) {
+            recoveryTask?.cancel()
+            recoveryTask = nil
+            paging = CardPagingState()
+            pager.delegate = nil
+            pager.dataSource = nil
+        }
+
+        private func scheduleRecovery(_ pager: UIPageViewController) {
+            recoveryTask?.cancel()
+            recoveryTask = Task { @MainActor [weak self, weak pager] in
+                try? await Task.sleep(for: .seconds(2))
+                guard !Task.isCancelled, let self, let pager, self.paging.isTurning else { return }
+                // A finger may legitimately hold a page open. Once no recognizer is
+                // active, a missing delegate callback must not lock the next card.
+                if self.hasActiveGesture(in: pager.view) {
+                    self.scheduleRecovery(pager)
+                    return
+                }
+                pager.dataSource = nil
+                pager.dataSource = self
+                self.finishTurn(pager, completed: true)
+            }
+        }
+
+        private func hasActiveGesture(in view: UIView) -> Bool {
+            // The scroll pager's pan recognizer belongs to its internal scroll view.
+            (view.gestureRecognizers ?? []).contains { $0.state == .began || $0.state == .changed }
+                || view.subviews.contains { hasActiveGesture(in: $0) }
+        }
+
+        func synchronize(_ pager: UIPageViewController, requested: CardPagingState.Context) {
+            guard !paging.isTurning, let selectedID = requested.selectedID,
+                  let word = requested.words.first(where: { $0.id == selectedID }) else { return }
+            let words = requested.words
+            let deckChanged = dictionaryID != requested.dictionaryID || deckWords != words
             let visible = pager.viewControllers?.first as? CardPageController
             guard deckChanged || visible?.wordID != word.id else { return }
             let oldIndex = visible.flatMap { deckIDs.firstIndex(of: $0.wordID) } ?? store.currentIndex
-            deckIDs = ids
-            deckWords = store.filteredWords
-            dictionaryID = store.dictionaryID
-            if deckChanged {
-                // Drop UIKit's adjacent-page cache after dictionary/filter/order changes.
-                pager.dataSource = nil
-                pager.dataSource = self
-            }
-            let animateTurn = animated && !deckChanged && visible != nil
-            transitioning = animateTurn
+            deckIDs = words.map(\.id)
+            deckWords = words
+            dictionaryID = requested.dictionaryID
+            // Invalidate adjacent pages for every explicit selection. Programmatic
+            // turns are immediate so they cannot overlap the interactive curl.
+            pager.dataSource = nil
+            pager.dataSource = self
             pager.setViewControllers([page(for: word)],
                 direction: store.currentIndex >= oldIndex ? .forward : .reverse,
-                animated: animateTurn) { [weak self, weak pager] _ in
-                    guard let self, let pager else { return }
-                    self.transitioning = false
-                    self.synchronize(pager, animated: animated)
-                }
+                animated: false)
         }
 
         func pageViewController(_ pageViewController: UIPageViewController,
                                 viewControllerBefore viewController: UIViewController) -> UIViewController? {
             guard let page = viewController as? CardPageController,
-                  let index = store.filteredWords.firstIndex(where: { $0.id == page.wordID }), index > 0 else { return nil }
-            return self.page(for: store.filteredWords[index - 1])
+                  let index = deckIDs.firstIndex(of: page.wordID), index > 0 else { return nil }
+            return self.page(for: deckWords[index - 1])
         }
 
         func pageViewController(_ pageViewController: UIPageViewController,
                                 viewControllerAfter viewController: UIViewController) -> UIViewController? {
             guard let page = viewController as? CardPageController,
-                  let index = store.filteredWords.firstIndex(where: { $0.id == page.wordID }),
-                  index + 1 < store.filteredWords.count else { return nil }
-            return self.page(for: store.filteredWords[index + 1])
+                  let index = deckIDs.firstIndex(of: page.wordID),
+                  index + 1 < deckWords.count else { return nil }
+            return self.page(for: deckWords[index + 1])
         }
 
         func pageViewController(_ pageViewController: UIPageViewController,
                                 willTransitionTo pendingViewControllers: [UIViewController]) {
-            transitioning = true
+            paging.begin(in: context)
+            scheduleRecovery(pageViewController)
         }
 
         func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool,
                                 previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-            transitioning = false
-            if completed, let visible = pageViewController.viewControllers?.first as? CardPageController,
-               let word = store.filteredWords.first(where: { $0.id == visible.wordID }) {
+            finishTurn(pageViewController, completed: completed)
+        }
+
+        private func finishTurn(_ pageViewController: UIPageViewController, completed: Bool) {
+            recoveryTask?.cancel()
+            recoveryTask = nil
+            let visibleID = (pageViewController.viewControllers?.first as? CardPageController)?.wordID
+            if let selectedID = paging.finish(in: context, visibleID: visibleID, completed: completed),
+               let word = store.filteredWords.first(where: { $0.id == selectedID }) {
                 store.selectWord(word)
             }
-            synchronize(pageViewController, animated: false)
+            // Let UIKit finish its delegate callback before applying any button/filter
+            // request that arrived while the finger was turning the page.
+            Task { @MainActor [weak self, weak pageViewController] in
+                await Task.yield()
+                guard let self, let pageViewController else { return }
+                self.synchronize(pageViewController, requested: self.context)
+            }
         }
     }
 }

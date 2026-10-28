@@ -92,6 +92,23 @@ struct StudyModelsTests {
         precondition(empty.examples.isEmpty && empty.pattern.isEmpty && empty.explanation.isEmpty)
         let compact = StudyWord(id: "minimal", term: "mot", meaning: "詞", category: "1", subcategory: "1.01", language: "fr")
         precondition(compact.exampleTexts.isEmpty)
+        let speechCases = [
+            ("～かと思うと／～かと思ったら", "かと思うと かと思ったら"),
+            (" ～際（に）/〜に際して ~にあたって ", "際（に） に際して にあたって"),
+            ("～てはじめて", "てはじめて"),
+            ("コーヒー", "コーヒー"),
+            ("～ / ／ 〜 ~\n", "")
+        ]
+        for (term, expected) in speechCases {
+            let japanese = StudyWord(id: "speech", term: term, meaning: "", category: "1", subcategory: "1.01", language: "ja")
+            precondition(japanese.speechText == expected, "Japanese grammar notation must stay silent: \(term)")
+            precondition(japanese.term == term, "Speech cleanup must preserve the displayed term")
+        }
+        for language in ["fr", "de"] {
+            let term = " terme / autre ～ ~ "
+            let nonJapanese = StudyWord(id: "speech", term: term, meaning: "", category: "1", subcategory: "1.01", language: language)
+            precondition(nonJapanese.speechText == term, "Speech cleanup is limited to Japanese")
+        }
         let normalized = StudyWord(id: "duplicate", term: "mot", meaning: "詞", example: " Phrase. ", category: "1", subcategory: "1.01", language: "fr", examples: [StudyExample(text: "Phrase.", translations: ["en": "Sentence."])])
         precondition(normalized.exampleTexts == ["Phrase."] && normalized.examples[0].translations["en"] == "Sentence.")
 

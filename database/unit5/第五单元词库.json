@@ -16,7 +16,7 @@
     "基础": 58,
     "进阶": 46
   },
-  "method": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，旧统计和科学表述的范围说明记入 note。",
+  "method": "詞條、分類、原書頁碼與校對註記保留原整理；例句於 2026-10-25 改為 Mots 原創詞彙關聯例句。原例句保存在 french/example-network.json 的 originalText，XLSX 保留原書轉錄版本。",
   "subcategories": [
     {
       "id": "5.01",
@@ -34,13 +34,25 @@
       "subcategory": "5.01",
       "french": "le beurre",
       "chinese": "黄油",
-      "example": "On fait du beurre avec la crème du lait.",
+      "example": "Le beurre ramollit sur la table pendant que ma sœur prépare la pâte du gâteau.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        },
+        {
+          "id": "book-5.01-015",
+          "form": "pâte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-002",
@@ -48,13 +60,25 @@
       "subcategory": "5.01",
       "french": "le bœuf",
       "chinese": "牛肉；牛",
-      "example": "Je préfère la viande de bœuf à celle de porc.",
+      "example": "Nous avons acheté du bœuf au marché pour préparer le repas de dimanche.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": "本单元例句采用“牛肉”义。"
+      "note": "本单元例句采用“牛肉”义。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-012",
+          "form": "marché"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-003",
@@ -62,13 +86,25 @@
       "subcategory": "5.01",
       "french": "la boîte",
       "chinese": "盒子，罐子",
-      "example": "Ma boîte à thé contient du thé vert et du thé noir.",
+      "example": "Cette boîte protège les biscuits que ma grand-mère nous envoie pendant les vacances.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-036",
+          "form": "grand-mère"
+        },
+        {
+          "id": "book-4.02-013",
+          "form": "vacances"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-004",
@@ -76,13 +112,25 @@
       "subcategory": "5.01",
       "french": "le café",
       "chinese": "咖啡",
-      "example": "Beaucoup commencent leur journée par un café.",
+      "example": "L'odeur du café remplissait la cuisine avant que les enfants descendent pour le petit déjeuner.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-9.01-034",
+          "form": "odeur"
+        },
+        {
+          "id": "book-2.03-004",
+          "form": "cuisine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-005",
@@ -90,13 +138,25 @@
       "subcategory": "5.01",
       "french": "la cerise",
       "chinese": "樱桃",
-      "example": "Les cerises sont des petits fruits ronds généralement rouges, acides ou sucrés.",
+      "example": "Les cerises du jardin attirent les oiseaux, alors nous protégeons les branches avec un filet.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "book-2.04-025",
+          "form": "filet"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-006",
@@ -104,13 +164,25 @@
       "subcategory": "5.01",
       "french": "le chocolat",
       "chinese": "巧克力",
-      "example": "Je préfère le chocolat noir au chocolat au lait.",
+      "example": "Nous offrirons du chocolat aux invités avec le café servi après le dîner.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-14.03-028",
+          "form": "invités"
+        },
+        {
+          "id": "book-5.01-004",
+          "form": "café"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-007",
@@ -118,13 +190,25 @@
       "subcategory": "5.01",
       "french": "la compote",
       "chinese": "糖煮水果，水果泥",
-      "example": "Chez ma tante, nous mangeons souvent une compote de poires après le dîner.",
+      "example": "La compote de pommes accompagne les tartines du bébé lorsqu'il prend son goûter.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "5.01-4",
+          "form": "pommes"
+        },
+        {
+          "id": "book-1.03-031",
+          "form": "bébé"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "5.01-2",
@@ -132,14 +216,26 @@
       "subcategory": "5.01",
       "french": "le fromage",
       "chinese": "奶酪",
-      "example": "Le plateau de fromage est servi avec un verre de vin rouge.",
+      "example": "Un morceau de fromage donnerait plus de goût à cette soupe de légumes.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/fʁɔmaʒ/"
+      "ipa": "/fʁɔmaʒ/",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-029",
+          "form": "soupe"
+        },
+        {
+          "id": "book-5.01-012",
+          "form": "légumes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-009",
@@ -147,13 +243,25 @@
       "subcategory": "5.01",
       "french": "le fruit",
       "chinese": "水果",
-      "example": "Nous avons acheté des fruits de saison comme par exemple des pommes et des poires.",
+      "example": "Ce fruit pousse dans le jardin de mon oncle et mûrit au début de l'été.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "book-16.02-012",
+          "form": "été"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-010",
@@ -161,13 +269,25 @@
       "subcategory": "5.01",
       "french": "la glace",
       "chinese": "冰淇淋；冰",
-      "example": "En été, les gens aiment bien manger une glace sur la terrasse d’un café ou à la plage.",
+      "example": "Les enfants ont partagé une glace sur la plage avant de rejoindre leurs parents.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": "此处指冰淇淋，与第二单元的“镜子”义区分。"
+      "note": "此处指冰淇淋，与第二单元的“镜子”义区分。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-023",
+          "form": "plage"
+        },
+        {
+          "id": "1.03-2",
+          "form": "parents"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-011",
@@ -175,13 +295,25 @@
       "subcategory": "5.01",
       "french": "le lait",
       "chinese": "牛奶",
-      "example": "Pierre boit son café avec du lait et du sucre.",
+      "example": "Ma fille verse du lait dans son bol pendant que son frère coupe le pain.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-007",
+          "form": "fille"
+        },
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-012",
@@ -189,13 +321,25 @@
       "subcategory": "5.01",
       "french": "le légume",
       "chinese": "蔬菜",
-      "example": "Les gens qui ne mangent pas de viande, mangent par exemple beaucoup de légumes différents.",
+      "example": "Le cuisinier choisissait ses légumes au marché avant d'afficher le menu du jour.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-012",
+          "form": "marché"
+        },
+        {
+          "id": "book-5.02-020",
+          "form": "menu"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-013",
@@ -203,13 +347,25 @@
       "subcategory": "5.01",
       "french": "la noix",
       "chinese": "核桃，坚果",
-      "example": "La noix est un fruit sec.",
+      "example": "Quelques noix ajoutent du croquant aux poires que nous partageons après le déjeuner.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-016",
+          "form": "poires"
+        },
+        {
+          "id": "book-5.02-045",
+          "form": "déjeuner"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-014",
@@ -217,13 +373,25 @@
       "subcategory": "5.01",
       "french": "l’orange",
       "chinese": "橙子",
-      "example": "Pierre se presse chaque matin deux oranges pour le petit déjeuner.",
+      "example": "Je garderai cette orange pour le goûter après notre promenade dans la forêt.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-053",
+          "form": "goûter"
+        },
+        {
+          "id": "book-4.02-025",
+          "form": "promenade"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-015",
@@ -231,13 +399,25 @@
       "subcategory": "5.01",
       "french": "la pâte",
       "chinese": "面团，面糊",
-      "example": "Pierre a déjà préparé la pâte pour le gâteau. Il ne manque plus que les pommes.",
+      "example": "La pâte repose près de la fenêtre pendant que le boulanger chauffe son four.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": "单数 pâte 在此指糕点面团；复数 pâtes 常指意大利面食。"
+      "note": "单数 pâte 在此指糕点面团；复数 pâtes 常指意大利面食。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-011",
+          "form": "fenêtre"
+        },
+        {
+          "id": "book-11.01-004",
+          "form": "boulanger"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-016",
@@ -245,13 +425,25 @@
       "subcategory": "5.01",
       "french": "la poire",
       "chinese": "梨",
-      "example": "Je préfère les poires aux pommes, car elles sont généralement plus sucrées.",
+      "example": "Cette poire serait meilleure avec un peu de chocolat fondu et une cuillère de crème.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-006",
+          "form": "chocolat"
+        },
+        {
+          "id": "book-5.01-026",
+          "form": "crème"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-017",
@@ -259,13 +451,25 @@
       "subcategory": "5.01",
       "french": "le poivre",
       "chinese": "胡椒",
-      "example": "J’ai goûté la soupe. Il manque du sel et du poivre.",
+      "example": "Mon père ajoute du poivre à sa soupe avant de goûter le pain encore chaud.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-029",
+          "form": "soupe"
+        },
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-018",
@@ -273,13 +477,25 @@
       "subcategory": "5.01",
       "french": "le porc",
       "chinese": "猪肉；猪",
-      "example": "En Europe, on mange généralement de la viande de porc ou de bœuf.",
+      "example": "La famille a préparé du porc avec du riz pour accueillir les invités de dimanche.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": "本单元例句采用“猪肉”义。"
+      "note": "本单元例句采用“猪肉”义。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-034",
+          "form": "riz"
+        },
+        {
+          "id": "book-14.03-028",
+          "form": "invités"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-019",
@@ -287,13 +503,25 @@
       "subcategory": "5.01",
       "french": "le poulet",
       "chinese": "鸡肉；小鸡，童子鸡",
-      "example": "Un poulet est une jeune poule qui a plus de dix mois.",
+      "example": "Le poulet cuit doucement pendant que nous installons les chaises autour de la table.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书例句的年龄描述照录，未将其作为禽类年龄定义核实。"
+      "note": "原书例句的年龄描述照录，未将其作为禽类年龄定义核实。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-029",
+          "form": "chaises"
+        },
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-020",
@@ -301,13 +529,25 @@
       "subcategory": "5.01",
       "french": "la saucisse",
       "chinese": "香肠",
-      "example": "J’ai mangé une saucisse, tandis que mon frère a préféré prendre un morceau de poulet.",
+      "example": "Le marchand découpait la saucisse en fines tranches pour les clients de son magasin.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-033",
+          "form": "tranches"
+        },
+        {
+          "id": "6.01-1",
+          "form": "magasin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-021",
@@ -315,13 +555,25 @@
       "subcategory": "5.01",
       "french": "le vin",
       "chinese": "葡萄酒",
-      "example": "Aurélie aime boire un verre de vin le soir devant la télévision.",
+      "example": "Ce vin accompagne le fromage produit par la ferme située au-dessus du village.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "5.01-2",
+          "form": "fromage"
+        },
+        {
+          "id": "book-3.01-009",
+          "form": "ferme"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-022",
@@ -329,13 +581,25 @@
       "subcategory": "5.01",
       "french": "le yaourt",
       "chinese": "酸奶",
-      "example": "Mes enfants mangent chaque matin soit un yaourt, soit un croissant et boivent un chocolat chaud.",
+      "example": "Nous emporterons des yaourts et du pain pour le pique-nique au bord du lac.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 41,
       "pdfPage": 48,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        },
+        {
+          "id": "book-3.02-009",
+          "form": "lac"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-023",
@@ -343,13 +607,25 @@
       "subcategory": "5.01",
       "french": "l’alcool",
       "chinese": "酒精；酒，酒类",
-      "example": "En France, il est interdit de vendre de l’alcool aux personnes de moins de 18 ans.",
+      "example": "Cette boisson ne contient pas d'alcool et convient aux adultes qui prennent le volant.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 42,
       "pdfPage": 49,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“白酒”，校正为泛指酒精、酒类。售酒年龄保留作原书语言例句，未核对现行法规。"
+      "note": "原书译“白酒”，校正为泛指酒精、酒类。售酒年龄保留作原书语言例句，未核对现行法规。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-006",
+          "form": "boisson"
+        },
+        {
+          "id": "book-4.04-047",
+          "form": "volant"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-024",
@@ -357,13 +633,25 @@
       "subcategory": "5.01",
       "french": "alimentaire",
       "chinese": "食品的，饮食的",
-      "example": "Un sportif a des besoins alimentaires plus importants que quelqu’un qui travaille dans un bureau.",
+      "example": "Une aide alimentaire permettrait aux familles de compléter leurs courses avec des fruits frais.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 42,
       "pdfPage": 49,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        },
+        {
+          "id": "book-5.01-009",
+          "form": "fruits"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-025",
@@ -371,13 +659,25 @@
       "subcategory": "5.01",
       "french": "l’alimentation",
       "chinese": "饮食，营养；食品供应",
-      "example": "Une mauvaise alimentation peut causer des problèmes de santé.",
+      "example": "Le médecin discute de l'alimentation de mon grand-père avant de modifier son traitement.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 42,
       "pdfPage": 49,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“食品”；例句中的 alimentation 指饮食、营养，补充对应释义。"
+      "note": "原书译“食品”；例句中的 alimentation 指饮食、营养，补充对应释义。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-037",
+          "form": "grand-père"
+        },
+        {
+          "id": "book-8.04-012",
+          "form": "traitement"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-026",
@@ -385,13 +685,25 @@
       "subcategory": "5.01",
       "french": "la crème",
       "chinese": "奶油，乳脂",
-      "example": "La paysanne sépare la crème du lait.",
+      "example": "J'ai renversé la crème sur la nappe en voulant servir le gâteau trop vite.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 42,
       "pdfPage": 49,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-051",
+          "form": "nappe"
+        },
+        {
+          "id": "book-5.02-018",
+          "form": "gâteau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-027",
@@ -399,13 +711,25 @@
       "subcategory": "5.01",
       "french": "l’huile",
       "chinese": "油",
-      "example": "On met de l’huile dans la poêle pour faire cuire la viande.",
+      "example": "Cette huile donne du goût aux légumes rôtis que prépare le cuisinier de l'hôtel.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 42,
       "pdfPage": 49,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-012",
+          "form": "légumes"
+        },
+        {
+          "id": "book-11.01-007",
+          "form": "cuisinier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-028",
@@ -413,13 +737,25 @@
       "subcategory": "5.01",
       "french": "laitier, laitière",
       "chinese": "奶制品的，乳品的",
-      "example": "Le yaourt, le fromage et le beurre sont des produits laitiers.",
+      "example": "Le marchand conservait les produits laitiers au froid, derrière le comptoir du magasin.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 42,
       "pdfPage": 49,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.03-007",
+          "form": "froid"
+        },
+        {
+          "id": "6.01-1",
+          "form": "magasin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-029",
@@ -427,13 +763,25 @@
       "subcategory": "5.01",
       "french": "le miel",
       "chinese": "蜂蜜",
-      "example": "Les abeilles fabriquent du miel.",
+      "example": "Ma tante ajoute du miel au yaourt que les enfants mangent après leur repas.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 42,
       "pdfPage": 49,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-022",
+          "form": "yaourt"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-030",
@@ -441,13 +789,25 @@
       "subcategory": "5.01",
       "french": "la nourriture",
       "chinese": "食物，饮食",
-      "example": "Une nourriture trop grasse peut provoquer des problèmes de santé.",
+      "example": "Les bénévoles distribueront la nourriture aux habitants dont la cuisine a été endommagée.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 42,
       "pdfPage": 49,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "book-2.03-004",
+          "form": "cuisine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-031",
@@ -455,13 +815,25 @@
       "subcategory": "5.01",
       "french": "l’œuf",
       "chinese": "蛋，鸡蛋",
-      "example": "Nous avons acheté des œufs bien frais à la ferme.",
+      "example": "Un œuf suffit pour lier la pâte lorsque nous préparons cette recette en petite quantité.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 42,
       "pdfPage": 49,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-015",
+          "form": "pâte"
+        },
+        {
+          "id": "book-5.02-060",
+          "form": "recette"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "5.01-1",
@@ -469,14 +841,26 @@
       "subcategory": "5.01",
       "french": "le pain",
       "chinese": "面包",
-      "example": "Le boulanger rue de Metz fait le meilleur pain que j’ai mangé jusqu’à présent.",
+      "example": "Du pain grillé accompagnerait bien le fromage et les fruits que tu as apportés.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 42,
       "pdfPage": 49,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/pɛ̃/"
+      "ipa": "/pɛ̃/",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "5.01-2",
+          "form": "fromage"
+        },
+        {
+          "id": "book-5.01-009",
+          "form": "fruits"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "5.01-4",
@@ -484,14 +868,26 @@
       "subcategory": "5.01",
       "french": "la pomme",
       "chinese": "苹果",
-      "example": "Ma grand-mère fait de la compote avec les pommes du jardin.",
+      "example": "Ma fille coupe une pomme pour la partager avec sa sœur pendant la récréation.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 42,
       "pdfPage": 49,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/pɔm/"
+      "ipa": "/pɔm/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-007",
+          "form": "fille"
+        },
+        {
+          "id": "1.03-3",
+          "form": "sœur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-034",
@@ -499,13 +895,25 @@
       "subcategory": "5.01",
       "french": "le riz",
       "chinese": "大米，米饭",
-      "example": "La viande, au restaurant chinois, est généralement servie avec du riz.",
+      "example": "Le riz a absorbé toute l'eau pendant que nous mettions les couverts.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 42,
       "pdfPage": 49,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "book-5.02-013",
+          "form": "couverts"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-035",
@@ -513,13 +921,29 @@
       "subcategory": "5.01",
       "french": "le sel",
       "chinese": "盐",
-      "example": "La soupe est salée. Pierre y a mis trop de sel.",
+      "example": "Le médecin conseille à mon père de réduire le sel sans supprimer le plaisir du repas.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 42,
       "pdfPage": 49,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        },
+        {
+          "id": "book-1.03-023",
+          "form": "père"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-036",
@@ -527,13 +951,25 @@
       "subcategory": "5.01",
       "french": "le sirop",
       "chinese": "糖浆，浓缩糖汁",
-      "example": "J’ai bu du sirop d’orange avec de l’eau.",
+      "example": "Nous verserons un peu de sirop dans l'eau fraîche après le match de football.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 42,
       "pdfPage": 49,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“浆，汁”；此处指可加水稀释饮用的橙味糖浆。"
+      "note": "原书译“浆，汁”；此处指可加水稀释饮用的橙味糖浆。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "book-13.07-010",
+          "form": "match"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-037",
@@ -541,13 +977,25 @@
       "subcategory": "5.01",
       "french": "le sucre",
       "chinese": "糖",
-      "example": "Pour faire une compote on mélange des fruits avec du sucre.",
+      "example": "Cette tarte contient peu de sucre parce que les poires sont déjà très douces.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 42,
       "pdfPage": 49,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-031",
+          "form": "tarte"
+        },
+        {
+          "id": "book-5.01-016",
+          "form": "poires"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-038",
@@ -555,13 +1003,25 @@
       "subcategory": "5.01",
       "french": "le thé",
       "chinese": "茶",
-      "example": "Madame Godet prend chaque soir une tasse de thé sans sucre.",
+      "example": "Une tasse de thé réchaufferait les randonneurs après leur marche sous la pluie.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 42,
       "pdfPage": 49,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-065",
+          "form": "tasse"
+        },
+        {
+          "id": "book-1.06-015",
+          "form": "marche"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.01-039",
@@ -569,13 +1029,25 @@
       "subcategory": "5.01",
       "french": "la viande",
       "chinese": "肉",
-      "example": "Ma mère a uniquement confiance en le boucher rue de Paris. Elle achète sa viande exclusivement là-bas.",
+      "example": "La viande repose quelques minutes pendant que le cuisinier termine la sauce et les légumes.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 42,
       "pdfPage": 49,
       "source": "法语基础词汇分类学习手册",
-      "note": "例句按原书保留“confiance en le boucher”的写法。"
+      "note": "例句按原书保留“confiance en le boucher”的写法。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-007",
+          "form": "cuisinier"
+        },
+        {
+          "id": "book-5.01-012",
+          "form": "légumes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "5.02-3",
@@ -583,14 +1055,26 @@
       "subcategory": "5.02",
       "french": "l’addition",
       "chinese": "账单",
-      "example": "Autrefois, c’était l’homme qui payait l’addition au restaurant.",
+      "example": "L'addition comprenait les boissons et le dessert, mais pas le pourboire laissé à la serveuse.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 42,
       "pdfPage": 49,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/adisjɔ̃/"
+      "ipa": "/adisjɔ̃/",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-023",
+          "form": "pourboire"
+        },
+        {
+          "id": "book-5.02-028",
+          "form": "serveuse"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-002",
@@ -598,13 +1082,25 @@
       "subcategory": "5.02",
       "french": "la baguette",
       "chinese": "法式长棍面包",
-      "example": "Malheureusement, la boulangère rue de Nancy ne travaille plus. Elle faisait les meilleures baguettes de la ville.",
+      "example": "Une baguette dépasse du panier que ma mère rapporte du marché chaque matin.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 42,
       "pdfPage": 49,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-008",
+          "form": "panier"
+        },
+        {
+          "id": "book-3.01-012",
+          "form": "marché"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-003",
@@ -612,13 +1108,25 @@
       "subcategory": "5.02",
       "french": "la bière",
       "chinese": "啤酒",
-      "example": "À côté du vin, la bière est un alcool très apprécié.",
+      "example": "Les invités ont commandé une bière avant de choisir leur repas sur le menu.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 42,
       "pdfPage": 49,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        },
+        {
+          "id": "book-5.02-020",
+          "form": "menu"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-004",
@@ -626,13 +1134,25 @@
       "subcategory": "5.02",
       "french": "le bistrot",
       "chinese": "小酒馆，小饭馆",
-      "example": "Mon père a découvert un petit bistrot où l’on peut manger pas cher.",
+      "example": "Ce bistrot accueille les ouvriers du quartier pour un déjeuner simple et rapide.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-011",
+          "form": "ouvriers"
+        },
+        {
+          "id": "book-5.02-045",
+          "form": "déjeuner"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-005",
@@ -640,13 +1160,25 @@
       "subcategory": "5.02",
       "french": "boire",
       "chinese": "喝",
-      "example": "Beaucoup de gens boivent un café le matin.",
+      "example": "Nous boirons de l'eau avant de reprendre le sentier qui monte au refuge.",
       "part": "v. t. / i.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "book-3.01-040",
+          "form": "sentier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-006",
@@ -654,13 +1186,25 @@
       "subcategory": "5.02",
       "french": "la boisson",
       "chinese": "饮料",
-      "example": "Le café est une boisson chaude.",
+      "example": "Cette boisson fraîche attend les sportifs à l'arrivée de leur course autour du lac.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.06-030",
+          "form": "sportifs"
+        },
+        {
+          "id": "book-13.07-004",
+          "form": "course"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-007",
@@ -668,13 +1212,25 @@
       "subcategory": "5.02",
       "french": "bon, bonne",
       "chinese": "好的，好吃的",
-      "example": "Ma grand-mère fait de très bons gâteaux.",
+      "example": "Ce fromage serait bon avec du pain encore chaud, selon le vendeur du marché.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        },
+        {
+          "id": "book-11.01-050",
+          "form": "vendeur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-008",
@@ -682,13 +1238,25 @@
       "subcategory": "5.02",
       "french": "le bonbon",
       "chinese": "糖果",
-      "example": "Le boulanger a donné des bonbons aux enfants venus acheter du pain avec leur mère.",
+      "example": "La mère garde les bonbons pour la fête plutôt que d'en donner avant le dîner.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-008",
+          "form": "fête"
+        },
+        {
+          "id": "book-5.02-046",
+          "form": "dîner"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-009",
@@ -696,13 +1264,25 @@
       "subcategory": "5.02",
       "french": "la casserole",
       "chinese": "平底深锅，长柄深锅",
-      "example": "Il fait chauffer du lait dans une casserole.",
+      "example": "La casserole est restée sur le feu pendant que je répondais au téléphone dans le salon.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": "根据例句补充深锅义，与本单元 poêle（煎锅）区分。"
+      "note": "根据例句补充深锅义，与本单元 poêle（煎锅）区分。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.04-051",
+          "form": "téléphone"
+        },
+        {
+          "id": "2.03-2",
+          "form": "salon"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-010",
@@ -710,13 +1290,25 @@
       "subcategory": "5.02",
       "french": "la confiture",
       "chinese": "果酱",
-      "example": "J’aime bien manger un morceau de baguette avec de la confiture de cerises.",
+      "example": "Ma grand-mère prépare sa confiture avec les fruits qu'elle récolte dans son jardin.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-009",
+          "form": "fruits"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-011",
@@ -724,13 +1316,25 @@
       "subcategory": "5.02",
       "french": "conserver",
       "chinese": "储存，保存",
-      "example": "Mes parents conservent les fruits du jardin dans la cave.",
+      "example": "Les habitants conservaient le lait au frais dans la cave avant d'avoir un réfrigérateur.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-011",
+          "form": "lait"
+        },
+        {
+          "id": "book-2.01-026",
+          "form": "cave"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-012",
@@ -738,13 +1342,25 @@
       "subcategory": "5.02",
       "french": "couper",
       "chinese": "切，切开",
-      "example": "Il coupe la viande en petits morceaux avant de la faire cuire.",
+      "example": "Le cuisinier coupe les légumes pendant que son apprenti met la table pour les clients.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-012",
+          "form": "légumes"
+        },
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-013",
@@ -752,13 +1368,25 @@
       "subcategory": "5.02",
       "french": "le couvert",
       "chinese": "餐具，一套餐具",
-      "example": "On n’a pas assez de couverts. Il manque des petites cuillères.",
+      "example": "Nous installerons un couvert supplémentaire si ton frère se joint à nous pour le dîner.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "1.03-4",
+          "form": "frère"
+        },
+        {
+          "id": "book-5.02-046",
+          "form": "dîner"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-014",
@@ -766,13 +1394,25 @@
       "subcategory": "5.02",
       "french": "la cuillère",
       "chinese": "勺，匙",
-      "example": "Elle met toujours une cuillère de miel dans son thé.",
+      "example": "Cette cuillère permet au bébé de manger sa compote sans renverser tout le contenu.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-031",
+          "form": "bébé"
+        },
+        {
+          "id": "book-5.01-007",
+          "form": "compote"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-015",
@@ -780,13 +1420,25 @@
       "subcategory": "5.02",
       "french": "cuire",
       "chinese": "煮，烹调",
-      "example": "Il vous faut deux litres d’eau pour faire cuire les pâtes.",
+      "example": "Une cuisson plus lente permettrait de cuire la viande sans dessécher les légumes.",
       "part": "v. t. / i.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-039",
+          "form": "viande"
+        },
+        {
+          "id": "book-5.01-012",
+          "form": "légumes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-016",
@@ -794,13 +1446,25 @@
       "subcategory": "5.02",
       "french": "la faim",
       "chinese": "饥饿",
-      "example": "L’odeur venant de la cuisine m’a donné faim.",
+      "example": "Après la randonnée, les enfants ont faim et attendent impatiemment le repas.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-017",
@@ -808,13 +1472,25 @@
       "subcategory": "5.02",
       "french": "la fourchette",
       "chinese": "叉子",
-      "example": "On ne mange pas avec les mains, mais avec une fourchette et un couteau.",
+      "example": "Le petit a laissé tomber sa fourchette sous la chaise avant de demander une autre serviette.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-029",
+          "form": "chaise"
+        },
+        {
+          "id": "book-2.02-065",
+          "form": "serviette"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-018",
@@ -822,13 +1498,25 @@
       "subcategory": "5.02",
       "french": "le gâteau",
       "chinese": "蛋糕，糕点",
-      "example": "Ma mère a fait un gâteau au chocolat pour mon anniversaire.",
+      "example": "Le gâteau refroidit près de la fenêtre pendant que les enfants préparent les bougies.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-011",
+          "form": "fenêtre"
+        },
+        {
+          "id": "book-2.02-028",
+          "form": "bougies"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-019",
@@ -836,13 +1524,25 @@
       "subcategory": "5.02",
       "french": "manger",
       "chinese": "吃",
-      "example": "Aurélie ne mange plus de chocolat. Elle a peur de prendre du poids.",
+      "example": "Nous mangerons sur la terrasse si le vent reste aussi faible ce soir.",
       "part": "v. t. / i.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-044",
+          "form": "terrasse"
+        },
+        {
+          "id": "3.03-3",
+          "form": "vent"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-020",
@@ -850,13 +1550,25 @@
       "subcategory": "5.02",
       "french": "le menu",
       "chinese": "菜单；套餐",
-      "example": "Ce menu à 20 euros ne comprend pas les boissons.",
+      "example": "Le menu propose un poisson du jour et un dessert préparé avec les fruits locaux.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“菜单”；本例指固定价格的套餐，补充对应释义。"
+      "note": "原书译“菜单”；本例指固定价格的套餐，补充对应释义。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-021",
+          "form": "poisson"
+        },
+        {
+          "id": "book-5.01-009",
+          "form": "fruits"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-021",
@@ -864,13 +1576,25 @@
       "subcategory": "5.02",
       "french": "la part",
       "chinese": "块，份，部分",
-      "example": "Elle est au régime. Elle ne prend qu’une petite part de gâteau.",
+      "example": "Une petite part de gâteau suffirait après ce déjeuner accompagné de fromage.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-045",
+          "form": "déjeuner"
+        },
+        {
+          "id": "5.01-2",
+          "form": "fromage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-022",
@@ -878,13 +1602,25 @@
       "subcategory": "5.02",
       "french": "la poêle",
       "chinese": "长柄平底锅，煎锅",
-      "example": "On fait généralement cuire la viande dans une poêle.",
+      "example": "La poêle chauffe pendant que mon frère casse les œufs et cherche le beurre.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-031",
+          "form": "œufs"
+        },
+        {
+          "id": "book-5.01-001",
+          "form": "beurre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-023",
@@ -892,13 +1628,25 @@
       "subcategory": "5.02",
       "french": "le pourboire",
       "chinese": "小费",
-      "example": "Au restaurant, si les clients sont satisfaits du repas et du service, ils laissent un pourboire.",
+      "example": "Le client laissait toujours un pourboire après avoir pris son café au même bistrot.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-004",
+          "form": "café"
+        },
+        {
+          "id": "book-5.02-004",
+          "form": "bistrot"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-024",
@@ -906,13 +1654,25 @@
       "subcategory": "5.02",
       "french": "préparer",
       "chinese": "准备，制作",
-      "example": "Le dimanche midi, c’est mon père qui prépare le repas.",
+      "example": "Nous préparons la soupe avec les légumes que notre voisin cultive dans son jardin.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-029",
+          "form": "soupe"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-025",
@@ -920,13 +1680,25 @@
       "subcategory": "5.02",
       "french": "le régime",
       "chinese": "节食，饮食制度",
-      "example": "Le médecin met Pierre au régime. Il est trop gros pour sa taille.",
+      "example": "La médecin adaptera ce régime aux habitudes de son patient plutôt qu'à une liste d'interdictions.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        },
+        {
+          "id": "book-16.11-007",
+          "form": "habitudes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-026",
@@ -934,13 +1706,25 @@
       "subcategory": "5.02",
       "french": "remplir",
       "chinese": "使……满，倒满",
-      "example": "Il a rempli la bouteille avec de l’eau du robinet.",
+      "example": "Le serveur remplit la carafe pendant que les clients choisissent leur repas.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-003",
+          "form": "clients"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-027",
@@ -948,13 +1732,25 @@
       "subcategory": "5.02",
       "french": "salé, salée",
       "chinese": "咸的",
-      "example": "La viande n’est pas assez salée, je vais demander du sel.",
+      "example": "Cette soupe trop salée nous a donné envie de boire un grand verre d'eau.",
       "part": "adj. / p. p.",
       "level": "基础",
       "bookPage": 43,
       "pdfPage": 50,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-035",
+          "form": "verre"
+        },
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-028",
@@ -962,13 +1758,25 @@
       "subcategory": "5.02",
       "french": "la serveuse",
       "chinese": "女服务员",
-      "example": "Il est affiché que le café rue de Toulouse cherche une serveuse pour l’été.",
+      "example": "La serveuse aide les enfants à choisir un dessert pendant que leurs parents regardent le menu.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书只列阴性形式，保留该词条；阳性对应词为 serveur。"
+      "note": "原书只列阴性形式，保留该词条；阳性对应词为 serveur。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-5.02-020",
+          "form": "menu"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-029",
@@ -976,13 +1784,25 @@
       "subcategory": "5.02",
       "french": "la soupe",
       "chinese": "汤",
-      "example": "Il fait une soupe avec les légumes de son jardin.",
+      "example": "Une soupe chaude réchaufferait les voyageurs qui attendent dans la petite gare.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-016",
+          "form": "voyageurs"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-030",
@@ -990,13 +1810,25 @@
       "subcategory": "5.02",
       "french": "sucré, sucrée",
       "chinese": "甜的，加糖的",
-      "example": "Les poires du marché sont toujours bien sucrées.",
+      "example": "Ce dessert sucré accompagne le thé offert aux visiteurs après la visite du jardin.",
       "part": "adj. / p. p.",
       "level": "基础",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-038",
+          "form": "thé"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-031",
@@ -1004,13 +1836,25 @@
       "subcategory": "5.02",
       "french": "la tarte",
       "chinese": "馅饼，水果挞",
-      "example": "La tarte aux pommes est le gâteau préféré de Pierre.",
+      "example": "La tarte cuisait pendant que ma mère préparait la salade pour le dîner.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“奶油水果馅饼”；tarte 不限定必须含奶油，释义作调整。"
+      "note": "原书译“奶油水果馅饼”；tarte 不限定必须含奶油，释义作调整。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-016",
+          "form": "mère"
+        },
+        {
+          "id": "book-5.02-046",
+          "form": "dîner"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-032",
@@ -1018,13 +1862,25 @@
       "subcategory": "5.02",
       "french": "la tartine",
       "chinese": "（涂抹黄油等的）面包片",
-      "example": "Pierre mange deux tartines de beurre et boit un café au lait le matin.",
+      "example": "Mon fils étale de la confiture sur sa tartine avant de boire son lait.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-010",
+          "form": "confiture"
+        },
+        {
+          "id": "book-5.01-011",
+          "form": "lait"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-033",
@@ -1032,13 +1888,25 @@
       "subcategory": "5.02",
       "french": "la tranche",
       "chinese": "片",
-      "example": "Combien de tranches de pain faut-il couper ?",
+      "example": "Une tranche de pain et un peu de fromage compléteront notre pique-nique de demain.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        },
+        {
+          "id": "5.01-2",
+          "form": "fromage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-034",
@@ -1046,13 +1914,25 @@
       "subcategory": "5.02",
       "french": "la vaisselle",
       "chinese": "餐具，碗碟",
-      "example": "Si personne ne lave la vaisselle, on n’aura pas d’assiettes propres.",
+      "example": "La vaisselle attend dans l'évier pendant que nous accompagnons nos invités jusqu'à la porte.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-14.03-028",
+          "form": "invités"
+        },
+        {
+          "id": "book-2.01-019",
+          "form": "porte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-035",
@@ -1060,13 +1940,25 @@
       "subcategory": "5.02",
       "french": "le verre",
       "chinese": "玻璃杯；玻璃",
-      "example": "Il boit un verre de vin le soir en mangeant son fromage.",
+      "example": "Un verre a glissé du plateau lorsque la serveuse a voulu ouvrir la porte.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": "本单元为杯子义；与第二单元材料“玻璃”义区分。"
+      "note": "本单元为杯子义；与第二单元材料“玻璃”义区分。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-057",
+          "form": "plateau"
+        },
+        {
+          "id": "book-2.01-019",
+          "form": "porte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-036",
@@ -1074,13 +1966,25 @@
       "subcategory": "5.02",
       "french": "verser",
       "chinese": "倒，倾倒",
-      "example": "La serveuse verse le thé dans les tasses.",
+      "example": "Ma fille verse de l'eau dans la carafe pour les invités assis sur la terrasse.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "book-2.01-044",
+          "form": "terrasse"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-037",
@@ -1088,13 +1992,25 @@
       "subcategory": "5.02",
       "french": "alimenter",
       "chinese": "使进食，喂养",
-      "example": "Elle alimente son bébé avec du lait.",
+      "example": "Cette association pourrait alimenter plusieurs familles avec les produits invendus du marché.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        },
+        {
+          "id": "book-3.01-012",
+          "form": "marché"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-038",
@@ -1102,13 +2018,25 @@
       "subcategory": "5.02",
       "french": "apprêter",
       "chinese": "准备，烹制",
-      "example": "Le dimanche, ma grand-mère apprête le repas pour toute la famille.",
+      "example": "Le cuisinier préfère apprêter le poisson avec des herbes plutôt qu'avec une sauce lourde.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-007",
+          "form": "cuisinier"
+        },
+        {
+          "id": "book-3.04-021",
+          "form": "poisson"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-039",
@@ -1116,13 +2044,25 @@
       "subcategory": "5.02",
       "french": "l’assiette",
       "chinese": "盘，碟子",
-      "example": "La serveuse a fait tomber une assiette.",
+      "example": "Les assiettes étaient encore chaudes lorsque la serveuse a apporté la viande et les légumes.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-039",
+          "form": "viande"
+        },
+        {
+          "id": "book-5.01-012",
+          "form": "légumes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-040",
@@ -1130,13 +2070,25 @@
       "subcategory": "5.02",
       "french": "avaler",
       "chinese": "吞，咽",
-      "example": "C’est difficile de faire avaler des médicaments à un chat.",
+      "example": "Le petit prend son temps pour avaler la soupe avant de demander un morceau de pain.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-029",
+          "form": "soupe"
+        },
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-041",
@@ -1144,13 +2096,25 @@
       "subcategory": "5.02",
       "french": "le bar",
       "chinese": "酒吧",
-      "example": "Avant d’aller dîner, ils se retrouvent au bar de l’hôtel pour prendre une bière.",
+      "example": "Le bar restera ouvert après le concert pour accueillir les musiciens et leurs amis.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-030",
+          "form": "concert"
+        },
+        {
+          "id": "book-13.03-038",
+          "form": "musiciens"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-042",
@@ -1158,13 +2122,25 @@
       "subcategory": "5.02",
       "french": "la bouteille",
       "chinese": "瓶子",
-      "example": "Il reste encore du vin dans la bouteille. Qui en veut ?",
+      "example": "Cette bouteille d'eau suffit pour une courte promenade, mais pas pour une journée en montagne.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "book-4.02-025",
+          "form": "promenade"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-043",
@@ -1172,13 +2148,25 @@
       "subcategory": "5.02",
       "french": "la coupe",
       "chinese": "浅口酒杯，高脚酒杯",
-      "example": "Pierre a cassé une coupe en cristal.",
+      "example": "Une coupe en plastique serait moins fragile pour la fête organisée dans le jardin.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-008",
+          "form": "fête"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-044",
@@ -1186,13 +2174,25 @@
       "subcategory": "5.02",
       "french": "le couteau",
       "chinese": "刀",
-      "example": "Quel couteau prends-tu normalement pour couper la viande ?",
+      "example": "Le couteau reste dans la cuisine lorsque les enfants aident à porter le repas dehors.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-004",
+          "form": "cuisine"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-045",
@@ -1200,13 +2200,25 @@
       "subcategory": "5.02",
       "french": "le déjeuner",
       "chinese": "午饭，午餐",
-      "example": "Ils se sont retrouvés à l’heure du déjeuner pour manger ensemble.",
+      "example": "Nous avons partagé le déjeuner avec les ouvriers qui réparaient le toit de la maison.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-011",
+          "form": "ouvriers"
+        },
+        {
+          "id": "book-2.01-045",
+          "form": "toit"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-046",
@@ -1214,13 +2226,25 @@
       "subcategory": "5.02",
       "french": "le dîner",
       "chinese": "晚饭，晚餐",
-      "example": "Nous sommes invités chez nos voisins pour le dîner à 21 heures.",
+      "example": "Le dîner rassemble toute la famille après une journée de travail et d'école.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-047",
@@ -1228,13 +2252,25 @@
       "subcategory": "5.02",
       "french": "emplir",
       "chinese": "使……满，充满",
-      "example": "N’oubliez pas d’emplir les carafes d’eau.",
+      "example": "La serveuse emplissait les verres pendant que les clients discutaient de leur voyage.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-035",
+          "form": "verres"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-048",
@@ -1242,13 +2278,25 @@
       "subcategory": "5.02",
       "french": "figer",
       "chinese": "凝固，使凝结",
-      "example": "La sauce que Pierre avait préparée pour la viande a figé.",
+      "example": "Le froid fait figer la sauce, alors je remets doucement la casserole sur le feu.",
       "part": "v. t. / i.",
       "level": "进阶",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-009",
+          "form": "casserole"
+        },
+        {
+          "id": "book-2.02-010",
+          "form": "feu"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-049",
@@ -1256,13 +2304,25 @@
       "subcategory": "5.02",
       "french": "fondre",
       "chinese": "融化",
-      "example": "Il fait fondre un petit morceau de beurre dans la poêle avant d’y mettre la viande.",
+      "example": "Le chocolat fondra pendant que nous couperons les poires pour préparer le dessert.",
       "part": "v. t. / i.",
       "level": "进阶",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-006",
+          "form": "chocolat"
+        },
+        {
+          "id": "book-5.01-016",
+          "form": "poires"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-050",
@@ -1270,13 +2330,25 @@
       "subcategory": "5.02",
       "french": "la fraîcheur",
       "chinese": "新鲜，新鲜程度",
-      "example": "La date limite de fraîcheur est indiquée sur la boîte.",
+      "example": "La fraîcheur du poisson se vérifie avant son achat au marché, rappelle le cuisinier.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 44,
       "pdfPage": 51,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-012",
+          "form": "marché"
+        },
+        {
+          "id": "book-11.01-007",
+          "form": "cuisinier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-051",
@@ -1284,13 +2356,25 @@
       "subcategory": "5.02",
       "french": "frais, fraîche",
       "chinese": "新鲜的",
-      "example": "Quand le cuisinier achète son poisson le matin, il vérifie qu’il est bien frais.",
+      "example": "Des légumes frais apporteraient de la couleur au repas préparé pour les invités.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 45,
       "pdfPage": 52,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        },
+        {
+          "id": "book-14.03-028",
+          "form": "invités"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-052",
@@ -1298,13 +2382,25 @@
       "subcategory": "5.02",
       "french": "la garde",
       "chinese": "保存，贮藏",
-      "example": "La meilleure température pour la garde du vin est de 13 degrés.",
+      "example": "La garde de ce vin demande une température stable dans la cave toute l'année.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 45,
       "pdfPage": 52,
       "source": "法语基础词汇分类学习手册",
-      "note": "保留原书储酒温度例句，未将该温度作为适用于所有葡萄酒的保存标准。"
+      "note": "保留原书储酒温度例句，未将该温度作为适用于所有葡萄酒的保存标准。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-021",
+          "form": "vin"
+        },
+        {
+          "id": "book-2.01-026",
+          "form": "cave"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-053",
@@ -1312,13 +2408,25 @@
       "subcategory": "5.02",
       "french": "goûter",
       "chinese": "品尝",
-      "example": "J’ai goûté la soupe. Elle manque de sel et de poivre.",
+      "example": "Les enfants ont goûté le miel avant de visiter les ruches avec le fermier.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 45,
       "pdfPage": 52,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-029",
+          "form": "miel"
+        },
+        {
+          "id": "book-3.04-061",
+          "form": "ruches"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-054",
@@ -1326,13 +2434,25 @@
       "subcategory": "5.02",
       "french": "gras, grasse",
       "chinese": "油腻的，富含脂肪的",
-      "example": "Le médecin lui a conseillé de faire un régime car son alimentation est trop grasse.",
+      "example": "Ce plat trop gras plaît peu à mon père, qui préfère le poisson et les légumes.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 45,
       "pdfPage": 52,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-023",
+          "form": "père"
+        },
+        {
+          "id": "book-5.01-012",
+          "form": "légumes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-055",
@@ -1340,13 +2460,25 @@
       "subcategory": "5.02",
       "french": "liquide",
       "chinese": "液体的，液态的",
-      "example": "Pour obtenir du chocolat liquide, il faut faire fondre des petits morceaux à feu très doux.",
+      "example": "Le beurre restait liquide dans le bol posé près du four encore chaud.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 45,
       "pdfPage": 52,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-001",
+          "form": "beurre"
+        },
+        {
+          "id": "book-3.03-003",
+          "form": "chaud"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-056",
@@ -1354,13 +2486,25 @@
       "subcategory": "5.02",
       "french": "nourrir",
       "chinese": "供养，喂养",
-      "example": "Son salaire peu élevé ne suffit pas à nourrir sa famille.",
+      "example": "Notre voisin nourrit les chats du quartier avant de partir travailler à la gare.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 45,
       "pdfPage": 52,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-031",
+          "form": "chats"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-057",
@@ -1368,13 +2512,25 @@
       "subcategory": "5.02",
       "french": "le plateau",
       "chinese": "托盘",
-      "example": "Pierre pose les assiettes et les tasses sur un plateau pour les emmener au jardin.",
+      "example": "Le plateau permettra de transporter les tasses sans multiplier les allers-retours entre la cuisine et le salon.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 45,
       "pdfPage": 52,
       "source": "法语基础词汇分类学习手册",
-      "note": "本单元为托盘义，与第三单元地形“高原”义区分。"
+      "note": "本单元为托盘义，与第三单元地形“高原”义区分。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-065",
+          "form": "tasses"
+        },
+        {
+          "id": "2.03-2",
+          "form": "salon"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-058",
@@ -1382,13 +2538,25 @@
       "subcategory": "5.02",
       "french": "la préparation",
       "chinese": "制品，料理；准备",
-      "example": "Elle préfère les préparations salées.",
+      "example": "Cette préparation à base de riz accompagne le poulet servi aux invités du mariage.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 45,
       "pdfPage": 52,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-034",
+          "form": "riz"
+        },
+        {
+          "id": "book-5.01-019",
+          "form": "poulet"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-059",
@@ -1396,13 +2564,25 @@
       "subcategory": "5.02",
       "french": "pressé, pressée",
       "chinese": "榨过的，压榨的",
-      "example": "Il se fait deux oranges pressées chaque matin.",
+      "example": "Un jus d'orange pressée serait agréable après la marche sous ce grand soleil.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 45,
       "pdfPage": 52,
       "source": "法语基础词汇分类学习手册",
-      "note": "本单元例句指榨汁，与“匆忙的、着急的”义区分。"
+      "note": "本单元例句指榨汁，与“匆忙的、着急的”义区分。",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-1.06-015",
+          "form": "marche"
+        },
+        {
+          "id": "3.03-2",
+          "form": "soleil"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-060",
@@ -1410,13 +2590,25 @@
       "subcategory": "5.02",
       "french": "la recette",
       "chinese": "菜谱，食谱",
-      "example": "La soupe était excellente. J’ai récupéré la recette pour pouvoir en faire moi-même.",
+      "example": "La recette de ma tante explique comment utiliser les restes de pain dans un dessert.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 45,
       "pdfPage": 52,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-039",
+          "form": "tante"
+        },
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-061",
@@ -1424,13 +2616,25 @@
       "subcategory": "5.02",
       "french": "rempli, remplie",
       "chinese": "满的，装满的",
-      "example": "Les verres, remplis de vin, peuvent être maintenant servis.",
+      "example": "J'ai posé le bol rempli de soupe sur la table avant d'appeler les enfants.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 45,
       "pdfPage": 52,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-029",
+          "form": "soupe"
+        },
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "5.02-1",
@@ -1438,14 +2642,26 @@
       "subcategory": "5.02",
       "french": "le repas",
       "chinese": "饭，一餐",
-      "example": "Il y a trois repas principaux par jour : le petit déjeuner, le déjeuner et le dîner.",
+      "example": "Ce repas partagé permet aux nouveaux habitants de rencontrer leurs voisins sans cérémonie.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 45,
       "pdfPage": 52,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/ʁəpɑ/"
+      "ipa": "/ʁəpɑ/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "book-2.01-023",
+          "form": "voisins"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-063",
@@ -1453,13 +2669,25 @@
       "subcategory": "5.02",
       "french": "le restaurant",
       "chinese": "餐厅，饭店",
-      "example": "La semaine dernière, ils ont mangé dans un restaurant indien. Aujourd’hui, ils essaient un restaurant syrien.",
+      "example": "Le restaurant accueillait les voyageurs qui attendaient leur train en face de la gare.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 45,
       "pdfPage": 52,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-016",
+          "form": "voyageurs"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-064",
@@ -1467,13 +2695,25 @@
       "subcategory": "5.02",
       "french": "la soif",
       "chinese": "渴，口渴",
-      "example": "J’ai soif. Peux-tu me donner un verre d’eau, s’il te plaît ?",
+      "example": "Les enfants ont soif après le match et boivent avant de demander leur goûter.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 45,
       "pdfPage": 52,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.07-010",
+          "form": "match"
+        },
+        {
+          "id": "book-5.02-053",
+          "form": "goûter"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-5.02-065",
@@ -1481,13 +2721,27 @@
       "subcategory": "5.02",
       "french": "la tasse",
       "chinese": "杯，茶杯",
-      "example": "Ma grand-mère boit chaque jour à 17 heures une tasse de thé.",
+      "example": "Cette tasse gardera le café chaud pendant que tu termineras la lecture du journal.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 45,
       "pdfPage": 52,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-004",
+          "form": "café"
+        },
+        {
+          "id": "book-13.05-008",
+          "form": "journal"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     }
-  ]
+  ],
+  "originalMethod": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，旧统计和科学表述的范围说明记入 note。",
+  "exampleMethod": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
 }

@@ -11,6 +11,7 @@ const suites = [
   'storage',
   'card-resume',
   'card-position',
+  'card-translations',
   'select',
   'audio.test',
   'progress-sync',

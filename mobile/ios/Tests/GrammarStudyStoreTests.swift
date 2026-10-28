@@ -8,6 +8,33 @@ struct GrammarStudyStoreTests {
         defer { try? FileManager.default.removeItem(at: directory) }
         let stateURL = directory.appendingPathComponent("state.json")
         let store = StudyStore(catalog: catalog, persistenceURL: stateURL)
+        let compactCategory = StudyCategory(id: "compact", name: "精簡測試", subcategories: [
+            StudySubcategory(id: "compact.1", name: "第一類"),
+            StudySubcategory(id: "compact.2", name: "第二類"),
+            StudySubcategory(id: "compact.empty", name: "空白類")
+        ])
+        let completeMeaning = "在……的時候；趁……之際。語氣較正式。"
+        let completeSenses = "① 有可能……。表示客觀可能。\n② 不可能……。表示不會發生。"
+        let conciseWord = StudyWord(id: "concise", term: "～際（に）", meaning: completeMeaning,
+            example: "日本へ行く際に、京都にも寄りたいです。", category: "compact", subcategory: "compact.1", language: "ja")
+        let sensesWord = StudyWord(id: "senses", term: "～得る／～得ない", meaning: completeSenses,
+            category: "compact", subcategory: "compact.2", language: "ja")
+        let compactDictionary = StudyDictionary(id: "grammar-compact", title: "精簡語法", language: "ja",
+            categories: [compactCategory], words: [conciseWord, sensesWord], kind: .grammar)
+        let compactStore = StudyStore(catalog: [compactDictionary], persistenceURL: nil)
+        precondition(compactStore.availableCategories.map(\.id) == ["compact"])
+        precondition(compactStore.availableSubcategories(in: compactCategory).count == 2, "Empty subcategories are omitted")
+        precondition(compactStore.compactGrammarMeaning(for: conciseWord) == "在……的時候；趁……之際")
+        precondition(compactStore.compactGrammarMeaning(for: sensesWord) == "① 有可能……\n② 不可能……", "Every numbered meaning survives compaction")
+        precondition(compactStore.displayMeaning(for: conciseWord) == completeMeaning && conciseWord.exampleTexts.count == 1,
+            "Full meaning and examples remain unchanged for details and cards")
+        compactStore.meaningLanguage = "en"
+        precondition(compactStore.compactGrammarMeaning(for: conciseWord) == compactStore.displayMeaning(for: conciseWord), "Missing translations retain honest fallback")
+        compactStore.meaningLanguage = "zh-Hant"
+        precondition(compactStore.deleteWord(sensesWord))
+        precondition(compactStore.availableSubcategories(in: compactCategory).map(\.id) == ["compact.1"], "One remaining subcategory selects directly")
+        precondition(compactStore.restoreWord(sensesWord.id))
+        precondition(compactStore.availableSubcategories(in: compactCategory).count == 2)
         store.dictionaryID = "grammar-fr"
         store.listMode = true
         precondition(store.currentDictionary.isGrammar && store.filteredWords.count == 6)

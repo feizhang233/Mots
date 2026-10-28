@@ -1119,6 +1119,10 @@
   font-size: 14px;
   line-height: 1.65;
 }
+.list-meaning-summary {
+  display: none;
+  white-space: pre-line;
+}
 .study-entry .list-delete {
   grid-column: auto;
   grid-row: auto;
@@ -1184,6 +1188,12 @@
 .list-example .example-sentence {
   color: var(--muted);
   font-size: 13px;
+}
+.card-example .example-translation {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
 }
 .entry-empty-copy {
   color: var(--muted);
@@ -1368,6 +1378,12 @@
   .study-entry .list-meaning {
     font-size: 13px;
   }
+  .study-entry .list-meaning-full {
+    display: none;
+  }
+  .study-entry .list-meaning-summary {
+    display: inline;
+  }
   .study-entry .list-term {
     gap: 4px;
   }
@@ -1380,14 +1396,19 @@
     width: 36px;
   }
   .entry-secondary {
+    grid-template-columns: minmax(0, 1fr);
     padding-left: 0;
     gap: 10px;
     align-items: start;
     margin-top: 2px;
   }
+  .entry-secondary > .list-example {
+    display: none;
+  }
   .entry-secondary-actions {
-    flex-direction: column-reverse;
-    gap: 0;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
   }
   .study-entry .rating-dot-button {
     width: 34px;
@@ -1494,6 +1515,74 @@
     min-height: 44px;
     height: 44px;
   }
+}
+
+/* Vocabulary keeps five aligned columns on one line, including on narrow screens. */
+.vocabulary-list-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--outline);
+  border-radius: 20px;
+  background: var(--card);
+}
+.vocabulary-list-scroll:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+.word-table.vocabulary-entry-list {
+  display: table;
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  border-collapse: collapse;
+}
+.word-table .word-row.study-entry.vocabulary-entry {
+  display: table-row;
+  padding: 0;
+}
+.vocabulary-entry > .list-term,
+.vocabulary-entry > .list-example,
+.vocabulary-entry > .list-meaning,
+.vocabulary-entry > .list-status,
+.vocabulary-entry > .list-delete {
+  display: table-cell;
+  padding: 8px 12px;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow-wrap: normal;
+}
+.vocabulary-entry > .list-term {
+  width: 22%;
+  padding-left: 18px;
+}
+.vocabulary-entry .list-term .sound-button {
+  margin-inline-end: 6px;
+  vertical-align: middle;
+}
+.vocabulary-entry .list-word {
+  font-size: 16px;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow-wrap: normal;
+}
+.vocabulary-entry > .list-example {
+  width: 42%;
+}
+.vocabulary-entry .example-sentence,
+.vocabulary-entry > .list-meaning {
+  font-size: 12px;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+.vocabulary-entry > .list-meaning {
+  width: 28%;
+}
+.vocabulary-entry > .list-status,
+.vocabulary-entry > .list-delete {
+  width: 1%;
+}
+.vocabulary-entry > .list-delete {
+  padding-left: 0;
+  padding-right: 12px;
 }
 
 /* The current book is the top-bar heading and the one entry point to all books. */

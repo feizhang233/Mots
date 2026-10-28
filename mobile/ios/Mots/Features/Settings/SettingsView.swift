@@ -145,7 +145,18 @@ struct SettingsView: View {
         if store.currentDictionary.isGrammar {
             LabeledContent("書籍類型", value: store.currentDictionary.isThematicGrammar ? "主題背誦" : "語法背誦")
                 .accessibilityIdentifier("settings.grammar-book-type")
+        } else {
+            Toggle("先隱藏翻譯", isOn: $store.hideListMeanings)
+                .accessibilityIdentifier("settings.hide-translations")
+            Text("列表先只顯示單字，點一下會發音並顯示翻譯。")
+                .font(.footnote)
+                .foregroundStyle(MotsTheme.muted)
         }
+        Toggle("卡片顯示例句翻譯", isOn: $store.showExampleTranslations)
+            .accessibilityIdentifier("settings.show-example-translations")
+        Text("顯示答案後，顯示目前釋義語言已有的例句翻譯。")
+            .font(.footnote)
+            .foregroundStyle(MotsTheme.muted)
         Toggle("隱藏已掌握的項目", isOn: $store.hideMastered)
         Picker("列表每頁", selection: $store.pageSize) {
             ForEach([10, 20, 50, 100], id: \.self) { Text("\($0) \(store.currentDictionary.entryUnit)").tag($0) }

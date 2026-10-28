@@ -101,7 +101,7 @@ make serve
 - `sync/`：配對協議、私人 SQLite、HTTP 服務與限制。
 - `database/`：原書 JSON／工作簿；`qa/`：驗證紀錄。
 
-日語詞表按原 Markdown 左欄由上至下、再接右欄的順序匯入，統一歸入「全部詞彙」。詞條顯示原表的「詞彙（讀音）」，原表未提供的例句和詞性留空。「溶く〔待確認〕」保留原註記；新詞使用獨立且穩定的 ID，避免沿用示例詞的背誦進度。修改原表後執行 `python3 scripts/import-japanese.py`，再執行 `make build`；以 `python3 scripts/import-japanese.py --check` 核對結構化資料與 `web/src/js/languages.js`。
+日語詞表按原 Markdown 左欄由上至下、再接右欄的順序匯入，依 `database/japanese/scenarios.json` 分為 10 個使用場景，每詞只歸一類且保留穩定 ID。詞條顯示原表的「詞彙（讀音）」，原表未提供的例句和詞性留空。「溶く〔待確認〕」保留原註記；新詞使用獨立且穩定的 ID，避免沿用示例詞的背誦進度。修改原表後執行 `python3 scripts/import-japanese.py`，再執行 `make build`；以 `python3 scripts/import-japanese.py --check` 核對結構化資料與 `web/src/js/languages.js`。
 
 詳見 [程式結構與維護方式](docs/architecture.md)。原書來源見 [詞庫來源與校訂](docs/vocabulary-sources.md)；音訊限制見 [AUDIO.md](AUDIO.md)，介面約定見 [DESIGN.md](DESIGN.md) 與 [UX-CONTRACT.md](UX-CONTRACT.md)。
 

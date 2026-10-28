@@ -16,7 +16,7 @@
     "基础": 85,
     "进阶": 82
   },
-  "method": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，旧统计和科学表述的范围说明记入 note。",
+  "method": "詞條、分類、原書頁碼與校對註記保留原整理；例句於 2026-10-25 改為 Mots 原創詞彙關聯例句。原例句保存在 french/example-network.json 的 originalText，XLSX 保留原書轉錄版本。",
   "subcategories": [
     {
       "id": "4.01",
@@ -42,13 +42,25 @@
       "subcategory": "4.01",
       "french": "la carte",
       "chinese": "地图",
-      "example": "Il ne connaît pas la route, il a dû regarder plusieurs fois sur la carte.",
+      "example": "La carte montre un sentier qui relie notre village au lac sans longer la route.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-040",
+          "form": "sentier"
+        },
+        {
+          "id": "book-3.02-009",
+          "form": "lac"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-002",
@@ -56,13 +68,25 @@
       "subcategory": "4.01",
       "french": "le chemin",
       "chinese": "路，道路",
-      "example": "Le chemin qui traverse la forêt est le plus court mais il n’est pas éclairé.",
+      "example": "Nous avons pris le chemin du moulin pour éviter la circulation du centre.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-034",
+          "form": "moulin"
+        },
+        {
+          "id": "4.03-1",
+          "form": "circulation"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-003",
@@ -70,13 +94,25 @@
       "subcategory": "4.01",
       "french": "décrire",
       "chinese": "描写，描述",
-      "example": "Peux-tu me décrire le chemin le plus court pour arriver chez toi ?",
+      "example": "Le guide décrit les paysages que les voyageurs aperçoivent depuis la fenêtre du train.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.02-3",
+          "form": "paysages"
+        },
+        {
+          "id": "book-2.01-011",
+          "form": "fenêtre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-004",
@@ -84,13 +120,25 @@
       "subcategory": "4.01",
       "french": "déterminé, déterminée",
       "chinese": "确定的，既定的",
-      "example": "Il a pris une direction déterminée.",
+      "example": "Le départ était fixé à un moment déterminé pour éviter les embouteillages autour de la ville.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-16.01-015",
+          "form": "moment"
+        },
+        {
+          "id": "3.01-1",
+          "form": "ville"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-005",
@@ -98,13 +146,25 @@
       "subcategory": "4.01",
       "french": "le détour",
       "chinese": "绕道，迂回",
-      "example": "Il ne connaissait pas la route, il a fait un grand détour.",
+      "example": "Ce détour nous permet de traverser la forêt plutôt que de longer l'ancienne usine.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-008",
+          "form": "forêt"
+        },
+        {
+          "id": "book-11.03-020",
+          "form": "usine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-006",
@@ -112,13 +172,25 @@
       "subcategory": "4.01",
       "french": "directement",
       "chinese": "直接地",
-      "example": "Il est venu directement au restaurant, car il était déjà en retard.",
+      "example": "Le taxi vous conduira directement à l'hôtel sans passer par le centre encombré.",
       "part": "adv.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-018",
+          "form": "taxi"
+        },
+        {
+          "id": "4.02-3",
+          "form": "hôtel"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-007",
@@ -126,13 +198,25 @@
       "subcategory": "4.01",
       "french": "la direction",
       "chinese": "方向",
-      "example": "Prenez maintenant direction Rennes.",
+      "example": "Un panneau indique la direction du port, où les pêcheurs vendent leurs poissons le matin.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-051",
+          "form": "panneau"
+        },
+        {
+          "id": "book-4.03-013",
+          "form": "port"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-008",
@@ -140,13 +224,25 @@
       "subcategory": "4.01",
       "french": "droite",
       "chinese": "右边",
-      "example": "Prenez la deuxième rue à droite.",
+      "example": "En tournant à droite après la banque, tu trouverais facilement l'entrée du musée.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": "此处用于 à droite（向右、在右边）。"
+      "note": "此处用于 à droite（向右、在右边）。",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-004",
+          "form": "banque"
+        },
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-009",
@@ -154,13 +250,25 @@
       "subcategory": "4.01",
       "french": "l’est",
       "chinese": "东，东部",
-      "example": "La Lorraine est une région de l’est de la France.",
+      "example": "À l'est du village, une piste traverse les champs et rejoint la rivière.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.01-2",
+          "form": "village"
+        },
+        {
+          "id": "book-3.02-003",
+          "form": "champs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-010",
@@ -168,13 +276,25 @@
       "subcategory": "4.01",
       "french": "gauche",
       "chinese": "左边",
-      "example": "Il a pris la première rue à gauche.",
+      "example": "Ma grand-mère habitait à gauche de la boulangerie, juste en face de l'école.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": "此处用于 à gauche（向左、在左边）。"
+      "note": "此处用于 à gauche（向左、在左边）。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-036",
+          "form": "grand-mère"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-011",
@@ -182,13 +302,25 @@
       "subcategory": "4.01",
       "french": "indiquer",
       "chinese": "指示，指出",
-      "example": "Un passant m’a indiqué le chemin de la gare.",
+      "example": "Le conducteur indique aux passagers l'arrêt le plus proche de l'hôpital.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-033",
+          "form": "conducteur"
+        },
+        {
+          "id": "book-8.04-006",
+          "form": "hôpital"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-012",
@@ -196,13 +328,25 @@
       "subcategory": "4.01",
       "french": "le lieu",
       "chinese": "地方，地点",
-      "example": "La police a trouvé une arme sur le lieu du crime.",
+      "example": "Les organisateurs ont changé le lieu du concert pour protéger les musiciens de la pluie.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-030",
+          "form": "concert"
+        },
+        {
+          "id": "book-13.03-038",
+          "form": "musiciens"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-013",
@@ -210,13 +354,25 @@
       "subcategory": "4.01",
       "french": "mener",
       "chinese": "带领，带去，送往",
-      "example": "Les blessés sont menés en car à l’hôpital.",
+      "example": "Cette rue mène au marché en traversant le quartier où vivaient mes grands-parents.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-012",
+          "form": "marché"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-014",
@@ -224,13 +380,25 @@
       "subcategory": "4.01",
       "french": "montrer",
       "chinese": "指给……看，展示",
-      "example": "La femme nous a montré le chemin sur la carte.",
+      "example": "Le guide nous montrera les anciennes machines avant de nous laisser explorer le musée.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-020",
+          "form": "guide"
+        },
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-015",
@@ -238,13 +406,25 @@
       "subcategory": "4.01",
       "french": "le nord",
       "chinese": "北，北部",
-      "example": "La Picardie est située au nord de la France.",
+      "example": "Au nord de la ville, les habitants prennent le tram pour rejoindre la gare.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.01-1",
+          "form": "ville"
+        },
+        {
+          "id": "book-4.04-020",
+          "form": "tram"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-016",
@@ -252,13 +432,25 @@
       "subcategory": "4.01",
       "french": "l’ouest",
       "chinese": "西，西部",
-      "example": "La Bretagne est une région de l’ouest de la France.",
+      "example": "Une promenade vers l'ouest offrirait une belle vue sur la mer au coucher du soleil.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-011",
+          "form": "mer"
+        },
+        {
+          "id": "3.03-2",
+          "form": "soleil"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-017",
@@ -266,13 +458,25 @@
       "subcategory": "4.01",
       "french": "parvenir",
       "chinese": "到达",
-      "example": "Après douze heures, le groupe est parvenu au sommet du Mont-Blanc.",
+      "example": "Les secours cherchent à parvenir au village malgré la neige qui bloque le col.",
       "part": "v. i.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.01-2",
+          "form": "village"
+        },
+        {
+          "id": "book-3.02-029",
+          "form": "col"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-018",
@@ -280,13 +484,25 @@
       "subcategory": "4.01",
       "french": "le passage",
       "chinese": "经过，通行",
-      "example": "Aurélie attend le passage de l’autocar.",
+      "example": "Le passage du camion a fait vibrer les vitres de la petite maison.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-005",
+          "form": "camion"
+        },
+        {
+          "id": "book-4.04-045",
+          "form": "vitres"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-019",
@@ -294,13 +510,25 @@
       "subcategory": "4.01",
       "french": "le plan",
       "chinese": "平面图，城市地图",
-      "example": "Je ne connais pas Paris, j’ai besoin d’un plan de la ville.",
+      "example": "Le plan du quartier affiche les arrêts de bus et les entrées du parc.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": "此处指城市地图；与其他语境中“计划”义区分。"
+      "note": "此处指城市地图；与其他语境中“计划”义区分。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        },
+        {
+          "id": "book-3.01-037",
+          "form": "parc"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-020",
@@ -308,13 +536,25 @@
       "subcategory": "4.01",
       "french": "la rue",
       "chinese": "街，街道",
-      "example": "Il faut passer par la rue Baudelaire pour voir l’église.",
+      "example": "Cette rue accueillait le marché avant la construction de la nouvelle place.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-012",
+          "form": "marché"
+        },
+        {
+          "id": "book-3.01-014",
+          "form": "place"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-021",
@@ -322,13 +562,25 @@
       "subcategory": "4.01",
       "french": "le sud",
       "chinese": "南，南部",
-      "example": "De nombreuses personnes partent en vacances d’été dans le sud de la France.",
+      "example": "Les oiseaux quittent la région pour le sud lorsque les premiers froids arrivent.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.04-4",
+          "form": "oiseaux"
+        },
+        {
+          "id": "book-3.03-007",
+          "form": "froids"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-022",
@@ -336,13 +588,25 @@
       "subcategory": "4.01",
       "french": "la voie",
       "chinese": "道路，车道；轨道，站台股道",
-      "example": "Le train entrera en gare voie numéro trois.",
+      "example": "La nouvelle voie permettra aux vélos de traverser la ville sans partager la route des camions.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 33,
       "pdfPage": 40,
       "source": "法语基础词汇分类学习手册",
-      "note": "例句中的 voie 指车站股道，补充对应释义。"
+      "note": "例句中的 voie 指车站股道，补充对应释义。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "4.04-2",
+          "form": "vélos"
+        },
+        {
+          "id": "book-4.04-005",
+          "form": "camions"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-023",
@@ -350,13 +614,25 @@
       "subcategory": "4.01",
       "french": "arrivé, arrivée",
       "chinese": "已到达的",
-      "example": "Le train est arrivé avec vingt minutes de retard.",
+      "example": "Les voyageurs déjà arrivés attendent leurs bagages près de la sortie de l'aéroport.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 34,
       "pdfPage": 41,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书词条为过去分词阴阳性形式；例句中与 être 构成复合过去时。区别于名词 l’arrivée（到达）。"
+      "note": "原书词条为过去分词阴阳性形式；例句中与 être 构成复合过去时。区别于名词 l’arrivée（到达）。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-017",
+          "form": "bagages"
+        },
+        {
+          "id": "book-4.03-002",
+          "form": "aéroport"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-024",
@@ -364,13 +640,25 @@
       "subcategory": "4.01",
       "french": "guider",
       "chinese": "引领，带路",
-      "example": "Mon frère nous a guidés à travers Lille.",
+      "example": "Une habitante nous a guidés jusqu'au sentier qui monte vers le vieux château.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 34,
       "pdfPage": 41,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-040",
+          "form": "sentier"
+        },
+        {
+          "id": "book-13.02-003",
+          "form": "château"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-025",
@@ -378,13 +666,25 @@
       "subcategory": "4.01",
       "french": "l’indication",
       "chinese": "指示，指引",
-      "example": "J’ai suivi ses indications et je suis arrivée la première au point de rendez-vous.",
+      "example": "Cette indication aide les touristes à retrouver la gare sans traverser le centre commercial.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 34,
       "pdfPage": 41,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-029",
+          "form": "touristes"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-026",
@@ -392,13 +692,25 @@
       "subcategory": "4.01",
       "french": "l’issue",
       "chinese": "出口",
-      "example": "Les issues de secours sont toujours éclairées.",
+      "example": "Une issue supplémentaire faciliterait l'évacuation des spectateurs en cas d'incendie dans le théâtre.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 34,
       "pdfPage": 41,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-043",
+          "form": "spectateurs"
+        },
+        {
+          "id": "book-2.02-045",
+          "form": "incendie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-027",
@@ -406,13 +718,25 @@
       "subcategory": "4.01",
       "french": "l’orientation",
       "chinese": "方向，定向",
-      "example": "Il n’a pas le sens de l’orientation, il se perd en ville.",
+      "example": "L'orientation du bâtiment permet à la lumière du soleil d'entrer dans les chambres.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 34,
       "pdfPage": 41,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-004",
+          "form": "bâtiment"
+        },
+        {
+          "id": "2.03-1",
+          "form": "chambres"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-028",
@@ -420,13 +744,25 @@
       "subcategory": "4.01",
       "french": "repérer",
       "chinese": "辨认，认清，确定位置",
-      "example": "J’ai essayé de repérer le chemin pour pouvoir rentrer seule, sans me perdre.",
+      "example": "Le guide repérait les traces laissées par les animaux dans la neige fraîche.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 34,
       "pdfPage": 41,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“标记”；根据辨认路线的例句校正并补充。"
+      "note": "原书译“标记”；根据辨认路线的例句校正并补充。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-067",
+          "form": "traces"
+        },
+        {
+          "id": "book-3.03-010",
+          "form": "neige"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-029",
@@ -434,13 +770,25 @@
       "subcategory": "4.01",
       "french": "situer",
       "chinese": "确定……的位置；使位于",
-      "example": "La gare est située au nord du centre-ville.",
+      "example": "Le professeur demande aux élèves de situer leur ville sur une carte de France.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 34,
       "pdfPage": 41,
       "source": "法语基础词汇分类学习手册",
-      "note": "例句采用 être situé(e)（位于）；词条保留原书不定式 situer。"
+      "note": "例句采用 être situé(e)（位于）；词条保留原书不定式 situer。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        },
+        {
+          "id": "book-4.01-001",
+          "form": "carte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.01-030",
@@ -448,13 +796,25 @@
       "subcategory": "4.01",
       "french": "le trajet",
       "chinese": "路程，行程",
-      "example": "Nous avons effectué un trajet de dix heures.",
+      "example": "Le trajet durera moins longtemps lorsque le nouveau pont sera ouvert à la circulation.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 34,
       "pdfPage": 41,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-012",
+          "form": "pont"
+        },
+        {
+          "id": "4.03-1",
+          "form": "circulation"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-001",
@@ -462,13 +822,25 @@
       "subcategory": "4.02",
       "french": "l’appareil photo",
       "chinese": "照相机",
-      "example": "J’ai emprunté l’appareil photo de mon frère pour partir en vacances.",
+      "example": "Mon appareil photo tient dans une petite poche de ma veste pendant la randonnée.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 34,
       "pdfPage": 41,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-011",
+          "form": "poche"
+        },
+        {
+          "id": "book-6.03-016",
+          "form": "veste"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-002",
@@ -476,13 +848,25 @@
       "subcategory": "4.02",
       "french": "l’aventure",
       "chinese": "奇遇，冒险",
-      "example": "Pendant nos vacances en famille, nous avons vécu de belles aventures.",
+      "example": "Cette aventure nous a appris à partager notre eau et à écouter les conseils du guide.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 34,
       "pdfPage": 41,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "book-4.02-020",
+          "form": "guide"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-003",
@@ -490,13 +874,25 @@
       "subcategory": "4.02",
       "french": "le billet",
       "chinese": "票",
-      "example": "J’ai réservé un billet d’avion pour le 2 janvier.",
+      "example": "Le billet comprend le trajet en bateau et la visite du musée installé dans le phare.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 34,
       "pdfPage": 41,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-004",
+          "form": "bateau"
+        },
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-004",
@@ -504,13 +900,25 @@
       "subcategory": "4.02",
       "french": "emporter",
       "chinese": "带走，随身带上",
-      "example": "Pour mon voyage au Canada, j’emporte une grosse valise.",
+      "example": "Tu pourrais emporter une couverture pour les soirées fraîches sous la tente.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 34,
       "pdfPage": 41,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-031",
+          "form": "couverture"
+        },
+        {
+          "id": "book-4.02-028",
+          "form": "tente"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "4.02-3",
@@ -518,14 +926,26 @@
       "subcategory": "4.02",
       "french": "l’hôtel",
       "chinese": "酒店，旅馆",
-      "example": "Mes parents ont réservé une chambre d’hôtel pour les vacances.",
+      "example": "L'hôtel propose une chambre familiale avec une vue sur le petit port.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 34,
       "pdfPage": 41,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/otɛl/"
+      "ipa": "/otɛl/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        },
+        {
+          "id": "book-4.03-013",
+          "form": "port"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-006",
@@ -533,13 +953,25 @@
       "subcategory": "4.02",
       "french": "l’île",
       "chinese": "岛",
-      "example": "La Corse est une île française.",
+      "example": "Sur cette île, les habitants se déplaçaient surtout à vélo avant l'arrivée des voitures.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 34,
       "pdfPage": 41,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "4.04-2",
+          "form": "vélo"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-007",
@@ -547,13 +979,25 @@
       "subcategory": "4.02",
       "french": "l’information",
       "chinese": "信息",
-      "example": "J’ai fait des recherches sur Internet pour obtenir des informations sur cette ville.",
+      "example": "Cette information permet aux voyageurs de choisir un autre train sans perdre leur correspondance.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 34,
       "pdfPage": 41,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-016",
+          "form": "voyageurs"
+        },
+        {
+          "id": "book-4.03-037",
+          "form": "correspondance"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-008",
@@ -561,13 +1005,25 @@
       "subcategory": "4.02",
       "french": "la montagne",
       "chinese": "山，山区",
-      "example": "L’hiver, beaucoup partent en vacances à la montagne.",
+      "example": "Nous découvrirons la montagne avec un guide qui connaît les risques liés à la neige.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 34,
       "pdfPage": 41,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-020",
+          "form": "guide"
+        },
+        {
+          "id": "book-3.03-010",
+          "form": "neige"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-009",
@@ -575,13 +1031,25 @@
       "subcategory": "4.02",
       "french": "le retour",
       "chinese": "返回，归来",
-      "example": "Son retour de Suisse est prévu pour le 10 décembre.",
+      "example": "Le retour de vacances demande un peu d'organisation pour le linge et les courses.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 34,
       "pdfPage": 41,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-013",
+          "form": "vacances"
+        },
+        {
+          "id": "book-6.01-007",
+          "form": "courses"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-010",
@@ -589,13 +1057,25 @@
       "subcategory": "4.02",
       "french": "le séjour",
       "chinese": "逗留，停留",
-      "example": "Son séjour en Allemagne a une durée de dix jours.",
+      "example": "Notre séjour à la ferme a donné aux enfants le goût des légumes du jardin.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 34,
       "pdfPage": 41,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-009",
+          "form": "ferme"
+        },
+        {
+          "id": "book-5.01-012",
+          "form": "légumes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-011",
@@ -603,13 +1083,25 @@
       "subcategory": "4.02",
       "french": "la tradition",
       "chinese": "传统",
-      "example": "Mes parents partent tous les ans en Bretagne pour la fête de la mer, c’est une tradition.",
+      "example": "Cette tradition rassemble les familles autour d'un grand repas préparé sur la place.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 34,
       "pdfPage": 41,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-012",
@@ -617,13 +1109,25 @@
       "subcategory": "4.02",
       "french": "traditionnel, traditionnelle",
       "chinese": "传统的",
-      "example": "Nous sommes allés manger dans un restaurant traditionnel.",
+      "example": "Un costume traditionnel compléterait l'exposition de photos consacrée à la vie du village.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 34,
       "pdfPage": 41,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-030",
+          "form": "costume"
+        },
+        {
+          "id": "book-13.02-031",
+          "form": "photos"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-013",
@@ -631,13 +1135,25 @@
       "subcategory": "4.02",
       "french": "les vacances",
       "chinese": "假期",
-      "example": "Les salariés d’une entreprise peuvent prendre jusqu’à six semaines de vacances par an.",
+      "example": "Pendant les vacances, les enfants apprennent à nager et découvrent les poissons de la rivière.",
       "part": "n. f. pl.",
       "level": "基础",
       "bookPage": 35,
       "pdfPage": 42,
       "source": "法语基础词汇分类学习手册",
-      "note": "保留原书练习例句；假期周数不作为现行劳动制度说明。"
+      "note": "保留原书练习例句；假期周数不作为现行劳动制度说明。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "3.02-2",
+          "form": "rivière"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-014",
@@ -645,13 +1161,25 @@
       "subcategory": "4.02",
       "french": "la visite",
       "chinese": "参观，访问",
-      "example": "La visite du musée est gratuite pour les moins de 18 ans.",
+      "example": "La visite du palais commençait par la cuisine et se terminait dans le jardin.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 35,
       "pdfPage": 42,
       "source": "法语基础词汇分类学习手册",
-      "note": "例句未指明博物馆，免费年龄仅保留作语言例句。"
+      "note": "例句未指明博物馆，免费年龄仅保留作语言例句。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-038",
+          "form": "palais"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "4.02-1",
@@ -659,14 +1187,26 @@
       "subcategory": "4.02",
       "french": "le voyage",
       "chinese": "旅行",
-      "example": "Aurélie est partie en voyage au Canada.",
+      "example": "Ce voyage permet aux étudiants de pratiquer la langue en partageant le quotidien d'une famille.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 35,
       "pdfPage": 42,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/vwajaʒ/"
+      "ipa": "/vwajaʒ/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-12.01-010",
+          "form": "langue"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-016",
@@ -674,13 +1214,25 @@
       "subcategory": "4.02",
       "french": "le voyageur, la voyageuse",
       "chinese": "旅行者，游客",
-      "example": "Je croise toujours à la gare des voyageurs impatients.",
+      "example": "Les voyageurs descendront à la prochaine gare pour prendre une correspondance vers la côte.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 35,
       "pdfPage": 42,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        },
+        {
+          "id": "book-4.03-037",
+          "form": "correspondance"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-017",
@@ -688,13 +1240,25 @@
       "subcategory": "4.02",
       "french": "le bagage",
       "chinese": "行李",
-      "example": "Mon père a mis les bagages dans la voiture.",
+      "example": "Chaque bagage porte une étiquette avec le nom du propriétaire et son adresse.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 35,
       "pdfPage": 42,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-031",
+          "form": "étiquette"
+        },
+        {
+          "id": "1.01-4",
+          "form": "adresse"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-018",
@@ -702,13 +1266,25 @@
       "subcategory": "4.02",
       "french": "le circuit",
       "chinese": "环形路线，游览路线",
-      "example": "Nous avons fait un circuit en autocar pour visiter la ville.",
+      "example": "Nous avons choisi un circuit qui passait par le lac avant de revenir au village.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 35,
       "pdfPage": 42,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-009",
+          "form": "lac"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-019",
@@ -716,13 +1292,25 @@
       "subcategory": "4.02",
       "french": "le grain",
       "chinese": "颗粒",
-      "example": "Après une journée à la plage, on a des grains de sable dans les chaussures.",
+      "example": "Un grain de sable bloque le mécanisme de mon appareil depuis notre sortie à la plage.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 35,
       "pdfPage": 42,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-046",
+          "form": "mécanisme"
+        },
+        {
+          "id": "book-4.02-023",
+          "form": "plage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-020",
@@ -730,13 +1318,25 @@
       "subcategory": "4.02",
       "french": "le guide, la guide",
       "chinese": "导游",
-      "example": "Le guide fait visiter la ville aux touristes.",
+      "example": "Une guide locale raconterait mieux l'histoire du quartier que les panneaux du musée.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 35,
       "pdfPage": 42,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        },
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-021",
@@ -744,13 +1344,25 @@
       "subcategory": "4.02",
       "french": "le passager, la passagère",
       "chinese": "旅客，乘客",
-      "example": "Les passagers ont attendu plus d’une heure avant de pouvoir descendre de l’avion.",
+      "example": "La passagère près de la fenêtre montre les montagnes à son enfant pour le distraire.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 35,
       "pdfPage": 42,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-011",
+          "form": "fenêtre"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfant"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-022",
@@ -758,13 +1370,25 @@
       "subcategory": "4.02",
       "french": "la pension",
       "chinese": "膳宿，膳宿费",
-      "example": "Ils ont réservé une chambre en pension complète.",
+      "example": "La pension comprenait deux repas par jour et une chambre donnant sur le jardin.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 35,
       "pdfPage": 42,
       "source": "法语基础词汇分类学习手册",
-      "note": "pension complète 指包括三餐的全膳食住宿。"
+      "note": "pension complète 指包括三餐的全膳食住宿。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-023",
@@ -772,13 +1396,25 @@
       "subcategory": "4.02",
       "french": "la plage",
       "chinese": "海滩",
-      "example": "Je rêve de vacances, de soleil, d’une plage et de sable fin.",
+      "example": "La plage reste calme le matin, avant l'arrivée des familles et des vendeurs de glaces.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 35,
       "pdfPage": 42,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        },
+        {
+          "id": "book-5.01-010",
+          "form": "glaces"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-024",
@@ -786,13 +1422,25 @@
       "subcategory": "4.02",
       "french": "projeter",
       "chinese": "打算，计划",
-      "example": "Pierre projette un voyage au Canada.",
+      "example": "Nous projetterons un séjour à la campagne quand nous connaîtrons les dates des vacances.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 35,
       "pdfPage": 42,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "3.01-4",
+          "form": "campagne"
+        },
+        {
+          "id": "book-4.02-013",
+          "form": "vacances"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-025",
@@ -800,13 +1448,25 @@
       "subcategory": "4.02",
       "french": "la promenade",
       "chinese": "散步",
-      "example": "Il aime les promenades en forêt.",
+      "example": "Cette promenade suit la rivière et convient aux enfants qui commencent à marcher de longues distances.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 35,
       "pdfPage": 42,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.02-2",
+          "form": "rivière"
+        },
+        {
+          "id": "book-4.03-008",
+          "form": "distances"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-026",
@@ -814,13 +1474,25 @@
       "subcategory": "4.02",
       "french": "repartir",
       "chinese": "再出发，重新离开",
-      "example": "Après une semaine passée ici, ils sont repartis la nuit dernière.",
+      "example": "Nous sommes repartis avant l'orage pour traverser le pont pendant qu'il faisait encore jour.",
       "part": "v. i.",
       "level": "进阶",
       "bookPage": 35,
       "pdfPage": 42,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.03-029",
+          "form": "orage"
+        },
+        {
+          "id": "book-4.03-012",
+          "form": "pont"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "4.02-2",
@@ -828,14 +1500,26 @@
       "subcategory": "4.02",
       "french": "réserver",
       "chinese": "预订",
-      "example": "Je n’ai pas pu réserver de chambre, l’hôtel est complet.",
+      "example": "Il vaut mieux réserver une table si tu veux dîner dans ce restaurant le samedi.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 35,
       "pdfPage": 42,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/ʁezɛʁve/"
+      "ipa": "/ʁezɛʁve/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        },
+        {
+          "id": "book-5.02-063",
+          "form": "restaurant"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-028",
@@ -843,13 +1527,25 @@
       "subcategory": "4.02",
       "french": "la tente",
       "chinese": "帐篷",
-      "example": "Nous avons célébré son anniversaire dans un grand jardin où chacun avait monté sa tente.",
+      "example": "Une tente plus grande protégerait mieux les bagages pendant les nuits de forte pluie.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 35,
       "pdfPage": 42,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-017",
+          "form": "bagages"
+        },
+        {
+          "id": "3.03-1",
+          "form": "pluie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-029",
@@ -857,13 +1553,25 @@
       "subcategory": "4.02",
       "french": "le touriste, la touriste",
       "chinese": "游客",
-      "example": "Cette cathédrale est visitée chaque jour par environ 800 touristes venant du monde entier.",
+      "example": "Le touriste demande une carte au réceptionniste avant de partir explorer le centre.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 35,
       "pdfPage": 42,
       "source": "法语基础词汇分类学习手册",
-      "note": "游客数为原书未注明地点、日期的例句数字，不作为现行统计。"
+      "note": "游客数为原书未注明地点、日期的例句数字，不作为现行统计。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.01-001",
+          "form": "carte"
+        },
+        {
+          "id": "book-3.01-002",
+          "form": "centre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "4.02-4",
@@ -871,14 +1579,26 @@
       "subcategory": "4.02",
       "french": "la valise",
       "chinese": "手提箱，旅行箱",
-      "example": "Ma valise est trop lourde, je ne peux pas la porter !",
+      "example": "Ma valise était si lourde que mon frère m'a aidé à monter l'escalier.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 35,
       "pdfPage": 42,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/valiz/"
+      "ipa": "/valiz/",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "1.03-4",
+          "form": "frère"
+        },
+        {
+          "id": "book-2.03-007",
+          "form": "escalier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.02-031",
@@ -886,13 +1606,25 @@
       "subcategory": "4.02",
       "french": "voyager",
       "chinese": "旅行",
-      "example": "Mon cousin a déjà voyagé dans toute l’Europe.",
+      "example": "Voyager en train permet d'observer le paysage sans se soucier de la conduite.",
       "part": "v. i.",
       "level": "进阶",
       "bookPage": 35,
       "pdfPage": 42,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.02-3",
+          "form": "paysage"
+        },
+        {
+          "id": "book-4.03-036",
+          "form": "conduite"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-001",
@@ -900,13 +1632,25 @@
       "subcategory": "4.03",
       "french": "l’accident",
       "chinese": "意外，事故",
-      "example": "Un accident est vite arrivé.",
+      "example": "Les secours fermeront la route après l'accident pour laisser travailler les pompiers.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 35,
       "pdfPage": 42,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-8.04-036",
+          "form": "secours"
+        },
+        {
+          "id": "book-4.03-017",
+          "form": "route"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-002",
@@ -914,13 +1658,25 @@
       "subcategory": "4.03",
       "french": "l’aéroport",
       "chinese": "机场",
-      "example": "L’aéroport a été fermé pour raisons de sécurité.",
+      "example": "L'aéroport est relié au centre par une ligne de métro qui fonctionne tôt le matin.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-002",
+          "form": "centre"
+        },
+        {
+          "id": "book-4.04-007",
+          "form": "métro"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-003",
@@ -928,13 +1684,25 @@
       "subcategory": "4.03",
       "french": "l’arrêt",
       "chinese": "车站，停靠站；停止",
-      "example": "Elle attend à l’arrêt de bus.",
+      "example": "Nous avons attendu à l'arrêt près de l'école avant de monter dans l'autobus.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "10.01-1",
+          "form": "école"
+        },
+        {
+          "id": "book-4.04-026",
+          "form": "autobus"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-004",
@@ -942,13 +1710,25 @@
       "subcategory": "4.03",
       "french": "avancer",
       "chinese": "前进，向前",
-      "example": "La voiture avance jusqu’à la marque blanche.",
+      "example": "La file avance lentement, mais les voyageurs gardent leurs billets prêts devant le guichet.",
       "part": "v. i.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-016",
+          "form": "voyageurs"
+        },
+        {
+          "id": "book-4.02-003",
+          "form": "billets"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-005",
@@ -956,13 +1736,25 @@
       "subcategory": "4.03",
       "french": "conduire",
       "chinese": "驾驶",
-      "example": "Je conduis depuis l’âge de 18 ans.",
+      "example": "Mon frère pourrait conduire jusqu'au village si je lui prêtais ma voiture.",
       "part": "v. t. / i.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "3.01-2",
+          "form": "village"
+        },
+        {
+          "id": "book-4.04-023",
+          "form": "voiture"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-006",
@@ -970,13 +1762,25 @@
       "subcategory": "4.03",
       "french": "dépasser",
       "chinese": "超过，超车",
-      "example": "Nous venons de dépasser un camion.",
+      "example": "Il est dangereux de dépasser un camion lorsque la route tourne sans visibilité.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-005",
+          "form": "camion"
+        },
+        {
+          "id": "book-4.03-017",
+          "form": "route"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-007",
@@ -984,13 +1788,25 @@
       "subcategory": "4.03",
       "french": "descendre",
       "chinese": "下车，下来",
-      "example": "Il est interdit de descendre avant l’arrêt complet du train.",
+      "example": "Les passagers descendaient du train pendant que les employés apportaient les bagages sur le quai.",
       "part": "v. i.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "4.04-1",
+          "form": "train"
+        },
+        {
+          "id": "book-4.02-017",
+          "form": "bagages"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-008",
@@ -998,13 +1814,25 @@
       "subcategory": "4.03",
       "french": "la distance",
       "chinese": "距离",
-      "example": "La distance entre Paris et Lyon est de 450 kilomètres.",
+      "example": "La distance entre la ferme et l'école oblige les enfants à prendre un autocar.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": "距离为原书语言例句中的概数，未说明测量路线。"
+      "note": "距离为原书语言例句中的概数，未说明测量路线。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-009",
+          "form": "ferme"
+        },
+        {
+          "id": "book-4.04-001",
+          "form": "autocar"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-009",
@@ -1012,13 +1840,25 @@
       "subcategory": "4.03",
       "french": "garer",
       "chinese": "停放（车辆）",
-      "example": "J’ai garé ma voiture tout près d’ici.",
+      "example": "Nous garerons la voiture près du parc pour rejoindre le restaurant à pied.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-037",
+          "form": "parc"
+        },
+        {
+          "id": "book-5.02-063",
+          "form": "restaurant"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-010",
@@ -1026,13 +1866,25 @@
       "subcategory": "4.03",
       "french": "monter",
       "chinese": "上车，上去",
-      "example": "Pierre a réussi à monter dans le train avant que les portes ne se ferment.",
+      "example": "Les voyageurs montent dans le wagon après avoir vérifié le numéro de leur place.",
       "part": "v. i.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-048",
+          "form": "wagon"
+        },
+        {
+          "id": "book-16.04-014",
+          "form": "numéro"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-011",
@@ -1040,13 +1892,25 @@
       "subcategory": "4.03",
       "french": "parcourir",
       "chinese": "跑遍，走遍，经过",
-      "example": "Il a parcouru toutes les rues de la ville avant de retrouver son ami.",
+      "example": "Nous avons parcouru plusieurs villages à vélo avant de trouver un magasin encore ouvert.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "3.01-2",
+          "form": "villages"
+        },
+        {
+          "id": "6.01-1",
+          "form": "magasin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-012",
@@ -1054,13 +1918,25 @@
       "subcategory": "4.03",
       "french": "le pont",
       "chinese": "桥",
-      "example": "On traverse la rivière sur un pont de bois.",
+      "example": "Le pont permet aux habitants de rejoindre le marché sans traverser la rivière en bateau.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "3.02-2",
+          "form": "rivière"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-013",
@@ -1068,13 +1944,25 @@
       "subcategory": "4.03",
       "french": "le port",
       "chinese": "港口",
-      "example": "Un port est un endroit où s’arrêtent les navires.",
+      "example": "Un petit hôtel près du port offrirait une belle vue sur les bateaux de pêche.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "4.02-3",
+          "form": "hôtel"
+        },
+        {
+          "id": "book-4.04-004",
+          "form": "bateaux"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-014",
@@ -1082,13 +1970,25 @@
       "subcategory": "4.03",
       "french": "remonter",
       "chinese": "再上；沿……往上走",
-      "example": "J’ai croisé Pierre hier, il remontait la rue Pasteur en vélo.",
+      "example": "Nous remontons la rue à pied pour retrouver la boulangerie où travaille ma cousine.",
       "part": "v. t. / i.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“再上，重新北上”；例句指沿街往上行进，不一定是向北。"
+      "note": "原书译“再上，重新北上”；例句指沿街往上行进，不一定是向北。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.01-020",
+          "form": "rue"
+        },
+        {
+          "id": "book-1.03-033",
+          "form": "cousine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-015",
@@ -1096,13 +1996,25 @@
       "subcategory": "4.03",
       "french": "le réseau",
       "chinese": "网，网络",
-      "example": "La ville de Paris dispose d’un réseau de transports très développé.",
+      "example": "Le réseau de bus desservait mal les quartiers éloignés de la gare.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "3.01-3",
+          "form": "quartiers"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-016",
@@ -1110,13 +2022,25 @@
       "subcategory": "4.03",
       "french": "rouler",
       "chinese": "行驶",
-      "example": "La voiture roule à 120 kilomètres à l’heure.",
+      "example": "Cette voiture roule moins vite depuis que le mécanicien a découvert un problème de frein.",
       "part": "v. i.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-023",
+          "form": "voiture"
+        },
+        {
+          "id": "book-4.04-037",
+          "form": "frein"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-017",
@@ -1124,13 +2048,25 @@
       "subcategory": "4.03",
       "french": "la route",
       "chinese": "道路，公路",
-      "example": "Cette route est dangereuse, il y a souvent des accidents.",
+      "example": "La route restera fermée tant que les ouvriers n'auront pas enlevé l'arbre tombé pendant la tempête.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-011",
+          "form": "ouvriers"
+        },
+        {
+          "id": "book-3.03-034",
+          "form": "tempête"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-018",
@@ -1138,13 +2074,25 @@
       "subcategory": "4.03",
       "french": "le sens",
       "chinese": "方向",
-      "example": "Je ne sais pas dans quel sens aller.",
+      "example": "Le conducteur vérifie le sens de circulation avant de tourner dans la petite rue.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "4.03-1",
+          "form": "circulation"
+        },
+        {
+          "id": "book-4.01-020",
+          "form": "rue"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-019",
@@ -1152,13 +2100,25 @@
       "subcategory": "4.03",
       "french": "la station",
       "chinese": "站，车站",
-      "example": "Il fait toujours très chaud dans les stations de métro parisiennes.",
+      "example": "Nous avons retrouvé nos amis à la station de métro située près du théâtre.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-007",
+          "form": "métro"
+        },
+        {
+          "id": "book-13.03-019",
+          "form": "théâtre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-020",
@@ -1166,13 +2126,25 @@
       "subcategory": "4.03",
       "french": "le transport",
       "chinese": "运输，交通",
-      "example": "La voiture, le train et le métro sont des moyens de transport.",
+      "example": "Le transport des marchandises par train réduit le nombre de camions sur les routes.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-010",
+          "form": "marchandises"
+        },
+        {
+          "id": "book-4.03-017",
+          "form": "routes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-021",
@@ -1180,13 +2152,25 @@
       "subcategory": "4.03",
       "french": "transporter",
       "chinese": "运输，运送",
-      "example": "Ce camion transporte des animaux.",
+      "example": "Un bateau pourrait transporter les habitants pendant la réparation du pont.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "book-4.03-012",
+          "form": "pont"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-022",
@@ -1194,13 +2178,25 @@
       "subcategory": "4.03",
       "french": "traverser",
       "chinese": "穿过，横穿",
-      "example": "Les enfants tiennent la main de leur mère pour traverser la route.",
+      "example": "Les enfants attendent leur professeur avant de traverser la rue pour entrer au musée.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-012",
+          "form": "professeur"
+        },
+        {
+          "id": "book-4.01-020",
+          "form": "rue"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-023",
@@ -1208,13 +2204,25 @@
       "subcategory": "4.03",
       "french": "vite",
       "chinese": "快速地",
-      "example": "Mon père roule très vite en voiture.",
+      "example": "Le facteur marchait vite pour finir sa tournée avant l'arrivée de la pluie.",
       "part": "adv.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-7.02-008",
+          "form": "facteur"
+        },
+        {
+          "id": "3.03-1",
+          "form": "pluie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-024",
@@ -1222,13 +2230,25 @@
       "subcategory": "4.03",
       "french": "la vitesse",
       "chinese": "速度",
-      "example": "La vitesse est limitée à 50 kilomètres à l’heure dans les villages.",
+      "example": "Le conducteur réduit sa vitesse lorsque le brouillard cache les panneaux le long de la route.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": "保留原书语言例句，不作为具体地区的现行限速依据。"
+      "note": "保留原书语言例句，不作为具体地区的现行限速依据。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.03-022",
+          "form": "brouillard"
+        },
+        {
+          "id": "book-4.03-017",
+          "form": "route"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-025",
@@ -1236,13 +2256,25 @@
       "subcategory": "4.03",
       "french": "accéder",
       "chinese": "进入，到达",
-      "example": "On ne peut pas accéder à ce château en voiture.",
+      "example": "Les visiteurs accéderont au jardin par une porte située derrière la grande salle.",
       "part": "v. i.",
       "level": "进阶",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-026",
@@ -1250,13 +2282,25 @@
       "subcategory": "4.03",
       "french": "accélérer",
       "chinese": "加速",
-      "example": "Le conducteur accélère, il roule plus vite.",
+      "example": "Le pilote commence à accélérer avant que l'avion quitte la piste.",
       "part": "v. t. / i.",
       "level": "进阶",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "4.04-3",
+          "form": "avion"
+        },
+        {
+          "id": "book-13.06-027",
+          "form": "piste"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-027",
@@ -1264,13 +2308,25 @@
       "subcategory": "4.03",
       "french": "l’accès",
       "chinese": "入口，通道；进入",
-      "example": "L’accès à la route est interdit pour cause de travaux.",
+      "example": "Les travaux ont bloqué l'accès au garage, alors nous avons laissé la voiture dans la rue.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 36,
       "pdfPage": 43,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-032",
+          "form": "garage"
+        },
+        {
+          "id": "book-4.01-020",
+          "form": "rue"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-028",
@@ -1278,13 +2334,25 @@
       "subcategory": "4.03",
       "french": "accessible",
       "chinese": "可到达的，可进入的",
-      "example": "Cette rue n’est pas accessible en voiture.",
+      "example": "Ce sentier reste accessible aux familles, même avec de jeunes enfants qui marchent lentement.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-029",
@@ -1292,13 +2360,25 @@
       "subcategory": "4.03",
       "french": "aérien, aérienne",
       "chinese": "空中的，航空的",
-      "example": "Le transport aérien se fait par avion.",
+      "example": "Une liaison aérienne faciliterait le transport des malades vers l'hôpital situé sur le continent.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-020",
+          "form": "transport"
+        },
+        {
+          "id": "book-8.04-006",
+          "form": "hôpital"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-030",
@@ -1306,13 +2386,25 @@
       "subcategory": "4.03",
       "french": "l’aviation",
       "chinese": "航空",
-      "example": "L’aviation existe depuis le début du XXe siècle.",
+      "example": "Ce musée de l'aviation expose un ancien moteur et les premiers instruments de navigation.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        },
+        {
+          "id": "book-13.03-009",
+          "form": "instruments"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-031",
@@ -1320,13 +2412,25 @@
       "subcategory": "4.03",
       "french": "le barrage",
       "chinese": "路障，障碍物",
-      "example": "La route est fermée par un barrage.",
+      "example": "Un barrage de police arrêtait les voitures avant leur entrée dans le village.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-7.03-007",
+          "form": "police"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-032",
@@ -1334,13 +2438,25 @@
       "subcategory": "4.03",
       "french": "le canal",
       "chinese": "运河",
-      "example": "Un canal relie généralement deux fleuves.",
+      "example": "Le canal traverse la ville et longe les jardins avant de rejoindre le fleuve.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.01-1",
+          "form": "ville"
+        },
+        {
+          "id": "book-3.02-036",
+          "form": "fleuve"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-033",
@@ -1348,13 +2464,25 @@
       "subcategory": "4.03",
       "french": "le chemin de fer",
       "chinese": "铁路",
-      "example": "Les grandes lignes de chemin de fer sont très fréquentées pendant les vacances.",
+      "example": "Le chemin de fer reliera bientôt les usines au port pour transporter les marchandises.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-020",
+          "form": "usines"
+        },
+        {
+          "id": "book-4.03-013",
+          "form": "port"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "4.03-1",
@@ -1362,13 +2490,25 @@
       "subcategory": "4.03",
       "french": "la circulation",
       "chinese": "交通，车辆通行",
-      "example": "À 17 heures, la circulation des voitures est importante.",
+      "example": "La circulation ralentit près de la gare lorsque les autocars déposent leurs passagers.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        },
+        {
+          "id": "book-4.04-001",
+          "form": "autocars"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-035",
@@ -1376,13 +2516,25 @@
       "subcategory": "4.03",
       "french": "circuler",
       "chinese": "行驶，通行",
-      "example": "Il y a eu un accident, les voitures ne peuvent plus circuler.",
+      "example": "Les vélos ont recommencé à circuler sur le pont après la fin des travaux.",
       "part": "v. i.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-012",
+          "form": "pont"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travaux"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-036",
@@ -1390,13 +2542,25 @@
       "subcategory": "4.03",
       "french": "la conduite",
       "chinese": "驾驶",
-      "example": "Aurélie prend des leçons de conduite.",
+      "example": "La conduite demande davantage de prudence quand les enfants sortent de l'école.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.05-051",
+          "form": "prudence"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-037",
@@ -1404,13 +2568,25 @@
       "subcategory": "4.03",
       "french": "la correspondance",
       "chinese": "（交通工具的）衔接，换乘；通信，联系",
-      "example": "Les voyageurs ont raté leur correspondance, le train était déjà parti.",
+      "example": "Une correspondance plus longue nous laisserait le temps d'acheter du pain à la gare.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-038",
@@ -1418,13 +2594,25 @@
       "subcategory": "4.03",
       "french": "débarquer",
       "chinese": "卸货；下船，下机",
-      "example": "Le navire a débarqué sa cargaison.",
+      "example": "Les ouvriers attendent pour débarquer la cargaison lorsque le navire s'approche du quai.",
       "part": "v. t. / i.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-031",
+          "form": "cargaison"
+        },
+        {
+          "id": "book-4.04-010",
+          "form": "navire"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-039",
@@ -1432,13 +2620,25 @@
       "subcategory": "4.03",
       "french": "la descente",
       "chinese": "下降，降落",
-      "example": "Regarde ! L’avion a commencé sa descente.",
+      "example": "La descente vers le lac était glissante après les fortes pluies de la nuit.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-009",
+          "form": "lac"
+        },
+        {
+          "id": "3.03-1",
+          "form": "pluies"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-040",
@@ -1446,13 +2646,25 @@
       "subcategory": "4.03",
       "french": "doubler",
       "chinese": "超车",
-      "example": "Sur cette route, il est interdit de doubler.",
+      "example": "Le conducteur attend un passage dégagé pour doubler le tracteur sur cette route étroite.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-033",
+          "form": "conducteur"
+        },
+        {
+          "id": "book-4.03-017",
+          "form": "route"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-041",
@@ -1460,13 +2672,25 @@
       "subcategory": "4.03",
       "french": "écraser",
       "chinese": "轧伤，轧死；压碎",
-      "example": "La voiture a écrasé un chat.",
+      "example": "Le camion risque d'écraser les plantes si le conducteur entre trop vite dans la cour.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-020",
+          "form": "plantes"
+        },
+        {
+          "id": "book-2.01-008",
+          "form": "cour"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-042",
@@ -1474,13 +2698,25 @@
       "subcategory": "4.03",
       "french": "embarquer",
       "chinese": "登船，登机",
-      "example": "Il embarque à bord d’un très grand bateau.",
+      "example": "Les voyageurs présentent leur billet avant d'embarquer sur le bateau qui dessert les îles.",
       "part": "v. i.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-003",
+          "form": "billet"
+        },
+        {
+          "id": "book-4.04-004",
+          "form": "bateau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-043",
@@ -1488,13 +2724,25 @@
       "subcategory": "4.03",
       "french": "l’équipage",
       "chinese": "全体船员，机组人员",
-      "example": "Ce bateau a un équipage de plus de 50 personnes.",
+      "example": "L'équipage a distribué de l'eau aux passagers pendant le retard de l'avion.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "4.04-3",
+          "form": "avion"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-044",
@@ -1502,13 +2750,25 @@
       "subcategory": "4.03",
       "french": "franchir",
       "chinese": "越过，跨越",
-      "example": "Il est interdit de franchir cette limite.",
+      "example": "Les randonneurs franchissent le ruisseau sur les pierres avant de poursuivre leur marche.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-016",
+          "form": "pierres"
+        },
+        {
+          "id": "book-1.06-015",
+          "form": "marche"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-045",
@@ -1516,13 +2776,25 @@
       "subcategory": "4.03",
       "french": "la gare",
       "chinese": "火车站",
-      "example": "Le train vient d’entrer en gare.",
+      "example": "Un restaurant près de la gare permettrait aux voyageurs d'attendre leur train autour d'un repas.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-016",
+          "form": "voyageurs"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-046",
@@ -1530,13 +2802,25 @@
       "subcategory": "4.03",
       "french": "heurter",
       "chinese": "撞，碰撞",
-      "example": "Le chauffeur a perdu le contrôle de son véhicule et a heurté plusieurs voitures.",
+      "example": "Le vélo risque de heurter la barrière si tu regardes ton téléphone en roulant.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "4.04-2",
+          "form": "vélo"
+        },
+        {
+          "id": "book-13.04-051",
+          "form": "téléphone"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-047",
@@ -1544,13 +2828,25 @@
       "subcategory": "4.03",
       "french": "limité, limitée",
       "chinese": "受限制的，有限的",
-      "example": "La vitesse est limitée à 130 kilomètres à l’heure sur l’autoroute.",
+      "example": "Le nombre de places était limité, alors les étudiants réservaient leur billet longtemps à l'avance.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": "保留原书语言例句，不作为具体地区的现行限速依据。"
+      "note": "保留原书语言例句，不作为具体地区的现行限速依据。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        },
+        {
+          "id": "book-4.02-003",
+          "form": "billet"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-048",
@@ -1558,13 +2854,25 @@
       "subcategory": "4.03",
       "french": "la manœuvre",
       "chinese": "操作，操纵",
-      "example": "L’accident est dû à une fausse manœuvre du conducteur de bus.",
+      "example": "Cette manœuvre demande au conducteur de surveiller le rétroviseur et les enfants sur le trottoir.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-033",
+          "form": "conducteur"
+        },
+        {
+          "id": "book-3.01-021",
+          "form": "trottoir"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-049",
@@ -1572,13 +2880,25 @@
       "subcategory": "4.03",
       "french": "maritime",
       "chinese": "海的，航海的",
-      "example": "Le commerce maritime se fait par la mer.",
+      "example": "Le trafic maritime reprendra lorsque la tempête aura quitté la région du port.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-3.03-034",
+          "form": "tempête"
+        },
+        {
+          "id": "book-4.03-013",
+          "form": "port"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-050",
@@ -1586,13 +2906,25 @@
       "subcategory": "4.03",
       "french": "le naufrage",
       "chinese": "（船舶）失事，遇险",
-      "example": "Le bateau a fait naufrage.",
+      "example": "Le récit du naufrage rappelle les risques que prenaient les marins pour transporter les marchandises.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.12-018",
+          "form": "risques"
+        },
+        {
+          "id": "book-6.01-010",
+          "form": "marchandises"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-051",
@@ -1600,13 +2932,25 @@
       "subcategory": "4.03",
       "french": "le panneau",
       "chinese": "标志牌，告示牌；广告牌",
-      "example": "Ce panneau nous indique qu’il est interdit de rouler dans cette forêt la nuit.",
+      "example": "Nous avons suivi le panneau indiquant le musée au lieu de chercher notre chemin sur le téléphone.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“广告牌”；例句指交通或禁行标志牌，补充对应释义。"
+      "note": "原书译“广告牌”；例句指交通或禁行标志牌，补充对应释义。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        },
+        {
+          "id": "book-13.04-051",
+          "form": "téléphone"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-052",
@@ -1614,13 +2958,25 @@
       "subcategory": "4.03",
       "french": "le quai",
       "chinese": "站台；码头，岸",
-      "example": "Il attend sa femme sur le quai de la gare, des fleurs à la main.",
+      "example": "Les passagers attendent sur le quai pendant que le personnel vérifie les portes du train.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书仅译“岸”；根据 quai de la gare 补充“站台”义。"
+      "note": "原书仅译“岸”；根据 quai de la gare 补充“站台”义。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-012",
+          "form": "personnel"
+        },
+        {
+          "id": "4.04-1",
+          "form": "train"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-053",
@@ -1628,13 +2984,25 @@
       "subcategory": "4.03",
       "french": "ralentir",
       "chinese": "减速，减慢",
-      "example": "La voiture ralentit, car des enfants sortent de l’école et traversent la route.",
+      "example": "Tu devrais ralentir lorsque la neige commence à couvrir la chaussée devant le village.",
       "part": "v. t. / i.",
       "level": "进阶",
       "bookPage": 37,
       "pdfPage": 44,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-3.03-010",
+          "form": "neige"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-054",
@@ -1642,13 +3010,25 @@
       "subcategory": "4.03",
       "french": "souterrain, souterraine",
       "chinese": "地下的",
-      "example": "Les passants prennent un passage souterrain.",
+      "example": "Un passage souterrain permet aux piétons de rejoindre le parc sans traverser l'avenue.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-037",
+          "form": "parc"
+        },
+        {
+          "id": "book-3.01-025",
+          "form": "avenue"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-055",
@@ -1656,13 +3036,25 @@
       "subcategory": "4.03",
       "french": "le trafic",
       "chinese": "交通，运输",
-      "example": "La presse annonce, pour samedi, un trafic important sur les routes.",
+      "example": "Le trafic augmentait chaque été lorsque les touristes arrivaient sur la côte.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-029",
+          "form": "touristes"
+        },
+        {
+          "id": "book-3.02-004",
+          "form": "côte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-056",
@@ -1670,13 +3062,25 @@
       "subcategory": "4.03",
       "french": "le tragique",
       "chinese": "悲惨，悲剧性",
-      "example": "La course de voitures a tourné au tragique.",
+      "example": "Le tragique de cet accident apparaît dans les lettres des familles exposées au musée.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书词条为 le tragique（名词），区别于形容词 tragique 或名词 la tragédie；tourner au tragique 指演变成悲剧。"
+      "note": "原书词条为 le tragique（名词），区别于形容词 tragique 或名词 la tragédie；tourner au tragique 指演变成悲剧。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-001",
+          "form": "accident"
+        },
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-057",
@@ -1684,13 +3088,25 @@
       "subcategory": "4.03",
       "french": "le tunnel",
       "chinese": "隧道",
-      "example": "Le train passe sous un tunnel, j’ai les oreilles qui se bouchent.",
+      "example": "Le tunnel traversera la colline pour raccourcir le trajet des habitants vers la ville.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-030",
+          "form": "colline"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.03-058",
@@ -1698,13 +3114,25 @@
       "subcategory": "4.03",
       "french": "virer",
       "chinese": "拐弯，转弯",
-      "example": "La voiture vire à droite.",
+      "example": "Le bateau commence à virer lorsque le vent change près de l'entrée du port.",
       "part": "v. i.",
       "level": "进阶",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.03-3",
+          "form": "vent"
+        },
+        {
+          "id": "book-4.03-013",
+          "form": "port"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-001",
@@ -1712,13 +3140,25 @@
       "subcategory": "4.04",
       "french": "l’autocar",
       "chinese": "大客车，长途客车",
-      "example": "Nous avons fait la route en autocar.",
+      "example": "L'autocar a déposé les élèves devant le château avant que le guide commence la visite.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-003",
+          "form": "château"
+        },
+        {
+          "id": "book-4.02-020",
+          "form": "guide"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-002",
@@ -1726,13 +3166,25 @@
       "subcategory": "4.04",
       "french": "l’automobile",
       "chinese": "汽车",
-      "example": "Mon père possède plusieurs automobiles.",
+      "example": "L'automobile occupe moins de place dans ce quartier depuis la création du tram et des pistes cyclables.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-020",
+          "form": "tram"
+        },
+        {
+          "id": "book-13.06-027",
+          "form": "pistes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "4.04-3",
@@ -1740,14 +3192,26 @@
       "subcategory": "4.04",
       "french": "l’avion",
       "chinese": "飞机",
-      "example": "On dit souvent que l’avion est le moyen de transport le plus sûr.",
+      "example": "Un avion plus petit pourrait desservir cette île sans agrandir l'aéroport.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/avjɔ̃/"
+      "ipa": "/avjɔ̃/",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-006",
+          "form": "île"
+        },
+        {
+          "id": "book-4.03-002",
+          "form": "aéroport"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-004",
@@ -1755,13 +3219,25 @@
       "subcategory": "4.04",
       "french": "le bateau",
       "chinese": "船",
-      "example": "Mon frère est malade en bateau.",
+      "example": "Le bateau transporte les enfants du village jusqu'à l'école située sur l'autre rive.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-005",
@@ -1769,13 +3245,25 @@
       "subcategory": "4.04",
       "french": "le camion",
       "chinese": "卡车",
-      "example": "Un camion roule plus lentement qu’une voiture.",
+      "example": "Le camion attendait devant la ferme pour charger les caisses de pommes.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-009",
+          "form": "ferme"
+        },
+        {
+          "id": "5.01-4",
+          "form": "pommes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-006",
@@ -1783,13 +3271,25 @@
       "subcategory": "4.04",
       "french": "la fusée",
       "chinese": "火箭",
-      "example": "La fusée vient de se poser sur la lune.",
+      "example": "Les enfants suivent le lancement de la fusée sur l'écran installé dans la classe.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.04-007",
+          "form": "écran"
+        },
+        {
+          "id": "book-10.01-004",
+          "form": "classe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-007",
@@ -1797,13 +3297,25 @@
       "subcategory": "4.04",
       "french": "le métro",
       "chinese": "地铁",
-      "example": "Mon oncle prend le métro tous les matins pour se rendre à son travail.",
+      "example": "Le métro fonctionnera plus tard pour permettre aux spectateurs de rentrer après le concert.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-043",
+          "form": "spectateurs"
+        },
+        {
+          "id": "book-13.03-030",
+          "form": "concert"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-008",
@@ -1811,13 +3323,25 @@
       "subcategory": "4.04",
       "french": "le moteur",
       "chinese": "引擎，发动机",
-      "example": "Le moteur de ma voiture est cassé.",
+      "example": "Le moteur fait un bruit inhabituel, alors le conducteur s'arrête près du garage.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-9.01-003",
+          "form": "bruit"
+        },
+        {
+          "id": "book-2.01-032",
+          "form": "garage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-009",
@@ -1825,13 +3349,25 @@
       "subcategory": "4.04",
       "french": "la moto",
       "chinese": "摩托车",
-      "example": "Une moto peut rouler très vite.",
+      "example": "Ma cousine a vendu sa moto avant de partir travailler dans une ville bien desservie par les transports.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "3.01-1",
+          "form": "ville"
+        },
+        {
+          "id": "book-4.03-020",
+          "form": "transports"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-010",
@@ -1839,13 +3375,25 @@
       "subcategory": "4.04",
       "french": "le navire",
       "chinese": "船，轮船",
-      "example": "Un navire est un grand bateau.",
+      "example": "Le navire quitte le port avec une cargaison de bois destinée aux usines du continent.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-013",
+          "form": "port"
+        },
+        {
+          "id": "book-11.03-020",
+          "form": "usines"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-011",
@@ -1853,13 +3401,25 @@
       "subcategory": "4.04",
       "french": "le planeur",
       "chinese": "滑翔机",
-      "example": "J’aime bien les planeurs, ces avions sans moteur qui ressemblent à de grands oiseaux blancs.",
+      "example": "Un vol en planeur offrirait une autre vue sur la vallée et les montagnes voisines.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-063",
+          "form": "vallée"
+        },
+        {
+          "id": "book-4.02-008",
+          "form": "montagnes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-012",
@@ -1867,13 +3427,25 @@
       "subcategory": "4.04",
       "french": "la pompe",
       "chinese": "打气筒；泵",
-      "example": "J’ai perdu ma pompe à vélo.",
+      "example": "Cette pompe retire l'eau accumulée dans la cave après les pluies de la nuit.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "book-2.01-026",
+          "form": "cave"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-013",
@@ -1881,13 +3453,25 @@
       "subcategory": "4.04",
       "french": "la puissance",
       "chinese": "力，功率",
-      "example": "Ce moteur a une forte puissance.",
+      "example": "La puissance du moteur surprenait mon frère, qui avait l'habitude de conduire une petite voiture.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "1.03-4",
+          "form": "frère"
+        },
+        {
+          "id": "book-4.04-023",
+          "form": "voiture"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-014",
@@ -1895,13 +3479,25 @@
       "subcategory": "4.04",
       "french": "rapide",
       "chinese": "快速的",
-      "example": "L’avion est le moyen de transport le plus rapide.",
+      "example": "Le train rapide traverse la région sans s'arrêter dans chaque petite gare.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-018",
+          "form": "région"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-015",
@@ -1909,13 +3505,25 @@
       "subcategory": "4.04",
       "french": "rapidement",
       "chinese": "迅速地",
-      "example": "Le médecin est arrivé rapidement sur le lieu de l’accident.",
+      "example": "Les employés rangeront rapidement les chaises avant l'arrivée des invités dans la salle.",
       "part": "adv.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-029",
+          "form": "chaises"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-016",
@@ -1923,13 +3531,25 @@
       "subcategory": "4.04",
       "french": "réparer",
       "chinese": "修理",
-      "example": "Mon oncle a réparé ma voiture.",
+      "example": "Le mécanicien tente de réparer la roue avant le retour des enfants de l'école.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-042",
+          "form": "roue"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-017",
@@ -1937,13 +3557,25 @@
       "subcategory": "4.04",
       "french": "le siège",
       "chinese": "座位",
-      "example": "Elle a posé son sac sur le siège passager.",
+      "example": "Une voyageuse m'a laissé son siège pour que je puisse m'asseoir près de mon fils.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-016",
+          "form": "voyageuse"
+        },
+        {
+          "id": "book-1.03-008",
+          "form": "fils"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-018",
@@ -1951,13 +3583,25 @@
       "subcategory": "4.04",
       "french": "le taxi",
       "chinese": "出租车",
-      "example": "Elle prend le taxi pour se rendre à la gare.",
+      "example": "Le taxi attend devant l'hôpital pendant que mon père aide ma mère à porter sa valise.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-8.04-006",
+          "form": "hôpital"
+        },
+        {
+          "id": "4.02-4",
+          "form": "valise"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "4.04-1",
@@ -1965,14 +3609,26 @@
       "subcategory": "4.04",
       "french": "le train",
       "chinese": "火车",
-      "example": "Le train venant de Paris vient d’entrer en gare.",
+      "example": "Un train de nuit nous éviterait une nuit d'hôtel avant le départ du bateau.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/tʁɛ̃/"
+      "ipa": "/tʁɛ̃/",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "4.02-3",
+          "form": "hôtel"
+        },
+        {
+          "id": "book-4.04-004",
+          "form": "bateau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-020",
@@ -1980,13 +3636,25 @@
       "subcategory": "4.04",
       "french": "le tram",
       "chinese": "有轨电车",
-      "example": "Le tram est plus écologique que la voiture.",
+      "example": "Le tram traverse la place et s'arrête devant le nouveau centre culturel.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-014",
+          "form": "place"
+        },
+        {
+          "id": "book-3.01-002",
+          "form": "centre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-021",
@@ -1994,13 +3662,25 @@
       "subcategory": "4.04",
       "french": "se tuer",
       "chinese": "丧生，意外身亡；自杀",
-      "example": "Il s’est tué dans un accident de voiture.",
+      "example": "Il craignait de se tuer en moto sur cette route verglacée et préférait rentrer à pied.",
       "part": "v. pron.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书写 tuer (se)，统一为 se tuer；例句指在事故中丧生，并非自杀。"
+      "note": "原书写 tuer (se)，统一为 se tuer；例句指在事故中丧生，并非自杀。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-009",
+          "form": "moto"
+        },
+        {
+          "id": "book-4.03-017",
+          "form": "route"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "4.04-2",
@@ -2008,14 +3688,26 @@
       "subcategory": "4.04",
       "french": "le vélo",
       "chinese": "自行车",
-      "example": "En France, les gens roulent très peu à vélo.",
+      "example": "Mon vélo reste attaché près de la bibliothèque pendant que je choisis mes livres.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
       "note": "保留原书概括性练习例句，不作为现行出行统计。",
-      "ipa": "/velo/"
+      "ipa": "/velo/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        },
+        {
+          "id": "book-13.05-014",
+          "form": "livres"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-023",
@@ -2023,13 +3715,25 @@
       "subcategory": "4.04",
       "french": "la voiture",
       "chinese": "轿车，汽车",
-      "example": "J’ai garé la voiture au bout de la rue.",
+      "example": "Nous laisserons la voiture au garage pour rejoindre le marché en autobus.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 38,
       "pdfPage": 45,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-032",
+          "form": "garage"
+        },
+        {
+          "id": "book-4.04-026",
+          "form": "autobus"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-024",
@@ -2037,13 +3741,25 @@
       "subcategory": "4.04",
       "french": "l’arrière",
       "chinese": "后面，后部",
-      "example": "Les gens qui étaient assis à l’arrière de l’avion ont survécu à l’accident.",
+      "example": "À l'arrière du camion, les ouvriers attachent les meubles avec une solide corde.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-011",
+          "form": "ouvriers"
+        },
+        {
+          "id": "book-2.04-006",
+          "form": "corde"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-025",
@@ -2051,13 +3767,25 @@
       "subcategory": "4.04",
       "french": "l’auto",
       "chinese": "汽车",
-      "example": "L’auto est au garage.",
+      "example": "L'auto de mon grand-père est restée devant la maison jusqu'à la visite du mécanicien.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-037",
+          "form": "grand-père"
+        },
+        {
+          "id": "2.01-1",
+          "form": "maison"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-026",
@@ -2065,13 +3793,25 @@
       "subcategory": "4.04",
       "french": "l’autobus",
       "chinese": "公共汽车",
-      "example": "Là, où il n’existe pas de réseau de chemin de fer, on voyage en autobus.",
+      "example": "L'autobus dessert l'université avant de poursuivre son trajet vers l'hôpital.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "10.03-1",
+          "form": "université"
+        },
+        {
+          "id": "book-8.04-006",
+          "form": "hôpital"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-027",
@@ -2079,13 +3819,25 @@
       "subcategory": "4.04",
       "french": "l’avant",
       "chinese": "前面，前部",
-      "example": "Il est monté à l’avant du bus.",
+      "example": "Une place à l'avant du bateau permettrait aux enfants de mieux observer les oiseaux.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "3.04-4",
+          "form": "oiseaux"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-028",
@@ -2093,13 +3845,25 @@
       "subcategory": "4.04",
       "french": "l’axe",
       "chinese": "轴",
-      "example": "Ce camion a trois axes indépendants.",
+      "example": "Le mécanicien vérifie l'axe de la roue avant de rendre le vélo à son propriétaire.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": "保留原书 l’axe 及例句；车辆“车轴”通常表达为 essieu，勿将本例作为专业机械术语范本。"
+      "note": "保留原书 l’axe 及例句；车辆“车轴”通常表达为 essieu，勿将本例作为专业机械术语范本。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-042",
+          "form": "roue"
+        },
+        {
+          "id": "book-14.04-019",
+          "form": "propriétaire"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-029",
@@ -2107,13 +3871,25 @@
       "subcategory": "4.04",
       "french": "la cabine",
       "chinese": "车辆驾驶室；舱室",
-      "example": "Normalement, les chauffeurs de camion dorment dans leur cabine.",
+      "example": "Le conducteur dormait dans sa cabine pendant que le camion attendait près du port.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-005",
+          "form": "camion"
+        },
+        {
+          "id": "book-4.03-013",
+          "form": "port"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-030",
@@ -2121,13 +3897,25 @@
       "subcategory": "4.04",
       "french": "la caravane",
       "chinese": "旅行挂车，房车",
-      "example": "Aurélie et Pierre passent leurs vacances dans une caravane qui comporte une pièce pour dormir et une petite cuisine.",
+      "example": "Cette caravane permet à notre famille de voyager sans chercher une chambre chaque soir.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        },
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-031",
@@ -2135,13 +3923,25 @@
       "subcategory": "4.04",
       "french": "la cargaison",
       "chinese": "货载，货物",
-      "example": "Le camion transporte une cargaison de bois.",
+      "example": "La cargaison de fruits arrivera au marché avant l'ouverture des magasins demain matin.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-009",
+          "form": "fruits"
+        },
+        {
+          "id": "book-3.01-012",
+          "form": "marché"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-032",
@@ -2149,13 +3949,25 @@
       "subcategory": "4.04",
       "french": "le compartiment",
       "chinese": "（列车的）隔间，包厢",
-      "example": "Les compartiments des trains de nuit sont nettoyés régulièrement.",
+      "example": "Dans notre compartiment, une étudiante révise pendant qu'un enfant regarde le paysage.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-004",
+          "form": "étudiante"
+        },
+        {
+          "id": "3.02-3",
+          "form": "paysage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-033",
@@ -2163,13 +3975,25 @@
       "subcategory": "4.04",
       "french": "le conducteur, la conductrice",
       "chinese": "司机，驾驶员",
-      "example": "Le conducteur de bus vend aussi des tickets.",
+      "example": "La conductrice a arrêté le bus pour aider un voyageur qui avait perdu son billet.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-016",
+          "form": "voyageur"
+        },
+        {
+          "id": "book-4.02-003",
+          "form": "billet"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-034",
@@ -2177,13 +4001,25 @@
       "subcategory": "4.04",
       "french": "le cylindre",
       "chinese": "汽缸，气缸",
-      "example": "Les cylindres sont les pièces du moteur d’une voiture dans lesquelles glissent les pistons.",
+      "example": "Le mécanicien examine le cylindre avant de remonter le moteur du camion qui attend dehors.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-008",
+          "form": "moteur"
+        },
+        {
+          "id": "book-4.04-005",
+          "form": "camion"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-035",
@@ -2191,13 +4027,25 @@
       "subcategory": "4.04",
       "french": "l’essence",
       "chinese": "汽油",
-      "example": "Le prix de l’essence augmente plusieurs fois par an.",
+      "example": "Un réservoir d'essence plus grand éviterait cet arrêt avant la traversée du désert.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": "保留原书练习例句，不作为现行油价趋势判断。"
+      "note": "保留原书练习例句，不作为现行油价趋势判断。",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-003",
+          "form": "arrêt"
+        },
+        {
+          "id": "book-3.02-033",
+          "form": "désert"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-036",
@@ -2205,13 +4053,25 @@
       "subcategory": "4.04",
       "french": "fixe",
       "chinese": "固定的",
-      "example": "Le siège est fixe.",
+      "example": "Le siège fixe convient mieux aux enfants qui se déplacent dans le petit bateau.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-4.04-004",
+          "form": "bateau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-037",
@@ -2219,13 +4079,25 @@
       "subcategory": "4.04",
       "french": "le frein",
       "chinese": "刹车，制动器",
-      "example": "Le camion a heurté un panneau. Il n’a pas pu s’arrêter car ses freins ne fonctionnaient plus.",
+      "example": "Le frein grinçait chaque fois que mon frère descendait la pente à vélo.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-051",
+          "form": "pente"
+        },
+        {
+          "id": "4.04-2",
+          "form": "vélo"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-038",
@@ -2233,13 +4105,25 @@
       "subcategory": "4.04",
       "french": "gonfler",
       "chinese": "打气，充气",
-      "example": "Mon vélo n’a plus d’air. Il faut le gonfler.",
+      "example": "Il faut gonfler les pneus avant de partir sur le chemin caillouteux derrière la ferme.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.01-002",
+          "form": "chemin"
+        },
+        {
+          "id": "book-3.01-009",
+          "form": "ferme"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-039",
@@ -2247,13 +4131,25 @@
       "subcategory": "4.04",
       "french": "mécanique",
       "chinese": "机械的，机器的",
-      "example": "Ma voiture a un problème mécanique, je dois la faire réparer.",
+      "example": "Une panne mécanique retardera peut-être le départ du train vers la montagne.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.07-005",
+          "form": "départ"
+        },
+        {
+          "id": "book-4.02-008",
+          "form": "montagne"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-040",
@@ -2261,13 +4157,25 @@
       "subcategory": "4.04",
       "french": "le piston",
       "chinese": "活塞",
-      "example": "Le piston est une pièce du moteur qui se déplace dans le cylindre.",
+      "example": "Le piston se déplace dans le cylindre lorsque le mécanicien fait tourner le moteur.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-034",
+          "form": "cylindre"
+        },
+        {
+          "id": "book-4.04-008",
+          "form": "moteur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-041",
@@ -2275,13 +4183,25 @@
       "subcategory": "4.04",
       "french": "la rapidité",
       "chinese": "快速，迅速",
-      "example": "La voiture est passée avec une rapidité extraordinaire.",
+      "example": "La rapidité des secours a rassuré les passagers après l'arrêt de l'autocar.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-021",
+          "form": "passagers"
+        },
+        {
+          "id": "book-4.04-001",
+          "form": "autocar"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-042",
@@ -2289,13 +4209,25 @@
       "subcategory": "4.04",
       "french": "la roue",
       "chinese": "车轮",
-      "example": "Une voiture a quatre roues et un vélo deux.",
+      "example": "La roue du camion s'enfonce dans le sable au bord du chantier.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“轮胎”，校正为“车轮”；轮胎为 pneu。"
+      "note": "原书译“轮胎”，校正为“车轮”；轮胎为 pneu。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-005",
+          "form": "camion"
+        },
+        {
+          "id": "book-3.02-020",
+          "form": "sable"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-043",
@@ -2303,13 +4235,25 @@
       "subcategory": "4.04",
       "french": "la turbine",
       "chinese": "涡轮机，透平机",
-      "example": "Lorsqu’on est assis près des ailes de l’avion, on entend bien le bruit des turbines.",
+      "example": "Une turbine plus efficace produirait davantage d'électricité avec la même quantité d'eau.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-7.02-021",
+          "form": "électricité"
+        },
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-044",
@@ -2317,13 +4261,25 @@
       "subcategory": "4.04",
       "french": "le véhicule",
       "chinese": "车辆",
-      "example": "Le conducteur a perdu le contrôle de son véhicule.",
+      "example": "Ce véhicule transporte les repas destinés aux personnes âgées qui vivent loin du centre.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 39,
       "pdfPage": 46,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        },
+        {
+          "id": "book-3.01-002",
+          "form": "centre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-045",
@@ -2331,13 +4287,25 @@
       "subcategory": "4.04",
       "french": "la vitre",
       "chinese": "窗玻璃，车窗玻璃",
-      "example": "Pierre a retrouvé sa voiture avec une vitre cassée. On lui a volé son téléphone.",
+      "example": "La vitre couverte de pluie empêchait les enfants de voir le paysage depuis le train.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 40,
       "pdfPage": 47,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "3.02-3",
+          "form": "paysage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-046",
@@ -2345,13 +4313,25 @@
       "subcategory": "4.04",
       "french": "la voile",
       "chinese": "帆",
-      "example": "Le bateau de ma famille a un moteur et des voiles.",
+      "example": "Le marin règle la voile pour profiter du vent sans perdre la direction du port.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 40,
       "pdfPage": 47,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.03-3",
+          "form": "vent"
+        },
+        {
+          "id": "book-4.01-007",
+          "form": "direction"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-047",
@@ -2359,13 +4339,25 @@
       "subcategory": "4.04",
       "french": "le volant",
       "chinese": "方向盘",
-      "example": "Elle est trop petite pour conduire. Elle ne peut pas regarder au-dessus du volant.",
+      "example": "Le conducteur gardera les deux mains sur le volant dans les virages de cette route de montagne.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 40,
       "pdfPage": 47,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-017",
+          "form": "route"
+        },
+        {
+          "id": "book-4.02-008",
+          "form": "montagne"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-4.04-048",
@@ -2373,13 +4365,27 @@
       "subcategory": "4.04",
       "french": "le wagon",
       "chinese": "车厢，货车车厢",
-      "example": "Les wagons du train transportent du charbon.",
+      "example": "Ce wagon transporte le bois récolté dans la région jusqu'aux usines près du port.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 40,
       "pdfPage": 47,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "2.04-1",
+          "form": "bois"
+        },
+        {
+          "id": "book-11.03-020",
+          "form": "usines"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     }
-  ]
+  ],
+  "originalMethod": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，旧统计和科学表述的范围说明记入 note。",
+  "exampleMethod": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
 }

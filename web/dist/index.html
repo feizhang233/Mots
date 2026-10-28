@@ -10,24 +10,24 @@
     <link rel="icon" href="icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css?v=62af8f275284a194" />
     <link rel="stylesheet" href="select.css?v=d9685d2e102b4476" />
-    <link rel="stylesheet" href="workspace.css?v=4f59e47daf5b39ff" />
-    <script defer src="data.js?v=c0c5ea303df43e8b"></script>
-    <script defer src="languages.js?v=fb321935c01189fb"></script>
-    <script defer src="audio-manifest.js?v=bb45c3104e660e04"></script>
+    <link rel="stylesheet" href="workspace.css?v=1fc56b29ee538841" />
+    <script defer src="data.js?v=ce94fca52c83a2a7"></script>
+    <script defer src="languages.js?v=fbfb80f1f910853e"></script>
+    <script defer src="audio-manifest.js?v=2415420e385eafc4"></script>
     <script defer src="extra-audio.js?v=7d2a754d6cda9f8c"></script>
     <script defer src="select.js?v=c1c4fcfbcf76e20b"></script>
     <script defer src="core.js?v=7c72fb0139b35234"></script>
-    <script defer src="dictionaries.js?v=a1fdf9db604b2190"></script>
-    <script defer src="grammar.js?v=09078d01531a8c36"></script>
-    <script defer src="workspace.js?v=e85d3ff1554df298"></script>
-    <script defer src="audio.js?v=0631d97562665aec"></script>
+    <script defer src="dictionaries.js?v=255e4f9918b928bf"></script>
+    <script defer src="grammar.js?v=9f047c78b489e3b7"></script>
+    <script defer src="workspace.js?v=07906fcf17d6d052"></script>
+    <script defer src="audio.js?v=9334e358d6bb7dfc"></script>
     <script defer src="downloads.js?v=887b8391395047af"></script>
-    <script defer src="entries.js?v=f233baf6d3aaf9bc"></script>
+    <script defer src="entries.js?v=bca735aa14facac4"></script>
     <script defer src="sync-protocol.js?v=4935a93c70f88375"></script>
     <script defer src="deletion-state.js?v=6d8acb74e77b42d2"></script>
     <script defer src="progress-sync.js?v=194bbbc24be6d88a"></script>
-    <script defer src="settings-panel.js?v=a5c8f7865d17f4f1"></script>
-    <script defer src="app.js?v=d796d43cbb66fbdf"></script>
+    <script defer src="settings-panel.js?v=1ff74194ce69bd6c"></script>
+    <script defer src="app.js?v=0e3f84499ca2b207"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">跳到背誦內容</a>
@@ -274,6 +274,25 @@
             </div>
             <p class="settings-note">設定列表每頁最多顯示的項目數。</p>
             <p id="grammar-book-type" class="settings-note" hidden></p>
+            <label class="settings-toggle" for="show-example-translations"
+              ><span
+                ><strong>卡片顯示例句翻譯</strong
+                ><span id="example-translations-help"
+                  >顯示答案時，一併顯示已收錄的釋義語言例句翻譯。</span
+                ></span
+              ><span class="glass-switch"
+                ><input
+                  id="show-example-translations"
+                  type="checkbox"
+                  role="switch"
+                  checked
+                  aria-label="卡片顯示例句翻譯"
+                  aria-describedby="example-translations-help" /><span
+                  class="switch-track"
+                  aria-hidden="true"
+                  ><span class="switch-thumb"
+                    ><svg viewBox="0 0 24 24"><path d="m6 12 4 4 8-8" /></svg></span></span></span
+            ></label>
             <label class="settings-toggle" for="default-hide-mastered"
               ><span
                 ><strong>預設隱藏已掌握</strong

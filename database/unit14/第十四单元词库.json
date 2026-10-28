@@ -16,7 +16,7 @@
     "基础": 78,
     "进阶": 88
   },
-  "method": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点、自反动词及词性；中文释义按例句语境校正或补充。se plaindre、se séparer 按例句补足自反形式；hôte、joindre、disposé、fréquenter、propre 等语境义另记于 note；gents、chez soi、reçu une relacion、mal venues、échange de timbre 等拼写或搭配校正逐条注明。",
+  "method": "詞條、分類、原書頁碼與校對註記保留原整理；例句於 2026-10-25 改為 Mots 原創詞彙關聯例句。原例句保存在 french/example-network.json 的 originalText，XLSX 保留原書轉錄版本。",
   "subcategories": [
     {
       "id": "14.01",
@@ -42,13 +42,25 @@
       "subcategory": "14.01",
       "french": "abandonner",
       "chinese": "抛弃，遗弃",
-      "example": "Malheureusement, il y a des gens qui abandonnent leurs animaux.",
+      "example": "Notre association rappelle qu'on ne doit jamais abandonner un animal lorsque les vacances approchent.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 122,
       "pdfPage": 129,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书例句 gents 校正为 gens。"
+      "note": "原书例句 gents 校正为 gens。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        },
+        {
+          "id": "book-3.04-003",
+          "form": "animal"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-002",
@@ -56,13 +68,25 @@
       "subcategory": "14.01",
       "french": "l’ami, l’amie",
       "chinese": "朋友",
-      "example": "Ses amis lui manquent beaucoup.",
+      "example": "Mon amie a traversé toute la ville pour m'apporter un repas après mon opération.",
       "part": "n.m./n.f.",
       "level": "基础",
       "bookPage": 122,
       "pdfPage": 129,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "3.01-1",
+          "form": "ville"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-003",
@@ -70,13 +94,25 @@
       "subcategory": "14.01",
       "french": "la compagnie",
       "chinese": "陪伴",
-      "example": "Elle rend visite à une dame âgée deux fois par semaine et lui tient compagnie.",
+      "example": "La compagnie de sa voisine aide notre grand-mère à sortir de chez elle chaque matin.",
       "part": "n.f.",
       "level": "基础",
       "bookPage": 122,
       "pdfPage": 129,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-023",
+          "form": "voisine"
+        },
+        {
+          "id": "book-1.03-036",
+          "form": "grand-mère"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-004",
@@ -84,13 +120,25 @@
       "subcategory": "14.01",
       "french": "la confiance",
       "chinese": "信心，信任",
-      "example": "Avoir confiance en quelqu’un n’est pas toujours facile.",
+      "example": "La confiance grandira entre les collègues si chacun respecte les engagements pris pendant la réunion.",
       "part": "n.f.",
       "level": "基础",
       "bookPage": 122,
       "pdfPage": 129,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-028",
+          "form": "collègues"
+        },
+        {
+          "id": "11.02-1",
+          "form": "réunion"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-005",
@@ -98,13 +146,25 @@
       "subcategory": "14.01",
       "french": "dépendre",
       "chinese": "依赖，依靠",
-      "example": "Elle a cherché un travail, car elle ne voulait plus dépendre de ses parents.",
+      "example": "Le départ dépend de la météo, car notre bateau ne peut pas naviguer dans une forte tempête.",
       "part": "v.i.",
       "level": "基础",
       "bookPage": 122,
       "pdfPage": 129,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.07-005",
+          "form": "départ"
+        },
+        {
+          "id": "book-4.04-004",
+          "form": "bateau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-006",
@@ -112,13 +172,25 @@
       "subcategory": "14.01",
       "french": "élever",
       "chinese": "教养，抚养",
-      "example": "Les enfants de ma voisine ne font que crier et se battre. Ils sont mal élevés.",
+      "example": "Mes parents élevaient quatre enfants tout en tenant une petite épicerie sur la place du village.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 122,
       "pdfPage": 129,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "1.03-2",
+          "form": "parents"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-007",
@@ -126,13 +198,25 @@
       "subcategory": "14.01",
       "french": "empêcher",
       "chinese": "禁止，阻碍",
-      "example": "Mon père m’empêche de sortir le soir après 22h.",
+      "example": "La pluie empêche les ouvriers de terminer le toit avant la fin de la semaine.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 122,
       "pdfPage": 129,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.03-1",
+          "form": "pluie"
+        },
+        {
+          "id": "book-11.01-011",
+          "form": "ouvriers"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-008",
@@ -140,13 +224,25 @@
       "subcategory": "14.01",
       "french": "encourager",
       "chinese": "鼓励",
-      "example": "Aurélie a encouragé son frère à commencer des études.",
+      "example": "Le professeur a encouragé cette élève à présenter ses dessins dans l'exposition de l'école.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 122,
       "pdfPage": 129,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-012",
+          "form": "professeur"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élève"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-009",
@@ -154,13 +250,25 @@
       "subcategory": "14.01",
       "french": "partager",
       "chinese": "分享，分担",
-      "example": "Sa mère lui a appris à partager avec les autres dès son enfance.",
+      "example": "Les voisins partagent leurs outils pour entretenir le jardin sans acheter chacun le même matériel.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 122,
       "pdfPage": 129,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-023",
+          "form": "voisins"
+        },
+        {
+          "id": "book-2.02-052",
+          "form": "outils"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-010",
@@ -168,13 +276,25 @@
       "subcategory": "14.01",
       "french": "la relation",
       "chinese": "關係",
-      "example": "Aurélie et ses parents entretiennent une bonne relation.",
+      "example": "Préservez votre relation avec les clients en expliquant clairement les délais avant de prendre une commande.",
       "part": "n.f.",
       "level": "基础",
       "bookPage": 122,
       "pdfPage": 129,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-003",
+          "form": "clients"
+        },
+        {
+          "id": "book-16.01-031",
+          "form": "délais"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-011",
@@ -182,13 +302,25 @@
       "subcategory": "14.01",
       "french": "le respect",
       "chinese": "尊敬，尊重",
-      "example": "Le respect envers les autres commence par le respect de soi-même.",
+      "example": "Le respect des habitants passe aussi par des travaux qui ne commencent pas trop tôt le matin.",
       "part": "n.m.",
       "level": "基础",
       "bookPage": 122,
       "pdfPage": 129,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travaux"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-012",
@@ -196,13 +328,25 @@
       "subcategory": "14.01",
       "french": "respecter",
       "chinese": "尊敬，尊重",
-      "example": "Il faut apprendre aux enfants à respecter les animaux.",
+      "example": "Nous respecterons les coutumes du village en demandant au guide comment nous comporter pendant la cérémonie.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 122,
       "pdfPage": 129,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-15.02-028",
+          "form": "coutumes"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-013",
@@ -210,13 +354,25 @@
       "subcategory": "14.01",
       "french": "traiter",
       "chinese": "对待，看待",
-      "example": "Il a toujours traité ses grands-parents avec beaucoup d’égards.",
+      "example": "Cette responsable traite les nouveaux employés avec la même considération que les collègues expérimentés.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 122,
       "pdfPage": 129,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-009",
+          "form": "employés"
+        },
+        {
+          "id": "book-14.01-025",
+          "form": "considération"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-014",
@@ -224,13 +380,25 @@
       "subcategory": "14.01",
       "french": "uni, unie",
       "chinese": "结合的，连接的",
-      "example": "Pierre et Aurélie sont unis par le mariage.",
+      "example": "La famille est restée unie pendant les longs mois où leur père cherchait du travail.",
       "part": "adj./p.p.",
       "level": "基础",
       "bookPage": 122,
       "pdfPage": 129,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        },
+        {
+          "id": "book-1.03-023",
+          "form": "père"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-015",
@@ -238,13 +406,25 @@
       "subcategory": "14.01",
       "french": "l’abandon",
       "chinese": "遗弃，抛弃",
-      "example": "L’abandon d’enfants a augmenté légèrement par rapport à l’année dernière.",
+      "example": "L'abandon d'un chien inquiète les enfants qui le découvrent seul près de la gare.",
       "part": "n.m.",
       "level": "进阶",
       "bookPage": 122,
       "pdfPage": 129,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-009",
+          "form": "chien"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-016",
@@ -252,13 +432,25 @@
       "subcategory": "14.01",
       "french": "l’admiration",
       "chinese": "佩服，欣赏",
-      "example": "J’ai beaucoup d’admiration pour les femmes qui élèvent leurs enfants seules et qui en plus exercent un métier.",
+      "example": "Mon grand-père éprouvait une grande admiration pour les artisans capables de réparer presque tous les objets.",
       "part": "n.f.",
       "level": "进阶",
       "bookPage": 122,
       "pdfPage": 129,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-037",
+          "form": "grand-père"
+        },
+        {
+          "id": "book-11.01-023",
+          "form": "artisans"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-017",
@@ -266,13 +458,25 @@
       "subcategory": "14.01",
       "french": "admirer",
       "chinese": "喜爱，欣赏；钦佩",
-      "example": "Les jeunes admirent souvent les chanteurs connus.",
+      "example": "Les visiteurs admirent les tableaux avant de rejoindre la terrasse où le peintre répond aux questions.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 122,
       "pdfPage": 129,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-044",
+          "form": "visiteurs"
+        },
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-018",
@@ -280,13 +484,25 @@
       "subcategory": "14.01",
       "french": "l’amitié",
       "chinese": "友情，友谊",
-      "example": "Ils ont une amitié profonde.",
+      "example": "Notre amitié s'est renforcée pendant le voyage où nous avons partagé une petite chambre.",
       "part": "n.f.",
       "level": "进阶",
       "bookPage": 122,
       "pdfPage": 129,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "4.02-1",
+          "form": "voyage"
+        },
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-019",
@@ -294,13 +510,25 @@
       "subcategory": "14.01",
       "french": "apaiser",
       "chinese": "使平静，安抚",
-      "example": "Elle n’a pas réussi à apaiser la colère de son mari.",
+      "example": "La mère apaise son enfant en lui racontant une histoire pendant que l'orage s'éloigne.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 122,
       "pdfPage": 129,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-016",
+          "form": "mère"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfant"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-020",
@@ -308,13 +536,25 @@
       "subcategory": "14.01",
       "french": "l’appui",
       "chinese": "支持，援助",
-      "example": "Cet ami m’est d’un appui précieux.",
+      "example": "L'appui des habitants permettrait à l'association de maintenir les cours gratuits dans la bibliothèque.",
       "part": "n.m.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-021",
@@ -322,13 +562,25 @@
       "subcategory": "14.01",
       "french": "l’attente",
       "chinese": "等候，期望",
-      "example": "Le cadeau qu’il a fait à sa femme a répondu à ses attentes.",
+      "example": "L'attente devant le cabinet paraît moins longue quand une infirmière explique le retard aux patients.",
       "part": "n.f.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-023",
+          "form": "cabinet"
+        },
+        {
+          "id": "book-8.04-007",
+          "form": "infirmière"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-022",
@@ -336,13 +588,25 @@
       "subcategory": "14.01",
       "french": "avertir",
       "chinese": "告知，警告",
-      "example": "Il m’a averti des dangers de cette opération.",
+      "example": "Avertissez les voisins avant de couper l'eau pour réparer le robinet de la cuisine.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-023",
+          "form": "voisins"
+        },
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-023",
@@ -350,13 +614,25 @@
       "subcategory": "14.01",
       "french": "la confidence",
       "chinese": "隐情，秘密；倾诉",
-      "example": "Elle lui a fait la confidence qu’elle avait des problèmes d’argent.",
+      "example": "Cette confidence rapproche les deux sœurs, qui discutent longtemps dans le jardin après le repas.",
       "part": "n.f.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "1.03-3",
+          "form": "sœurs"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-024",
@@ -364,13 +640,25 @@
       "subcategory": "14.01",
       "french": "conseiller",
       "chinese": "建议",
-      "example": "Elle lui a conseillé de parler avec le patron.",
+      "example": "La médecin m'a conseillé de reprendre le sport progressivement au lieu de courir tous les jours.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        },
+        {
+          "id": "book-13.06-012",
+          "form": "sport"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-025",
@@ -378,13 +666,25 @@
       "subcategory": "14.01",
       "french": "la considération",
       "chinese": "尊重",
-      "example": "Cette personne mérite la considération de tous.",
+      "example": "La considération que notre directeur porte aux ouvriers se voit dans sa façon d'écouter leurs remarques.",
       "part": "n.f.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-008",
+          "form": "directeur"
+        },
+        {
+          "id": "book-11.01-011",
+          "form": "ouvriers"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-026",
@@ -392,13 +692,25 @@
       "subcategory": "14.01",
       "french": "consoler",
       "chinese": "安慰",
-      "example": "Quand ma voisine et son mari se sont séparés, j’ai dû souvent la consoler au début.",
+      "example": "Sa grand-mère consolera l'enfant en l'aidant à réparer le jouet qu'il vient de casser.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-036",
+          "form": "grand-mère"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfant"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-027",
@@ -406,13 +718,25 @@
       "subcategory": "14.01",
       "french": "la contribution",
       "chinese": "贡献",
-      "example": "Ce résultat est dû à sa contribution personnelle.",
+      "example": "La contribution de chaque famille permet d'acheter des livres pour la bibliothèque de l'école.",
       "part": "n.f.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        },
+        {
+          "id": "book-13.05-014",
+          "form": "livres"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-028",
@@ -420,13 +744,25 @@
       "subcategory": "14.01",
       "french": "croiser",
       "chinese": "交错而过，偶遇",
-      "example": "J’ai croisé Pierre hier dans la rue.",
+      "example": "Nous croisions souvent le même pêcheur en suivant le chemin qui longeait la rivière.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-4.01-002",
+          "form": "chemin"
+        },
+        {
+          "id": "3.02-2",
+          "form": "rivière"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-029",
@@ -434,13 +770,25 @@
       "subcategory": "14.01",
       "french": "déranger",
       "chinese": "打扰",
-      "example": "Si ça ne te dérange pas, je vais passer cet après-midi pour te rendre les livres.",
+      "example": "Le bruit de la machine dérange les voisins lorsque l'atelier reste ouvert tard le soir.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-9.01-003",
+          "form": "bruit"
+        },
+        {
+          "id": "book-15.06-020",
+          "form": "machine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-030",
@@ -448,13 +796,25 @@
       "subcategory": "14.01",
       "french": "disputer",
       "chinese": "训斥，责骂",
-      "example": "Il a disputé ses enfants, car ils sont sortis dans le jardin sans mettre de manteau.",
+      "example": "Le père a disputé son fils qui avait lancé le ballon trop près de la route.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": "本单元为责骂义；与第13单元参加比赛义区别。"
+      "note": "本单元为责骂义；与第13单元参加比赛义区别。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-023",
+          "form": "père"
+        },
+        {
+          "id": "book-1.03-008",
+          "form": "fils"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-031",
@@ -462,13 +822,25 @@
       "subcategory": "14.01",
       "french": "ennuyer",
       "chinese": "使烦恼，使厌烦",
-      "example": "Il ne supporte plus d’aller à la plage tous les jours. Cela l’ennuie.",
+      "example": "Ce long trajet en voiture ennuie les enfants, alors nous faisons une pause près du lac.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.01-030",
+          "form": "trajet"
+        },
+        {
+          "id": "book-4.04-023",
+          "form": "voiture"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-032",
@@ -476,13 +848,25 @@
       "subcategory": "14.01",
       "french": "exclure",
       "chinese": "驱逐，赶走；排除",
-      "example": "Il a été exclu de son milieu familial.",
+      "example": "N'excluez aucun élève du jeu : ses camarades peuvent lui expliquer les règles avec des gestes simples.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "10.01-3",
+          "form": "élève"
+        },
+        {
+          "id": "book-10.01-002",
+          "form": "camarades"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-033",
@@ -490,13 +874,25 @@
       "subcategory": "14.01",
       "french": "fasciner",
       "chinese": "使着迷",
-      "example": "Je suis fascinée par cet acteur américain.",
+      "example": "La lumière du phare fascine les enfants qui la regardent tourner depuis la plage.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-3.02-010",
+          "form": "lumière"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-034",
@@ -504,13 +900,25 @@
       "subcategory": "14.01",
       "french": "forcer",
       "chinese": "强迫",
-      "example": "Mes parents me forcent à suivre ce cours d’allemand. Je n’ai pas du tout envie.",
+      "example": "Personne ne m'a forcé à accepter ce travail : j'ai choisi moi-même de changer de métier.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        },
+        {
+          "id": "book-1.01-012",
+          "form": "métier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-035",
@@ -518,13 +926,25 @@
       "subcategory": "14.01",
       "french": "gêner",
       "chinese": "使不舒服，使拘束；使尴尬",
-      "example": "Aurélie était très gênée quand sa tante lui a demandé si elle sortait avec un garçon.",
+      "example": "Le vendeur évite de gêner sa cliente en lui laissant le temps de réfléchir à son achat.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": "删除原书 demandé 与 si 之间不必要的逗号。"
+      "note": "删除原书 demandé 与 si 之间不必要的逗号。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-050",
+          "form": "vendeur"
+        },
+        {
+          "id": "book-6.01-003",
+          "form": "cliente"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-036",
@@ -532,13 +952,25 @@
       "subcategory": "14.01",
       "french": "hostile",
       "chinese": "敌对的，不赞成的",
-      "example": "Il est hostile à toutes les propositions que je lui fais.",
+      "example": "Une attitude hostile découragerait les nouveaux qui souhaitent rejoindre notre association de quartier.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-037",
@@ -546,13 +978,25 @@
       "subcategory": "14.01",
       "french": "inciter",
       "chinese": "鼓励，鼓动，促使",
-      "example": "Il l’a incité à prendre cette décision.",
+      "example": "L'école incite les élèves à venir à pied en organisant des trajets accompagnés depuis plusieurs rues.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "10.01-1",
+          "form": "école"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-038",
@@ -560,13 +1004,25 @@
       "subcategory": "14.01",
       "french": "influencer",
       "chinese": "影响",
-      "example": "Les enfants se laissent facilement influencer par la publicité.",
+      "example": "La visite de l'atelier a influencé mon choix de métier bien plus que les brochures de l'université.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-014",
+          "form": "visite"
+        },
+        {
+          "id": "book-11.03-022",
+          "form": "atelier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-039",
@@ -574,13 +1030,25 @@
       "subcategory": "14.01",
       "french": "se méfier",
       "chinese": "小心，当心，提防",
-      "example": "La nuit, il faut se méfier dans le métro.",
+      "example": "Je me méfie de cette offre, car le contrat ne précise ni les horaires ni le salaire.",
       "part": "v.pr.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书 méfier (se) 统一为自反形式。"
+      "note": "原书 méfier (se) 统一为自反形式。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.06-043",
+          "form": "offre"
+        },
+        {
+          "id": "book-11.03-028",
+          "form": "contrat"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-040",
@@ -588,13 +1056,25 @@
       "subcategory": "14.01",
       "french": "mutuel, mutuelle",
       "chinese": "相互的",
-      "example": "Ils ont convenu d’une entente mutuelle.",
+      "example": "Une aide mutuelle facilitera l'installation des nouveaux voisins dans les maisons du quartier.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-023",
+          "form": "voisins"
+        },
+        {
+          "id": "2.01-1",
+          "form": "maisons"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-041",
@@ -602,13 +1082,25 @@
       "subcategory": "14.01",
       "french": "pardonner",
       "chinese": "原谅",
-      "example": "Elle ne lui a jamais pardonné de l’avoir trompée.",
+      "example": "Ma sœur pardonne facilement les petites erreurs de ses enfants lorsqu'ils reconnaissent ce qu'ils ont fait.",
       "part": "v.t./v.i.",
       "level": "进阶",
       "bookPage": 123,
       "pdfPage": 130,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "1.03-3",
+          "form": "sœur"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-042",
@@ -616,13 +1108,25 @@
       "subcategory": "14.01",
       "french": "personnellement",
       "chinese": "亲自；作为个人，就个人而言",
-      "example": "Je connais Aurélie personnellement.",
+      "example": "La directrice a personnellement accueilli les visiteurs au lieu de les laisser attendre dans le hall.",
       "part": "adv.",
       "level": "进阶",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": "按例句补充亲自、本人认识的语境义。"
+      "note": "按例句补充亲自、本人认识的语境义。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-008",
+          "form": "directrice"
+        },
+        {
+          "id": "book-13.01-044",
+          "form": "visiteurs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-043",
@@ -630,13 +1134,25 @@
       "subcategory": "14.01",
       "french": "se plaindre",
       "chinese": "抱怨",
-      "example": "Les hôtes de l’hôtel se sont plaints du bruit.",
+      "example": "Les habitants se plaignent du bruit qui les réveille chaque nuit depuis l'ouverture du nouveau bar.",
       "part": "v.pr.",
       "level": "进阶",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书词头 plaindre 与抱怨义例句不一致；按例句补足自反形式。plaindre qn 为同情某人。"
+      "note": "原书词头 plaindre 与抱怨义例句不一致；按例句补足自反形式。plaindre qn 为同情某人。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "book-9.01-003",
+          "form": "bruit"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-044",
@@ -644,13 +1160,25 @@
       "subcategory": "14.01",
       "french": "la reconnaissance",
       "chinese": "感谢，感激",
-      "example": "Je lui témoigne une reconnaissance infinie.",
+      "example": "Sa reconnaissance s'exprimait dans les lettres qu'elle envoyait régulièrement au médecin qui l'avait soignée.",
       "part": "n.f.",
       "level": "进阶",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-7.01-013",
+          "form": "lettres"
+        },
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-045",
@@ -658,13 +1186,25 @@
       "subcategory": "14.01",
       "french": "recourir",
       "chinese": "求助于，诉诸",
-      "example": "Pour obtenir une amélioration il doit nécessairement recourir aux soins d’un médecin.",
+      "example": "Le propriétaire recourt à un artisan du village pour restaurer les fenêtres de sa maison.",
       "part": "v.i.",
       "level": "进阶",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-14.04-019",
+          "form": "propriétaire"
+        },
+        {
+          "id": "book-11.01-023",
+          "form": "artisan"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-046",
@@ -672,13 +1212,25 @@
       "subcategory": "14.01",
       "french": "le recours",
       "chinese": "求助，借助",
-      "example": "Pierre a eu recours à l’aide financière de ses parents.",
+      "example": "Envisagez le recours à une association si les démarches pour obtenir ce logement deviennent trop difficiles.",
       "part": "n.m.",
       "level": "进阶",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        },
+        {
+          "id": "book-2.01-035",
+          "form": "logement"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-047",
@@ -686,13 +1238,25 @@
       "subcategory": "14.01",
       "french": "recueillir",
       "chinese": "接待，收留",
-      "example": "Elle a recueilli son amie chez elle après son divorce.",
+      "example": "Une famille recueille le chat trouvé près du port en attendant de retrouver son propriétaire.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书 chez soi 按主语 elle 校正为 chez elle。"
+      "note": "原书 chez soi 按主语 elle 校正为 chez elle。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        },
+        {
+          "id": "book-3.04-031",
+          "form": "chat"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-048",
@@ -700,13 +1264,25 @@
       "subcategory": "14.01",
       "french": "reprocher",
       "chinese": "指责，责备",
-      "example": "Elle reproche à son mari de ne pas s’occuper suffisamment des enfants.",
+      "example": "Les clients ont reproché au vendeur de ne pas avoir signalé le défaut avant l'achat.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-003",
+          "form": "clients"
+        },
+        {
+          "id": "book-11.01-050",
+          "form": "vendeur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-049",
@@ -714,13 +1290,25 @@
       "subcategory": "14.01",
       "french": "se résigner",
       "chinese": "听任，甘心，认命",
-      "example": "Pierre s’est résigné à ne plus la rencontrer.",
+      "example": "Nous nous résignons à prendre le bus lorsque le dernier train ne circule plus.",
       "part": "v.pr.",
       "level": "进阶",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书 résigner (se) 统一为自反形式。"
+      "note": "原书 résigner (se) 统一为自反形式。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-026",
+          "form": "bus"
+        },
+        {
+          "id": "4.04-1",
+          "form": "train"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-050",
@@ -728,13 +1316,25 @@
       "subcategory": "14.01",
       "french": "satisfaire",
       "chinese": "使满意，满足",
-      "example": "Cet homme est vraiment merveilleux. Il satisfait ses attentes.",
+      "example": "Une chambre plus calme satisferait les voyageurs qui viennent travailler plusieurs semaines dans notre ville.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        },
+        {
+          "id": "book-4.02-016",
+          "form": "voyageurs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-051",
@@ -742,13 +1342,25 @@
       "subcategory": "14.01",
       "french": "le soutien",
       "chinese": "支持",
-      "example": "Il compte sur le soutien de sa famille et de ses amis.",
+      "example": "Le soutien de ses amis permet à cette étudiante de poursuivre ses études malgré ses difficultés.",
       "part": "n.m.",
       "level": "进阶",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-14.01-002",
+          "form": "amis"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiante"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-052",
@@ -756,13 +1368,25 @@
       "subcategory": "14.01",
       "french": "susciter",
       "chinese": "使产生，激起",
-      "example": "Le projet d’Aurélie a suscité l’intérêt de toute sa famille.",
+      "example": "Le projet de jardin partagé a suscité l'enthousiasme des habitants dès la première réunion.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "11.02-2",
+          "form": "projet"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-053",
@@ -770,13 +1394,25 @@
       "subcategory": "14.01",
       "french": "tendu, tendue",
       "chinese": "紧张的",
-      "example": "Ces deux pays entretiennent des rapports tendus.",
+      "example": "La conversation devient tendue quand les voisins abordent le partage des frais de réparation du mur.",
       "part": "adj./p.p.",
       "level": "进阶",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-023",
+          "form": "voisins"
+        },
+        {
+          "id": "book-12.04-009",
+          "form": "conversation"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-054",
@@ -784,13 +1420,25 @@
       "subcategory": "14.01",
       "french": "tolérer",
       "chinese": "容忍，宽容",
-      "example": "Nos nouveaux voisins doivent tolérer le bruit de nos enfants.",
+      "example": "Les employés toléreront mieux le changement si la direction explique les raisons de la nouvelle organisation.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-009",
+          "form": "employés"
+        },
+        {
+          "id": "book-15.02-016",
+          "form": "organisation"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-055",
@@ -798,13 +1446,25 @@
       "subcategory": "14.01",
       "french": "troubler",
       "chinese": "使心神不宁，使不安",
-      "example": "Les critiques qu’il a faites m’ont troublé.",
+      "example": "Cette nouvelle trouble les parents, qui attendent encore des informations sur le retour de leur fils.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "1.03-2",
+          "form": "parents"
+        },
+        {
+          "id": "book-4.02-007",
+          "form": "informations"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.01-056",
@@ -812,13 +1472,25 @@
       "subcategory": "14.01",
       "french": "veiller",
       "chinese": "熬夜，守夜",
-      "example": "J’ai veillé toute la nuit car ma fille avait de la fièvre.",
+      "example": "Ma mère veillait près du lit pendant que ma petite sœur dormait avec de la fièvre.",
       "part": "v.i.",
       "level": "进阶",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-016",
+          "form": "mère"
+        },
+        {
+          "id": "book-2.03-011",
+          "form": "lit"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-001",
@@ -826,13 +1498,25 @@
       "subcategory": "14.02",
       "french": "l’amour",
       "chinese": "爱情，爱",
-      "example": "J’adore les chansons d’amour.",
+      "example": "L'amour de sa famille accompagne cette artiste même lorsqu'elle travaille plusieurs mois à l'étranger.",
       "part": "n.m.",
       "level": "基础",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        },
+        {
+          "id": "book-13.03-002",
+          "form": "artiste"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-002",
@@ -840,13 +1524,25 @@
       "subcategory": "14.02",
       "french": "attirer",
       "chinese": "吸引",
-      "example": "Avec sa nouvelle robe, elle va certainement attirer les regards.",
+      "example": "La musique a attiré les passants vers la place où les enfants présentaient leur spectacle.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-011",
+          "form": "musique"
+        },
+        {
+          "id": "book-3.01-013",
+          "form": "passants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-003",
@@ -854,13 +1550,25 @@
       "subcategory": "14.02",
       "french": "la bague",
       "chinese": "戒指",
-      "example": "Il a acheté une bague pour sa fiancée.",
+      "example": "La bague de ma grand-mère reste dans une petite boîte que ma mère garde près de son lit.",
       "part": "n.f.",
       "level": "基础",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-036",
+          "form": "grand-mère"
+        },
+        {
+          "id": "book-5.01-003",
+          "form": "boîte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-004",
@@ -868,13 +1576,25 @@
       "subcategory": "14.02",
       "french": "le compagnon, la compagne",
       "chinese": "伴侣，伙伴",
-      "example": "Son compagnon est un Allemand.",
+      "example": "Demandez à votre compagnon de vérifier l'adresse de l'hôtel pendant que vous achetez les billets.",
       "part": "n.m./n.f.",
       "level": "基础",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "1.01-4",
+          "form": "adresse"
+        },
+        {
+          "id": "4.02-3",
+          "form": "hôtel"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-005",
@@ -882,13 +1602,25 @@
       "subcategory": "14.02",
       "french": "le couple",
       "chinese": "一对夫妇，一对伴侣",
-      "example": "Le couple cherche un appartement dans le centre-ville.",
+      "example": "Ce couple transforme une ancienne ferme en maison d'accueil pour les marcheurs de passage.",
       "part": "n.m.",
       "level": "基础",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "2.01-1",
+          "form": "maison"
+        },
+        {
+          "id": "book-16.03-003",
+          "form": "ancienne"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-006",
@@ -896,13 +1628,25 @@
       "subcategory": "14.02",
       "french": "ensemble",
       "chinese": "一起",
-      "example": "Ma fille et son ami partent ensemble en vacances.",
+      "example": "Les voisins préparaient ensemble le repas pendant que les enfants installaient les tables dans le jardin.",
       "part": "adv.",
       "level": "基础",
       "bookPage": 124,
       "pdfPage": 131,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-023",
+          "form": "voisins"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-007",
@@ -910,13 +1654,25 @@
       "subcategory": "14.02",
       "french": "l’époux, l’épouse",
       "chinese": "配偶，丈夫／妻子",
-      "example": "Son épouse n’est pas toujours d’accord avec ce qu’il lui demande.",
+      "example": "Son épouse travaille à l'hôpital et profite du trajet pour écouter des cours de langue.",
       "part": "n.m./n.f.",
       "level": "基础",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-8.04-006",
+          "form": "hôpital"
+        },
+        {
+          "id": "book-4.01-030",
+          "form": "trajet"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-008",
@@ -924,13 +1680,25 @@
       "subcategory": "14.02",
       "french": "épouser",
       "chinese": "结婚，娶，嫁",
-      "example": "Il a épousé une fille de la région.",
+      "example": "Mon oncle a épousé une musicienne rencontrée lors d'un concert organisé dans notre village.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-019",
+          "form": "oncle"
+        },
+        {
+          "id": "book-13.03-038",
+          "form": "musicienne"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-009",
@@ -938,13 +1706,25 @@
       "subcategory": "14.02",
       "french": "fidèle",
       "chinese": "忠诚的，忠贞的",
-      "example": "Aurélie est fidèle à son ami. Elle ne le tromperait jamais.",
+      "example": "Cette cliente reste fidèle au petit magasin où le vendeur connaît les goûts de toute sa famille.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-003",
+          "form": "cliente"
+        },
+        {
+          "id": "6.01-1",
+          "form": "magasin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-010",
@@ -952,13 +1732,25 @@
       "subcategory": "14.02",
       "french": "lié, liée",
       "chinese": "结合的，有联系的",
-      "example": "Ils sont liés depuis deux ans.",
+      "example": "Nos familles resteront liées malgré la distance qui séparera bientôt nos deux maisons.",
       "part": "adj./p.p.",
       "level": "基础",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        },
+        {
+          "id": "book-4.03-008",
+          "form": "distance"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-011",
@@ -966,13 +1758,25 @@
       "subcategory": "14.02",
       "french": "le mari",
       "chinese": "丈夫",
-      "example": "Mon mari est parti pour deux mois au Canada.",
+      "example": "Son mari prépare le dîner pendant qu'elle aide les enfants à terminer leurs devoirs.",
       "part": "n.m.",
       "level": "基础",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-046",
+          "form": "dîner"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-012",
@@ -980,13 +1784,25 @@
       "subcategory": "14.02",
       "french": "le mariage",
       "chinese": "结婚，婚礼",
-      "example": "Elle veut que son mariage soit parfaitement organisé.",
+      "example": "Le mariage a réuni des invités venus de plusieurs pays dans le jardin de la maison familiale.",
       "part": "n.m.",
       "level": "基础",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-14.03-028",
+          "form": "invités"
+        },
+        {
+          "id": "book-15.04-015",
+          "form": "pays"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-013",
@@ -994,13 +1810,25 @@
       "subcategory": "14.02",
       "french": "marier",
       "chinese": "使结婚，为…主持婚礼；（se marier）结婚",
-      "example": "Elle est mariée avec un Chinois.",
+      "example": "Les deux amis se marient au printemps et organisent une fête simple dans la cour de l'école.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": "保留原书词头 marier；本例 est mariée 为已婚状态，主动说结婚常用 se marier。"
+      "note": "保留原书词头 marier；本例 est mariée 为已婚状态，主动说结婚常用 se marier。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-14.01-002",
+          "form": "amis"
+        },
+        {
+          "id": "book-16.02-032",
+          "form": "printemps"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-014",
@@ -1008,13 +1836,25 @@
       "subcategory": "14.02",
       "french": "plaire",
       "chinese": "使高兴，使喜欢，讨人喜欢",
-      "example": "Les jeunes filles veulent plaire aux garçons.",
+      "example": "Ce roman plairait à ma sœur, qui aime les histoires de voyage et les portraits de famille.",
       "part": "v.i.",
       "level": "基础",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-024",
+          "form": "roman"
+        },
+        {
+          "id": "1.03-3",
+          "form": "sœur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-015",
@@ -1022,13 +1862,25 @@
       "subcategory": "14.02",
       "french": "quitter",
       "chinese": "离开",
-      "example": "Depuis que sa femme l’a quitté, il ne sort plus beaucoup.",
+      "example": "Les étudiants quittent la bibliothèque lorsque le gardien annonce la fermeture prochaine des portes.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        },
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-016",
@@ -1036,13 +1888,25 @@
       "subcategory": "14.02",
       "french": "ressentir",
       "chinese": "感觉，体会到",
-      "example": "Aurélie a ressenti une profonde tristesse à l’annonce de la mort de sa grand-mère.",
+      "example": "Je ressentais une grande joie en retrouvant mes amis après plusieurs mois passés à l'étranger.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "9.03-1",
+          "form": "joie"
+        },
+        {
+          "id": "book-14.01-002",
+          "form": "amis"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-017",
@@ -1050,13 +1914,25 @@
       "subcategory": "14.02",
       "french": "se séparer",
       "chinese": "分开，分离",
-      "example": "Il vient juste de se séparer de sa femme.",
+      "example": "Les voyageurs se séparent à la gare, chacun poursuivant son trajet vers une autre ville.",
       "part": "v.pr.",
       "level": "基础",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书词头 séparer 按例句补足自反形式；séparer qn/qch 为使分开。"
+      "note": "原书词头 séparer 按例句补足自反形式；séparer qn/qch 为使分开。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-016",
+          "form": "voyageurs"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-018",
@@ -1064,13 +1940,25 @@
       "subcategory": "14.02",
       "french": "tromper",
       "chinese": "欺骗；对伴侣不忠",
-      "example": "Elle a appris que son mari la trompait.",
+      "example": "Le vendeur a trompé son client en présentant un objet abîmé comme un produit neuf.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-050",
+          "form": "vendeur"
+        },
+        {
+          "id": "book-6.01-003",
+          "form": "client"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-019",
@@ -1078,13 +1966,25 @@
       "subcategory": "14.02",
       "french": "adorer",
       "chinese": "喜欢，爱，喜爱",
-      "example": "La grand-mère adore son petit-fils. Elle pourrait jouer tout le temps avec lui.",
+      "example": "Mes enfants adorent préparer le pain avec leur grand-père quand nous passons le dimanche chez lui.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-020",
@@ -1092,13 +1992,25 @@
       "subcategory": "14.02",
       "french": "l’affection",
       "chinese": "感情，爱",
-      "example": "Il a beaucoup d’affection pour ses beaux-parents.",
+      "example": "Cette lettre témoignera de l'affection que notre famille porte aux amis qui nous ont accueillis.",
       "part": "n.f.",
       "level": "进阶",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-7.01-013",
+          "form": "lettre"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-021",
@@ -1106,13 +2018,25 @@
       "subcategory": "14.02",
       "french": "l’amant, l’amante",
       "chinese": "爱人，情人",
-      "example": "Elle voit son amant deux fois par semaine.",
+      "example": "Dans le roman, l'amant attend sa bien-aimée près de la rivière où ils se retrouvent en secret.",
       "part": "n.m./n.f.",
       "level": "进阶",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-024",
+          "form": "roman"
+        },
+        {
+          "id": "3.02-2",
+          "form": "rivière"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-022",
@@ -1120,13 +2044,25 @@
       "subcategory": "14.02",
       "french": "amoureux, amoureuse",
       "chinese": "爱慕的，恋爱的",
-      "example": "Aurélie est amoureuse de Pierre.",
+      "example": "Les deux étudiants sont tombés amoureux pendant un stage qu'ils effectuaient dans le même musée.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        },
+        {
+          "id": "book-10.01-039",
+          "form": "stage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-023",
@@ -1134,13 +2070,25 @@
       "subcategory": "14.02",
       "french": "l’anneau",
       "chinese": "戒指，环",
-      "example": "La semaine dernière, ils ont choisi leurs anneaux de mariage.",
+      "example": "Cet anneau en argent rappelle à mon père le voyage où il a rencontré ma mère.",
       "part": "n.m.",
       "level": "进阶",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-023",
+          "form": "père"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-024",
@@ -1148,13 +2096,25 @@
       "subcategory": "14.02",
       "french": "l’attrait",
       "chinese": "吸引力，诱惑；兴趣",
-      "example": "On remarque l’attrait qu’il a pour cette femme.",
+      "example": "Comparez l'attrait du centre-ville avec le calme de la campagne avant de choisir votre logement.",
       "part": "n.m.",
       "level": "进阶",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-035",
+          "form": "logement"
+        },
+        {
+          "id": "book-3.01-002",
+          "form": "centre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-025",
@@ -1162,13 +2122,25 @@
       "subcategory": "14.02",
       "french": "caresser",
       "chinese": "抚摸，爱抚",
-      "example": "La mère caresse son bébé.",
+      "example": "La petite fille caresse le chien pendant que son frère remplit la gamelle d'eau fraîche.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-009",
+          "form": "chien"
+        },
+        {
+          "id": "1.03-4",
+          "form": "frère"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-026",
@@ -1176,13 +2148,25 @@
       "subcategory": "14.02",
       "french": "charmant, charmante",
       "chinese": "有魅力的，迷人的",
-      "example": "L’hôtesse de l’air qui nous a servis était charmante.",
+      "example": "Le guide était charmant et racontait l'histoire du village avec beaucoup d'humour pendant la visite.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-020",
+          "form": "guide"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-027",
@@ -1190,13 +2174,25 @@
       "subcategory": "14.02",
       "french": "le charme",
       "chinese": "魅力",
-      "example": "Il faut admettre qu’il a beaucoup de charme.",
+      "example": "Le charme de cette maison tient à son jardin sauvage et aux objets que les habitants y conservent.",
       "part": "n.m.",
       "level": "进阶",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "2.01-1",
+          "form": "maison"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-028",
@@ -1204,13 +2200,25 @@
       "subcategory": "14.02",
       "french": "le chéri, la chérie",
       "chinese": "亲爱的人，宝贝",
-      "example": "Aurélie appelle son compagnon mon chéri.",
+      "example": "« Mon chéri », a murmuré ma grand-mère en tendant une tasse de thé à son mari.",
       "part": "n.m./n.f.",
       "level": "进阶",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": "词头带冠词，为名词；原书“亲爱的”为形容词式释义，按称呼语补充。"
+      "note": "词头带冠词，为名词；原书“亲爱的”为形容词式释义，按称呼语补充。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-036",
+          "form": "grand-mère"
+        },
+        {
+          "id": "book-5.01-038",
+          "form": "thé"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-029",
@@ -1218,13 +2226,25 @@
       "subcategory": "14.02",
       "french": "embrasser",
       "chinese": "拥抱，亲吻",
-      "example": "Après être allés au cinéma, ils se sont embrassés pour la première fois.",
+      "example": "Les enfants embrassent leurs parents avant de monter dans le train qui les emmène en vacances.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "1.03-2",
+          "form": "parents"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-030",
@@ -1232,13 +2252,25 @@
       "subcategory": "14.02",
       "french": "le fiancé, la fiancée",
       "chinese": "未婚夫／未婚妻",
-      "example": "La semaine dernière, elle a présenté son fiancé à sa famille.",
+      "example": "Ma fiancée rencontrera mes cousins pendant le repas que nous préparerons ensemble dimanche prochain.",
       "part": "n.m./n.f.",
       "level": "进阶",
       "bookPage": 125,
       "pdfPage": 132,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-033",
+          "form": "cousins"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-031",
@@ -1246,13 +2278,25 @@
       "subcategory": "14.02",
       "french": "la fidélité",
       "chinese": "忠诚，忠贞",
-      "example": "De nos jours, la fidélité n’est plus évidente.",
+      "example": "La fidélité de ses amis aide cette femme à traverser une période difficile après son déménagement.",
       "part": "n.f.",
       "level": "进阶",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-14.01-002",
+          "form": "amis"
+        },
+        {
+          "id": "book-1.04-008",
+          "form": "femme"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-032",
@@ -1260,13 +2304,25 @@
       "subcategory": "14.02",
       "french": "l’harmonie",
       "chinese": "和谐",
-      "example": "L’harmonie de ce couple est surprenante.",
+      "example": "L'harmonie entre les voisins a facilité les travaux nécessaires à la rénovation de la cour commune.",
       "part": "n.f.",
       "level": "进阶",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-023",
+          "form": "voisins"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travaux"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-033",
@@ -1274,13 +2330,25 @@
       "subcategory": "14.02",
       "french": "harmonieux, harmonieuse",
       "chinese": "融洽的，和睦的",
-      "example": "Ils partagent une vie harmonieuse.",
+      "example": "Leurs relations harmonieuses permettent aux collègues de répartir le travail sans multiplier les réunions.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-028",
+          "form": "collègues"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-034",
@@ -1288,13 +2356,25 @@
       "subcategory": "14.02",
       "french": "intime",
       "chinese": "亲密的，私人的",
-      "example": "Ma vie intime ne regarde personne. C’est ma vie privée.",
+      "example": "Une conversation intime demanderait un endroit plus calme que ce café rempli d'étudiants.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        },
+        {
+          "id": "book-12.04-009",
+          "form": "conversation"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-035",
@@ -1302,13 +2382,25 @@
       "subcategory": "14.02",
       "french": "paisible",
       "chinese": "和平的，平静的",
-      "example": "Leur relation est très paisible.",
+      "example": "Le village retrouve une ambiance paisible lorsque les touristes regagnent leurs hôtels à la tombée du jour.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.01-2",
+          "form": "village"
+        },
+        {
+          "id": "book-4.02-029",
+          "form": "touristes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-036",
@@ -1316,13 +2408,25 @@
       "subcategory": "14.02",
       "french": "passionné, passionnée",
       "chinese": "热情的，充满激情的",
-      "example": "Les jeunes gens ont vécu une relation passionnée.",
+      "example": "Cette lectrice passionnée a passé tout le voyage à comparer deux traductions du même roman.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书 reçu une relacion passionnée 校正为 vécu une relation passionnée，分别修正搭配与拼写。"
+      "note": "原书 reçu une relacion passionnée 校正为 vécu une relation passionnée，分别修正搭配与拼写。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-010",
+          "form": "lectrice"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-037",
@@ -1330,13 +2434,25 @@
       "subcategory": "14.02",
       "french": "rompre",
       "chinese": "断开，断绝",
-      "example": "Il a rompu sa liaison avec son amie allemande.",
+      "example": "Le personnage rompt avec sa famille pour partir vivre dans un pays où personne ne le connaît.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-013",
+          "form": "personnage"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-038",
@@ -1344,13 +2460,25 @@
       "subcategory": "14.02",
       "french": "séduire",
       "chinese": "吸引，打动",
-      "example": "C’est son humour qui l’a séduit.",
+      "example": "Pour séduire les visiteurs, présentez aussi les produits locaux dans le petit magasin du musée.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-044",
+          "form": "visiteurs"
+        },
+        {
+          "id": "book-6.01-014",
+          "form": "produits"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-039",
@@ -1358,13 +2486,25 @@
       "subcategory": "14.02",
       "french": "la séparation",
       "chinese": "分离，分开",
-      "example": "La séparation de mon mari a été très douloureuse.",
+      "example": "La séparation inquiète les enfants, mais leurs parents leur expliquent comment les visites seront organisées.",
       "part": "n.f.",
       "level": "进阶",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "1.03-2",
+          "form": "parents"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-040",
@@ -1372,13 +2512,25 @@
       "subcategory": "14.02",
       "french": "séparé, séparée",
       "chinese": "分开的，分居的",
-      "example": "Ses parents vivent séparés.",
+      "example": "Les deux collègues travaillaient dans des bureaux séparés et se retrouvaient à la pause du déjeuner.",
       "part": "adj./p.p.",
       "level": "进阶",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-028",
+          "form": "collègues"
+        },
+        {
+          "id": "11.03-1",
+          "form": "bureaux"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-041",
@@ -1386,13 +2538,25 @@
       "subcategory": "14.02",
       "french": "sexuel, sexuelle",
       "chinese": "性的",
-      "example": "Pour son âge, il a déjà eu beaucoup de relations sexuelles.",
+      "example": "Le médecin aborde la santé sexuelle avec le patient en répondant à ses questions sans jugement.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        },
+        {
+          "id": "book-8.02-012",
+          "form": "patient"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.02-042",
@@ -1400,13 +2564,25 @@
       "subcategory": "14.02",
       "french": "la tendresse",
       "chinese": "温柔，温情",
-      "example": "Je l’aime avec tendresse.",
+      "example": "La tendresse de notre père s'est exprimée lorsqu'il a préparé le repas préféré de chacun.",
       "part": "n.f.",
       "level": "进阶",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-023",
+          "form": "père"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-001",
@@ -1414,13 +2590,25 @@
       "subcategory": "14.03",
       "french": "accueillir",
       "chinese": "欢迎，迎接",
-      "example": "Nous avons été accueillis à bras ouverts.",
+      "example": "Les habitants accueillent les nouveaux voisins en leur proposant une visite du jardin partagé.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "book-2.01-023",
+          "form": "voisins"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-002",
@@ -1428,13 +2616,25 @@
       "subcategory": "14.03",
       "french": "apporter",
       "chinese": "带来",
-      "example": "Les invités ont apporté une bouteille de vin pour le dîner.",
+      "example": "J'apporterai une salade et du pain pour le déjeuner que nous partagerons au bord du lac.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        },
+        {
+          "id": "book-5.02-045",
+          "form": "déjeuner"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-003",
@@ -1442,13 +2642,25 @@
       "subcategory": "14.03",
       "french": "l’arrivée",
       "chinese": "到达",
-      "example": "Après mon arrivée à l’hôtel, je me suis reposé un peu.",
+      "example": "L'arrivée du train attire les chauffeurs de taxi devant la petite gare du village.",
       "part": "n.f.",
       "level": "基础",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "4.04-1",
+          "form": "train"
+        },
+        {
+          "id": "book-11.01-025",
+          "form": "chauffeurs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-004",
@@ -1456,13 +2668,25 @@
       "subcategory": "14.03",
       "french": "s’attendre à",
       "chinese": "预计，料想",
-      "example": "Elle ne s’attendait pas à tant de monde au congrès.",
+      "example": "Nous nous attendions à une longue attente en voyant la foule devant le musée.",
       "part": "loc.v.pr.",
       "level": "基础",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书 attendre (s’) à 统一为自反形式。"
+      "note": "原书 attendre (s’) à 统一为自反形式。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-14.01-021",
+          "form": "attente"
+        },
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-005",
@@ -1470,13 +2694,25 @@
       "subcategory": "14.03",
       "french": "le contact",
       "chinese": "接触，联系",
-      "example": "Aurélie a encore des contacts avec ses amis d’enfance. Ils font une fête une fois par an.",
+      "example": "Le contact avec les clients aide la vendeuse à choisir les produits qu'elle commandera la semaine suivante.",
       "part": "n.m.",
       "level": "基础",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-003",
+          "form": "clients"
+        },
+        {
+          "id": "book-11.01-050",
+          "form": "vendeuse"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-006",
@@ -1484,13 +2720,25 @@
       "subcategory": "14.03",
       "french": "se dépêcher",
       "chinese": "急忙，赶快",
-      "example": "Si elle veut prendre le train de dix heures, il faut qu’elle se dépêche.",
+      "example": "Dépêchez-vous de mettre vos chaussures si vous voulez attraper le train de huit heures.",
       "part": "v.pr.",
       "level": "基础",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书 dépêcher (se) 统一为自反形式。"
+      "note": "原书 dépêcher (se) 统一为自反形式。",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-026",
+          "form": "chaussures"
+        },
+        {
+          "id": "4.04-1",
+          "form": "train"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-007",
@@ -1498,13 +2746,25 @@
       "subcategory": "14.03",
       "french": "entrer",
       "chinese": "进入",
-      "example": "Il entre dans le bistrot.",
+      "example": "Les visiteurs entrent dans la cour après avoir laissé leurs sacs près de la réception.",
       "part": "v.i.",
       "level": "基础",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-044",
+          "form": "visiteurs"
+        },
+        {
+          "id": "book-2.01-008",
+          "form": "cour"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-008",
@@ -1512,13 +2772,25 @@
       "subcategory": "14.03",
       "french": "l’honneur",
       "chinese": "荣幸；荣誉",
-      "example": "J’ai eu la joie et l’honneur de rencontrer cet homme.",
+      "example": "Recevoir cette artiste dans notre école était un honneur que les élèves prenaient très au sérieux.",
       "part": "n.m.",
       "level": "基础",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-002",
+          "form": "artiste"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-009",
@@ -1526,13 +2798,25 @@
       "subcategory": "14.03",
       "french": "inviter",
       "chinese": "邀请",
-      "example": "J’ai invité mes amis à venir manger à la maison ce samedi.",
+      "example": "Nous invitons les voisins à partager un repas pour apprendre à mieux connaître le quartier.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-023",
+          "form": "voisins"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-010",
@@ -1540,13 +2824,25 @@
       "subcategory": "14.03",
       "french": "oser",
       "chinese": "敢于",
-      "example": "J’ai osé lui demander son numéro de téléphone.",
+      "example": "L'étudiante a osé poser une question alors qu'elle comprenait encore difficilement le français.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 126,
       "pdfPage": 133,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-004",
+          "form": "étudiante"
+        },
+        {
+          "id": "book-12.02-028",
+          "form": "question"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-011",
@@ -1554,13 +2850,25 @@
       "subcategory": "14.03",
       "french": "prévoir",
       "chinese": "预见，预想；计划，安排",
-      "example": "Nous avons prévu pour samedi une promenade en forêt.",
+      "example": "Le guide prévoit une pause près du lac pour que les enfants puissent manger et se reposer.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 127,
       "pdfPage": 134,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-020",
+          "form": "guide"
+        },
+        {
+          "id": "book-3.02-009",
+          "form": "lac"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-012",
@@ -1568,13 +2876,25 @@
       "subcategory": "14.03",
       "french": "prévu, prévue",
       "chinese": "被预料的，预见的；预定的",
-      "example": "L’arrivée des hôtes est prévue pour 18 heures.",
+      "example": "Le spectacle prévu samedi commencera plus tôt pour permettre aux familles de rentrer avec le dernier bus.",
       "part": "adj./p.p.",
       "level": "基础",
       "bookPage": 127,
       "pdfPage": 134,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-020",
+          "form": "spectacle"
+        },
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-013",
@@ -1582,13 +2902,25 @@
       "subcategory": "14.03",
       "french": "rejoindre",
       "chinese": "汇合，赶上，加入",
-      "example": "Pierre a rendez-vous chez le dentiste à 17 heures, mais il essaiera de rejoindre le groupe plus tard.",
+      "example": "Je rejoins mes collègues au restaurant après avoir déposé les documents dans le bureau du directeur.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 127,
       "pdfPage": 134,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-028",
+          "form": "collègues"
+        },
+        {
+          "id": "book-5.02-063",
+          "form": "restaurant"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-014",
@@ -1596,13 +2928,25 @@
       "subcategory": "14.03",
       "french": "la rencontre",
       "chinese": "聚会，会面；运动会",
-      "example": "La rencontre internationale de la jeunesse s’est très bien passée cette année.",
+      "example": "Cette rencontre a permis aux parents de parler aux professeurs avant le début de l'année scolaire.",
       "part": "n.f.",
       "level": "基础",
       "bookPage": 127,
       "pdfPage": 134,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "1.03-2",
+          "form": "parents"
+        },
+        {
+          "id": "book-10.03-012",
+          "form": "professeurs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-015",
@@ -1610,13 +2954,25 @@
       "subcategory": "14.03",
       "french": "rencontrer",
       "chinese": "遇见",
-      "example": "Aurélie a rencontré dans la rue une amie qu’elle n’avait pas vue depuis au moins dix ans.",
+      "example": "Nous rencontrons souvent la même femme sur le chemin qui traverse le parc au lever du jour.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 127,
       "pdfPage": 134,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.04-008",
+          "form": "femme"
+        },
+        {
+          "id": "book-4.01-002",
+          "form": "chemin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-016",
@@ -1624,13 +2980,25 @@
       "subcategory": "14.03",
       "french": "rentrer",
       "chinese": "返回，回家",
-      "example": "Il ne savait pas encore à quelle heure il allait rentrer à la maison ce soir.",
+      "example": "Je rentrerais plus tôt si les horaires du train correspondaient mieux à ceux de mon travail.",
       "part": "v.i.",
       "level": "基础",
       "bookPage": 127,
       "pdfPage": 134,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-047",
+          "form": "horaires"
+        },
+        {
+          "id": "4.04-1",
+          "form": "train"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-017",
@@ -1638,13 +3006,25 @@
       "subcategory": "14.03",
       "french": "retourner",
       "chinese": "回去，返回",
-      "example": "Nos vacances au Canada nous ont tellement plu qu’on y retourne l’année prochaine.",
+      "example": "Ma sœur retourne chaque été dans le village où elle a passé une partie de son enfance.",
       "part": "v.i.",
       "level": "基础",
       "bookPage": 127,
       "pdfPage": 134,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书“回来”按例句补充回去义；与 revenir 区别。"
+      "note": "原书“回来”按例句补充回去义；与 revenir 区别。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "1.03-3",
+          "form": "sœur"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-018",
@@ -1652,13 +3032,25 @@
       "subcategory": "14.03",
       "french": "retrouver",
       "chinese": "找到，重新见到，会合",
-      "example": "Aurélie a retrouvé Pierre devant le cinéma à 19h00.",
+      "example": "Les enfants ont retrouvé leur ballon dans le jardin du voisin après l'orage de dimanche.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 127,
       "pdfPage": 134,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-13.06-014",
+          "form": "ballon"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-019",
@@ -1666,13 +3058,25 @@
       "subcategory": "14.03",
       "french": "revenir",
       "chinese": "回来，返回",
-      "example": "Après plusieurs mois d’absence, ce père de trois enfants est revenu chez lui.",
+      "example": "Le chien revient vers la maison dès qu'il entend le bruit de la gamelle sur le sol.",
       "part": "v.i.",
       "level": "基础",
       "bookPage": 127,
       "pdfPage": 134,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-009",
+          "form": "chien"
+        },
+        {
+          "id": "2.01-1",
+          "form": "maison"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-020",
@@ -1680,13 +3084,25 @@
       "subcategory": "14.03",
       "french": "revoir",
       "chinese": "再见，重新见到",
-      "example": "J’ai été pendant trois mois en Espagne et maintenant je suis ravie de revoir tous mes amis.",
+      "example": "Avant de revoir le médecin, notez les questions que vous souhaitez lui poser sur votre traitement.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 127,
       "pdfPage": 134,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        },
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-021",
@@ -1694,13 +3110,25 @@
       "subcategory": "14.03",
       "french": "tenir compte de",
       "chinese": "考虑，重视，把…考虑在内",
-      "example": "Elle ne tient pas compte de mes conseils.",
+      "example": "L'architecte tient compte des besoins des habitants lorsqu'il dessine les nouveaux logements du quartier.",
       "part": "loc.v.",
       "level": "基础",
       "bookPage": 127,
       "pdfPage": 134,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-022",
+          "form": "architecte"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-022",
@@ -1708,13 +3136,25 @@
       "subcategory": "14.03",
       "french": "venu, venue",
       "chinese": "来的；合宜的，受欢迎的（常与 bien／mal 连用）",
-      "example": "Ses critiques sont malvenues.",
+      "example": "Les invités venus de loin passaient la nuit dans les chambres situées au-dessus de la cuisine.",
       "part": "adj./p.p.",
       "level": "基础",
       "bookPage": 127,
       "pdfPage": 134,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书 Ses critiques sont mal venues 按形容词 malvenu（不合时宜的）合写；词头及“适当的、合理的”释义按此用法补充。"
+      "note": "原书 Ses critiques sont mal venues 按形容词 malvenu（不合时宜的）合写；词头及“适当的、合理的”释义按此用法补充。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-14.03-028",
+          "form": "invités"
+        },
+        {
+          "id": "2.03-1",
+          "form": "chambres"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-023",
@@ -1722,13 +3162,25 @@
       "subcategory": "14.03",
       "french": "disposé, disposée",
       "chinese": "愿意的，准备好的；安排好的",
-      "example": "Il n’est pas encore disposé à venir à cette réunion.",
+      "example": "Mon frère est disposé à nous aider à porter les meubles si nous organisons le déménagement dimanche.",
       "part": "adj./p.p.",
       "level": "进阶",
       "bookPage": 127,
       "pdfPage": 134,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书“安排好的”按 disposé à faire 的例句补充愿意、准备好义。"
+      "note": "原书“安排好的”按 disposé à faire 的例句补充愿意、准备好义。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "1.03-4",
+          "form": "frère"
+        },
+        {
+          "id": "book-2.03-013",
+          "form": "meubles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-024",
@@ -1736,13 +3188,25 @@
       "subcategory": "14.03",
       "french": "emmener",
       "chinese": "带去，带走",
-      "example": "La semaine prochaine, il va l’emmener chez ses parents.",
+      "example": "La professeure a emmené les élèves au bord de la rivière pour observer les plantes du printemps.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 127,
       "pdfPage": 134,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-012",
+          "form": "professeure"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-025",
@@ -1750,13 +3214,25 @@
       "subcategory": "14.03",
       "french": "fréquenter",
       "chinese": "与…交往；经常去",
-      "example": "Son fils fréquente des personnes suspectes.",
+      "example": "Ma grand-mère fréquente la bibliothèque depuis qu'un atelier de lecture y réunit les habitants du quartier.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 127,
       "pdfPage": 134,
       "source": "法语基础词汇分类学习手册",
-      "note": "本例宾语为人，指交往；原书仅释“经常去”。"
+      "note": "本例宾语为人，指交往；原书仅释“经常去”。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-036",
+          "form": "grand-mère"
+        },
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-026",
@@ -1764,13 +3240,25 @@
       "subcategory": "14.03",
       "french": "l’hôte, l’hôtesse",
       "chinese": "主人；客人",
-      "example": "Monsieur Dupont est un hôte très agréable que nous recevons avec plaisir dans notre maison.",
+      "example": "Nos hôtes prépareront le dîner pendant que nous explorerons les rues autour de leur maison.",
       "part": "n.m./n.f.",
       "level": "进阶",
       "bookPage": 127,
       "pdfPage": 134,
       "source": "法语基础词汇分类学习手册",
-      "note": "hôte 可指主人或客人；本例 nous recevons 表明指客人，补充原书释义。"
+      "note": "hôte 可指主人或客人；本例 nous recevons 表明指客人，补充原书释义。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-046",
+          "form": "dîner"
+        },
+        {
+          "id": "book-4.01-020",
+          "form": "rues"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-027",
@@ -1778,13 +3266,25 @@
       "subcategory": "14.03",
       "french": "l’invitation",
       "chinese": "邀请，请柬",
-      "example": "Jean et Aude m’ont envoyé leur invitation de mariage.",
+      "example": "L'invitation précise que les enfants peuvent venir avec leurs parents et participer aux jeux du jardin.",
       "part": "n.f.",
       "level": "进阶",
       "bookPage": 127,
       "pdfPage": 134,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "1.03-2",
+          "form": "parents"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-028",
@@ -1792,13 +3292,25 @@
       "subcategory": "14.03",
       "french": "l’invité, l’invitée",
       "chinese": "客人，受邀者",
-      "example": "Aurélie a fait une grande fête, il y avait plus de 60 invités.",
+      "example": "Une invitée a apporté des fleurs pour remercier la famille qui l'accueillait pendant le festival.",
       "part": "n.m./n.f.",
       "level": "进阶",
       "bookPage": 127,
       "pdfPage": 134,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "3.04-2",
+          "form": "fleurs"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-029",
@@ -1806,13 +3318,25 @@
       "subcategory": "14.03",
       "french": "joindre",
       "chinese": "联系上；连接，汇合",
-      "example": "Je n’ai pas pu la joindre, car elle était absente.",
+      "example": "Je joins le médecin par téléphone lorsque ma mère ne comprend pas les consignes du traitement.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 127,
       "pdfPage": 134,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书仅释“汇合”；本例指联系上某人。"
+      "note": "原书仅释“汇合”；本例指联系上某人。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        },
+        {
+          "id": "book-1.03-016",
+          "form": "mère"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-030",
@@ -1820,13 +3344,25 @@
       "subcategory": "14.03",
       "french": "le rendez-vous",
       "chinese": "约会，预约",
-      "example": "Ma mère a rendez-vous avec sa sœur, donc elle ne sera pas à la maison avant 20h00.",
+      "example": "Un rendez-vous dans ce café serait pratique pour les collègues qui viennent en train.",
       "part": "n.m.",
       "level": "进阶",
       "bookPage": 127,
       "pdfPage": 134,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-028",
+          "form": "collègues"
+        },
+        {
+          "id": "4.04-1",
+          "form": "train"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-031",
@@ -1834,13 +3370,25 @@
       "subcategory": "14.03",
       "french": "ressortir",
       "chinese": "再出去",
-      "example": "Elle est fatiguée. Elle n’a plus envie de ressortir ce soir.",
+      "example": "Les enfants ressortent dans le jardin dès que la pluie cesse et que le soleil revient.",
       "part": "v.i.",
       "level": "进阶",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.03-032",
@@ -1848,13 +3396,25 @@
       "subcategory": "14.03",
       "french": "la venue",
       "chinese": "到来",
-      "example": "La venue de cette personnalité nous oblige à revoir notre programme.",
+      "example": "La venue de ma sœur a transformé un dimanche ordinaire en grand repas de famille.",
       "part": "n.f.",
       "level": "进阶",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "1.03-3",
+          "form": "sœur"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-001",
@@ -1862,13 +3422,25 @@
       "subcategory": "14.04",
       "french": "acquérir",
       "chinese": "获得，得到",
-      "example": "Par son travail, il a acquis une grande fortune.",
+      "example": "Cette bibliothèque acquiert chaque année des ouvrages choisis avec les lecteurs du quartier.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        },
+        {
+          "id": "book-13.05-016",
+          "form": "ouvrages"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-002",
@@ -1876,13 +3448,25 @@
       "subcategory": "14.04",
       "french": "appartenir",
       "chinese": "属于",
-      "example": "Ces disques ne m’appartiennent pas, je les ai empruntés à mon voisin.",
+      "example": "Vérifiez à qui appartient ce terrain avant d'y installer une table pour le pique-nique.",
       "part": "v.i.",
       "level": "基础",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-020",
+          "form": "terrain"
+        },
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-003",
@@ -1890,13 +3474,25 @@
       "subcategory": "14.04",
       "french": "cacher",
       "chinese": "藏，隐藏",
-      "example": "L’enfant a caché les clés de la maison dans sa chambre.",
+      "example": "Le garçon cache son dessin derrière le dos pour faire une surprise à sa mère.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.04-009",
+          "form": "garçon"
+        },
+        {
+          "id": "book-13.02-018",
+          "form": "dessin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-004",
@@ -1904,13 +3500,25 @@
       "subcategory": "14.04",
       "french": "confier",
       "chinese": "委托给…，托付",
-      "example": "Quand elle part au travail, elle confie ses enfants à sa mère.",
+      "example": "Ma tante confiait ses enfants aux voisins lorsqu'elle travaillait tard à l'hôpital.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-039",
+          "form": "tante"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-005",
@@ -1918,13 +3526,25 @@
       "subcategory": "14.04",
       "french": "disposer",
       "chinese": "拥有，支配",
-      "example": "Dans sa maison, Pierre dispose d’un grand confort.",
+      "example": "L'école dispose d'un jardin que les élèves utilisent pour apprendre à cultiver des légumes.",
       "part": "v.i.",
       "level": "基础",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": "本例为 disposer de（拥有、享有）用法。"
+      "note": "本例为 disposer de（拥有、享有）用法。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "10.01-1",
+          "form": "école"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-006",
@@ -1932,13 +3552,25 @@
       "subcategory": "14.04",
       "french": "la disposition",
       "chinese": "布置，布局",
-      "example": "La disposition des pièces de l’appartement d’Aurélie est très pratique.",
+      "example": "La nouvelle disposition des meubles a libéré un espace près de la fenêtre pour lire.",
       "part": "n.f.",
       "level": "基础",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-013",
+          "form": "meubles"
+        },
+        {
+          "id": "book-2.01-011",
+          "form": "fenêtre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-007",
@@ -1946,13 +3578,25 @@
       "subcategory": "14.04",
       "french": "l’échange",
       "chinese": "交换",
-      "example": "Pierre et moi avons fait un échange de timbres.",
+      "example": "L'échange de livres rapproche les habitants qui n'avaient encore jamais discuté ensemble dans l'immeuble.",
       "part": "n.m.",
       "level": "基础",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书 échange de timbre 按交换邮票语境校正复数 timbres。"
+      "note": "原书 échange de timbre 按交换邮票语境校正复数 timbres。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-014",
+          "form": "livres"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-008",
@@ -1960,13 +3604,25 @@
       "subcategory": "14.04",
       "french": "gardé, gardée",
       "chinese": "被看管的，看守的",
-      "example": "Cette villa est gardée par deux gros chiens.",
+      "example": "Les bagages seront gardés à la réception pendant que nous visiterons le quartier à pied.",
       "part": "adj./p.p.",
       "level": "基础",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-017",
+          "form": "bagages"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-009",
@@ -1974,13 +3630,25 @@
       "subcategory": "14.04",
       "french": "garder",
       "chinese": "照看，看管",
-      "example": "Pendant qu’elle travaille, sa mère garde les enfants.",
+      "example": "Mon père garde les enfants pendant que ma sœur suit son cours du soir à l'université.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-023",
+          "form": "père"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-010",
@@ -1988,13 +3656,25 @@
       "subcategory": "14.04",
       "french": "le manque",
       "chinese": "缺少，缺乏",
-      "example": "Le manque d’argent l’oblige à rester tout l’été chez lui.",
+      "example": "Le manque de lumière nous a conduits à déplacer la table près de la fenêtre.",
       "part": "n.m.",
       "level": "基础",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-010",
+          "form": "lumière"
+        },
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-011",
@@ -2002,13 +3682,25 @@
       "subcategory": "14.04",
       "french": "manquer",
       "chinese": "缺少，缺乏",
-      "example": "Il ne manque pas d’argent. Il est riche.",
+      "example": "Il manque une chaise autour de la table maintenant que notre voisin vient partager le dîner.",
       "part": "v.i.",
       "level": "基础",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-029",
+          "form": "chaise"
+        },
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-012",
@@ -2016,13 +3708,25 @@
       "subcategory": "14.04",
       "french": "posséder",
       "chinese": "拥有",
-      "example": "Il possède une villa, un bateau et un cheval.",
+      "example": "Avant d'acheter un outil, demandez aux voisins s'ils possèdent déjà un modèle qu'ils peuvent vous prêter.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-052",
+          "form": "outil"
+        },
+        {
+          "id": "book-2.01-023",
+          "form": "voisins"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-013",
@@ -2030,13 +3734,25 @@
       "subcategory": "14.04",
       "french": "le prêt",
       "chinese": "借款，贷款",
-      "example": "Cet achat m’oblige à demander un prêt auprès de ma banque.",
+      "example": "Le prêt permettra à cette famille de remplacer le chauffage sans attendre le prochain hiver.",
       "part": "n.m.",
       "level": "基础",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        },
+        {
+          "id": "book-2.02-031",
+          "form": "chauffage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-014",
@@ -2044,13 +3760,25 @@
       "subcategory": "14.04",
       "french": "prêter",
       "chinese": "借出",
-      "example": "Elle lui a prêté 200 euros.",
+      "example": "La voisine prêtait son vélo aux étudiants qui séjournaient dans la petite chambre au-dessus du garage.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": "与 emprunter（借入）区别。"
+      "note": "与 emprunter（借入）区别。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-023",
+          "form": "voisine"
+        },
+        {
+          "id": "4.04-2",
+          "form": "vélo"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-015",
@@ -2058,13 +3786,25 @@
       "subcategory": "14.04",
       "french": "pris, prise",
       "chinese": "占据的，被占用的",
-      "example": "Cette place est malheureusement déjà prise. Vous devez vous asseoir ailleurs.",
+      "example": "Toutes les places sont prises dans le train, alors nous cherchons un autre horaire de départ.",
       "part": "adj./p.p.",
       "level": "基础",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "4.04-1",
+          "form": "train"
+        },
+        {
+          "id": "book-16.02-047",
+          "form": "horaire"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-016",
@@ -2072,13 +3812,25 @@
       "subcategory": "14.04",
       "french": "privé, privée",
       "chinese": "私人的，私有的",
-      "example": "Nous ne pouvons pas entrer ici. C’est un terrain privé.",
+      "example": "Nous avons visité le jardin privé d'une maison ouverte exceptionnellement pour les journées du patrimoine.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "2.01-1",
+          "form": "maison"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-017",
@@ -2086,13 +3838,25 @@
       "subcategory": "14.04",
       "french": "procurer",
       "chinese": "为…找到，提供",
-      "example": "Aurélie m’a demandé de lui procurer ce livre.",
+      "example": "L'association procure des vêtements chauds aux personnes qui viennent d'arriver dans la région.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        },
+        {
+          "id": "book-6.03-017",
+          "form": "vêtements"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-018",
@@ -2100,13 +3864,25 @@
       "subcategory": "14.04",
       "french": "propre",
       "chinese": "本人的，自己的；干净的",
-      "example": "C’est un document qu’il faut absolument remettre en main propre.",
+      "example": "Chaque enfant aura sa propre chambre quand les travaux de la maison seront terminés.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书仅释“干净的”；例句 en main propre 指亲手交给本人，补充本人的、自己的义。"
+      "note": "原书仅释“干净的”；例句 en main propre 指亲手交给本人，补充本人的、自己的义。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfant"
+        },
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-019",
@@ -2114,13 +3890,25 @@
       "subcategory": "14.04",
       "french": "le, la propriétaire",
       "chinese": "业主，物主，所有者",
-      "example": "Le propriétaire de l’appartement doit venir la semaine prochaine pour signer le contrat.",
+      "example": "Le propriétaire de cette boutique connaît les clients qui viennent au marché depuis plusieurs générations.",
       "part": "n.m./n.f.",
       "level": "基础",
       "bookPage": 128,
       "pdfPage": 135,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-022",
+          "form": "boutique"
+        },
+        {
+          "id": "book-6.01-003",
+          "form": "clients"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-020",
@@ -2128,13 +3916,25 @@
       "subcategory": "14.04",
       "french": "la propriété",
       "chinese": "财产，产业；所有权",
-      "example": "Cette maison et ce terrain sont sa propriété.",
+      "example": "La famille a vendu une partie de sa propriété pour financer la restauration de la vieille maison.",
       "part": "n.f.",
       "level": "基础",
       "bookPage": 129,
       "pdfPage": 136,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        },
+        {
+          "id": "2.01-1",
+          "form": "maison"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-021",
@@ -2142,13 +3942,25 @@
       "subcategory": "14.04",
       "french": "public, publique",
       "chinese": "公共的，公立的",
-      "example": "Mes enfants vont à l’école publique.",
+      "example": "La bibliothèque publique reste ouverte le soir pour accueillir les étudiants qui travaillent dans la journée.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 129,
       "pdfPage": 136,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-022",
@@ -2156,13 +3968,25 @@
       "subcategory": "14.04",
       "french": "ramener",
       "chinese": "带回来",
-      "example": "Il m’a demandé de ramener les livres.",
+      "example": "Ramenez les enfants à la maison avant que le vent ne rende la promenade trop froide.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 129,
       "pdfPage": 136,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "2.01-1",
+          "form": "maison"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-023",
@@ -2170,13 +3994,25 @@
       "subcategory": "14.04",
       "french": "rapporter",
       "chinese": "带回来，送回",
-      "example": "J’ai rapporté les livres à la bibliothèque.",
+      "example": "Mon frère rapporte toujours un livre du pays où il voyage pour enrichir notre petite bibliothèque.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 129,
       "pdfPage": 136,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "1.03-4",
+          "form": "frère"
+        },
+        {
+          "id": "book-13.05-014",
+          "form": "livre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-024",
@@ -2184,13 +4020,25 @@
       "subcategory": "14.04",
       "french": "reprendre",
       "chinese": "收回，接受退货",
-      "example": "La boutique a repris ma robe, car elle avait un trou.",
+      "example": "Le commerçant reprenait les produits défectueux sans demander aux clients de revenir plusieurs fois.",
       "part": "v.t.",
       "level": "基础",
       "bookPage": 129,
       "pdfPage": 136,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-029",
+          "form": "commerçant"
+        },
+        {
+          "id": "book-6.01-014",
+          "form": "produits"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-025",
@@ -2198,13 +4046,25 @@
       "subcategory": "14.04",
       "french": "l’acquisition",
       "chinese": "购得，获得",
-      "example": "J’ai fait l’acquisition d’un tableau magnifique.",
+      "example": "L'acquisition de cette machine facilite le travail des artisans qui utilisent l'atelier partagé.",
       "part": "n.f.",
       "level": "进阶",
       "bookPage": 129,
       "pdfPage": 136,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.06-020",
+          "form": "machine"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-026",
@@ -2212,13 +4072,25 @@
       "subcategory": "14.04",
       "french": "approprié, appropriée",
       "chinese": "合适的，恰当的",
-      "example": "Dans cet appartement chaque objet est à la place appropriée.",
+      "example": "La médecin a choisi un traitement approprié après avoir écouté les difficultés quotidiennes du patient.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 129,
       "pdfPage": 136,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        },
+        {
+          "id": "book-8.02-012",
+          "form": "patient"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-027",
@@ -2226,13 +4098,25 @@
       "subcategory": "14.04",
       "french": "caché, cachée",
       "chinese": "隐藏的，秘密的",
-      "example": "Cette liaison l’oblige à vivre un amour caché.",
+      "example": "Une petite porte cachée derrière les arbres donne accès au jardin de l'ancien couvent.",
       "part": "adj./p.p.",
       "level": "进阶",
       "bookPage": 129,
       "pdfPage": 136,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-019",
+          "form": "porte"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-028",
@@ -2240,13 +4124,25 @@
       "subcategory": "14.04",
       "french": "détenir",
       "chinese": "掌握，持有",
-      "example": "Pascal détient des documents de grande valeur.",
+      "example": "La bibliothèque détiendra bientôt tous les ouvrages de cette collection consacrée à l'histoire locale.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 129,
       "pdfPage": 136,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        },
+        {
+          "id": "book-13.05-016",
+          "form": "ouvrages"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-029",
@@ -2254,13 +4150,25 @@
       "subcategory": "14.04",
       "french": "dissimuler",
       "chinese": "掩饰，隐藏",
-      "example": "Pierre dissimule difficilement sa tristesse.",
+      "example": "L'enfant dissimule sa peur en faisant semblant de s'intéresser aux tableaux accrochés dans le couloir.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 129,
       "pdfPage": 136,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfant"
+        },
+        {
+          "id": "9.03-3",
+          "form": "peur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-030",
@@ -2268,13 +4176,25 @@
       "subcategory": "14.04",
       "french": "s’emparer",
       "chinese": "抓住，夺取",
-      "example": "L’enfant s’est emparé du ballon.",
+      "example": "Le vent s'est emparé de la feuille avant que nous ayons pu lire le message écrit dessus.",
       "part": "v.pr.",
       "level": "进阶",
       "bookPage": 129,
       "pdfPage": 136,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书 emparer (s’) 统一为自反形式。"
+      "note": "原书 emparer (s’) 统一为自反形式。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "3.03-3",
+          "form": "vent"
+        },
+        {
+          "id": "book-3.04-014",
+          "form": "feuille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-031",
@@ -2282,13 +4202,25 @@
       "subcategory": "14.04",
       "french": "emprunter",
       "chinese": "借入",
-      "example": "Il lui a emprunté de l’argent.",
+      "example": "Les étudiants empruntent des livres à la bibliothèque au lieu de les acheter pour chaque cours.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 129,
       "pdfPage": 136,
       "source": "法语基础词汇分类学习手册",
-      "note": "与 prêter（借出）区别。"
+      "note": "与 prêter（借出）区别。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        },
+        {
+          "id": "book-13.05-014",
+          "form": "livres"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-032",
@@ -2296,13 +4228,25 @@
       "subcategory": "14.04",
       "french": "munir",
       "chinese": "使带有，配备",
-      "example": "Tous doivent être munis de leur carte d’identité pour aller voter.",
+      "example": "Munissez les enfants d'un chapeau avant de les emmener marcher au bord de la rivière.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 129,
       "pdfPage": 136,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-6.03-025",
+          "form": "chapeau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-033",
@@ -2310,13 +4254,25 @@
       "subcategory": "14.04",
       "french": "la possession",
       "chinese": "拥有，所有",
-      "example": "La possession de ce tableau me procure beaucoup de plaisir.",
+      "example": "La possession de cette clé permet au gardien d'ouvrir les salles avant l'arrivée des visiteurs.",
       "part": "n.f.",
       "level": "进阶",
       "bookPage": 129,
       "pdfPage": 136,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-034",
+          "form": "clé"
+        },
+        {
+          "id": "book-13.01-044",
+          "form": "visiteurs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-034",
@@ -2324,13 +4280,25 @@
       "subcategory": "14.04",
       "french": "pourvoir",
       "chinese": "提供，供给；满足需要",
-      "example": "Cet emploi lui permet de pourvoir à ses besoins.",
+      "example": "La commune pourvoyait aux besoins des familles qui avaient perdu leur logement après l'incendie.",
       "part": "v.i.",
       "level": "进阶",
       "bookPage": 129,
       "pdfPage": 136,
       "source": "法语基础词汇分类学习手册",
-      "note": "本例 pourvoir à ses besoins 指满足其生活需要。"
+      "note": "本例 pourvoir à ses besoins 指满足其生活需要。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        },
+        {
+          "id": "book-2.01-035",
+          "form": "logement"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-035",
@@ -2338,13 +4306,25 @@
       "subcategory": "14.04",
       "french": "récupérer",
       "chinese": "收回，取回",
-      "example": "Ça fait deux mois que Pierre a mes livres. Je voudrais bien les récupérer.",
+      "example": "Je récupère mon vélo chez l'artisan avant de rejoindre mes amis pour une promenade au bord du lac.",
       "part": "v.t.",
       "level": "进阶",
       "bookPage": 129,
       "pdfPage": 136,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "4.04-2",
+          "form": "vélo"
+        },
+        {
+          "id": "book-11.01-023",
+          "form": "artisan"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-14.04-036",
@@ -2352,13 +4332,27 @@
       "subcategory": "14.04",
       "french": "le trésor",
       "chinese": "宝藏",
-      "example": "Les enfants pensent découvrir un trésor dans le jardin.",
+      "example": "Les enfants ont découvert un trésor de vieux livres dans le grenier de la maison de leurs grands-parents.",
       "part": "n.m.",
       "level": "进阶",
       "bookPage": 129,
       "pdfPage": 136,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-13.05-014",
+          "form": "livres"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     }
-  ]
+  ],
+  "originalMethod": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点、自反动词及词性；中文释义按例句语境校正或补充。se plaindre、se séparer 按例句补足自反形式；hôte、joindre、disposé、fréquenter、propre 等语境义另记于 note；gents、chez soi、reçu une relacion、mal venues、échange de timbre 等拼写或搭配校正逐条注明。",
+  "exampleMethod": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
 }

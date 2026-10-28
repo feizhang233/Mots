@@ -1,6 +1,12 @@
 (() => {
   'use strict';
 
+  function speechText(term, language) {
+    if (language !== 'ja') return term;
+    // Slashes separate alternatives; tildes mark grammar slots, not spoken words.
+    return term.replace(/[/／]/g, ' ').replace(/[~～〜]/g, '').replace(/\s+/g, ' ').trim();
+  }
+
   // The controller owns playback only. The app supplies the current dictionary,
   // preferences, word lookup and UI targets; there is no shared app state here.
   function create({ player, status, getContext, getWord, getSource, getButtons, onNotice }) {
@@ -61,7 +67,7 @@
       });
     }
 
-    async function deviceSpeak(word, token) {
+    async function deviceSpeak(word, text, token) {
       if (token !== playbackToken) return;
       const unavailable = () => {
         stop('讀音無法播放');
@@ -77,7 +83,7 @@
         unavailable();
         return;
       }
-      const utterance = new SpeechSynthesisUtterance(word.term);
+      const utterance = new SpeechSynthesisUtterance(text);
       speechRef = utterance;
       utterance.lang = getContext().voiceLocale;
       utterance.voice = voice;
@@ -110,12 +116,17 @@
       }
       stop();
       const context = getContext();
+      const text = speechText(word.term, context.language);
+      if (!text.trim()) {
+        status.textContent = '沒有可朗讀的文字';
+        return;
+      }
       if (context.audioMode === 'google') {
         const target =
           { 'zh-Hant': 'zh-TW', 'zh-Hans': 'zh-CN' }[context.meaningLanguage] ||
           context.meaningLanguage;
         window.open(
-          `https://translate.google.com/?sl=${context.language}&tl=${target}&text=${encodeURIComponent(word.term)}&op=translate`,
+          `https://translate.google.com/?sl=${context.language}&tl=${target}&text=${encodeURIComponent(text)}&op=translate`,
           '_blank',
           'noopener,noreferrer',
         );
@@ -126,7 +137,7 @@
       refreshButtons();
       const source = getSource(id);
       if (context.audioMode === 'device' || !source) {
-        deviceSpeak(word, token);
+        deviceSpeak(word, text, token);
         return;
       }
       let fallbackStarted = false;
@@ -136,7 +147,7 @@
         clearTimeout(playbackTimer);
         player.onplaying = player.onended = player.onerror = null;
         player.pause();
-        deviceSpeak(word, token);
+        deviceSpeak(word, text, token);
       };
       player.src = source;
       player.onplaying = () => {

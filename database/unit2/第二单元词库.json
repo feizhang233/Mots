@@ -16,7 +16,7 @@
     "基础": 84,
     "进阶": 112
   },
-  "method": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，明显排印错误的校正记入 note。",
+  "method": "詞條、分類、原書頁碼與校對註記保留原整理；例句於 2026-10-25 改為 Mots 原創詞彙關聯例句。原例句保存在 french/example-network.json 的 originalText，XLSX 保留原書轉錄版本。",
   "subcategories": [
     {
       "id": "2.01",
@@ -42,14 +42,26 @@
       "subcategory": "2.01",
       "french": "l’appartement",
       "chinese": "公寓",
-      "example": "L’appartement est plus petit que l’ancien, mais il a un balcon avec une belle vue. Ma mère a interdit de fumer dans l’appartement.",
+      "example": "Notre appartement donne sur une place où les enfants jouent après l'école.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
       "note": "原书另列于相邻行的 appartement 例句已归入本词条。",
-      "ipa": "/apaʁtəmɑ̃/"
+      "ipa": "/apaʁtəmɑ̃/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-014",
+          "form": "place"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-002",
@@ -57,13 +69,25 @@
       "subcategory": "2.01",
       "french": "l’ascenseur",
       "chinese": "电梯",
-      "example": "Un ascenseur est indispensable aux personnes âgées qui habitent un immeuble.",
+      "example": "L'ascenseur est tombé en panne quand ma voisine rapportait ses courses du marché.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-023",
+          "form": "voisine"
+        },
+        {
+          "id": "book-3.01-012",
+          "form": "marché"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-003",
@@ -71,13 +95,25 @@
       "subcategory": "2.01",
       "french": "le balcon",
       "chinese": "阳台",
-      "example": "Allons sur le balcon.",
+      "example": "Sur le balcon, mon frère cultive des plantes qui résistent au vent de la mer.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-020",
+          "form": "plantes"
+        },
+        {
+          "id": "3.03-3",
+          "form": "vent"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-004",
@@ -85,13 +121,25 @@
       "subcategory": "2.01",
       "french": "le bâtiment",
       "chinese": "楼，建筑物",
-      "example": "Ce groupe d’immeubles comprend huit bâtiments.",
+      "example": "Ce bâtiment abritait une école avant que la municipalité le transforme en musée.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "10.01-1",
+          "form": "école"
+        },
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-005",
@@ -99,13 +147,25 @@
       "subcategory": "2.01",
       "french": "consister",
       "chinese": "包括，由……组成",
-      "example": "L’hôtel consiste en cinq chambres individuelles, dix chambres doubles, un restaurant et un jardin.",
+      "example": "Son travail consiste à vérifier la qualité de l'eau avant sa distribution aux habitants.",
       "part": "v.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
-      "note": "常用搭配：consister en。"
+      "note": "常用搭配：consister en。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        },
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-006",
@@ -113,13 +173,25 @@
       "subcategory": "2.01",
       "french": "la construction",
       "chinese": "建筑，建造",
-      "example": "Ce bureau d’études est responsable de la construction du pont.",
+      "example": "La construction du nouveau pont facilitera les déplacements entre notre village et la gare.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-012",
+          "form": "pont"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-007",
@@ -127,13 +199,25 @@
       "subcategory": "2.01",
       "french": "construire",
       "chinese": "建筑，建造",
-      "example": "Mon oncle a construit lui-même sa maison.",
+      "example": "Les ouvriers apprennent à construire une maison avec des matériaux qui économisent l'énergie.",
       "part": "v.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-011",
+          "form": "ouvriers"
+        },
+        {
+          "id": "book-2.02-008",
+          "form": "énergie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-008",
@@ -141,13 +225,25 @@
       "subcategory": "2.01",
       "french": "la cour",
       "chinese": "院子，庭院",
-      "example": "Les enfants jouent dans la cour de l’école.",
+      "example": "Les enfants ont décoré la cour avec des fleurs pour accueillir leurs grands-parents.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "3.04-2",
+          "form": "fleurs"
+        },
+        {
+          "id": "book-1.03-012",
+          "form": "grands-parents"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-009",
@@ -155,13 +251,25 @@
       "subcategory": "2.01",
       "french": "l’entrée",
       "chinese": "入口",
-      "example": "Dans des grands magasins, il y a une entrée différente pour les clients et pour les employés.",
+      "example": "L'entrée de l'hôpital se trouve derrière la station de métro, près de la pharmacie.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-8.04-006",
+          "form": "hôpital"
+        },
+        {
+          "id": "book-4.03-019",
+          "form": "station"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-010",
@@ -169,13 +277,25 @@
       "subcategory": "2.01",
       "french": "établi, établie",
       "chinese": "已建立的，已开业的",
-      "example": "Ce boulanger est établi depuis maintenant deux ans et il a de nombreux clients.",
+      "example": "Un commerçant bien établi pourrait conseiller les jeunes qui ouvrent leur premier magasin.",
       "part": "part. passé / adj.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
-      "note": "根据例句补充“已开业的”。"
+      "note": "根据例句补充“已开业的”。",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-029",
+          "form": "commerçant"
+        },
+        {
+          "id": "6.01-1",
+          "form": "magasin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-011",
@@ -183,13 +303,25 @@
       "subcategory": "2.01",
       "french": "la fenêtre",
       "chinese": "窗子",
-      "example": "Je préfère les maisons avec de grandes fenêtres, car il fait plus clair dans les pièces.",
+      "example": "Ma sœur ouvre la fenêtre pour écouter les oiseaux avant de commencer son travail.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.04-4",
+          "form": "oiseaux"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-012",
@@ -197,13 +329,25 @@
       "subcategory": "2.01",
       "french": "fermer",
       "chinese": "关，关闭",
-      "example": "J’ai fermé la fenêtre avant de partir.",
+      "example": "Le gardien a fermé le portail après le départ du dernier visiteur.",
       "part": "v.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-036",
+          "form": "gardien"
+        },
+        {
+          "id": "book-13.01-044",
+          "form": "visiteur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-013",
@@ -211,13 +355,25 @@
       "subcategory": "2.01",
       "french": "isolé, isolée",
       "chinese": "孤立的，偏僻的",
-      "example": "Mon oncle habite dans une maison isolée au bord de la forêt.",
+      "example": "Cette maison isolée plaît aux touristes qui cherchent le calme au milieu de la forêt.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-029",
+          "form": "touristes"
+        },
+        {
+          "id": "book-3.02-008",
+          "form": "forêt"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-014",
@@ -225,13 +381,25 @@
       "subcategory": "2.01",
       "french": "le jardin",
       "chinese": "花园",
-      "example": "Chaque soir, mon grand-père s’occupe des fleurs de son jardin.",
+      "example": "Nous aménagerons le jardin pour que les enfants puissent jouer à l'ombre en été.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-3.03-012",
+          "form": "ombre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "2.01-1",
@@ -239,14 +407,26 @@
       "subcategory": "2.01",
       "french": "la maison",
       "chinese": "房子",
-      "example": "La maison dans laquelle nous habitons a trois étages.",
+      "example": "La maison de mon oncle accueille toute la famille pendant les vacances de printemps.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/mɛzɔ̃/"
+      "ipa": "/mɛzɔ̃/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-019",
+          "form": "oncle"
+        },
+        {
+          "id": "book-4.02-013",
+          "form": "vacances"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-016",
@@ -254,13 +434,25 @@
       "subcategory": "2.01",
       "french": "le mur",
       "chinese": "墙",
-      "example": "Mon père a peint les murs de ma chambre en bleu clair.",
+      "example": "Une ancienne photo de mariage était accrochée au mur derrière le fauteuil de ma grand-mère.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-031",
+          "form": "photo"
+        },
+        {
+          "id": "book-2.03-008",
+          "form": "fauteuil"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-017",
@@ -268,13 +460,25 @@
       "subcategory": "2.01",
       "french": "ouvrir",
       "chinese": "打开",
-      "example": "N’ouvre pas les fenêtres. Il pleut dehors.",
+      "example": "Le musée ouvre plus tôt le dimanche pour accueillir les familles avant la chaleur.",
       "part": "v.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        },
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-018",
@@ -282,13 +486,25 @@
       "subcategory": "2.01",
       "french": "le portail",
       "chinese": "大门，正门",
-      "example": "Tu ne peux pas garer ta voiture dans la cour, car je n’ai pas la clé du portail.",
+      "example": "Un livreur a laissé le paquet devant le portail malgré les aboiements du chien.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-038",
+          "form": "paquet"
+        },
+        {
+          "id": "book-3.04-009",
+          "form": "chien"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-019",
@@ -296,13 +512,25 @@
       "subcategory": "2.01",
       "french": "la porte",
       "chinese": "门",
-      "example": "Ça a sonné. Peux-tu ouvrir la porte, s’il te plaît ?",
+      "example": "Cette porte donne sur la cuisine, où ma mère prépare une tarte aux pommes.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-004",
+          "form": "cuisine"
+        },
+        {
+          "id": "book-5.02-031",
+          "form": "tarte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-020",
@@ -310,13 +538,25 @@
       "subcategory": "2.01",
       "french": "le rez-de-chaussée",
       "chinese": "底层，地面层",
-      "example": "Le bureau de Madame Guillemet se trouve au rez-de-chaussée.",
+      "example": "Nous choisirions le rez-de-chaussée pour éviter l'escalier avec la poussette du bébé.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“一楼”；法语指与地面齐平的一层，其上一层才是 premier étage。"
+      "note": "原书译“一楼”；法语指与地面齐平的一层，其上一层才是 premier étage。",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-007",
+          "form": "escalier"
+        },
+        {
+          "id": "book-1.03-031",
+          "form": "bébé"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-021",
@@ -324,13 +564,25 @@
       "subcategory": "2.01",
       "french": "la sonnette",
       "chinese": "门铃",
-      "example": "Pierre est devant la porte et appuie sur la sonnette, mais personne ne vient lui ouvrir.",
+      "example": "La sonnette réveille le chat chaque fois que le facteur apporte un colis.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 16,
       "pdfPage": 23,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-031",
+          "form": "chat"
+        },
+        {
+          "id": "book-7.02-008",
+          "form": "facteur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-022",
@@ -338,13 +590,25 @@
       "subcategory": "2.01",
       "french": "visiter",
       "chinese": "参观，看房",
-      "example": "Avant de louer cet appartement, nous l’avons visité deux fois.",
+      "example": "Nous visiterons le logement samedi avant de demander une copie du contrat.",
       "part": "v.",
       "level": "基础",
       "bookPage": 17,
       "pdfPage": 24,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-035",
+          "form": "logement"
+        },
+        {
+          "id": "book-11.03-028",
+          "form": "contrat"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-023",
@@ -352,13 +616,25 @@
       "subcategory": "2.01",
       "french": "le voisin, la voisine",
       "chinese": "邻居",
-      "example": "Nous avons fait la connaissance de nos nouveaux voisins, ils sont sympathiques.",
+      "example": "Notre voisine prête sa voiture aux étudiants quand ils doivent transporter un meuble.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 17,
       "pdfPage": 24,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-023",
+          "form": "voiture"
+        },
+        {
+          "id": "book-2.03-013",
+          "form": "meuble"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-024",
@@ -366,13 +642,25 @@
       "subcategory": "2.01",
       "french": "abriter",
       "chinese": "供……居住，容纳",
-      "example": "Cette ancienne ferme abrite plusieurs ateliers de peinture.",
+      "example": "La mairie a ouvert une salle pour abriter les familles touchées par les inondations.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 17,
       "pdfPage": 24,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        },
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-025",
@@ -380,13 +668,25 @@
       "subcategory": "2.01",
       "french": "bâtir",
       "chinese": "建造，盖",
-      "example": "Nos amis ont acheté un vaste terrain pour y bâtir une maison.",
+      "example": "Des artisans du village savent encore bâtir des murs avec la pierre locale.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 17,
       "pdfPage": 24,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.01-2",
+          "form": "village"
+        },
+        {
+          "id": "book-3.02-016",
+          "form": "pierre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-026",
@@ -394,13 +694,25 @@
       "subcategory": "2.01",
       "french": "la cave",
       "chinese": "地窖",
-      "example": "Pour le repas de Noël, mon père va chercher une bonne bouteille de vin à la cave.",
+      "example": "Mon grand-père conservait le vin dans la cave et les pommes dans le grenier.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 17,
       "pdfPage": 24,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-021",
+          "form": "vin"
+        },
+        {
+          "id": "5.01-4",
+          "form": "pommes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-027",
@@ -408,13 +720,25 @@
       "subcategory": "2.01",
       "french": "la cheminée",
       "chinese": "壁炉，烟囱",
-      "example": "L’hiver, nous faisons du feu dans la cheminée.",
+      "example": "Une petite flamme danse dans la cheminée pendant que nous préparons le dîner.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 17,
       "pdfPage": 24,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-042",
+          "form": "flamme"
+        },
+        {
+          "id": "book-5.02-046",
+          "form": "dîner"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-028",
@@ -422,13 +746,25 @@
       "subcategory": "2.01",
       "french": "claquer",
       "chinese": "使砰然作响",
-      "example": "Mon frère claque toujours la porte en sortant de la maison.",
+      "example": "Le courant d'air a fait claquer la porte et renversé le vase du couloir.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 17,
       "pdfPage": 24,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.03-001",
+          "form": "air"
+        },
+        {
+          "id": "book-2.01-019",
+          "form": "porte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-029",
@@ -436,13 +772,25 @@
       "subcategory": "2.01",
       "french": "la demeure",
       "chinese": "居所",
-      "example": "Lors de notre séjour à Nantes, nous avons visité l’ancienne demeure de Jules Verne.",
+      "example": "Cette ancienne demeure appartient à un écrivain qui invite parfois les élèves du village.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 17,
       "pdfPage": 24,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-003",
+          "form": "écrivain"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-030",
@@ -450,13 +798,25 @@
       "subcategory": "2.01",
       "french": "le domicile",
       "chinese": "住所",
-      "example": "Le domicile désigne le lieu où habite une personne.",
+      "example": "Un médecin pourrait se rendre à son domicile si sa fièvre l'empêchait de sortir.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 17,
       "pdfPage": 24,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        },
+        {
+          "id": "8.02-1",
+          "form": "fièvre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-031",
@@ -464,13 +824,25 @@
       "subcategory": "2.01",
       "french": "la façade",
       "chinese": "建筑物的正面，立面",
-      "example": "Des ouvriers sont venus nettoyer la façade de notre maison.",
+      "example": "Les ouvriers réparent la façade de l'école pendant que les élèves sont en vacances.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 17,
       "pdfPage": 24,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-011",
+          "form": "ouvriers"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-032",
@@ -478,13 +850,25 @@
       "subcategory": "2.01",
       "french": "le garage",
       "chinese": "车库",
-      "example": "Le garage est assez grand pour y mettre deux voitures.",
+      "example": "Mon père transformera le garage en atelier quand il aura vendu sa vieille voiture.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 17,
       "pdfPage": 24,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-022",
+          "form": "atelier"
+        },
+        {
+          "id": "book-4.04-023",
+          "form": "voiture"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-033",
@@ -492,13 +876,25 @@
       "subcategory": "2.01",
       "french": "l’immeuble",
       "chinese": "楼，楼房",
-      "example": "Ils habitent un appartement dans un immeuble de six étages.",
+      "example": "Dans cet immeuble, les habitants partagent une machine à laver et un petit jardin.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 17,
       "pdfPage": 24,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-034",
@@ -506,13 +902,25 @@
       "subcategory": "2.01",
       "french": "isoler",
       "chinese": "使隔热，隔离",
-      "example": "Il a bien isolé sa maison pour faire des économies de chauffage.",
+      "example": "Nous avons isolé le toit pour réduire la consommation de chauffage pendant l'hiver.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 17,
       "pdfPage": 24,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-045",
+          "form": "toit"
+        },
+        {
+          "id": "book-2.02-031",
+          "form": "chauffage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-035",
@@ -520,13 +928,25 @@
       "subcategory": "2.01",
       "french": "le logement",
       "chinese": "住房",
-      "example": "Aurélie cherche un logement à Paris, mais elle ne trouve pas.",
+      "example": "Ce logement convient à une famille qui souhaite vivre près des transports publics.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 17,
       "pdfPage": 24,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        },
+        {
+          "id": "book-4.03-020",
+          "form": "transports"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-036",
@@ -534,13 +954,25 @@
       "subcategory": "2.01",
       "french": "loger",
       "chinese": "住，住宿",
-      "example": "Le président russe loge à l’hôtel Adlon lorsqu’il est à Berlin.",
+      "example": "Les musiciens logeaient chez les habitants pendant le festival organisé chaque été.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 17,
       "pdfPage": 24,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "book-13.01-032",
+          "form": "festival"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-037",
@@ -548,13 +980,25 @@
       "subcategory": "2.01",
       "french": "louer",
       "chinese": "租，租用",
-      "example": "Il loue cet appartement depuis quatre mois, mais il n’a pas encore payé une seule fois le loyer.",
+      "example": "Ma tante préfère louer un vélo pour découvrir la ville sans chercher de parking.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 17,
       "pdfPage": 24,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "4.04-2",
+          "form": "vélo"
+        },
+        {
+          "id": "3.01-1",
+          "form": "ville"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-038",
@@ -562,13 +1006,25 @@
       "subcategory": "2.01",
       "french": "le palais",
       "chinese": "宫殿",
-      "example": "Cette maison est un véritable palais, elle est grande et très jolie.",
+      "example": "Le guide nous montrera les cuisines du palais après la visite du grand salon.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 17,
       "pdfPage": 24,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-020",
+          "form": "guide"
+        },
+        {
+          "id": "2.03-2",
+          "form": "salon"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-039",
@@ -576,13 +1032,25 @@
       "subcategory": "2.01",
       "french": "le palier",
       "chinese": "楼梯平台",
-      "example": "Son chat attend tous les soirs sur le palier qu’il revienne du travail.",
+      "example": "Ma voisine laisse ses chaussures sur le palier avant d'entrer dans son appartement.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 17,
       "pdfPage": 24,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-026",
+          "form": "chaussures"
+        },
+        {
+          "id": "2.01-2",
+          "form": "appartement"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-040",
@@ -590,13 +1058,25 @@
       "subcategory": "2.01",
       "french": "le pavillon",
       "chinese": "亭舍，亭子",
-      "example": "On a dormi dans le petit pavillon qui est situé à gauche du palais.",
+      "example": "Les visiteurs ont attendu sous le pavillon pendant que la pluie traversait le jardin.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 17,
       "pdfPage": 24,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "3.03-1",
+          "form": "pluie"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-041",
@@ -604,13 +1084,25 @@
       "subcategory": "2.01",
       "french": "le revêtement",
       "chinese": "饰面，砌面，覆盖层",
-      "example": "L’entreprise s’est spécialisée dans le revêtement en bois ou en métal des cheminées.",
+      "example": "Ce revêtement protège le mur de la cuisine contre l'humidité et les projections d'eau.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 17,
       "pdfPage": 24,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-016",
+          "form": "mur"
+        },
+        {
+          "id": "book-2.03-004",
+          "form": "cuisine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-042",
@@ -618,13 +1110,25 @@
       "subcategory": "2.01",
       "french": "le seuil",
       "chinese": "门槛",
-      "example": "Ne reste pas sur le seuil de la porte, entre.",
+      "example": "Un seuil trop haut gênerait les personnes qui se déplacent dans un fauteuil roulant.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-1.04-021",
+          "form": "personnes"
+        },
+        {
+          "id": "book-2.03-008",
+          "form": "fauteuil"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-043",
@@ -632,13 +1136,25 @@
       "subcategory": "2.01",
       "french": "le sous-sol",
       "chinese": "地下室，地下层",
-      "example": "Le sous-sol est la partie de la maison se trouvant au-dessous du rez-de-chaussée.",
+      "example": "Le sous-sol de la bibliothèque contient des journaux anciens et des cartes de la région.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        },
+        {
+          "id": "book-4.01-001",
+          "form": "cartes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-044",
@@ -646,13 +1162,25 @@
       "subcategory": "2.01",
       "french": "la terrasse",
       "chinese": "露台，露天咖啡座",
-      "example": "Après le dîner, nous prenons un café sur la terrasse du restaurant.",
+      "example": "Nous buvions notre café sur la terrasse avant de partir pour la plage.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-004",
+          "form": "café"
+        },
+        {
+          "id": "book-4.02-023",
+          "form": "plage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-045",
@@ -660,13 +1188,25 @@
       "subcategory": "2.01",
       "french": "le toit",
       "chinese": "屋顶",
-      "example": "Le toit est la surface qui recouvre le dessus d’une maison ou d’un bâtiment.",
+      "example": "Le toit du moulin offre un abri aux oiseaux quand le vent se lève.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-034",
+          "form": "moulin"
+        },
+        {
+          "id": "3.04-4",
+          "form": "oiseaux"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-046",
@@ -674,13 +1214,25 @@
       "subcategory": "2.01",
       "french": "la villa",
       "chinese": "别墅",
-      "example": "Cette villa est plus grande que notre maison.",
+      "example": "Cette villa accueillera les artistes invités pendant toute la durée de l'exposition.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-002",
+          "form": "artistes"
+        },
+        {
+          "id": "book-13.02-006",
+          "form": "exposition"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.01-047",
@@ -688,13 +1240,25 @@
       "subcategory": "2.01",
       "french": "le volet",
       "chinese": "百叶窗，窗板",
-      "example": "Il fait nuit. Peux-tu fermer les volets, s’il te plaît ?",
+      "example": "Mon père ferme les volets pour garder la fraîcheur dans la chambre pendant la journée.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-050",
+          "form": "fraîcheur"
+        },
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-001",
@@ -702,13 +1266,25 @@
       "subcategory": "2.02",
       "french": "l’allumette",
       "chinese": "火柴",
-      "example": "On peut allumer un feu avec des allumettes.",
+      "example": "J'ai trouvé une allumette sèche pour allumer la bougie après la coupure d'électricité.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-028",
+          "form": "bougie"
+        },
+        {
+          "id": "book-7.02-021",
+          "form": "électricité"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-002",
@@ -716,13 +1292,25 @@
       "subcategory": "2.02",
       "french": "boucher",
       "chinese": "堵住，塞住",
-      "example": "Peux-tu boucher la bouteille, s’il te plaît ?",
+      "example": "Les feuilles risquent de boucher le tuyau qui évacue l'eau de la terrasse.",
       "part": "v.",
       "level": "基础",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书中文误作“启开”，此处应为“堵住、塞住”。"
+      "note": "原书中文误作“启开”，此处应为“堵住、塞住”。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-014",
+          "form": "feuilles"
+        },
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-003",
@@ -730,13 +1318,25 @@
       "subcategory": "2.02",
       "french": "bouillir",
       "chinese": "煮沸，烧开",
-      "example": "On fait bouillir de l’eau pour se préparer un thé.",
+      "example": "Tu pourrais faire bouillir l'eau pendant que je prépare les tasses et le thé.",
       "part": "v.",
       "level": "基础",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "book-5.01-038",
+          "form": "thé"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-004",
@@ -744,13 +1344,25 @@
       "subcategory": "2.02",
       "french": "la chose",
       "chinese": "东西，物品",
-      "example": "Quelle est cette chose posée sur la table ?",
+      "example": "Cette chose fragile appartenait à ma grand-mère, alors je la garde dans une boîte.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-036",
+          "form": "grand-mère"
+        },
+        {
+          "id": "book-5.01-003",
+          "form": "boîte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-005",
@@ -758,13 +1370,25 @@
       "subcategory": "2.02",
       "french": "coudre",
       "chinese": "缝，缝纫",
-      "example": "Ma mère m’a appris à coudre un bouton.",
+      "example": "Ma mère cousait les rideaux pendant que mon père posait le parquet du salon.",
       "part": "v.",
       "level": "基础",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-043",
+          "form": "rideaux"
+        },
+        {
+          "id": "book-2.04-031",
+          "form": "parquet"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-006",
@@ -772,13 +1396,25 @@
       "subcategory": "2.02",
       "french": "les déchets",
       "chinese": "垃圾，废物",
-      "example": "De nombreuses personnes jettent leurs déchets en forêt.",
+      "example": "Les habitants trient leurs déchets pour préserver l'environnement et réduire la pollution du quartier.",
       "part": "n. m. pl.",
       "level": "基础",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-007",
+          "form": "environnement"
+        },
+        {
+          "id": "book-3.01-038",
+          "form": "pollution"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-007",
@@ -786,13 +1422,25 @@
       "subcategory": "2.02",
       "french": "éclairer",
       "chinese": "照亮，照明",
-      "example": "On a besoin de plus de lampes pour éclairer la salle.",
+      "example": "Une nouvelle lampe éclairera le sentier qui relie le parking à l'entrée de l'école.",
       "part": "v.",
       "level": "基础",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-010",
+          "form": "lampe"
+        },
+        {
+          "id": "book-3.01-040",
+          "form": "sentier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-008",
@@ -800,13 +1448,25 @@
       "subcategory": "2.02",
       "french": "l’énergie",
       "chinese": "能源，能量",
-      "example": "Le pétrole est une source d’énergie.",
+      "example": "Ce bâtiment consomme moins d'énergie depuis la rénovation de son système de chauffage.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-004",
+          "form": "bâtiment"
+        },
+        {
+          "id": "book-2.02-031",
+          "form": "chauffage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-009",
@@ -814,13 +1474,25 @@
       "subcategory": "2.02",
       "french": "étendre",
       "chinese": "铺开，摊开，晾晒",
-      "example": "L’été, on peut étendre les draps mouillés dehors.",
+      "example": "Nous avons étendu les draps dans le jardin avant le retour de la pluie.",
       "part": "v.",
       "level": "基础",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-038",
+          "form": "draps"
+        },
+        {
+          "id": "3.03-1",
+          "form": "pluie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-010",
@@ -828,13 +1500,25 @@
       "subcategory": "2.02",
       "french": "le feu",
       "chinese": "火",
-      "example": "Les feux de forêt en été menacent beaucoup de gens et leurs maisons.",
+      "example": "Le feu crépite doucement pendant que les voyageurs sèchent leurs vêtements près de la cheminée.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-016",
+          "form": "voyageurs"
+        },
+        {
+          "id": "book-2.01-027",
+          "form": "cheminée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-011",
@@ -842,13 +1526,25 @@
       "subcategory": "2.02",
       "french": "le foyer",
       "chinese": "家庭，住户",
-      "example": "45 % des foyers français souhaitent avoir plus de vacances.",
+      "example": "Chaque foyer recevrait une aide pour remplacer ses anciennes fenêtres et économiser l'énergie.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": "例句数字保留原书表述，未更新为现时统计。"
+      "note": "例句数字保留原书表述，未更新为现时统计。",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-011",
+          "form": "fenêtres"
+        },
+        {
+          "id": "book-2.02-008",
+          "form": "énergie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-012",
@@ -856,13 +1552,25 @@
       "subcategory": "2.02",
       "french": "inutile",
       "chinese": "没用的，无用的",
-      "example": "Il est inutile de nettoyer les fenêtres quand il pleut.",
+      "example": "Cet appareil inutile occupe toute la table alors que nous manquons déjà de place.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        },
+        {
+          "id": "book-3.01-014",
+          "form": "place"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-013",
@@ -870,13 +1578,25 @@
       "subcategory": "2.02",
       "french": "mouillé, mouillée",
       "chinese": "湿的",
-      "example": "Il est parti sous la pluie et l’orage, ses vêtements sont mouillés.",
+      "example": "Ses chaussures mouillées laissaient des traces sur le plancher fraîchement lavé de l'entrée.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-067",
+          "form": "traces"
+        },
+        {
+          "id": "book-2.03-041",
+          "form": "plancher"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-014",
@@ -884,13 +1604,25 @@
       "subcategory": "2.02",
       "french": "nettoyer",
       "chinese": "打扫，清洁",
-      "example": "Il a nettoyé la table avant de mettre le couvert.",
+      "example": "Mon frère nettoie son vélo dans la cour avant de le ranger au garage.",
       "part": "v.",
       "level": "基础",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "4.04-2",
+          "form": "vélo"
+        },
+        {
+          "id": "book-2.01-008",
+          "form": "cour"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-015",
@@ -898,13 +1630,25 @@
       "subcategory": "2.02",
       "french": "l’objet",
       "chinese": "物品，物件",
-      "example": "Aurélie a plein d’objets dans sa chambre.",
+      "example": "La restauratrice a retrouvé un objet précieux derrière un meuble de l'ancien palais.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-013",
+          "form": "meuble"
+        },
+        {
+          "id": "book-2.01-038",
+          "form": "palais"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-016",
@@ -912,13 +1656,25 @@
       "subcategory": "2.02",
       "french": "l’ordre",
       "chinese": "顺序，秩序，整齐",
-      "example": "J’ai mis de l’ordre dans mes affaires.",
+      "example": "Un peu d'ordre sur ton bureau t'aide à retrouver tes documents plus rapidement.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "11.03-1",
+          "form": "bureau"
+        },
+        {
+          "id": "book-7.01-006",
+          "form": "documents"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-017",
@@ -926,13 +1682,25 @@
       "subcategory": "2.02",
       "french": "pratique",
       "chinese": "方便的，实用的",
-      "example": "Cette cuisine entièrement équipée est très pratique.",
+      "example": "Cette sacoche pratique protégera ton ordinateur pendant les trajets en train.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.04-018",
+          "form": "ordinateur"
+        },
+        {
+          "id": "4.04-1",
+          "form": "train"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-018",
@@ -940,13 +1708,25 @@
       "subcategory": "2.02",
       "french": "la prise",
       "chinese": "插座",
-      "example": "Il y a trois prises électriques et une prise de téléphone dans la chambre.",
+      "example": "La prise se trouve sous la fenêtre, derrière la petite table de la cuisine.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 18,
       "pdfPage": 25,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-011",
+          "form": "fenêtre"
+        },
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-019",
@@ -954,13 +1734,25 @@
       "subcategory": "2.02",
       "french": "propre",
       "chinese": "干净的",
-      "example": "Pour que sa chambre soit propre, il la nettoie tous les dimanches.",
+      "example": "Les bénévoles ont laissé la plage propre après avoir ramassé les déchets du week-end.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-023",
+          "form": "plage"
+        },
+        {
+          "id": "book-2.02-006",
+          "form": "déchets"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-020",
@@ -968,13 +1760,25 @@
       "subcategory": "2.02",
       "french": "salir",
       "chinese": "弄脏",
-      "example": "L’enfant a sali son pantalon en jouant dans le jardin.",
+      "example": "Pour ne pas salir ses vêtements, l'apprenti porte un tablier dans l'atelier.",
       "part": "v.",
       "level": "基础",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-017",
+          "form": "vêtements"
+        },
+        {
+          "id": "book-11.03-022",
+          "form": "atelier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-021",
@@ -982,13 +1786,25 @@
       "subcategory": "2.02",
       "french": "le tuyau",
       "chinese": "管子，管道",
-      "example": "Un des tuyaux de la cuisine est percé, il y a de l’eau partout !",
+      "example": "Un plombier remplacerait ce tuyau avant que l'eau abîme le plafond du voisin.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "book-2.03-040",
+          "form": "plafond"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-022",
@@ -996,13 +1812,25 @@
       "subcategory": "2.02",
       "french": "utile",
       "chinese": "有用的",
-      "example": "Cet appareil vous sera utile pour faire des travaux dans la maison.",
+      "example": "Cette carte reste utile lorsque le téléphone ne capte aucun réseau dans la montagne.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.01-001",
+          "form": "carte"
+        },
+        {
+          "id": "book-13.04-051",
+          "form": "téléphone"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-023",
@@ -1010,13 +1838,25 @@
       "subcategory": "2.02",
       "french": "utiliser",
       "chinese": "使用",
-      "example": "Pierre a utilisé un produit chimique pour nettoyer la salle de bains.",
+      "example": "Les habitants utilisaient un puits pour arroser leurs jardins pendant les mois de sécheresse.",
       "part": "v.",
       "level": "基础",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-055",
+          "form": "puits"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardins"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-024",
@@ -1024,13 +1864,25 @@
       "subcategory": "2.02",
       "french": "allumer",
       "chinese": "点燃，点着，打开（灯）",
-      "example": "On ne peut pas allumer un feu avec du bois humide.",
+      "example": "J'allume la lampe pour lire la lettre que ma sœur vient d'envoyer.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-010",
+          "form": "lampe"
+        },
+        {
+          "id": "book-7.01-013",
+          "form": "lettre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-025",
@@ -1038,13 +1890,25 @@
       "subcategory": "2.02",
       "french": "arranger",
       "chinese": "摆放，整理",
-      "example": "Mon père a arrangé le salon à sa façon.",
+      "example": "Nous arrangerons les meubles pour laisser assez de place aux invités samedi soir.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-013",
+          "form": "meubles"
+        },
+        {
+          "id": "book-14.03-028",
+          "form": "invités"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-026",
@@ -1052,13 +1916,25 @@
       "subcategory": "2.02",
       "french": "la balance",
       "chinese": "秤，天平",
-      "example": "Il m’a demandé une balance pour pouvoir se peser.",
+      "example": "Le boulanger vérifie le poids du pain sur sa balance avant d'annoncer le prix.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        },
+        {
+          "id": "6.02-1",
+          "form": "prix"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-027",
@@ -1066,13 +1942,25 @@
       "subcategory": "2.02",
       "french": "le barreau",
       "chinese": "小棍，小棒，梯级横档",
-      "example": "Un barreau de l’échelle est cassé.",
+      "example": "Un barreau de l'échelle a cassé pendant que le peintre réparait le plafond.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-039",
+          "form": "échelle"
+        },
+        {
+          "id": "book-2.03-040",
+          "form": "plafond"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-028",
@@ -1080,13 +1968,25 @@
       "subcategory": "2.02",
       "french": "la bougie",
       "chinese": "蜡烛",
-      "example": "J’ai acheté des bougies pour mettre sur le gâteau d’anniversaire.",
+      "example": "La bougie éclaire les visages autour de la table pendant la panne de courant.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-8.01-035",
+          "form": "visages"
+        },
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-029",
@@ -1094,13 +1994,25 @@
       "subcategory": "2.02",
       "french": "la brosse",
       "chinese": "刷子",
-      "example": "J’ai cherché ma brosse à cheveux partout. Elle était tombée sous le lit.",
+      "example": "Une brosse souple enlèverait la poussière sans abîmer le cuir de tes chaussures.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-058",
+          "form": "poussière"
+        },
+        {
+          "id": "book-2.04-023",
+          "form": "cuir"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-030",
@@ -1108,13 +2020,25 @@
       "subcategory": "2.02",
       "french": "le carreau",
       "chinese": "方砖；窗玻璃",
-      "example": "J’ai lavé les carreaux de la cuisine.",
+      "example": "Un carreau cassé laisse entrer le froid dans la petite chambre du fond.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“方砖”；此词也可指窗玻璃，例句未限定具体所指。"
+      "note": "原书译“方砖”；此词也可指窗玻璃，例句未限定具体所指。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.03-007",
+          "form": "froid"
+        },
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-031",
@@ -1122,13 +2046,25 @@
       "subcategory": "2.02",
       "french": "le chauffage",
       "chinese": "供暖",
-      "example": "L’été, nous n’avons pas besoin de chauffage dans la maison.",
+      "example": "Le chauffage fonctionnait mal, alors les enfants gardaient leurs manteaux à l'intérieur.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-6.03-044",
+          "form": "manteaux"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-032",
@@ -1136,13 +2072,25 @@
       "subcategory": "2.02",
       "french": "chauffer",
       "chinese": "加热，给……供暖",
-      "example": "En hiver, je ne chauffe que le salon et la salle de bains.",
+      "example": "Ce petit appareil suffit à chauffer la pièce quand nous travaillons à la maison.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.04-003",
+          "form": "appareil"
+        },
+        {
+          "id": "book-2.03-016",
+          "form": "pièce"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-033",
@@ -1150,13 +2098,25 @@
       "subcategory": "2.02",
       "french": "le chiffon",
       "chinese": "抹布",
-      "example": "Je fais la poussière avec un chiffon.",
+      "example": "J'ai passé un chiffon humide sur la table avant de servir le repas.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-034",
@@ -1164,13 +2124,25 @@
       "subcategory": "2.02",
       "french": "la clé",
       "chinese": "钥匙",
-      "example": "Pourriez-vous m’ouvrir la porte ? J’ai oublié ma clé.",
+      "example": "La clé du garage reste dans le tiroir près de la porte d'entrée.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-032",
+          "form": "garage"
+        },
+        {
+          "id": "book-2.01-019",
+          "form": "porte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-035",
@@ -1178,13 +2150,25 @@
       "subcategory": "2.02",
       "french": "débarrasser",
       "chinese": "清理，收拾",
-      "example": "Après avoir débarrassé la table, nous pouvons regarder la télévision.",
+      "example": "Les enfants débarrasseront la table pendant que leur père préparera les fruits du dessert.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        },
+        {
+          "id": "book-5.01-009",
+          "form": "fruits"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-036",
@@ -1192,13 +2176,25 @@
       "subcategory": "2.02",
       "french": "le désordre",
       "chinese": "杂乱，无序",
-      "example": "La chambre de mon fils est toujours en désordre.",
+      "example": "Le désordre dans cette chambre empêche ma sœur de retrouver sa valise.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        },
+        {
+          "id": "4.02-4",
+          "form": "valise"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-037",
@@ -1206,13 +2202,25 @@
       "subcategory": "2.02",
       "french": "domestique",
       "chinese": "家庭的，家务的",
-      "example": "À la maison, c’est ma mère qui s’occupe des travaux domestiques.",
+      "example": "Nous avons réparti les tâches domestiques pour garder du temps pour nos loisirs.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-16.01-022",
+          "form": "temps"
+        },
+        {
+          "id": "1.06-1",
+          "form": "loisirs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-038",
@@ -1220,13 +2228,25 @@
       "subcategory": "2.02",
       "french": "le drap",
       "chinese": "床单",
-      "example": "J’ai changé les draps de mon lit.",
+      "example": "Ce drap en coton sèche rapidement quand je le suspends au soleil.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.04-021",
+          "form": "coton"
+        },
+        {
+          "id": "3.03-2",
+          "form": "soleil"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-039",
@@ -1234,13 +2254,25 @@
       "subcategory": "2.02",
       "french": "l’échelle",
       "chinese": "梯子",
-      "example": "Même avec une échelle, je suis trop petite pour atteindre le plafond.",
+      "example": "Une échelle plus longue permettrait au jardinier d'atteindre les branches de l'arbre près de la maison.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-006",
+          "form": "branches"
+        },
+        {
+          "id": "3.04-1",
+          "form": "arbre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-040",
@@ -1248,13 +2280,25 @@
       "subcategory": "2.02",
       "french": "l’éclairage",
       "chinese": "照明",
-      "example": "L’éclairage n’est pas assez fort dans le salon, je ne peux ni lire ni écrire.",
+      "example": "L'éclairage de ce carrefour rassure les passants qui rentrent à pied après le travail.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 19,
       "pdfPage": 26,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-013",
+          "form": "passants"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-041",
@@ -1262,13 +2306,25 @@
       "subcategory": "2.02",
       "french": "éteindre",
       "chinese": "熄灭，关掉",
-      "example": "Il est sorti de la pièce et a oublié d’éteindre la lumière.",
+      "example": "Mon père éteignait toujours la lumière avant de quitter son bureau le soir.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-010",
+          "form": "lumière"
+        },
+        {
+          "id": "11.03-1",
+          "form": "bureau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-042",
@@ -1276,13 +2332,25 @@
       "subcategory": "2.02",
       "french": "la flamme",
       "chinese": "火，火焰",
-      "example": "Il s’est brûlé avec la flamme de la bougie.",
+      "example": "La flamme de la bougie vacille lorsque quelqu'un ouvre la fenêtre de la chambre.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-028",
+          "form": "bougie"
+        },
+        {
+          "id": "book-2.01-011",
+          "form": "fenêtre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-043",
@@ -1290,13 +2358,25 @@
       "subcategory": "2.02",
       "french": "fonctionnel, fonctionnelle",
       "chinese": "实用的，功能的",
-      "example": "La cuisine de mes parents est grande et fonctionnelle.",
+      "example": "Ce meuble fonctionnel réunira les livres et les jouets dans un coin du salon.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-013",
+          "form": "meuble"
+        },
+        {
+          "id": "2.03-2",
+          "form": "salon"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-044",
@@ -1304,13 +2384,25 @@
       "subcategory": "2.02",
       "french": "fumer",
       "chinese": "冒烟",
-      "example": "La cheminée du salon fume.",
+      "example": "La cheminée fume dès que le vent souffle vers la façade de la maison.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.03-3",
+          "form": "vent"
+        },
+        {
+          "id": "2.01-1",
+          "form": "maison"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-045",
@@ -1318,13 +2410,25 @@
       "subcategory": "2.02",
       "french": "l’incendie",
       "chinese": "火灾",
-      "example": "L’incendie qui a détruit leur maison a été causé par une bougie oubliée.",
+      "example": "L'incendie a détruit le toit du hangar, mais les pompiers ont protégé les maisons voisines.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-045",
+          "form": "toit"
+        },
+        {
+          "id": "2.01-1",
+          "form": "maisons"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-046",
@@ -1332,13 +2436,25 @@
       "subcategory": "2.02",
       "french": "la lame",
       "chinese": "刀片，薄片",
-      "example": "Ce couteau a une grande lame.",
+      "example": "La lame de ce couteau coupe facilement le pain même quand la croûte est épaisse.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-044",
+          "form": "couteau"
+        },
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-047",
@@ -1346,13 +2462,25 @@
       "subcategory": "2.02",
       "french": "laver",
       "chinese": "洗",
-      "example": "Ma mère lave le linge une fois par semaine.",
+      "example": "Tu pourrais laver les légumes pendant que je prépare la soupe pour ce soir.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-012",
+          "form": "légumes"
+        },
+        {
+          "id": "book-5.02-029",
+          "form": "soupe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-048",
@@ -1360,13 +2488,25 @@
       "subcategory": "2.02",
       "french": "la mèche",
       "chinese": "烛芯，灯芯",
-      "example": "J’ai allumé la mèche de la bougie.",
+      "example": "La mèche de la bougie doit rester droite pour que la flamme éclaire régulièrement.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-028",
+          "form": "bougie"
+        },
+        {
+          "id": "book-2.02-042",
+          "form": "flamme"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-049",
@@ -1374,13 +2514,25 @@
       "subcategory": "2.02",
       "french": "le ménage",
       "chinese": "家务",
-      "example": "Mon frère n’aime pas faire le ménage.",
+      "example": "Nous faisions le ménage le vendredi avant l'arrivée des enfants pour le week-end.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-16.02-057",
+          "form": "vendredi"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-050",
@@ -1388,13 +2540,25 @@
       "subcategory": "2.02",
       "french": "le montage",
       "chinese": "安装，装配",
-      "example": "Le montage de cet appareil est simple.",
+      "example": "Le montage de cette armoire demande deux personnes et quelques outils très simples.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "2.03-3",
+          "form": "armoire"
+        },
+        {
+          "id": "book-2.02-052",
+          "form": "outils"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-051",
@@ -1402,13 +2566,25 @@
       "subcategory": "2.02",
       "french": "la nappe",
       "chinese": "桌布",
-      "example": "Ma grand-mère n’a que des nappes à fleurs.",
+      "example": "Je sortirai la nappe blanche pour le dîner organisé en l'honneur de notre grand-mère.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-046",
+          "form": "dîner"
+        },
+        {
+          "id": "book-1.03-036",
+          "form": "grand-mère"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-052",
@@ -1416,13 +2592,25 @@
       "subcategory": "2.02",
       "french": "l’outil",
       "chinese": "工具",
-      "example": "Il est venu avec sa boîte à outils pour réparer ma voiture.",
+      "example": "Cet outil permet de réparer la roue du vélo sans abîmer le pneu.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-042",
+          "form": "roue"
+        },
+        {
+          "id": "4.04-2",
+          "form": "vélo"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-053",
@@ -1430,13 +2618,25 @@
       "subcategory": "2.02",
       "french": "percer",
       "chinese": "钻，打孔",
-      "example": "Il a percé un trou dans le mur pour pouvoir y accrocher un miroir.",
+      "example": "Le menuisier a percé la planche avant de fixer l'étagère au mur.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-054",
+          "form": "planche"
+        },
+        {
+          "id": "book-2.01-016",
+          "form": "mur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-054",
@@ -1444,13 +2644,25 @@
       "subcategory": "2.02",
       "french": "la planche",
       "chinese": "木板",
-      "example": "Il a réparé le banc avec une planche.",
+      "example": "Une planche protège le sol quand mon frère peint les portes de la cuisine.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-021",
+          "form": "sol"
+        },
+        {
+          "id": "book-2.01-019",
+          "form": "portes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-055",
@@ -1458,13 +2670,25 @@
       "subcategory": "2.02",
       "french": "la poignée",
       "chinese": "把手，拉手",
-      "example": "La poignée de la porte est cassée.",
+      "example": "Une poignée plus basse faciliterait l'accès des enfants à la salle de jeux.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-056",
@@ -1472,13 +2696,25 @@
       "subcategory": "2.02",
       "french": "le pot",
       "chinese": "盆，瓶，罐",
-      "example": "Elle a posé un pot de fleurs sur son balcon.",
+      "example": "Ce pot contient du miel produit par les abeilles de la ferme voisine.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-029",
+          "form": "miel"
+        },
+        {
+          "id": "book-3.04-001",
+          "form": "abeilles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-057",
@@ -1486,13 +2722,25 @@
       "subcategory": "2.02",
       "french": "la poudre",
       "chinese": "粉末",
-      "example": "Il met du sucre en poudre dans son yaourt.",
+      "example": "Le boulanger ajoutait la poudre de noix à la pâte avant de former les biscuits.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-013",
+          "form": "noix"
+        },
+        {
+          "id": "book-5.01-015",
+          "form": "pâte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-058",
@@ -1500,13 +2748,25 @@
       "subcategory": "2.02",
       "french": "la poussière",
       "chinese": "灰尘，尘土",
-      "example": "À cause d’un chantier en face de notre maison, nous avons de la poussière partout.",
+      "example": "La poussière couvre les livres que personne ne prend sur ce rayon trop haut.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-014",
+          "form": "livres"
+        },
+        {
+          "id": "book-2.03-042",
+          "form": "rayon"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "2.02-4",
@@ -1514,14 +2774,26 @@
       "subcategory": "2.02",
       "french": "ranger",
       "chinese": "整理",
-      "example": "Nous devons ranger nos affaires avant que nos parents arrivent.",
+      "example": "Range tes outils dans cette boîte après avoir terminé la réparation du vélo.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/ʁɑ̃ʒe/"
+      "ipa": "/ʁɑ̃ʒe/",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-052",
+          "form": "outils"
+        },
+        {
+          "id": "book-5.01-003",
+          "form": "boîte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-060",
@@ -1529,13 +2801,25 @@
       "subcategory": "2.02",
       "french": "répandre",
       "chinese": "洒，使溅出，散布",
-      "example": "J’ai fait tomber mon verre, le vin s’est répandu sur le tapis.",
+      "example": "La bouteille risque de répandre son huile sur les vêtements si le bouchon reste ouvert.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-027",
+          "form": "huile"
+        },
+        {
+          "id": "book-6.03-017",
+          "form": "vêtements"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-061",
@@ -1543,13 +2827,25 @@
       "subcategory": "2.02",
       "french": "le réveil",
       "chinese": "闹钟",
-      "example": "Mon réveil sonne tous les matins à huit heures.",
+      "example": "Mon réveil n'a pas sonné, et j'ai manqué le train qui m'emmenait au bureau.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "4.04-1",
+          "form": "train"
+        },
+        {
+          "id": "11.03-1",
+          "form": "bureau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-062",
@@ -1557,13 +2853,25 @@
       "subcategory": "2.02",
       "french": "le rouleau",
       "chinese": "滚筒，滚柱，擀面杖",
-      "example": "Aurélie a besoin d’un rouleau pour pouvoir étaler la pâte.",
+      "example": "Ma mère étale la pâte avec un rouleau avant de préparer sa tarte.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": "根据例句补充“擀面杖”。"
+      "note": "根据例句补充“擀面杖”。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-015",
+          "form": "pâte"
+        },
+        {
+          "id": "book-5.02-031",
+          "form": "tarte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-063",
@@ -1571,13 +2879,25 @@
       "subcategory": "2.02",
       "french": "sale",
       "chinese": "脏的",
-      "example": "La table est sale. Peux-tu la nettoyer ?",
+      "example": "Une serviette sale devrait aller dans le panier plutôt que sur la table.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-065",
+          "form": "serviette"
+        },
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-064",
@@ -1585,13 +2905,25 @@
       "subcategory": "2.02",
       "french": "sécher",
       "chinese": "使干，干燥",
-      "example": "L’été, j’étends mes vêtements dans le jardin pour qu’ils sèchent plus vite.",
+      "example": "Les enfants laissent sécher leurs chaussures près de la cheminée après la promenade.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-026",
+          "form": "chaussures"
+        },
+        {
+          "id": "book-2.01-027",
+          "form": "cheminée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-065",
@@ -1599,13 +2931,25 @@
       "subcategory": "2.02",
       "french": "la serviette",
       "chinese": "餐巾",
-      "example": "As-tu pensé à mettre des serviettes sur la table ?",
+      "example": "La serveuse pliait une serviette pour chaque invité avant d'ouvrir la salle du restaurant.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-14.03-028",
+          "form": "invité"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-066",
@@ -1613,13 +2957,25 @@
       "subcategory": "2.02",
       "french": "la tache",
       "chinese": "污点，污渍",
-      "example": "Mon pantalon est sale, il a plein de taches.",
+      "example": "Cette tache de café résiste au lavage et se voit encore sur ma chemise.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-004",
+          "form": "café"
+        },
+        {
+          "id": "6.03-1",
+          "form": "chemise"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-067",
@@ -1627,13 +2983,25 @@
       "subcategory": "2.02",
       "french": "l’utilisation",
       "chinese": "使用",
-      "example": "L’utilisation de ce produit chimique est dangereuse pour la santé.",
+      "example": "Le vendeur a expliqué l'utilisation de l'appareil à ma grand-mère avec beaucoup de patience.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.04-003",
+          "form": "appareil"
+        },
+        {
+          "id": "book-1.05-050",
+          "form": "patience"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.02-068",
@@ -1641,13 +3009,25 @@
       "subcategory": "2.02",
       "french": "la vapeur",
       "chinese": "蒸汽",
-      "example": "Quand l’eau bout, il y a de la vapeur.",
+      "example": "La vapeur s'échappe de la casserole lorsque je soulève le couvercle pour goûter la soupe.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 20,
       "pdfPage": 27,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-009",
+          "form": "casserole"
+        },
+        {
+          "id": "book-5.02-029",
+          "form": "soupe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-001",
@@ -1655,13 +3035,25 @@
       "subcategory": "2.03",
       "french": "l’application",
       "chinese": "涂漆，涂抹",
-      "example": "Il faut attendre six heures avant l’application de la seconde couche de peinture.",
+      "example": "L'application de cette peinture protégera le bois des volets contre la pluie.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "2.04-1",
+          "form": "bois"
+        },
+        {
+          "id": "3.03-1",
+          "form": "pluie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-002",
@@ -1669,13 +3061,25 @@
       "subcategory": "2.03",
       "french": "le bain",
       "chinese": "洗澡，沐浴",
-      "example": "Pour me reposer d’une longue journée de travail, je prends un bain bien chaud.",
+      "example": "Après son bain, le bébé s'endort dans les bras de sa mère.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-031",
+          "form": "bébé"
+        },
+        {
+          "id": "book-1.03-016",
+          "form": "mère"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "2.03-1",
@@ -1683,14 +3087,26 @@
       "subcategory": "2.03",
       "french": "la chambre",
       "chinese": "房间，卧室",
-      "example": "Je partage ma chambre avec ma petite sœur.",
+      "example": "Nous avons installé un bureau dans la chambre pour permettre à notre fille d'y étudier.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/ʃɑ̃bʁ/"
+      "ipa": "/ʃɑ̃bʁ/",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "11.03-1",
+          "form": "bureau"
+        },
+        {
+          "id": "book-10.03-005",
+          "form": "étudier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-004",
@@ -1698,13 +3114,25 @@
       "subcategory": "2.03",
       "french": "la cuisine",
       "chinese": "厨房",
-      "example": "On prépare le repas dans une cuisine.",
+      "example": "La cuisine donne sur le jardin, où mon père cultive les légumes du dîner.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "book-5.01-012",
+          "form": "légumes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-005",
@@ -1712,13 +3140,25 @@
       "subcategory": "2.03",
       "french": "la douche",
       "chinese": "淋浴",
-      "example": "Le matin je me lève, prends une douche et pars au travail.",
+      "example": "Une douche courte économiserait davantage d'eau qu'un bain, surtout pendant la sécheresse.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "book-2.03-002",
+          "form": "bain"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-006",
@@ -1726,13 +3166,25 @@
       "subcategory": "2.03",
       "french": "l’équipement",
       "chinese": "设备",
-      "example": "Aurélie veut acheter un nouvel équipement pour sa cuisine.",
+      "example": "L'équipement de la salle permet aux élèves de réaliser des expériences de chimie.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-007",
@@ -1740,13 +3192,25 @@
       "subcategory": "2.03",
       "french": "l’escalier",
       "chinese": "楼梯",
-      "example": "Il n’aime pas les ascenseurs, il préfère monter l’escalier.",
+      "example": "L'escalier grinçait sous nos pas quand nous montions les valises jusqu'au dernier étage.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "4.02-4",
+          "form": "valises"
+        },
+        {
+          "id": "book-2.03-035",
+          "form": "étage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-008",
@@ -1754,13 +3218,25 @@
       "subcategory": "2.03",
       "french": "le fauteuil",
       "chinese": "扶手椅",
-      "example": "Dans le salon, nous avons trois fauteuils en cuir.",
+      "example": "Ma grand-mère lit son journal dans le fauteuil placé près de la cheminée.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-008",
+          "form": "journal"
+        },
+        {
+          "id": "book-2.01-027",
+          "form": "cheminée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-009",
@@ -1768,13 +3244,25 @@
       "subcategory": "2.03",
       "french": "fixer",
       "chinese": "固定",
-      "example": "Il a fixé le miroir sur le mur.",
+      "example": "L'artisan fixera la planche au mur pour créer une étagère au-dessus du bureau.",
       "part": "v.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-054",
+          "form": "planche"
+        },
+        {
+          "id": "book-2.01-016",
+          "form": "mur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-010",
@@ -1782,13 +3270,25 @@
       "subcategory": "2.03",
       "french": "la lampe",
       "chinese": "灯",
-      "example": "Il a oublié d’éteindre la lampe.",
+      "example": "Cette lampe éclaire mon cahier sans empêcher ma sœur de dormir dans son lit.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.01-029",
+          "form": "cahier"
+        },
+        {
+          "id": "book-2.03-011",
+          "form": "lit"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-011",
@@ -1796,13 +3296,25 @@
       "subcategory": "2.03",
       "french": "le lit",
       "chinese": "床",
-      "example": "Une fois au lit, je m’endors tout de suite.",
+      "example": "Nous avons déplacé le lit pour laisser passer le fauteuil de mon grand-père dans la chambre.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-037",
+          "form": "grand-père"
+        },
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-012",
@@ -1810,13 +3322,25 @@
       "subcategory": "2.03",
       "french": "la marche",
       "chinese": "台阶",
-      "example": "Cet escalier a onze marches.",
+      "example": "Une marche abîmée devant la porte risque de faire tomber les visiteurs distraits.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": "此处为“台阶”义；第一单元同形词为“走路、行程”义。"
+      "note": "此处为“台阶”义；第一单元同形词为“走路、行程”义。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-019",
+          "form": "porte"
+        },
+        {
+          "id": "book-13.01-044",
+          "form": "visiteurs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-013",
@@ -1824,13 +3348,25 @@
       "subcategory": "2.03",
       "french": "le meuble",
       "chinese": "家具",
-      "example": "La table, les chaises et les fauteuils sont des meubles.",
+      "example": "Un artisan pourrait fabriquer ce meuble avec le bois récupéré dans notre garage.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-023",
+          "form": "artisan"
+        },
+        {
+          "id": "2.04-1",
+          "form": "bois"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-014",
@@ -1838,13 +3374,25 @@
       "subcategory": "2.03",
       "french": "meubler",
       "chinese": "用家具布置",
-      "example": "Son appartement est bien meublé.",
+      "example": "Ils préfèrent meubler leur appartement avec des objets trouvés au marché du dimanche.",
       "part": "v.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "2.01-2",
+          "form": "appartement"
+        },
+        {
+          "id": "book-3.01-012",
+          "form": "marché"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-015",
@@ -1852,13 +3400,25 @@
       "subcategory": "2.03",
       "french": "la paroi",
       "chinese": "隔墙，隔板",
-      "example": "Ces deux pièces sont séparées par une fine paroi.",
+      "example": "Une paroi de verre séparait le bureau de la grande salle de réunion.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-035",
+          "form": "verre"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-016",
@@ -1866,13 +3426,25 @@
       "subcategory": "2.03",
       "french": "la pièce",
       "chinese": "房间",
-      "example": "L’appartement comporte quatre pièces.",
+      "example": "Cette pièce accueille les enfants qui attendent leurs parents après le cours de musique.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-10.02-005",
+          "form": "cours"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-017",
@@ -1880,13 +3452,25 @@
       "subcategory": "2.03",
       "french": "placer",
       "chinese": "放，放置",
-      "example": "J’ai placé mon stylo sur le bureau.",
+      "example": "Placez le miroir face à la fenêtre pour éclairer davantage le fond du couloir.",
       "part": "v.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-038",
+          "form": "miroir"
+        },
+        {
+          "id": "book-2.01-011",
+          "form": "fenêtre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-018",
@@ -1894,13 +3478,25 @@
       "subcategory": "2.03",
       "french": "recouvrir",
       "chinese": "重新覆盖，覆盖",
-      "example": "Je recouvre le mur d’un nouveau papier peint.",
+      "example": "Il faut recouvrir le sol avant de repeindre les murs de la chambre.",
       "part": "v.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-021",
+          "form": "sol"
+        },
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-019",
@@ -1908,13 +3504,25 @@
       "subcategory": "2.03",
       "french": "le robinet",
       "chinese": "水龙头",
-      "example": "J’ai oublié de fermer le robinet, il y a de l’eau partout.",
+      "example": "Le robinet a fui toute la nuit et mouillé le plancher devant la baignoire.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-030",
+          "form": "nuit"
+        },
+        {
+          "id": "book-2.03-041",
+          "form": "plancher"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-020",
@@ -1922,13 +3530,25 @@
       "subcategory": "2.03",
       "french": "la salle",
       "chinese": "厅，室",
-      "example": "Cette salle est grande et confortable.",
+      "example": "La salle reste ouverte aux habitants qui souhaitent préparer la fête du quartier.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "book-13.01-008",
+          "form": "fête"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-021",
@@ -1936,13 +3556,25 @@
       "subcategory": "2.03",
       "french": "la salle de bains",
       "chinese": "浴室，洗澡间",
-      "example": "La maison est équipée de deux salles de bains.",
+      "example": "Une fenêtre dans la salle de bains réduirait l'humidité après la douche.",
       "part": "loc. n. f.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-011",
+          "form": "fenêtre"
+        },
+        {
+          "id": "book-2.03-005",
+          "form": "douche"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-022",
@@ -1950,13 +3582,25 @@
       "subcategory": "2.03",
       "french": "la salle de séjour",
       "chinese": "起居室",
-      "example": "Nous mangeons dans la salle de séjour.",
+      "example": "La salle de séjour sert aussi de bureau quand les enfants sont à l'école.",
       "part": "loc. n. f.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "11.03-1",
+          "form": "bureau"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "2.03-2",
@@ -1964,14 +3608,26 @@
       "subcategory": "2.03",
       "french": "le salon",
       "chinese": "客厅",
-      "example": "Ils regardent la télévision dans le salon.",
+      "example": "Nous écoutions de la musique dans le salon pendant que la neige tombait dehors.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/salɔ̃/"
+      "ipa": "/salɔ̃/",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-011",
+          "form": "musique"
+        },
+        {
+          "id": "book-3.03-010",
+          "form": "neige"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-024",
@@ -1979,13 +3635,25 @@
       "subcategory": "2.03",
       "french": "la table",
       "chinese": "桌子",
-      "example": "Mes parents ont acheté une nouvelle table pour la salle à manger.",
+      "example": "Cette table en bois porte encore les traces des premiers dessins de mon fils.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "2.04-1",
+          "form": "bois"
+        },
+        {
+          "id": "book-13.02-018",
+          "form": "dessins"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-025",
@@ -1993,13 +3661,25 @@
       "subcategory": "2.03",
       "french": "l’aménagement",
       "chinese": "布置",
-      "example": "L’aménagement de cette pièce a duré toute une journée.",
+      "example": "L'aménagement du jardin a créé un passage accessible aux personnes en fauteuil roulant.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "book-1.04-021",
+          "form": "personnes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-026",
@@ -2007,13 +3687,25 @@
       "subcategory": "2.03",
       "french": "aménager",
       "chinese": "布置",
-      "example": "Mon frère trouve que j’ai bien aménagé ma chambre.",
+      "example": "Nous souhaitons aménager une chambre d'amis dans le grenier après les travaux du toit.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 21,
       "pdfPage": 28,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        },
+        {
+          "id": "book-2.01-045",
+          "form": "toit"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "2.03-3",
@@ -2021,14 +3713,26 @@
       "subcategory": "2.03",
       "french": "l’armoire",
       "chinese": "衣柜，壁橱",
-      "example": "Je range mes vêtements dans l’armoire de ma chambre.",
+      "example": "L'armoire accueillera les draps et les couvertures que nous gardons pour nos invités.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/aʁmwaʁ/"
+      "ipa": "/aʁmwaʁ/",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-038",
+          "form": "draps"
+        },
+        {
+          "id": "book-6.03-031",
+          "form": "couvertures"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-028",
@@ -2036,13 +3740,25 @@
       "subcategory": "2.03",
       "french": "le banc",
       "chinese": "长凳",
-      "example": "Il s’est assis sur un banc.",
+      "example": "Deux voisins discutent sur le banc pendant que leurs enfants jouent au ballon.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-023",
+          "form": "voisins"
+        },
+        {
+          "id": "book-13.06-014",
+          "form": "ballon"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-029",
@@ -2050,13 +3766,25 @@
       "subcategory": "2.03",
       "french": "la chaise",
       "chinese": "椅子",
-      "example": "Il vient d’acheter une table et quatre chaises pour la salle de séjour.",
+      "example": "Ma fille a rapproché sa chaise de la table pour aider à préparer le gâteau.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        },
+        {
+          "id": "book-5.02-018",
+          "form": "gâteau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-030",
@@ -2064,13 +3792,25 @@
       "subcategory": "2.03",
       "french": "le confort",
       "chinese": "舒服，舒适",
-      "example": "Mon oncle tient beaucoup à son confort.",
+      "example": "Le confort de ce train permet aux voyageurs de travailler pendant le trajet.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "4.04-1",
+          "form": "train"
+        },
+        {
+          "id": "book-4.02-016",
+          "form": "voyageurs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-031",
@@ -2078,13 +3818,25 @@
       "subcategory": "2.03",
       "french": "le couloir",
       "chinese": "走廊",
-      "example": "Le couloir de l’entrée est sombre.",
+      "example": "Un tapis dans le couloir atténuerait le bruit des pas lorsque les enfants courent.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-044",
+          "form": "tapis"
+        },
+        {
+          "id": "book-9.01-003",
+          "form": "bruit"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-032",
@@ -2092,13 +3844,25 @@
       "subcategory": "2.03",
       "french": "couvert, couverte",
       "chinese": "被覆盖的",
-      "example": "La table est couverte de livres.",
+      "example": "Le fauteuil est couvert de poils depuis que le chat y passe ses après-midi.",
       "part": "part. passé / adj.",
       "level": "进阶",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-8.01-029",
+          "form": "poils"
+        },
+        {
+          "id": "book-3.04-031",
+          "form": "chat"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-033",
@@ -2106,13 +3870,25 @@
       "subcategory": "2.03",
       "french": "la décoration",
       "chinese": "装饰，装修",
-      "example": "Ma sœur s’occupe de la décoration de notre chambre.",
+      "example": "La décoration de la salle rappelait la mer avec ses couleurs bleues et ses coquillages.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        },
+        {
+          "id": "book-3.02-011",
+          "form": "mer"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-034",
@@ -2120,13 +3896,25 @@
       "subcategory": "2.03",
       "french": "équiper",
       "chinese": "装备，配备",
-      "example": "Cette maison est équipée d’une grande cuisine.",
+      "example": "La commune veut équiper la bibliothèque pour accueillir les lecteurs ayant des problèmes de vue.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        },
+        {
+          "id": "book-9.01-025",
+          "form": "vue"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-035",
@@ -2134,13 +3922,25 @@
       "subcategory": "2.03",
       "french": "l’étage",
       "chinese": "层，楼层",
-      "example": "Pierre habite au troisième étage.",
+      "example": "Le deuxième étage du bâtiment abritera les nouveaux bureaux de l'association.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": "法语楼层编号从地面层之上的 premier étage 起算。"
+      "note": "法语楼层编号从地面层之上的 premier étage 起算。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-004",
+          "form": "bâtiment"
+        },
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-036",
@@ -2148,13 +3948,25 @@
       "subcategory": "2.03",
       "french": "la fixation",
       "chinese": "固定，固定装置",
-      "example": "La fixation n’était pas assez solide, le miroir est tombé.",
+      "example": "La fixation de cette lampe doit être vérifiée avant le retour des élèves.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-010",
+          "form": "lampe"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-037",
@@ -2162,13 +3974,25 @@
       "subcategory": "2.03",
       "french": "la fumée",
       "chinese": "烟",
-      "example": "De la fumée sort de la cheminée.",
+      "example": "La fumée a traversé le couloir après que le cuisinier a brûlé le pain.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-031",
+          "form": "couloir"
+        },
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-038",
@@ -2176,13 +4000,25 @@
       "subcategory": "2.03",
       "french": "le miroir",
       "chinese": "镜子",
-      "example": "Aurélie aime se regarder dans le miroir.",
+      "example": "Dans le miroir, l'enfant observe la peinture qu'il a étalée sur son visage.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-010",
+          "form": "peinture"
+        },
+        {
+          "id": "book-8.01-035",
+          "form": "visage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-039",
@@ -2190,13 +4026,25 @@
       "subcategory": "2.03",
       "french": "orner",
       "chinese": "装饰",
-      "example": "La table est ornée de fleurs.",
+      "example": "Ces fleurs pourraient orner les tables du restaurant lors de la fête du village.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "3.04-2",
+          "form": "fleurs"
+        },
+        {
+          "id": "book-2.03-024",
+          "form": "tables"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-040",
@@ -2204,13 +4052,25 @@
       "subcategory": "2.03",
       "french": "le plafond",
       "chinese": "天花板",
-      "example": "Il peint le plafond du salon en jaune.",
+      "example": "Une trace d'eau au plafond révèle une fuite dans la salle de bains du dessus.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "book-2.03-021",
+          "form": "salle de bains"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-041",
@@ -2218,13 +4078,25 @@
       "subcategory": "2.03",
       "french": "le plancher",
       "chinese": "地板",
-      "example": "Il y a un trou dans le plancher de la salle à manger.",
+      "example": "Le plancher craquait lorsque mon grand-père traversait la chambre pour ouvrir les volets.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-037",
+          "form": "grand-père"
+        },
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-042",
@@ -2232,13 +4104,25 @@
       "subcategory": "2.03",
       "french": "le rayon",
       "chinese": "架子，书架的隔板",
-      "example": "J’ai posé mes livres sur le rayon du haut de la bibliothèque.",
+      "example": "Ce rayon porte les livres de cuisine que ma mère utilise pour préparer le dîner.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-014",
+          "form": "livres"
+        },
+        {
+          "id": "book-5.02-046",
+          "form": "dîner"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-043",
@@ -2246,13 +4130,25 @@
       "subcategory": "2.03",
       "french": "le rideau",
       "chinese": "窗帘",
-      "example": "Il a accroché de longs rideaux aux fenêtres du salon.",
+      "example": "Un rideau léger laissera entrer la lumière tout en cachant la vue aux voisins.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-010",
+          "form": "lumière"
+        },
+        {
+          "id": "book-2.01-023",
+          "form": "voisins"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-044",
@@ -2260,13 +4156,25 @@
       "subcategory": "2.03",
       "french": "le tapis",
       "chinese": "地毯",
-      "example": "Mes parents ont acheté un grand tapis rouge pour le salon.",
+      "example": "Ce tapis protège le parquet sous la table où les enfants dessinent chaque mercredi.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.04-031",
+          "form": "parquet"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.03-045",
@@ -2274,13 +4182,25 @@
       "subcategory": "2.03",
       "french": "la tapisserie",
       "chinese": "壁纸，墙布",
-      "example": "La tapisserie du salon de mes grands-parents est vieille et jaune.",
+      "example": "Nous avons retiré la vieille tapisserie avant de repeindre les murs du salon.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-016",
+          "form": "murs"
+        },
+        {
+          "id": "2.03-2",
+          "form": "salon"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-001",
@@ -2288,13 +4208,25 @@
       "subcategory": "2.04",
       "french": "l’acide",
       "chinese": "酸（化学）",
-      "example": "Les acides sont des corps chimiques.",
+      "example": "Au laboratoire, les étudiants manipulent cet acide sous la surveillance de leur professeur.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        },
+        {
+          "id": "book-10.03-012",
+          "form": "professeur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-002",
@@ -2302,13 +4234,25 @@
       "subcategory": "2.04",
       "french": "l’acier",
       "chinese": "钢",
-      "example": "La lame du couteau est en acier.",
+      "example": "Une structure en acier résisterait mieux au poids du toit de ce grand bâtiment.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-045",
+          "form": "toit"
+        },
+        {
+          "id": "book-2.01-004",
+          "form": "bâtiment"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-003",
@@ -2316,13 +4260,25 @@
       "subcategory": "2.04",
       "french": "l’argent",
       "chinese": "银",
-      "example": "Cette bague est-elle en or ou en argent ?",
+      "example": "Cette cuillère en argent appartenait à ma grand-mère, qui la gardait dans une boîte.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-036",
+          "form": "grand-mère"
+        },
+        {
+          "id": "book-5.01-003",
+          "form": "boîte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "2.04-1",
@@ -2330,14 +4286,26 @@
       "subcategory": "2.04",
       "french": "le bois",
       "chinese": "木材，木头",
-      "example": "Les meubles d’une maison sont généralement en bois.",
+      "example": "Les artisans utilisaient le bois de la forêt voisine pour fabriquer les meubles du village.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/bwa/"
+      "ipa": "/bwa/",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-008",
+          "form": "forêt"
+        },
+        {
+          "id": "book-2.03-013",
+          "form": "meubles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-005",
@@ -2345,13 +4313,25 @@
       "subcategory": "2.04",
       "french": "le charbon",
       "chinese": "煤炭",
-      "example": "Autrefois, on chauffait la maison au charbon.",
+      "example": "Cette ancienne usine brûlait autrefois du charbon, mais elle utilise maintenant l'énergie solaire.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-020",
+          "form": "usine"
+        },
+        {
+          "id": "book-2.02-008",
+          "form": "énergie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-006",
@@ -2359,13 +4339,25 @@
       "subcategory": "2.04",
       "french": "la corde",
       "chinese": "绳子",
-      "example": "Attache la barque avec cette corde.",
+      "example": "Une corde retiendra le bateau contre le quai pendant que les passagers descendront.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-004",
+          "form": "bateau"
+        },
+        {
+          "id": "book-4.03-052",
+          "form": "quai"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-007",
@@ -2373,13 +4365,25 @@
       "subcategory": "2.04",
       "french": "le fer",
       "chinese": "铁",
-      "example": "Le fer est un métal gris.",
+      "example": "Cette barrière en fer protège les enfants du passage des voitures dans la rue.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-4.01-020",
+          "form": "rue"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-008",
@@ -2387,13 +4391,25 @@
       "subcategory": "2.04",
       "french": "la fibre",
       "chinese": "纤维",
-      "example": "La maison est isolée avec de la fibre de verre.",
+      "example": "La couturière a choisi une fibre naturelle pour fabriquer les nouveaux rideaux de l'hôtel.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-043",
+          "form": "rideaux"
+        },
+        {
+          "id": "4.02-3",
+          "form": "hôtel"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-009",
@@ -2401,13 +4417,25 @@
       "subcategory": "2.04",
       "french": "la ficelle",
       "chinese": "细绳",
-      "example": "Il a attaché le paquet avec de la ficelle.",
+      "example": "La ficelle maintient les fleurs ensemble pendant que la vendeuse les enveloppe dans du papier.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.04-2",
+          "form": "fleurs"
+        },
+        {
+          "id": "book-2.04-014",
+          "form": "papier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-010",
@@ -2415,13 +4443,25 @@
       "subcategory": "2.04",
       "french": "le fil",
       "chinese": "线",
-      "example": "J’ai cousu le bouton avec du fil noir.",
+      "example": "Un fil plus solide empêcherait le bouton de ta veste de tomber pendant le voyage.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 22,
       "pdfPage": 29,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-016",
+          "form": "veste"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-011",
@@ -2429,13 +4469,25 @@
       "subcategory": "2.04",
       "french": "le gaz",
       "chinese": "气，气体",
-      "example": "Les prix du gaz ont augmenté ces derniers mois.",
+      "example": "Le gaz alimente le chauffage de l'immeuble et les cuisinières de plusieurs appartements.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-031",
+          "form": "chauffage"
+        },
+        {
+          "id": "2.01-2",
+          "form": "appartements"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-012",
@@ -2443,13 +4495,25 @@
       "subcategory": "2.04",
       "french": "le matériel",
       "chinese": "材料，器材",
-      "example": "Il a acheté du matériel neuf pour réparer sa voiture.",
+      "example": "L'équipe rangeait le matériel après chaque séance de sport dans la grande salle.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-13.06-012",
+          "form": "sport"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-013",
@@ -2457,13 +4521,25 @@
       "subcategory": "2.04",
       "french": "l’or",
       "chinese": "金，金子",
-      "example": "Son mari lui a offert une bague en or.",
+      "example": "Cette bague en or rappelle à ma mère le mariage de ses parents.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-016",
+          "form": "mère"
+        },
+        {
+          "id": "book-14.02-012",
+          "form": "mariage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-014",
@@ -2471,13 +4547,25 @@
       "subcategory": "2.04",
       "french": "le papier",
       "chinese": "纸",
-      "example": "Il a écrit son nom et son adresse sur une feuille en papier.",
+      "example": "Nous avons réutilisé le papier des paquets pour dessiner les affiches de notre spectacle.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-038",
+          "form": "paquets"
+        },
+        {
+          "id": "book-13.01-020",
+          "form": "spectacle"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-015",
@@ -2485,13 +4573,25 @@
       "subcategory": "2.04",
       "french": "l’aimantation",
       "chinese": "磁化；磁化强度",
-      "example": "L’aimantation représente le moment magnétique par unité de volume.",
+      "example": "Le professeur mesure l'aimantation d'une pièce de fer pendant une expérience de physique.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": "按例句“单位体积的磁矩”补充“磁化强度”义。"
+      "note": "按例句“单位体积的磁矩”补充“磁化强度”义。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-012",
+          "form": "professeur"
+        },
+        {
+          "id": "book-8.03-011",
+          "form": "physique"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-016",
@@ -2499,13 +4599,25 @@
       "subcategory": "2.04",
       "french": "le béton",
       "chinese": "混凝土",
-      "example": "Les murs du garage sont en béton.",
+      "example": "Le béton formera la base du mur avant la pose des briques rouges.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-15.06-003",
+          "form": "base"
+        },
+        {
+          "id": "book-2.04-017",
+          "form": "briques"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-017",
@@ -2513,13 +4625,25 @@
       "subcategory": "2.04",
       "french": "la brique",
       "chinese": "砖",
-      "example": "On trouve, dans le nord de la France, principalement des maisons en briques rouges.",
+      "example": "Cette brique récupérée sert à maintenir la porte ouverte quand nous aérons la cave.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-019",
+          "form": "porte"
+        },
+        {
+          "id": "book-2.01-026",
+          "form": "cave"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-018",
@@ -2527,13 +4651,25 @@
       "subcategory": "2.04",
       "french": "le carton",
       "chinese": "纸板",
-      "example": "La première page du livre est en carton.",
+      "example": "Une boîte en carton protégerait les verres pendant le déménagement de ma sœur.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-003",
+          "form": "boîte"
+        },
+        {
+          "id": "book-5.02-035",
+          "form": "verres"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-019",
@@ -2541,13 +4677,25 @@
       "subcategory": "2.04",
       "french": "le ciment",
       "chinese": "水泥",
-      "example": "Il faut tenir les briques avec du ciment.",
+      "example": "Le ciment doit sécher avant que les ouvriers poursuivent la construction du petit mur.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-011",
+          "form": "ouvriers"
+        },
+        {
+          "id": "book-2.01-006",
+          "form": "construction"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-020",
@@ -2555,13 +4703,25 @@
       "subcategory": "2.04",
       "french": "la cire",
       "chinese": "蜡",
-      "example": "La cire naturelle est fabriquée par les abeilles.",
+      "example": "Mon grand-père frottait la cire sur le parquet pour lui rendre sa couleur chaude.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-2.04-031",
+          "form": "parquet"
+        },
+        {
+          "id": "book-16.09-009",
+          "form": "couleur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-021",
@@ -2569,13 +4729,25 @@
       "subcategory": "2.04",
       "french": "le coton",
       "chinese": "棉",
-      "example": "Ma chemise est en coton.",
+      "example": "Cette chemise en coton reste agréable quand la chaleur augmente pendant les vacances.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.03-002",
+          "form": "chaleur"
+        },
+        {
+          "id": "book-4.02-013",
+          "form": "vacances"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-022",
@@ -2583,13 +4755,25 @@
       "subcategory": "2.04",
       "french": "le cristal",
       "chinese": "水晶，水晶玻璃",
-      "example": "On lui a offert des verres en cristal pour son anniversaire.",
+      "example": "Ma tante a enveloppé le vase en cristal dans un drap pour le transporter en voiture.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": "根据 verres en cristal 补充“水晶玻璃”。"
+      "note": "根据 verres en cristal 补充“水晶玻璃”。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-038",
+          "form": "drap"
+        },
+        {
+          "id": "book-4.04-023",
+          "form": "voiture"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-023",
@@ -2597,13 +4781,25 @@
       "subcategory": "2.04",
       "french": "le cuir",
       "chinese": "皮革",
-      "example": "Pierre porte une veste en cuir.",
+      "example": "Le cordonnier remplace le cuir usé de mes chaussures avant mon prochain voyage.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-026",
+          "form": "chaussures"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-024",
@@ -2611,13 +4807,25 @@
       "subcategory": "2.04",
       "french": "le cuivre",
       "chinese": "铜",
-      "example": "Le cuivre est un métal de couleur rouge.",
+      "example": "L'artisan utilisera du cuivre pour refaire les tuyaux de la vieille cuisine.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-021",
+          "form": "tuyaux"
+        },
+        {
+          "id": "book-2.03-004",
+          "form": "cuisine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-025",
@@ -2625,13 +4833,25 @@
       "subcategory": "2.04",
       "french": "le filet",
       "chinese": "网",
-      "example": "Ils attrapent les poissons avec un grand filet de pêche.",
+      "example": "Les pêcheurs réparent leur filet sur le quai avant de reprendre la mer.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-052",
+          "form": "quai"
+        },
+        {
+          "id": "book-3.02-011",
+          "form": "mer"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-026",
@@ -2639,13 +4859,25 @@
       "subcategory": "2.04",
       "french": "la fusion",
       "chinese": "熔融，熔化",
-      "example": "Un métal en fusion coule sous l’action de la chaleur.",
+      "example": "Une température plus élevée provoquerait la fusion de ce métal pendant l'expérience de chimie.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "3.03-4",
+          "form": "température"
+        },
+        {
+          "id": "2.04-3",
+          "form": "métal"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-027",
@@ -2653,13 +4885,25 @@
       "subcategory": "2.04",
       "french": "le grès",
       "chinese": "砂岩，炻器（粗陶）",
-      "example": "La façade de ce bâtiment est sculptée en grès.",
+      "example": "Cette tasse en grès garde mon thé chaud pendant que je lis le journal.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书例句误写“est en sculptée en grès”，已删除多余的第一个 en；原书“粗陶土”义整理为“炻器（粗陶）”。"
+      "note": "原书例句误写“est en sculptée en grès”，已删除多余的第一个 en；原书“粗陶土”义整理为“炻器（粗陶）”。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-038",
+          "form": "thé"
+        },
+        {
+          "id": "book-13.05-008",
+          "form": "journal"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-028",
@@ -2667,13 +4911,25 @@
       "subcategory": "2.04",
       "french": "le matériau",
       "chinese": "材料，建筑材料",
-      "example": "La pierre, le bois et le fer sont des matériaux.",
+      "example": "L'architecte comparait chaque matériau avant de choisir la pierre pour la façade du musée.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-016",
+          "form": "pierre"
+        },
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "2.04-3",
@@ -2681,14 +4937,26 @@
       "subcategory": "2.04",
       "french": "le métal",
       "chinese": "金属",
-      "example": "L’or est un métal précieux.",
+      "example": "Le métal de cette poignée devient brûlant lorsque le soleil frappe la porte.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/metal/"
+      "ipa": "/metal/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-055",
+          "form": "poignée"
+        },
+        {
+          "id": "3.03-2",
+          "form": "soleil"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-030",
@@ -2696,13 +4964,25 @@
       "subcategory": "2.04",
       "french": "métallique",
       "chinese": "金属的",
-      "example": "Les meubles métalliques sont à la mode.",
+      "example": "Une grille métallique protégera l'entrée du jardin sans cacher la vue sur la rivière.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "3.02-2",
+          "form": "rivière"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-031",
@@ -2710,13 +4990,25 @@
       "subcategory": "2.04",
       "french": "le parquet",
       "chinese": "木地板",
-      "example": "On entretient le parquet avec de la cire.",
+      "example": "Le parquet du salon porte encore une marque laissée par l'ancien poêle.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "2.03-2",
+          "form": "salon"
+        },
+        {
+          "id": "book-5.02-022",
+          "form": "poêle"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-032",
@@ -2724,13 +5016,25 @@
       "subcategory": "2.04",
       "french": "la plaque",
       "chinese": "板，片，盘",
-      "example": "Pierre a acheté une grande plaque de verre.",
+      "example": "Les ouvriers ont vissé une plaque sur la porte pour indiquer le nom du nouveau médecin.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-019",
+          "form": "porte"
+        },
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-033",
@@ -2738,13 +5042,25 @@
       "subcategory": "2.04",
       "french": "plastique",
       "chinese": "塑料的",
-      "example": "Ces caisses sont en matière plastique.",
+      "example": "Ce sac plastique flotte dans la rivière et risque de blesser les animaux.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书释义“塑料”；词条无冠词，例句中用作形容词。"
+      "note": "原书释义“塑料”；词条无冠词，例句中用作形容词。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.02-2",
+          "form": "rivière"
+        },
+        {
+          "id": "book-3.04-003",
+          "form": "animaux"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-034",
@@ -2752,13 +5068,25 @@
       "subcategory": "2.04",
       "french": "la résine",
       "chinese": "树脂",
-      "example": "La résine naturelle est un liquide qui est produit surtout par des arbres.",
+      "example": "Cette résine pourrait réparer la petite fissure du bateau avant sa remise à l'eau.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-004",
+          "form": "bateau"
+        },
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-035",
@@ -2766,13 +5094,25 @@
       "subcategory": "2.04",
       "french": "la substance",
       "chinese": "物质",
-      "example": "L’acier est une substance dure et lourde.",
+      "example": "Cette substance modifie la couleur de l'eau pendant l'expérience menée par les élèves.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.09-009",
+          "form": "couleur"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-2.04-036",
@@ -2780,13 +5120,27 @@
       "subcategory": "2.04",
       "french": "la tuile",
       "chinese": "瓦，瓦片",
-      "example": "Une tuile est tombée du toit de la maison.",
+      "example": "Une tuile cassée laissait entrer la pluie dans le grenier où nous gardions les valises.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 23,
       "pdfPage": 30,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "3.03-1",
+          "form": "pluie"
+        },
+        {
+          "id": "4.02-4",
+          "form": "valises"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     }
-  ]
+  ],
+  "originalMethod": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，明显排印错误的校正记入 note。",
+  "exampleMethod": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
 }

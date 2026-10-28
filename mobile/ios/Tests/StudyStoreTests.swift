@@ -5,7 +5,7 @@ struct StudyStoreTests {
     @MainActor static func main() throws {
         let resource = URL(fileURLWithPath: CommandLine.arguments[1])
         let catalog = try JSONDecoder().decode([StudyDictionary].self, from: Data(contentsOf: resource))
-        precondition(catalog.map(\.words.count) == [3846, 12, 414, 6, 6, 6, 0, 0, 0], "Bundled source counts")
+        precondition(catalog.map(\.words.count) == [3846, 12, 414, 6, 6, 141, 0, 0, 229], "Bundled source counts")
         let vocabulary = catalog.filter { $0.kind == .vocabulary }
         let grammar = catalog.filter { $0.isGrammar && !$0.isThematicGrammar }
         let thematic = catalog.filter(\.isThematicGrammar)
@@ -15,10 +15,14 @@ struct StudyStoreTests {
             return FileManager.default.fileExists(atPath: resource.deletingLastPathComponent().appendingPathComponent(audio).path)
         }, "Every bundled vocabulary entry has a local audio file")
         precondition(grammar.map(\.id) == ["grammar-fr", "grammar-de", "grammar-ja"], "Grammar books keep separate stable identities")
-        precondition(grammar.allSatisfy { $0.words.count == 6 }, "Each grammar starter book contains six entries")
+        precondition(grammar.filter { $0.language != "ja" }.allSatisfy { $0.words.count == 6 }, "French/German starter books retain six entries")
+        precondition(grammar.first { $0.language == "ja" }!.words.count == 141, "Japanese ordinary lessons retain their independent entries")
         precondition(thematic.map(\.id) == ["grammar-theme-fr", "grammar-theme-de", "grammar-theme-ja"])
-        precondition(thematic.allSatisfy { $0.words.isEmpty && $0.categories.isEmpty && $0.isBuiltIn },
-            "Thematic books own empty independent data until supplied; ordinary grammar is never cloned")
+        precondition(thematic.filter { $0.language != "ja" }.allSatisfy { $0.words.isEmpty && $0.categories.isEmpty && $0.isBuiltIn },
+            "Unsupplied French/German thematic books stay empty and independent")
+        precondition(thematic.first { $0.language == "ja" }!.words.count == 229, "Japanese thematic lessons retain their own entries")
+        precondition(Set(grammar.flatMap(\.words).map(\.id)).isDisjoint(with: Set(thematic.flatMap(\.words).map(\.id))),
+            "Ordinary and thematic grammar never share entry identities")
         precondition(grammar.flatMap(\.words).allSatisfy { $0.audio == nil }, "Grammar uses device speech without vocabulary clips")
         let directory = FileManager.default.temporaryDirectory.appendingPathComponent("mots-native-tests-\(UUID().uuidString)")
         let stateURL = directory.appendingPathComponent("state.json")

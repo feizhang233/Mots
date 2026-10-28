@@ -16,7 +16,7 @@
     "基础": 93,
     "进阶": 117
   },
-  "method": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，旧统计和科学表述的范围说明记入 note。",
+  "method": "詞條、分類、原書頁碼與校對註記保留原整理；例句於 2026-10-25 改為 Mots 原創詞彙關聯例句。原例句保存在 french/example-network.json 的 originalText，XLSX 保留原書轉錄版本。",
   "subcategories": [
     {
       "id": "3.01",
@@ -42,14 +42,26 @@
       "subcategory": "3.01",
       "french": "la campagne",
       "chinese": "农村，乡下",
-      "example": "La vie à la campagne est plus calme qu’à la ville.",
+      "example": "À la campagne, les enfants découvrent les saisons en aidant leurs grands-parents au jardin.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/kɑ̃paɲ/"
+      "ipa": "/kɑ̃paɲ/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-002",
@@ -57,13 +69,25 @@
       "subcategory": "3.01",
       "french": "le centre",
       "chinese": "中心",
-      "example": "Lyon est un centre industriel.",
+      "example": "Nous avons rejoint le centre à pied après avoir laissé la voiture près du stade.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-8.01-028",
+          "form": "pied"
+        },
+        {
+          "id": "book-4.04-023",
+          "form": "voiture"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-003",
@@ -71,13 +95,25 @@
       "subcategory": "3.01",
       "french": "l’écologie",
       "chinese": "生态学；生态保护，环保",
-      "example": "L’écologie est la défense du milieu naturel des êtres vivants.",
+      "example": "L'écologie intéresse cette étudiante qui observe les effets de la pollution sur les insectes.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“生态学”；根据例句补充“生态保护，环保”义。"
+      "note": "原书译“生态学”；根据例句补充“生态保护，环保”义。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-004",
+          "form": "étudiante"
+        },
+        {
+          "id": "book-3.01-038",
+          "form": "pollution"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-004",
@@ -85,13 +121,25 @@
       "subcategory": "3.01",
       "french": "écologique",
       "chinese": "生态的，环保的",
-      "example": "L’Europe mène de plus en plus une politique écologique.",
+      "example": "Le magasin proposait un emballage écologique pour remplacer les sacs en plastique du marché.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-2.04-033",
+          "form": "plastique"
+        },
+        {
+          "id": "book-3.01-012",
+          "form": "marché"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-005",
@@ -99,13 +147,25 @@
       "subcategory": "3.01",
       "french": "l’écologiste",
       "chinese": "生态学家；环保人士",
-      "example": "Les écologistes s’engagent pour la protection de la nature.",
+      "example": "Une écologiste accompagne les élèves pour leur montrer les oiseaux qui vivent près du lac.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
-      "note": "阴阳性词形相同，原书成对列出；根据例句补充“环保人士”。"
+      "note": "阴阳性词形相同，原书成对列出；根据例句补充“环保人士”。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        },
+        {
+          "id": "book-3.02-009",
+          "form": "lac"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-006",
@@ -113,13 +173,25 @@
       "subcategory": "3.01",
       "french": "l’enceinte",
       "chinese": "围墙，围篱",
-      "example": "Une enceinte servait autrefois de protection.",
+      "example": "La nouvelle enceinte protégera le jardin des animaux sans empêcher le passage des visiteurs.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "book-3.04-003",
+          "form": "animaux"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-007",
@@ -127,13 +199,25 @@
       "subcategory": "3.01",
       "french": "l’environnement",
       "chinese": "环境",
-      "example": "La protection de l’environnement est un problème majeur.",
+      "example": "La qualité de notre environnement dépend aussi du traitement des déchets produits par chaque foyer.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-006",
+          "form": "déchets"
+        },
+        {
+          "id": "book-2.02-011",
+          "form": "foyer"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-008",
@@ -141,13 +225,25 @@
       "subcategory": "3.01",
       "french": "fameux, fameuse",
       "chinese": "著名的，闻名的",
-      "example": "La Bourgogne est fameuse pour son vin.",
+      "example": "Ce fameux écrivain a rencontré les habitants dans la petite bibliothèque de notre commune.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-003",
+          "form": "écrivain"
+        },
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-009",
@@ -155,13 +251,25 @@
       "subcategory": "3.01",
       "french": "la ferme",
       "chinese": "农场",
-      "example": "J’ai passé mes vacances à la campagne, dans une ferme.",
+      "example": "La ferme vend ses œufs et son fromage aux familles qui viennent le dimanche.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-031",
+          "form": "œufs"
+        },
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-010",
@@ -169,13 +277,25 @@
       "subcategory": "3.01",
       "french": "local, locale",
       "chinese": "当地的，地方的",
-      "example": "J’achète tous les jours le journal local.",
+      "example": "Une production locale réduirait la distance parcourue par les fruits avant leur arrivée au magasin.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-008",
+          "form": "distance"
+        },
+        {
+          "id": "book-5.01-009",
+          "form": "fruits"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-011",
@@ -183,13 +303,25 @@
       "subcategory": "3.01",
       "french": "le maire, la mairesse",
       "chinese": "市长，镇长",
-      "example": "Le maire est la personne la plus connue du village.",
+      "example": "La maire répond aux questions des habitants pendant une réunion dans la salle municipale.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
-      "note": "阴性形式按原书保留。"
+      "note": "阴性形式按原书保留。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-012",
@@ -197,13 +329,25 @@
       "subcategory": "3.01",
       "french": "le marché",
       "chinese": "市场，集市",
-      "example": "Le mercredi est jour de marché dans mon village.",
+      "example": "Le marché occupait toute la place, et les vendeurs installaient leurs légumes dès six heures.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-014",
+          "form": "place"
+        },
+        {
+          "id": "book-5.01-012",
+          "form": "légumes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-013",
@@ -211,13 +355,25 @@
       "subcategory": "3.01",
       "french": "le passant, la passante",
       "chinese": "路人，行人",
-      "example": "J’ai demandé l’heure à un passant.",
+      "example": "Une passante aide ma grand-mère à trouver l'entrée de l'hôpital depuis l'arrêt du bus.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-036",
+          "form": "grand-mère"
+        },
+        {
+          "id": "book-8.04-006",
+          "form": "hôpital"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-014",
@@ -225,13 +381,25 @@
       "subcategory": "3.01",
       "french": "la place",
       "chinese": "广场",
-      "example": "Nous nous retrouvons sur la place de l’église.",
+      "example": "La place accueillera un concert gratuit pour fêter la fin des travaux du quartier.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-030",
+          "form": "concert"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travaux"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-015",
@@ -239,13 +407,25 @@
       "subcategory": "3.01",
       "french": "polluer",
       "chinese": "污染",
-      "example": "Il est interdit de se baigner car la plage est polluée.",
+      "example": "Cette usine risque de polluer la rivière si son système de traitement tombe en panne.",
       "part": "v.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-020",
+          "form": "usine"
+        },
+        {
+          "id": "3.02-2",
+          "form": "rivière"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-016",
@@ -253,13 +433,25 @@
       "subcategory": "3.01",
       "french": "la province",
       "chinese": "省，外省",
-      "example": "La Bretagne est une province française.",
+      "example": "Ma sœur a quitté la capitale pour la province après avoir trouvé un emploi près de la mer.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书例句使用 province 的历史地域含义。"
+      "note": "原书例句使用 province 的历史地域含义。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-008",
+          "form": "emploi"
+        },
+        {
+          "id": "book-3.02-011",
+          "form": "mer"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "3.01-3",
@@ -267,14 +459,26 @@
       "subcategory": "3.01",
       "french": "le quartier",
       "chinese": "区，街区",
-      "example": "J’habite dans un quartier calme et agréable.",
+      "example": "Dans notre quartier, les voisins partagent leurs outils et organisent une fête chaque printemps.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/kaʁtje/"
+      "ipa": "/kaʁtje/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-023",
+          "form": "voisins"
+        },
+        {
+          "id": "book-13.01-008",
+          "form": "fête"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-018",
@@ -282,13 +486,25 @@
       "subcategory": "3.01",
       "french": "la région",
       "chinese": "地区，大区",
-      "example": "La France est composée de 26 régions.",
+      "example": "Cette région attirerait davantage de touristes si les transports desservaient mieux les villages.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书旧统计数字照录，不作为现时行政区数量。"
+      "note": "原书旧统计数字照录，不作为现时行政区数量。",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-029",
+          "form": "touristes"
+        },
+        {
+          "id": "book-4.03-020",
+          "form": "transports"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-019",
@@ -296,13 +512,25 @@
       "subcategory": "3.01",
       "french": "régional, régionale",
       "chinese": "地区的，当地的",
-      "example": "J’habite depuis peu ici, je ne connais pas encore les coutumes régionales.",
+      "example": "La cuisine régionale utilise le fromage des fermes et les fruits cultivés dans la vallée.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "5.01-2",
+          "form": "fromage"
+        },
+        {
+          "id": "book-5.01-009",
+          "form": "fruits"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-020",
@@ -310,13 +538,25 @@
       "subcategory": "3.01",
       "french": "le terrain",
       "chinese": "场地，土地",
-      "example": "La maison comprend un vaste terrain.",
+      "example": "Les enfants jouaient sur le terrain derrière l'école avant la construction du nouveau gymnase.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "10.01-1",
+          "form": "école"
+        },
+        {
+          "id": "book-2.01-006",
+          "form": "construction"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-021",
@@ -324,13 +564,25 @@
       "subcategory": "3.01",
       "french": "le trottoir",
       "chinese": "人行道",
-      "example": "Il faut toujours marcher sur le trottoir.",
+      "example": "Ce trottoir est trop étroit pour les parents qui accompagnent leurs enfants avec une poussette.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "1.03-2",
+          "form": "parents"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "3.01-2",
@@ -338,14 +590,26 @@
       "subcategory": "3.01",
       "french": "le village",
       "chinese": "村子，村庄",
-      "example": "J’habite dans un village de 254 habitants.",
+      "example": "Notre village organisera une visite du moulin suivie d'un repas préparé par les habitants.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/vilaʒ/"
+      "ipa": "/vilaʒ/",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-034",
+          "form": "moulin"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "3.01-1",
@@ -353,14 +617,26 @@
       "subcategory": "3.01",
       "french": "la ville",
       "chinese": "城市",
-      "example": "Paris est la plus grande ville de France.",
+      "example": "La ville réserve plusieurs rues aux piétons pour faciliter les achats dans les petits magasins.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 24,
       "pdfPage": 31,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/vil/"
+      "ipa": "/vil/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.01-020",
+          "form": "rues"
+        },
+        {
+          "id": "6.01-1",
+          "form": "magasins"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-024",
@@ -368,13 +644,25 @@
       "subcategory": "3.01",
       "french": "l’adjoint, l’adjointe",
       "chinese": "助理，助手；副职",
-      "example": "Le maire et ses adjoints se réunissent le jeudi à 19 heures.",
+      "example": "L'adjointe a présenté le projet de bibliothèque aux habitants réunis dans la grande salle.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 25,
       "pdfPage": 32,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-025",
@@ -382,13 +670,25 @@
       "subcategory": "3.01",
       "french": "l’avenue",
       "chinese": "大道",
-      "example": "Une avenue est une large rue plantée d’arbres.",
+      "example": "Cette avenue relie la gare au centre et possède une piste pour les vélos.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 25,
       "pdfPage": 32,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        },
+        {
+          "id": "4.04-2",
+          "form": "vélos"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-026",
@@ -396,13 +696,25 @@
       "subcategory": "3.01",
       "french": "la banlieue",
       "chinese": "郊区",
-      "example": "Je n’habite pas dans le centre ville mais en banlieue.",
+      "example": "Vivre en banlieue permettrait à notre famille de louer une maison avec un jardin.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 25,
       "pdfPage": 32,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "2.01-1",
+          "form": "maison"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-027",
@@ -410,13 +722,25 @@
       "subcategory": "3.01",
       "french": "la cité",
       "chinese": "城市",
-      "example": "Autrefois, une grande ville s’appelait une cité.",
+      "example": "La vieille cité conserve des murs que les visiteurs découvrent avec un guide local.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 25,
       "pdfPage": 32,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-016",
+          "form": "murs"
+        },
+        {
+          "id": "book-4.02-020",
+          "form": "guide"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-028",
@@ -424,13 +748,25 @@
       "subcategory": "3.01",
       "french": "la commune",
       "chinese": "市镇",
-      "example": "Un maire dirige une commune.",
+      "example": "La commune prêtait ses outils aux habitants qui entretenaient les sentiers autour du village.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 25,
       "pdfPage": 32,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-052",
+          "form": "outils"
+        },
+        {
+          "id": "book-3.01-040",
+          "form": "sentiers"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-029",
@@ -438,13 +774,25 @@
       "subcategory": "3.01",
       "french": "le comté",
       "chinese": "伯爵领地，郡，县",
-      "example": "Il y avait autrefois plusieurs comtés en France comme le comté de Champagne et le comté d’Artois.",
+      "example": "Dans ce comté anglais, les agriculteurs ouvrent leurs fermes aux voyageurs pendant l'été.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 25,
       "pdfPage": 32,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-001",
+          "form": "agriculteurs"
+        },
+        {
+          "id": "book-4.02-016",
+          "form": "voyageurs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-030",
@@ -452,13 +800,25 @@
       "subcategory": "3.01",
       "french": "le département",
       "chinese": "省（法国行政区）",
-      "example": "La France est divisée en 100 départements.",
+      "example": "Le département financera la rénovation des collèges et des routes utilisées par les autocars scolaires.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 25,
       "pdfPage": 32,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书旧统计数字照录，不作为现时行政区数量。"
+      "note": "原书旧统计数字照录，不作为现时行政区数量。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-10.01-005",
+          "form": "collèges"
+        },
+        {
+          "id": "book-4.04-001",
+          "form": "autocars"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-031",
@@ -466,13 +826,25 @@
       "subcategory": "3.01",
       "french": "le district",
       "chinese": "县，区",
-      "example": "Un district comprend plusieurs départements.",
+      "example": "Ce district possède un hôpital qui accueille aussi les habitants des villages voisins.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 25,
       "pdfPage": 32,
       "source": "法语基础词汇分类学习手册",
-      "note": "例句按原书保留，不作为法国行政区划层级说明。"
+      "note": "例句按原书保留，不作为法国行政区划层级说明。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-8.04-006",
+          "form": "hôpital"
+        },
+        {
+          "id": "3.01-2",
+          "form": "villages"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-032",
@@ -480,13 +852,25 @@
       "subcategory": "3.01",
       "french": "les environs",
       "chinese": "周边地区",
-      "example": "Il habite depuis deux ans dans les environs de Paris.",
+      "example": "Nous avons exploré les environs à vélo avant de déjeuner au bord de la rivière.",
       "part": "n. m. pl.",
       "level": "进阶",
       "bookPage": 25,
       "pdfPage": 32,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "4.04-2",
+          "form": "vélo"
+        },
+        {
+          "id": "3.02-2",
+          "form": "rivière"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-033",
@@ -494,13 +878,25 @@
       "subcategory": "3.01",
       "french": "la métropole",
       "chinese": "大城市",
-      "example": "Paris est une grande métropole.",
+      "example": "Dans cette métropole, le métro transporte chaque matin des milliers de personnes vers leur travail.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 25,
       "pdfPage": 32,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-007",
+          "form": "métro"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-034",
@@ -508,13 +904,25 @@
       "subcategory": "3.01",
       "french": "le moulin",
       "chinese": "磨坊",
-      "example": "On trouve à la sortie du village un vieux moulin que l’on peut même visiter.",
+      "example": "Un musée dans ce moulin expliquerait aux enfants comment on transformait le blé en farine.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 25,
       "pdfPage": 32,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-3.04-027",
+          "form": "blé"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-035",
@@ -522,13 +930,25 @@
       "subcategory": "3.01",
       "french": "municipal, municipale",
       "chinese": "市政的",
-      "example": "Le conseil municipal organise une grande fête pour le 14 juillet.",
+      "example": "Le conseil municipal discute du nouveau parc pendant que les habitants consultent les plans.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 25,
       "pdfPage": 32,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-037",
+          "form": "parc"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-036",
@@ -536,13 +956,25 @@
       "subcategory": "3.01",
       "french": "la municipalité",
       "chinese": "市政府",
-      "example": "La municipalité désigne le conseil municipal et le maire.",
+      "example": "La municipalité distribuait des bouteilles d'eau pendant les journées de grande chaleur.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 25,
       "pdfPage": 32,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "book-3.03-002",
+          "form": "chaleur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-037",
@@ -550,13 +982,25 @@
       "subcategory": "3.01",
       "french": "le parc",
       "chinese": "公园",
-      "example": "Je promène mon chien tous les matins dans le parc.",
+      "example": "Le parc offre un espace de jeu aux enfants des immeubles qui n'ont pas de jardin.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 25,
       "pdfPage": 32,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.06-012",
+          "form": "jeu"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-038",
@@ -564,13 +1008,25 @@
       "subcategory": "3.01",
       "french": "la pollution",
       "chinese": "污染",
-      "example": "La pollution est un problème qui concerne chaque homme.",
+      "example": "La fermeture de cette usine réduira la pollution mesurée dans l'air du quartier.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 25,
       "pdfPage": 32,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-020",
+          "form": "usine"
+        },
+        {
+          "id": "book-3.03-001",
+          "form": "air"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-039",
@@ -578,13 +1034,25 @@
       "subcategory": "3.01",
       "french": "rural, rurale",
       "chinese": "农村的",
-      "example": "La campagne est un milieu rural.",
+      "example": "Le médecin visite les habitants de cette zone rurale une fois par semaine.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 25,
       "pdfPage": 32,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        },
+        {
+          "id": "book-16.02-036",
+          "form": "semaine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-040",
@@ -592,13 +1060,25 @@
       "subcategory": "3.01",
       "french": "le sentier",
       "chinese": "小路，小径",
-      "example": "Ce sentier mène à la forêt.",
+      "example": "Nous avons suivi le sentier jusqu'au sommet, malgré les nuages qui cachaient la vallée.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 25,
       "pdfPage": 32,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-061",
+          "form": "sommet"
+        },
+        {
+          "id": "book-3.03-028",
+          "form": "nuages"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-041",
@@ -606,13 +1086,25 @@
       "subcategory": "3.01",
       "french": "la tour",
       "chinese": "塔，高楼",
-      "example": "On trouve dans les villes modernes de nombreuses tours.",
+      "example": "Du haut de cette tour, les touristes aperçoivent le port et les bateaux de pêche.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 25,
       "pdfPage": 32,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-029",
+          "form": "touristes"
+        },
+        {
+          "id": "book-4.04-004",
+          "form": "bateaux"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.01-042",
@@ -620,13 +1112,25 @@
       "subcategory": "3.01",
       "french": "urbain, urbaine",
       "chinese": "城市的",
-      "example": "La population urbaine de la France augmente chaque année.",
+      "example": "Un aménagement urbain plus agréable donnerait davantage de place aux arbres et aux piétons.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 25,
       "pdfPage": 32,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "3.04-1",
+          "form": "arbres"
+        },
+        {
+          "id": "book-2.03-025",
+          "form": "aménagement"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-001",
@@ -634,13 +1138,25 @@
       "subcategory": "3.02",
       "french": "l’Atlantique",
       "chinese": "大西洋",
-      "example": "Il a traversé l’Atlantique en bateau.",
+      "example": "Les vagues de l'Atlantique attirent les sportifs, mais le courant surprend parfois les débutants.",
       "part": "n. propre m.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-024",
+          "form": "vagues"
+        },
+        {
+          "id": "book-3.02-005",
+          "form": "courant"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-002",
@@ -648,13 +1164,25 @@
       "subcategory": "3.02",
       "french": "le buisson",
       "chinese": "灌木丛",
-      "example": "Les enfants se sont cachés dans les buissons.",
+      "example": "Un petit oiseau faisait son nid dans le buisson derrière la fenêtre de ma chambre.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "3.04-4",
+          "form": "oiseau"
+        },
+        {
+          "id": "book-2.01-011",
+          "form": "fenêtre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-003",
@@ -662,13 +1190,25 @@
       "subcategory": "3.02",
       "french": "le champ",
       "chinese": "地，田野",
-      "example": "La route est bordée de champs de blé.",
+      "example": "Les champs de blé entourent la ferme où mon cousin travaille pendant les vacances.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-027",
+          "form": "blé"
+        },
+        {
+          "id": "book-1.03-033",
+          "form": "cousin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-004",
@@ -676,13 +1216,25 @@
       "subcategory": "3.02",
       "french": "la côte",
       "chinese": "山坡；海岸",
-      "example": "Nous sommes arrivés fatigués en haut de la côte.",
+      "example": "Nous longerons la côte avant de chercher un hôtel dans un petit port de pêche.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": "本例为“山坡”；同页 baie 的例句使用“海岸”义。"
+      "note": "本例为“山坡”；同页 baie 的例句使用“海岸”义。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "4.02-3",
+          "form": "hôtel"
+        },
+        {
+          "id": "book-4.03-013",
+          "form": "port"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-005",
@@ -690,13 +1242,25 @@
       "subcategory": "3.02",
       "french": "le courant",
       "chinese": "水流",
-      "example": "Il y a beaucoup de courant dans cette rivière.",
+      "example": "Le courant emporte les feuilles tombées dans l'eau après la tempête de cette nuit.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-014",
+          "form": "feuilles"
+        },
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-006",
@@ -704,13 +1268,25 @@
       "subcategory": "3.02",
       "french": "le cours",
       "chinese": "水流，水道",
-      "example": "Les hommes ont changé le cours naturel du fleuve.",
+      "example": "Les élèves ont suivi le cours de la rivière sur une grande carte murale.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "3.02-2",
+          "form": "rivière"
+        },
+        {
+          "id": "book-4.01-001",
+          "form": "carte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-007",
@@ -718,13 +1294,25 @@
       "subcategory": "3.02",
       "french": "l’eau",
       "chinese": "水",
-      "example": "Les poissons vivent dans l’eau.",
+      "example": "L'eau du puits sert à arroser les légumes quand il ne pleut pas.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-055",
+          "form": "puits"
+        },
+        {
+          "id": "book-5.01-012",
+          "form": "légumes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-008",
@@ -732,13 +1320,25 @@
       "subcategory": "3.02",
       "french": "la forêt",
       "chinese": "森林",
-      "example": "Beaucoup d’arbres en forêts sont cassés à cause de la tempête.",
+      "example": "Une promenade dans la forêt permettrait aux enfants d'observer les traces des animaux.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-3.04-003",
+          "form": "animaux"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-009",
@@ -746,13 +1346,25 @@
       "subcategory": "3.02",
       "french": "le lac",
       "chinese": "湖",
-      "example": "Nous sommes allés nous baigner dans un lac.",
+      "example": "Ce lac reflète les nuages et les toits du village construit sur sa rive.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.03-028",
+          "form": "nuages"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-010",
@@ -760,13 +1372,25 @@
       "subcategory": "3.02",
       "french": "la lumière",
       "chinese": "光线，光",
-      "example": "Les fenêtres laissent entrer la lumière dans la maison.",
+      "example": "La lumière du matin traversait les rideaux pendant que ma mère préparait le café.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-026",
+          "form": "matin"
+        },
+        {
+          "id": "book-5.01-004",
+          "form": "café"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-011",
@@ -774,13 +1398,25 @@
       "subcategory": "3.02",
       "french": "la mer",
       "chinese": "大海",
-      "example": "Nous partons à la mer chaque été.",
+      "example": "La mer reste calme, mais les pêcheurs surveillent le ciel avant de quitter le port.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.03-004",
+          "form": "ciel"
+        },
+        {
+          "id": "book-4.03-013",
+          "form": "port"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-012",
@@ -788,13 +1424,25 @@
       "subcategory": "3.02",
       "french": "merveilleux, merveilleuse",
       "chinese": "令人赞叹的，卓越的，出色的",
-      "example": "Ce paysage est merveilleux.",
+      "example": "Ce merveilleux paysage te donnera envie de sortir ton appareil photo dès notre arrivée.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "3.02-3",
+          "form": "paysage"
+        },
+        {
+          "id": "book-4.02-001",
+          "form": "appareil photo"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-013",
@@ -802,13 +1450,25 @@
       "subcategory": "3.02",
       "french": "la montée",
       "chinese": "登上，攀登",
-      "example": "La montée au sommet est très difficile.",
+      "example": "La montée fatigue les voyageurs, qui s'arrêtent près d'une source pour remplir leurs gourdes.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-016",
+          "form": "voyageurs"
+        },
+        {
+          "id": "book-3.02-022",
+          "form": "source"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-014",
@@ -816,13 +1476,25 @@
       "subcategory": "3.02",
       "french": "la nature",
       "chinese": "自然",
-      "example": "Il lutte pour la protection de la nature.",
+      "example": "Cette classe a découvert la nature en observant les insectes plutôt qu'en lisant un manuel.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-10.01-004",
+          "form": "classe"
+        },
+        {
+          "id": "book-10.02-033",
+          "form": "manuel"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-015",
@@ -830,13 +1502,25 @@
       "subcategory": "3.02",
       "french": "naturel, naturelle",
       "chinese": "自然的",
-      "example": "L’eau est le milieu naturel des poissons.",
+      "example": "Le jardinier préfère un engrais naturel pour protéger le sol et les abeilles du jardin.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-021",
+          "form": "sol"
+        },
+        {
+          "id": "book-3.04-001",
+          "form": "abeilles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-016",
@@ -844,13 +1528,25 @@
       "subcategory": "3.02",
       "french": "la pierre",
       "chinese": "石头",
-      "example": "L’enfant a jeté une pierre, il a cassé le carreau de la cuisine.",
+      "example": "Une allée de pierre faciliterait l'accès à la maison lorsque la pluie transforme le chemin en boue.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "2.01-1",
+          "form": "maison"
+        },
+        {
+          "id": "3.03-1",
+          "form": "pluie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-017",
@@ -858,13 +1554,25 @@
       "subcategory": "3.02",
       "french": "provincial, provinciale",
       "chinese": "外地的，外省的；土里土气的（贬义）",
-      "example": "Il a un style provincial.",
+      "example": "Cette association provinciale aide les étudiants à trouver un logement pendant leur formation.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        },
+        {
+          "id": "book-2.01-035",
+          "form": "logement"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-018",
@@ -872,13 +1580,25 @@
       "subcategory": "3.02",
       "french": "la ressource",
       "chinese": "资源",
-      "example": "Les ressources de pétrole en France sont faibles.",
+      "example": "L'eau était une ressource précieuse pour les habitants de ce village situé loin du fleuve.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "3.02-2",
@@ -886,14 +1606,26 @@
       "subcategory": "3.02",
       "french": "la rivière",
       "chinese": "河",
-      "example": "Une rivière est un cours d’eau.",
+      "example": "La rivière traverse le parc avant de rejoindre le fleuve près de l'ancien pont.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/ʁivjɛʁ/"
+      "ipa": "/ʁivjɛʁ/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-037",
+          "form": "parc"
+        },
+        {
+          "id": "book-4.03-012",
+          "form": "pont"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-020",
@@ -901,13 +1633,25 @@
       "subcategory": "3.02",
       "french": "le sable",
       "chinese": "沙子",
-      "example": "La plage est couverte de sable.",
+      "example": "Le vent recouvrira nos chaussures de sable si nous restons sur la plage.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "3.03-3",
+          "form": "vent"
+        },
+        {
+          "id": "book-4.02-023",
+          "form": "plage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-021",
@@ -915,13 +1659,25 @@
       "subcategory": "3.02",
       "french": "le sol",
       "chinese": "地，地面",
-      "example": "Après l’orage, le sol est tout mouillé.",
+      "example": "Le sol du jardin reste humide à l'ombre du grand arbre malgré la chaleur.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "book-3.03-012",
+          "form": "ombre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-022",
@@ -929,13 +1685,25 @@
       "subcategory": "3.02",
       "french": "la source",
       "chinese": "源头，泉源",
-      "example": "Il y a plusieurs sources d’eau dans cette montagne.",
+      "example": "Nous avons retrouvé la source grâce aux indications d'un berger rencontré sur le sentier.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-4.01-025",
+          "form": "indications"
+        },
+        {
+          "id": "book-3.01-040",
+          "form": "sentier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-023",
@@ -943,13 +1711,25 @@
       "subcategory": "3.02",
       "french": "la terre",
       "chinese": "地面，土地",
-      "example": "Le métro circule généralement sous terre.",
+      "example": "Les agriculteurs travaillent la terre avant de semer le blé qui sera récolté en été.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-001",
+          "form": "agriculteurs"
+        },
+        {
+          "id": "book-3.04-027",
+          "form": "blé"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-024",
@@ -957,13 +1737,25 @@
       "subcategory": "3.02",
       "french": "la vague",
       "chinese": "波浪",
-      "example": "À la plage, j’aime écouter le bruit des vagues.",
+      "example": "Une vague plus forte pourrait emporter le seau laissé par les enfants au bord de l'eau.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-025",
@@ -971,13 +1763,25 @@
       "subcategory": "3.02",
       "french": "l’altitude",
       "chinese": "海拔",
-      "example": "Nous sommes montés à plus de 1000 mètres d’altitude.",
+      "example": "À cette altitude, les randonneurs surveillent leur respiration et boivent régulièrement de l'eau.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-8.03-030",
+          "form": "respiration"
+        },
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-026",
@@ -985,13 +1789,25 @@
       "subcategory": "3.02",
       "french": "la baie",
       "chinese": "大海湾，港湾",
-      "example": "La côte forme une baie en se creusant.",
+      "example": "Les bateaux attendaient dans la baie pendant que la tempête passait au large.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 26,
       "pdfPage": 33,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-004",
+          "form": "bateaux"
+        },
+        {
+          "id": "book-3.03-034",
+          "form": "tempête"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-027",
@@ -999,13 +1815,25 @@
       "subcategory": "3.02",
       "french": "border",
       "chinese": "镶边，沿着……的边缘",
-      "example": "Une avenue est généralement bordée d’arbres.",
+      "example": "Des arbres bordent le canal et offrent un peu d'ombre aux promeneurs de l'après-midi.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.04-1",
+          "form": "arbres"
+        },
+        {
+          "id": "book-3.03-012",
+          "form": "ombre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-028",
@@ -1013,13 +1841,25 @@
       "subcategory": "3.02",
       "french": "brûler",
       "chinese": "烧，燃烧",
-      "example": "La forêt brûle depuis deux jours.",
+      "example": "Un feu a brûlé plusieurs hectares de forêt avant l'arrivée de la pluie.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-008",
+          "form": "forêt"
+        },
+        {
+          "id": "3.03-1",
+          "form": "pluie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-029",
@@ -1027,13 +1867,25 @@
       "subcategory": "3.02",
       "french": "le col",
       "chinese": "山口",
-      "example": "Nous avons descendu le col de la montagne à vélo.",
+      "example": "Ce col relie deux vallées, mais la neige bloque parfois la route en hiver.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-063",
+          "form": "vallées"
+        },
+        {
+          "id": "book-3.03-010",
+          "form": "neige"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-030",
@@ -1041,13 +1893,25 @@
       "subcategory": "3.02",
       "french": "la colline",
       "chinese": "山丘，小山",
-      "example": "Du haut de la colline, nous avons une magnifique vue sur le paysage.",
+      "example": "Nous monterons sur la colline pour regarder le soleil disparaître derrière la ville.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书误译“山谷”，已改为“山丘，小山”；山谷对应 vallée。"
+      "note": "原书误译“山谷”，已改为“山丘，小山”；山谷对应 vallée。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "3.03-2",
+          "form": "soleil"
+        },
+        {
+          "id": "3.01-1",
+          "form": "ville"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-031",
@@ -1055,13 +1919,25 @@
       "subcategory": "3.02",
       "french": "le continent",
       "chinese": "大陆",
-      "example": "Il y a sept continents. L’Afrique et l’Europe en sont deux.",
+      "example": "Les élèves situent chaque continent sur la carte avant de parler du climat.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.01-001",
+          "form": "carte"
+        },
+        {
+          "id": "book-3.03-005",
+          "form": "climat"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-032",
@@ -1069,13 +1945,25 @@
       "subcategory": "3.02",
       "french": "couler",
       "chinese": "流动",
-      "example": "La Seine coule à travers Paris.",
+      "example": "Un petit canal permettrait à l'eau de couler jusqu'aux champs sans traverser le chemin.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-032",
+          "form": "canal"
+        },
+        {
+          "id": "book-3.02-003",
+          "form": "champs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-033",
@@ -1083,13 +1971,25 @@
       "subcategory": "3.02",
       "french": "le désert",
       "chinese": "沙漠",
-      "example": "Il faut avoir une bonne condition et surtout de l’eau quand on veut traverser le désert.",
+      "example": "Dans le désert, les voyageurs évitent de marcher au milieu de la journée.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-016",
+          "form": "voyageurs"
+        },
+        {
+          "id": "book-16.02-020",
+          "form": "journée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-034",
@@ -1097,13 +1997,25 @@
       "subcategory": "3.02",
       "french": "l’écho",
       "chinese": "回声",
-      "example": "Elle entend l’écho de sa voix dans la montagne.",
+      "example": "L'écho répétait les cris des enfants qui jouaient près de la falaise.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-9.01-006",
+          "form": "cris"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-035",
@@ -1111,13 +2023,25 @@
       "subcategory": "3.02",
       "french": "émerger",
       "chinese": "浮现，显露",
-      "example": "Pierre observe un poisson qui émerge de l’eau.",
+      "example": "Le toit du château commence à émerger du brouillard lorsque le soleil se lève.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-003",
+          "form": "château"
+        },
+        {
+          "id": "3.03-2",
+          "form": "soleil"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-036",
@@ -1125,13 +2049,25 @@
       "subcategory": "3.02",
       "french": "le fleuve",
       "chinese": "河，入海河流",
-      "example": "La Seine est un fleuve qui se jette dans la mer.",
+      "example": "Nous avons traversé le fleuve par le vieux pont pour rejoindre le marché.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-012",
+          "form": "pont"
+        },
+        {
+          "id": "book-3.01-012",
+          "form": "marché"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-037",
@@ -1139,13 +2075,25 @@
       "subcategory": "3.02",
       "french": "le flot",
       "chinese": "波浪，波涛",
-      "example": "De la plage, nous voyons les flots de la mer.",
+      "example": "Le flot frappe la coque du navire pendant que les marins préparent leur matériel.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-010",
+          "form": "navire"
+        },
+        {
+          "id": "book-3.02-045",
+          "form": "marins"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-038",
@@ -1153,13 +2101,25 @@
       "subcategory": "3.02",
       "french": "flotter",
       "chinese": "漂浮",
-      "example": "Après l’accident nucléaire, tous les poissons flottent à la surface de l’eau.",
+      "example": "Les feuilles flotteront jusqu'au pont si les enfants les déposent doucement sur l'eau.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-012",
+          "form": "pont"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-039",
@@ -1167,13 +2127,25 @@
       "subcategory": "3.02",
       "french": "géographique",
       "chinese": "地理的",
-      "example": "L’instituteur a accroché une carte géographique au mur de la classe.",
+      "example": "Cette carte géographique aide les voyageurs à comprendre le relief avant leur départ.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.01-001",
+          "form": "carte"
+        },
+        {
+          "id": "book-3.02-057",
+          "form": "relief"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-040",
@@ -1181,13 +2153,25 @@
       "subcategory": "3.02",
       "french": "gigantesque",
       "chinese": "巨大的",
-      "example": "En Bretagne, on trouve des rochers gigantesques qui sont parfois grands comme des maisons.",
+      "example": "Une réserve gigantesque pourrait fournir de l'eau à toutes les fermes de la région.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "book-3.01-009",
+          "form": "fermes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-041",
@@ -1195,13 +2179,25 @@
       "subcategory": "3.02",
       "french": "l’horizon",
       "chinese": "地平线",
-      "example": "Il observe le soleil disparaître derrière l’horizon.",
+      "example": "À l'horizon, un bateau apparaît entre la mer et le ciel encore gris.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-004",
+          "form": "bateau"
+        },
+        {
+          "id": "book-3.02-011",
+          "form": "mer"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-042",
@@ -1209,13 +2205,25 @@
       "subcategory": "3.02",
       "french": "jaillir",
       "chinese": "喷射，喷涌",
-      "example": "Le pétrole jaillit de terre avec une forte pression.",
+      "example": "L'eau jaillissait de la fontaine pendant que les touristes remplissaient leurs bouteilles.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "book-5.02-042",
+          "form": "bouteilles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-043",
@@ -1223,13 +2231,25 @@
       "subcategory": "3.02",
       "french": "la lune",
       "chinese": "月球，月亮",
-      "example": "La lune tourne autour de la Terre.",
+      "example": "La lune éclaire le sentier lorsque nous rentrons du village après le dîner.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-040",
+          "form": "sentier"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-044",
@@ -1237,13 +2257,25 @@
       "subcategory": "3.02",
       "french": "la marée",
       "chinese": "潮，潮汐",
-      "example": "La marée est le mouvement des eaux de la mer. Il y a la marée basse et la marée haute.",
+      "example": "La marée est montée avant que les pêcheurs ramènent leur matériel sur la plage.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.04-012",
+          "form": "matériel"
+        },
+        {
+          "id": "book-4.02-023",
+          "form": "plage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-045",
@@ -1251,13 +2283,25 @@
       "subcategory": "3.02",
       "french": "marin, marine",
       "chinese": "海洋的",
-      "example": "Les spécialistes annoncent des courants marins forts pour demain.",
+      "example": "Les scientifiques étudient le milieu marin pour comprendre la disparition de certaines espèces de poissons.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-013",
+          "form": "espèces"
+        },
+        {
+          "id": "book-3.04-021",
+          "form": "poissons"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-046",
@@ -1265,13 +2309,25 @@
       "subcategory": "3.02",
       "french": "la mine",
       "chinese": "矿，矿井",
-      "example": "La mine d’or la plus profonde du monde est située en Afrique du Sud.",
+      "example": "L'ancienne mine accueillera les visiteurs curieux de découvrir le travail des ouvriers.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-044",
+          "form": "visiteurs"
+        },
+        {
+          "id": "book-11.01-011",
+          "form": "ouvriers"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-047",
@@ -1279,13 +2335,25 @@
       "subcategory": "3.02",
       "french": "le minerai",
       "chinese": "矿石",
-      "example": "Il travaille sur une exploitation de minerai de fer.",
+      "example": "Ce minerai contient du cuivre que l'usine sépare ensuite des autres substances.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.04-024",
+          "form": "cuivre"
+        },
+        {
+          "id": "book-2.04-035",
+          "form": "substances"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-048",
@@ -1293,13 +2361,25 @@
       "subcategory": "3.02",
       "french": "le mont",
       "chinese": "山峰",
-      "example": "Un mont est une haute montagne.",
+      "example": "Par temps clair, nous apercevrions le mont derrière les nuages depuis la terrasse de l'hôtel.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-3.03-028",
+          "form": "nuages"
+        },
+        {
+          "id": "book-2.01-044",
+          "form": "terrasse"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-049",
@@ -1307,13 +2387,25 @@
       "subcategory": "3.02",
       "french": "l’océan",
       "chinese": "洋，海洋",
-      "example": "L’Atlantique est un océan qui relie l’Europe à l’Amérique du nord et du sud.",
+      "example": "L'océan sépare les deux continents, mais des bateaux transportent les marchandises toute l'année.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-031",
+          "form": "continents"
+        },
+        {
+          "id": "book-6.01-010",
+          "form": "marchandises"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "3.02-3",
@@ -1321,14 +2413,26 @@
       "subcategory": "3.02",
       "french": "le paysage",
       "chinese": "风景",
-      "example": "La Provence est connue pour son paysage pittoresque et son climat agréable.",
+      "example": "Le paysage changeait à chaque virage de la route qui traversait la montagne.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/peizaʒ/"
+      "ipa": "/peizaʒ/",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-017",
+          "form": "route"
+        },
+        {
+          "id": "book-4.02-008",
+          "form": "montagne"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-051",
@@ -1336,13 +2440,25 @@
       "subcategory": "3.02",
       "french": "la pente",
       "chinese": "坡，斜坡",
-      "example": "La route qui mène à leur maison est en pente.",
+      "example": "Cette pente devient glissante quand la pluie tombe sur les feuilles du sentier.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.03-1",
+          "form": "pluie"
+        },
+        {
+          "id": "book-3.04-014",
+          "form": "feuilles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-052",
@@ -1350,13 +2466,25 @@
       "subcategory": "3.02",
       "french": "la plaine",
       "chinese": "平原",
-      "example": "Une plaine est une forme de relief relativement plate.",
+      "example": "Nous avons traversé la plaine en train avant de retrouver les premières collines.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "4.04-1",
+          "form": "train"
+        },
+        {
+          "id": "book-3.02-030",
+          "form": "collines"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-053",
@@ -1364,13 +2492,25 @@
       "subcategory": "3.02",
       "french": "la planète",
       "chinese": "行星",
-      "example": "La planète Pluton est plus petite que la planète Jupiter.",
+      "example": "Cette planète apparaît sur les photos prises par un appareil envoyé dans l'espace.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书例句照录，保留其天文学用语，不作为现时天体分类说明。"
+      "note": "原书例句照录，保留其天文学用语，不作为现时天体分类说明。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-031",
+          "form": "photos"
+        },
+        {
+          "id": "book-16.08-013",
+          "form": "espace"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-054",
@@ -1378,13 +2518,25 @@
       "subcategory": "3.02",
       "french": "la prairie",
       "chinese": "草原，草地",
-      "example": "Une prairie est un terrain couvert d’herbe.",
+      "example": "Les vaches retrouveront la prairie lorsque l'herbe aura repoussé après l'hiver.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 27,
       "pdfPage": 34,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-068",
+          "form": "vaches"
+        },
+        {
+          "id": "book-3.04-042",
+          "form": "herbe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-055",
@@ -1392,13 +2544,25 @@
       "subcategory": "3.02",
       "french": "le puits",
       "chinese": "井",
-      "example": "Un puits est un trou dans le sol d’où l’on peut tirer de l’eau.",
+      "example": "Le puits du village attire les habitants qui viennent chercher de l'eau le matin.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.01-2",
+          "form": "village"
+        },
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-056",
@@ -1406,13 +2570,25 @@
       "subcategory": "3.02",
       "french": "refléter",
       "chinese": "反射",
-      "example": "L’eau reflète la lumière de la lune.",
+      "example": "Un miroir plus grand refléterait la lumière jusqu'au fond de la pièce.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-010",
+          "form": "lumière"
+        },
+        {
+          "id": "book-2.03-016",
+          "form": "pièce"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-057",
@@ -1420,13 +2596,25 @@
       "subcategory": "3.02",
       "french": "le relief",
       "chinese": "地形",
-      "example": "La forme de la surface de la terre est le relief.",
+      "example": "Le relief de la région oblige les cyclistes à choisir soigneusement leur itinéraire.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-018",
+          "form": "région"
+        },
+        {
+          "id": "book-12.05-006",
+          "form": "choisir"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-058",
@@ -1434,13 +2622,25 @@
       "subcategory": "3.02",
       "french": "la rive",
       "chinese": "岸",
-      "example": "Il y a tant de brouillard sur le fleuve qu’on ne peut pas voir d’une rive à l’autre.",
+      "example": "Des roseaux poussaient sur la rive où mon grand-père venait observer les oiseaux.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-037",
+          "form": "grand-père"
+        },
+        {
+          "id": "3.04-4",
+          "form": "oiseaux"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-059",
@@ -1448,13 +2648,25 @@
       "subcategory": "3.02",
       "french": "le rocher",
       "chinese": "岩石",
-      "example": "Un rocher est tombé sur la route de montagne.",
+      "example": "Ce rocher protège du vent les voyageurs qui s'arrêtent pour partager leur repas.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.03-3",
+          "form": "vent"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-060",
@@ -1462,13 +2674,25 @@
       "subcategory": "3.02",
       "french": "la rotation",
       "chinese": "转动，旋转",
-      "example": "Nicolas Copernic a découvert la rotation de la Terre autour du soleil.",
+      "example": "Le professeur a montré la rotation de la Terre avec une lampe représentant le soleil.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书科学史例句照录，仅作语言材料。"
+      "note": "原书科学史例句照录，仅作语言材料。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-023",
+          "form": "Terre"
+        },
+        {
+          "id": "3.03-2",
+          "form": "soleil"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-061",
@@ -1476,13 +2700,25 @@
       "subcategory": "3.02",
       "french": "le sommet",
       "chinese": "尖，顶，山顶",
-      "example": "Le sommet est le point le plus haut d’une montagne.",
+      "example": "Le sommet reste caché sous la neige, même lorsque les fleurs apparaissent dans la vallée.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.03-010",
+          "form": "neige"
+        },
+        {
+          "id": "3.04-2",
+          "form": "fleurs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-062",
@@ -1490,13 +2726,25 @@
       "subcategory": "3.02",
       "french": "terrestre",
       "chinese": "地球的",
-      "example": "L’atmosphère terrestre est constituée de 21 % d’oxygène.",
+      "example": "Ce satellite observera la surface terrestre pour suivre l'évolution des forêts et des déserts.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-008",
+          "form": "forêts"
+        },
+        {
+          "id": "book-3.02-033",
+          "form": "déserts"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.02-063",
@@ -1504,13 +2752,25 @@
       "subcategory": "3.02",
       "french": "la vallée",
       "chinese": "山谷",
-      "example": "Le village se trouve dans une vallée cachée.",
+      "example": "La vallée abrite plusieurs villages que relie un ancien chemin de fer.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.01-2",
+          "form": "villages"
+        },
+        {
+          "id": "book-4.03-033",
+          "form": "chemin de fer"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-001",
@@ -1518,13 +2778,25 @@
       "subcategory": "3.03",
       "french": "l’air",
       "chinese": "空气",
-      "example": "Aurélie aime respirer le bon air de la campagne.",
+      "example": "Un peu d'air frais aiderait les élèves à se concentrer dans cette salle trop chaude.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": "此处为“空气”义；第一单元同形词为“神情，表情”义。"
+      "note": "此处为“空气”义；第一单元同形词为“神情，表情”义。",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-002",
@@ -1532,13 +2804,25 @@
       "subcategory": "3.03",
       "french": "la chaleur",
       "chinese": "热，热量",
-      "example": "La chaleur du soleil donne envie de dormir.",
+      "example": "La chaleur oblige le jardinier à arroser les plantes tôt le matin.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-020",
+          "form": "plantes"
+        },
+        {
+          "id": "book-16.02-026",
+          "form": "matin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-003",
@@ -1546,13 +2830,25 @@
       "subcategory": "3.03",
       "french": "chaud, chaude",
       "chinese": "热的",
-      "example": "Cette année, il fait encore plus chaud que l’année dernière. Tout le monde va à la plage.",
+      "example": "Le pain était encore chaud quand nous l'avons posé sur la table du déjeuner.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        },
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-004",
@@ -1560,13 +2856,25 @@
       "subcategory": "3.03",
       "french": "le ciel",
       "chinese": "天空",
-      "example": "Aurélie ne supporte plus la pluie et le ciel gris.",
+      "example": "Le ciel se couvre de nuages alors que les enfants préparent leur sortie au parc.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.03-028",
+          "form": "nuages"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-005",
@@ -1574,13 +2882,25 @@
       "subcategory": "3.03",
       "french": "le climat",
       "chinese": "气候",
-      "example": "Mes voisins préfèrent le climat du sud. Ils aiment quand il fait chaud et que le soleil brille.",
+      "example": "Ce climat plus doux permettra aux agriculteurs de cultiver de nouveaux fruits.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-001",
+          "form": "agriculteurs"
+        },
+        {
+          "id": "book-5.01-009",
+          "form": "fruits"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-006",
@@ -1588,13 +2908,25 @@
       "subcategory": "3.03",
       "french": "le degré",
       "chinese": "度",
-      "example": "Il fait 35 degrés aujourd’hui.",
+      "example": "Un seul degré de plus suffit à modifier la température de la chambre du bébé.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.03-4",
+          "form": "température"
+        },
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-007",
@@ -1602,13 +2934,25 @@
       "subcategory": "3.03",
       "french": "froid, froide",
       "chinese": "冷的",
-      "example": "L’eau est encore trop froide pour se baigner.",
+      "example": "Nous avons gardé le beurre au froid pendant le trajet jusqu'à la maison.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-001",
+          "form": "beurre"
+        },
+        {
+          "id": "2.01-1",
+          "form": "maison"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-008",
@@ -1616,13 +2960,25 @@
       "subcategory": "3.03",
       "french": "geler",
       "chinese": "结冰，冰冻",
-      "example": "Aurélie met un manteau épais et des gants, car il gèle.",
+      "example": "L'eau commence à geler dans les tuyaux quand le chauffage reste éteint toute la nuit.",
       "part": "v.",
       "level": "基础",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-021",
+          "form": "tuyaux"
+        },
+        {
+          "id": "book-2.02-031",
+          "form": "chauffage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-009",
@@ -1630,13 +2986,25 @@
       "subcategory": "3.03",
       "french": "illuminer",
       "chinese": "照亮",
-      "example": "Les étoiles illuminent le ciel la nuit.",
+      "example": "De petites lampes pourraient illuminer la cour pendant le concert de fin d'année.",
       "part": "v.",
       "level": "基础",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-008",
+          "form": "cour"
+        },
+        {
+          "id": "book-13.03-030",
+          "form": "concert"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-010",
@@ -1644,13 +3012,25 @@
       "subcategory": "3.03",
       "french": "la neige",
       "chinese": "雪",
-      "example": "Ils annoncent dix centimètres de neige pour demain.",
+      "example": "La neige recouvre le toit et rend le chemin de l'école difficile à suivre.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-045",
+          "form": "toit"
+        },
+        {
+          "id": "book-4.01-002",
+          "form": "chemin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-011",
@@ -1658,13 +3038,25 @@
       "subcategory": "3.03",
       "french": "neiger",
       "chinese": "下雪",
-      "example": "Il a neigé la nuit dernière, les toits des maisons sont blancs.",
+      "example": "Il neigeait lorsque les voyageurs sont descendus du train devant la petite gare.",
       "part": "v.",
       "level": "基础",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-016",
+          "form": "voyageurs"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-012",
@@ -1672,13 +3064,25 @@
       "subcategory": "3.03",
       "french": "l’ombre",
       "chinese": "阴影，阴凉处",
-      "example": "L’ombre du grand arbre protège Aurélie du soleil.",
+      "example": "Nous installons la table à l'ombre pour protéger les enfants de la chaleur.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        },
+        {
+          "id": "book-3.03-002",
+          "form": "chaleur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-013",
@@ -1686,13 +3090,25 @@
       "subcategory": "3.03",
       "french": "pencher",
       "chinese": "使倾斜，倾斜",
-      "example": "Le vent fait pencher l’arbre.",
+      "example": "Le vent fera pencher les jeunes arbres si nous ne les attachons pas à un piquet.",
       "part": "v.",
       "level": "基础",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "3.03-3",
+          "form": "vent"
+        },
+        {
+          "id": "3.04-1",
+          "form": "arbres"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-014",
@@ -1700,13 +3116,25 @@
       "subcategory": "3.03",
       "french": "le phénomène",
       "chinese": "现象",
-      "example": "Une tempête est un phénomène naturel.",
+      "example": "Ce phénomène attire les chercheurs qui étudient la formation des nuages au-dessus du lac.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-026",
+          "form": "chercheurs"
+        },
+        {
+          "id": "book-3.03-028",
+          "form": "nuages"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-015",
@@ -1714,13 +3142,25 @@
       "subcategory": "3.03",
       "french": "pleuvoir",
       "chinese": "下雨",
-      "example": "Pierre prend un parapluie pour sortir, car il pleut.",
+      "example": "Il a plu toute la nuit, mais les habitants ont maintenu le marché du dimanche.",
       "part": "v.",
       "level": "基础",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "book-3.01-012",
+          "form": "marché"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-016",
@@ -1728,13 +3168,25 @@
       "subcategory": "3.03",
       "french": "sec, sèche",
       "chinese": "干的，干燥的",
-      "example": "Les agriculteurs espèrent qu’il va pleuvoir cette semaine, car la terre est trop sèche.",
+      "example": "Ce bois sec permet au feu de démarrer plus vite dans la cheminée.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 28,
       "pdfPage": 35,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-010",
+          "form": "feu"
+        },
+        {
+          "id": "book-2.01-027",
+          "form": "cheminée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "3.03-2",
@@ -1742,14 +3194,26 @@
       "subcategory": "3.03",
       "french": "le soleil",
       "chinese": "太阳，阳光",
-      "example": "Le soleil du sud me manque. Ici, il pleut 300 jours dans l’année.",
+      "example": "Un peu de soleil permettrait de sécher les draps étendus dans le jardin.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/sɔlɛj/"
+      "ipa": "/sɔlɛj/",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-038",
+          "form": "draps"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-018",
@@ -1757,13 +3221,25 @@
       "subcategory": "3.03",
       "french": "souffler",
       "chinese": "吹，刮",
-      "example": "Le vent souffle à 120 kilomètres à l’heure.",
+      "example": "Le vent souffle si fort que le bateau reste attaché au quai.",
       "part": "v.",
       "level": "基础",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-004",
+          "form": "bateau"
+        },
+        {
+          "id": "book-4.03-052",
+          "form": "quai"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "3.03-4",
@@ -1771,13 +3247,25 @@
       "subcategory": "3.03",
       "french": "la température",
       "chinese": "温度",
-      "example": "La température terrestre a augmenté de deux degrés.",
+      "example": "La température montait dans la cuisine pendant que le boulanger préparait le pain.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
-      "note": "例句按原书保留，未给出统计时期，不作为现时气候统计。"
+      "note": "例句按原书保留，未给出统计时期，不作为现时气候统计。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-004",
+          "form": "cuisine"
+        },
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "3.03-3",
@@ -1785,14 +3273,26 @@
       "subcategory": "3.03",
       "french": "le vent",
       "chinese": "风",
-      "example": "Les arbres plient sous la violence du vent.",
+      "example": "Le vent emporte les graines des plantes jusqu'aux champs situés derrière le village.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/vɑ̃/"
+      "ipa": "/vɑ̃/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-020",
+          "form": "plantes"
+        },
+        {
+          "id": "book-3.02-003",
+          "form": "champs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-021",
@@ -1800,13 +3300,25 @@
       "subcategory": "3.03",
       "french": "l’atmosphère",
       "chinese": "大气，大气层",
-      "example": "On cherche une planète entourée d’une atmosphère semblable à celle de la Terre.",
+      "example": "Les élèves étudieront l'atmosphère pour comprendre les liens entre météo et climat.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        },
+        {
+          "id": "book-3.03-005",
+          "form": "climat"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-022",
@@ -1814,13 +3326,25 @@
       "subcategory": "3.03",
       "french": "le brouillard",
       "chinese": "雾",
-      "example": "Le brouillard empêche le conducteur de voir la route.",
+      "example": "Le brouillard cache le pont et oblige le conducteur à réduire sa vitesse.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-012",
+          "form": "pont"
+        },
+        {
+          "id": "book-4.03-024",
+          "form": "vitesse"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-023",
@@ -1828,13 +3352,25 @@
       "subcategory": "3.03",
       "french": "l’éclair",
       "chinese": "闪电",
-      "example": "Un orage approche. J’ai déjà vu un éclair.",
+      "example": "Un éclair a illuminé la fenêtre avant que le bruit réveille le bébé.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-011",
+          "form": "fenêtre"
+        },
+        {
+          "id": "book-1.03-031",
+          "form": "bébé"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-024",
@@ -1842,13 +3378,25 @@
       "subcategory": "3.03",
       "french": "l’étoile",
       "chinese": "星星",
-      "example": "Il n’y a pas de nuages dans le ciel, on peut voir les étoiles.",
+      "example": "Les enfants cherchent une étoile dans le ciel avant de rentrer dans leur tente.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.03-004",
+          "form": "ciel"
+        },
+        {
+          "id": "book-4.02-028",
+          "form": "tente"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-025",
@@ -1856,13 +3404,25 @@
       "subcategory": "3.03",
       "french": "la goutte",
       "chinese": "雨滴，液滴",
-      "example": "Il va pleuvoir. J’ai reçu des gouttes.",
+      "example": "Une seule goutte de cette huile donnerait davantage de goût à la soupe.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-027",
+          "form": "huile"
+        },
+        {
+          "id": "book-5.02-029",
+          "form": "soupe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-026",
@@ -1870,13 +3430,25 @@
       "subcategory": "3.03",
       "french": "humide",
       "chinese": "潮湿的",
-      "example": "La terre est humide après la pluie.",
+      "example": "La serviette reste humide parce que la salle de bains manque de ventilation.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-065",
+          "form": "serviette"
+        },
+        {
+          "id": "book-2.03-021",
+          "form": "salle de bains"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-027",
@@ -1884,13 +3456,25 @@
       "subcategory": "3.03",
       "french": "incliner",
       "chinese": "使倾斜，使弯下",
-      "example": "Le vent incline les arbres.",
+      "example": "Le jardinier inclinait le pot pour retirer la plante sans casser ses racines.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-056",
+          "form": "pot"
+        },
+        {
+          "id": "book-3.04-020",
+          "form": "plante"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-028",
@@ -1898,13 +3482,25 @@
       "subcategory": "3.03",
       "french": "le nuage",
       "chinese": "云",
-      "example": "Il y a trop de nuages dans le ciel. On ne peut pas voir le soleil.",
+      "example": "Un nuage passe devant le soleil et plonge la terrasse dans l'ombre.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.03-2",
+          "form": "soleil"
+        },
+        {
+          "id": "book-3.03-012",
+          "form": "ombre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-029",
@@ -1912,13 +3508,25 @@
       "subcategory": "3.03",
       "french": "l’orage",
       "chinese": "暴风雨，雷雨",
-      "example": "Un orage va éclater. On voit déjà des éclairs.",
+      "example": "L'orage interrompra peut-être le spectacle prévu ce soir dans la cour du château.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-020",
+          "form": "spectacle"
+        },
+        {
+          "id": "book-13.02-003",
+          "form": "château"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "3.03-1",
@@ -1926,14 +3534,26 @@
       "subcategory": "3.03",
       "french": "la pluie",
       "chinese": "雨",
-      "example": "Un orage est souvent accompagné de pluie.",
+      "example": "La pluie remplit les réservoirs qui fournissent de l'eau aux jardins pendant l'été.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/plɥi/"
+      "ipa": "/plɥi/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardins"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-031",
@@ -1941,13 +3561,25 @@
       "subcategory": "3.03",
       "french": "la prévision",
       "chinese": "预报",
-      "example": "Le journaliste donne les prévisions du temps qu’il va faire demain.",
+      "example": "La prévision météo nous a convaincus de reporter la randonnée et de visiter le musée.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-022",
+          "form": "visiter"
+        },
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-032",
@@ -1955,13 +3587,25 @@
       "subcategory": "3.03",
       "french": "le rayon",
       "chinese": "束，光线",
-      "example": "Un rayon de lumière passe sous la porte.",
+      "example": "Un rayon de soleil traverse le rideau et éclaire le livre posé sur mon lit.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
-      "note": "此处为“光束”义；第二单元同形词指架子、隔板。"
+      "note": "此处为“光束”义；第二单元同形词指架子、隔板。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.03-2",
+          "form": "soleil"
+        },
+        {
+          "id": "book-13.05-014",
+          "form": "livre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-033",
@@ -1969,13 +3613,25 @@
       "subcategory": "3.03",
       "french": "le rayonnement",
       "chinese": "光，光辉，辐射",
-      "example": "Le rayonnement du soleil peut être source d’énergie.",
+      "example": "Un appareil mesurerait le rayonnement reçu par ces plantes pendant l'expérience de biologie.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-13.04-003",
+          "form": "appareil"
+        },
+        {
+          "id": "book-3.04-020",
+          "form": "plantes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-034",
@@ -1983,13 +3639,25 @@
       "subcategory": "3.03",
       "french": "la tempête",
       "chinese": "暴风雨，风暴",
-      "example": "Une tempête est prévue pour demain, le vent soufflera jusqu’à 120 kilomètres à l’heure.",
+      "example": "La tempête secoue les volets tandis que les habitants rentrent leurs voitures au garage.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-047",
+          "form": "volets"
+        },
+        {
+          "id": "book-4.04-023",
+          "form": "voitures"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.03-035",
@@ -1997,13 +3665,25 @@
       "subcategory": "3.03",
       "french": "tropical, tropicale",
       "chinese": "热带的",
-      "example": "Certains fruits poussent seulement dans un climat tropical, humide et chaud.",
+      "example": "La chaleur tropicale surprenait les voyageurs dès leur arrivée à l'aéroport de l'île.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-016",
+          "form": "voyageurs"
+        },
+        {
+          "id": "book-4.03-002",
+          "form": "aéroport"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-001",
@@ -2011,13 +3691,25 @@
       "subcategory": "3.04",
       "french": "l’abeille",
       "chinese": "蜜蜂",
-      "example": "Pour que les abeilles produisent du miel, il leur faut des fleurs.",
+      "example": "Une abeille se pose sur la fleur que ma fille vient de dessiner dans son cahier.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.04-2",
+          "form": "fleur"
+        },
+        {
+          "id": "book-10.01-029",
+          "form": "cahier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-002",
@@ -2025,13 +3717,25 @@
       "subcategory": "3.04",
       "french": "l’aile",
       "chinese": "翅膀",
-      "example": "L’aile de l’oiseau est cassée. Il ne peut plus voler.",
+      "example": "Le vétérinaire examinera l'aile de cet oiseau avant de le confier aux soigneurs du parc.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "3.04-4",
+          "form": "oiseau"
+        },
+        {
+          "id": "book-3.01-037",
+          "form": "parc"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-003",
@@ -2039,13 +3743,25 @@
       "subcategory": "3.04",
       "french": "l’animal",
       "chinese": "动物",
-      "example": "Pierre aime les animaux, surtout les chats.",
+      "example": "Cet animal s'approche du campement attiré par l'odeur de notre repas.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-9.01-034",
+          "form": "odeur"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "3.04-1",
@@ -2053,14 +3769,26 @@
       "subcategory": "3.04",
       "french": "l’arbre",
       "chinese": "树",
-      "example": "J’adore me promener sous les arbres en forêt.",
+      "example": "Nous avons planté un arbre pour donner de l'ombre à la terrasse en été.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/aʁbʁ/"
+      "ipa": "/aʁbʁ/",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.03-012",
+          "form": "ombre"
+        },
+        {
+          "id": "book-2.01-044",
+          "form": "terrasse"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-005",
@@ -2068,13 +3796,25 @@
       "subcategory": "3.04",
       "french": "la bête",
       "chinese": "兽，动物",
-      "example": "Aurélie a plusieurs bêtes à la maison : un chien, un chat et deux oiseaux.",
+      "example": "La bête garde ses distances lorsque les enfants traversent la prairie avec leur guide.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 29,
       "pdfPage": 36,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-3.02-054",
+          "form": "prairie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-006",
@@ -2082,13 +3822,25 @@
       "subcategory": "3.04",
       "french": "la branche",
       "chinese": "树枝",
-      "example": "Il y a eu une tempête la nuit dernière. Plusieurs branches d’arbres sont tombées sur la route.",
+      "example": "Une branche plus basse permettrait au chat de redescendre sans l'aide des pompiers.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-031",
+          "form": "chat"
+        },
+        {
+          "id": "book-7.02-003",
+          "form": "aide"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-007",
@@ -2096,13 +3848,25 @@
       "subcategory": "3.04",
       "french": "la cellule",
       "chinese": "细胞",
-      "example": "Chaque être vivant est constitué d’au moins une cellule.",
+      "example": "Les élèves observent une cellule de plante au microscope pendant le cours de biologie.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        },
+        {
+          "id": "book-3.04-020",
+          "form": "plante"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-008",
@@ -2110,13 +3874,25 @@
       "subcategory": "3.04",
       "french": "le cheval",
       "chinese": "马",
-      "example": "Mon oncle a perdu beaucoup d’argent aux courses de chevaux.",
+      "example": "Le cheval attendait près de la barrière pendant que l'agriculteur préparait sa nourriture.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-001",
+          "form": "agriculteur"
+        },
+        {
+          "id": "book-5.01-030",
+          "form": "nourriture"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-009",
@@ -2124,13 +3900,25 @@
       "subcategory": "3.04",
       "french": "le chien, la chienne",
       "chinese": "狗",
-      "example": "Aurélie promène son chien chaque soir dans le parc.",
+      "example": "Le chien de notre voisin retrouve sa balle sous les feuilles du jardin.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-023",
+          "form": "voisin"
+        },
+        {
+          "id": "book-3.04-014",
+          "form": "feuilles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-010",
@@ -2138,13 +3926,25 @@
       "subcategory": "3.04",
       "french": "le cochon",
       "chinese": "猪",
-      "example": "Le cochon appartient aux animaux de la ferme, tout comme la poule et le cheval.",
+      "example": "Les enfants verront les cochons de la ferme après la visite du potager.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-3.01-009",
+          "form": "ferme"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-011",
@@ -2152,13 +3952,25 @@
       "subcategory": "3.04",
       "french": "dresser",
       "chinese": "驯养，训练",
-      "example": "Ce cheval est encore sauvage. Il n’est pas dressé.",
+      "example": "Cette éducatrice sait dresser les chiens pour aider les personnes qui ne voient pas.",
       "part": "v.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-009",
+          "form": "chiens"
+        },
+        {
+          "id": "book-1.04-021",
+          "form": "personnes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-012",
@@ -2166,13 +3978,25 @@
       "subcategory": "3.04",
       "french": "l’élevage",
       "chinese": "畜牧，饲养",
-      "example": "Mon père possède un élevage de chevaux avec lesquels il gagne régulièrement des prix.",
+      "example": "L'élevage des moutons a permis à cette famille de rester dans son village.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-018",
+          "form": "moutons"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-013",
@@ -2180,13 +4004,25 @@
       "subcategory": "3.04",
       "french": "l’espèce",
       "chinese": "种，类",
-      "example": "Le bœuf et le cheval sont des espèces différentes.",
+      "example": "Cette espèce de papillon disparaît lorsque les agriculteurs traitent les champs avec certains produits.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-050",
+          "form": "papillon"
+        },
+        {
+          "id": "book-3.02-003",
+          "form": "champs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-014",
@@ -2194,13 +4030,25 @@
       "subcategory": "3.04",
       "french": "la feuille",
       "chinese": "树叶",
-      "example": "Les arbres perdent leurs feuilles en octobre.",
+      "example": "Une grande feuille protégerait le dessin de l'enfant contre les premières gouttes de pluie.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-018",
+          "form": "dessin"
+        },
+        {
+          "id": "3.03-1",
+          "form": "pluie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "3.04-2",
@@ -2208,14 +4056,26 @@
       "subcategory": "3.04",
       "french": "la fleur",
       "chinese": "花",
-      "example": "Mon père offre toujours des fleurs à ma mère pour son anniversaire.",
+      "example": "Ma sœur cueille une fleur dans le jardin pour décorer la table du déjeuner.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/flœʁ/"
+      "ipa": "/flœʁ/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-016",
@@ -2223,13 +4083,25 @@
       "subcategory": "3.04",
       "french": "la gueule",
       "chinese": "动物的嘴，口",
-      "example": "Le lion ouvre sa gueule et pousse un cri qui fait peur.",
+      "example": "Le chien gardait une balle dans sa gueule en attendant le retour de son maître.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-1.06-024",
+          "form": "balle"
+        },
+        {
+          "id": "book-10.01-017",
+          "form": "maître"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-017",
@@ -2237,13 +4109,25 @@
       "subcategory": "3.04",
       "french": "mort, morte",
       "chinese": "死的，死亡的",
-      "example": "Les feuilles mortes tombent de l’arbre.",
+      "example": "L'arbre mort abrite encore des insectes que les oiseaux viennent chercher sous son écorce.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-043",
+          "form": "insectes"
+        },
+        {
+          "id": "3.04-4",
+          "form": "oiseaux"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-018",
@@ -2251,13 +4135,25 @@
       "subcategory": "3.04",
       "french": "le mouton",
       "chinese": "羊，绵羊",
-      "example": "Il y a des moutons blancs dans la prairie.",
+      "example": "Le troupeau de moutons traversera la route quand le berger ouvrira la barrière.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-026",
+          "form": "troupeau"
+        },
+        {
+          "id": "book-4.03-017",
+          "form": "route"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "3.04-4",
@@ -2265,14 +4161,26 @@
       "subcategory": "3.04",
       "french": "l’oiseau",
       "chinese": "鸟",
-      "example": "L’oiseau ne peut plus voler, il a une aile cassée.",
+      "example": "Un oiseau construit son nid sur le balcon malgré les allées et venues de notre chat.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/wazo/"
+      "ipa": "/wazo/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-003",
+          "form": "balcon"
+        },
+        {
+          "id": "book-3.04-031",
+          "form": "chat"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-020",
@@ -2280,13 +4188,25 @@
       "subcategory": "3.04",
       "french": "la plante",
       "chinese": "植物",
-      "example": "On trouve dans son jardin une grande variété de plantes.",
+      "example": "Cette plante a poussé près du mur où la terre reste humide toute la journée.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-016",
+          "form": "mur"
+        },
+        {
+          "id": "book-3.02-023",
+          "form": "terre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-021",
@@ -2294,13 +4214,25 @@
       "subcategory": "3.04",
       "french": "le poisson",
       "chinese": "鱼",
-      "example": "Les poissons sont des animaux qui vivent dans l’eau.",
+      "example": "Le poisson se cache entre les pierres quand les enfants approchent du bord de la rivière.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-016",
+          "form": "pierres"
+        },
+        {
+          "id": "3.02-2",
+          "form": "rivière"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-022",
@@ -2308,13 +4240,25 @@
       "subcategory": "3.04",
       "french": "la poule",
       "chinese": "母鸡",
-      "example": "Nous n’achetons jamais d’œufs, car mon grand-père élève des poules.",
+      "example": "Une poule de plus fournirait assez d'œufs pour tous les repas de la famille.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-031",
+          "form": "œufs"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-023",
@@ -2322,13 +4266,25 @@
       "subcategory": "3.04",
       "french": "la race",
       "chinese": "动物的种类，品种",
-      "example": "La mère de mon chien est d’une race différente de celle de son père.",
+      "example": "Cette race de chien accompagne les bergers qui surveillent leurs troupeaux dans la montagne.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-009",
+          "form": "chien"
+        },
+        {
+          "id": "book-4.02-008",
+          "form": "montagne"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-024",
@@ -2336,13 +4292,25 @@
       "subcategory": "3.04",
       "french": "la souris",
       "chinese": "老鼠，小鼠",
-      "example": "Les chats chassent les souris.",
+      "example": "Une souris grignotait le pain laissé dans la cave derrière les bouteilles.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        },
+        {
+          "id": "book-2.01-026",
+          "form": "cave"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-025",
@@ -2350,13 +4318,25 @@
       "subcategory": "3.04",
       "french": "le tigre, la tigresse",
       "chinese": "老虎",
-      "example": "Un tigre est de couleur jaune et noire.",
+      "example": "Le tigre du parc se repose à l'ombre avant le passage des visiteurs.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-037",
+          "form": "parc"
+        },
+        {
+          "id": "book-3.03-012",
+          "form": "ombre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-026",
@@ -2364,13 +4344,25 @@
       "subcategory": "3.04",
       "french": "le troupeau",
       "chinese": "兽群，家畜群",
-      "example": "Les voitures ne peuvent pas passer. Un troupeau de bœufs traverse la route.",
+      "example": "Le troupeau rejoindra la prairie dès que le fermier aura ouvert le portail.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-054",
+          "form": "prairie"
+        },
+        {
+          "id": "book-2.01-018",
+          "form": "portail"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-027",
@@ -2378,13 +4370,25 @@
       "subcategory": "3.04",
       "french": "le blé",
       "chinese": "小麦",
-      "example": "Un champ de blé borde la petite maison.",
+      "example": "Le blé devient doré lorsque le soleil chauffe les champs au début de l'été.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.03-2",
+          "form": "soleil"
+        },
+        {
+          "id": "book-3.02-003",
+          "form": "champs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-028",
@@ -2392,13 +4396,25 @@
       "subcategory": "3.04",
       "french": "bondir",
       "chinese": "跳，跳跃",
-      "example": "Le chat bondit sur sa proie.",
+      "example": "Le chat a bondi sur le banc pour éviter le chien qui courait derrière lui.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-028",
+          "form": "banc"
+        },
+        {
+          "id": "book-3.04-009",
+          "form": "chien"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-029",
@@ -2406,13 +4422,25 @@
       "subcategory": "3.04",
       "french": "la cage",
       "chinese": "笼子",
-      "example": "Pierre ne supporte pas de voir des animaux enfermés en cage.",
+      "example": "La cage reste ouverte pendant que l'oiseau explore la pièce sous notre surveillance.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 30,
       "pdfPage": 37,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.04-4",
+          "form": "oiseau"
+        },
+        {
+          "id": "book-2.03-016",
+          "form": "pièce"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-030",
@@ -2420,13 +4448,25 @@
       "subcategory": "3.04",
       "french": "la chair",
       "chinese": "肉",
-      "example": "Les poulets ont une chair blanche.",
+      "example": "Cette recette conviendrait à la chair délicate du poisson rapporté du marché.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-060",
+          "form": "recette"
+        },
+        {
+          "id": "book-3.04-021",
+          "form": "poisson"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-031",
@@ -2434,13 +4474,25 @@
       "subcategory": "3.04",
       "french": "le chat, la chatte",
       "chinese": "猫",
-      "example": "Mes grands-parents sont heureux. Leurs trois chats mangent les souris qui entrent dans la maison.",
+      "example": "Le chat guette une mouche sur le rebord de la fenêtre ouverte.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-047",
+          "form": "mouche"
+        },
+        {
+          "id": "book-2.01-011",
+          "form": "fenêtre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-032",
@@ -2448,13 +4500,25 @@
       "subcategory": "3.04",
       "french": "le chêne",
       "chinese": "橡树",
-      "example": "Il n’est pas rare de trouver des forêts de chênes en Europe centrale.",
+      "example": "Un vieux chêne ombrageait la cour où les enfants jouaient pendant les récréations.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-008",
+          "form": "cour"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-033",
@@ -2462,13 +4526,25 @@
       "subcategory": "3.04",
       "french": "la chenille",
       "chinese": "毛虫",
-      "example": "La chenille se transforme en papillon.",
+      "example": "La chenille mange les feuilles de la plante que mon fils observe chaque matin.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-014",
+          "form": "feuilles"
+        },
+        {
+          "id": "book-16.02-026",
+          "form": "matin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-034",
@@ -2476,13 +4552,25 @@
       "subcategory": "3.04",
       "french": "la créature",
       "chinese": "创造物，生物，人",
-      "example": "Il erre depuis trois jours dans le désert sans rencontrer une créature humaine.",
+      "example": "Dans le prochain conte, une petite créature aidera les voyageurs à retrouver leur chemin.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-016",
+          "form": "voyageurs"
+        },
+        {
+          "id": "book-4.01-002",
+          "form": "chemin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-035",
@@ -2490,13 +4578,25 @@
       "subcategory": "3.04",
       "french": "la culture",
       "chinese": "种植",
-      "example": "Le paysan fait la culture du blé.",
+      "example": "La culture des légumes occupe une grande partie du terrain derrière la ferme.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-012",
+          "form": "légumes"
+        },
+        {
+          "id": "book-3.01-020",
+          "form": "terrain"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-036",
@@ -2504,13 +4604,25 @@
       "subcategory": "3.04",
       "french": "dévorer",
       "chinese": "吞，吞食",
-      "example": "Le loup a dévoré sa proie.",
+      "example": "Les chenilles ont dévoré les feuilles avant que le jardinier remarque les insectes.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-014",
+          "form": "feuilles"
+        },
+        {
+          "id": "book-3.04-043",
+          "form": "insectes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-037",
@@ -2518,13 +4630,25 @@
       "subcategory": "3.04",
       "french": "domestique",
       "chinese": "家养的",
-      "example": "Le chien et le chat sont des animaux domestiques.",
+      "example": "Ce lapin domestique vit dans le jardin mais rentre dans la maison chaque soir.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": "此处指动物“家养的”；第二单元同形词指“家庭的，家务的”。"
+      "note": "此处指动物“家养的”；第二单元同形词指“家庭的，家务的”。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "2.01-1",
+          "form": "maison"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-038",
@@ -2532,13 +4656,25 @@
       "subcategory": "3.04",
       "french": "l’essaim",
       "chinese": "蜂群",
-      "example": "Des abeilles se regroupent en essaim pour fonder une nouvelle ruche.",
+      "example": "Un apiculteur déplacerait cet essaim d'abeilles pour libérer l'entrée de l'école.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-001",
+          "form": "abeilles"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-039",
@@ -2546,13 +4682,25 @@
       "subcategory": "3.04",
       "french": "le fauve",
       "chinese": "猛兽",
-      "example": "Le tigre, le lion et le loup sont des fauves.",
+      "example": "Le fauve observe les visiteurs derrière une vitre tandis que le soigneur prépare sa nourriture.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-044",
+          "form": "visiteurs"
+        },
+        {
+          "id": "book-5.01-030",
+          "form": "nourriture"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-040",
@@ -2560,13 +4708,25 @@
       "subcategory": "3.04",
       "french": "la femelle",
       "chinese": "雌性动物，母兽",
-      "example": "La vache est la femelle du taureau.",
+      "example": "La femelle protégeait ses petits pendant que le mâle cherchait de la nourriture.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“阴性，母的”；本词条有冠词且为名词，整理为“雌性动物”。"
+      "note": "原书译“阴性，母的”；本词条有冠词且为名词，整理为“雌性动物”。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-046",
+          "form": "mâle"
+        },
+        {
+          "id": "book-5.01-030",
+          "form": "nourriture"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-041",
@@ -2574,13 +4734,25 @@
       "subcategory": "3.04",
       "french": "la fourrure",
       "chinese": "皮毛",
-      "example": "Certains animaux sont chassés pour leur fourrure de grande valeur.",
+      "example": "La fourrure de cet animal devient plus épaisse lorsque le froid revient dans la montagne.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-003",
+          "form": "animal"
+        },
+        {
+          "id": "book-3.03-007",
+          "form": "froid"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-042",
@@ -2588,13 +4760,25 @@
       "subcategory": "3.04",
       "french": "l’herbe",
       "chinese": "草",
-      "example": "Après l’été, l’herbe est si sèche qu’elle prend facilement feu.",
+      "example": "L'herbe repoussera vite si la pluie revient après ces journées de grande chaleur.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "3.03-1",
+          "form": "pluie"
+        },
+        {
+          "id": "book-3.03-002",
+          "form": "chaleur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-043",
@@ -2602,13 +4786,25 @@
       "subcategory": "3.04",
       "french": "l’insecte",
       "chinese": "昆虫",
-      "example": "Les mouches sont des insectes.",
+      "example": "Cet insecte se cache sous une pierre pour échapper aux oiseaux du jardin.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-016",
+          "form": "pierre"
+        },
+        {
+          "id": "3.04-4",
+          "form": "oiseaux"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-044",
@@ -2616,13 +4812,25 @@
       "subcategory": "3.04",
       "french": "le lion, la lionne",
       "chinese": "狮子",
-      "example": "Dans les histoires pour enfants, le lion est le roi des animaux.",
+      "example": "Le lion s'est approché de l'eau avant de rejoindre les autres animaux à l'ombre.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "book-3.03-012",
+          "form": "ombre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-045",
@@ -2630,13 +4838,25 @@
       "subcategory": "3.04",
       "french": "le loup, la louve",
       "chinese": "狼",
-      "example": "Le loup est un animal sauvage.",
+      "example": "Le loup laisse des traces dans la neige que les randonneurs observent sans le suivre.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-067",
+          "form": "traces"
+        },
+        {
+          "id": "book-3.03-010",
+          "form": "neige"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-046",
@@ -2644,13 +4864,25 @@
       "subcategory": "3.04",
       "french": "le mâle",
       "chinese": "雄性动物，公兽",
-      "example": "Le taureau est le mâle de la vache.",
+      "example": "Le mâle de cette espèce serait plus facile à reconnaître au printemps, avec son plumage coloré.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“雄性，公的”；本词条有冠词且为名词，整理为“雄性动物”。"
+      "note": "原书译“雄性，公的”；本词条有冠词且为名词，整理为“雄性动物”。",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-013",
+          "form": "espèce"
+        },
+        {
+          "id": "book-16.02-032",
+          "form": "printemps"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-047",
@@ -2658,13 +4890,25 @@
       "subcategory": "3.04",
       "french": "la mouche",
       "chinese": "苍蝇",
-      "example": "Une mouche est un insecte avec des ailes. Elle ne pique pas.",
+      "example": "Une mouche tourne autour du fruit oublié sur la table près de la fenêtre.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-009",
+          "form": "fruit"
+        },
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-048",
@@ -2672,13 +4916,25 @@
       "subcategory": "3.04",
       "french": "le noyau",
       "chinese": "核，果核",
-      "example": "Les cerises sont des fruits à noyau.",
+      "example": "Mon frère retirait le noyau des cerises avant de les ajouter à la pâte.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-005",
+          "form": "cerises"
+        },
+        {
+          "id": "book-5.01-015",
+          "form": "pâte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-049",
@@ -2686,13 +4942,25 @@
       "subcategory": "3.04",
       "french": "la paille",
       "chinese": "稻草，麦秸",
-      "example": "Pierre change la paille des chevaux une fois par jour.",
+      "example": "La paille garde les animaux au sec pendant que le fermier répare le toit.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-003",
+          "form": "animaux"
+        },
+        {
+          "id": "book-2.01-045",
+          "form": "toit"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-050",
@@ -2700,13 +4968,25 @@
       "subcategory": "3.04",
       "french": "le papillon",
       "chinese": "蝴蝶",
-      "example": "Les papillons sont des insectes à grandes ailes colorées.",
+      "example": "Ce papillon attirera les enfants vers les fleurs que nous planterons dans le jardin.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-051",
@@ -2714,13 +4994,25 @@
       "subcategory": "3.04",
       "french": "la patte",
       "chinese": "爪子，动物的腿",
-      "example": "Le chat est un animal à quatre pattes.",
+      "example": "Le vétérinaire examine la patte du chien pendant que sa maîtresse lui parle avec douceur.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": "根据例句补充“动物的腿”。"
+      "note": "根据例句补充“动物的腿”。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-009",
+          "form": "chien"
+        },
+        {
+          "id": "book-9.05-013",
+          "form": "douceur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-052",
@@ -2728,13 +5020,25 @@
       "subcategory": "3.04",
       "french": "le pigeon",
       "chinese": "鸽子",
-      "example": "Le pigeon est une espèce d’oiseau.",
+      "example": "Un pigeon a volé un morceau de pain sur la terrasse pendant notre déjeuner.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        },
+        {
+          "id": "book-2.01-044",
+          "form": "terrasse"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-053",
@@ -2742,13 +5046,25 @@
       "subcategory": "3.04",
       "french": "piquer",
       "chinese": "咬，叮，蜇",
-      "example": "Aurélie a été piquée à la jambe par un insecte.",
+      "example": "Les moustiques risquent de piquer les enfants qui jouent près du lac à la tombée du jour.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-3.02-009",
+          "form": "lac"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-054",
@@ -2756,13 +5072,25 @@
       "subcategory": "3.04",
       "french": "planter",
       "chinese": "种植",
-      "example": "Il y a 100 ans que mon grand-père a planté cet arbre devant la maison.",
+      "example": "Nous pourrions planter des arbres pour protéger le jardin du vent en hiver.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "3.04-1",
+          "form": "arbres"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-055",
@@ -2770,13 +5098,25 @@
       "subcategory": "3.04",
       "french": "la plume",
       "chinese": "羽毛",
-      "example": "Les poules ont perdu des plumes en se battant.",
+      "example": "L'enfant ramasse une plume près du nid et la montre à sa sœur.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfant"
+        },
+        {
+          "id": "1.03-3",
+          "form": "sœur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-056",
@@ -2784,13 +5124,25 @@
       "subcategory": "3.04",
       "french": "la proie",
       "chinese": "猎物",
-      "example": "Après avoir chassé le mouton, le loup partage sa proie avec ses petits.",
+      "example": "Le rapace guettait sa proie au-dessus du champ où se cachaient les souris.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 31,
       "pdfPage": 38,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-003",
+          "form": "champ"
+        },
+        {
+          "id": "book-3.04-024",
+          "form": "souris"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-057",
@@ -2798,13 +5150,25 @@
       "subcategory": "3.04",
       "french": "la queue",
       "chinese": "尾巴",
-      "example": "Mon chat aime bien agiter sa queue devant mon visage.",
+      "example": "Le chat remue la queue quand le chien s'approche trop près de son panier.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 32,
       "pdfPage": 39,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-009",
+          "form": "chien"
+        },
+        {
+          "id": "book-6.03-008",
+          "form": "panier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-058",
@@ -2812,13 +5176,25 @@
       "subcategory": "3.04",
       "french": "la racine",
       "chinese": "根",
-      "example": "La racine est la partie de la plante qui se trouve sous terre.",
+      "example": "Les racines de cet arbre soulèveront le trottoir si nous ne prévoyons pas assez d'espace.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 32,
       "pdfPage": 39,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "3.04-1",
+          "form": "arbre"
+        },
+        {
+          "id": "book-3.01-021",
+          "form": "trottoir"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-059",
@@ -2826,13 +5202,25 @@
       "subcategory": "3.04",
       "french": "le rat, la rate",
       "chinese": "鼠，大鼠",
-      "example": "Un rat ressemble à une souris, mais il est plus grand.",
+      "example": "Un rat traverse la cour et disparaît derrière les caisses du vieux garage.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 32,
       "pdfPage": 39,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-008",
+          "form": "cour"
+        },
+        {
+          "id": "book-6.01-023",
+          "form": "caisses"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-060",
@@ -2840,13 +5228,25 @@
       "subcategory": "3.04",
       "french": "retomber",
       "chinese": "再落下，重新落地",
-      "example": "Un chat retombe toujours sur ses pattes.",
+      "example": "La balle est retombée dans l'herbe après avoir frappé une branche du pommier.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 32,
       "pdfPage": 39,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-042",
+          "form": "herbe"
+        },
+        {
+          "id": "book-3.04-006",
+          "form": "branche"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-061",
@@ -2854,13 +5254,25 @@
       "subcategory": "3.04",
       "french": "la ruche",
       "chinese": "蜂巢，蜂箱",
-      "example": "Les abeilles vivent dans une ruche.",
+      "example": "Cette ruche fournit le miel que la ferme vend aux habitants du village.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 32,
       "pdfPage": 39,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-029",
+          "form": "miel"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-062",
@@ -2868,13 +5280,25 @@
       "subcategory": "3.04",
       "french": "sauvage",
       "chinese": "野生的",
-      "example": "Cette vieille dame nourrit les chats sauvages de tout le quartier.",
+      "example": "Un animal sauvage pourrait s'approcher du campement si nous laissions la nourriture dehors.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 32,
       "pdfPage": 39,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-003",
+          "form": "animal"
+        },
+        {
+          "id": "book-5.01-030",
+          "form": "nourriture"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-063",
@@ -2882,13 +5306,25 @@
       "subcategory": "3.04",
       "french": "le singe",
       "chinese": "猴子",
-      "example": "Les singes sont les animaux les plus proches de l’homme.",
+      "example": "Le singe attrape un fruit pendant que le soigneur remplit son récipient d'eau.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 32,
       "pdfPage": 39,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-009",
+          "form": "fruit"
+        },
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-064",
@@ -2896,13 +5332,25 @@
       "subcategory": "3.04",
       "french": "la souche",
       "chinese": "树桩，树墩",
-      "example": "La souche est la partie de l’arbre qui reste dans le sol, une fois l’arbre abattu.",
+      "example": "La souche servait de siège aux enfants qui écoutaient les histoires du guide.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 32,
       "pdfPage": 39,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-4.02-020",
+          "form": "guide"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-065",
@@ -2910,13 +5358,25 @@
       "subcategory": "3.04",
       "french": "surgir",
       "chinese": "突然出现",
-      "example": "Un chat a surgi du buisson.",
+      "example": "Un chevreuil peut surgir de la forêt juste devant les voitures qui traversent la région.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 32,
       "pdfPage": 39,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-008",
+          "form": "forêt"
+        },
+        {
+          "id": "book-4.04-023",
+          "form": "voitures"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-066",
@@ -2924,13 +5384,25 @@
       "subcategory": "3.04",
       "french": "le taureau",
       "chinese": "公牛",
-      "example": "L’Espagne est connue pour ses courses de taureaux.",
+      "example": "Le fermier déplacera le taureau avant d'accueillir les visiteurs dans la prairie.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 32,
       "pdfPage": 39,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“牛”，根据词义和例句补充“公牛”。"
+      "note": "原书译“牛”，根据词义和例句补充“公牛”。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-044",
+          "form": "visiteurs"
+        },
+        {
+          "id": "book-3.02-054",
+          "form": "prairie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-067",
@@ -2938,13 +5410,25 @@
       "subcategory": "3.04",
       "french": "la trace",
       "chinese": "痕迹",
-      "example": "On voit des traces d’animaux dans la neige.",
+      "example": "Une trace de boue sur le tapis indique que le chien est rentré par le jardin.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 32,
       "pdfPage": 39,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-044",
+          "form": "tapis"
+        },
+        {
+          "id": "book-3.04-009",
+          "form": "chien"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-068",
@@ -2952,13 +5436,25 @@
       "subcategory": "3.04",
       "french": "la vache",
       "chinese": "母牛",
-      "example": "La vache produit le lait que nous buvons.",
+      "example": "La vache a rejoint son veau pendant que les enfants observaient la scène depuis la barrière.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 32,
       "pdfPage": 39,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-13.03-017",
+          "form": "scène"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-069",
@@ -2966,13 +5462,25 @@
       "subcategory": "3.04",
       "french": "le vol",
       "chinese": "飞，飞行",
-      "example": "L’oiseau prend son vol. Il s’élève dans le ciel.",
+      "example": "Les élèves suivent le vol des oiseaux et notent leurs observations dans un carnet.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 32,
       "pdfPage": 39,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        },
+        {
+          "id": "3.04-4",
+          "form": "oiseaux"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-3.04-070",
@@ -2980,13 +5488,27 @@
       "subcategory": "3.04",
       "french": "voler",
       "chinese": "飞，飞翔",
-      "example": "Le point commun entre un avion et un oiseau est qu’ils volent.",
+      "example": "Avec moins de vent, ces oiseaux pourraient voler plus près de la surface du lac.",
       "part": "v.",
       "level": "进阶",
       "bookPage": 32,
       "pdfPage": 39,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "3.03-3",
+          "form": "vent"
+        },
+        {
+          "id": "book-3.02-009",
+          "form": "lac"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     }
-  ]
+  ],
+  "originalMethod": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，旧统计和科学表述的范围说明记入 note。",
+  "exampleMethod": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
 }

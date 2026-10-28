@@ -16,7 +16,7 @@
     "基础": 80,
     "进阶": 82
   },
-  "method": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，旧统计和科学表述的范围说明记入 note。",
+  "method": "詞條、分類、原書頁碼與校對註記保留原整理；例句於 2026-10-25 改為 Mots 原創詞彙關聯例句。原例句保存在 french/example-network.json 的 originalText，XLSX 保留原書轉錄版本。",
   "subcategories": [
     {
       "id": "6.01",
@@ -38,14 +38,30 @@
       "subcategory": "6.01",
       "french": "acheter",
       "chinese": "买，购买",
-      "example": "Pierre est allé au centre commercial pour acheter un ordinateur.",
+      "example": "J’achète des légumes au marché et je garde le reste de mon budget pour les livres.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 46,
       "pdfPage": 53,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/aʃte/"
+      "ipa": "/aʃte/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-012",
+          "form": "marché"
+        },
+        {
+          "id": "book-5.01-012",
+          "form": "légumes"
+        },
+        {
+          "id": "book-6.02-006",
+          "form": "budget"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-002",
@@ -53,13 +69,29 @@
       "subcategory": "6.01",
       "french": "l’affaire",
       "chinese": "交易，买卖",
-      "example": "La famille a fait une bonne affaire en achetant cette maison.",
+      "example": "La commerçante a conclu une bonne affaire en commandant du tissu directement à l’usine du village.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 46,
       "pdfPage": 53,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-006",
+          "form": "commandant"
+        },
+        {
+          "id": "book-11.01-029",
+          "form": "commerçante"
+        },
+        {
+          "id": "book-11.03-020",
+          "form": "usine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-003",
@@ -67,13 +99,29 @@
       "subcategory": "6.01",
       "french": "le client, la cliente",
       "chinese": "顾客",
-      "example": "Les premiers clients du boulanger viennent à six heures pour acheter leurs baguettes.",
+      "example": "Une cliente compare la qualité des manteaux pendant que sa fille essaie des chaussures près de la caisse.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 46,
       "pdfPage": 53,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-007",
+          "form": "fille"
+        },
+        {
+          "id": "book-6.01-015",
+          "form": "qualité"
+        },
+        {
+          "id": "book-6.03-044",
+          "form": "manteaux"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-004",
@@ -81,13 +129,25 @@
       "subcategory": "6.01",
       "french": "commander",
       "chinese": "订购",
-      "example": "J’ai commandé un livre sur Internet.",
+      "example": "Nous commanderons une table plus solide lorsque les travaux de la cuisine seront enfin terminés.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 46,
       "pdfPage": 53,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        },
+        {
+          "id": "book-2.03-004",
+          "form": "cuisine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-005",
@@ -95,13 +155,29 @@
       "subcategory": "6.01",
       "french": "le commerce",
       "chinese": "贸易，商业",
-      "example": "Il existe des plantes rares dont le commerce est interdit.",
+      "example": "Le commerce du café fait vivre plusieurs familles et crée des emplois dans cette petite ville.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 46,
       "pdfPage": 53,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-008",
+          "form": "emplois"
+        },
+        {
+          "id": "3.01-1",
+          "form": "ville"
+        },
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-006",
@@ -109,13 +185,29 @@
       "subcategory": "6.01",
       "french": "commercial, commerciale",
       "chinese": "贸易的，商业的",
-      "example": "Il y a beaucoup de magasins dans un centre commercial.",
+      "example": "Notre équipe commerciale visitait les magasins de province pour présenter les produits fabriqués dans notre atelier.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 46,
       "pdfPage": 53,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-016",
+          "form": "province"
+        },
+        {
+          "id": "book-13.07-007",
+          "form": "équipe"
+        },
+        {
+          "id": "book-11.03-022",
+          "form": "atelier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-007",
@@ -123,13 +215,29 @@
       "subcategory": "6.01",
       "french": "les courses",
       "chinese": "购物，采购",
-      "example": "Aurélie va faire ses courses au centre commercial.",
+      "example": "Je fais les courses avec ma voisine, puis nous préparons ensemble le dîner de nos enfants.",
       "part": "n. f. pl.",
       "level": "基础",
       "bookPage": 46,
       "pdfPage": 53,
       "source": "法语基础词汇分类学习手册",
-      "note": "faire les courses 指购物、采购；区别于 course 的赛跑等其他义项。"
+      "note": "faire les courses 指购物、采购；区别于 course 的赛跑等其他义项。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-046",
+          "form": "dîner"
+        },
+        {
+          "id": "book-2.01-023",
+          "form": "voisine"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-008",
@@ -137,13 +245,25 @@
       "subcategory": "6.01",
       "french": "livrer",
       "chinese": "送货，交付",
-      "example": "Nous livrons tous nos produits à votre domicile.",
+      "example": "Le magasin livrera le réfrigérateur demain et reprendra gratuitement l’ancien appareil qui encombre notre cuisine.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 46,
       "pdfPage": 53,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "6.01-1",
+          "form": "magasin"
+        },
+        {
+          "id": "book-2.03-004",
+          "form": "cuisine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "6.01-1",
@@ -151,14 +271,26 @@
       "subcategory": "6.01",
       "french": "le magasin",
       "chinese": "商店",
-      "example": "Mon oncle possède un magasin de chaussures.",
+      "example": "Ce magasin propose des vêtements de qualité et reste ouvert après la fermeture des bureaux voisins.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 46,
       "pdfPage": 53,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/maɡazɛ̃/"
+      "ipa": "/maɡazɛ̃/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-017",
+          "form": "vêtements"
+        },
+        {
+          "id": "book-6.01-015",
+          "form": "qualité"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-010",
@@ -166,13 +298,29 @@
       "subcategory": "6.01",
       "french": "la marchandise",
       "chinese": "商品，货物",
-      "example": "Le magasin reçoit de nouvelles marchandises en début de mois.",
+      "example": "Les employés ont protégé la marchandise contre la pluie avant de charger les caisses dans le camion.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 46,
       "pdfPage": 53,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-009",
+          "form": "employés"
+        },
+        {
+          "id": "book-4.04-005",
+          "form": "camion"
+        },
+        {
+          "id": "3.03-1",
+          "form": "pluie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-011",
@@ -180,13 +328,29 @@
       "subcategory": "6.01",
       "french": "neuf, neuve",
       "chinese": "崭新的，未使用过的",
-      "example": "J’ai décidé de m’acheter une voiture neuve.",
+      "example": "Ce vélo est neuf, mais son prix dépasse le budget que nous avons prévu pour les vacances.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 46,
       "pdfPage": 53,
       "source": "法语基础词汇分类学习手册",
-      "note": "区别于 nouveau（新的、新出现的）；此处强调车辆是全新的。"
+      "note": "区别于 nouveau（新的、新出现的）；此处强调车辆是全新的。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "4.04-2",
+          "form": "vélo"
+        },
+        {
+          "id": "book-4.02-013",
+          "form": "vacances"
+        },
+        {
+          "id": "book-6.02-006",
+          "form": "budget"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-012",
@@ -194,13 +358,29 @@
       "subcategory": "6.01",
       "french": "nouveau, nouvel, nouvelle",
       "chinese": "新的",
-      "example": "Sophie porte un nouveau manteau. Elle l’a acheté hier.",
+      "example": "Ma sœur a trouvé un nouvel emploi et loué un appartement près de la bibliothèque municipale.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 46,
       "pdfPage": 53,
       "source": "法语基础词汇分类学习手册",
-      "note": "保留原书 nouveau、nouvel、nouvelle 三种形式。"
+      "note": "保留原书 nouveau、nouvel、nouvelle 三种形式。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "2.01-2",
+          "form": "appartement"
+        },
+        {
+          "id": "book-11.03-008",
+          "form": "emploi"
+        },
+        {
+          "id": "1.03-3",
+          "form": "sœur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-013",
@@ -208,13 +388,29 @@
       "subcategory": "6.01",
       "french": "ouvert, ouverte",
       "chinese": "开放的，营业中的",
-      "example": "Ce magasin est ouvert de 9 à 19 heures.",
+      "example": "La boulangerie reste ouverte le dimanche, ce qui permet aux voisins d’acheter du pain après leur promenade.",
       "part": "adj. / p. p.",
       "level": "基础",
       "bookPage": 46,
       "pdfPage": 53,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-009",
+          "form": "dimanche"
+        },
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        },
+        {
+          "id": "book-4.02-025",
+          "form": "promenade"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-014",
@@ -222,13 +418,25 @@
       "subcategory": "6.01",
       "french": "le produit",
       "chinese": "产品",
-      "example": "Ce magasin ne vend que des produits biologiques.",
+      "example": "Ce produit conviendrait mieux aux enfants si son emballage expliquait clairement les précautions à prendre.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 46,
       "pdfPage": 53,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-8.04-033",
+          "form": "précautions"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-015",
@@ -236,13 +444,29 @@
       "subcategory": "6.01",
       "french": "la qualité",
       "chinese": "质量，品质",
-      "example": "Ce magasin est connu pour ses produits de bonne qualité.",
+      "example": "La qualité du tissu compte davantage pour cette couturière que la marque inscrite sur l’étiquette.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 46,
       "pdfPage": 53,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-12.02-044",
+          "form": "marque"
+        },
+        {
+          "id": "book-6.01-031",
+          "form": "étiquette"
+        },
+        {
+          "id": "book-6.03-015",
+          "form": "tissu"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-016",
@@ -250,13 +474,29 @@
       "subcategory": "6.01",
       "french": "la reprise",
       "chinese": "旧物折价收购，折价抵换",
-      "example": "Le vendeur nous fait une bonne reprise sur notre voiture.",
+      "example": "Grâce à la reprise de son ancien téléphone, Hugo a payé moins cher son nouvel appareil au magasin du quartier.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 46,
       "pdfPage": 53,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“折价”；本例指对旧车的折价收购、以旧换新抵价。"
+      "note": "原书译“折价”；本例指对旧车的折价收购、以旧换新抵价。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.04-051",
+          "form": "téléphone"
+        },
+        {
+          "id": "book-13.04-003",
+          "form": "appareil"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-017",
@@ -264,13 +504,29 @@
       "subcategory": "6.01",
       "french": "la réserve",
       "chinese": "储存，储备",
-      "example": "Ma grand-mère a toujours du beurre en réserve à la maison.",
+      "example": "Le restaurant garde une réserve de farine et de riz pour préparer les repas de la semaine.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 46,
       "pdfPage": 53,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-034",
+          "form": "riz"
+        },
+        {
+          "id": "book-5.02-063",
+          "form": "restaurant"
+        },
+        {
+          "id": "book-16.02-036",
+          "form": "semaine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-018",
@@ -278,13 +534,29 @@
       "subcategory": "6.01",
       "french": "l’usage",
       "chinese": "使用，用途",
-      "example": "L’usage du tabac est interdit dans les lieux publics.",
+      "example": "L’usage quotidien de cette machine facilitait le travail des ouvriers, mais exigeait un entretien régulier.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 46,
       "pdfPage": 53,
       "source": "法语基础词汇分类学习手册",
-      "note": "保留原书语言例句，未核对具体地区的现行禁烟规定。"
+      "note": "保留原书语言例句，未核对具体地区的现行禁烟规定。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        },
+        {
+          "id": "book-11.01-011",
+          "form": "ouvriers"
+        },
+        {
+          "id": "book-15.06-020",
+          "form": "machine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "6.01-3",
@@ -292,14 +564,30 @@
       "subcategory": "6.01",
       "french": "vendre",
       "chinese": "卖，出售",
-      "example": "Le boulanger vend environ 500 baguettes par jour.",
+      "example": "L’association vend des livres d’occasion pour financer les voyages scolaires des enfants du quartier.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 46,
       "pdfPage": 53,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/vɑ̃dʁ/"
+      "ipa": "/vɑ̃dʁ/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.12-017",
+          "form": "occasion"
+        },
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyages"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-020",
@@ -307,13 +595,29 @@
       "subcategory": "6.01",
       "french": "la vente",
       "chinese": "销售，售卖",
-      "example": "La vente du tableau lui a rapporté une importante somme d’argent.",
+      "example": "La vente des tableaux permettra de restaurer le toit de l’école et d’acheter du matériel neuf.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-045",
+          "form": "toit"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        },
+        {
+          "id": "book-2.04-012",
+          "form": "matériel"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-021",
@@ -321,13 +625,29 @@
       "subcategory": "6.01",
       "french": "l’achat",
       "chinese": "购买",
-      "example": "Il a fait quelques achats pour la fête de ce soir.",
+      "example": "Avant l’achat d’un appartement, nous comparons les frais de transport, le chauffage et la qualité du quartier.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-031",
+          "form": "chauffage"
+        },
+        {
+          "id": "2.01-2",
+          "form": "appartement"
+        },
+        {
+          "id": "book-4.03-020",
+          "form": "transport"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-022",
@@ -335,13 +655,29 @@
       "subcategory": "6.01",
       "french": "la boutique",
       "chinese": "商店，小店",
-      "example": "Ma sœur est vendeuse dans une boutique de vêtements.",
+      "example": "Une petite boutique de vêtements a remplacé l’ancienne agence bancaire au bout de notre rue.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-16.09-003",
+          "form": "bout"
+        },
+        {
+          "id": "book-4.01-020",
+          "form": "rue"
+        },
+        {
+          "id": "book-6.03-017",
+          "form": "vêtements"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-023",
@@ -349,13 +685,29 @@
       "subcategory": "6.01",
       "french": "la caisse",
       "chinese": "收银台，款台",
-      "example": "Je suis passé à la caisse pour payer.",
+      "example": "À la caisse, le client vérifie le montant de ses achats avant de sortir sa carte bancaire.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-044",
+          "form": "carte bancaire"
+        },
+        {
+          "id": "book-6.01-021",
+          "form": "achats"
+        },
+        {
+          "id": "book-6.02-031",
+          "form": "montant"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-024",
@@ -363,13 +715,29 @@
       "subcategory": "6.01",
       "french": "la clientèle",
       "chinese": "顾客群，客户群",
-      "example": "La clientèle de ce magasin a baissé de 5 %.",
+      "example": "La clientèle du café réunissait des étudiants, des ouvriers et quelques retraités qui lisaient le journal.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": "集合名词，指顾客整体，而非一位顾客。"
+      "note": "集合名词，指顾客整体，而非一位顾客。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-008",
+          "form": "journal"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        },
+        {
+          "id": "book-11.01-011",
+          "form": "ouvriers"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-025",
@@ -377,13 +745,29 @@
       "subcategory": "6.01",
       "french": "la commande",
       "chinese": "订货，订单",
-      "example": "Le boulanger a livré les commandes.",
+      "example": "Votre commande comprend deux chaises et une table ; la livraison est prévue vendredi après la réunion.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "11.02-1",
+          "form": "réunion"
+        },
+        {
+          "id": "book-2.03-029",
+          "form": "chaises"
+        },
+        {
+          "id": "book-2.03-024",
+          "form": "table"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-026",
@@ -391,13 +775,29 @@
       "subcategory": "6.01",
       "french": "le comptoir",
       "chinese": "柜台，吧台",
-      "example": "J’ai commandé un café au comptoir.",
+      "example": "Le vendeur a posé les chaussures sur le comptoir pour montrer à la cliente la solidité des semelles.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-050",
+          "form": "vendeur"
+        },
+        {
+          "id": "book-6.03-026",
+          "form": "chaussures"
+        },
+        {
+          "id": "book-6.01-003",
+          "form": "cliente"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-027",
@@ -405,13 +805,29 @@
       "subcategory": "6.01",
       "french": "le consommateur, la consommatrice",
       "chinese": "消费者",
-      "example": "Cet institut a réalisé une enquête sur les habitudes des consommateurs.",
+      "example": "Les consommateurs demandent des informations précises sur l’origine des aliments et les conditions de production.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.06-023",
+          "form": "production"
+        },
+        {
+          "id": "book-1.02-024",
+          "form": "origine"
+        },
+        {
+          "id": "book-11.03-005",
+          "form": "conditions"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-028",
@@ -419,13 +835,29 @@
       "subcategory": "6.01",
       "french": "le dépôt",
       "chinese": "寄存，存放；仓库",
-      "example": "Les centres commerciaux ont des grands dépôts de marchandises.",
+      "example": "Le camion déposera les meubles au dépôt avant de livrer les commandes dans les villages voisins.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“寄存，存放”；例句中的 dépôts 指仓库，补充对应释义。例句保留原书 des grands dépôts 写法。"
+      "note": "原书译“寄存，存放”；例句中的 dépôts 指仓库，补充对应释义。例句保留原书 des grands dépôts 写法。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-005",
+          "form": "camion"
+        },
+        {
+          "id": "book-2.03-013",
+          "form": "meubles"
+        },
+        {
+          "id": "3.01-2",
+          "form": "villages"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-029",
@@ -433,13 +865,29 @@
       "subcategory": "6.01",
       "french": "distribuer",
       "chinese": "分发",
-      "example": "Ce magasin distribue une fleur à chaque cliente pour la fête des mères.",
+      "example": "Des bénévoles distribuent des repas chauds et des couvertures aux familles accueillies dans le gymnase.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        },
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        },
+        {
+          "id": "book-6.03-031",
+          "form": "couvertures"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-030",
@@ -447,13 +895,29 @@
       "subcategory": "6.01",
       "french": "écouler",
       "chinese": "销售，出售，售出",
-      "example": "Le boulanger a écoulé toute sa marchandise.",
+      "example": "La coopérative a écoulé sa récolte au marché et versé une prime aux agriculteurs du village.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-7.02-028",
+          "form": "prime"
+        },
+        {
+          "id": "book-11.01-001",
+          "form": "agriculteurs"
+        },
+        {
+          "id": "book-15.06-047",
+          "form": "récolte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-031",
@@ -461,13 +925,29 @@
       "subcategory": "6.01",
       "french": "l’étiquette",
       "chinese": "标签",
-      "example": "Le prix du pantalon est marqué sur l’étiquette.",
+      "example": "L’étiquette indique la composition du vêtement et explique comment le laver sans abîmer le tissu.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-028",
+          "form": "composition"
+        },
+        {
+          "id": "book-6.03-017",
+          "form": "vêtement"
+        },
+        {
+          "id": "book-6.03-015",
+          "form": "tissu"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-032",
@@ -475,13 +955,25 @@
       "subcategory": "6.01",
       "french": "fermé, fermée",
       "chinese": "关闭的，停止营业的",
-      "example": "Le centre commercial est fermé le dimanche.",
+      "example": "Le magasin était fermé pour inventaire, alors nous avons attendu son ouverture dans le café voisin.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-037",
+          "form": "ouverture"
+        },
+        {
+          "id": "6.01-1",
+          "form": "magasin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-033",
@@ -489,13 +981,29 @@
       "subcategory": "6.01",
       "french": "la garantie",
       "chinese": "保修，保障",
-      "example": "L’ordinateur a une garantie de deux ans.",
+      "example": "La garantie couvre la réparation de la machine, mais les frais de transport restent à notre charge.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.04-001",
+          "form": "charge"
+        },
+        {
+          "id": "book-4.03-020",
+          "form": "transport"
+        },
+        {
+          "id": "book-15.06-020",
+          "form": "machine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-034",
@@ -503,13 +1011,25 @@
       "subcategory": "6.01",
       "french": "garantir",
       "chinese": "保障，保证；保修",
-      "example": "Cet appareil électrique est garanti deux ans.",
+      "example": "Le fabricant garantira ces chaussures pendant deux ans et réparera les coutures dans son propre atelier.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-022",
+          "form": "atelier"
+        },
+        {
+          "id": "book-6.03-026",
+          "form": "chaussures"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-035",
@@ -517,13 +1037,29 @@
       "subcategory": "6.01",
       "french": "l’inventaire",
       "chinese": "盘货，清点；存货清单",
-      "example": "Les commerçants doivent faire l’inventaire de leur magasin une fois par an.",
+      "example": "Pendant l’inventaire, chaque employée compte les produits de son rayon et vérifie les étiquettes.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-009",
+          "form": "employée"
+        },
+        {
+          "id": "book-6.01-014",
+          "form": "produits"
+        },
+        {
+          "id": "book-6.01-031",
+          "form": "étiquettes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-036",
@@ -531,13 +1067,29 @@
       "subcategory": "6.01",
       "french": "la livraison",
       "chinese": "送货，交付",
-      "example": "J’attends la livraison de la machine à laver que j’ai achetée ce matin.",
+      "example": "La livraison des médicaments a été retardée par la neige qui bloquait la route de montagne.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "8.04-4",
+          "form": "médicaments"
+        },
+        {
+          "id": "book-4.03-017",
+          "form": "route"
+        },
+        {
+          "id": "book-4.02-008",
+          "form": "montagne"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-037",
@@ -545,13 +1097,29 @@
       "subcategory": "6.01",
       "french": "l’ouverture",
       "chinese": "开门，开业，开放",
-      "example": "L’ouverture de ce magasin a lieu à 9 heures.",
+      "example": "L’ouverture de la bibliothèque attire les familles du quartier et permet aux enfants d’emprunter gratuitement des livres.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.01-038",
@@ -559,13 +1127,29 @@
       "subcategory": "6.01",
       "french": "le paquet",
       "chinese": "包裹",
-      "example": "Le facteur m’a apporté un paquet.",
+      "example": "Dépose le paquet chez notre voisine et garde le reçu jusqu’au retour de son frère.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-009",
+          "form": "retour"
+        },
+        {
+          "id": "book-2.01-023",
+          "form": "voisine"
+        },
+        {
+          "id": "1.03-4",
+          "form": "frère"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-001",
@@ -573,13 +1157,25 @@
       "subcategory": "6.02",
       "french": "l’action",
       "chinese": "股票，股份",
-      "example": "Il possède des actions dans une société.",
+      "example": "Mon oncle possède une action de cette entreprise, mais préfère garder ses économies sur son compte bancaire.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": "本单元采用金融语境的“股票、股份”义。"
+      "note": "本单元采用金融语境的“股票、股份”义。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-012",
+          "form": "entreprise"
+        },
+        {
+          "id": "book-1.03-019",
+          "form": "oncle"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-002",
@@ -587,13 +1183,29 @@
       "subcategory": "6.02",
       "french": "l’argent",
       "chinese": "钱，金钱",
-      "example": "J’ai dépensé tout mon argent en vacances.",
+      "example": "Nous avons mis de l’argent de côté pour réparer le toit et remplacer les fenêtres de la maison.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-011",
+          "form": "fenêtres"
+        },
+        {
+          "id": "2.01-1",
+          "form": "maison"
+        },
+        {
+          "id": "book-2.01-045",
+          "form": "toit"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-003",
@@ -601,13 +1213,29 @@
       "subcategory": "6.02",
       "french": "augmenter",
       "chinese": "提高，上涨，增加",
-      "example": "Le prix du pain a augmenté de 5 %.",
+      "example": "Le prix du chauffage augmente, alors les locataires cherchent des solutions pour réduire leurs dépenses.",
       "part": "v. t. / i.",
       "level": "基础",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.04-020",
+          "form": "solutions"
+        },
+        {
+          "id": "book-2.02-031",
+          "form": "chauffage"
+        },
+        {
+          "id": "book-6.02-015",
+          "form": "dépenses"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-004",
@@ -615,13 +1243,29 @@
       "subcategory": "6.02",
       "french": "la banque",
       "chinese": "银行",
-      "example": "J’ai retiré de l’argent à la banque.",
+      "example": "La banque examinera notre dossier avant de nous accorder le crédit nécessaire à l’achat du logement.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 47,
       "pdfPage": 54,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-035",
+          "form": "logement"
+        },
+        {
+          "id": "book-7.01-025",
+          "form": "dossier"
+        },
+        {
+          "id": "book-6.02-014",
+          "form": "crédit"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-005",
@@ -629,13 +1273,29 @@
       "subcategory": "6.02",
       "french": "le bénéfice",
       "chinese": "利润，收益",
-      "example": "La boutique de vêtements a fait de gros bénéfices en décembre.",
+      "example": "La libraire consacre une partie du bénéfice à l’organisation de rencontres gratuites avec les auteurs.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-003",
+          "form": "auteurs"
+        },
+        {
+          "id": "book-15.02-016",
+          "form": "organisation"
+        },
+        {
+          "id": "book-14.03-014",
+          "form": "rencontres"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-006",
@@ -643,13 +1303,29 @@
       "subcategory": "6.02",
       "french": "le budget",
       "chinese": "预算",
-      "example": "Je dispose d’un budget restreint pour mes vacances.",
+      "example": "Notre budget ne permettait pas de prendre l’avion, alors nous traversions le pays en train.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "4.04-1",
+          "form": "train"
+        },
+        {
+          "id": "4.04-3",
+          "form": "avion"
+        },
+        {
+          "id": "book-15.04-015",
+          "form": "pays"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-007",
@@ -657,13 +1333,29 @@
       "subcategory": "6.02",
       "french": "céder",
       "chinese": "转让，出让",
-      "example": "Mon oncle m’a cédé sa maison de vacances.",
+      "example": "Cette artisane souhaite céder sa boutique à une employée qui connaît déjà les clients du quartier.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-023",
+          "form": "artisane"
+        },
+        {
+          "id": "book-11.03-009",
+          "form": "employée"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-008",
@@ -671,13 +1363,29 @@
       "subcategory": "6.02",
       "french": "le cent",
       "chinese": "分（货币单位）",
-      "example": "Il me manque une pièce de dix cents pour payer une baguette.",
+      "example": "Au Canada, ma nièce a ramassé une pièce d’un cent devant l’entrée de la bibliothèque.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“（英、美）分”；保留通用货币单位义，不将其限定为某一种货币。"
+      "note": "原书译“（英、美）分”；保留通用货币单位义，不将其限定为某一种货币。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-1.02-010",
+          "form": "Canada"
+        },
+        {
+          "id": "book-2.01-009",
+          "form": "entrée"
+        },
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-009",
@@ -685,13 +1393,29 @@
       "subcategory": "6.02",
       "french": "le centime",
       "chinese": "生丁，分（货币单位）",
-      "example": "Une baguette de pain coûte environ 80 centimes.",
+      "example": "Il me manque un centime pour acheter ce pain ; la boulangère sourit et accepte ma monnaie.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": "金额为原书语言例句中的价格，不作为当前售价。"
+      "note": "金额为原书语言例句中的价格，不作为当前售价。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-004",
+          "form": "boulangère"
+        },
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        },
+        {
+          "id": "6.02-3",
+          "form": "monnaie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-010",
@@ -699,13 +1423,29 @@
       "subcategory": "6.02",
       "french": "cher, chère",
       "chinese": "贵的，昂贵的",
-      "example": "Cette robe est beaucoup trop chère.",
+      "example": "Ce manteau serait trop cher pour moi sans la réduction proposée aux étudiants pendant les soldes.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-16.13-053",
+          "form": "réduction"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        },
+        {
+          "id": "book-6.02-059",
+          "form": "soldes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-011",
@@ -713,13 +1453,29 @@
       "subcategory": "6.02",
       "french": "le compte",
       "chinese": "账户",
-      "example": "J’ai ouvert un compte à la banque.",
+      "example": "Je consulte mon compte après chaque paiement important pour vérifier les dépenses du ménage.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-049",
+          "form": "ménage"
+        },
+        {
+          "id": "book-6.02-032",
+          "form": "paiement"
+        },
+        {
+          "id": "book-6.02-015",
+          "form": "dépenses"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-012",
@@ -727,13 +1483,29 @@
       "subcategory": "6.02",
       "french": "le coût",
       "chinese": "成本，费用",
-      "example": "Le coût de la vie augmente chaque année.",
+      "example": "La réparation du moteur a augmenté le coût du voyage et réduit notre budget pour les visites.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-008",
+          "form": "moteur"
+        },
+        {
+          "id": "book-4.02-014",
+          "form": "visites"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-013",
@@ -741,13 +1513,29 @@
       "subcategory": "6.02",
       "french": "coûter",
       "chinese": "值……钱，花费",
-      "example": "Ces chaussures coûtent 35 euros.",
+      "example": "Le billet coûte moins cher en semaine, mais le dernier train arrive après la fermeture de l’hôtel.",
       "part": "v. t. / i.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-036",
+          "form": "semaine"
+        },
+        {
+          "id": "4.02-3",
+          "form": "hôtel"
+        },
+        {
+          "id": "4.04-1",
+          "form": "train"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-014",
@@ -755,13 +1543,29 @@
       "subcategory": "6.02",
       "french": "le crédit",
       "chinese": "贷款，信贷",
-      "example": "J’ai obtenu un crédit pour pouvoir construire une maison.",
+      "example": "La famille remboursera son crédit progressivement, sans renoncer aux dépenses nécessaires à l’éducation des enfants.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-003",
+          "form": "éducation"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-015",
@@ -769,13 +1573,29 @@
       "subcategory": "6.02",
       "french": "la dépense",
       "chinese": "花费，支出",
-      "example": "Elle a effectué d’importantes dépenses pour faire réparer sa voiture.",
+      "example": "Le transport représente une dépense importante pour les salariés qui habitent loin de leur lieu de travail.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.01-012",
+          "form": "lieu"
+        },
+        {
+          "id": "book-4.03-020",
+          "form": "transport"
+        },
+        {
+          "id": "book-11.01-048",
+          "form": "salariés"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-016",
@@ -783,13 +1603,29 @@
       "subcategory": "6.02",
       "french": "la dette",
       "chinese": "债，债务",
-      "example": "Il a accumulé des dettes depuis plusieurs années.",
+      "example": "Après plusieurs mois de chômage, leur dette augmentait et le paiement du loyer devenait difficile.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-002",
+          "form": "chômage"
+        },
+        {
+          "id": "book-16.02-028",
+          "form": "mois"
+        },
+        {
+          "id": "book-6.02-032",
+          "form": "paiement"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-017",
@@ -797,13 +1633,25 @@
       "subcategory": "6.02",
       "french": "le dollar",
       "chinese": "元（美元、加元等货币单位）",
-      "example": "Le dollar est la monnaie américaine et canadienne.",
+      "example": "Ce billet d’un dollar me rappelle le voyage pendant lequel ma sœur a découvert Montréal.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书仅译“美元”；例句同时提及美国与加拿大，补充“加元”等义，不表示两国使用同一种货币。"
+      "note": "原书仅译“美元”；例句同时提及美国与加拿大，补充“加元”等义，不表示两国使用同一种货币。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "4.02-1",
+          "form": "voyage"
+        },
+        {
+          "id": "1.03-3",
+          "form": "sœur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-018",
@@ -811,13 +1659,29 @@
       "subcategory": "6.02",
       "french": "dû, due",
       "chinese": "欠的，该付的",
-      "example": "L’employée exigea de son patron l’argent qui lui était dû.",
+      "example": "Nous avons versé la somme due au propriétaire après avoir vérifié le montant indiqué sur la facture.",
       "part": "adj. / p. p.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-14.04-019",
+          "form": "propriétaire"
+        },
+        {
+          "id": "book-16.04-019",
+          "form": "somme"
+        },
+        {
+          "id": "book-6.02-031",
+          "form": "montant"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-019",
@@ -825,13 +1689,25 @@
       "subcategory": "6.02",
       "french": "économiser",
       "chinese": "省钱，节省",
-      "example": "Il économise pour pouvoir s’acheter une nouvelle voiture.",
+      "example": "En préparant ses repas à la maison, Sami économise assez pour suivre un cours de photographie.",
       "part": "v. t. / i.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "2.01-1",
+          "form": "maison"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-020",
@@ -839,13 +1715,29 @@
       "subcategory": "6.02",
       "french": "élevé, élevée",
       "chinese": "高的，高额的",
-      "example": "Le prix de l’essence est de plus en plus élevé.",
+      "example": "Un loyer trop élevé a poussé cette étudiante à chercher une chambre plus loin de l’université.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "10.03-1",
+          "form": "université"
+        },
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiante"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-021",
@@ -853,13 +1745,29 @@
       "subcategory": "6.02",
       "french": "l’euro",
       "chinese": "欧元",
-      "example": "L’euro est la monnaie de l’Union européenne.",
+      "example": "Pour chaque euro dépensé au restaurant, mon frère note le montant dans son carnet de voyage.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书概括性例句照录；不应由此理解为所有欧盟成员都使用欧元。"
+      "note": "原书概括性例句照录；不应由此理解为所有欧盟成员都使用欧元。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-063",
+          "form": "restaurant"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyage"
+        },
+        {
+          "id": "1.03-4",
+          "form": "frère"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-022",
@@ -867,13 +1775,29 @@
       "subcategory": "6.02",
       "french": "la facture",
       "chinese": "发票，账单",
-      "example": "Il doit payer ses factures en début de mois.",
+      "example": "Conservez la facture du réfrigérateur : le technicien en aura besoin pour vérifier la date de l’achat.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-16.01-005",
+          "form": "date"
+        },
+        {
+          "id": "book-11.01-049",
+          "form": "technicien"
+        },
+        {
+          "id": "book-6.01-021",
+          "form": "achat"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-023",
@@ -881,13 +1805,29 @@
       "subcategory": "6.02",
       "french": "la finance",
       "chinese": "财务，金融",
-      "example": "L’employée a examiné les finances de l’entreprise.",
+      "example": "Elle travaille dans la finance et anime bénévolement des ateliers sur le budget pour les jeunes salariés.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.04-017",
+          "form": "jeunes"
+        },
+        {
+          "id": "book-11.01-048",
+          "form": "salariés"
+        },
+        {
+          "id": "book-11.03-022",
+          "form": "ateliers"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-024",
@@ -895,13 +1835,29 @@
       "subcategory": "6.02",
       "french": "financier, financière",
       "chinese": "财务的，金融的",
-      "example": "Il a des problèmes financiers depuis plusieurs mois.",
+      "example": "Le service financier préparera un rapport sur les dépenses de l’hôpital avant la réunion du personnel.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-012",
+          "form": "personnel"
+        },
+        {
+          "id": "book-11.02-021",
+          "form": "rapport"
+        },
+        {
+          "id": "book-8.04-006",
+          "form": "hôpital"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-025",
@@ -909,13 +1865,29 @@
       "subcategory": "6.02",
       "french": "la fortune",
       "chinese": "财富，财产",
-      "example": "La reine d’Angleterre possède une grande fortune.",
+      "example": "Malgré sa fortune, cet entrepreneur utilise les transports publics et participe aux activités du quartier.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": "保留原书历史背景例句，不作为当前王室人物或财产情况的陈述。"
+      "note": "保留原书历史背景例句，不作为当前王室人物或财产情况的陈述。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-020",
+          "form": "transports"
+        },
+        {
+          "id": "book-1.06-001",
+          "form": "activités"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-026",
@@ -923,13 +1895,25 @@
       "subcategory": "6.02",
       "french": "les frais",
       "chinese": "费用",
-      "example": "Réparer ma voiture a entraîné des frais élevés.",
+      "example": "Les frais de livraison ont dépassé le prix du livre commandé dans une petite boutique étrangère.",
       "part": "n. m. pl.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": "复数名词，与第五单元形容词 frais（新鲜的）区分。"
+      "note": "复数名词，与第五单元形容词 frais（新鲜的）区分。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-036",
+          "form": "livraison"
+        },
+        {
+          "id": "book-6.01-022",
+          "form": "boutique"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-027",
@@ -937,13 +1921,29 @@
       "subcategory": "6.02",
       "french": "le franc",
       "chinese": "法郎",
-      "example": "Le franc français n’existe plus depuis la mise en place de l’euro.",
+      "example": "Ma grand-mère garde un ancien franc dans une boîte avec les lettres et les photographies de son enfance.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": "保留原书针对法国法郎的历史例句，不将其推广为所有法郎货币均不存在。"
+      "note": "保留原书针对法国法郎的历史例句，不将其推广为所有法郎货币均不存在。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.01-006",
+          "form": "enfance"
+        },
+        {
+          "id": "book-5.01-003",
+          "form": "boîte"
+        },
+        {
+          "id": "book-1.03-036",
+          "form": "grand-mère"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-028",
@@ -951,13 +1951,29 @@
       "subcategory": "6.02",
       "french": "gratuit, gratuite",
       "chinese": "免费的",
-      "example": "L’entrée de ce musée est gratuite.",
+      "example": "L’entrée du musée était gratuite pour les élèves, mais leur professeur devait réserver la visite.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        },
+        {
+          "id": "book-2.01-009",
+          "form": "entrée"
+        },
+        {
+          "id": "book-4.02-014",
+          "form": "visite"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-029",
@@ -965,13 +1981,29 @@
       "subcategory": "6.02",
       "french": "le liquide",
       "chinese": "现金",
-      "example": "Je n’ai plus de liquide sur moi.",
+      "example": "Le marchand accepte le liquide et la carte bancaire, mais préfère recevoir la monnaie exacte.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": "本例为口语“现金”义，与第五单元形容词 liquide（液态的）区分。"
+      "note": "本例为口语“现金”义，与第五单元形容词 liquide（液态的）区分。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-040",
+          "form": "marchand"
+        },
+        {
+          "id": "book-6.02-044",
+          "form": "carte bancaire"
+        },
+        {
+          "id": "6.02-3",
+          "form": "monnaie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-030",
@@ -979,13 +2011,25 @@
       "subcategory": "6.02",
       "french": "le loyer",
       "chinese": "租金",
-      "example": "Les loyers des appartements à Paris sont élevés.",
+      "example": "Un loyer moins élevé nous permettrait de louer un atelier pour développer notre petite entreprise.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-012",
+          "form": "entreprise"
+        },
+        {
+          "id": "book-11.03-022",
+          "form": "atelier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-031",
@@ -993,13 +2037,29 @@
       "subcategory": "6.02",
       "french": "le montant",
       "chinese": "总额，金额",
-      "example": "Le montant de mes dépenses est de 500 euros.",
+      "example": "Le montant de la facture comprend les matériaux, le travail de l’artisan et le transport des meubles.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 48,
       "pdfPage": 55,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-013",
+          "form": "meubles"
+        },
+        {
+          "id": "book-11.01-023",
+          "form": "artisan"
+        },
+        {
+          "id": "book-4.03-020",
+          "form": "transport"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-032",
@@ -1007,13 +2067,25 @@
       "subcategory": "6.02",
       "french": "le paiement",
       "chinese": "付款，支付",
-      "example": "Le paiement de la facture est à effectuer avant le 15 du mois.",
+      "example": "Le paiement par carte a échoué, alors la cliente a demandé où se trouvait la banque la plus proche.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-003",
+          "form": "cliente"
+        },
+        {
+          "id": "book-6.02-004",
+          "form": "banque"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-033",
@@ -1021,13 +2093,29 @@
       "subcategory": "6.02",
       "french": "pauvre",
       "chinese": "穷的，贫穷的",
-      "example": "Monsieur Durand est pauvre, il a peu d’argent.",
+      "example": "Cette famille pauvre reçoit une aide pour acheter les fournitures scolaires et payer le chauffage.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-031",
+          "form": "chauffage"
+        },
+        {
+          "id": "book-7.02-003",
+          "form": "aide"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "6.02-2",
@@ -1035,14 +2123,30 @@
       "subcategory": "6.02",
       "french": "payer",
       "chinese": "付钱，支付",
-      "example": "Aurélie a payé ce livre huit euros.",
+      "example": "Je paierai les billets de train dès que ma sœur aura confirmé les dates de ses congés.",
       "part": "v. t. / i.",
       "level": "基础",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/peje/"
+      "ipa": "/peje/",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-11.03-026",
+          "form": "congés"
+        },
+        {
+          "id": "book-16.01-005",
+          "form": "dates"
+        },
+        {
+          "id": "4.04-1",
+          "form": "train"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-035",
@@ -1050,13 +2154,29 @@
       "subcategory": "6.02",
       "french": "la pièce",
       "chinese": "硬币",
-      "example": "As-tu une pièce d’un euro ?",
+      "example": "Une pièce de deux euros roule sous le comptoir pendant que le vendeur prépare mon paquet.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": "本单元采用“硬币”义，与第二单元“房间”等义区分。"
+      "note": "本单元采用“硬币”义，与第二单元“房间”等义区分。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-050",
+          "form": "vendeur"
+        },
+        {
+          "id": "book-6.02-021",
+          "form": "euros"
+        },
+        {
+          "id": "book-6.01-026",
+          "form": "comptoir"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "6.02-1",
@@ -1064,14 +2184,30 @@
       "subcategory": "6.02",
       "french": "le prix",
       "chinese": "价格",
-      "example": "Le prix de ce pantalon est de 40 euros.",
+      "example": "Le prix des légumes variait selon la saison et les agriculteurs expliquaient aux clients les difficultés de la récolte.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/pʁi/"
+      "ipa": "/pʁi/",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-034",
+          "form": "saison"
+        },
+        {
+          "id": "book-11.01-001",
+          "form": "agriculteurs"
+        },
+        {
+          "id": "book-15.06-047",
+          "form": "récolte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-037",
@@ -1079,13 +2215,25 @@
       "subcategory": "6.02",
       "french": "le profit",
       "chinese": "利润",
-      "example": "Les grands magasins font des profits élevés.",
+      "example": "La coopérative partage son profit entre les producteurs et garde une réserve pour réparer les machines.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-046",
+          "form": "producteurs"
+        },
+        {
+          "id": "book-15.06-020",
+          "form": "machines"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-038",
@@ -1093,13 +2241,29 @@
       "subcategory": "6.02",
       "french": "le règlement",
       "chinese": "结账，支付，结算",
-      "example": "Le règlement se fait en liquide ou par carte de paiement.",
+      "example": "Le règlement de la facture a été effectué après la livraison des tables destinées à la cantine.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-024",
+          "form": "tables"
+        },
+        {
+          "id": "book-6.01-036",
+          "form": "livraison"
+        },
+        {
+          "id": "book-6.02-022",
+          "form": "facture"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-039",
@@ -1107,13 +2271,25 @@
       "subcategory": "6.02",
       "french": "le revenu",
       "chinese": "收入",
-      "example": "Il doit payer un impôt sur le revenu.",
+      "example": "Son revenu couvre le loyer et les courses, mais laisse peu de place aux loisirs coûteux.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "1.06-1",
+          "form": "loisirs"
+        },
+        {
+          "id": "book-6.02-030",
+          "form": "loyer"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-040",
@@ -1121,13 +2297,25 @@
       "subcategory": "6.02",
       "french": "riche",
       "chinese": "富有的",
-      "example": "Sa famille est riche, elle possède une grande villa.",
+      "example": "Même riche, je continuerais à réparer mes vêtements et à emprunter mes livres à la bibliothèque.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        },
+        {
+          "id": "book-6.03-017",
+          "form": "vêtements"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-041",
@@ -1135,13 +2323,29 @@
       "subcategory": "6.02",
       "french": "la richesse",
       "chinese": "财富",
-      "example": "On ne peut estimer sa richesse.",
+      "example": "La richesse de cette région provient surtout de l’agriculture et du travail des petites entreprises.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.06-029",
+          "form": "agriculture"
+        },
+        {
+          "id": "book-3.01-018",
+          "form": "région"
+        },
+        {
+          "id": "book-11.03-012",
+          "form": "entreprises"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-042",
@@ -1149,13 +2353,29 @@
       "subcategory": "6.02",
       "french": "la valeur",
       "chinese": "价值",
-      "example": "La valeur du dollar est basse.",
+      "example": "L’expert a estimé la valeur du bijou avant que la famille ne décide de le vendre.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-034",
+          "form": "expert"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        },
+        {
+          "id": "book-6.03-020",
+          "form": "bijou"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-043",
@@ -1163,13 +2383,29 @@
       "subcategory": "6.02",
       "french": "valoir",
       "chinese": "值……钱，价值为",
-      "example": "Cette veste vaut 50 euros.",
+      "example": "Cette montre vaut davantage que mon vélo, mais elle ne me sert qu’à connaître l’heure.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-015",
+          "form": "heure"
+        },
+        {
+          "id": "4.04-2",
+          "form": "vélo"
+        },
+        {
+          "id": "book-6.03-007",
+          "form": "montre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-044",
@@ -1177,13 +2413,29 @@
       "subcategory": "6.02",
       "french": "la carte bancaire",
       "chinese": "银行卡",
-      "example": "J’ai acheté des billets de train sur Internet, j’ai payé par carte bancaire.",
+      "example": "Range ta carte bancaire dans la poche intérieure de ta veste avant de monter dans le métro.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-007",
+          "form": "métro"
+        },
+        {
+          "id": "book-6.03-011",
+          "form": "poche"
+        },
+        {
+          "id": "book-6.03-016",
+          "form": "veste"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-045",
@@ -1191,13 +2443,29 @@
       "subcategory": "6.02",
       "french": "coûteux, coûteuse",
       "chinese": "昂贵的，费用高的",
-      "example": "Mes parents ont passé des vacances coûteuses au Canada.",
+      "example": "Un chauffage ancien peut devenir coûteux lorsque le logement perd sa chaleur par les fenêtres.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.03-002",
+          "form": "chaleur"
+        },
+        {
+          "id": "book-2.02-031",
+          "form": "chauffage"
+        },
+        {
+          "id": "book-2.01-011",
+          "form": "fenêtres"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-046",
@@ -1205,13 +2473,29 @@
       "subcategory": "6.02",
       "french": "dépenser",
       "chinese": "花费",
-      "example": "Je dépense en moyenne 15 euros par jour.",
+      "example": "Pendant ses études, Léa dépensait moins en vêtements pour financer ses voyages et ses cours de langue.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-003",
+          "form": "études"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyages"
+        },
+        {
+          "id": "book-6.03-017",
+          "form": "vêtements"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-047",
@@ -1219,13 +2503,29 @@
       "subcategory": "6.02",
       "french": "en espèces",
       "chinese": "用现金，以现金",
-      "example": "Dans ce petit café, on ne peut payer qu’en espèces.",
+      "example": "Au marché du village, nous payons en espèces et discutons de la récolte avec les producteurs.",
       "part": "loc. adv.",
       "level": "进阶",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书词条及例句均写 en espèce，统一校正为固定表达 en espèces。"
+      "note": "原书词条及例句均写 en espèce，统一校正为固定表达 en espèces。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.04-013",
+          "form": "espèces"
+        },
+        {
+          "id": "book-11.01-046",
+          "form": "producteurs"
+        },
+        {
+          "id": "book-15.06-047",
+          "form": "récolte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-048",
@@ -1233,13 +2533,29 @@
       "subcategory": "6.02",
       "french": "épargner",
       "chinese": "积攒，储蓄",
-      "example": "Il épargne de l’argent pour s’acheter une nouvelle voiture.",
+      "example": "Nous épargnerons chaque mois une petite somme pour remplacer la voiture sans demander de crédit.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-023",
+          "form": "voiture"
+        },
+        {
+          "id": "book-16.04-019",
+          "form": "somme"
+        },
+        {
+          "id": "book-16.02-028",
+          "form": "mois"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-049",
@@ -1247,13 +2563,29 @@
       "subcategory": "6.02",
       "french": "le financement",
       "chinese": "提供资金，出资，融资",
-      "example": "Le propriétaire assure le financement des travaux.",
+      "example": "Le financement du nouveau laboratoire dépend d’une subvention et de la participation de plusieurs entreprises.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-038",
+          "form": "participation"
+        },
+        {
+          "id": "book-11.03-014",
+          "form": "laboratoire"
+        },
+        {
+          "id": "book-11.03-012",
+          "form": "entreprises"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-050",
@@ -1261,13 +2593,29 @@
       "subcategory": "6.02",
       "french": "fiscal, fiscale",
       "chinese": "税收的，税务的",
-      "example": "Le commerçant a subi un contrôle fiscal.",
+      "example": "La conseillère fiscale a vérifié les revenus du couple avant de préparer sa déclaration d’impôts.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-14.02-005",
+          "form": "couple"
+        },
+        {
+          "id": "book-7.01-012",
+          "form": "impôts"
+        },
+        {
+          "id": "book-12.03-004",
+          "form": "déclaration"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-051",
@@ -1275,13 +2623,29 @@
       "subcategory": "6.02",
       "french": "le gain",
       "chinese": "收入，收益",
-      "example": "J’ai réalisé un gain de 56 euros.",
+      "example": "Le gain obtenu grâce à la vente du vélo permettra de payer une partie du voyage scolaire.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.04-015",
+          "form": "partie"
+        },
+        {
+          "id": "4.04-2",
+          "form": "vélo"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-052",
@@ -1289,13 +2653,29 @@
       "subcategory": "6.02",
       "french": "généreux, généreuse",
       "chinese": "慷慨的，大方的",
-      "example": "C’est un homme généreux, il donne de l’argent aux personnes qui ont des difficultés.",
+      "example": "Une entreprise généreuse pourrait offrir du matériel à l’association sans imposer sa publicité dans les écoles.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-13.04-048",
+          "form": "publicité"
+        },
+        {
+          "id": "book-2.04-012",
+          "form": "matériel"
+        },
+        {
+          "id": "book-11.03-012",
+          "form": "entreprise"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-053",
@@ -1303,13 +2683,29 @@
       "subcategory": "6.02",
       "french": "inclure",
       "chinese": "包括，包含",
-      "example": "Le prix inclut toutes les taxes.",
+      "example": "Le tarif inclut le repas et la visite du musée, mais le transport reste à organiser.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        },
+        {
+          "id": "book-4.02-014",
+          "form": "visite"
+        },
+        {
+          "id": "book-4.03-020",
+          "form": "transport"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-054",
@@ -1317,13 +2713,29 @@
       "subcategory": "6.02",
       "french": "modeste",
       "chinese": "普通的，家境一般的；谦虚的",
-      "example": "Il vient d’une famille modeste.",
+      "example": "Issue d’une famille modeste, cette chercheuse travaillait le soir pour payer son logement et ses études.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": "例句中的 famille modeste 指家境一般、收入不高的家庭。"
+      "note": "例句中的 famille modeste 指家境一般、收入不高的家庭。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-039",
+          "form": "soir"
+        },
+        {
+          "id": "book-10.03-003",
+          "form": "études"
+        },
+        {
+          "id": "book-2.01-035",
+          "form": "logement"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-055",
@@ -1331,13 +2743,29 @@
       "subcategory": "6.02",
       "french": "monétaire",
       "chinese": "货币的",
-      "example": "Le dollar est l’unité monétaire américaine.",
+      "example": "La politique monétaire figure au programme du séminaire que prépare le professeur avec ses étudiants.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-029",
+          "form": "séminaire"
+        },
+        {
+          "id": "book-13.01-017",
+          "form": "programme"
+        },
+        {
+          "id": "book-10.03-012",
+          "form": "professeur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "6.02-3",
@@ -1345,14 +2773,30 @@
       "subcategory": "6.02",
       "french": "la monnaie",
       "chinese": "货币；零钱，找零",
-      "example": "As-tu de la monnaie ? Je n’ai qu’un billet de dix euros.",
+      "example": "Le boulanger m’a rendu la monnaie, puis a glissé un petit gâteau dans le sac de ma fille.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
       "note": "原书译“货币”；例句指零钱，补充对应释义。",
-      "ipa": "/mɔnɛ/"
+      "ipa": "/mɔnɛ/",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-018",
+          "form": "gâteau"
+        },
+        {
+          "id": "book-11.01-004",
+          "form": "boulanger"
+        },
+        {
+          "id": "book-1.03-007",
+          "form": "fille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-057",
@@ -1360,13 +2804,25 @@
       "subcategory": "6.02",
       "french": "la promotion",
       "chinese": "促销",
-      "example": "Ce téléviseur est en promotion, il ne coûte que 100 euros.",
+      "example": "La promotion attire les clients, mais je compare les prix avant d’acheter une nouvelle machine.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 49,
       "pdfPage": 56,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.06-020",
+          "form": "machine"
+        },
+        {
+          "id": "book-6.01-003",
+          "form": "clients"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-058",
@@ -1374,13 +2830,29 @@
       "subcategory": "6.02",
       "french": "réduit, réduite",
       "chinese": "减少的，降低的",
-      "example": "Il a obtenu un prix réduit, après avoir discuté avec le vendeur.",
+      "example": "Les élèves bénéficieront d’un tarif réduit pour assister au concert organisé dans le théâtre municipal.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-019",
+          "form": "théâtre"
+        },
+        {
+          "id": "book-13.03-030",
+          "form": "concert"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-059",
@@ -1388,13 +2860,29 @@
       "subcategory": "6.02",
       "french": "le solde",
       "chinese": "折扣，减价销售",
-      "example": "La jupe est en solde.",
+      "example": "Ce magasin propose des soldes exceptionnels sur les manteaux avant de recevoir sa nouvelle collection.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“打折促销商品”；en solde 指减价销售，les soldes 常指打折季或促销活动。"
+      "note": "原书译“打折促销商品”；en solde 指减价销售，les soldes 常指打折季或促销活动。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.06-029",
+          "form": "collection"
+        },
+        {
+          "id": "book-6.03-044",
+          "form": "manteaux"
+        },
+        {
+          "id": "6.01-1",
+          "form": "magasin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-060",
@@ -1402,13 +2890,29 @@
       "subcategory": "6.02",
       "french": "la subvention",
       "chinese": "补助，津贴",
-      "example": "Il a obtenu une subvention de l’État pour la création de son entreprise.",
+      "example": "Grâce à une subvention, le village a restauré sa salle de spectacle et créé deux emplois.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-020",
+          "form": "spectacle"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        },
+        {
+          "id": "book-11.03-008",
+          "form": "emplois"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-061",
@@ -1416,13 +2920,29 @@
       "subcategory": "6.02",
       "french": "le tarif",
       "chinese": "价格，价目，收费标准",
-      "example": "Le tarif de ce produit n’est pas affiché.",
+      "example": "Le tarif du taxi dépend de la distance et augmente lorsque le chauffeur attend devant la gare.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-025",
+          "form": "chauffeur"
+        },
+        {
+          "id": "book-4.03-008",
+          "form": "distance"
+        },
+        {
+          "id": "book-4.04-018",
+          "form": "taxi"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.02-062",
@@ -1430,13 +2950,25 @@
       "subcategory": "6.02",
       "french": "la taxe",
       "chinese": "税，税费",
-      "example": "La taxe est un impôt.",
+      "example": "Vérifiez si la taxe figure déjà sur la facture avant de comparer le prix des deux hôtels.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "4.02-3",
+          "form": "hôtels"
+        },
+        {
+          "id": "book-6.02-022",
+          "form": "facture"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-001",
@@ -1444,13 +2976,29 @@
       "subcategory": "6.03",
       "french": "attacher",
       "chinese": "系，扎，绑",
-      "example": "J’ai attaché mes cheveux pour faire du sport.",
+      "example": "J’attache mon écharpe à la poignée du sac pour éviter de la perdre dans le train.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.02-055",
+          "form": "poignée"
+        },
+        {
+          "id": "4.04-1",
+          "form": "train"
+        },
+        {
+          "id": "book-6.03-053",
+          "form": "sac"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-002",
@@ -1458,13 +3006,29 @@
       "subcategory": "6.03",
       "french": "la bourse",
       "chinese": "钱袋，钱包",
-      "example": "Une bourse est un petit sac en cuir.",
+      "example": "La voyageuse a retrouvé sa bourse sous le fauteuil après avoir cherché sa monnaie dans toutes ses poches.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": "此处指钱袋，与“交易所、奖学金”等其他义项区分。"
+      "note": "此处指钱袋，与“交易所、奖学金”等其他义项区分。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-008",
+          "form": "fauteuil"
+        },
+        {
+          "id": "book-4.02-016",
+          "form": "voyageuse"
+        },
+        {
+          "id": "6.02-3",
+          "form": "monnaie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-003",
@@ -1472,13 +3036,25 @@
       "subcategory": "6.03",
       "french": "la chaussette",
       "chinese": "袜子",
-      "example": "L’enfant a fait un trou à sa chaussette.",
+      "example": "Cette chaussette a un trou, mais ma grand-mère préfère la réparer plutôt que d’en acheter une autre.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-036",
+          "form": "grand-mère"
+        },
+        {
+          "id": "book-6.03-058",
+          "form": "trou"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-004",
@@ -1486,13 +3062,29 @@
       "subcategory": "6.03",
       "french": "chic",
       "chinese": "漂亮的，优雅的；时髦地",
-      "example": "Il s’est habillé chic pour le mariage.",
+      "example": "Avec sa veste sombre et son chapeau, notre voisin avait l’air chic même pour aller au marché.",
       "part": "adj. / adv.",
       "level": "基础",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": "例句中 chic 修饰 s’habiller，作副词使用。"
+      "note": "例句中 chic 修饰 s’habiller，作副词使用。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-012",
+          "form": "marché"
+        },
+        {
+          "id": "book-2.01-023",
+          "form": "voisin"
+        },
+        {
+          "id": "book-6.03-025",
+          "form": "chapeau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-005",
@@ -1500,13 +3092,29 @@
       "subcategory": "6.03",
       "french": "essayer",
       "chinese": "试穿，试",
-      "example": "J’ai essayé plusieurs pantalons.",
+      "example": "Ma sœur essaie une robe pendant que la vendeuse cherche une ceinture de la même couleur.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.09-009",
+          "form": "couleur"
+        },
+        {
+          "id": "book-11.01-050",
+          "form": "vendeuse"
+        },
+        {
+          "id": "1.03-3",
+          "form": "sœur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-006",
@@ -1514,13 +3122,29 @@
       "subcategory": "6.03",
       "french": "la mode",
       "chinese": "时髦，时尚",
-      "example": "Elle veut toujours être à la mode.",
+      "example": "Le musée présentera une exposition sur la mode et les conditions de travail dans l’industrie textile.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-15.06-017",
+          "form": "industrie"
+        },
+        {
+          "id": "book-11.03-005",
+          "form": "conditions"
+        },
+        {
+          "id": "book-13.02-006",
+          "form": "exposition"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-007",
@@ -1528,13 +3152,29 @@
       "subcategory": "6.03",
       "french": "la montre",
       "chinese": "手表",
-      "example": "Quelle heure est-il ? J’ai oublié ma montre.",
+      "example": "Sa montre indique encore l’heure de Montréal depuis le voyage où elle a rencontré ses collègues canadiens.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-015",
+          "form": "heure"
+        },
+        {
+          "id": "book-11.01-028",
+          "form": "collègues"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-008",
@@ -1542,13 +3182,25 @@
       "subcategory": "6.03",
       "french": "le panier",
       "chinese": "篮子",
-      "example": "Elle est revenue du marché avec un panier plein de fruits.",
+      "example": "Nous avons rempli le panier de légumes et de fromage avant de rentrer préparer le déjeuner.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "5.01-2",
+          "form": "fromage"
+        },
+        {
+          "id": "book-5.01-012",
+          "form": "légumes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-009",
@@ -1556,13 +3208,29 @@
       "subcategory": "6.03",
       "french": "le parapluie",
       "chinese": "雨伞",
-      "example": "J’ai toujours un parapluie dans mon sac, au cas où il pleuve.",
+      "example": "Mon parapluie protège mal mon sac, alors je mets les documents dans une enveloppe en plastique.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书例句保留 au cas où il pleuve 的写法。"
+      "note": "原书例句保留 au cas où il pleuve 的写法。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-7.02-024",
+          "form": "enveloppe"
+        },
+        {
+          "id": "book-7.01-006",
+          "form": "documents"
+        },
+        {
+          "id": "book-6.03-053",
+          "form": "sac"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-010",
@@ -1570,13 +3238,25 @@
       "subcategory": "6.03",
       "french": "la perle",
       "chinese": "珍珠",
-      "example": "Elle porte un bijou de perles.",
+      "example": "Une perle plus petite conviendrait mieux à ce bijou destiné à une jeune musicienne.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-038",
+          "form": "musicienne"
+        },
+        {
+          "id": "book-6.03-020",
+          "form": "bijou"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-011",
@@ -1584,13 +3264,29 @@
       "subcategory": "6.03",
       "french": "la poche",
       "chinese": "口袋",
-      "example": "Il a mis ses clefs dans sa poche de pantalon.",
+      "example": "Dans la poche de sa veste, le facteur garde un stylo pour faire signer les reçus.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.01-023",
+          "form": "stylo"
+        },
+        {
+          "id": "book-7.02-008",
+          "form": "facteur"
+        },
+        {
+          "id": "book-6.03-016",
+          "form": "veste"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-012",
@@ -1598,13 +3294,25 @@
       "subcategory": "6.03",
       "french": "précieux, précieuse",
       "chinese": "珍贵的，宝贵的",
-      "example": "Cette bague est munie de pierres précieuses.",
+      "example": "Elle a confié ses bijoux précieux à sa sœur avant de partir travailler plusieurs mois à l’étranger.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-028",
+          "form": "mois"
+        },
+        {
+          "id": "1.03-3",
+          "form": "sœur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-013",
@@ -1612,13 +3320,29 @@
       "subcategory": "6.03",
       "french": "la robe",
       "chinese": "连衣裙",
-      "example": "L’été, je porte souvent une robe.",
+      "example": "Cette robe en laine tient chaud pendant les soirées d’hiver, même dans notre appartement mal chauffé.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-016",
+          "form": "hiver"
+        },
+        {
+          "id": "book-16.02-040",
+          "form": "soirées"
+        },
+        {
+          "id": "2.01-2",
+          "form": "appartement"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-014",
@@ -1626,13 +3350,29 @@
       "subcategory": "6.03",
       "french": "le style",
       "chinese": "风格，气质",
-      "example": "Ma tante a un style plutôt classique.",
+      "example": "Le style du directeur surprenait ses collègues : il portait toujours des chaussures rouges avec son costume.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-008",
+          "form": "directeur"
+        },
+        {
+          "id": "book-11.01-028",
+          "form": "collègues"
+        },
+        {
+          "id": "book-6.03-030",
+          "form": "costume"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-015",
@@ -1640,13 +3380,25 @@
       "subcategory": "6.03",
       "french": "le tissu",
       "chinese": "布料，织物",
-      "example": "Ma mère achète du tissu pour fabriquer de nouveaux rideaux.",
+      "example": "Ce tissu résiste bien aux lavages, ce qui convient aux vêtements que nous fabriquons pour les enfants.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-6.03-017",
+          "form": "vêtements"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-016",
@@ -1654,13 +3406,29 @@
       "subcategory": "6.03",
       "french": "la veste",
       "chinese": "外套，短上衣",
-      "example": "Il est sorti sans sa veste, il a dû avoir froid.",
+      "example": "Je prêterai ma veste à mon frère s’il doit attendre longtemps sur le quai de la gare.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-052",
+          "form": "quai"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        },
+        {
+          "id": "1.03-4",
+          "form": "frère"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-017",
@@ -1668,13 +3436,25 @@
       "subcategory": "6.03",
       "french": "le vêtement",
       "chinese": "衣服，服装",
-      "example": "Quand je pars en vacances, j’emporte beaucoup trop de vêtements.",
+      "example": "Avant de donner un vêtement à l’association, nous vérifions les poches et réparons les boutons.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        },
+        {
+          "id": "book-6.03-011",
+          "form": "poches"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-018",
@@ -1682,13 +3462,25 @@
       "subcategory": "6.03",
       "french": "l’accessoire",
       "chinese": "配饰，附件",
-      "example": "Sac, ceinture et chapeau sont des accessoires.",
+      "example": "La costumière a choisi chaque accessoire en fonction du personnage et de la lumière prévue sur scène.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-013",
+          "form": "personnage"
+        },
+        {
+          "id": "book-3.02-010",
+          "form": "lumière"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-019",
@@ -1696,13 +3488,29 @@
       "subcategory": "6.03",
       "french": "l’ampleur",
       "chinese": "宽大，宽松程度",
-      "example": "Cette jupe a trop d’ampleur.",
+      "example": "L’ampleur de ce manteau permet de porter un gros pull sans limiter les mouvements des bras.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-8.01-002",
+          "form": "bras"
+        },
+        {
+          "id": "book-13.06-008",
+          "form": "mouvements"
+        },
+        {
+          "id": "book-6.03-044",
+          "form": "manteau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-020",
@@ -1710,13 +3518,25 @@
       "subcategory": "6.03",
       "french": "le bijou",
       "chinese": "珠宝，首饰",
-      "example": "Ce bijou vaut très cher.",
+      "example": "Ce bijou aurait plus de valeur pour moi s’il avait appartenu à quelqu’un de ma famille.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        },
+        {
+          "id": "book-6.02-042",
+          "form": "valeur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-021",
@@ -1724,13 +3544,25 @@
       "subcategory": "6.03",
       "french": "le bouton",
       "chinese": "扣子，纽扣",
-      "example": "Ma veste est fermée par quatre boutons.",
+      "example": "Un bouton manque à ma chemise ; je cherche du fil avant de partir au bureau.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.04-010",
+          "form": "fil"
+        },
+        {
+          "id": "6.03-1",
+          "form": "chemise"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-022",
@@ -1738,13 +3570,25 @@
       "subcategory": "6.03",
       "french": "la canne",
       "chinese": "拐杖，手杖",
-      "example": "Mon grand-père marche avec une canne en bois.",
+      "example": "Le vieil homme a oublié sa canne au café, et le serveur l’a rapportée à son domicile.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-1.04-013",
+          "form": "homme"
+        },
+        {
+          "id": "book-2.01-030",
+          "form": "domicile"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-023",
@@ -1752,13 +3596,29 @@
       "subcategory": "6.03",
       "french": "la ceinture",
       "chinese": "腰带",
-      "example": "Je dois mettre une ceinture pour éviter de perdre mon pantalon.",
+      "example": "Cette ceinture maintient mon pantalon, mais sa boucle en métal déclenche parfois le contrôle à l’aéroport.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 50,
       "pdfPage": 57,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-002",
+          "form": "aéroport"
+        },
+        {
+          "id": "book-16.09-031",
+          "form": "boucle"
+        },
+        {
+          "id": "2.04-3",
+          "form": "métal"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-024",
@@ -1766,13 +3626,25 @@
       "subcategory": "6.03",
       "french": "la chaîne",
       "chinese": "链子，项链",
-      "example": "Pour son anniversaire, elle a reçu une chaîne en or.",
+      "example": "Une fine chaîne brillait autour de son cou lorsqu’elle se penchait pour aider son enfant.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-8.01-044",
+          "form": "cou"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfant"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-025",
@@ -1780,13 +3652,29 @@
       "subcategory": "6.03",
       "french": "le chapeau",
       "chinese": "帽子",
-      "example": "Autrefois, presque tous les hommes portaient un chapeau.",
+      "example": "Le jardinier porte un chapeau et des gants pour travailler plusieurs heures sous le soleil.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.03-2",
+          "form": "soleil"
+        },
+        {
+          "id": "book-16.02-015",
+          "form": "heures"
+        },
+        {
+          "id": "book-6.03-038",
+          "form": "gants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-026",
@@ -1794,13 +3682,29 @@
       "subcategory": "6.03",
       "french": "la chaussure",
       "chinese": "鞋",
-      "example": "J’ai mal aux pieds, car mes chaussures sont trop petites.",
+      "example": "Enlève tes chaussures mouillées et pose-les près de la porte pendant que je prépare le thé dans la cuisine.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-038",
+          "form": "thé"
+        },
+        {
+          "id": "book-2.03-004",
+          "form": "cuisine"
+        },
+        {
+          "id": "book-2.01-019",
+          "form": "porte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "6.03-1",
@@ -1808,14 +3712,26 @@
       "subcategory": "6.03",
       "french": "la chemise",
       "chinese": "衬衣，衬衫",
-      "example": "Il porte une chemise à manches longues.",
+      "example": "Je repasse ma chemise avant l’entretien, puis je relis les informations sur l’entreprise.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/ʃəmiz/"
+      "ipa": "/ʃəmiz/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-007",
+          "form": "informations"
+        },
+        {
+          "id": "book-11.03-012",
+          "form": "entreprise"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-028",
@@ -1823,13 +3739,25 @@
       "subcategory": "6.03",
       "french": "le col",
       "chinese": "领子，衣领",
-      "example": "Le col de sa chemise est sale.",
+      "example": "La couturière a modifié le col de la veste pour que le costume soit plus confortable.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": "本例为衣领义，与地形“山口”等义区分。"
+      "note": "本例为衣领义，与地形“山口”等义区分。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-6.03-030",
+          "form": "costume"
+        },
+        {
+          "id": "book-6.03-016",
+          "form": "veste"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-029",
@@ -1837,13 +3765,29 @@
       "subcategory": "6.03",
       "french": "le corsage",
       "chinese": "女短上衣，女衬衫",
-      "example": "Elle porte un corsage en soie.",
+      "example": "Ce corsage en coton se porte facilement avec une jupe ou un pantalon de couleur sombre.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.04-021",
+          "form": "coton"
+        },
+        {
+          "id": "book-16.09-009",
+          "form": "couleur"
+        },
+        {
+          "id": "6.03-2",
+          "form": "pantalon"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-030",
@@ -1851,13 +3795,29 @@
       "subcategory": "6.03",
       "french": "le costume",
       "chinese": "西装，套装",
-      "example": "Les employés de cette entreprise doivent porter un costume.",
+      "example": "Pour le mariage de sa cousine, Malik louera un costume au lieu d’en acheter un neuf.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-033",
+          "form": "cousine"
+        },
+        {
+          "id": "book-14.02-012",
+          "form": "mariage"
+        },
+        {
+          "id": "book-4.01-012",
+          "form": "lieu"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-031",
@@ -1865,13 +3825,29 @@
       "subcategory": "6.03",
       "french": "la couverture",
       "chinese": "毯子，被子",
-      "example": "J’ai froid. Peux-tu me donner la couverture ?",
+      "example": "Une couverture attend sur le fauteuil pour les soirées où le chauffage ne suffit plus.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-008",
+          "form": "fauteuil"
+        },
+        {
+          "id": "book-16.02-040",
+          "form": "soirées"
+        },
+        {
+          "id": "book-2.02-031",
+          "form": "chauffage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-032",
@@ -1879,13 +3855,29 @@
       "subcategory": "6.03",
       "french": "déchirer",
       "chinese": "扯破，撕裂",
-      "example": "J’ai déchiré mon beau pantalon.",
+      "example": "Un clou a déchiré la manche de mon manteau lorsque je traversais le chantier avec l’architecte.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-022",
+          "form": "architecte"
+        },
+        {
+          "id": "11.03-2",
+          "form": "chantier"
+        },
+        {
+          "id": "book-6.03-043",
+          "form": "manche"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-033",
@@ -1893,13 +3885,25 @@
       "subcategory": "6.03",
       "french": "la dentelle",
       "chinese": "花边，蕾丝",
-      "example": "Aurélie porte un corsage en dentelle.",
+      "example": "La dentelle de cette robe demande un lavage délicat et beaucoup de patience au repassage.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.05-050",
+          "form": "patience"
+        },
+        {
+          "id": "book-6.03-013",
+          "form": "robe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-034",
@@ -1907,13 +3911,29 @@
       "subcategory": "6.03",
       "french": "dépassé, dépassée",
       "chinese": "过时的",
-      "example": "Les vêtements de ma grand-mère sont dépassés.",
+      "example": "Ce modèle semblait dépassé, mais les jeunes clients appréciaient son tissu solide et ses grandes poches.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-1.04-017",
+          "form": "jeunes"
+        },
+        {
+          "id": "book-6.03-011",
+          "form": "poches"
+        },
+        {
+          "id": "book-6.01-003",
+          "form": "clients"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-035",
@@ -1921,13 +3941,29 @@
       "subcategory": "6.03",
       "french": "échanger",
       "chinese": "交换，调换",
-      "example": "Le pantalon est trop petit pour moi, je dois aller l’échanger.",
+      "example": "Au magasin, je demande à échanger les chaussures parce que leur taille ne convient pas à mon fils.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.04-021",
+          "form": "taille"
+        },
+        {
+          "id": "book-6.03-026",
+          "form": "chaussures"
+        },
+        {
+          "id": "6.01-1",
+          "form": "magasin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-036",
@@ -1935,13 +3971,29 @@
       "subcategory": "6.03",
       "french": "l’esthétique",
       "chinese": "美学",
-      "example": "L’esthétique s’intéresse au sentiment du beau.",
+      "example": "Une conférence sur l’esthétique intéresserait les étudiants qui préparent l’exposition consacrée au mobilier contemporain.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-11.02-007",
+          "form": "conférence"
+        },
+        {
+          "id": "book-13.02-006",
+          "form": "exposition"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-037",
@@ -1949,13 +4001,29 @@
       "subcategory": "6.03",
       "french": "filer",
       "chinese": "纺织，纺纱",
-      "example": "Autrefois, les femmes filaient la laine des moutons.",
+      "example": "Dans son atelier, cette artisane file la laine avant de la teindre avec des plantes du jardin.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-023",
+          "form": "artisane"
+        },
+        {
+          "id": "book-11.03-022",
+          "form": "atelier"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-038",
@@ -1963,13 +4031,25 @@
       "subcategory": "6.03",
       "french": "le gant",
       "chinese": "手套",
-      "example": "J’ai mis des gants pour ne pas avoir froid aux mains.",
+      "example": "J’ai perdu un gant dans le bus et retrouvé l’autre au fond de mon sac.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-16.08-015",
+          "form": "fond"
+        },
+        {
+          "id": "book-6.03-053",
+          "form": "sac"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-039",
@@ -1977,13 +4057,29 @@
       "subcategory": "6.03",
       "french": "habiller",
       "chinese": "给……穿衣服",
-      "example": "Le matin, il se lève, prend sa douche, s’habille et part travailler.",
+      "example": "Mon père habille le petit pendant que je prépare son repas et les documents demandés par l’école.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书词条为 habiller；例句使用自反形式 s’habiller，意为“穿衣服”。"
+      "note": "原书词条为 habiller；例句使用自反形式 s’habiller，意为“穿衣服”。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-023",
+          "form": "père"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-040",
@@ -1991,13 +4087,25 @@
       "subcategory": "6.03",
       "french": "la jupe",
       "chinese": "裙子，半身裙",
-      "example": "Elle ne porte que des jupes longues.",
+      "example": "Cette jupe sera plus pratique pour le voyage si la couturière lui ajoute deux poches.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“短裙”，但例句指长裙，校正为不限定长短的“裙子、半身裙”。"
+      "note": "原书译“短裙”，但例句指长裙，校正为不限定长短的“裙子、半身裙”。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "4.02-1",
+          "form": "voyage"
+        },
+        {
+          "id": "book-6.03-011",
+          "form": "poches"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-041",
@@ -2005,13 +4113,29 @@
       "subcategory": "6.03",
       "french": "la laine",
       "chinese": "羊毛",
-      "example": "L’hiver, je porte des chaussettes en laine.",
+      "example": "La laine provient d’une ferme voisine et sert à fabriquer les couvertures vendues au marché.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-009",
+          "form": "ferme"
+        },
+        {
+          "id": "book-3.01-012",
+          "form": "marché"
+        },
+        {
+          "id": "book-6.03-031",
+          "form": "couvertures"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-042",
@@ -2019,13 +4143,29 @@
       "subcategory": "6.03",
       "french": "les lunettes",
       "chinese": "眼镜",
-      "example": "Aurélie a cassé ses lunettes en marchant dessus.",
+      "example": "Sans ses lunettes, ma grand-mère distinguait mal les prix inscrits sur les étiquettes du magasin.",
       "part": "n. f. pl.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-036",
+          "form": "grand-mère"
+        },
+        {
+          "id": "book-6.01-031",
+          "form": "étiquettes"
+        },
+        {
+          "id": "6.01-1",
+          "form": "magasin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-043",
@@ -2033,13 +4173,25 @@
       "subcategory": "6.03",
       "french": "la manche",
       "chinese": "袖子",
-      "example": "Les manches de sa chemise sont trop courtes.",
+      "example": "La manche de ma veste se coince dans la porte lorsque je porte le paquet.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-038",
+          "form": "paquet"
+        },
+        {
+          "id": "book-6.03-016",
+          "form": "veste"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-044",
@@ -2047,13 +4199,29 @@
       "subcategory": "6.03",
       "french": "le manteau",
       "chinese": "大衣，外套",
-      "example": "Il fait froid, je vais mettre mon manteau pour sortir.",
+      "example": "Une bénévole a donné un manteau et des chaussures sèches au voyageur arrivé sous la pluie.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-016",
+          "form": "voyageur"
+        },
+        {
+          "id": "3.03-1",
+          "form": "pluie"
+        },
+        {
+          "id": "book-6.03-026",
+          "form": "chaussures"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-045",
@@ -2061,13 +4229,29 @@
       "subcategory": "6.03",
       "french": "le masque",
       "chinese": "面具",
-      "example": "Un masque est un objet qui cache le visage.",
+      "example": "Au théâtre, ce masque cache le visage de l’actrice tout en laissant entendre clairement sa voix.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-019",
+          "form": "théâtre"
+        },
+        {
+          "id": "book-8.01-035",
+          "form": "visage"
+        },
+        {
+          "id": "book-8.01-036",
+          "form": "voix"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-046",
@@ -2075,13 +4259,25 @@
       "subcategory": "6.03",
       "french": "le mécanisme",
       "chinese": "机械装置，机件",
-      "example": "Le mécanisme de la montre est cassé.",
+      "example": "Le mécanisme de cette montre fonctionnerait mieux si un spécialiste remplaçait la petite pièce usée.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-018",
+          "form": "spécialiste"
+        },
+        {
+          "id": "book-6.03-007",
+          "form": "montre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-047",
@@ -2089,13 +4285,29 @@
       "subcategory": "6.03",
       "french": "le nylon",
       "chinese": "尼龙",
-      "example": "Le nylon est un tissu synthétique.",
+      "example": "Ce sac en nylon protège mes vêtements pendant les randonnées où la pluie nous surprend souvent.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.03-1",
+          "form": "pluie"
+        },
+        {
+          "id": "book-6.03-053",
+          "form": "sac"
+        },
+        {
+          "id": "book-6.03-017",
+          "form": "vêtements"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-048",
@@ -2103,13 +4315,29 @@
       "subcategory": "6.03",
       "french": "ôter",
       "chinese": "脱，摘，取下",
-      "example": "Il a ôté sa veste, car il avait trop chaud.",
+      "example": "Ôte ton chapeau et tes gants avant d’aider ta sœur à préparer le repas.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "1.03-3",
+          "form": "sœur"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        },
+        {
+          "id": "book-6.03-025",
+          "form": "chapeau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "6.03-2",
@@ -2117,14 +4345,26 @@
       "subcategory": "6.03",
       "french": "le pantalon",
       "chinese": "裤子",
-      "example": "Elle n’aime pas les jupes, elle ne porte que des pantalons.",
+      "example": "Ce pantalon est assez souple pour faire du vélo et assez élégant pour aller au bureau.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 51,
       "pdfPage": 58,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/pɑ̃talɔ̃/"
+      "ipa": "/pɑ̃talɔ̃/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "4.04-2",
+          "form": "vélo"
+        },
+        {
+          "id": "11.03-1",
+          "form": "bureau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-050",
@@ -2132,13 +4372,29 @@
       "subcategory": "6.03",
       "french": "le parfum",
       "chinese": "香水；香味",
-      "example": "J’ai offert une bouteille de parfum à Aurélie.",
+      "example": "La cliente a choisi un parfum léger après avoir essayé plusieurs échantillons sur son poignet.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 52,
       "pdfPage": 59,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-16.04-030",
+          "form": "échantillons"
+        },
+        {
+          "id": "book-8.01-061",
+          "form": "poignet"
+        },
+        {
+          "id": "book-6.01-003",
+          "form": "cliente"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-051",
@@ -2146,13 +4402,29 @@
       "subcategory": "6.03",
       "french": "revêtir",
       "chinese": "穿上",
-      "example": "Mon père a revêtu son plus beau costume.",
+      "example": "Avant d’entrer sur scène, l’acteur revêt un manteau rouge et vérifie son masque dans le miroir.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 52,
       "pdfPage": 59,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-038",
+          "form": "miroir"
+        },
+        {
+          "id": "book-13.03-020",
+          "form": "acteur"
+        },
+        {
+          "id": "book-6.03-045",
+          "form": "masque"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-052",
@@ -2160,13 +4432,29 @@
       "subcategory": "6.03",
       "french": "le rubis",
       "chinese": "红宝石",
-      "example": "Un rubis est une pierre précieuse de couleur rouge.",
+      "example": "Le rubis ornait une bague que ma tante conservait dans une boîte avec ses lettres anciennes.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 52,
       "pdfPage": 59,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-14.02-003",
+          "form": "bague"
+        },
+        {
+          "id": "book-1.03-039",
+          "form": "tante"
+        },
+        {
+          "id": "book-5.01-003",
+          "form": "boîte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-053",
@@ -2174,13 +4462,29 @@
       "subcategory": "6.03",
       "french": "le sac",
       "chinese": "包，袋",
-      "example": "Elle s’est acheté un sac en cuir.",
+      "example": "Je range mon appareil photo dans le sac et garde les billets de train dans ma poche.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 52,
       "pdfPage": 59,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-001",
+          "form": "appareil photo"
+        },
+        {
+          "id": "book-13.04-003",
+          "form": "appareil"
+        },
+        {
+          "id": "4.04-1",
+          "form": "train"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-054",
@@ -2188,13 +4492,29 @@
       "subcategory": "6.03",
       "french": "la soie",
       "chinese": "丝，丝绸",
-      "example": "Les vêtements en soie sont assez chers.",
+      "example": "L’atelier utilisera cette soie pour confectionner les costumes du prochain spectacle de danse.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 52,
       "pdfPage": 59,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-1.06-031",
+          "form": "danse"
+        },
+        {
+          "id": "book-11.03-022",
+          "form": "atelier"
+        },
+        {
+          "id": "book-6.03-030",
+          "form": "costumes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-055",
@@ -2202,13 +4522,25 @@
       "subcategory": "6.03",
       "french": "la teinture",
       "chinese": "染发；染色，染料",
-      "example": "Ce n’est pas une vraie blonde, elle a fait une teinture.",
+      "example": "La teinture donne une couleur plus sombre au tissu, mais les coutures restent encore visibles.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 52,
       "pdfPage": 59,
       "source": "法语基础词汇分类学习手册",
-      "note": "例句采用染发义。"
+      "note": "例句采用染发义。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.09-009",
+          "form": "couleur"
+        },
+        {
+          "id": "book-6.03-015",
+          "form": "tissu"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-056",
@@ -2216,13 +4548,29 @@
       "subcategory": "6.03",
       "french": "la tenue",
       "chinese": "服装，一套衣服",
-      "example": "Pierre s’est acheté une nouvelle tenue de sport.",
+      "example": "Pour son premier jour de travail, elle a choisi une tenue confortable et des chaussures solides.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 52,
       "pdfPage": 59,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-019",
+          "form": "jour"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        },
+        {
+          "id": "book-6.03-026",
+          "form": "chaussures"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-057",
@@ -2230,13 +4578,29 @@
       "subcategory": "6.03",
       "french": "textile",
       "chinese": "纺织的；纺织品，纺织业",
-      "example": "En Europe, l’industrie du textile est en crise.",
+      "example": "L’industrie textile de la région emploie des techniciens qui cherchent à réduire la consommation d’eau.",
       "part": "adj. / n. m.",
       "level": "进阶",
       "bookPage": 52,
       "pdfPage": 59,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书词条未加冠词；例句 du textile 为名词用法。行业状况保留作原书练习例句。"
+      "note": "原书词条未加冠词；例句 du textile 为名词用法。行业状况保留作原书练习例句。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.06-006",
+          "form": "consommation"
+        },
+        {
+          "id": "book-15.06-017",
+          "form": "industrie"
+        },
+        {
+          "id": "book-3.01-018",
+          "form": "région"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-058",
@@ -2244,13 +4608,29 @@
       "subcategory": "6.03",
       "french": "le trou",
       "chinese": "洞，孔",
-      "example": "L’enfant a fait un trou dans son pantalon en jouant.",
+      "example": "Un petit trou dans le toit laissait tomber la pluie sur les vêtements rangés au grenier.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 52,
       "pdfPage": 59,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-045",
+          "form": "toit"
+        },
+        {
+          "id": "3.03-1",
+          "form": "pluie"
+        },
+        {
+          "id": "book-6.03-017",
+          "form": "vêtements"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-059",
@@ -2258,13 +4638,29 @@
       "subcategory": "6.03",
       "french": "usé, usée",
       "chinese": "磨损的",
-      "example": "Les pantalons des enfants sont souvent usés au niveau des genoux.",
+      "example": "Ce manteau est usé aux coudes, mais son tissu reste assez solide pour passer encore un hiver.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 52,
       "pdfPage": 59,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-8.01-045",
+          "form": "coudes"
+        },
+        {
+          "id": "book-16.02-016",
+          "form": "hiver"
+        },
+        {
+          "id": "book-6.03-044",
+          "form": "manteau"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-060",
@@ -2272,13 +4668,29 @@
       "subcategory": "6.03",
       "french": "user",
       "chinese": "磨损，用坏",
-      "example": "Cette semaine Pierre a usé cinq chapeaux différents.",
+      "example": "Les longues promenades ont usé mes chaussures plus vite que les trajets quotidiens entre la maison et le bureau.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 52,
       "pdfPage": 59,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "2.01-1",
+          "form": "maison"
+        },
+        {
+          "id": "book-4.02-025",
+          "form": "promenades"
+        },
+        {
+          "id": "book-4.01-030",
+          "form": "trajets"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-061",
@@ -2286,13 +4698,29 @@
       "subcategory": "6.03",
       "french": "le velours",
       "chinese": "天鹅绒，丝绒",
-      "example": "Les pantalons en velours ne sont plus à la mode.",
+      "example": "Le velours du fauteuil est doux sous la main et sa couleur s’accorde avec les rideaux.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 52,
       "pdfPage": 59,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-043",
+          "form": "rideaux"
+        },
+        {
+          "id": "book-16.09-009",
+          "form": "couleur"
+        },
+        {
+          "id": "8.01-2",
+          "form": "main"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-6.03-062",
@@ -2300,13 +4728,31 @@
       "subcategory": "6.03",
       "french": "vêtu, vêtue",
       "chinese": "穿着衣服的",
-      "example": "Elle est vêtue d’une longue robe de soie.",
+      "example": "Vêtue de sa robe bleue, la chanteuse saluera le public avant de commencer le concert.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 52,
       "pdfPage": 59,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-030",
+          "form": "concert"
+        },
+        {
+          "id": "book-13.03-027",
+          "form": "chanteuse"
+        },
+        {
+          "id": "book-6.03-013",
+          "form": "robe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     }
-  ]
+  ],
+  "originalMethod": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，旧统计和科学表述的范围说明记入 note。",
+  "exampleMethod": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
 }

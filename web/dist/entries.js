@@ -42,7 +42,7 @@
       }
       if (!Object.keys(meanings).length)
         throw new Error(`第 ${index + 1} 詞缺少 meanings 釋義。請參照下載的詞庫範本。`);
-      const details = window.MotsDictionaries.normalizeDetails(entry, index);
+      const details = window.MotsDictionaries.normalizeDetails(entry, index, lang);
       const category = categoryList.some((c) => c.id === String(entry.category))
         ? String(entry.category)
         : categoryList[0].id;

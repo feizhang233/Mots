@@ -77,6 +77,16 @@ struct StudyWord: Codable, Hashable, Identifiable {
 
     var exampleTexts: [String] { examples.map(\.text) }
 
+    /// Grammar notation stays visible, but Japanese voices should only read the phrase.
+    var speechText: String {
+        guard language == "ja" else { return term }
+        return term
+            .replacingOccurrences(of: "[/／]", with: " ", options: .regularExpression)
+            .replacingOccurrences(of: "[～〜~]", with: "", options: .regularExpression)
+            .split(whereSeparator: \.isWhitespace)
+            .joined(separator: " ")
+    }
+
     init(id: String, term: String, meaning: String, example: String = "", category: String,
          subcategory: String, language: String, audio: String? = nil,
          meanings: [String: String]? = nil, part: String? = nil,

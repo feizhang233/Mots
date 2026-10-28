@@ -68,14 +68,22 @@ struct StudyCard: View {
                     if !word.exampleTexts.isEmpty {
                         VStack(alignment: .leading, spacing: 14) {
                             Text("例句").font(.caption.weight(.semibold)).foregroundStyle(MotsTheme.muted)
-                            ForEach(Array(word.exampleTexts.prefix(2).enumerated()), id: \.offset) { index, example in
-                                Text(example)
+                            ForEach(Array(word.examples.prefix(2).enumerated()), id: \.offset) { index, example in
+                                Text(example.text)
                                     .font(.body)
                                     .foregroundStyle(MotsTheme.muted)
                                     .lineSpacing(5)
                                     .fixedSize(horizontal: false, vertical: true)
                                     .textSelection(.enabled)
                                     .accessibilityIdentifier("study.example.\(index)")
+                                if let translation = store.cardExampleTranslation(for: example) {
+                                    Text(translation)
+                                        .font(.subheadline)
+                                        .foregroundStyle(MotsTheme.muted)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                        .textSelection(.enabled)
+                                        .accessibilityIdentifier("study.example-translation.\(index)")
+                                }
                             }
                         }
                     }

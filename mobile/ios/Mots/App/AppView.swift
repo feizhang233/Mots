@@ -106,13 +106,14 @@ struct AppView: View {
 
             Section("主題目錄") {
                 categoryButton(store.currentDictionary.isGrammar ? "全部語法" : "全部單字", categoryID: nil, subcategoryID: nil, symbol: "square.grid.2x2")
-                ForEach(store.currentDictionary.categories) { category in
-                    if store.currentDictionary.isThematicGrammar {
+                ForEach(store.availableCategories) { category in
+                    let subcategories = store.availableSubcategories(in: category)
+                    if store.currentDictionary.isThematicGrammar || subcategories.count < 2 {
                         categoryButton(category.name, categoryID: category.id, subcategoryID: nil)
                     } else {
                         DisclosureGroup {
                             categoryButton("此主題全部", categoryID: category.id, subcategoryID: nil)
-                            ForEach(category.subcategories) { subcategory in
+                            ForEach(subcategories) { subcategory in
                                 categoryButton(subcategory.name, categoryID: category.id, subcategoryID: subcategory.id)
                             }
                         } label: {

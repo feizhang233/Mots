@@ -16,7 +16,7 @@
     "基础": 68,
     "进阶": 89
   },
-  "method": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，明显语法或释义错误另记于 note；职业名称保留阴阳性及原书词形；校正 conjugué、détermination 例句排印错误，按语境说明 rapport、créateur、vocation 等词义。",
+  "method": "詞條、分類、原書頁碼與校對註記保留原整理；例句於 2026-10-25 改為 Mots 原創詞彙關聯例句。原例句保存在 french/example-network.json 的 originalText，XLSX 保留原書轉錄版本。",
   "subcategories": [
     {
       "id": "11.01",
@@ -38,13 +38,29 @@
       "subcategory": "11.01",
       "french": "l’agriculteur, l’agricultrice",
       "chinese": "农民，农夫，农妇",
-      "example": "Un agriculteur cultive la terre.",
+      "example": "L’agricultrice vend ses légumes au marché et accueille des élèves qui souhaitent découvrir le travail de la ferme.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 85,
       "pdfPage": 92,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-009",
+          "form": "ferme"
+        },
+        {
+          "id": "book-5.01-012",
+          "form": "légumes"
+        },
+        {
+          "id": "book-3.01-012",
+          "form": "marché"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-002",
@@ -52,13 +68,29 @@
       "subcategory": "11.01",
       "french": "l’astronaute",
       "chinese": "宇航员",
-      "example": "Des astronautes ont marché sur la Lune.",
+      "example": "L’astronaute a présenté des photographies de son voyage aux enfants réunis dans la salle de spectacle de l’école.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 85,
       "pdfPage": 92,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书标注 (M, F)，省音冠词形式相同。"
+      "note": "原书标注 (M, F)，省音冠词形式相同。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-020",
+          "form": "spectacle"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-003",
@@ -66,13 +98,29 @@
       "subcategory": "11.01",
       "french": "le boucher, la bouchère",
       "chinese": "肉商，肉店老板",
-      "example": "Un boucher vend de la viande.",
+      "example": "Le boucher conseille une cliente sur le choix de la viande pendant que son apprentie prépare la commande du restaurant.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 85,
       "pdfPage": 92,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.01-039",
+          "form": "viande"
+        },
+        {
+          "id": "book-12.05-007",
+          "form": "choix"
+        },
+        {
+          "id": "book-5.02-063",
+          "form": "restaurant"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-004",
@@ -80,13 +128,29 @@
       "subcategory": "11.01",
       "french": "le boulanger, la boulangère",
       "chinese": "面包商，面包师，面包店老板",
-      "example": "Un boulanger fabrique et vend du pain.",
+      "example": "La boulangère commençait son travail avant le départ du premier train et connaissait tous les employés de la gare.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 85,
       "pdfPage": 92,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        },
+        {
+          "id": "4.04-1",
+          "form": "train"
+        },
+        {
+          "id": "book-11.03-009",
+          "form": "employés"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-005",
@@ -94,13 +158,29 @@
       "subcategory": "11.01",
       "french": "le capitaine",
       "chinese": "上尉，队长",
-      "example": "Un capitaine commande une troupe militaire.",
+      "example": "Le capitaine de l’équipe encourage les jeunes joueurs et rappelle les règles avant le début du match.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 85,
       "pdfPage": 92,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.07-020",
+          "form": "règles"
+        },
+        {
+          "id": "book-13.07-010",
+          "form": "match"
+        },
+        {
+          "id": "book-16.01-006",
+          "form": "début"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-006",
@@ -108,13 +188,29 @@
       "subcategory": "11.01",
       "french": "le commandant, la commandante",
       "chinese": "司令，指挥官",
-      "example": "Un commandant donne des ordres.",
+      "example": "La commandante présentera le trajet aux membres de l’expédition avant le chargement du matériel dans les camions.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 85,
       "pdfPage": 92,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-005",
+          "form": "camions"
+        },
+        {
+          "id": "book-4.01-030",
+          "form": "trajet"
+        },
+        {
+          "id": "book-2.04-012",
+          "form": "matériel"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-007",
@@ -122,13 +218,25 @@
       "subcategory": "11.01",
       "french": "le cuisinier, la cuisinière",
       "chinese": "厨师",
-      "example": "Il est cuisinier dans un grand restaurant.",
+      "example": "Le cuisinier compare le prix des légumes et adapte son menu au budget de la cantine.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 85,
       "pdfPage": 92,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-006",
+          "form": "budget"
+        },
+        {
+          "id": "book-5.01-012",
+          "form": "légumes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-008",
@@ -136,13 +244,29 @@
       "subcategory": "11.01",
       "french": "le directeur, la directrice",
       "chinese": "经理，主管",
-      "example": "Il a été nommé directeur de l’entreprise.",
+      "example": "La directrice a reçu les parents pour discuter du voyage scolaire et des difficultés de certaines familles.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 85,
       "pdfPage": 92,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "1.03-2",
+          "form": "parents"
+        },
+        {
+          "id": "book-10.04-004",
+          "form": "difficultés"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyage"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-009",
@@ -150,13 +274,29 @@
       "subcategory": "11.01",
       "french": "le général",
       "chinese": "将军",
-      "example": "Le grade de général est le grade le plus élevé.",
+      "example": "Dans ce récit historique, le général hésite à poursuivre le combat et demande des nouvelles des habitants du village.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 85,
       "pdfPage": 92,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.05-026",
+          "form": "combat"
+        },
+        {
+          "id": "book-13.05-048",
+          "form": "récit"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "11.01-1",
@@ -164,13 +304,25 @@
       "subcategory": "11.01",
       "french": "l’ingénieur",
       "chinese": "工程师",
-      "example": "Ma mère est ingénieur dans une usine chimique.",
+      "example": "L’ingénieure vérifiera la solidité du pont avant de rencontrer les élus et les habitants réunis à la mairie.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 85,
       "pdfPage": 92,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书写 ingénieur 并标注 (M, F)，词形按原书保留；例句指女性工程师。"
+      "note": "原书写 ingénieur 并标注 (M, F)，词形按原书保留；例句指女性工程师。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-012",
+          "form": "pont"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-011",
@@ -178,13 +330,29 @@
       "subcategory": "11.01",
       "french": "l’ouvrier, l’ouvrière",
       "chinese": "工人",
-      "example": "L’usine possède 35 ouvriers.",
+      "example": "Une ouvrière explique le fonctionnement de la machine aux étudiants qui visitent l’usine avec leur professeur.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 85,
       "pdfPage": 92,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.04-038",
+          "form": "fonctionnement"
+        },
+        {
+          "id": "book-10.03-012",
+          "form": "professeur"
+        },
+        {
+          "id": "book-15.06-020",
+          "form": "machine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-012",
@@ -192,13 +360,29 @@
       "subcategory": "11.01",
       "french": "le personnel",
       "chinese": "人员，全体职员",
-      "example": "Cette entreprise cherche du personnel.",
+      "example": "Le personnel du musée préparait l’exposition pendant que les artisans terminaient la réparation des fenêtres de la salle.",
       "part": "n. m. coll.",
       "level": "基础",
       "bookPage": 85,
       "pdfPage": 92,
       "source": "法语基础词汇分类学习手册",
-      "note": "集合名词，形式为单数。"
+      "note": "集合名词，形式为单数。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-006",
+          "form": "exposition"
+        },
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-013",
@@ -206,13 +390,29 @@
       "subcategory": "11.01",
       "french": "le pilote, la pilote",
       "chinese": "飞行员",
-      "example": "Il est pilote d’avion.",
+      "example": "La pilote consulte les informations sur le vent et discute du trajet avec le reste de l’équipe.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 85,
       "pdfPage": 92,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.03-3",
+          "form": "vent"
+        },
+        {
+          "id": "book-4.02-007",
+          "form": "informations"
+        },
+        {
+          "id": "book-4.01-030",
+          "form": "trajet"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-014",
@@ -220,13 +420,29 @@
       "subcategory": "11.01",
       "french": "le président, la présidente",
       "chinese": "主席，总统",
-      "example": "Le président de l’assemblée a tenu un discours cet après-midi.",
+      "example": "La présidente de l’association a proposé d’utiliser le jardin pour organiser des cours et des repas partagés.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 85,
       "pdfPage": 92,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-015",
@@ -234,13 +450,29 @@
       "subcategory": "11.01",
       "french": "le représentant, la représentante",
       "chinese": "代表",
-      "example": "Le président a eu une réunion avec ses représentants.",
+      "example": "Un représentant des locataires explique les difficultés du quartier aux architectes chargés de préparer les travaux.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 85,
       "pdfPage": 92,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.04-004",
+          "form": "difficultés"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        },
+        {
+          "id": "book-11.01-022",
+          "form": "architectes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-016",
@@ -248,13 +480,29 @@
       "subcategory": "11.01",
       "french": "le savant, la savante",
       "chinese": "学者，科学家",
-      "example": "Les savants ont fait de nouvelles découvertes.",
+      "example": "Un savant isolé comprendrait moins bien ce problème qu’une équipe capable de comparer plusieurs méthodes de recherche.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 85,
       "pdfPage": 92,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-15.01-015",
+          "form": "problème"
+        },
+        {
+          "id": "book-10.03-008",
+          "form": "méthodes"
+        },
+        {
+          "id": "book-13.07-007",
+          "form": "équipe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-017",
@@ -262,13 +510,29 @@
       "subcategory": "11.01",
       "french": "le secrétaire, la secrétaire",
       "chinese": "秘书",
-      "example": "Elle est secrétaire dans une entreprise.",
+      "example": "La secrétaire prépare les dossiers et vérifie les horaires des visiteurs attendus pour la réunion du directeur.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 86,
       "pdfPage": 93,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-044",
+          "form": "visiteurs"
+        },
+        {
+          "id": "book-16.02-047",
+          "form": "horaires"
+        },
+        {
+          "id": "book-7.01-025",
+          "form": "dossiers"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-018",
@@ -276,13 +540,29 @@
       "subcategory": "11.01",
       "french": "le spécialiste, la spécialiste",
       "chinese": "专家",
-      "example": "C’est un spécialiste de la médecine interne.",
+      "example": "La spécialiste a écouté les questions du patient avant d’expliquer les résultats de l’examen sur un schéma.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 86,
       "pdfPage": 93,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-8.02-012",
+          "form": "patient"
+        },
+        {
+          "id": "book-10.04-016",
+          "form": "résultats"
+        },
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-019",
@@ -290,13 +570,29 @@
       "subcategory": "11.01",
       "french": "le travailleur, la travailleuse",
       "chinese": "工人，劳动者",
-      "example": "Les travailleurs de l’usine ont prévu une grève pour demain.",
+      "example": "Chaque travailleuse reçoit une formation avant d’utiliser les machines qui découpent le tissu destiné aux vêtements.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 86,
       "pdfPage": 93,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.06-020",
+          "form": "machines"
+        },
+        {
+          "id": "book-6.03-015",
+          "form": "tissu"
+        },
+        {
+          "id": "book-6.03-017",
+          "form": "vêtements"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-020",
@@ -304,13 +600,29 @@
       "subcategory": "11.01",
       "french": "l’administrateur, l’administratrice",
       "chinese": "行政人员，管理人员",
-      "example": "Un administrateur s’occupe des affaires d’une société.",
+      "example": "L’administratrice du théâtre gérait les contrats des artistes et les dépenses nécessaires à chaque nouveau spectacle.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 86,
       "pdfPage": 93,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-002",
+          "form": "artistes"
+        },
+        {
+          "id": "book-6.02-015",
+          "form": "dépenses"
+        },
+        {
+          "id": "book-13.03-019",
+          "form": "théâtre"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-021",
@@ -318,13 +630,29 @@
       "subcategory": "11.01",
       "french": "l’ambassadeur, l’ambassadrice",
       "chinese": "大使",
-      "example": "Un ambassadeur représente son pays à l’étranger.",
+      "example": "L’ambassadrice visite l’université pour rencontrer les étudiants qui participent à un programme de recherche commun.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 86,
       "pdfPage": 93,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-017",
+          "form": "programme"
+        },
+        {
+          "id": "10.03-1",
+          "form": "université"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-022",
@@ -332,13 +660,29 @@
       "subcategory": "11.01",
       "french": "l’architecte",
       "chinese": "建筑师",
-      "example": "Cet architecte a dessiné les plans du nouveau musée.",
+      "example": "L’architecte présentera aux familles un plan qui prévoit davantage de lumière et des espaces communs ouverts sur le jardin.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 86,
       "pdfPage": 93,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书标注 (M, F)，省音冠词形式相同。"
+      "note": "原书标注 (M, F)，省音冠词形式相同。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-16.08-013",
+          "form": "espaces"
+        },
+        {
+          "id": "book-3.02-010",
+          "form": "lumière"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-023",
@@ -346,13 +690,29 @@
       "subcategory": "11.01",
       "french": "l’artisan, l’artisane",
       "chinese": "手艺人，工匠",
-      "example": "Les artisans travaillent généralement du matin au soir.",
+      "example": "Une artisane répare les fauteuils du café et conserve les morceaux de bois pour fabriquer de petits objets.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 86,
       "pdfPage": 93,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.04-045",
+          "form": "morceaux"
+        },
+        {
+          "id": "book-2.02-015",
+          "form": "objets"
+        },
+        {
+          "id": "2.04-1",
+          "form": "bois"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-024",
@@ -360,13 +720,29 @@
       "subcategory": "11.01",
       "french": "l’assistant, l’assistante",
       "chinese": "助手，助理",
-      "example": "Le médecin a plusieurs assistants.",
+      "example": "L’assistante a retrouvé la lettre demandée dans un dossier que son collègue avait classé par erreur.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 86,
       "pdfPage": 93,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-7.01-013",
+          "form": "lettre"
+        },
+        {
+          "id": "book-7.01-025",
+          "form": "dossier"
+        },
+        {
+          "id": "book-11.01-028",
+          "form": "collègue"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-025",
@@ -374,13 +750,29 @@
       "subcategory": "11.01",
       "french": "le chauffeur",
       "chinese": "司机",
-      "example": "Le chauffeur de taxi est prudent sur la route.",
+      "example": "Le chauffeur attend les élèves devant le musée et vérifie que personne n’a oublié son sac dans le bus.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 86,
       "pdfPage": 93,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书写 le chauffeur 并标注 (M, F)，词形按原书保留。"
+      "note": "原书写 le chauffeur 并标注 (M, F)，词形按原书保留。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        },
+        {
+          "id": "book-6.03-053",
+          "form": "sac"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-026",
@@ -388,13 +780,29 @@
       "subcategory": "11.01",
       "french": "le chercheur, la chercheuse",
       "chinese": "研究人员",
-      "example": "Le chercheur a fait une nouvelle découverte scientifique.",
+      "example": "La chercheuse interrogeait les habitants pour comprendre comment la fermeture de l’usine avait transformé leur vie quotidienne.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 86,
       "pdfPage": 93,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-8.02-021",
+          "form": "vie"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "book-11.03-020",
+          "form": "usine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-027",
@@ -402,13 +810,25 @@
       "subcategory": "11.01",
       "french": "le collaborateur, la collaboratrice",
       "chinese": "合作者，协作人员",
-      "example": "Le directeur de l’entreprise a demandé à son collaborateur de venir dans son bureau.",
+      "example": "Mon collaborateur prépare les calculs pendant que je vérifie les plans et les demandes reçues du chantier.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 86,
       "pdfPage": 93,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.02-003",
+          "form": "calculs"
+        },
+        {
+          "id": "11.03-2",
+          "form": "chantier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-028",
@@ -416,13 +836,29 @@
       "subcategory": "11.01",
       "french": "le collègue, la collègue",
       "chinese": "同事",
-      "example": "L’ambiance entre collègues est bonne.",
+      "example": "Une collègue prendra ma place à la réunion si le train qui me ramène de la conférence a du retard.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 86,
       "pdfPage": 93,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-16.01-034",
+          "form": "retard"
+        },
+        {
+          "id": "4.04-1",
+          "form": "train"
+        },
+        {
+          "id": "book-11.02-007",
+          "form": "conférence"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-029",
@@ -430,13 +866,29 @@
       "subcategory": "11.01",
       "french": "le commerçant, la commerçante",
       "chinese": "商人",
-      "example": "Les boulangers et les bouchers sont des commerçants.",
+      "example": "La commerçante connaît les habitudes du quartier et réserve parfois du pain aux voisins qui travaillent tard.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 86,
       "pdfPage": 93,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.11-007",
+          "form": "habitudes"
+        },
+        {
+          "id": "5.01-1",
+          "form": "pain"
+        },
+        {
+          "id": "book-2.01-023",
+          "form": "voisins"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-030",
@@ -444,13 +896,29 @@
       "subcategory": "11.01",
       "french": "le confrère, la consœur",
       "chinese": "同行，同人",
-      "example": "Cet avocat est estimé de ses confrères.",
+      "example": "Le médecin a demandé l’avis d’une consœur avant d’expliquer les différentes possibilités de traitement à la famille.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 86,
       "pdfPage": 93,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-12.06-012",
+          "form": "possibilités"
+        },
+        {
+          "id": "book-8.04-012",
+          "form": "traitement"
+        },
+        {
+          "id": "book-12.05-004",
+          "form": "avis"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-031",
@@ -458,13 +926,25 @@
       "subcategory": "11.01",
       "french": "le constructeur, la constructrice",
       "chinese": "制造者，制造商，设计者",
-      "example": "Le constructeur d’automobiles a présenté une nouvelle voiture de sports.",
+      "example": "Le constructeur présente un modèle moins coûteux et explique comment ses techniciens assurent l’entretien des machines.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 87,
       "pdfPage": 94,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.06-020",
+          "form": "machines"
+        },
+        {
+          "id": "book-11.01-049",
+          "form": "techniciens"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-032",
@@ -472,13 +952,29 @@
       "subcategory": "11.01",
       "french": "le danseur, la danseuse",
       "chinese": "舞者，舞蹈演员",
-      "example": "La cousine de Pierre est danseuse professionnelle depuis l’âge de 17 ans.",
+      "example": "Une danseuse plus expérimentée pourrait aider les enfants à préparer leur spectacle sans leur imposer des exercices trop difficiles.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 87,
       "pdfPage": 94,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-020",
+          "form": "spectacle"
+        },
+        {
+          "id": "book-10.02-013",
+          "form": "exercices"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-033",
@@ -486,13 +982,29 @@
       "subcategory": "11.01",
       "french": "l’éducateur, l’éducatrice",
       "chinese": "教育工作者",
-      "example": "Les professeurs et les instituteurs sont des éducateurs.",
+      "example": "L’éducateur accompagne les adolescents dans leur recherche de stage et organise des rencontres avec les artisans du quartier.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 87,
       "pdfPage": 94,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.01-018",
+          "form": "adolescents"
+        },
+        {
+          "id": "book-10.01-039",
+          "form": "stage"
+        },
+        {
+          "id": "book-14.03-014",
+          "form": "rencontres"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-034",
@@ -500,13 +1012,25 @@
       "subcategory": "11.01",
       "french": "l’expert, l’experte",
       "chinese": "专家",
-      "example": "L’expert évalue le prix des tableaux.",
+      "example": "Une experte a examiné la charpente de l’école avant de rédiger un rapport sur les travaux nécessaires.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 87,
       "pdfPage": 94,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "10.01-1",
+          "form": "école"
+        },
+        {
+          "id": "book-11.02-021",
+          "form": "rapport"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-035",
@@ -514,13 +1038,29 @@
       "subcategory": "11.01",
       "french": "le garde",
       "chinese": "保卫，警卫",
-      "example": "Le prince est entouré de cinq gardes du corps.",
+      "example": "Le garde ouvre le portail aux visiteurs et leur indique la salle où se déroule la conférence.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 87,
       "pdfPage": 94,
       "source": "法语基础词汇分类学习手册",
-      "note": "garde du corps 指保镖。"
+      "note": "garde du corps 指保镖。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-044",
+          "form": "visiteurs"
+        },
+        {
+          "id": "book-2.01-018",
+          "form": "portail"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salle"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-036",
@@ -528,13 +1068,29 @@
       "subcategory": "11.01",
       "french": "le gardien, la gardienne",
       "chinese": "门卫，守卫，看管员",
-      "example": "Mon oncle est gardien d’immeuble.",
+      "example": "La gardienne arrosait les plantes de l’entrée pendant que les habitants partaient pour leur travail et leurs courses.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 87,
       "pdfPage": 94,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-009",
+          "form": "entrée"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-037",
@@ -542,13 +1098,29 @@
       "subcategory": "11.01",
       "french": "l’historien, l’historienne",
       "chinese": "历史学家",
-      "example": "Plusieurs historiens participeront au débat.",
+      "example": "L’historienne compare les registres de la mairie aux lettres conservées par les familles de notre village.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 87,
       "pdfPage": 94,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-7.01-027",
+          "form": "registres"
+        },
+        {
+          "id": "book-7.01-013",
+          "form": "lettres"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-038",
@@ -556,13 +1128,25 @@
       "subcategory": "11.01",
       "french": "l’informaticien, l’informaticienne",
       "chinese": "信息处理专家，电脑专家",
-      "example": "L’informaticien est très à l’aise dans son équipe.",
+      "example": "L’informaticien installera le matériel de la bibliothèque et montrera aux bénévoles comment enregistrer les nouveaux livres.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 87,
       "pdfPage": 94,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.04-012",
+          "form": "matériel"
+        },
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-039",
@@ -570,13 +1154,29 @@
       "subcategory": "11.01",
       "french": "la main-d’œuvre",
       "chinese": "劳动力，人力",
-      "example": "Cette usine manque de main-d’œuvre.",
+      "example": "La main-d’œuvre manque dans cette région, et les entreprises cherchent à former les jeunes aux métiers de la construction.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 87,
       "pdfPage": 94,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.05-015",
+          "form": "œuvre"
+        },
+        {
+          "id": "book-2.01-006",
+          "form": "construction"
+        },
+        {
+          "id": "book-1.04-017",
+          "form": "jeunes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-040",
@@ -584,13 +1184,29 @@
       "subcategory": "11.01",
       "french": "le marchand, la marchande",
       "chinese": "商人",
-      "example": "Il est marchand de vins.",
+      "example": "Le marchand a accepté de livrer les chaises après avoir vérifié l’adresse du restaurant et la largeur de la porte.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 87,
       "pdfPage": 94,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-063",
+          "form": "restaurant"
+        },
+        {
+          "id": "book-16.04-040",
+          "form": "largeur"
+        },
+        {
+          "id": "book-2.03-029",
+          "form": "chaises"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-041",
@@ -598,13 +1214,29 @@
       "subcategory": "11.01",
       "french": "la marine",
       "chinese": "海军",
-      "example": "Il est engagé dans la marine depuis 20 ans.",
+      "example": "Une exposition sur la marine rassemble des photographies de bateaux et des lettres écrites par des familles de marins.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 87,
       "pdfPage": 94,
       "source": "法语基础词汇分类学习手册",
-      "note": "此处为海军这一机构、军种，不是指人的 marin。"
+      "note": "此处为海军这一机构、军种，不是指人的 marin。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.04-004",
+          "form": "bateaux"
+        },
+        {
+          "id": "book-13.02-006",
+          "form": "exposition"
+        },
+        {
+          "id": "book-7.01-013",
+          "form": "lettres"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-042",
@@ -612,13 +1244,29 @@
       "subcategory": "11.01",
       "french": "le metteur en scène, la metteuse en scène",
       "chinese": "导演",
-      "example": "Ce metteur en scène est célèbre.",
+      "example": "La metteuse en scène discutait de la lumière avec les techniciens pendant que les acteurs répétaient leur dernière réplique.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 87,
       "pdfPage": 94,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-017",
+          "form": "scène"
+        },
+        {
+          "id": "book-13.03-020",
+          "form": "acteurs"
+        },
+        {
+          "id": "book-3.02-010",
+          "form": "lumière"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-043",
@@ -626,13 +1274,29 @@
       "subcategory": "11.01",
       "french": "le patron, la patronne",
       "chinese": "老板，老板娘",
-      "example": "Mon patron est un homme très sérieux.",
+      "example": "La patronne du café invite ses employés à proposer des idées pour réduire les dépenses sans diminuer la qualité des repas.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 87,
       "pdfPage": 94,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-12.05-022",
+          "form": "idées"
+        },
+        {
+          "id": "book-6.01-015",
+          "form": "qualité"
+        },
+        {
+          "id": "book-6.02-015",
+          "form": "dépenses"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-044",
@@ -640,13 +1304,29 @@
       "subcategory": "11.01",
       "french": "le paysan, la paysanne",
       "chinese": "农民，农夫，农妇",
-      "example": "Ce paysan habite dans une ferme.",
+      "example": "Les paysans du village organiseront une fête après la récolte et inviteront les familles venues les aider.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 87,
       "pdfPage": 94,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-15.06-047",
+          "form": "récolte"
+        },
+        {
+          "id": "book-13.01-008",
+          "form": "fête"
+        },
+        {
+          "id": "3.01-2",
+          "form": "village"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-045",
@@ -654,13 +1334,29 @@
       "subcategory": "11.01",
       "french": "le philosophe",
       "chinese": "哲学家",
-      "example": "Ce philosophe donne une conférence à l’université mercredi prochain.",
+      "example": "Le philosophe interroge les étudiants sur la liberté à partir d’un conflit entre les règles et les choix d’un personnage.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 87,
       "pdfPage": 94,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-012",
+          "form": "liberté"
+        },
+        {
+          "id": "book-15.07-020",
+          "form": "règles"
+        },
+        {
+          "id": "book-15.05-006",
+          "form": "conflit"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-046",
@@ -668,13 +1364,29 @@
       "subcategory": "11.01",
       "french": "le producteur, la productrice",
       "chinese": "生产者",
-      "example": "Les producteurs de blé ont des difficultés économiques.",
+      "example": "La productrice de fromage a montré ses installations aux élèves, puis répondu à leurs questions sur son métier.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 88,
       "pdfPage": 95,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.04-013",
+          "form": "installations"
+        },
+        {
+          "id": "5.01-2",
+          "form": "fromage"
+        },
+        {
+          "id": "book-1.01-012",
+          "form": "métier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-047",
@@ -682,13 +1394,25 @@
       "subcategory": "11.01",
       "french": "la profession",
       "chinese": "职业",
-      "example": "Il a changé de profession, il est maintenant vendeur en magasin.",
+      "example": "Cette profession exige de la patience : les apprentis apprennent à écouter les clients avant de commencer les réparations.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 88,
       "pdfPage": 95,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.05-050",
+          "form": "patience"
+        },
+        {
+          "id": "book-6.01-003",
+          "form": "clients"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-048",
@@ -696,13 +1420,25 @@
       "subcategory": "11.01",
       "french": "le salarié, la salariée",
       "chinese": "拿工资的劳动者，雇员",
-      "example": "Cette entreprise a 352 salariés.",
+      "example": "Une salariée à temps partiel pourrait reprendre sa formation si les cours étaient proposés près de son lieu de travail.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 88,
       "pdfPage": 95,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-4.01-012",
+          "form": "lieu"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-049",
@@ -710,13 +1446,29 @@
       "subcategory": "11.01",
       "french": "le technicien, la technicienne",
       "chinese": "技术工，技术员",
-      "example": "Le technicien a réparé sa télévision.",
+      "example": "Le technicien cherche l’origine du bruit pendant que son collègue note les mesures prises sur la machine.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 88,
       "pdfPage": 95,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.04-011",
+          "form": "mesures"
+        },
+        {
+          "id": "book-1.02-024",
+          "form": "origine"
+        },
+        {
+          "id": "book-9.01-003",
+          "form": "bruit"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-050",
@@ -724,13 +1476,29 @@
       "subcategory": "11.01",
       "french": "le vendeur, la vendeuse",
       "chinese": "售货员，销售人员",
-      "example": "Il est vendeur dans une boutique de vêtements.",
+      "example": "La vendeuse a proposé une autre taille à mon frère et rangé les vêtements qu’il avait essayés.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 88,
       "pdfPage": 95,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-16.04-021",
+          "form": "taille"
+        },
+        {
+          "id": "book-6.03-017",
+          "form": "vêtements"
+        },
+        {
+          "id": "1.03-4",
+          "form": "frère"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.01-051",
@@ -738,13 +1506,29 @@
       "subcategory": "11.01",
       "french": "le vice-président, la vice-présidente",
       "chinese": "副总统，副主席",
-      "example": "Le président et le vice-président ont des points de vue différents.",
+      "example": "La vice-présidente du club prépare le budget du voyage et contacte les familles qui souhaitent participer à son organisation.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 88,
       "pdfPage": 95,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.02-004",
+          "form": "club"
+        },
+        {
+          "id": "book-15.02-016",
+          "form": "organisation"
+        },
+        {
+          "id": "book-6.02-006",
+          "form": "budget"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-001",
@@ -752,13 +1536,29 @@
       "subcategory": "11.02",
       "french": "accomplir",
       "chinese": "完成",
-      "example": "Elle a accompli un travail incroyable.",
+      "example": "L’équipe accomplira les dernières tâches avant l’ouverture du magasin pour accueillir les clients dans de bonnes conditions.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 88,
       "pdfPage": 95,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-037",
+          "form": "ouverture"
+        },
+        {
+          "id": "6.01-1",
+          "form": "magasin"
+        },
+        {
+          "id": "book-6.01-003",
+          "form": "clients"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-002",
@@ -766,13 +1566,29 @@
       "subcategory": "11.02",
       "french": "adroit, adroite",
       "chinese": "灵巧的，熟练的",
-      "example": "Cet ouvrier est très adroit.",
+      "example": "Adroite de ses mains, cette apprentie répare une couture sans laisser de marque visible sur le tissu.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 88,
       "pdfPage": 95,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-12.02-044",
+          "form": "marque"
+        },
+        {
+          "id": "8.01-2",
+          "form": "mains"
+        },
+        {
+          "id": "book-6.03-015",
+          "form": "tissu"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-003",
@@ -780,13 +1596,29 @@
       "subcategory": "11.02",
       "french": "la capacité",
       "chinese": "能力",
-      "example": "Aurélie a de grandes capacités.",
+      "example": "Sa capacité à écouter les habitants facilitait les discussions pendant les réunions consacrées aux travaux du quartier.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 88,
       "pdfPage": 95,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-12.04-013",
+          "form": "discussions"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-004",
@@ -794,13 +1626,29 @@
       "subcategory": "11.02",
       "french": "la carrière",
       "chinese": "职业，职业生涯",
-      "example": "Mon oncle a fait carrière dans cette entreprise.",
+      "example": "Sa carrière commence dans un petit atelier où une artisane lui apprend à reconnaître les bois et à dessiner les meubles.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 88,
       "pdfPage": 95,
       "source": "法语基础词汇分类学习手册",
-      "note": "补充“职业生涯”义；faire carrière 指在职业上发展、取得成就。"
+      "note": "补充“职业生涯”义；faire carrière 指在职业上发展、取得成就。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-013",
+          "form": "meubles"
+        },
+        {
+          "id": "2.04-1",
+          "form": "bois"
+        },
+        {
+          "id": "book-11.01-023",
+          "form": "artisane"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-005",
@@ -808,13 +1656,29 @@
       "subcategory": "11.02",
       "french": "se charger de",
       "chinese": "负责，承担",
-      "example": "Il se charge du contrôle qualité.",
+      "example": "Je me suis chargé de réserver les billets pendant que ma sœur cherchait un logement pour notre voyage.",
       "part": "loc. v. pron.",
       "level": "基础",
       "bookPage": 88,
       "pdfPage": 95,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书写 charger (se) de，统一为 se charger de。"
+      "note": "原书写 charger (se) de，统一为 se charger de。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-035",
+          "form": "logement"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyage"
+        },
+        {
+          "id": "1.03-3",
+          "form": "sœur"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-006",
@@ -822,13 +1686,29 @@
       "subcategory": "11.02",
       "french": "le chef",
       "chinese": "头，首领，领导",
-      "example": "Je m’entends très bien avec mon chef.",
+      "example": "Le chef répartit le travail entre les employés et vérifie que chacun dispose du matériel nécessaire.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 88,
       "pdfPage": 95,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.04-012",
+          "form": "matériel"
+        },
+        {
+          "id": "book-11.03-009",
+          "form": "employés"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-007",
@@ -836,13 +1716,29 @@
       "subcategory": "11.02",
       "french": "la conférence",
       "chinese": "会议，讲座",
-      "example": "La conférence aura lieu ce soir à 19 h 30.",
+      "example": "La conférence réunira des spécialistes du logement et permettra aux habitants de poser leurs questions sur le projet.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 88,
       "pdfPage": 95,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-035",
+          "form": "logement"
+        },
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-008",
@@ -850,13 +1746,29 @@
       "subcategory": "11.02",
       "french": "contribuer",
       "chinese": "贡献，有助于",
-      "example": "Aurélie a contribué à la réussite du nouveau projet.",
+      "example": "Les bénévoles contribuent à la vie du quartier en organisant des repas et des activités pour les enfants.",
       "part": "v. i.",
       "level": "基础",
       "bookPage": 88,
       "pdfPage": 95,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.06-001",
+          "form": "activités"
+        },
+        {
+          "id": "book-8.02-021",
+          "form": "vie"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-009",
@@ -864,13 +1776,29 @@
       "subcategory": "11.02",
       "french": "développer",
       "chinese": "发展，开发",
-      "example": "Aurélie et ses collègues ont développé un nouveau projet.",
+      "example": "L’entreprise développait une nouvelle machine pour réduire les efforts des ouvriers qui transportaient les charges les plus lourdes.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 88,
       "pdfPage": 95,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-13.06-004",
+          "form": "efforts"
+        },
+        {
+          "id": "book-16.04-001",
+          "form": "charges"
+        },
+        {
+          "id": "book-15.06-020",
+          "form": "machine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-010",
@@ -878,13 +1806,29 @@
       "subcategory": "11.02",
       "french": "diriger",
       "chinese": "领导，管理",
-      "example": "Cet homme dirige l’entreprise depuis trois ans.",
+      "example": "Elle dirige une petite équipe qui restaure les livres anciens conservés dans la bibliothèque de l’université.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 88,
       "pdfPage": 95,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "10.03-1",
+          "form": "université"
+        },
+        {
+          "id": "book-13.07-007",
+          "form": "équipe"
+        },
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-011",
@@ -892,13 +1836,29 @@
       "subcategory": "11.02",
       "french": "efficace",
       "chinese": "有效的，有效率的",
-      "example": "Il produit un travail efficace.",
+      "example": "Une méthode plus efficace permettrait au personnel de traiter les commandes sans rester au bureau après la fermeture.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 88,
       "pdfPage": 95,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-025",
+          "form": "commandes"
+        },
+        {
+          "id": "book-10.03-008",
+          "form": "méthode"
+        },
+        {
+          "id": "book-11.01-012",
+          "form": "personnel"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-012",
@@ -906,13 +1866,29 @@
       "subcategory": "11.02",
       "french": "entreprendre",
       "chinese": "干，进行，从事，着手",
-      "example": "Pierre a entrepris un travail difficile.",
+      "example": "Avant d’entreprendre les travaux, la famille compare les devis et demande des conseils à une architecte du quartier.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 88,
       "pdfPage": 95,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        },
+        {
+          "id": "book-11.01-022",
+          "form": "architecte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-013",
@@ -920,13 +1896,29 @@
       "subcategory": "11.02",
       "french": "exercer",
       "chinese": "做，从事，履行",
-      "example": "Mon père exerce des fonctions importantes dans son entreprise.",
+      "example": "Cette médecin a exercé sa profession dans plusieurs villages avant d’ouvrir un cabinet près de notre école.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        },
+        {
+          "id": "3.01-2",
+          "form": "villages"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-014",
@@ -934,13 +1926,29 @@
       "subcategory": "11.02",
       "french": "les exigences",
       "chinese": "要求，苛求",
-      "example": "Le directeur de la société a de grandes exigences.",
+      "example": "Les exigences du client sont précisées dans le contrat pour que l’artisan puisse préparer un devis exact.",
       "part": "n. f. pl.",
       "level": "基础",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-003",
+          "form": "client"
+        },
+        {
+          "id": "book-11.01-023",
+          "form": "artisan"
+        },
+        {
+          "id": "book-11.03-028",
+          "form": "contrat"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-015",
@@ -948,13 +1956,29 @@
       "subcategory": "11.02",
       "french": "l’expérience",
       "chinese": "经验",
-      "example": "On lui a reproché un manque d’expérience.",
+      "example": "Son expérience du chantier lui permettait de prévoir les difficultés que les jeunes ingénieurs ne remarquaient pas encore.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-1.04-017",
+          "form": "jeunes"
+        },
+        {
+          "id": "book-10.04-004",
+          "form": "difficultés"
+        },
+        {
+          "id": "11.01-1",
+          "form": "ingénieurs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-016",
@@ -962,13 +1986,29 @@
       "subcategory": "11.02",
       "french": "la fonction",
       "chinese": "职责，职能，职务",
-      "example": "On lui a attribué de nouvelles fonctions.",
+      "example": "Sa fonction consiste à accueillir les nouveaux salariés et à les aider à comprendre l’organisation de l’usine.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.02-016",
+          "form": "organisation"
+        },
+        {
+          "id": "book-11.03-020",
+          "form": "usine"
+        },
+        {
+          "id": "book-11.01-048",
+          "form": "salariés"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-017",
@@ -976,13 +2016,29 @@
       "subcategory": "11.02",
       "french": "imposer",
       "chinese": "强迫做，强加",
-      "example": "Mon patron m’a imposé de finir ce travail le plus vite possible.",
+      "example": "Le nouveau règlement imposera le port d’un casque aux visiteurs qui souhaitent entrer sur le chantier.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-038",
+          "form": "règlement"
+        },
+        {
+          "id": "book-4.03-013",
+          "form": "port"
+        },
+        {
+          "id": "book-13.01-044",
+          "form": "visiteurs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-018",
@@ -990,13 +2046,29 @@
       "subcategory": "11.02",
       "french": "l’instruction",
       "chinese": "指示，指令",
-      "example": "Il a suivi les instructions de son chef.",
+      "example": "Une instruction près de la machine explique comment prévenir le technicien lorsqu’un bruit inhabituel apparaît.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-9.01-003",
+          "form": "bruit"
+        },
+        {
+          "id": "book-15.06-020",
+          "form": "machine"
+        },
+        {
+          "id": "book-11.01-049",
+          "form": "technicien"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-019",
@@ -1004,13 +2076,29 @@
       "subcategory": "11.02",
       "french": "occuper",
       "chinese": "担任，占据",
-      "example": "Il occupe la fonction de patron.",
+      "example": "Mon frère a occupé plusieurs postes dans cette entreprise avant de devenir responsable de l’atelier de réparation.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“负责”；occuper une fonction 指担任某职务，按语境调整。"
+      "note": "原书译“负责”；occuper une fonction 指担任某职务，按语境调整。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "1.03-4",
+          "form": "frère"
+        },
+        {
+          "id": "book-11.03-012",
+          "form": "entreprise"
+        },
+        {
+          "id": "book-11.03-022",
+          "form": "atelier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "11.02-2",
@@ -1018,14 +2106,30 @@
       "subcategory": "11.02",
       "french": "le projet",
       "chinese": "项目，计划",
-      "example": "Le vice-président présente un nouveau projet.",
+      "example": "Ce projet relie l’école au jardin du quartier et prévoit un passage plus sûr pour les enfants.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/pʁɔʒɛ/"
+      "ipa": "/pʁɔʒɛ/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.01-018",
+          "form": "passage"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-021",
@@ -1033,13 +2137,29 @@
       "subcategory": "11.02",
       "french": "le rapport",
       "chinese": "报告；关系",
-      "example": "Le ministre a écrit un rapport sur la situation économique du pays.",
+      "example": "Le rapport présentait les dépenses du laboratoire et les difficultés rencontrées pendant la première année de recherche.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“关系”；本例指书面报告，补充对应义。"
+      "note": "原书译“关系”；本例指书面报告，补充对应义。",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-002",
+          "form": "année"
+        },
+        {
+          "id": "book-6.02-015",
+          "form": "dépenses"
+        },
+        {
+          "id": "book-10.04-004",
+          "form": "difficultés"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-022",
@@ -1047,13 +2167,25 @@
       "subcategory": "11.02",
       "french": "la recherche",
       "chinese": "研究",
-      "example": "La recherche sur le cancer a évolué ces dernières années.",
+      "example": "La recherche sur les matériaux intéresse les architectes qui souhaitent construire des logements plus confortables et moins coûteux.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-035",
+          "form": "logements"
+        },
+        {
+          "id": "book-11.01-022",
+          "form": "architectes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-023",
@@ -1061,13 +2193,29 @@
       "subcategory": "11.02",
       "french": "la responsabilité",
       "chinese": "责任",
-      "example": "Le chef d’entreprise a de nombreuses responsabilités.",
+      "example": "Une responsabilité mieux partagée rendrait le travail moins lourd pour la personne qui organise chaque réunion de l’association.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-1.04-021",
+          "form": "personne"
+        },
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        },
+        {
+          "id": "11.02-1",
+          "form": "réunion"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "11.02-1",
@@ -1075,14 +2223,30 @@
       "subcategory": "11.02",
       "french": "la réunion",
       "chinese": "会议",
-      "example": "Ils organisent une réunion une fois par mois.",
+      "example": "La réunion commence par les questions des habitants avant la présentation des plans préparés par l’architecte.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/ʁeynjɔ̃/"
+      "ipa": "/ʁeynjɔ̃/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-039",
+          "form": "présentation"
+        },
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-025",
@@ -1090,13 +2254,29 @@
       "subcategory": "11.02",
       "french": "la science",
       "chinese": "科学，理科",
-      "example": "Les mathématiques et la physique sont des sciences.",
+      "example": "Une fête de la science a permis aux enfants de réaliser des expériences avec les chercheurs de l’université.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-008",
+          "form": "fête"
+        },
+        {
+          "id": "10.03-1",
+          "form": "université"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-026",
@@ -1104,13 +2284,29 @@
       "subcategory": "11.02",
       "french": "scientifique",
       "chinese": "科学的",
-      "example": "Le médecin lit une revue scientifique.",
+      "example": "L’équipe scientifique publie ses résultats et explique les limites de la méthode utilisée pour étudier les échantillons.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.07-017",
+          "form": "limites"
+        },
+        {
+          "id": "book-16.04-030",
+          "form": "échantillons"
+        },
+        {
+          "id": "book-10.03-008",
+          "form": "méthode"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-027",
@@ -1118,13 +2314,29 @@
       "subcategory": "11.02",
       "french": "spécialiser",
       "chinese": "使专门化；专门从事",
-      "example": "Ce médecin s’est spécialisé dans la recherche sur le cancer.",
+      "example": "L’institut spécialisera ce laboratoire dans l’étude des matériaux employés pour rénover les bâtiments anciens de la région.",
       "part": "v. t. / pron.",
       "level": "基础",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书词条为 spécialiser；例句采用 se spécialiser dans（专门从事），保留词条并注明用法。"
+      "note": "原书词条为 spécialiser；例句采用 se spécialiser dans（专门从事），保留词条并注明用法。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-007",
+          "form": "institut"
+        },
+        {
+          "id": "book-2.01-004",
+          "form": "bâtiments"
+        },
+        {
+          "id": "book-3.01-018",
+          "form": "région"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-028",
@@ -1132,13 +2344,25 @@
       "subcategory": "11.02",
       "french": "la tâche",
       "chinese": "任务",
-      "example": "Sa tâche consiste à classer les documents.",
+      "example": "Ma première tâche consiste à vérifier les factures avant de les classer dans les dossiers des différents fournisseurs.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-022",
+          "form": "factures"
+        },
+        {
+          "id": "book-7.01-025",
+          "form": "dossiers"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-029",
@@ -1146,13 +2370,29 @@
       "subcategory": "11.02",
       "french": "travailler",
       "chinese": "工作",
-      "example": "Il travaille de 8 h 30 à 17 h.",
+      "example": "Mon père travaillait la nuit à l’usine et gardait ses après-midi pour le jardin et la famille.",
       "part": "v. i.",
       "level": "基础",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-004",
+          "form": "après-midi"
+        },
+        {
+          "id": "book-16.02-030",
+          "form": "nuit"
+        },
+        {
+          "id": "book-1.03-023",
+          "form": "père"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-030",
@@ -1160,13 +2400,29 @@
       "subcategory": "11.02",
       "french": "l’ambition",
       "chinese": "抱负，野心",
-      "example": "Cet employé a l’ambition de devenir un jour directeur de l’entreprise.",
+      "example": "Son ambition est d’ouvrir un atelier où des personnes de plusieurs générations pourront apprendre à réparer leurs meubles.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.03-010",
+          "form": "générations"
+        },
+        {
+          "id": "book-2.03-013",
+          "form": "meubles"
+        },
+        {
+          "id": "book-1.04-021",
+          "form": "personnes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-031",
@@ -1174,13 +2430,29 @@
       "subcategory": "11.02",
       "french": "l’aptitude",
       "chinese": "才能，才干，能力",
-      "example": "Les salariés sont employés selon leurs aptitudes.",
+      "example": "Son aptitude à résoudre les conflits a convaincu ses collègues de lui confier l’accueil des nouvelles équipes.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-15.05-006",
+          "form": "conflits"
+        },
+        {
+          "id": "book-13.07-007",
+          "form": "équipes"
+        },
+        {
+          "id": "book-11.01-028",
+          "form": "collègues"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-032",
@@ -1188,13 +2460,29 @@
       "subcategory": "11.02",
       "french": "assumer",
       "chinese": "担当，承担",
-      "example": "Il est prêt à assumer ses responsabilités.",
+      "example": "La responsable assume ses décisions et explique au personnel les raisons du changement des horaires de travail.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-12.05-013",
+          "form": "décisions"
+        },
+        {
+          "id": "book-12.05-031",
+          "form": "raisons"
+        },
+        {
+          "id": "book-16.13-003",
+          "form": "changement"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-033",
@@ -1202,13 +2490,29 @@
       "subcategory": "11.02",
       "french": "attribuer",
       "chinese": "给予，授予，分配",
-      "example": "Mon patron m’a attribué de nouvelles responsabilités.",
+      "example": "Le jury attribuera une bourse au projet qui associera le mieux la recherche et les besoins des habitants.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-10.04-034",
+          "form": "jury"
+        },
+        {
+          "id": "book-8.03-001",
+          "form": "besoins"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-034",
@@ -1216,13 +2520,29 @@
       "subcategory": "11.02",
       "french": "avancé, avancée",
       "chinese": "领先的，超前的",
-      "example": "As-tu avancé dans ton travail ?",
+      "example": "Ce laboratoire utilise une technologie avancée, mais les chercheurs expliquent leurs observations avec des exemples accessibles aux élèves.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": "本例 avancé 为 avancer 的过去分词，询问工作有无进展；原书词条列阴阳性形容词形式，予以保留。"
+      "note": "本例 avancé 为 avancer 的过去分词，询问工作有无进展；原书词条列阴阳性形容词形式，予以保留。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.02-012",
+          "form": "exemples"
+        },
+        {
+          "id": "book-9.01-015",
+          "form": "observations"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-035",
@@ -1230,13 +2550,25 @@
       "subcategory": "11.02",
       "french": "la besogne",
       "chinese": "活计，工作",
-      "example": "Il fait toutes sortes de besognes.",
+      "example": "La besogne était fatigante, surtout lorsqu’il fallait porter les caisses depuis le dépôt jusqu’au magasin.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 89,
       "pdfPage": 96,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-028",
+          "form": "dépôt"
+        },
+        {
+          "id": "6.01-1",
+          "form": "magasin"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-036",
@@ -1244,13 +2576,25 @@
       "subcategory": "11.02",
       "french": "la compétence",
       "chinese": "能力，技能",
-      "example": "Ce travail demande de grandes compétences.",
+      "example": "La compétence de cette technicienne rassure les ouvriers, qui lui demandent conseil avant de modifier les réglages.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-11.01-049",
+          "form": "technicienne"
+        },
+        {
+          "id": "book-11.01-011",
+          "form": "ouvriers"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-037",
@@ -1258,13 +2602,29 @@
       "subcategory": "11.02",
       "french": "la compression",
       "chinese": "精减人员，裁减",
-      "example": "Le chef d’entreprise a annoncé une compression de personnel, 21 personnes vont perdre leur emploi.",
+      "example": "Une compression du personnel risquerait d’allonger les délais et de compliquer encore la préparation des commandes.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-16.01-031",
+          "form": "délais"
+        },
+        {
+          "id": "book-5.02-058",
+          "form": "préparation"
+        },
+        {
+          "id": "book-6.01-025",
+          "form": "commandes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-038",
@@ -1272,13 +2632,29 @@
       "subcategory": "11.02",
       "french": "conjugué, conjuguée",
       "chinese": "结合的，联合的",
-      "example": "Leurs efforts conjugués ont permis de finir ce travail.",
+      "example": "Les efforts conjugués des enseignants et des familles permettent aux enfants de participer au voyage malgré son coût.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书例句印为 finir de travail，校正为 finir ce travail。"
+      "note": "原书例句印为 finir de travail，校正为 finir ce travail。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.01-031",
+          "form": "enseignants"
+        },
+        {
+          "id": "book-13.06-004",
+          "form": "efforts"
+        },
+        {
+          "id": "book-6.02-012",
+          "form": "coût"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-039",
@@ -1286,13 +2662,29 @@
       "subcategory": "11.02",
       "french": "la coopération",
       "chinese": "合作",
-      "example": "Sa coopération m’a aidé dans mon travail.",
+      "example": "La coopération entre l’école et la ferme a donné naissance à un jardin entretenu par les élèves.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-009",
+          "form": "ferme"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-040",
@@ -1300,13 +2692,29 @@
       "subcategory": "11.02",
       "french": "créateur, créatrice",
       "chinese": "有创造力的，创造性的",
-      "example": "Cet employé dispose d’un génie créateur.",
+      "example": "Le travail créateur de l’équipe apparaît dans les décors que les enfants construisent pour leur spectacle.",
       "part": "adj.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“创造者”；词条未加冠词，例句中修饰 génie，为形容词，按语境校正。"
+      "note": "原书译“创造者”；词条未加冠词，例句中修饰 génie，为形容词，按语境校正。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-13.03-031",
+          "form": "décors"
+        },
+        {
+          "id": "book-13.01-020",
+          "form": "spectacle"
+        },
+        {
+          "id": "book-13.07-007",
+          "form": "équipe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-041",
@@ -1314,13 +2722,29 @@
       "subcategory": "11.02",
       "french": "le critère",
       "chinese": "标准",
-      "example": "L’efficacité est un critère de travail important.",
+      "example": "Le prix restait un critère important pour les familles qui comparaient les logements proposés près de l’université.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "10.03-1",
+          "form": "université"
+        },
+        {
+          "id": "book-2.01-035",
+          "form": "logements"
+        },
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-042",
@@ -1328,13 +2752,29 @@
       "subcategory": "11.02",
       "french": "le délégué, la déléguée",
       "chinese": "代表",
-      "example": "Le comité a nommé de nouveaux délégués.",
+      "example": "Une déléguée du personnel recueille les questions des salariés avant la réunion prévue avec la direction de l’usine.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        },
+        {
+          "id": "book-11.01-012",
+          "form": "personnel"
+        },
+        {
+          "id": "book-11.03-020",
+          "form": "usine"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-043",
@@ -1342,13 +2782,25 @@
       "subcategory": "11.02",
       "french": "le déplacement",
       "chinese": "出差",
-      "example": "Dans le corps de fonctionnaires, les déplacements sont fréquents.",
+      "example": "Ce déplacement nous permettra de rencontrer le fournisseur et de visiter l’atelier où sont fabriqués les meubles.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.03-013",
+          "form": "meubles"
+        },
+        {
+          "id": "book-11.03-022",
+          "form": "atelier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-044",
@@ -1356,13 +2808,29 @@
       "subcategory": "11.02",
       "french": "la détermination",
       "chinese": "决心，坚决",
-      "example": "Il a agi avec détermination.",
+      "example": "Sa détermination aide toute l’équipe à poursuivre les travaux malgré la pluie et les retards de livraison.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书例句印为 Il a agit，过去分词校正为 agi。"
+      "note": "原书例句印为 Il a agit，过去分词校正为 agi。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.01-034",
+          "form": "retards"
+        },
+        {
+          "id": "book-6.01-036",
+          "form": "livraison"
+        },
+        {
+          "id": "3.03-1",
+          "form": "pluie"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-045",
@@ -1370,13 +2838,29 @@
       "subcategory": "11.02",
       "french": "la directive",
       "chinese": "指示，命令",
-      "example": "Le patron a donné de nouvelles directives de travail.",
+      "example": "Une directive a demandé aux employés de vérifier les adresses avant d’expédier les commandes aux clients.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-025",
+          "form": "commandes"
+        },
+        {
+          "id": "book-6.01-003",
+          "form": "clients"
+        },
+        {
+          "id": "book-11.03-009",
+          "form": "employés"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-046",
@@ -1384,13 +2868,29 @@
       "subcategory": "11.02",
       "french": "dirigé, dirigée",
       "chinese": "被领导的，受到管理的",
-      "example": "Cette entreprise est dirigée par un groupe américain.",
+      "example": "Dirigée par une ingénieure, la visite montre aux étudiants les étapes de construction du pont et les règles de sécurité.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“领导的”；本词为过去分词阴阳性形式，例句为被动语态，释义据此调整。"
+      "note": "原书译“领导的”；本词为过去分词阴阳性形式，例句为被动语态，释义据此调整。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-025",
+          "form": "sécurité"
+        },
+        {
+          "id": "book-15.07-020",
+          "form": "règles"
+        },
+        {
+          "id": "book-16.02-011",
+          "form": "étapes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-047",
@@ -1398,13 +2898,29 @@
       "subcategory": "11.02",
       "french": "l’efficacité",
       "chinese": "效率，效能",
-      "example": "Elle travaille avec efficacité.",
+      "example": "L’efficacité du service augmenterait si les employés pouvaient consulter les dossiers sans se déplacer entre plusieurs bureaux.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-7.02-013",
+          "form": "service"
+        },
+        {
+          "id": "book-7.01-025",
+          "form": "dossiers"
+        },
+        {
+          "id": "book-11.03-009",
+          "form": "employés"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-048",
@@ -1412,13 +2928,29 @@
       "subcategory": "11.02",
       "french": "élaborer",
       "chinese": "设计，起草，制订",
-      "example": "Il a élaboré un nouveau plan.",
+      "example": "Les habitants élaborent un projet de jardin avec les élèves et discutent des dépenses nécessaires pendant leurs réunions.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-015",
+          "form": "dépenses"
+        },
+        {
+          "id": "10.01-3",
+          "form": "élèves"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-049",
@@ -1426,13 +2958,29 @@
       "subcategory": "11.02",
       "french": "étaler",
       "chinese": "陈列，摆开；炫耀，卖弄",
-      "example": "Le commerçant étale sa marchandise.",
+      "example": "Le marchand a étalé les tissus sur le comptoir pour permettre à la couturière de comparer les couleurs.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“炫耀，卖弄”；本例指陈列商品，补充对应义。"
+      "note": "原书译“炫耀，卖弄”；本例指陈列商品，补充对应义。",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-16.09-009",
+          "form": "couleurs"
+        },
+        {
+          "id": "book-6.01-026",
+          "form": "comptoir"
+        },
+        {
+          "id": "book-6.03-015",
+          "form": "tissus"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-050",
@@ -1440,13 +2988,29 @@
       "subcategory": "11.02",
       "french": "l’expédition",
       "chinese": "考察，探险",
-      "example": "Les chercheurs ont réalisé une expédition scientifique.",
+      "example": "Cette expédition rassemble des chercheurs qui étudient les plantes et racontent leurs observations aux habitants des villages traversés.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-9.01-015",
+          "form": "observations"
+        },
+        {
+          "id": "3.01-2",
+          "form": "villages"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-051",
@@ -1454,13 +3018,29 @@
       "subcategory": "11.02",
       "french": "l’exploration",
       "chinese": "勘探，探索",
-      "example": "L’exploration a duré dix jours.",
+      "example": "L’exploration de la vallée demandait de longues marches et une bonne connaissance des sentiers utilisés par les bergers.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-9.02-002",
+          "form": "connaissance"
+        },
+        {
+          "id": "book-3.02-063",
+          "form": "vallée"
+        },
+        {
+          "id": "book-3.01-040",
+          "form": "sentiers"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-052",
@@ -1468,13 +3048,29 @@
       "subcategory": "11.02",
       "french": "explorer",
       "chinese": "勘察，考查，探索",
-      "example": "Des chercheurs ont exploré une région inconnue.",
+      "example": "Les étudiants explorent le quartier à pied pour comprendre les relations entre les logements, les commerces et les transports.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-005",
+          "form": "commerces"
+        },
+        {
+          "id": "book-14.01-010",
+          "form": "relations"
+        },
+        {
+          "id": "book-2.01-035",
+          "form": "logements"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-053",
@@ -1482,13 +3078,29 @@
       "subcategory": "11.02",
       "french": "la gestion",
       "chinese": "管理",
-      "example": "Le patron est chargé de la gestion de l’entreprise.",
+      "example": "La gestion de la bibliothèque sera confiée à une équipe qui associera des employés et des bénévoles formés.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.07-007",
+          "form": "équipe"
+        },
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        },
+        {
+          "id": "book-11.03-009",
+          "form": "employés"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-054",
@@ -1496,13 +3108,29 @@
       "subcategory": "11.02",
       "french": "le grade",
       "chinese": "级别，军衔，等级",
-      "example": "Je suis monté en grade.",
+      "example": "Son nouveau grade ne change pas ses habitudes : il continue à partager le repas et le travail de son équipe.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“级别，晋级”；monter en grade 指晋级、晋升。"
+      "note": "原书译“级别，晋级”；monter en grade 指晋级、晋升。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.11-007",
+          "form": "habitudes"
+        },
+        {
+          "id": "book-13.07-007",
+          "form": "équipe"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-055",
@@ -1510,13 +3138,29 @@
       "subcategory": "11.02",
       "french": "l’impératif",
       "chinese": "迫切需要，必须遵守的要求",
-      "example": "Il doit respecter les impératifs de l’horaire.",
+      "example": "L’impératif de terminer avant la rentrée a conduit les ouvriers à revoir l’organisation du chantier avec l’architecte.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-15.02-016",
+          "form": "organisation"
+        },
+        {
+          "id": "book-11.01-022",
+          "form": "architecte"
+        },
+        {
+          "id": "book-11.01-011",
+          "form": "ouvriers"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-056",
@@ -1524,13 +3168,29 @@
       "subcategory": "11.02",
       "french": "inventer",
       "chinese": "想出，发明",
-      "example": "Il a inventé un nouveau concept.",
+      "example": "Les enfants inventent une machine imaginaire et expliquent comment elle pourrait faciliter le travail des agriculteurs.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.06-020",
+          "form": "machine"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        },
+        {
+          "id": "book-11.01-001",
+          "form": "agriculteurs"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-057",
@@ -1538,13 +3198,29 @@
       "subcategory": "11.02",
       "french": "l’invention",
       "chinese": "发明",
-      "example": "L’invention de l’ordinateur a changé le monde.",
+      "example": "Cette invention intéresserait les petites entreprises si son coût restait inférieur à celui des machines déjà disponibles.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 90,
       "pdfPage": 97,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-012",
+          "form": "coût"
+        },
+        {
+          "id": "book-15.06-020",
+          "form": "machines"
+        },
+        {
+          "id": "book-11.03-012",
+          "form": "entreprises"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-058",
@@ -1552,13 +3228,29 @@
       "subcategory": "11.02",
       "french": "la perfection",
       "chinese": "完美",
-      "example": "Il est difficile d’atteindre la perfection.",
+      "example": "La recherche de la perfection ralentit parfois cette apprentie, qui reprend la couture d’une veste malgré la qualité du tissu.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-015",
+          "form": "qualité"
+        },
+        {
+          "id": "book-6.03-016",
+          "form": "veste"
+        },
+        {
+          "id": "book-6.03-015",
+          "form": "tissu"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-059",
@@ -1566,13 +3258,29 @@
       "subcategory": "11.02",
       "french": "la planification",
       "chinese": "规划，计划",
-      "example": "Le ministre est chargé de la planification de l’économie.",
+      "example": "La planification du voyage occupait nos soirées, car chacun devait vérifier ses congés et les horaires des trains.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-040",
+          "form": "soirées"
+        },
+        {
+          "id": "book-16.02-047",
+          "form": "horaires"
+        },
+        {
+          "id": "4.04-1",
+          "form": "trains"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-060",
@@ -1580,13 +3288,29 @@
       "subcategory": "11.02",
       "french": "le recrutement",
       "chinese": "招聘",
-      "example": "Le recrutement de nouveaux employés est terminé.",
+      "example": "Le recrutement commence par une rencontre où les candidats présentent leur expérience et posent des questions sur l’atelier.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-15.03-003",
+          "form": "candidats"
+        },
+        {
+          "id": "book-14.03-014",
+          "form": "rencontre"
+        },
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-061",
@@ -1594,13 +3318,29 @@
       "subcategory": "11.02",
       "french": "recruter",
       "chinese": "雇用，招聘",
-      "example": "L’entreprise recrute trois nouveaux employés.",
+      "example": "L’entreprise recrutera deux techniciennes pour entretenir les machines et former les employés qui viennent de rejoindre l’usine.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-15.06-020",
+          "form": "machines"
+        },
+        {
+          "id": "book-11.03-020",
+          "form": "usine"
+        },
+        {
+          "id": "book-11.01-049",
+          "form": "techniciennes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-062",
@@ -1608,13 +3348,25 @@
       "subcategory": "11.02",
       "french": "renouveler",
       "chinese": "更新，续期",
-      "example": "Son contrat vient d’être renouvelé.",
+      "example": "Je renouvelle ma carte de bibliothèque avant les vacances pour pouvoir emprunter les livres nécessaires à ma recherche.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": "本例指续签、延长合同。"
+      "note": "本例指续签、延长合同。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.02-013",
+          "form": "vacances"
+        },
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-063",
@@ -1622,13 +3374,29 @@
       "subcategory": "11.02",
       "french": "réuni, réunie",
       "chinese": "聚集的，集合的",
-      "example": "Le directeur a parlé devant le personnel réuni.",
+      "example": "Réunis dans le jardin, les voisins ont partagé un repas et choisi la date de la prochaine fête.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-16.01-005",
+          "form": "date"
+        },
+        {
+          "id": "book-2.01-023",
+          "form": "voisins"
+        },
+        {
+          "id": "5.02-1",
+          "form": "repas"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-064",
@@ -1636,13 +3404,29 @@
       "subcategory": "11.02",
       "french": "le schéma",
       "chinese": "提纲，简图，示意图",
-      "example": "Il présente les schémas résumant le projet.",
+      "example": "Ce schéma montre le trajet de l’eau dans le bâtiment et aide les apprentis à comprendre les travaux.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-004",
+          "form": "bâtiment"
+        },
+        {
+          "id": "book-3.02-007",
+          "form": "eau"
+        },
+        {
+          "id": "book-4.01-030",
+          "form": "trajet"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-065",
@@ -1650,13 +3434,29 @@
       "subcategory": "11.02",
       "french": "sérieusement",
       "chinese": "认真地",
-      "example": "Pierre ne travaille pas sérieusement.",
+      "example": "Étudiez sérieusement le devis avant de signer le contrat, puis posez vos questions à l’architecte pendant la réunion.",
       "part": "adv.",
       "level": "进阶",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imperatif",
+      "exampleRelated": [
+        {
+          "id": "book-12.02-028",
+          "form": "questions"
+        },
+        {
+          "id": "book-11.03-028",
+          "form": "contrat"
+        },
+        {
+          "id": "book-11.01-022",
+          "form": "architecte"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-066",
@@ -1664,13 +3464,29 @@
       "subcategory": "11.02",
       "french": "supprimer",
       "chinese": "取消，撤销",
-      "example": "L’entreprise a supprimé des emplois.",
+      "example": "La mairie souhaite supprimer un arrêt de bus, mais les habitants expliquent qu’il dessert l’école et l’hôpital.",
       "part": "v. t.",
       "level": "进阶",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": "supprimer des emplois 指撤销岗位、裁减职位。"
+      "note": "supprimer des emplois 指撤销岗位、裁减职位。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-4.03-003",
+          "form": "arrêt"
+        },
+        {
+          "id": "book-8.04-006",
+          "form": "hôpital"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.02-067",
@@ -1678,13 +3494,29 @@
       "subcategory": "11.02",
       "french": "la vocation",
       "chinese": "志向，职业志趣，天职",
-      "example": "La médecine est sa vocation.",
+      "example": "Sa vocation de médecin était née pendant les visites qu’elle rendait à sa tante dans un hôpital de campagne.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“爱好”；本例指把医学当作职业志向、天职，按语境校正。"
+      "note": "原书译“爱好”；本例指把医学当作职业志向、天职，按语境校正。",
+      "exampleTense": "plus_que_parfait",
+      "exampleRelated": [
+        {
+          "id": "3.01-4",
+          "form": "campagne"
+        },
+        {
+          "id": "book-8.04-006",
+          "form": "hôpital"
+        },
+        {
+          "id": "book-1.03-039",
+          "form": "tante"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "11.03-1",
@@ -1692,14 +3524,30 @@
       "subcategory": "11.03",
       "french": "le bureau",
       "chinese": "办公室",
-      "example": "J’ai acheté des plantes pour mettre dans mon bureau.",
+      "example": "Le bureau donne sur le jardin, ce qui permet aux employés de profiter du calme pendant leur pause.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/byʁo/"
+      "ipa": "/byʁo/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-8.03-010",
+          "form": "pause"
+        },
+        {
+          "id": "book-2.01-014",
+          "form": "jardin"
+        },
+        {
+          "id": "book-11.03-009",
+          "form": "employés"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-002",
@@ -1707,13 +3555,29 @@
       "subcategory": "11.03",
       "french": "le chômage",
       "chinese": "失业",
-      "example": "Pierre est au chômage, il cherche du travail.",
+      "example": "Une période de chômage l’a décidé à reprendre des études et à préparer un diplôme dans une nouvelle profession.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-10.04-027",
+          "form": "diplôme"
+        },
+        {
+          "id": "book-16.01-017",
+          "form": "période"
+        },
+        {
+          "id": "book-10.03-003",
+          "form": "études"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-003",
@@ -1721,13 +3585,29 @@
       "subcategory": "11.03",
       "french": "le chômeur, la chômeuse",
       "chinese": "失业者",
-      "example": "Le nombre de chômeurs a encore augmenté.",
+      "example": "Cette association aide les chômeurs à préparer leurs candidatures et organise des rencontres avec les entreprises du quartier.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-14.03-014",
+          "form": "rencontres"
+        },
+        {
+          "id": "book-15.02-001",
+          "form": "association"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-004",
@@ -1735,13 +3615,29 @@
       "subcategory": "11.03",
       "french": "la collaboration",
       "chinese": "合作",
-      "example": "Une collaboration entre collègues est indispensable.",
+      "example": "La collaboration entre les deux laboratoires donnera aux étudiants accès à du matériel qu’ils ne possèdent pas encore.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-2.04-012",
+          "form": "matériel"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        },
+        {
+          "id": "book-11.03-014",
+          "form": "laboratoires"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-005",
@@ -1749,13 +3645,29 @@
       "subcategory": "11.03",
       "french": "la condition",
       "chinese": "条件",
-      "example": "Aurélie a de bonnes conditions de travail.",
+      "example": "Une condition du contrat oblige le fournisseur à prévenir le client si la livraison risque d’être retardée.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.04-007",
+          "form": "être"
+        },
+        {
+          "id": "book-6.01-036",
+          "form": "livraison"
+        },
+        {
+          "id": "book-6.01-003",
+          "form": "client"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-006",
@@ -1763,13 +3675,29 @@
       "subcategory": "11.03",
       "french": "destiner",
       "chinese": "指定给……用，预定给",
-      "example": "On lui a destiné ce poste.",
+      "example": "La famille destinait cette chambre aux visiteurs, mais l’étudiante l’utilisait aussi pour préparer ses examens.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-13.01-044",
+          "form": "visiteurs"
+        },
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiante"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-007",
@@ -1777,13 +3705,29 @@
       "subcategory": "11.03",
       "french": "le domaine",
       "chinese": "领域",
-      "example": "Il travaille dans le domaine juridique.",
+      "example": "Dans le domaine du transport, cette ingénieure cherche des solutions pour relier les villages aux services de la ville.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.04-020",
+          "form": "solutions"
+        },
+        {
+          "id": "book-7.02-013",
+          "form": "services"
+        },
+        {
+          "id": "3.01-1",
+          "form": "ville"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-008",
@@ -1791,13 +3735,25 @@
       "subcategory": "11.03",
       "french": "l’emploi",
       "chinese": "工作，职位",
-      "example": "Mon frère a perdu son emploi.",
+      "example": "Un emploi plus proche de son domicile lui laisserait davantage de temps pour ses enfants et sa formation.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-030",
+          "form": "domicile"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-009",
@@ -1805,13 +3761,29 @@
       "subcategory": "11.03",
       "french": "l’employé, l’employée",
       "chinese": "职员，雇员",
-      "example": "Les employés de l’entreprise font grève.",
+      "example": "Une employée accueille les visiteurs du musée et les aide à choisir la visite adaptée à leurs intérêts.",
       "part": "n. m. / f.",
       "level": "基础",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.06-011",
+          "form": "intérêts"
+        },
+        {
+          "id": "book-13.01-044",
+          "form": "visiteurs"
+        },
+        {
+          "id": "book-13.02-007",
+          "form": "musée"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-010",
@@ -1819,13 +3791,29 @@
       "subcategory": "11.03",
       "french": "employer",
       "chinese": "雇用",
-      "example": "L’entreprise emploie 46 personnes.",
+      "example": "La coopérative a employé plusieurs habitants du village pour préparer les commandes pendant la période de récolte.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-16.01-017",
+          "form": "période"
+        },
+        {
+          "id": "book-15.06-047",
+          "form": "récolte"
+        },
+        {
+          "id": "book-6.01-025",
+          "form": "commandes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-011",
@@ -1833,13 +3821,29 @@
       "subcategory": "11.03",
       "french": "engager",
       "chinese": "招募，聘用",
-      "example": "L’entreprise engage un nouveau collaborateur.",
+      "example": "Le restaurant souhaite engager un apprenti et lui apprendre à préparer des repas de qualité avec un budget limité.",
       "part": "v. t.",
       "level": "基础",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-5.02-063",
+          "form": "restaurant"
+        },
+        {
+          "id": "book-6.01-015",
+          "form": "qualité"
+        },
+        {
+          "id": "book-6.02-006",
+          "form": "budget"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-012",
@@ -1847,13 +3851,29 @@
       "subcategory": "11.03",
       "french": "l’entreprise",
       "chinese": "企业",
-      "example": "L’entreprise se situe dans le centre-ville.",
+      "example": "L’entreprise ouvrira un atelier près de la gare pour faciliter les trajets des salariés qui utilisent les transports publics.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-4.01-030",
+          "form": "trajets"
+        },
+        {
+          "id": "book-4.03-020",
+          "form": "transports"
+        },
+        {
+          "id": "book-4.03-045",
+          "form": "gare"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-013",
@@ -1861,13 +3881,29 @@
       "subcategory": "11.03",
       "french": "le génie",
       "chinese": "天才；才华",
-      "example": "C’est un génie de la physique.",
+      "example": "Le génie de cette inventrice apparaît dans la simplicité d’un outil qui transforme le travail de toute l’équipe.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 91,
       "pdfPage": 98,
       "source": "法语基础词汇分类学习手册",
-      "note": "本例指天才人物，区别于 11.02 génie créateur 中的创造才华。"
+      "note": "本例指天才人物，区别于 11.02 génie créateur 中的创造才华。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-10.04-042",
+          "form": "simplicité"
+        },
+        {
+          "id": "book-2.02-052",
+          "form": "outil"
+        },
+        {
+          "id": "book-13.07-007",
+          "form": "équipe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-014",
@@ -1875,13 +3911,29 @@
       "subcategory": "11.03",
       "french": "le laboratoire",
       "chinese": "实验室",
-      "example": "Les chercheurs travaillent dans un laboratoire.",
+      "example": "Le laboratoire occupait deux salles de l’université et partageait son matériel avec les étudiants de plusieurs formations.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-2.04-012",
+          "form": "matériel"
+        },
+        {
+          "id": "10.03-1",
+          "form": "université"
+        },
+        {
+          "id": "book-2.03-020",
+          "form": "salles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-015",
@@ -1889,13 +3941,29 @@
       "subcategory": "11.03",
       "french": "l’obligation",
       "chinese": "义务，必须做的事",
-      "example": "Il est dans l’obligation d’assister à la réunion.",
+      "example": "Notre obligation est de prévenir les familles avant de modifier les horaires du transport scolaire dans les villages.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": "原书译“必须”；词条为名词，être dans l’obligation de 指必须做某事。"
+      "note": "原书译“必须”；词条为名词，être dans l’obligation de 指必须做某事。",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-047",
+          "form": "horaires"
+        },
+        {
+          "id": "book-4.03-020",
+          "form": "transport"
+        },
+        {
+          "id": "3.01-2",
+          "form": "villages"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-016",
@@ -1903,13 +3971,29 @@
       "subcategory": "11.03",
       "french": "la perspective",
       "chinese": "前景",
-      "example": "Ce travail me donne de nouvelles perspectives.",
+      "example": "La perspective d’un stage à l’étranger a encouragé ma sœur à suivre un cours de langue après son travail.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-10.01-039",
+          "form": "stage"
+        },
+        {
+          "id": "1.03-3",
+          "form": "sœur"
+        },
+        {
+          "id": "book-11.03-019",
+          "form": "travail"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-017",
@@ -1917,13 +4001,29 @@
       "subcategory": "11.03",
       "french": "professionnel, professionnelle",
       "chinese": "职业的，专业的",
-      "example": "L’employé a commis une faute professionnelle.",
+      "example": "La formation professionnelle permet à cette salariée d’apprendre un nouveau métier sans quitter immédiatement son entreprise.",
       "part": "adj.",
       "level": "基础",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-1.01-012",
+          "form": "métier"
+        },
+        {
+          "id": "book-11.01-048",
+          "form": "salariée"
+        },
+        {
+          "id": "book-11.03-012",
+          "form": "entreprise"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-018",
@@ -1931,13 +4031,29 @@
       "subcategory": "11.03",
       "french": "le supérieur",
       "chinese": "上级",
-      "example": "Il a rendez-vous avec son supérieur.",
+      "example": "Son supérieur accepterait sans doute cet horaire si elle expliquait les contraintes liées au transport de ses enfants.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-047",
+          "form": "horaire"
+        },
+        {
+          "id": "book-4.03-020",
+          "form": "transport"
+        },
+        {
+          "id": "book-1.03-004",
+          "form": "enfants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-019",
@@ -1945,13 +4061,29 @@
       "subcategory": "11.03",
       "french": "le travail",
       "chinese": "工作",
-      "example": "Mon père a trouvé un nouveau travail.",
+      "example": "Le travail se répartit entre l’atelier et le bureau, où les employés préparent les commandes et les factures.",
       "part": "n. m.",
       "level": "基础",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.01-025",
+          "form": "commandes"
+        },
+        {
+          "id": "book-6.02-022",
+          "form": "factures"
+        },
+        {
+          "id": "book-11.03-009",
+          "form": "employés"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-020",
@@ -1959,13 +4091,29 @@
       "subcategory": "11.03",
       "french": "l’usine",
       "chinese": "工厂",
-      "example": "Il travaille dans une usine d’automobiles.",
+      "example": "L’usine a ouvert ses portes aux familles pour leur montrer les machines et les conditions de travail des salariés.",
       "part": "n. f.",
       "level": "基础",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-15.06-020",
+          "form": "machines"
+        },
+        {
+          "id": "1.03-1",
+          "form": "familles"
+        },
+        {
+          "id": "book-11.03-005",
+          "form": "conditions"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-021",
@@ -1973,13 +4121,29 @@
       "subcategory": "11.03",
       "french": "l’agence",
       "chinese": "社，代理机构",
-      "example": "Ma tante travaille dans une agence de voyages.",
+      "example": "L’agence propose des logements proches de la gare, mais leurs loyers dépassent souvent le budget des étudiants.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-030",
+          "form": "loyers"
+        },
+        {
+          "id": "book-6.02-006",
+          "form": "budget"
+        },
+        {
+          "id": "book-2.01-035",
+          "form": "logements"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-022",
@@ -1987,13 +4151,29 @@
       "subcategory": "11.03",
       "french": "l’atelier",
       "chinese": "作坊，车间，工作室",
-      "example": "Il a fait des travaux dans son atelier.",
+      "example": "L’atelier accueillera des enfants le mercredi pour leur apprendre à réparer un jouet ou fabriquer un petit meuble.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-16.02-053",
+          "form": "mercredi"
+        },
+        {
+          "id": "book-1.06-036",
+          "form": "jouet"
+        },
+        {
+          "id": "book-2.03-013",
+          "form": "meuble"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-023",
@@ -2001,13 +4181,29 @@
       "subcategory": "11.03",
       "french": "le cabinet",
       "chinese": "小房间，工作室",
-      "example": "Un cabinet est une pièce de travail.",
+      "example": "Dans son cabinet, la médecin reçoit les habitants du quartier et prend le temps d’expliquer chaque examen.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-8.04-008",
+          "form": "médecin"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        },
+        {
+          "id": "3.01-3",
+          "form": "quartier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "11.03-2",
@@ -2015,13 +4211,29 @@
       "subcategory": "11.03",
       "french": "le chantier",
       "chinese": "工地",
-      "example": "Les ouvriers travaillent sur un chantier.",
+      "example": "Le chantier ralentissait la circulation, mais les ouvriers laissaient un passage aux enfants qui rejoignaient l’école.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "4.03-1",
+          "form": "circulation"
+        },
+        {
+          "id": "book-4.01-018",
+          "form": "passage"
+        },
+        {
+          "id": "10.01-1",
+          "form": "école"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-025",
@@ -2029,13 +4241,29 @@
       "subcategory": "11.03",
       "french": "collaborer",
       "chinese": "合作",
-      "example": "Il a collaboré avec un collègue pour terminer ce projet.",
+      "example": "Les chercheurs collaborent avec des agriculteurs pour observer les changements du sol et comparer leurs méthodes de travail.",
       "part": "v. i.",
       "level": "进阶",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-3.02-021",
+          "form": "sol"
+        },
+        {
+          "id": "book-16.13-003",
+          "form": "changements"
+        },
+        {
+          "id": "book-10.03-008",
+          "form": "méthodes"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-026",
@@ -2043,13 +4271,29 @@
       "subcategory": "11.03",
       "french": "le congé",
       "chinese": "假期，休假",
-      "example": "Je prends des congés en août.",
+      "example": "Pendant son congé, mon collègue a visité sa famille et aidé son frère à rénover une chambre.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "2.03-1",
+          "form": "chambre"
+        },
+        {
+          "id": "1.03-4",
+          "form": "frère"
+        },
+        {
+          "id": "1.03-1",
+          "form": "famille"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-027",
@@ -2057,13 +4301,29 @@
       "subcategory": "11.03",
       "french": "la contrainte",
       "chinese": "限制，约束",
-      "example": "Le métier de boulanger impose beaucoup de contraintes.",
+      "example": "La contrainte du budget pousse l’équipe à réutiliser le matériel disponible plutôt qu’à acheter une nouvelle machine.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-006",
+          "form": "budget"
+        },
+        {
+          "id": "book-2.04-012",
+          "form": "matériel"
+        },
+        {
+          "id": "book-13.07-007",
+          "form": "équipe"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-028",
@@ -2071,13 +4331,29 @@
       "subcategory": "11.03",
       "french": "le contrat",
       "chinese": "合同",
-      "example": "J’ai signé mon contrat de travail.",
+      "example": "Le contrat précisera le prix, la date de livraison et les conditions de réparation des meubles commandés par l’école.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-16.01-005",
+          "form": "date"
+        },
+        {
+          "id": "book-6.01-036",
+          "form": "livraison"
+        },
+        {
+          "id": "book-2.03-013",
+          "form": "meubles"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-029",
@@ -2085,13 +4361,29 @@
       "subcategory": "11.03",
       "french": "le demandeur d’emploi, la demandeuse d’emploi",
       "chinese": "求职者",
-      "example": "Mon oncle est demandeur d’emploi.",
+      "example": "Une demandeuse d’emploi prépare son entretien avec une bénévole qui l’aide à présenter son expérience et ses compétences.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-7.02-003",
+          "form": "aide"
+        },
+        {
+          "id": "book-11.02-036",
+          "form": "compétences"
+        },
+        {
+          "id": "book-11.03-008",
+          "form": "emploi"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-030",
@@ -2099,13 +4391,29 @@
       "subcategory": "11.03",
       "french": "la démission",
       "chinese": "辞职",
-      "example": "Elle a donné sa lettre de démission.",
+      "example": "Sa démission a surpris les collègues, mais elle souhaitait reprendre des études et changer de profession.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-10.03-003",
+          "form": "études"
+        },
+        {
+          "id": "book-11.01-047",
+          "form": "profession"
+        },
+        {
+          "id": "book-11.01-028",
+          "form": "collègues"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-031",
@@ -2113,13 +4421,29 @@
       "subcategory": "11.03",
       "french": "l’employeur, l’employeuse",
       "chinese": "雇主",
-      "example": "Mon employeur a augmenté mon salaire.",
+      "example": "L’employeur participe aux frais de transport des salariés qui habitent loin de l’usine et viennent en train.",
       "part": "n. m. / f.",
       "level": "进阶",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-026",
+          "form": "frais"
+        },
+        {
+          "id": "book-4.03-020",
+          "form": "transport"
+        },
+        {
+          "id": "4.04-1",
+          "form": "train"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-032",
@@ -2127,13 +4451,29 @@
       "subcategory": "11.03",
       "french": "la firme",
       "chinese": "公司，企业",
-      "example": "Il travaille dans une grande firme américaine.",
+      "example": "La firme fabriquait des tissus solides destinés aux vêtements de travail utilisés sur les chantiers de la région.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "imparfait",
+      "exampleRelated": [
+        {
+          "id": "book-3.01-018",
+          "form": "région"
+        },
+        {
+          "id": "book-6.03-015",
+          "form": "tissus"
+        },
+        {
+          "id": "book-6.03-017",
+          "form": "vêtements"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-033",
@@ -2141,13 +4481,29 @@
       "subcategory": "11.03",
       "french": "la grève",
       "chinese": "罢工",
-      "example": "Le syndicat a décidé de prolonger la grève.",
+      "example": "La grève perturbe les trains, et les étudiants cherchent d’autres moyens de rejoindre leur université avant l’examen.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "10.03-1",
+          "form": "université"
+        },
+        {
+          "id": "4.04-1",
+          "form": "trains"
+        },
+        {
+          "id": "book-10.03-004",
+          "form": "étudiants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-034",
@@ -2155,13 +4511,25 @@
       "subcategory": "11.03",
       "french": "la norme",
       "chinese": "规格，标准",
-      "example": "Ce produit respecte les normes européennes.",
+      "example": "Une norme plus claire aiderait les petites entreprises à comparer les matériaux proposés pour la rénovation des logements.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "conditionnel",
+      "exampleRelated": [
+        {
+          "id": "book-2.01-035",
+          "form": "logements"
+        },
+        {
+          "id": "book-11.03-012",
+          "form": "entreprises"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-035",
@@ -2169,13 +4537,29 @@
       "subcategory": "11.03",
       "french": "qualifié, qualifiée",
       "chinese": "有资格的，胜任的",
-      "example": "Il est parfaitement qualifié pour ce poste.",
+      "example": "Une ouvrière qualifiée forme les apprentis et vérifie les pièces avant leur départ de l’atelier vers le chantier.",
       "part": "adj. / p. p.",
       "level": "进阶",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "11.03-2",
+          "form": "chantier"
+        },
+        {
+          "id": "book-11.01-011",
+          "form": "ouvrière"
+        },
+        {
+          "id": "book-11.03-022",
+          "form": "atelier"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-036",
@@ -2183,13 +4567,29 @@
       "subcategory": "11.03",
       "french": "la retraite",
       "chinese": "退休",
-      "example": "Il est parti à la retraite à l’âge de 60 ans.",
+      "example": "À la retraite, notre voisine consacrera plus de temps au jardin et aux cours de peinture de la bibliothèque.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 92,
       "pdfPage": 99,
       "source": "法语基础词汇分类学习手册",
-      "note": "按原书保留人物退休年龄的语言例句，不据此推定现行法定退休年龄。"
+      "note": "按原书保留人物退休年龄的语言例句，不据此推定现行法定退休年龄。",
+      "exampleTense": "futur",
+      "exampleRelated": [
+        {
+          "id": "book-13.02-010",
+          "form": "peinture"
+        },
+        {
+          "id": "book-2.01-023",
+          "form": "voisine"
+        },
+        {
+          "id": "book-10.03-017",
+          "form": "bibliothèque"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "11.03-3",
@@ -2197,14 +4597,30 @@
       "subcategory": "11.03",
       "french": "le salaire",
       "chinese": "工资",
-      "example": "L’employé reçoit son salaire à la fin du mois.",
+      "example": "Son salaire couvre le loyer et les dépenses courantes, mais elle garde une petite réserve pour les voyages en famille.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 93,
       "pdfPage": 100,
       "source": "法语基础词汇分类学习手册",
       "note": "",
-      "ipa": "/salɛʁ/"
+      "ipa": "/salɛʁ/",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-6.02-030",
+          "form": "loyer"
+        },
+        {
+          "id": "book-6.02-015",
+          "form": "dépenses"
+        },
+        {
+          "id": "4.02-1",
+          "form": "voyages"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-038",
@@ -2212,13 +4628,29 @@
       "subcategory": "11.03",
       "french": "la suspension",
       "chinese": "暂停，停职",
-      "example": "Plusieurs fautes professionnelles ont entraîné sa suspension.",
+      "example": "La suspension du service a obligé les habitants à organiser eux-mêmes le transport des enfants jusqu’à l’école.",
       "part": "n. f.",
       "level": "进阶",
       "bookPage": 93,
       "pdfPage": 100,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "passe_compose",
+      "exampleRelated": [
+        {
+          "id": "book-7.02-013",
+          "form": "service"
+        },
+        {
+          "id": "book-4.03-020",
+          "form": "transport"
+        },
+        {
+          "id": "book-15.03-011",
+          "form": "habitants"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     },
     {
       "id": "book-11.03-039",
@@ -2226,13 +4658,31 @@
       "subcategory": "11.03",
       "french": "le syndicat",
       "chinese": "工会",
-      "example": "Les syndicats défendent les droits des ouvriers.",
+      "example": "Le syndicat consulte les salariés avant de présenter ses propositions sur les horaires et les conditions de travail.",
       "part": "n. m.",
       "level": "进阶",
       "bookPage": 93,
       "pdfPage": 100,
       "source": "法语基础词汇分类学习手册",
-      "note": ""
+      "note": "",
+      "exampleTense": "present",
+      "exampleRelated": [
+        {
+          "id": "book-12.03-049",
+          "form": "propositions"
+        },
+        {
+          "id": "book-16.02-047",
+          "form": "horaires"
+        },
+        {
+          "id": "book-11.03-005",
+          "form": "conditions"
+        }
+      ],
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
     }
-  ]
+  ],
+  "originalMethod": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，明显语法或释义错误另记于 note；职业名称保留阴阳性及原书词形；校正 conjugué、détermination 例句排印错误，按语境说明 rapport、créateur、vocation 等词义。",
+  "exampleMethod": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
 }
