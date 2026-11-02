@@ -11,6 +11,7 @@
     MotsSelect,
     MotsProgressSync,
     MotsDeletions,
+    MotsMemory,
   } = window;
   const { escapeHTML: esc, isObject } = MotsCore;
   const { downloadFile, downloadJSON: download } = MotsDownloads;
@@ -33,6 +34,7 @@
       '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m11 5-6 4H2v6h3l6 4V5Z"/><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></svg>',
     chevron: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"/></svg>',
     book: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5c-3-2-7-2-10-1v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1Zm0 0v15"/></svg>',
+    memory: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="2"/><path d="M5 6h14M7 3h10"/></svg>',
     right: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>',
     left: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m5-5-5 5 5 5"/></svg>',
     eye: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>',
@@ -43,7 +45,9 @@
   };
   const settingsKey = 'mots.settings.v2',
     banksKey = 'mots.banks.v1',
-    dictionariesKey = 'mots.dictionaries.v1';
+    dictionariesKey = 'mots.dictionaries.v1',
+    memoryKey = 'mots.memory.v1',
+    memoryWorkspaceKey = 'mots.memory.workspace.v1';
   const progressKey = (id) =>
     id === 'fr'
       ? 'mots.progress.v1'
@@ -72,6 +76,22 @@
       return false;
     }
   }
+  let memoryRecords = MotsMemory.sanitize(read(memoryKey, {}));
+  function latestMemoryRecords(disk = read(memoryKey, {})) {
+    return MotsMemory.merge(memoryRecords, MotsMemory.sanitize(disk));
+  }
+  let memoryWorkspace = MotsMemory.sanitizeWorkspace(read(memoryWorkspaceKey, {}));
+  const memorySelection = {}, memorySessions = {};
+  const memoryBookBaselines = new Map();
+  let lastMemoryDestination, memoryDestinationPending = false;
+  const hydrateMemorySession = (session) => session ? { ...session, ids: [...session.ids], answered: new Set(session.answered) } : null;
+  for (const [id, book] of Object.entries(memoryWorkspace.books)) {
+    if (book.chapters !== null) memorySelection[id] = [...book.chapters];
+    if (book.session) memorySessions[id] = hydrateMemorySession(book.session);
+    memoryBookBaselines.set(id, JSON.stringify(book));
+  }
+  let memorySession = null;
+  let memoryTimer;
   let dictionaryLibrary = [];
   try {
     dictionaryLibrary = MotsDictionaries.validateLibrary(read(dictionariesKey, []));
@@ -90,18 +110,20 @@
     'grammar-theme-de': 'Deutsch Grammatik · 主題',
     'grammar-theme-ja': '日本語 文法 · 主題',
   });
-  const builtinDictionaries = () =>
-    [...MotsDictionaries.builtins(), ...window.MotsGrammar.builtins()].map((book) => ({
-      ...book,
-      title: builtinBookTitles[book.id] || book.title,
-    }));
-  const builtinIDs = () => builtinDictionaries().map((d) => d.id);
-  const dictionaryList = () => [...builtinDictionaries(), ...dictionaryLibrary];
+  const builtinDictionaries = [
+    ...MotsDictionaries.builtins(),
+    ...window.MotsGrammar.builtins(),
+  ].map((book) => ({
+    ...book,
+    title: builtinBookTitles[book.id] || book.title,
+  }));
+  const builtinIDs = new Set(builtinDictionaries.map((d) => d.id));
+  const dictionaryList = () => [...builtinDictionaries, ...dictionaryLibrary];
   const dictionaryKind = (dictionary) =>
     dictionary?.kind === 'grammar' ? 'grammar' : 'vocabulary';
   const isThematicGrammar = (dictionary) =>
     dictionaryKind(dictionary) === 'grammar' && dictionary.grammarMode === 'thematic';
-  const dictionaryOf = (id) => dictionaryList().find((d) => d.id === id) || dictionaryList()[0];
+  const dictionaryOf = (id) => dictionaryList().find((d) => d.id === id) || builtinDictionaries[0];
   const dictionaryIDs = () => dictionaryList().map((d) => d.id);
   function sanitizeSettings(value = {}) {
     const source = isObject(value) ? value : {};
@@ -129,6 +151,8 @@
       pageSize: pageSizes.includes(Number(source.pageSize)) ? Number(source.pageSize) : 20,
       defaultHideMastered: source.defaultHideMastered === true,
       showExampleTranslations: source.showExampleTranslations !== false,
+      hideListMeanings: source.hideListMeanings === true,
+      appearance: ['light', 'dark'].includes(source.appearance) ? source.appearance : 'system',
       sidebarCollapsed: source.sidebarCollapsed === true,
       visibility,
     };
@@ -191,10 +215,10 @@
     banks = { fr: (window.WORDS || []).map((w) => normalizeWord(w, 'fr')) };
     for (const lang of ['de', 'ja'])
       banks[lang] = (window.MOTS_EXTRA_BANKS?.[lang] || []).map((w) => normalizeWord(w, lang));
-    for (const dictionary of window.MotsGrammar.builtins())
-      banks[dictionary.id] = dictionary.words.map((w) => normalizeWord(w, dictionary.language));
-    for (const dictionary of builtinDictionaries()) {
+    for (const dictionary of builtinDictionaries) {
       const lang = dictionary.id;
+      if (dictionary.kind === 'grammar')
+        banks[lang] = dictionary.words.map((w) => normalizeWord(w, dictionary.language));
       const extras = Array.isArray(customBanks[lang]) ? customBanks[lang] : [];
       for (const word of extras)
         if (
@@ -214,23 +238,25 @@
     ? url.searchParams.get('dict')
     : languageCodes.has(url.searchParams.get('lang'))
       ? url.searchParams.get('lang')
-      : settings.dictionaryId;
+      : memoryWorkspace.active && dictionaryIDs().includes(memoryWorkspace.dictionaryID)
+        ? memoryWorkspace.dictionaryID
+        : settings.dictionaryId;
   categories = dictionaryOf(initialDictionary).categories;
   const categoryValid = (id) => id === 'all' || categories.some((c) => c.id === id);
   if (pageSizes.includes(Number(url.searchParams.get('size'))))
     settings.pageSize = Number(url.searchParams.get('size'));
   const requestedPage = Number(url.searchParams.get('page'));
   const requestedScreen = url.searchParams.get('screen');
-  const screen = ['home', 'study', 'dictionary', 'review'].includes(requestedScreen)
+  const screen = ['home', 'study', 'dictionary', 'review', 'memory'].includes(requestedScreen)
     ? requestedScreen
     : url.searchParams.has('category')
       ? 'study'
-      : 'home';
+      : memoryWorkspace.active ? 'memory' : 'home';
   const state = {
     dictionary: initialDictionary,
     studyKind: dictionaryKind(dictionaryOf(initialDictionary)),
     language: dictionaryOf(initialDictionary).language,
-    screen,
+    screen: screen === 'memory' && dictionaryKind(dictionaryOf(initialDictionary)) === 'grammar' ? 'study' : screen,
     category: categoryValid(url.searchParams.get('category'))
       ? url.searchParams.get('category')
       : 'all',
@@ -243,9 +269,16 @@
     index: 0,
     page: Number.isInteger(requestedPage) && requestedPage > 0 ? requestedPage : 1,
     revealed: false,
+    listRevealedID: null,
     completed: false,
     searchOpen: screen === 'dictionary' || Boolean(url.searchParams.get('q')),
   };
+  if (state.screen === 'memory') {
+    memorySession = memorySessions[state.dictionary] || null;
+    state.revealed = memorySession?.revealed === true && !memorySession.paused;
+  }
+  lastMemoryDestination = JSON.stringify({ active: state.screen === 'memory', dictionaryID: state.dictionary });
+  memoryDestinationPending = ['screen', 'category', 'dict', 'lang'].some((key) => url.searchParams.has(key));
   if (url.searchParams.has('hide'))
     settings.visibility[state.dictionary] = [
       ...new Set(
@@ -381,7 +414,22 @@
   function buildDeck(reset = true, reshuffle = false) {
     stopPlayback();
     if (grammarGroupingEnabled()) state.subcategory = 'all';
-    if (state.screen === 'review' && reviewSession) {
+    if (state.screen === 'memory') {
+      const expectedID = memorySession?.ids.find((id) => !memorySession.answered.has(id));
+      const eligible = new Map(MotsMemory.candidates(words(), levelOf,
+        memoryRecords[state.dictionary] || {}, categories.map((c) => c.id), Date.now()).map((w) => [w.id, w]));
+      if (memorySession) {
+        // A restored round can lose stale members, but never captures newly due words.
+        memorySession.ids = memorySession.ids.filter((id) => memorySession.answered.has(id) || eligible.has(id));
+      }
+      deck = memorySession ? memorySession.ids.filter((id) => !memorySession.answered.has(id)).map((id) => eligible.get(id)).filter(Boolean) : [];
+      matched = [...deck];
+      state.index = 0;
+      if (deck[0]?.id !== expectedID) {
+        state.revealed = false;
+        if (memorySession) memorySession.revealed = false;
+      }
+    } else if (state.screen === 'review' && reviewSession) {
       const lookup = new Map(words().map((w) => [w.id, w]));
       deck = reviewSession.ids.map((id) => lookup.get(id)).filter(Boolean);
       matched = [...deck];
@@ -402,12 +450,13 @@
       deck.sort((a, b) =>
         a.term.localeCompare(b.term, state.language, { sensitivity: 'base', numeric: true }),
       );
-    else if (state.screen !== 'review' && state.order === 'random') {
+    else if (!['review', 'memory'].includes(state.screen) && state.order === 'random') {
       if (reshuffle || !randomOrder.length) randomOrder = shuffle(sourceWords().map((w) => w.id));
       const rank = new Map(randomOrder.map((id, index) => [id, index]));
       deck.sort((a, b) => rank.get(a.id) - rank.get(b.id));
     }
-    if (reset && state.screen !== 'review') {
+    if (reset && !['review', 'memory'].includes(state.screen)) {
+      state.listRevealedID = null;
       studyCardAnchor = null;
       state.index = 0;
       state.page = 1;
@@ -417,19 +466,23 @@
     state.index = Math.min(state.index, Math.max(0, deck.length - 1));
     state.page = Math.min(state.page, Math.max(1, Math.ceil(deck.length / settings.pageSize)));
     syncURL();
-    render();
+    render({ preserveStudyScroll: !reset });
   }
   function showScreen(screen, query = '') {
+    stashMemorySession();
+    if (screen === 'memory' && state.screen !== 'memory') restoreLatestMemoryBook(state.dictionary);
+    memoryDestinationPending = true;
     stopPlayback();
     homeComposing = false;
     composing = false;
     reviewSession = null;
+    memorySession = screen === 'memory' ? memorySessions[state.dictionary] || null : null;
     state.screen = screen;
     state.query = query;
     state.searchOpen = screen === 'dictionary' || Boolean(query);
     state.index = 0;
     state.page = 1;
-    state.revealed = false;
+    state.revealed = memorySession?.revealed === true && !memorySession.paused;
     state.completed = false;
     if (screen === 'home' || screen === 'dictionary') {
       state.category = 'all';
@@ -442,7 +495,10 @@
     if (screen === 'dictionary') $('search-input').focus({ preventScroll: true });
   }
   function startReview() {
+    stashMemorySession();
+    memoryDestinationPending = true;
     stopPlayback();
+    memorySession = null;
     const priority = shuffle(words().filter((w) => [1, 2].includes(levelOf(w.id)))),
       unseen = shuffle(words().filter((w) => levelOf(w.id) === 0));
     reviewSession = {
@@ -464,22 +520,201 @@
     window.scrollTo({ top: 0, behavior: 'auto' });
   }
   function chooseCategory(id, sub = 'all') {
+    stashMemorySession();
+    memoryDestinationPending = true;
     reviewSession = null;
-    if (['home', 'review'].includes(state.screen)) state.screen = 'study';
+    memorySession = null;
+    if (['home', 'review', 'memory'].includes(state.screen)) state.screen = 'study';
     state.category = id;
     state.subcategory = sub;
     expandedCategory = id === 'all' ? null : id;
     buildDeck();
   }
+  function stashMemorySession() {
+    if (state.screen === 'memory' && memorySession) {
+      if (!memorySession.paused) memorySession.revealed = state.revealed;
+      memorySessions[state.dictionary] = memorySession;
+    }
+  }
+  function memoryBookSnapshot(dictionaryID) {
+    const session = memorySessions[dictionaryID];
+    return MotsMemory.sanitizeWorkspace({ version: 1, books: { [dictionaryID]: {
+      chapters: memorySelection[dictionaryID] ?? null,
+      session: session ? { ids: session.ids, answered: [...session.answered], remembered: session.remembered,
+        mastered: session.mastered, revealed: session.revealed === true, paused: session.paused === true } : null,
+    } } }).books[dictionaryID];
+  }
+  function memoryBookBaseline(dictionaryID) {
+    return memoryBookBaselines.get(dictionaryID) ?? JSON.stringify({ chapters: null, session: null });
+  }
+  function restoreLatestMemoryBook(dictionaryID) {
+    // A failed write retains this tab's live work until it can be saved again.
+    if (storageFailures.has(memoryWorkspaceKey) ||
+        JSON.stringify(memoryBookSnapshot(dictionaryID)) !== memoryBookBaseline(dictionaryID)) return;
+    const latest = MotsMemory.sanitizeWorkspace(read(memoryWorkspaceKey, {}));
+    if (storageFailures.has(memoryWorkspaceKey)) return;
+    const book = latest.books[dictionaryID] || { chapters: null, session: null };
+    if (book.chapters === null) delete memorySelection[dictionaryID];
+    else memorySelection[dictionaryID] = [...book.chapters];
+    if (book.session) memorySessions[dictionaryID] = hydrateMemorySession(book.session);
+    else delete memorySessions[dictionaryID];
+    memoryBookBaselines.set(dictionaryID, JSON.stringify(book));
+  }
+  function persistMemoryWorkspace() {
+    stashMemorySession();
+    const latest = MotsMemory.sanitizeWorkspace(read(memoryWorkspaceKey, {}));
+    const books = { ...latest.books };
+    const active = state.screen === 'memory';
+    const destination = JSON.stringify({ active, dictionaryID: state.dictionary });
+    const localBook = active && state.studyKind === 'vocabulary' ? memoryBookSnapshot(state.dictionary) : null;
+    const changedBook = localBook && JSON.stringify(localBook) !== memoryBookBaseline(state.dictionary);
+    // An unrelated render must not overwrite a newer round saved in another tab.
+    if (changedBook) books[state.dictionary] = localBook;
+    const saveDestination = changedBook || memoryDestinationPending || destination !== lastMemoryDestination;
+    memoryWorkspace = MotsMemory.sanitizeWorkspace({ version: 1,
+      active: saveDestination ? active : latest.active,
+      dictionaryID: saveDestination ? state.dictionary : latest.dictionaryID, books });
+    const didSave = () => {
+      if (changedBook) memoryBookBaselines.set(state.dictionary, JSON.stringify(localBook));
+      lastMemoryDestination = destination;
+      memoryDestinationPending = false;
+      const unsaved = [...new Set([...Object.keys(memorySessions), ...Object.keys(memorySelection)])]
+        .some((id) => JSON.stringify(memoryBookSnapshot(id)) !== memoryBookBaseline(id));
+      if (unsaved) storageFailures.add(memoryWorkspaceKey);
+      else storageFailures.delete(memoryWorkspaceKey);
+      updateSaveState();
+      return !unsaved;
+    };
+    try {
+      if (localStorage.getItem(memoryWorkspaceKey) === JSON.stringify(memoryWorkspace)) return didSave();
+    } catch { /* The shared writer reports persistence failures and recovery. */ }
+    return write(memoryWorkspaceKey, memoryWorkspace) ? didSave() : false;
+  }
+  function pauseMemory() {
+    if (!memorySession) return;
+    memorySession.revealed = state.revealed;
+    memorySession.paused = true;
+    state.revealed = false;
+    buildDeck(false);
+  }
+  function resumeMemory() {
+    if (!memorySession) return;
+    memorySession.paused = false;
+    state.revealed = memorySession.revealed === true;
+    buildDeck(false);
+    $('reveal-button')?.focus({ preventScroll: true });
+  }
+  function selectedMemoryCategories() {
+    const available = categories.filter((c) => words().some((w) => w.category === c.id)).map((c) => c.id);
+    memorySelection[state.dictionary] ??= [];
+    return memorySelection[state.dictionary].filter((id) => available.includes(id));
+  }
+  function memorySummary(now = Date.now()) {
+    return MotsMemory.summary(words(), levelOf, memoryRecords[state.dictionary] || {}, selectedMemoryCategories(), now);
+  }
+  function memoryTime(value) {
+    return new Intl.DateTimeFormat('zh-TW', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }).format(new Date(value));
+  }
+  function showMemory() {
+    if (state.studyKind !== 'vocabulary') return;
+    state.category = 'all';
+    state.subcategory = 'all';
+    expandedCategory = null;
+    showScreen('memory');
+  }
+  function startMemory() {
+    if (state.studyKind !== 'vocabulary') return;
+    stopPlayback();
+    const candidates = MotsMemory.candidates(words(), levelOf, memoryRecords[state.dictionary] || {}, selectedMemoryCategories(), Date.now());
+    if (!candidates.length) {
+      memorySession = null;
+      delete memorySessions[state.dictionary];
+      buildDeck(false);
+      return;
+    }
+    state.screen = 'memory';
+    state.revealed = false;
+    memorySession = { ids: shuffle(candidates).map((w) => w.id), answered: new Set(), remembered: 0, mastered: 0, revealed: false, paused: false };
+    memorySessions[state.dictionary] = memorySession;
+    buildDeck(false);
+    $('reveal-button')?.focus({ preventScroll: true });
+  }
+  function answerMemory(id, remembered) {
+    if (state.screen !== 'memory' || !memorySession || memorySession.paused || deck[0]?.id !== id || memorySession.answered.has(id)) return;
+    const word = words().find((w) => w.id === id);
+    if (!word || levelOf(id) !== 2 || (remembered && meaning(word).missing)) {
+      state.revealed = false;
+      buildDeck(false);
+      return;
+    }
+    memoryRecords = latestMemoryRecords();
+    const result = MotsMemory.review(memoryRecords[state.dictionary]?.[id], remembered, Date.now());
+    if (!result.accepted) {
+      state.revealed = false;
+      buildDeck(false);
+      return;
+    }
+    stopPlayback();
+    memoryRecords[state.dictionary] ??= Object.create(null);
+    memoryRecords[state.dictionary][id] = result.record;
+    let saved = write(memoryKey, memoryRecords);
+    progressSync?.memoryChanged();
+    memorySession.answered.add(id);
+    if (remembered) memorySession.remembered++;
+    if (result.mastered) {
+      memorySession.mastered++;
+      progress[state.dictionary][id] = 3;
+      saved = (progressSync ? progressSync.edit(state.dictionary, id, 3) : write(progressKey(state.dictionary), progress[state.dictionary])) && saved;
+    }
+    state.revealed = false;
+    saved = buildDeckAndSaveMemory() && saved;
+    ($('reveal-button') || $('memory-start') || $('main')).focus({ preventScroll: true });
+    toast(`${result.mastered ? '已完成全部複習，轉為「已掌握」' : remembered ? `已記住，下次複習：${memoryTime(result.record.dueAt)}` : '已安排 1 天後重新練習'}${saved ? '' : '；尚未儲存，請下載備份'}`);
+  }
+  function buildDeckAndSaveMemory() {
+    buildDeck(false);
+    return !storageFailures.has(memoryWorkspaceKey);
+  }
+  function renderMemory() {
+    clearTimeout(memoryTimer);
+    const summary = memorySummary(), selected = selectedMemoryCategories();
+    const running = Boolean(memorySession && !memorySession.paused && deck.length);
+    const done = Boolean(memorySession && !deck.length);
+    const resumable = Boolean(memorySession?.paused && deck.length);
+    const available = categories.filter((c) => words().some((w) => w.category === c.id));
+    const chapterControls = `<fieldset class="memory-chapters"><legend>選擇章節（可多選）</legend><div class="memory-chapter-actions"><button class="text-button" type="button" data-memory-select="all">全選</button><button class="text-button" type="button" data-memory-select="none">清除選擇</button></div><div class="memory-chapter-list">${available.map((c) => {
+      const count = words().filter((w) => w.category === c.id && levelOf(w.id) === 2).length;
+      return `<label class="memory-chapter"><input type="checkbox" data-memory-category="${esc(c.id)}" ${selected.includes(c.id) ? 'checked' : ''}><span>${esc(c.id)} · ${esc(categoryLabel(c.name))}</span><span class="nav-count">${count}</span></label>`;
+    }).join('')}</div></fieldset>`;
+    const next = summary.nextDueAt ? `下次複習：${memoryTime(summary.nextDueAt)}` : '';
+    const empty = !selected.length ? '請至少選擇一個章節。' : !summary.eligible ? '所選章節還沒有「有印象」的單字。請先在詞彙列表將要背誦的單字標為「有印象」。' : !summary.due ? `目前沒有到期的卡片。${next}` : '';
+    const status = `<p class="memory-scope-status" role="status">已選 ${selected.length} 個章節 · 待複習 ${summary.due} 詞 · 等待下次複習 ${summary.waiting} 詞${next && summary.due ? ` · ${next}` : ''}</p>`;
+    const header = `<div class="memory-heading"><div><h2 id="memory-title">卡片記憶</h2><p>把「有印象」的單字，透過間隔複習逐步變成「已掌握」。</p></div>${running ? '<button class="button button-outline" type="button" data-memory-config>返回章節選擇</button>' : ''}</div>`;
+    let content;
+    if (running) {
+      const record = memoryRecords[state.dictionary]?.[deck[0].id];
+      content = `<p class="memory-round-status" role="status">本輪已完成 ${memorySession.answered.size} / ${memorySession.ids.length} 詞</p>${studyView.card({ memory: { masteryStage: MotsMemory.masteryStage, stage: record?.stage === MotsMemory.masteryStage ? 0 : record?.stage || 0, position: memorySession.answered.size + 1, total: memorySession.ids.length } })}`;
+    } else {
+      const completion = done ? `<div class="memory-completion" role="status"><h3>本輪卡片記憶已完成</h3><p>已背誦 ${memorySession.answered.size} 詞 · 記住 ${memorySession.remembered} 詞 · 新增已掌握 ${memorySession.mastered} 詞</p></div>` : '';
+      const resume = resumable ? `<div class="memory-completion"><p>上次停在第 ${memorySession.answered.size + 1} / ${memorySession.ids.length} 詞，保留原有詞彙與順序。</p><button id="memory-resume" class="button button-primary" type="button">繼續上次</button></div>` : '';
+      content = `${completion}${resume}${chapterControls}${status}${empty ? `<p class="memory-empty">${esc(empty)}</p>` : ''}<button id="memory-start" class="button ${resumable ? 'button-outline' : 'button-primary'}" type="button" ${summary.due ? '' : 'disabled'}>${memorySession ? '開始新一輪' : '開始背誦'}${summary.due ? ` · ${summary.due} 詞` : ''}</button><p class="memory-card-help">${memorySession ? '只有「開始新一輪」會重新選詞；' : ''}本輪包含所選章節全部已到期的單字，不限制詞數。逾期後仍只計下一次複習。</p>`;
+    }
+    $('memory-section').innerHTML = `${header}${content}<details class="memory-method"><summary>複習規則</summary><p>每輪單字以亂序呈現，繼續上次會保留原順序；開始新一輪時重新洗牌。先回想，可直接選擇是否記住，也可顯示答案確認。共 5 次成功回想：第一次立即背誦，之後分別間隔 1 天、2 天、4 天、7 天；通過第 5 次才轉為「已掌握」。沒想起會從頭開始，1 天後再練，中途維持「有印象」。逾期不跳次數，每次間隔從實際作答時計算。</p><p>依艾賓浩斯遺忘曲線的間隔複習概念設計，以上時間是本功能的預設安排。配對後，複習次數與下次複習時間會自動同步，並包含在備份中；章節選擇與本輪位置保存在目前裝置。</p></details>`;
+    if (!running && summary.nextDueAt) memoryTimer = setTimeout(() => {
+      if (state.screen === 'memory') buildDeck(false);
+    }, Math.max(1000, Math.min(2_147_483_647, summary.nextDueAt - Date.now())));
+  }
+
   function renderNavigation() {
     const available = categories.filter((c) => words().some((w) => w.category === c.id));
     for (const target of ['category-nav', 'mobile-category-nav']) {
       const top = $(target).scrollTop;
       $(target).innerHTML =
-        `<button class="nav-item all-words" data-category="all" aria-pressed="${state.screen !== 'home' && state.category === 'all'}">${icons.book}<span>${state.studyKind === 'grammar' ? '全部語法' : '全部詞彙'}</span><span class="nav-count">${words().length}</span></button>` +
+        `<button class="nav-item all-words" data-category="all" aria-pressed="${!['home', 'memory'].includes(state.screen) && state.category === 'all'}">${icons.book}<span>${state.studyKind === 'grammar' ? '全部語法' : '全部詞彙'}</span><span class="nav-count">${words().length}</span></button>` +
+        (state.studyKind === 'vocabulary' ? `<button class="nav-item memory-nav" type="button" data-open-memory aria-pressed="${state.screen === 'memory'}">${icons.memory}<span>卡片記憶</span><span class="nav-count">${MotsMemory.summary(words(), levelOf, memoryRecords[state.dictionary] || {}, categories.map((c) => c.id), Date.now()).due}</span></button>` : '') +
         available
           .map((c) => {
-            const selected = state.screen !== 'home' && state.category === c.id,
+            const selected = !['home', 'memory'].includes(state.screen) && state.category === c.id,
               expanded = expandedCategory === c.id,
               id = `${target}-children-${c.id}`;
             const subs = c.subcategories.filter((s) => words().some((w) => w.subcategory === s.id));
@@ -572,9 +807,15 @@
     $('mobile-home-link').href = homeURL.href;
     for (const route of ['home', 'dictionary', 'review'])
       document.body.classList.toggle(`${route}-mode`, state.screen === route);
+    $('main').classList.toggle(
+      'vocabulary-list-layout',
+      !grammar &&
+        (state.screen === 'dictionary' || (state.screen === 'study' && state.view === 'list')),
+    );
     $('home-section').hidden = state.screen !== 'home';
-    $('library-panel').hidden = state.screen === 'home';
-    $('study-panel').hidden = state.screen === 'home';
+    $('memory-section').hidden = state.screen !== 'memory';
+    $('library-panel').hidden = ['home', 'memory'].includes(state.screen);
+    $('study-panel').hidden = ['home', 'memory'].includes(state.screen);
     $('study-toolbar').hidden = state.screen === 'review';
     $('review-session-bar').hidden = state.screen !== 'review';
     $('review-session-label').textContent = state.completed
@@ -617,39 +858,29 @@
       state.order === 'random' ? '切換為正序' : '切換為亂序',
     );
     $('reshuffle-button').hidden = state.order !== 'random';
-    document.title = `${state.studyKind === 'grammar' ? '語法背誦' : '詞彙背誦'} · ${{ home: '首頁', dictionary: '總覽', study: grammar && !grammarGroupingEnabled() ? '語法背誦' : '主題背誦', review: '隨機複習' }[state.screen]} · ${dictionaryOf(state.dictionary).title} · Mots`;
+    document.title = `${state.studyKind === 'grammar' ? '語法背誦' : '詞彙背誦'} · ${{ home: '首頁', dictionary: '總覽', study: grammar && !grammarGroupingEnabled() ? '語法背誦' : '主題背誦', review: '隨機複習', memory: '卡片記憶' }[state.screen]} · ${dictionaryOf(state.dictionary).title} · Mots`;
     renderVisibility();
     updateSaveState();
   }
   function applySyncedRecords(records, reason) {
-    const known = new Set(dictionaryIDs()),
-      changed = new Set();
+    const projections = new Map(dictionaryIDs().map((id) => [
+      id, { ...cleanProgress(read(progressKey(id), {})), ...progress[id] },
+    ]));
+    let activeChanged = false;
+    for (const { dictionaryID, wordID, level } of records) {
+      const values = projections.get(dictionaryID);
+      if (!values) continue;
+      if (dictionaryID === state.dictionary && (progress[dictionaryID]?.[wordID] ?? 0) !== level)
+        activeChanged = true;
+      values[wordID] = level;
+    }
+    // Compatibility keys are projections of the authoritative sync metadata.
     let saved = true;
-    for (const id of known) {
-      // Keep compatibility keys, but never let their stale whole-map writes replace metadata.
-      const values = { ...cleanProgress(read(progressKey(id), {})), ...(progress[id] || {}) };
-      for (const record of records)
-        if (record.dictionaryID === id) {
-          if ((progress[id]?.[record.wordID] ?? 0) !== record.level) changed.add(id);
-          values[record.wordID] = record.level;
-        }
+    for (const [id, values] of projections) {
       progress[id] = values;
       saved = write(progressKey(id), values) && saved;
     }
-    if (syncReady && reason !== 'local' && changed.has(state.dictionary)) {
-      const selectedID = deck[state.index]?.id,
-        oldIndex = state.index;
-      const revealed = state.revealed,
-        completed = state.completed;
-      buildDeck(false);
-      const selected = deck.findIndex((word) => word.id === selectedID);
-      state.index = selected >= 0 ? selected : Math.min(oldIndex, Math.max(0, deck.length - 1));
-      state.revealed = selected >= 0 && revealed;
-      state.completed = completed;
-      if (state.view === 'list' && state.screen !== 'review')
-        state.page = Math.floor(state.index / settings.pageSize) + 1;
-      render();
-    }
+    if (syncReady && reason !== 'local' && activeChanged) refreshMembership();
     return saved;
   }
   function exportTarget() {
@@ -777,12 +1008,37 @@
     deletionUndo = null;
     $('deletion-notice').hidden = true;
   }
-  function render({ preserveCardPosition = false } = {}) {
+  function render({ preserveCardPosition = false, preserveStudyScroll = true } = {}) {
+    const scroll = preserveStudyScroll
+      ? {
+          left: window.scrollX || 0,
+          top: window.scrollY || 0,
+          regions: ['.vocabulary-list-scroll', '#current-list-meaning'].flatMap((selector) => {
+            const region = $('study-content').querySelector(selector);
+            return region ? [{ selector, left: region.scrollLeft, top: region.scrollTop }] : [];
+          }),
+        }
+      : null;
+    clearTimeout(memoryTimer);
+    window.MotsTheme?.apply(settings.appearance);
     state.studyKind = dictionaryKind(dictionaryOf(state.dictionary));
+    if (state.screen === 'memory' && state.studyKind !== 'vocabulary') {
+      state.screen = 'study';
+      memorySession = null;
+      syncURL();
+    }
     if ($('entry-detail-dialog').open) $('entry-detail-dialog').close();
     renderNavigation();
     renderHeader();
     settingsPanel.render();
+    if (state.screen === 'memory') {
+      $('study-content').innerHTML = '';
+      renderMemory();
+      persistMemoryWorkspace();
+      updateAudioButtons();
+      return;
+    }
+    persistMemoryWorkspace();
     if (state.screen === 'home') {
       const counts = familiarityCounts();
       $('home-section').innerHTML = MotsWorkspace.home({
@@ -876,6 +1132,19 @@
     }
     if (!updated) $('study-content').innerHTML = content;
     updateAudioButtons();
+    if (scroll) {
+      // Replacing the reading surface recreates its scroll containers. Restore
+      // them before paint; focus restoration alone cannot retain their offsets.
+      for (const { selector, left, top } of scroll.regions) {
+        const region = $('study-content').querySelector(selector);
+        if (region) {
+          region.scrollLeft = left;
+          region.scrollTop = top;
+        }
+      }
+      if (window.scrollX !== scroll.left || window.scrollY !== scroll.top)
+        window.scrollTo({ left: scroll.left, top: scroll.top, behavior: 'instant' });
+    }
   }
   const {
     stop: stopPlayback,
@@ -924,6 +1193,8 @@
       pageSize: settings.pageSize,
       defaultHideMastered: settings.defaultHideMastered,
       showExampleTranslations: settings.showExampleTranslations,
+      hideListMeanings: settings.hideListMeanings,
+      appearance: settings.appearance,
       studyKind: state.studyKind,
       grammarGrouping: grammarGroupingEnabled(),
       canExtend: categories.length > 0,
@@ -977,13 +1248,25 @@
   }
   function rate(id, level, variant = 'card') {
     dismissDeletionNotice();
-    const next = variant === 'dot' && levelOf(id) === level ? 0 : level;
+    const previousLevel = levelOf(id);
+    const next = variant === 'dot' && previousLevel === level ? 0 : level;
     const position = deck.findIndex((w) => w.id === id),
       oldPage = state.page;
+    let scheduleSaved = true;
+    if (next !== previousLevel) {
+      memoryRecords = latestMemoryRecords();
+      const previous = memoryRecords[state.dictionary]?.[id];
+      if (previous) {
+        const now = Math.min(253402300799999, Math.max(Date.now(), previous.updatedAt + 1));
+        memoryRecords[state.dictionary][id] = { stage: 0, dueAt: now, updatedAt: now };
+        scheduleSaved = write(memoryKey, memoryRecords);
+        progressSync?.memoryChanged();
+      }
+    }
     progress[state.dictionary][id] = next;
-    const saved = progressSync
+    const saved = (progressSync
       ? progressSync.edit(state.dictionary, id, next)
-      : write(progressKey(state.dictionary), progress[state.dictionary]);
+      : write(progressKey(state.dictionary), progress[state.dictionary])) && scheduleSaved;
     if (state.screen === 'review') {
       stopPlayback();
       reviewSession.rated.add(id);
@@ -1041,12 +1324,17 @@
   }
   function applyDictionary(id) {
     if (!dictionaryIDs().includes(id)) return;
+    stashMemorySession();
+    if (state.screen === 'memory' && id !== state.dictionary) restoreLatestMemoryBook(id);
+    memoryDestinationPending = true;
     stopPlayback();
     const reviewing = state.screen === 'review';
+    memorySession = null;
     state.dictionary = id;
     state.studyKind = dictionaryKind(dictionaryOf(id));
     state.language = dictionaryOf(id).language;
     categories = dictionaryOf(id).categories;
+    if (state.screen === 'memory' && state.studyKind !== 'vocabulary') state.screen = 'study';
     settings.visibility[id] ??= [];
     progress[id] ??= cleanProgress(read(progressKey(id), {}));
     applyDefaultVisibility(id);
@@ -1062,6 +1350,10 @@
     expandedCategory = null;
     reviewSession = null;
     exportScopeValue = 'all';
+    if (state.screen === 'memory') {
+      memorySession = memorySessions[state.dictionary] || null;
+      state.revealed = memorySession?.revealed === true && !memorySession.paused;
+    }
     saveSettings();
     if (reviewing) startReview();
     else buildDeck();
@@ -1078,13 +1370,18 @@
   }
   function closeCategories() {
     $('category-dialog').close();
-    (state.screen === 'home' || state.screen === 'review'
+    (['home', 'review', 'memory'].includes(state.screen)
       ? $('mobile-menu-button')
       : $('category-picker')
     ).focus({ preventScroll: true });
   }
   for (const navID of ['category-nav', 'mobile-category-nav'])
     $(navID).addEventListener('click', (event) => {
+      if (event.target.closest('[data-open-memory]')) {
+        showMemory();
+        if (navID === 'mobile-category-nav') closeCategories();
+        return;
+      }
       const parent = event.target.closest('[data-category]'),
         child = event.target.closest('[data-sub]');
       if (parent) {
@@ -1149,6 +1446,36 @@
       $('home-clear-search').hidden = true;
       input.focus();
     }
+  });
+  $('memory-section').addEventListener('change', (event) => {
+    const id = event.target.dataset.memoryCategory;
+    if (id === undefined) return;
+    const selected = new Set(selectedMemoryCategories());
+    if (event.target.checked) selected.add(id);
+    else selected.delete(id);
+    memorySelection[state.dictionary] = [...selected];
+    buildDeck(false);
+    document.querySelector(`[data-memory-category="${CSS.escape(id)}"]`)?.focus({ preventScroll: true });
+  });
+  $('memory-section').addEventListener('click', (event) => {
+    const button = event.target.closest('button');
+    if (!button || button.disabled) return;
+    if (button.id === 'memory-start') startMemory();
+    else if (button.id === 'memory-resume') resumeMemory();
+    else if (button.hasAttribute('data-memory-config')) {
+      pauseMemory();
+      ($('memory-resume') || $('memory-start'))?.focus({ preventScroll: true });
+    } else if (button.dataset.memorySelect) {
+      memorySelection[state.dictionary] = button.dataset.memorySelect === 'all' ? categories.map((c) => c.id) : [];
+      buildDeck(false);
+      document.querySelector(`[data-memory-select="${button.dataset.memorySelect}"]`)?.focus({ preventScroll: true });
+    } else if (button.id === 'reveal-button') {
+      stopPlayback();
+      state.revealed = !state.revealed;
+      render();
+      $('reveal-button')?.focus({ preventScroll: true });
+    } else if (button.dataset.memoryAnswer) answerMemory(button.dataset.memoryWord, button.dataset.memoryAnswer === 'remembered');
+    else if (button.dataset.speak) speak(button.dataset.speak);
   });
   $('home-section').addEventListener('input', (event) => {
     if (event.target.id === 'home-search') $('home-clear-search').hidden = !event.target.value;
@@ -1227,11 +1554,25 @@
     settings.audioMode = event.target.value;
     saveSettings();
   });
+  $('appearance').addEventListener('change', (event) => {
+    settings.appearance = ['light', 'dark'].includes(event.target.value)
+      ? event.target.value
+      : 'system';
+    window.MotsTheme?.apply(settings.appearance);
+    saveSettings();
+  });
+  $('hide-list-meanings').addEventListener('change', (event) => {
+    settings.hideListMeanings = event.target.checked;
+    state.listRevealedID = null;
+    saveSettings();
+    render();
+  });
   $('page-size').addEventListener('change', (event) => {
     const value = Number(event.target.value);
     if (!pageSizes.includes(value)) return;
     const first = (state.page - 1) * settings.pageSize;
     settings.pageSize = value;
+    state.listRevealedID = null;
     state.page = Math.floor(first / value) + 1;
     saveSettings();
     buildDeck(false);
@@ -1309,6 +1650,7 @@
   for (const view of ['card', 'list'])
     $(`${view}-view`).addEventListener('click', () => {
       if (state.view === view) return;
+      state.listRevealedID = null;
       stopPlayback();
       if (state.screen === 'study' && state.view === 'card' && view === 'list') {
         studyCardAnchor = { id: deck[state.index]?.id, index: state.index };
@@ -1394,6 +1736,16 @@
     const sound = event.target.closest('[data-speak]');
     if (sound) {
       dismissDeletionNotice();
+      if (settings.hideListMeanings && state.screen === 'study' && state.view === 'list') {
+        state.listRevealedID = sound.dataset.speak;
+        render();
+        const replacement = [...$('study-content').querySelectorAll('[data-speak]')].find(
+          (button) =>
+            button.dataset.speak === sound.dataset.speak &&
+            Boolean(button.dataset.listWord) === Boolean(sound.dataset.listWord),
+        );
+        replacement?.focus({ preventScroll: true });
+      }
       speak(sound.dataset.speak);
       return;
     }
@@ -1425,6 +1777,7 @@
     }
     if (['previous-page', 'next-page'].includes(button.id)) {
       stopPlayback();
+      state.listRevealedID = null;
       state.page += button.id === 'next-page' ? 1 : -1;
       syncURL();
       render();
@@ -1442,7 +1795,7 @@
     }
   });
   document.addEventListener('keydown', (event) => {
-    if (event.isComposing || composing || $('entry-detail-dialog').open) return;
+    if (event.defaultPrevented || event.isComposing || event.keyCode === 229 || composing || $('entry-detail-dialog').open) return;
     if (event.key === 'Escape' && !$('settings-dialog').open && !$('category-dialog').open) {
       if ($('visibility-menu').open) {
         event.preventDefault();
@@ -1459,26 +1812,40 @@
       }
     }
     const focused = document.activeElement;
+    const memoryCard = state.screen === 'memory' && memorySession && !memorySession.paused;
     if (
       event.altKey ||
       event.ctrlKey ||
       event.metaKey ||
+      event.shiftKey ||
       $('settings-dialog').open ||
       $('category-dialog').open ||
       focused.closest('nav,details,select') ||
       /INPUT|SELECT|TEXTAREA/.test(focused.tagName) ||
       focused.isContentEditable ||
-      !(state.screen === 'review' || (state.screen === 'study' && state.view === 'card')) ||
+      !(memoryCard || state.screen === 'review' || (state.screen === 'study' && state.view === 'card')) ||
       !deck.length ||
       (state.completed && state.screen === 'review')
     )
       return;
-    if (event.key === ' ' && !/BUTTON|A|SUMMARY/.test(focused.tagName)) {
+    if (event.key === 'Enter' || event.key === ' ') {
+      const control = focused.closest('button,a,summary,[role="button"]');
+      if (control && !['reveal-button', 'next-word'].includes(control.id) && control.dataset.memoryAnswer !== 'remembered') return;
       event.preventDefault();
-      stopPlayback();
-      state.revealed = !state.revealed;
-      render();
+      if (event.repeat) return;
+      if (event.key === ' ') {
+        if (!state.revealed) {
+          stopPlayback();
+          state.revealed = true;
+          render();
+          $('reveal-button')?.focus({ preventScroll: true });
+        }
+      } else if (memoryCard) {
+        if (!meaning(deck[0]).missing) answerMemory(deck[0].id, true);
+      } else navigateWord(1);
+      return;
     }
+    if (memoryCard) return;
     if (event.key === 'ArrowRight') {
       event.preventDefault();
       navigateWord(1);
@@ -1698,7 +2065,7 @@
       );
       if (!imported.length) throw new Error('檔案中沒有單字。');
       let saved;
-      if (builtinIDs().includes(id)) {
+      if (builtinIDs.has(id)) {
         const merged = new Map((customBanks[id] || []).map((w) => [w.id, w]));
         imported.forEach((w) => merged.set(w.id, w));
         if (merged.size > 5000) throw new Error('每部內建辭典最多可擴充 5,000 個自訂單字。');
@@ -1749,10 +2116,11 @@
       customBanks,
       dictionaries: dictionaryLibrary,
       deletions: deletionState.current(),
+      memory: memoryRecords,
     });
     settingsPanel.notice(
       'backup-message',
-      '備份已準備下載，包含匯入辭典、各辭典進度、刪除與恢復記錄、設定及擴充詞庫。',
+      '備份已準備下載，包含匯入辭典、各辭典進度、卡片記憶排程、刪除與恢復記錄、設定及擴充詞庫。',
     );
   });
   $('import-progress').addEventListener('change', async (event) => {
@@ -1763,6 +2131,7 @@
       const data = JSON.parse(await file.text());
       if (data.app !== 'mots' || ![1, 2, 3].includes(data.version))
         throw new Error('請選擇 Mots 下載的備份檔案。');
+      const incomingMemory = data.memory === undefined ? {} : MotsMemory.sanitize(data.memory, { strict: true });
       const incomingDeletions =
         data.deletions === undefined ? null : deletionState.validateImport(data.deletions);
       let candidateLibrary = dictionaryLibrary;
@@ -1784,7 +2153,7 @@
       const candidateBanks = { ...customBanks };
       if (data.version >= 2 && data.customBanks !== undefined) {
         if (!isObject(data.customBanks)) throw new Error('備份詞庫格式不正確。');
-        for (const lang of builtinIDs())
+        for (const lang of builtinIDs)
           if (data.customBanks[lang] !== undefined) {
             const records = validateEntries(
                 data.customBanks[lang],
@@ -1804,10 +2173,10 @@
       const candidateProgress = {};
       const syncEdits = [];
       let count = 0;
-      for (const id of [...builtinIDs(), ...candidateLibrary.map((d) => d.id)]) {
+      for (const id of [...builtinIDs, ...candidateLibrary.map((d) => d.id)]) {
         const values = incoming[id] ?? {};
         if (!isObject(values)) throw new Error('備份進度格式不正確。');
-        const records = builtinIDs().includes(id)
+        const records = builtinIDs.has(id)
           ? [...banks[id], ...(candidateBanks[id] || [])]
           : candidateLibrary.find((d) => d.id === id).words;
         const known = new Set(records.map((w) => w.id));
@@ -1819,6 +2188,12 @@
             count++;
           }
       }
+      if (syncEdits.length) progressSync?.validateImport(syncEdits);
+      memoryRecords = MotsMemory.merge(latestMemoryRecords(), incomingMemory);
+      stashMemorySession();
+      memorySession = null;
+      write(memoryKey, memoryRecords);
+      progressSync?.memoryChanged();
       dictionaryLibrary = candidateLibrary;
       customBanks = candidateBanks;
       refreshBanks();
@@ -1830,8 +2205,9 @@
         progress[id] = candidateProgress[id];
         write(progressKey(id), progress[id]);
       }
-      if (progressSync && syncEdits.length) progressSync.editMany(syncEdits);
-      if (incomingDeletions?.length) progressSync.editDeletions(incomingDeletions, true);
+      let syncSaved = !syncEdits.length || progressSync?.editMany(syncEdits) !== false;
+      if (incomingDeletions?.length)
+        syncSaved = progressSync.editDeletions(incomingDeletions, true) && syncSaved;
       if (data.version >= 2 && data.settings) settings = sanitizeSettings(data.settings);
       else settings = sanitizeSettings(settings);
       for (const id of dictionaryIDs()) applyDefaultVisibility(id);
@@ -1848,11 +2224,15 @@
       state.searchOpen = state.screen === 'dictionary';
       expandedCategory = null;
       exportScopeValue = 'all';
+      if (state.screen === 'memory') {
+        memorySession = memorySessions[state.dictionary] || null;
+        state.revealed = memorySession?.revealed === true && !memorySession.paused;
+      }
       saveSettings();
       buildDeck();
       settingsPanel.notice(
         'backup-message',
-        `已合併 ${count} 個單字的進度${storageFailures.size ? '；部分資料僅暫存，請下載備份。' : '。'}`,
+        `已合併 ${count} 個單字的進度${storageFailures.size || !syncSaved ? '；部分資料僅暫存，請下載備份。' : '。'}`,
       );
     } catch (error) {
       settingsPanel.notice(
@@ -1863,13 +2243,30 @@
             ? '備份中的刪除記錄格式不正確，資料未變更。'
             : error.message === 'deletion-storage'
               ? '刪除記錄尚未安全儲存，或版本已達上限。請先下載備份。'
-              : error.message,
+              : ['progress-limit', 'too-many-records', 'invalid-records'].includes(error.message)
+                ? '進度記錄數量或版本已達上限，備份未匯入。'
+                : error.message,
       );
     }
     event.target.value = '';
   });
   window.addEventListener('storage', (event) => {
     try {
+      if (event.key === memoryKey) {
+        const incomingMemory = MotsMemory.sanitize(JSON.parse(event.newValue || '{}'));
+        const disk = MotsMemory.sanitize(read(memoryKey, {}));
+        memoryRecords = MotsMemory.merge(MotsMemory.merge(memoryRecords, disk), incomingMemory);
+        // Preserve different-word updates from concurrent tabs before a reload.
+        // Compare records semantically so object insertion order cannot cause a write loop.
+        const entries = (records) => Object.entries(records).flatMap(([dictionary, values]) =>
+          Object.entries(values).map(([word, record]) => [dictionary, word, record.stage, record.dueAt, record.updatedAt]));
+        const signature = (records) => JSON.stringify(entries(records).sort((a, b) =>
+          (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0)));
+        if (signature(memoryRecords) !== signature(disk)) write(memoryKey, memoryRecords);
+        progressSync?.memoryChanged();
+        if (state.screen === 'memory') buildDeck(false);
+        return;
+      }
       if (progressSync?.handleStorage(event)) return;
       if (event.key === dictionariesKey) {
         dictionaryLibrary = MotsDictionaries.validateLibrary(JSON.parse(event.newValue || '[]'));
@@ -1884,6 +2281,8 @@
         state.studyKind = dictionaryKind(dictionaryOf(state.dictionary));
         categories = dictionaryOf(state.dictionary).categories;
         reviewSession = null;
+        memorySession = state.screen === 'memory' ? memorySessions[state.dictionary] || null : null;
+        if (memorySession) state.revealed = memorySession.revealed === true && !memorySession.paused;
         if (state.screen === 'review') state.screen = 'study';
         state.category = 'all';
         state.subcategory = 'all';
@@ -1893,6 +2292,8 @@
       } else if (event.key === settingsKey) {
         const incoming = sanitizeSettings(JSON.parse(event.newValue || '{}')),
           changed = incoming.dictionaryId !== state.dictionary;
+        stashMemorySession();
+        if (changed && state.screen === 'memory') restoreLatestMemoryBook(incoming.dictionaryId);
         settings = incoming;
         state.dictionary = settings.dictionaryId;
         state.language = dictionaryOf(state.dictionary).language;
@@ -1912,6 +2313,8 @@
           state.subcategory = 'all';
         }
         reviewSession = null;
+        memorySession = state.screen === 'memory' ? memorySessions[state.dictionary] || null : null;
+        if (memorySession) state.revealed = memorySession.revealed === true && !memorySession.paused;
         if (state.screen === 'review') state.screen = 'study';
         randomOrder = [];
         expandedCategory = state.category === 'all' ? null : state.category;
@@ -1949,6 +2352,22 @@
   deletionState = MotsDeletions.create({ onApply: applyDeletionRecords });
   progressSync = MotsProgressSync.create({
     deletions: deletionState,
+    memory: {
+      get: () => {
+        const disk = JSON.parse(localStorage.getItem(memoryKey) || '{}');
+        memoryRecords = latestMemoryRecords(disk);
+        // A failed earlier write must be retried before claiming synchronization.
+        if (!write(memoryKey, memoryRecords)) throw new Error('storage');
+        return memoryRecords;
+      },
+      apply: (incoming) => {
+        const disk = JSON.parse(localStorage.getItem(memoryKey) || '{}');
+        memoryRecords = MotsMemory.merge(latestMemoryRecords(disk), incoming);
+        const saved = write(memoryKey, memoryRecords);
+        if (syncReady && state.screen === 'memory') buildDeck(false);
+        return saved;
+      },
+    },
     getLegacy: () => progress,
     onApply: applySyncedRecords,
     onStatus: settingsPanel.renderSync,

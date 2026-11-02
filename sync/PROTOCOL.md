@@ -30,3 +30,31 @@ The key is exact `(dictionaryID,wordID)`, without Unicode normalization. Winner 
 The existing sync owner handles both channels with the same credentials, serialized transport, foreground/online triggers, polling and debounce. Create/join validate both snapshots before committing credentials; ordinary sync only reports fully synchronized after both channels validate and persist. Partial failures retain local changes and retry. Responses merge into CURRENT local metadata, preserving edits during a request; disconnect generation checks protect both channels.
 
 `/exchange` v1 and its exact record schema remain unchanged. An older client continues to exchange familiarity and cannot resurrect deletions on newer clients; it must be updated to understand the deletion overlay and hide deleted words itself. The service adds a separate transactional SQLite table without migrating/removing old familiarity data.
+
+
+## Card-memory schedule extension (2026-11-02)
+
+`POST /api/sync/memory` uses the existing private pairing credentials and exact
+`{version:1,records:[...]}` envelope. Each record has exactly
+`dictionaryID,wordID,stage,dueAt,updatedAt`. IDs use the existing 128/256 scalar limits;
+`stage` is an integer 0..5; timestamps are integer UTC milliseconds 0..253402300799999.
+Stage 5 requires dueAt 0; other stages require dueAt >= updatedAt.
+The independent SQLite table is additive and retains unknown IDs and reset records.
+Limits, authentication, CORS and atomic rejection match the other channels.
+
+Merge each word by maximum `(updatedAt,-stage,dueAt)`, matching existing portable
+backup merges: most recent answer wins; simultaneous conflicting answers retain the
+lower stage, then later due date. This channel uses device UTC timestamps, so devices
+should use automatic date/time. It does not count simultaneous recalls twice.
+Manual local familiarity changes reset an existing schedule with a timestamp strictly
+newer than that record. Receiving familiarity must not manufacture a reset with the
+receiving device's time, which would overwrite the actual answer from another device.
+
+Every accepted recall/lapse schedules an upload even while familiarity remains 2.
+Merge into current local schedules, retaining changes made during network requests;
+retry until all three channels converge. New clients must not show fully synced when
+memory transport or persistence fails. Pairing validates all three remote envelopes
+before committing credentials. Old clients remain compatible with the original two
+endpoints, but need an update to send/receive schedules. Chapter choices, captured
+round order, current position and answer reveal state remain local. Received future
+schedules remove stale pending cards without advancing stages or capturing new cards.

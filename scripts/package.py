@@ -8,10 +8,10 @@ standard library and Node.js (for JavaScript syntax checks) are required.
 from __future__ import annotations
 
 import base64
-import copy
 import html
 import json
 import mimetypes
+import os
 from pathlib import Path
 import re
 import shutil
@@ -37,22 +37,37 @@ AUDIO_MANIFESTS = {
     "audio-manifest.js": "MOTS_AUDIO",
     "extra-audio.js": "MOTS_EXTRA_AUDIO",
 }
+AUDIO_SUFFIXES = {".m4a", ".mp3", ".wav"}
+ARCHIVE_SKIP_SUFFIXES = {
+    ".ipa", ".mobileprovision", ".tmp", ".pyc", ".aiff", ".aif",
+    *(extension + sidecar for extension in (".sqlite", ".sqlite3", ".db")
+      for sidecar in ("", "-wal", "-shm", "-journal")),
+}
 
 
 class PackagingError(RuntimeError):
     """An input cannot be safely represented in the standalone output."""
 
 
-def local_asset(reference: str, base: Path = DIST) -> Path:
+def local_asset(reference: str) -> Path:
     url = urlsplit(reference)
     # Online HTML uses content fingerprints to invalidate CDN/browser caches.
     # Standalone packaging resolves that same local file and embeds its bytes.
     if url.scheme or url.netloc or url.fragment or (url.query and not re.fullmatch(r"v=[a-f0-9]{16}", url.query)):
         raise PackagingError(f"Expected a local asset with an optional content version: {reference}")
-    target = (base / unquote(url.path)).resolve()
+    target = (DIST / unquote(url.path)).resolve()
     if not target.is_relative_to(DIST.resolve()) or not target.is_file():
         raise PackagingError(f"Missing or out-of-tree asset: {reference}")
     return target
+
+
+def audio_asset(reference: str) -> Path:
+    if not isinstance(reference, str):
+        raise PackagingError("Audio manifest paths must be strings")
+    asset = local_asset(reference)
+    if asset.suffix.lower() not in AUDIO_SUFFIXES:
+        raise PackagingError(f"Unsupported audio format: {reference}")
+    return asset
 
 
 def audio_signature(data: bytes, suffix: str) -> None:
@@ -105,20 +120,15 @@ def audio_entry_maps(manifest: dict, global_name: str = "MOTS_AUDIO"):
             entries = group.get(section, {})
             if not isinstance(entries, dict):
                 raise PackagingError(f"Audio manifest {group_name}/{section} must be an object")
-            yield f"{group_name}/{section}", entries
+            yield entries
 
 
 def inline_audio_manifest(source: str, global_name: str = "MOTS_AUDIO") -> tuple[str, int]:
-    embedded = copy.deepcopy(parse_audio_manifest(source, global_name))
+    embedded = parse_audio_manifest(source, global_name)
     count = 0
-    for section, entries in audio_entry_maps(embedded, global_name):
+    for entries in audio_entry_maps(embedded, global_name):
         for word_id, reference in entries.items():
-            if not isinstance(reference, str):
-                raise PackagingError(f"Audio path must be a string: {section}/{word_id}")
-            asset = local_asset(reference)
-            if asset.suffix.lower() not in (".m4a", ".mp3", ".wav"):
-                raise PackagingError(f"Unsupported audio format: {reference}")
-            entries[word_id] = data_uri(asset, check_audio=True)
+            entries[word_id] = data_uri(audio_asset(reference), check_audio=True)
             count += 1
     return f"window.{global_name} = " + json.dumps(embedded, ensure_ascii=False, separators=(",", ":")) + ";", count
 
@@ -271,31 +281,36 @@ def archive_files() -> list[Path]:
         if not manifest_path.is_file():
             continue
         manifest = parse_audio_manifest(manifest_path.read_text(encoding="utf-8"), global_name)
-        for section, entries in audio_entry_maps(manifest, global_name):
+        for entries in audio_entry_maps(manifest, global_name):
             for reference in entries.values():
-                if not isinstance(reference, str):
-                    raise PackagingError("Audio manifest paths must be strings")
-                active_audio.add((ROOT / "database/runtime" / reference).resolve())
-    candidates = [ROOT / HTML_NAME]
-    # Native sources travel with the portable project; Xcode build products do not.
+                relative = audio_asset(reference).relative_to(DIST)
+                active_audio.add(ROOT / "database/runtime" / relative)
+    candidates = []
+    # Device logs and pairing evidence in qa/ belong to the local verification history.
     # Client audio copies are excluded below; canonical database audio travels once.
-    for directory in ("web", "tests", "docs", "deploy", "sync", "qa", "scripts", "database",
+    for directory in ("web", "tests", "docs", "deploy", "sync", "scripts", "database",
                       "mobile/ios/Mots", "mobile/ios/Mots.xcodeproj", "mobile/ios/scripts", "mobile/ios/Tests"):
-        candidates.extend(path for path in (ROOT / directory).rglob("*") if path.is_file())
+        for parent, folders, files in os.walk(ROOT / directory):
+            folders[:] = [name for name in folders if not (
+                name.startswith(".") or name in {"__pycache__", "xcuserdata", "private"}
+                or name.lower().endswith((".app", ".xcarchive", ".dsym"))
+            )]
+            candidates.extend(Path(parent) / name for name in files if not name.startswith("."))
     candidates.append(ROOT / "mobile/ios/README.md")
     candidates.append(ROOT / "mobile/README.md")
-    candidates.extend(ROOT.glob("*.md"))
+    candidates.extend(path for path in ROOT.glob("*.md") if not path.name.startswith("."))
     candidates.extend(ROOT.glob("premium-*.json"))
     candidates.extend(ROOT / name for name in ("Makefile", ".prettierrc.json", ".prettierignore"))
-    return sorted({
+    selected = {
         path for path in candidates
-        if path.is_file()
-        and (path.name in {".prettierrc.json", ".prettierignore"} or not any(
-            part.startswith(".") or part in {"__pycache__", "xcuserdata"} for part in path.relative_to(ROOT).parts
-        ))
-        and path.suffix.lower() not in {".tmp", ".pyc", ".aiff", ".aif", ".sqlite", ".sqlite3", ".db", ".sqlite-wal", ".sqlite-shm", ".sqlite3-wal", ".sqlite3-shm", ".db-wal", ".db-shm"}
-        and (path.suffix.lower() not in {".m4a", ".mp3", ".wav"} or path.resolve() in active_audio)
-    })
+        if path.is_file() and not path.is_symlink()
+        and path.suffix.lower() not in ARCHIVE_SKIP_SUFFIXES
+        and (path.suffix.lower() not in AUDIO_SUFFIXES or path in active_audio)
+    }
+    missing = active_audio - selected
+    if missing:
+        raise PackagingError(f"Missing canonical audio in archive: {min(missing).relative_to(ROOT)}")
+    return sorted(selected)
 
 
 def main() -> None:
@@ -307,28 +322,28 @@ def main() -> None:
     output = "".join(builder.output)
     validate_output(output, builder.script_count)
     standalone = ROOT / HTML_NAME
-    with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=ROOT, prefix=".mots-html-", delete=False) as temp:
-        temp_path = Path(temp.name)
-        temp.write(output)
-    temp_path.replace(standalone)
     destination = ROOT.parent / ZIP_NAME
     files = archive_files()
-    with tempfile.NamedTemporaryFile(dir=ROOT.parent, prefix=".mots-zip-", delete=False) as temp:
-        archive_path = Path(temp.name)
-    try:
+    with tempfile.TemporaryDirectory(dir=ROOT) as html_dir, tempfile.TemporaryDirectory(dir=ROOT.parent) as zip_dir:
+        html_path = Path(html_dir) / HTML_NAME
+        archive_path = Path(zip_dir) / ZIP_NAME
+        html_path.write_text(output, encoding="utf-8")
+        html_path.chmod(0o600)
+        archive_root = Path("Mots法语词库")
         with zipfile.ZipFile(archive_path, "w", zipfile.ZIP_DEFLATED) as archive:
+            archive.write(html_path, archive_root / HTML_NAME)
             for path in files:
-                archive.write(path, Path("Mots法语词库") / path.relative_to(ROOT))
+                archive.write(path, archive_root / path.relative_to(ROOT))
         with zipfile.ZipFile(archive_path) as archive:
             if archive.testzip() is not None:
                 raise PackagingError("ZIP integrity check failed")
+        archive_path.chmod(0o600)
+        html_path.replace(standalone)
         archive_path.replace(destination)
-    finally:
-        archive_path.unlink(missing_ok=True)
     print(json.dumps({
         "standalone": str(standalone), "html_bytes": standalone.stat().st_size,
         "zip": str(destination), "zip_bytes": destination.stat().st_size,
-        "archive_files": len(files), "inline_scripts": builder.script_count,
+        "archive_files": len(files) + 1, "inline_scripts": builder.script_count,
         "embedded_audio_files": builder.audio_count, "javascript_syntax": "passed",
     }, ensure_ascii=False, indent=2))
 

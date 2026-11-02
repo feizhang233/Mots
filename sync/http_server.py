@@ -1,6 +1,6 @@
 """Bounded HTTP transport: authentication, Origin checks, parsing and throttling."""
 
-from collections import OrderedDict, deque
+from collections import Counter, deque
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import ipaddress
 import json
@@ -19,16 +19,17 @@ def origin_allowed(origin):
     """Native clients omit Origin; browser origins must be explicit and trusted."""
     if origin is None:
         return True
+    # urlsplit alone strips control characters and ignores text after IPv6 brackets.
+    if not re.fullmatch(r"https?://(?:[a-z0-9.-]+|\[[0-9a-f:.]+\])(?::[0-9]+)?",
+                        origin, flags=re.ASCII | re.IGNORECASE):
+        return False
     try:
         parsed = urlsplit(origin)
-        if (parsed.username is not None or parsed.password is not None or parsed.path
-                or parsed.query or parsed.fragment or parsed.port == 0):
+        if parsed.port == 0:
             return False
         if (parsed.scheme == "https" and parsed.hostname == "mots.feizhang233.com"
                 and parsed.port in {None, 443}):
             return True
-        if parsed.scheme not in {"http", "https"}:
-            return False
         if parsed.hostname == "localhost":
             return True
         return ipaddress.ip_address(parsed.hostname or "").is_loopback
@@ -41,25 +42,22 @@ class CreationLimiter:
         self.limit = limit
         self.window = window
         self.global_limit = global_limit
-        self.clients = OrderedDict()
+        self.clients = Counter()
         self.all_requests = deque()
         self.lock = threading.Lock()
 
     def allow(self, client):
-        now = time.monotonic()
         with self.lock:
-            while self.all_requests and self.all_requests[0] <= now - self.window:
-                self.all_requests.popleft()
-            queue = self.clients.pop(client, deque())
-            while queue and queue[0] <= now - self.window:
-                queue.popleft()
-            self.clients[client] = queue
-            while len(self.clients) > 2048:
-                self.clients.popitem(last=False)
-            if len(queue) >= self.limit or len(self.all_requests) >= self.global_limit:
+            now = time.monotonic()
+            while self.all_requests and self.all_requests[0][0] <= now - self.window:
+                _, expired_client = self.all_requests.popleft()
+                self.clients[expired_client] -= 1
+                if not self.clients[expired_client]:
+                    del self.clients[expired_client]
+            if self.clients[client] >= self.limit or len(self.all_requests) >= self.global_limit:
                 return False
-            queue.append(now)
-            self.all_requests.append(now)
+            self.clients[client] += 1
+            self.all_requests.append((now, client))
             return True
 
 
@@ -112,8 +110,11 @@ class SyncHandler(BaseHTTPRequestHandler):
 
     def check_origin(self):
         origins = self.headers.get_all("Origin", [])
-        if len(origins) > 1 or not origin_allowed(origins[0] if origins else None):
+        self.allowed_origin = None
+        if len(origins) > 1 or (origins and not origin_allowed(origins[0])):
             raise SyncError(403, "Origin not allowed")
+        if origins:
+            self.allowed_origin = origins[0]
 
     def authenticate(self):
         values = self.headers.get_all("Authorization", [])
@@ -132,9 +133,8 @@ class SyncHandler(BaseHTTPRequestHandler):
         self.send_header("X-Content-Type-Options", "nosniff")
         self.send_header("Connection", "close")
         self.send_header("Vary", "Origin")
-        origin = self.headers.get("Origin")
-        if origin is not None and origin_allowed(origin):
-            self.send_header("Access-Control-Allow-Origin", origin)
+        if self.allowed_origin is not None:
+            self.send_header("Access-Control-Allow-Origin", self.allowed_origin)
             self.send_header("Access-Control-Allow-Methods", "POST, GET, OPTIONS")
             self.send_header("Access-Control-Allow-Headers", "Authorization, Content-Type")
             self.send_header("Access-Control-Max-Age", "600")
@@ -150,7 +150,7 @@ class SyncHandler(BaseHTTPRequestHandler):
     def handle_expect_100(self):
         try:
             self.check_origin()
-            if self.path in {BASE + "/exchange", BASE + "/deletions"}:
+            if self.path in {BASE + "/exchange", BASE + "/deletions", BASE + "/memory"}:
                 self.authenticate()
         except SyncError as error:
             self.fail(error)
@@ -187,6 +187,9 @@ class SyncHandler(BaseHTTPRequestHandler):
             elif self.path == BASE + "/deletions":
                 digest = self.authenticate()
                 result = self.server.store.exchange_deletions(digest, self.read_json())
+            elif self.path == BASE + "/memory":
+                digest = self.authenticate()
+                result = self.server.store.exchange_memory(digest, self.read_json())
             elif self.path == BASE + "/create":
                 # Ignore forwarded IP headers; only the actual peer is trusted.
                 if not self.server.limiter.allow(self.client_address[0]):
@@ -216,7 +219,7 @@ class SyncHandler(BaseHTTPRequestHandler):
     def do_OPTIONS(self):
         try:
             self.check_origin()
-            if self.path not in {BASE + "/create", BASE + "/exchange", BASE + "/deletions", BASE + "/health"}:
+            if self.path not in {BASE + "/create", BASE + "/exchange", BASE + "/deletions", BASE + "/memory", BASE + "/health"}:
                 raise SyncError(404, "Endpoint not found")
             method = self.headers.get("Access-Control-Request-Method", "POST")
             requested = {value.strip().lower() for value in self.headers.get("Access-Control-Request-Headers", "").split(",") if value.strip()}

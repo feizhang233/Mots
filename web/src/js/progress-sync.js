@@ -14,6 +14,8 @@
     const available = options.available ?? window.location.protocol === 'https:';
     const onApply = options.onApply || (() => true);
     const onStatus = options.onStatus || (() => {});
+    const memory = options.memory;
+    const memorySnapshot = () => memory ? window.MotsMemory.snapshot(memory.get()) : [];
     const legacy = options.getLegacy || (() => ({}));
     const deletions = options.deletions || window.MotsDeletions.create({ storage, crypto });
     const fetcher = options.fetch || window.fetch?.bind(window);
@@ -37,7 +39,7 @@
           throw new Error(
             response.status === 401
               ? 'unauthorized'
-              : response.status === 404 && path === 'deletions'
+              : response.status === 404 && ['deletions', 'memory'].includes(path)
                 ? 'unsupported-deletions'
                 : response.status === 413
                   ? 'too-large'
@@ -76,11 +78,11 @@
     function metadata() {
       return { version: 1, deviceID, counter, records };
     }
-    function readMetadata() {
-      const raw = storage.getItem(META_KEY);
+    function readMetadata(raw = storage.getItem(META_KEY)) {
       if (raw === null) return null;
       const value = JSON.parse(raw);
-      if (!object(value) || !/^[0-9a-f]{32}$/.test(value.deviceID) || !integer(value.counter, MAX))
+      if (!object(value) || typeof value.deviceID !== 'string' ||
+          !/^[0-9a-f]{32}$/.test(value.deviceID) || !integer(value.counter, MAX))
         throw new Error('invalid-metadata');
       if (value.version !== 1) throw new Error('invalid-metadata');
       return { ...value, records: validateRecords(value.records) };
@@ -97,6 +99,7 @@
         deviceID = disk.deviceID;
         absorb(disk);
       }
+      return disk;
     }
     function save(reason) {
       try {
@@ -110,6 +113,16 @@
       }
       if (persistenceError) report('error');
       return !persistenceError;
+    }
+    function applyRemote(combined, incomingDeletions, incomingMemory) {
+      records = combined;
+      counter = Math.max(counter, maxClock(records));
+      if (!save('remote')) return false;
+      if (deletions.receive(incomingDeletions) && (!memory || memory.apply(incomingMemory) !== false))
+        return true;
+      persistenceError = true;
+      report('error');
+      return false;
     }
     function seed() {
       fresh();
@@ -135,7 +148,7 @@
     }
     function statusError(error) {
       report(
-        persistenceError || deletions.failed()
+        persistenceError || deletions.failed() || error?.message === 'storage'
           ? 'error'
           : error?.message === 'unauthorized'
             ? 'unauthorized'
@@ -157,7 +170,7 @@
       const task = networkTail
         .catch(() => {})
         .then(async () => {
-          if (session !== generation) throw new Error('cancelled');
+          if (!currentSession(session)) throw new Error('cancelled');
           controller = typeof AbortController === 'function' ? new AbortController() : null;
           const timeout = later(() => controller?.abort(), 15000);
           try {
@@ -172,12 +185,7 @@
     }
     async function syncNow() {
       try {
-        const persistedCode = connectionFromDisk();
-        if (persistedCode !== code) {
-          invalidate();
-          code = persistedCode;
-          report(code ? 'pending' : available ? 'disconnected' : 'unavailable');
-        }
+        reconcileConnection();
       } catch {
         persistenceError = true;
         report('error');
@@ -195,40 +203,26 @@
       flight = (async () => {
         try {
           if (!save('refresh')) return false;
-          deletions.snapshot(); // Both local channels are durable before any upload.
+          deletions.snapshot(); // Local revision channels are durable before any upload.
           report('syncing');
           const response = await request('exchange', token, {
             version: 1,
             records: records.map((r) => ({ ...r })),
           });
-          if (session !== generation || code !== token) return false;
-          if (connectionFromDisk() !== token) {
-            invalidate();
-            code = connectionFromDisk();
-            report(code ? 'pending' : 'disconnected');
-            return false;
-          }
+          if (!currentSession(session)) return false;
           const incoming = validateSnapshot(response); // Validate all before applying any.
           const incomingDeletions = window.MotsDeletions.validateSnapshot(
             await request('deletions', token, { version: 1, records: deletions.snapshot() }),
           );
-          if (session !== generation || code !== token) return false;
-          if (connectionFromDisk() !== token) {
-            invalidate();
-            code = connectionFromDisk();
-            report(code ? 'pending' : 'disconnected');
-            return false;
-          }
+          if (!currentSession(session)) return false;
+          const incomingMemory = memory ? window.MotsMemory.decodeSnapshot(
+            await request('memory', token, { version: 1, records: memorySnapshot() }),
+          ) : null;
+          if (!currentSession(session)) return false;
           deletions.validateReceive(incomingDeletions);
           fresh();
-          records = merge(records, incoming);
-          counter = Math.max(counter, maxClock(records));
-          if (!save('remote')) return false;
-          if (!deletions.receive(incomingDeletions)) {
-            persistenceError = true;
-            report('error');
-            return false;
-          }
+          if (!applyRemote(merge(records, incoming), incomingDeletions, incomingMemory)) return false;
+          if (memory) rerun ||= JSON.stringify(window.MotsMemory.snapshot(incomingMemory)) !== JSON.stringify(memorySnapshot());
           // A local edit during the request may be newer than its response.
           const canonical = JSON.stringify(merge(incoming));
           rerun ||= canonical !== JSON.stringify(records);
@@ -259,23 +253,23 @@
         }
       }
     }
-    function editMany(edits) {
-      // Validate the whole local operation before stamping even its first record.
+    function prepareEdits(edits) {
       const valid = validateRecords(edits.map((edit) => ({ ...edit, clock: 0, deviceID: '' })));
+      fresh();
+      if (!/^[0-9a-f]{32}$/.test(deviceID)) throw new Error('invalid-metadata');
+      if (counter + valid.length > MAX) throw new Error('progress-limit');
+      let nextCounter = counter;
+      const stamped = valid.map((edit) => ({ ...edit, clock: ++nextCounter, deviceID }));
+      return { records: merge(records, stamped), counter: nextCounter };
+    }
+    function editMany(edits) {
       try {
-        fresh();
+        ({ records, counter } = prepareEdits(edits));
       } catch {
         persistenceError = true;
         report('error');
         return false;
       }
-      if (!/^[0-9a-f]{32}$/.test(deviceID) || counter + valid.length > MAX) {
-        persistenceError = true;
-        report('error');
-        return false;
-      }
-      const stamped = valid.map((edit) => ({ ...edit, clock: ++counter, deviceID }));
-      records = merge(records, stamped);
       const saved = save('local');
       if (saved) report(code ? 'pending' : available ? 'disconnected' : 'unavailable');
       rerun = true;
@@ -299,6 +293,8 @@
       generation++;
       controller?.abort();
       cancel(timer);
+      flight = null;
+      pairing = false;
       rerun = false;
     }
     function connectionFromDisk() {
@@ -306,6 +302,26 @@
       if (value !== null && (!object(value) || (value.code !== null && !validCode(value.code))))
         throw new Error('invalid-connection');
       return value?.code || null;
+    }
+    function reconcileConnection() {
+      const persistedCode = connectionFromDisk();
+      if (persistedCode === code) return;
+      invalidate();
+      code = persistedCode;
+      report(code ? 'pending' : available ? 'disconnected' : 'unavailable');
+      schedule(0);
+    }
+    function currentSession(session) {
+      if (session !== generation) return false;
+      // A storage event for a new pairing can lag behind a queued request or its response.
+      reconcileConnection();
+      return session === generation;
+    }
+    function finishPairing(session) {
+      if (session !== generation) return;
+      pairing = false;
+      onStatus(state());
+      schedule(0);
     }
     async function join(value) {
       const candidate = typeof value === 'string' ? value.trim() : '';
@@ -324,35 +340,31 @@
         const incoming = validateSnapshot(
           await request('exchange', candidate, { version: 1, records: [] }),
         );
-        if (session !== generation) return false;
+        if (!currentSession(session)) return false;
         const incomingDeletions = window.MotsDeletions.validateSnapshot(
           await request('deletions', candidate, { version: 1, records: [] }),
         );
-        if (session !== generation) return false;
+        if (!currentSession(session)) return false;
+        const incomingMemory = memory ? window.MotsMemory.decodeSnapshot(
+          await request('memory', candidate, { version: 1, records: [] }),
+        ) : null;
+        if (!currentSession(session)) return false;
         seed();
-        // Preflight both local unions before committing new credentials or either channel.
+        // Preflight the local unions before committing new credentials or either channel.
+        if (memory) window.MotsMemory.merge(memory.get(), incomingMemory);
         const combined = merge(records, incoming);
         deletions.validateReceive(incomingDeletions);
         // A validated pairing is committed only after credentials persist.
         storage.setItem(CONNECTION_KEY, JSON.stringify({ code: candidate }));
         code = candidate;
-        records = combined;
-        counter = Math.max(counter, maxClock(records));
-        if (!save('remote')) return false;
-        if (!deletions.receive(incomingDeletions)) {
-          persistenceError = true;
-          report('error');
-          return false;
-        }
+        if (!applyRemote(combined, incomingDeletions, incomingMemory)) return false;
         report('pending');
         return true;
       } catch (error) {
         if (session === generation) statusError(error);
         return false;
       } finally {
-        pairing = false;
-        onStatus(state());
-        if (session === generation) schedule(0);
+        finishPairing(session);
       }
     }
     async function createPairing() {
@@ -366,7 +378,7 @@
       const session = generation;
       try {
         const response = await request('create', null, {});
-        if (session !== generation) return false;
+        if (!currentSession(session)) return false;
         if (
           !exactKeys(response, ['version', 'code']) ||
           response.version !== 1 ||
@@ -379,13 +391,11 @@
         if (session === generation) statusError(error);
         return false;
       } finally {
-        pairing = false;
-        onStatus(state());
+        finishPairing(session);
       }
     }
     function disconnect() {
       invalidate();
-      pairing = false;
       try {
         storage.setItem(CONNECTION_KEY, JSON.stringify({ code: null }));
         code = null;
@@ -412,27 +422,9 @@
       if (event.key !== META_KEY && event.key !== CONNECTION_KEY && event.key !== null)
         return false;
       try {
-        if (event.key === CONNECTION_KEY || event.key === null) {
-          const incomingCode = connectionFromDisk();
-          if (incomingCode !== code) {
-            invalidate();
-            code = incomingCode;
-            report(code ? 'pending' : available ? 'disconnected' : 'unavailable');
-          }
-        }
-        if (event.key === META_KEY && event.newValue) {
-          const eventValue = JSON.parse(event.newValue);
-          if (
-            !object(eventValue) ||
-            !/^[0-9a-f]{32}$/.test(eventValue.deviceID) ||
-            !integer(eventValue.counter, MAX)
-          )
-            throw new Error('invalid-metadata');
-          if (eventValue.version !== 1) throw new Error('invalid-metadata');
-          absorb({ ...eventValue, records: validateRecords(eventValue.records) });
-        }
-        fresh();
-        const disk = readMetadata();
+        if (event.key === CONNECTION_KEY || event.key === null) reconcileConnection();
+        if (event.key === META_KEY && event.newValue) absorb(readMetadata(event.newValue));
+        const disk = fresh();
         // Repair racing whole-key writes from different tabs by republishing their union.
         if (
           !disk ||
@@ -487,10 +479,18 @@
       disconnect,
       handleStorage,
       refresh,
+      validateImport(edits) {
+        prepareEdits(edits);
+      },
       editMany,
       editDeletions,
       edit: (dictionaryID, wordID, level) => editMany([{ dictionaryID, wordID, level }]),
       getCode: () => code || '',
+      memoryChanged: () => {
+        rerun = true;
+        report(code ? 'pending' : available ? 'disconnected' : 'unavailable');
+        schedule();
+      },
       wake: () => schedule(0),
       stop: () => {
         stopped = true;

@@ -4,6 +4,7 @@ extension StudyMode {
         case .lookup: dictionary.isGrammar ? "語法總覽" : "詞彙總覽"
         case .study: dictionary.isThematicGrammar ? "主題背誦" : dictionary.isGrammar ? "語法背誦" : "詞彙背誦"
         case .review: "隨機複習"
+        case .memory: "卡片記憶"
         }
     }
 
@@ -12,6 +13,7 @@ extension StudyMode {
         case .lookup: "查詞典"
         case .study: "主題學習"
         case .review: "隨機複習"
+        case .memory: "卡片記憶"
         }
     }
 
@@ -20,6 +22,7 @@ extension StudyMode {
         case .lookup: "text.book.closed"
         case .study: "rectangle.on.rectangle"
         case .review: "shuffle"
+        case .memory: "rectangle.stack"
         }
     }
 }

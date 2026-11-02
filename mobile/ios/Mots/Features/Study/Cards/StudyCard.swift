@@ -7,7 +7,7 @@ struct CardProgress: View {
         HStack(spacing: 14) {
             ProgressView(value: Double(store.cardPosition), total: Double(max(store.filteredWords.count, 1)))
                 .tint(MotsTheme.accent)
-                .accessibilityLabel(store.mode == .review ? "本輪複習進度" : "單元卡片進度")
+                .accessibilityLabel(store.mode == .memory ? "本輪記憶進度" : store.mode == .review ? "本輪複習進度" : "單元卡片進度")
                 .accessibilityValue("第 \(store.cardPosition) \(store.currentDictionary.entryUnit)，共 \(store.filteredWords.count) \(store.currentDictionary.entryUnit)")
                 .accessibilityIdentifier("study.progress")
             Text("\(store.cardPosition)/\(store.filteredWords.count)")

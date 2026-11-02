@@ -28,11 +28,13 @@
         'study-language': model.studyLanguage,
         'meaning-language': model.meaningLanguage,
         'audio-mode': model.audioMode,
+        appearance: model.appearance,
         'page-size': String(model.pageSize),
       }))
         MotsSelect.setValue(id, value);
       $('default-hide-mastered').checked = model.defaultHideMastered;
       $('show-example-translations').checked = model.showExampleTranslations;
+      $('hide-list-meanings').checked = model.hideListMeanings;
       $('grammar-book-type').hidden = model.studyKind !== 'grammar';
       $('grammar-book-type').textContent = model.grammarGrouping
         ? '目前為主題語法書：依二級分類展開小卡片，內容與普通語法書分開保存。'
@@ -81,7 +83,7 @@
         invalid: '伺服器回傳的資料無法驗證。本機進度未被覆蓋，稍後重試。',
         'invalid-code': '請輸入完整的 mots- 配對碼，再按「加入同步」。',
         error: '進度尚未完整儲存，請釋放瀏覽器儲存空間或下載備份後重試。',
-        unsupported: '同步服務尚未支援刪除同步。本機資料已保留，請稍後重試。',
+        unsupported: '同步服務尚未支援完整進度同步。本機資料已保留，請稍後重試。',
       };
       $('sync-status').textContent = messages[snapshot.phase] || messages.disconnected;
       const summaries = {

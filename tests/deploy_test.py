@@ -51,7 +51,7 @@ class DeploymentTests(unittest.TestCase):
             (self.candidate / "deploy" / filename).write_bytes(b"candidate " + filename.encode())
         (self.candidate / "sync").mkdir()
         (self.candidate / "sync/server.py").write_bytes(b"checked sync backend")
-        for filename in common.SYNC_RELEASE_FILES:
+        for filename in common.REQUIRED_RELEASE_FILES:
             path = self.candidate / filename
             if not path.exists():
                 path.write_bytes(b"checked sync dependency")
@@ -145,6 +145,18 @@ class DeploymentTests(unittest.TestCase):
         self.assertEqual(self.commands, [])
         self.assertEqual(self.recovery_commands, [])
 
+    def test_all_installed_configuration_is_verified_before_activation(self):
+        for filename in self.configs.values():
+            with self.subTest(filename=filename):
+                candidate = self.candidate / "deploy" / filename
+                original = candidate.read_bytes()
+                candidate.write_bytes(b"unexpected configuration")
+                with self.assertRaisesRegex(ValueError, "Checksum mismatch"):
+                    self.activate()
+                self.assert_previous_intact()
+                self.assertEqual(self.commands, [])
+                candidate.write_bytes(original)
+
     def test_manifest_rejects_paths_outside_public_release_directories(self):
         for filename in ("../secret", "/secret", "", "scripts/install.py", "web/src/app.js", "web/scripts/build.py"):
             with self.subTest(path=filename):
@@ -188,12 +200,12 @@ class DeploymentTests(unittest.TestCase):
         self.assert_previous_intact()
         self.assertEqual(self.commands, [])
 
-    def test_existing_backend_cannot_be_omitted_from_manifest(self):
-        for filename in common.SYNC_RELEASE_FILES:
+    def test_required_release_files_cannot_be_omitted_from_manifest(self):
+        for filename in common.REQUIRED_RELEASE_FILES:
             with self.subTest(path=filename):
                 manifest = {"files": {key: value for key, value in self.manifest["files"].items() if key != filename}}
                 self.manifest_file.write_text(json.dumps(manifest))
-                with self.assertRaisesRegex(ValueError, "Synchronization backend must include checked"):
+                with self.assertRaisesRegex(ValueError, "Missing required release files"):
                     self.activate()
         self.assertEqual(self.commands, [])
 
@@ -209,7 +221,7 @@ class DeploymentTests(unittest.TestCase):
         (self.candidate / "sync/server.py").unlink()
         self.manifest["files"].pop("sync/server.py")
         self.manifest_file.write_text(json.dumps(self.manifest))
-        with self.assertRaisesRegex(ValueError, "Synchronization backend must include checked"):
+        with self.assertRaisesRegex(ValueError, "Missing required release files"):
             self.activate()
         self.assert_previous_intact()
         self.assertEqual(self.commands, [])

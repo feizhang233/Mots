@@ -3,6 +3,7 @@
     "Data/StudyStore.swift",
     "Domain/CardPagingState.swift",
     "Domain/Models.swift",
+    "Domain/MemorySchedule.swift",
     "Sync/PairingCredentials.swift",
     "Sync/ProgressSyncController.swift",
     "Sync/ProgressSyncRecord.swift",
@@ -24,6 +25,7 @@
     "Features/Study/EntryDetailView.swift",
     "Features/Study/List/VocabularyList.swift",
     "Features/Study/StudyWorkbench.swift",
+    "Features/Study/MemoryWorkbench.swift",
     "Shared/Theme.swift",
     "Shared/WordControls.swift"
   ]

@@ -134,6 +134,12 @@ struct SettingsView: View {
                 Text(dictionary.displayTitle).tag(dictionary.id)
             }
         }
+        Picker("外觀", selection: $store.appearance) {
+            ForEach(StudyAppearance.allCases) { appearance in
+                Text(appearance.title).tag(appearance)
+            }
+        }
+        .accessibilityIdentifier("settings.appearance")
         Picker("釋義語言", selection: $store.meaningLanguage) {
             Text("繁體中文").tag("zh-Hant")
             Text("简体中文").tag("zh-Hans")
@@ -148,7 +154,7 @@ struct SettingsView: View {
         } else {
             Toggle("先隱藏翻譯", isOn: $store.hideListMeanings)
                 .accessibilityIdentifier("settings.hide-translations")
-            Text("列表先只顯示單字，點一下會發音並顯示翻譯。")
+            Text("主題學習列表先只顯示單字，點一下會發音並顯示目前單字的翻譯；點其他單字會隱藏上一個翻譯。")
                 .font(.footnote)
                 .foregroundStyle(MotsTheme.muted)
         }
@@ -158,6 +164,8 @@ struct SettingsView: View {
             .font(.footnote)
             .foregroundStyle(MotsTheme.muted)
         Toggle("隱藏已掌握的項目", isOn: $store.hideMastered)
+        Toggle("隱藏有印象的項目", isOn: $store.hideImpression)
+            .accessibilityIdentifier("settings.hide-impression")
         Picker("列表每頁", selection: $store.pageSize) {
             ForEach([10, 20, 50, 100], id: \.self) { Text("\($0) \(store.currentDictionary.entryUnit)").tag($0) }
         }

@@ -86,7 +86,7 @@ struct AppView: View {
             }
 
             Section("學習方式") {
-                ForEach(StudyMode.allCases) { mode in
+                ForEach(StudyMode.allCases.filter { $0 != .memory }) { mode in
                     Button {
                         selectMode(mode)
                     } label: {
@@ -106,6 +106,22 @@ struct AppView: View {
 
             Section("主題目錄") {
                 categoryButton(store.currentDictionary.isGrammar ? "全部語法" : "全部單字", categoryID: nil, subcategoryID: nil, symbol: "square.grid.2x2")
+                if !store.currentDictionary.isGrammar {
+                    Button {
+                        store.openMemory()
+                        preferredCompactColumn = .detail
+                    } label: {
+                        HStack {
+                            Label("卡片記憶", systemImage: StudyMode.memory.symbol)
+                            Spacer(minLength: 4)
+                            if store.mode == .memory { Image(systemName: "checkmark").font(.caption.bold()) }
+                        }
+                        .frame(minHeight: 34, alignment: .leading)
+                        .foregroundStyle(store.mode == .memory ? MotsTheme.accent : MotsTheme.ink)
+                    }
+                    .accessibilityAddTraits(store.mode == .memory ? [.isSelected] : [])
+                    .accessibilityIdentifier("navigation.memory")
+                }
                 ForEach(store.availableCategories) { category in
                     let subcategories = store.availableSubcategories(in: category)
                     if store.currentDictionary.isThematicGrammar || subcategories.count < 2 {
@@ -184,7 +200,7 @@ struct AppView: View {
 
     private var modeMenu: some View {
         Menu {
-            ForEach(StudyMode.allCases) { mode in
+            ForEach(StudyMode.allCases.filter { $0 != .memory || !store.currentDictionary.isGrammar }) { mode in
                 Button {
                     selectMode(mode)
                 } label: {
@@ -212,7 +228,9 @@ struct AppView: View {
     }
 
     private func selectMode(_ mode: StudyMode) {
-        if mode == .review {
+        if mode == .memory {
+            store.openMemory()
+        } else if mode == .review {
             if store.mode != .review { store.startReview() }
         } else {
             store.mode = mode
@@ -235,6 +253,8 @@ struct AppView: View {
             } actions: {
                 Button("開啟設定") { settingsPresented = true }.buttonStyle(.glass)
             }
+        } else if store.mode == .memory {
+            MemoryWorkbench(store: store, openSettings: { settingsPresented = true })
         } else if store.showsCards {
             StudyWorkbench(store: store, openSettings: { settingsPresented = true })
         } else {

@@ -146,8 +146,10 @@ private final class SyncURLProtocol: URLProtocol, @unchecked Sendable {
         let code = "mots-" + String(repeating: "A", count: 43)
         var server: [ProgressSyncRecord] = []
         var serverDeletions: [WordDeletionRecord] = []
+        let memoryServer = StudyStore(catalog: [dictionary], persistenceURL: nil)
         var delayNext = false, inFlight = false, reject = false
         var delayDeletion = false, deletionInFlight = false, rejectDeletions = false
+        var omitMemory = false
         var exchangeCount = 0
         SyncURLProtocol.handler = { request, reply in
             Task { @MainActor in
@@ -155,6 +157,13 @@ private final class SyncURLProtocol: URLProtocol, @unchecked Sendable {
                 if request.url!.lastPathComponent == "create" {
                     precondition(request.value(forHTTPHeaderField: "Authorization") == nil)
                     reply(200, try! data(["version": 1, "code": code])); return
+                }
+                if request.url!.lastPathComponent == "memory" {
+                    let supplied = try! MemorySyncRecord.decodeEnvelope(requestBody(request))
+                    if omitMemory { reply(200, try! envelope([])); return }
+                    try! memoryServer.mergeMemorySnapshot(supplied)
+                    reply(200, try! data(["version": 1, "records": try! JSONSerialization.jsonObject(with: JSONEncoder().encode(memoryServer.memorySnapshot()))]))
+                    return
                 }
                 if request.url!.lastPathComponent == "deletions" {
                     precondition(request.value(forHTTPHeaderField: "Authorization") == "Bearer " + code)
@@ -190,6 +199,26 @@ private final class SyncURLProtocol: URLProtocol, @unchecked Sendable {
         await waitFor("Pairing uploads existing local familiarity") { !controller.busy && controller.status == "已同步" && server.count == 1 }
         precondition(vault.value == code && controller.connected && controller.revealedCode == nil)
         controller.revealCode(); precondition(controller.revealedCode == code); controller.hideCode()
+        let stamp = MemoryRecord.milliseconds(Date())
+        try network.mergeMemorySnapshot([MemorySyncRecord(dictionaryID: "fr", wordID: "b", stage: 1, dueAt: stamp + 86_400_000, updatedAt: stamp)])
+        controller.localDidChange()
+        await waitFor("Every recall uploads its schedule while familiarity stays unchanged") {
+            !controller.busy && controller.status == "已同步" && memoryServer.memory["fr"]?["b"]?.stage == 1
+        }
+        let remoteStamp = stamp + 1
+        try memoryServer.mergeMemorySnapshot([MemorySyncRecord(dictionaryID: "fr", wordID: "b", stage: 0, dueAt: remoteStamp + 86_400_000, updatedAt: remoteStamp)])
+        controller.requestSync(force: true)
+        await waitFor("Remote lapse schedule is downloaded") {
+            !controller.busy && controller.status == "已同步" && network.memory["fr"]?["b"]?.updatedAt == remoteStamp
+        }
+        omitMemory = true
+        let beforeMissingAcknowledgement = exchangeCount
+        controller.requestSync(force: true)
+        await waitFor("An unchanged upload missing from the server snapshot stops for a later retry") {
+            exchangeCount > beforeMissingAcknowledgement && !controller.busy && controller.status == ProgressSyncError.server.localizedDescription
+        }
+        precondition(exchangeCount == beforeMissingAcknowledgement + 2 && network.memory["fr"]?["b"]?.updatedAt == remoteStamp)
+        omitMemory = false
         delayNext = true; controller.requestSync(force: true)
         await waitFor("Expected delayed request") { inFlight }
         network.rate(b, level: 2); controller.localDidChange()

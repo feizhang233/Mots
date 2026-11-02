@@ -24,6 +24,7 @@ test-sync:
 
 test-tools:
 	python3 tests/deploy_test.py
+	python3 tests/package_test.py
 	python3 tests/data_sync_test.py
 	python3 tests/french_examples_test.py
 

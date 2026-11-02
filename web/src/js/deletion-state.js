@@ -12,8 +12,7 @@
       records = [],
       byKey = new Map(),
       failed = false;
-    function read() {
-      const raw = storage.getItem(KEY);
+    function read(raw = storage.getItem(KEY)) {
       if (raw === null) return null;
       const value = JSON.parse(raw);
       if (
@@ -42,6 +41,7 @@
         deviceID = disk.deviceID;
         absorb(disk);
       }
+      return disk;
     }
     function save(reason) {
       try {
@@ -98,20 +98,8 @@
     function handleStorage(event) {
       if (event.key !== KEY && event.key !== null) return false;
       try {
-        if (event.key === KEY && event.newValue) {
-          const value = JSON.parse(event.newValue);
-          if (
-            !object(value) ||
-            value.version !== 1 ||
-            !integer(value.counter) ||
-            typeof value.deviceID !== 'string' ||
-            !/^[0-9a-f]{32}$/.test(value.deviceID)
-          )
-            throw new Error('invalid-deletions');
-          absorb({ ...value, records: validateRecords(value.records) });
-        }
-        fresh();
-        const disk = read();
+        if (event.key === KEY && event.newValue) absorb(read(event.newValue));
+        const disk = fresh();
         if (
           !disk ||
           JSON.stringify(merge(disk.records)) !== JSON.stringify(records) ||

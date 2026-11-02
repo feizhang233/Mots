@@ -29,7 +29,7 @@ struct ListMeaningTests {
         precondition(store.currentWord?.id == selectedID && store.rating(first) == 0 && store.revealed,
             "List reveals never rate, advance or change card answer state")
         store.revealListMeaning(for: second)
-        precondition(store.isListMeaningVisible(for: first) && store.isListMeaningVisible(for: second), "Revealing another word keeps current-page answers")
+        precondition(!store.isListMeaningVisible(for: first) && store.isListMeaningVisible(for: second), "Only the current word remains revealed")
 
         store.hideListMeanings = false
         precondition(store.isListMeaningVisible(for: first) && store.isListMeaningVisible(for: second))
@@ -45,8 +45,6 @@ struct ListMeaningTests {
             { store.meaningLanguage = "zh-Hans" },
             { store.pageSize = 10 },
             { store.randomOrder = true },
-            { store.mode = .lookup },
-            { store.mode = .study },
             { store.listMode = false },
             { store.listMode = true }
         ]
@@ -56,6 +54,10 @@ struct ListMeaningTests {
             reset()
             precondition(!store.isListMeaningVisible(for: first), "Changed list context hides prior answers")
         }
+        store.mode = .lookup
+        precondition(store.isListMeaningVisible(for: first) && store.isListMeaningVisible(for: second), "Lookup retains visible definitions")
+        store.mode = .study
+        precondition(!store.isListMeaningVisible(for: first), "Returning to study hides the prior answer")
         store.meaningLanguage = "zh-Hant"
         store.revealListMeaning(for: first)
         store.dictionaryID = "de"
@@ -73,7 +75,7 @@ struct ListMeaningTests {
         precondition(store.deleteWord(first))
         store.revealListMeaning(for: first)
         precondition(!store.isListMeaningVisible(for: first), "Deleted words cannot retain or gain a reveal")
-        precondition(store.isListMeaningVisible(for: second), "Deletion keeps other current-page reveals")
+        precondition(store.isListMeaningVisible(for: second), "Deletion keeps the current answer when deleting another row")
         precondition(store.restoreWord(first.id))
         precondition(!store.isListMeaningVisible(for: first), "Restored words start concealed")
 
@@ -110,6 +112,6 @@ struct ListMeaningTests {
         let fresh = StudyStore(catalog: catalog, persistenceURL: nil)
         _ = try fresh.importBackup(olderBackup)
         precondition(!fresh.hideListMeanings, "An older backup on a fresh install retains the visible default")
-        print("PASS: list translation concealment; independent per-word reveal; no rating or card-state mutation; context resets; dictionary identity; grammar compatibility; deletion/restore; persisted preference with transient reveals; legacy saved-state and backup compatibility.")
+        print("PASS: list translation concealment; single current-word reveal; no rating or card-state mutation; context resets; dictionary identity; lookup and grammar compatibility; deletion/restore; persisted preference with transient reveals; legacy saved-state and backup compatibility.")
     }
 }

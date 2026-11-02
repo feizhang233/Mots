@@ -101,8 +101,7 @@ def dictionary() -> dict:
     }
 
 
-def outputs() -> dict[Path, bytes]:
-    data = dictionary()
+def outputs(data: dict) -> dict[Path, bytes]:
     languages = LANGUAGES.read_text(encoding="utf-8")
     marker = "  window.MOTS_JAPANESE_CATEGORIES = "
     start = languages.find(marker)
@@ -127,13 +126,14 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
-    for path, content in outputs().items():
+    data = dictionary()
+    for path, content in outputs(data).items():
         if args.check:
             if not path.is_file() or path.read_bytes() != content:
                 raise ValueError(f"Japanese source differs: {path.relative_to(ROOT)}; run scripts/import-japanese.py")
         else:
             path.write_bytes(content)
-    print(f"{'Verified' if args.check else 'Imported'} {len(dictionary()['words'])} Japanese entries in source column order.")
+    print(f"{'Verified' if args.check else 'Imported'} {data['entryCount']} Japanese entries in source column order.")
 
 
 if __name__ == "__main__":

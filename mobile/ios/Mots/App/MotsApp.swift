@@ -8,6 +8,7 @@ struct MotsApp: App {
     var body: some Scene {
         WindowGroup {
             AppView(store: store)
+                .preferredColorScheme(store.appearance.colorScheme)
                 .environment(\.locale, Locale(identifier: "zh-Hant"))
                 .task {
                     SpeechPlayer.shared.rate = store.speechRate

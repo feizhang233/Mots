@@ -132,6 +132,7 @@ struct VocabularyList<Header: View, EmptyContent: View>: View {
     var body: some View {
         studyListWithScopeTracking
         .onChange(of: store.hideMastered) { page = 0 }
+        .onChange(of: store.hideImpression) { page = 0 }
         .onChange(of: store.randomOrder) { page = 0 }
         .onChange(of: store.currentIndex) { _, newIndex in page = newIndex / pageSize }
         .onChange(of: store.filteredWords.map(\.id)) { page = min(page, pageCount - 1) }

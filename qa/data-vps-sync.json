@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-28T14:51:09.674062+00:00",
-  "previousRelease": "/home/fei/Work/Mots/releases/20261026-213818-compact-grammar-129914b8",
+  "checkedAt": "2026-11-02T14:43:07.707466+00:00",
+  "previousRelease": "/home/fei/Work/Mots/releases/20261102-133751-ccd9e21c",
   "contentVersion": "a3c5cb85b75d7d1b45e94492f3b716658d684ac57afbf7ce20ed00c272a5dbf6",
   "database": {
     "unitCount": 16,
@@ -70,19 +70,20 @@
     }
   ],
   "server": {
-    "release": "/home/fei/Work/Mots/releases/20261028-144546-7c9aa5de",
-    "files": 17000,
+    "release": "/home/fei/Work/Mots/releases/20261102-143820-596010b2",
+    "files": 17005,
     "sha256_match": true,
     "services": {
       "mots-web": "active",
       "mots-tunnel": "active",
       "mots-progress": "active"
-    }
+    },
+    "manifestSHA256": "596010b2d89f7d0feee0a556e29087821ebbb6dd729cd86ae9b608d350df2fcb"
   },
   "public": {
     "url": "https://mots.feizhang233.com/",
-    "public_ipv4_override": null,
-    "checked": 89,
+    "public_ipv4_override": "172.67.191.68",
+    "checked": 91,
     "sha256_match": true,
     "audio_range_status": 206,
     "content_range": "bytes 0-31/8563",
@@ -92,7 +93,7 @@
     },
     "checks": [
       {
-        "path": "app.js?v=0549a62addfc7a22",
+        "path": "app.js?v=11b51a4c6d13d392",
         "status": 200
       },
       {
@@ -112,7 +113,7 @@
         "status": 200
       },
       {
-        "path": "deletion-state.js?v=6d8acb74e77b42d2",
+        "path": "deletion-state.js?v=4eb08ad304203f24",
         "status": 200
       },
       {
@@ -148,7 +149,11 @@
         "status": 200
       },
       {
-        "path": "progress-sync.js?v=194bbbc24be6d88a",
+        "path": "memory.js?v=95081968d86024eb",
+        "status": 200
+      },
+      {
+        "path": "progress-sync.js?v=98116ce1817652b4",
         "status": 200
       },
       {
@@ -160,23 +165,27 @@
         "status": 200
       },
       {
-        "path": "settings-panel.js?v=f7ae476846178e0e",
+        "path": "settings-panel.js?v=9aff919cd4578b0b",
         "status": 200
       },
       {
-        "path": "styles.css?v=62af8f275284a194",
+        "path": "styles.css?v=be636a98d86c8e1d",
         "status": 200
       },
       {
-        "path": "sync-protocol.js?v=4935a93c70f88375",
+        "path": "sync-protocol.js?v=5ef73bc407299ad7",
         "status": 200
       },
       {
-        "path": "workspace.css?v=a2d9430cba97d5d3",
+        "path": "theme.js?v=b5b8723a517495f7",
         "status": 200
       },
       {
-        "path": "workspace.js?v=93eef66b5f94f880",
+        "path": "workspace.css?v=b32ad4f0010c5a0d",
+        "status": 200
+      },
+      {
+        "path": "workspace.js?v=a1cb44f07bba8001",
         "status": 200
       },
       {
@@ -448,5 +457,28 @@
         "status": 200
       }
     ]
-  }
+  },
+  "browser": [
+    {
+      "name": "desktop",
+      "directRemember": true,
+      "directForget": true,
+      "optionalReveal": true,
+      "nextCardConcealed": true,
+      "savedAndResumed": true,
+      "fits": true,
+      "errors": []
+    },
+    {
+      "name": "mobile",
+      "directRemember": true,
+      "directForget": true,
+      "optionalReveal": true,
+      "nextCardConcealed": true,
+      "savedAndResumed": true,
+      "fits": true,
+      "errors": []
+    }
+  ],
+  "progressBackupIntegrity": "ok"
 }

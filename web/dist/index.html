@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#11191e" media="(prefers-color-scheme: dark)" />
-    <meta name="theme-color" content="#f2f5f8" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#f2f5f8" />
     <meta name="description" content="依主題學習單字，獨立設定背誦與釋義語言，記錄熟悉程度。" />
     <title>Français · Mots</title>
     <link rel="icon" href="icon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=62af8f275284a194" />
+    <script src="theme.js?v=b5b8723a517495f7"></script>
+    <link rel="stylesheet" href="styles.css?v=be636a98d86c8e1d" />
     <link rel="stylesheet" href="select.css?v=d9685d2e102b4476" />
-    <link rel="stylesheet" href="workspace.css?v=0ea15f681181ed0f" />
+    <link rel="stylesheet" href="workspace.css?v=b32ad4f0010c5a0d" />
     <script defer src="data.js?v=ce94fca52c83a2a7"></script>
     <script defer src="languages.js?v=fbfb80f1f910853e"></script>
     <script defer src="audio-manifest.js?v=2415420e385eafc4"></script>
@@ -19,15 +19,16 @@
     <script defer src="core.js?v=7c72fb0139b35234"></script>
     <script defer src="dictionaries.js?v=255e4f9918b928bf"></script>
     <script defer src="grammar.js?v=9f047c78b489e3b7"></script>
-    <script defer src="workspace.js?v=93eef66b5f94f880"></script>
+    <script defer src="workspace.js?v=a1cb44f07bba8001"></script>
+    <script defer src="memory.js?v=95081968d86024eb"></script>
     <script defer src="audio.js?v=9334e358d6bb7dfc"></script>
     <script defer src="downloads.js?v=887b8391395047af"></script>
     <script defer src="entries.js?v=bca735aa14facac4"></script>
-    <script defer src="sync-protocol.js?v=4935a93c70f88375"></script>
-    <script defer src="deletion-state.js?v=6d8acb74e77b42d2"></script>
-    <script defer src="progress-sync.js?v=194bbbc24be6d88a"></script>
-    <script defer src="settings-panel.js?v=f7ae476846178e0e"></script>
-    <script defer src="app.js?v=0549a62addfc7a22"></script>
+    <script defer src="sync-protocol.js?v=5ef73bc407299ad7"></script>
+    <script defer src="deletion-state.js?v=4eb08ad304203f24"></script>
+    <script defer src="progress-sync.js?v=98116ce1817652b4"></script>
+    <script defer src="settings-panel.js?v=9aff919cd4578b0b"></script>
+    <script defer src="app.js?v=11b51a4c6d13d392"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">跳到背誦內容</a>
@@ -96,6 +97,7 @@
       </header>
       <main id="main" tabindex="-1">
         <section id="home-section" aria-label="辭典首頁" hidden></section>
+        <section id="memory-section" class="memory-section" aria-label="卡片記憶" hidden></section>
         <section id="library-panel" class="library" aria-label="篩選詞庫">
           <div class="library-heading">
             <div class="section-name">
@@ -269,11 +271,36 @@
           <section class="settings-subsection">
             <h3>學習顯示</h3>
             <div class="settings-field">
+              <label for="appearance">外觀</label>
+              <select id="appearance">
+                <option value="system">跟隨系統</option>
+                <option value="light">一般模式</option>
+                <option value="dark">深色模式</option>
+              </select>
+            </div>
+            <div class="settings-field">
               <label for="page-size">每頁項目數</label>
               <select id="page-size"></select>
             </div>
             <p class="settings-note">設定列表每頁最多顯示的項目數。</p>
             <p id="grammar-book-type" class="settings-note" hidden></p>
+            <label class="settings-toggle" for="hide-list-meanings"
+              ><span
+                ><strong>先隱藏翻譯</strong
+                ><span id="hide-list-meanings-help"
+                  >詞彙背誦列表先隱藏釋義；點選單字會發音並顯示該詞釋義。</span
+                ></span
+              ><span class="glass-switch"
+                ><input
+                  id="hide-list-meanings"
+                  type="checkbox"
+                  role="switch"
+                  aria-label="先隱藏翻譯"
+                  aria-describedby="hide-list-meanings-help" /><span
+                  class="switch-track"
+                  aria-hidden="true"
+                  ><span class="switch-thumb"></span></span></span
+            ></label>
             <label class="settings-toggle" for="show-example-translations"
               ><span
                 ><strong>卡片顯示例句翻譯</strong

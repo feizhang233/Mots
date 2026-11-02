@@ -11,7 +11,7 @@ import time
 
 from .protocol import (
     CODE, MAX_GROUPS, MAX_RECORDS, SyncError, deletion_rank, rank,
-    validated_deletions, validated_records,
+    validated_deletions, validated_records, validated_memory, memory_rank,
 )
 
 
@@ -58,6 +58,12 @@ class SyncStore:
                     device_id TEXT NOT NULL,
                     PRIMARY KEY (group_hash, dictionary_id, word_id)
                 );
+                CREATE TABLE IF NOT EXISTS memory (
+                    group_hash TEXT NOT NULL REFERENCES groups(code_hash),
+                    dictionary_id TEXT NOT NULL, word_id TEXT NOT NULL,
+                    stage INTEGER NOT NULL, due_at INTEGER NOT NULL, updated_at INTEGER NOT NULL,
+                    PRIMARY KEY (group_hash, dictionary_id, word_id)
+                );
                 PRAGMA user_version = 1;
             """)
 
@@ -102,53 +108,59 @@ class SyncStore:
             raise SyncError(401, "Invalid pairing code")
 
     def exchange(self, digest, envelope):
-        incoming = validated_records(envelope, self.max_records)
-        with self.connect() as connection:
-            connection.execute("BEGIN IMMEDIATE")
-            self._require_group(connection, digest)
-            rows = connection.execute(
-                "SELECT dictionary_id, word_id, level, clock, device_id FROM records WHERE group_hash = ?",
-                (digest,)).fetchall()
-            canonical = {(dictionary, word): {"dictionaryID": dictionary, "wordID": word,
-                "level": level, "clock": clock, "deviceID": device}
-                for dictionary, word, level, clock, device in rows}
-            if len(canonical.keys() | incoming.keys()) > self.max_records:
-                raise SyncError(413, "Group record limit reached")
-            for key, record in incoming.items():
-                if key not in canonical or rank(record) > rank(canonical[key]):
-                    canonical[key] = record
-                    connection.execute("""
-                        INSERT INTO records(group_hash,dictionary_id,word_id,level,clock,device_id)
-                        VALUES (?,?,?,?,?,?) ON CONFLICT(group_hash,dictionary_id,word_id)
-                        DO UPDATE SET level=excluded.level,clock=excluded.clock,device_id=excluded.device_id
-                    """, (digest, record["dictionaryID"], record["wordID"], record["level"],
-                          record["clock"], record["deviceID"]))
-            # Build the response inside the same transaction as the merge.
-            snapshot = [canonical[key] for key in sorted(canonical)]
-        return {"version": 1, "records": snapshot}
+        return self._exchange(
+            digest, validated_records(envelope, self.max_records), table="records",
+            columns={"level": "level", "clock": "clock", "deviceID": "device_id"},
+            ordering=rank, maximum=self.max_records, capacity_error="Group record limit reached",
+        )
 
     def exchange_deletions(self, digest, envelope):
-        incoming = validated_deletions(envelope, self.max_deletions)
+        return self._exchange(
+            digest, validated_deletions(envelope, self.max_deletions), table="deletions",
+            columns={"deleted": "deleted", "clock": "clock", "deviceID": "device_id"},
+            ordering=deletion_rank, maximum=self.max_deletions, capacity_error="Group deletion limit reached",
+        )
+
+    def exchange_memory(self, digest, envelope):
+        return self._exchange(
+            digest, validated_memory(envelope, self.max_records), table="memory",
+            columns={"stage": "stage", "dueAt": "due_at", "updatedAt": "updated_at"},
+            ordering=memory_rank, maximum=self.max_records, capacity_error="Group memory limit reached",
+        )
+
+    def _exchange(self, digest, incoming, *, table, columns, ordering, maximum, capacity_error):
+        # Table/column names come only from the fixed channel definitions above.
+        column_list = ", ".join(columns.values())
         with self.connect() as connection:
-            connection.execute("BEGIN IMMEDIATE")
+            # A pull needs a consistent snapshot, but can share the database with a writer.
+            connection.execute("BEGIN IMMEDIATE" if incoming else "BEGIN")
             self._require_group(connection, digest)
             rows = connection.execute(
-                "SELECT dictionary_id, word_id, deleted, clock, device_id FROM deletions WHERE group_hash = ?",
-                (digest,)).fetchall()
-            canonical = {(dictionary, word): {"dictionaryID": dictionary, "wordID": word,
-                "deleted": bool(deleted), "clock": clock, "deviceID": device}
-                for dictionary, word, deleted, clock, device in rows}
-            if len(canonical.keys() | incoming.keys()) > self.max_deletions:
-                raise SyncError(413, "Group deletion limit reached")
+                f"SELECT dictionary_id, word_id, {column_list} FROM {table} WHERE group_hash = ?",
+                (digest,),
+            )
+            canonical = {}
+            for dictionary, word, *values in rows:
+                record = dict(zip(columns, values))
+                if table == "deletions":
+                    record["deleted"] = bool(record["deleted"])
+                canonical[dictionary, word] = {"dictionaryID": dictionary, "wordID": word, **record}
+
+            updates = []
             for key, record in incoming.items():
-                if key not in canonical or deletion_rank(record) > deletion_rank(canonical[key]):
+                if key not in canonical or ordering(record) > ordering(canonical[key]):
                     canonical[key] = record
-                    connection.execute("""
-                        INSERT INTO deletions(group_hash,dictionary_id,word_id,deleted,clock,device_id)
-                        VALUES (?,?,?,?,?,?) ON CONFLICT(group_hash,dictionary_id,word_id)
-                        DO UPDATE SET deleted=excluded.deleted,clock=excluded.clock,device_id=excluded.device_id
-                    """, (digest, record["dictionaryID"], record["wordID"], int(record["deleted"]),
-                          record["clock"], record["deviceID"]))
-            # Both true and false registers survive; absence never means a restore.
-            snapshot = [canonical[key] for key in sorted(canonical)]
-        return {"version": 1, "records": snapshot}
+                    updates.append((digest, *key, *(record[field] for field in columns)))
+            if len(canonical) > maximum:
+                raise SyncError(413, capacity_error)
+            if updates:
+                assignments = ", ".join(f"{column}=excluded.{column}" for column in columns.values())
+                placeholders = ", ".join("?" for _ in updates[0])
+                connection.executemany(
+                    f"INSERT INTO {table} (group_hash, dictionary_id, word_id, {column_list}) "
+                    f"VALUES ({placeholders}) ON CONFLICT(group_hash, dictionary_id, word_id) "
+                    f"DO UPDATE SET {assignments}",
+                    updates,
+                )
+        # The in-memory snapshot is fixed by the transaction. Sort after releasing the lock.
+        return {"version": 1, "records": [canonical[key] for key in sorted(canonical)]}

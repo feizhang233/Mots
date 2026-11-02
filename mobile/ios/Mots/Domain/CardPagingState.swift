@@ -14,6 +14,7 @@ struct CardPagingState {
         let subcategoryID: String?
         let search: String
         let hideMastered: Bool
+        let hideImpression: Bool
         let randomOrder: Bool
     }
 
@@ -36,6 +37,6 @@ extension StudyStore {
         .init(dictionaryID: dictionaryID, words: filteredWords, selectedID: currentWord?.id,
               mode: mode, listMode: listMode, completed: completed,
               categoryID: categoryID, subcategoryID: subcategoryID, search: search,
-              hideMastered: hideMastered, randomOrder: randomOrder)
+              hideMastered: hideMastered, hideImpression: hideImpression, randomOrder: randomOrder)
     }
 }

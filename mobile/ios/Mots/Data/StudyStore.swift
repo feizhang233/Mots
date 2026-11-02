@@ -5,8 +5,8 @@ import Observation
 @MainActor @Observable
 final class StudyStore {
     private(set) var dictionaries: [StudyDictionary]
-    var dictionaryID: String = "fr" { didSet { if dictionaryID != oldValue { dictionaryChanged() } } }
-    var mode: StudyMode = .study { didSet { if mode != oldValue { modeChanged() } } }
+    var dictionaryID: String = "fr" { didSet { if dictionaryID != oldValue { dictionaryChanged(from: oldValue) } } }
+    var mode: StudyMode = .study { didSet { if mode != oldValue { modeChanged(from: oldValue) } } }
     var search = "" { didSet { if search != oldValue { filtersChanged(preservingCardPosition: mode == .study && listMode) } } }
     var categoryID: String? { didSet { if categoryID != oldValue { if !restoring { subcategoryID = nil }; filtersChanged() } } }
     var subcategoryID: String? { didSet { if subcategoryID != oldValue { filtersChanged() } } }
@@ -17,11 +17,13 @@ final class StudyStore {
     } }
     var randomOrder = false { didSet { if randomOrder != oldValue { filtersChanged() } } }
     var hideMastered = false { didSet { if hideMastered != oldValue { filtersChanged(preservingCardPosition: true) } } }
+    var hideImpression = false { didSet { if hideImpression != oldValue { filtersChanged(preservingCardPosition: true) } } }
     var hideListMeanings = false { didSet {
         if hideListMeanings != oldValue { resetListMeaningReveals() }
         persist()
     } }
     var showExampleTranslations = true { didSet { persist() } }
+    var appearance: StudyAppearance = .system { didSet { persist() } }
     var meaningLanguage = "zh-Hant" { didSet {
         if meaningLanguage != oldValue { resetListMeaningReveals() }
         persist()
@@ -34,20 +36,28 @@ final class StudyStore {
         persist()
     } }
     var currentIndex = 0 { didSet { persist() } }
-    var revealed = false
+    var revealed = false { didSet { if mode == .memory && revealed != oldValue { persist() } } }
     // Presentation state survives card/list swaps, but never enters backups or progress sync.
     var expandedGrammarGroupIDs = Set<String>()
     private struct ListMeaningKey: Hashable {
         let dictionaryID: String
         let wordID: String
     }
-    private var revealedListMeanings = Set<ListMeaningKey>()
+    private var revealedListMeaning: ListMeaningKey?
     private(set) var filteredWords: [StudyWord] = []
     private(set) var completed = false
     private(set) var storageError: String?
     private(set) var recoveryFileURL: URL?
     private(set) var loadError: String?
     private(set) var progress: [String: [String: Int]] = [:]
+    private(set) var memory: [String: [String: MemoryRecord]] = [:]
+    private var memoryChapters: [String: [String]] = [:]
+    private(set) var memorySessionActive = false
+    private(set) var memoryAnsweredCount = 0
+    private(set) var memoryMasteredCount = 0
+    private(set) var memoryFeedback: String?
+    private var memoryAnsweredIDs = Set<String>()
+    private var memorySessions = MemorySessionLibrary()
     private(set) var syncMetadata: ProgressSyncMetadata?
     private(set) var deletionMetadata: WordDeletionMetadata?
     private var deletionFlags: [String: Bool] = [:]
@@ -67,6 +77,7 @@ final class StudyStore {
     private var cardResumePosition: CardResumePosition?
     @ObservationIgnored private let persistenceURL: URL?
     @ObservationIgnored private let bundledDictionaries: [StudyDictionary]
+    @ObservationIgnored private let memoryRoundOrder: ([StudyWord]) -> [StudyWord]
     @ObservationIgnored private var restoring = true
     @ObservationIgnored private var recoveryNotice: String?
     @ObservationIgnored private var persistenceBlocked = false
@@ -76,8 +87,10 @@ final class StudyStore {
             .appendingPathComponent("Mots", isDirectory: true).appendingPathComponent("study-state.json")
     }
 
-    init(catalog: [StudyDictionary]? = nil, persistenceURL: URL? = StudyStore.defaultPersistenceURL) {
+    init(catalog: [StudyDictionary]? = nil, persistenceURL: URL? = StudyStore.defaultPersistenceURL,
+         memoryRoundOrder: @escaping ([StudyWord]) -> [StudyWord] = { $0.shuffled() }) {
         self.persistenceURL = persistenceURL
+        self.memoryRoundOrder = memoryRoundOrder
         var catalogError: String?
         var loaded: [StudyDictionary]
         if let catalog { loaded = catalog }
@@ -109,6 +122,11 @@ final class StudyStore {
                     dictionaries[index] = addingExtensions(extras.filter { !known.contains($0.id) }, to: dictionaries[index])
                 }
                 progress = cleanedProgress(state.progress, dictionaries: dictionaries)
+                let savedMemory = state.memory ?? [:]
+                try MemoryRecord.validate(savedMemory)
+                memory = savedMemory
+                memoryChapters = state.memoryChapters ?? [:]
+                memorySessions = state.memorySessions ?? MemorySessionLibrary()
                 if var metadata = state.syncMetadata {
                     try metadata.validate()
                     syncMetadata = metadata
@@ -119,14 +137,29 @@ final class StudyStore {
                     setDeletionMetadata(deletions)
                 }
                 dictionaryID = dictionaries.contains(where: { $0.id == state.dictionaryID }) ? state.dictionaryID : dictionaries.first?.id ?? "fr"
-                mode = state.mode; search = state.search; categoryID = state.categoryID; subcategoryID = state.subcategoryID
+                mode = state.mode == .memory && currentDictionary.isGrammar ? .study : state.mode
+                search = state.search; categoryID = state.categoryID; subcategoryID = state.subcategoryID
                 if currentDictionary.isThematicGrammar { subcategoryID = nil }
                 listMode = state.listMode; hideMastered = state.hideMastered; randomOrder = state.randomOrder ?? false
+                hideImpression = state.hideImpression ?? false
                 hideListMeanings = state.hideListMeanings ?? false
                 showExampleTranslations = state.showExampleTranslations ?? true
+                appearance = state.appearance.flatMap(StudyAppearance.init(rawValue:)) ?? .system
                 meaningLanguage = StudyImport.meaningLanguages.contains(state.meaningLanguage) ? state.meaningLanguage : "zh-Hant"
                 speechRate = min(0.6, max(0.25, state.speechRate)); autoAdvance = state.autoAdvance
                 pageSize = [10, 20, 50, 100].contains(state.pageSize) ? state.pageSize : 20
+                if state.memorySessions == nil, mode == .memory, !state.deckIDs.isEmpty,
+                   state.deckIDs.count <= MemorySession.maximumWords, Set(state.deckIDs).count == state.deckIDs.count,
+                   state.deckIDs.indices.contains(state.currentIndex) {
+                    // Build 4 saved the sequential deck/index, but not reveal or answer bookkeeping.
+                    let index = state.currentIndex
+                    let answered = state.completed ? state.deckIDs : Array(state.deckIDs.prefix(index))
+                    let session = MemorySession(deckIDs: state.deckIDs, currentWordID: state.deckIDs[index],
+                        currentIndex: index, answeredIDs: answered, answeredCount: answered.count,
+                        masteredCount: answered.filter { memory[dictionaryID]?[$0]?.stage == MemoryRecord.masteryStage && progress[dictionaryID]?[$0] == 3 }.count,
+                        revealed: false, completed: state.completed, paused: false, feedback: nil)
+                    if session.isValid { memorySessions.sessions[dictionaryID] = session }
+                }
                 if mode == .review {
                     let byID = Dictionary(uniqueKeysWithValues: availableWords.map { ($0.id, $0) })
                     filteredWords = state.deckIDs.compactMap { byID[$0] }
@@ -139,12 +172,15 @@ final class StudyStore {
                         if restoredDeck.count == filteredWords.count && Set(state.deckIDs).count == restoredDeck.count { filteredWords = restoredDeck }
                     }
                 }
-                currentIndex = min(max(0, state.currentIndex), max(0, filteredWords.count - 1))
-                completed = state.completed && !filteredWords.isEmpty
+                if mode != .memory {
+                    currentIndex = min(max(0, state.currentIndex), max(0, filteredWords.count - 1))
+                    completed = state.completed && !filteredWords.isEmpty
+                }
             } catch {
                 // Quarantine original bytes before later navigation or ratings can save new state.
                 dictionaries = loaded
-                syncMetadata = nil; deletionMetadata = nil; deletionFlags = [:]; progress = [:]; dictionaryID = loaded.first?.id ?? "fr"
+                syncMetadata = nil; deletionMetadata = nil; deletionFlags = [:]; progress = [:]; memory = [:]; memoryChapters = [:]
+                memorySessions = MemorySessionLibrary(); memorySessionActive = false; dictionaryID = loaded.first?.id ?? "fr"
                 mode = .study; search = ""; categoryID = nil; subcategoryID = nil
                 rebuildDeck()
                 let recoveryURL = persistenceURL.deletingLastPathComponent().appendingPathComponent(
@@ -187,7 +223,7 @@ final class StudyStore {
     var reviewRatedCount: Int { reviewRatedIDs.count }
     var reviewTotal: Int { mode == .review ? filteredWords.count : 0 }
     var masteredCount: Int { counts[3, default: 0] }
-    var showsCards: Bool { mode == .review || (mode == .study && !listMode) }
+    var showsCards: Bool { mode == .review || mode == .memory || (mode == .study && !listMode) }
     // Unit statistics include mastered words and ignore transient list filters.
     var scopeWords: [StudyWord] {
         if mode == .review { return filteredWords }
@@ -218,7 +254,6 @@ final class StudyStore {
               translation != example.text else { return nil }
         return translation
     }
-    func meaning(for word: StudyWord) -> String { displayMeaning(for: word) }
     func compactGrammarMeaning(for word: StudyWord) -> String {
         let text = displayMeaning(for: word)
         guard currentDictionary.isGrammar, ["zh-Hant", "zh-Hans"].contains(meaningLanguage),
@@ -236,16 +271,16 @@ final class StudyStore {
         return summary.isEmpty ? text : summary
     }
     func isListMeaningVisible(for word: StudyWord) -> Bool {
-        !hideListMeanings || currentDictionary.isGrammar ||
-            revealedListMeanings.contains(ListMeaningKey(dictionaryID: dictionaryID, wordID: word.id))
+        !hideListMeanings || mode != .study || currentDictionary.isGrammar ||
+            revealedListMeaning == ListMeaningKey(dictionaryID: dictionaryID, wordID: word.id)
     }
     func revealListMeaning(for word: StudyWord) {
-        guard hideListMeanings, !currentDictionary.isGrammar, !isDeleted(word.id),
+        guard hideListMeanings, mode == .study, !currentDictionary.isGrammar, !isDeleted(word.id),
               currentDictionary.words.contains(where: { $0.id == word.id }) else { return }
-        revealedListMeanings.insert(ListMeaningKey(dictionaryID: dictionaryID, wordID: word.id))
+        revealedListMeaning = ListMeaningKey(dictionaryID: dictionaryID, wordID: word.id)
     }
     // Reveals are temporary: list pagination calls this without changing progress or selection.
-    func resetListMeaningReveals() { revealedListMeanings.removeAll() }
+    func resetListMeaningReveals() { revealedListMeaning = nil }
     static func meaningLanguageName(_ code: String) -> String {
         ["zh-Hant": "繁體中文", "zh-Hans": "簡體中文", "en": "英文", "fr": "法語", "de": "德語", "ja": "日語"][code] ?? code
     }
@@ -256,18 +291,20 @@ final class StudyStore {
         guard (0...3).contains(level), !isDeleted(word.id), currentDictionary.words.contains(where: { $0.id == word.id }) else { return }
         let selectedID = currentWord?.id
         let previousIndex = currentIndex
-        let newLevel = !showsCards && rating(word) == level ? 0 : level
+        let oldLevel = rating(word)
+        let newLevel = !showsCards && oldLevel == level ? 0 : level
         do {
             var metadata = try preparedSyncMetadata()
             try metadata.edit(dictionaryID: dictionaryID, wordID: word.id, level: newLevel)
             syncMetadata = metadata
         } catch { storageError = error.localizedDescription; return }
         progress[dictionaryID, default: [:]][word.id] = newLevel
+        if newLevel != oldLevel { resetMemoryProgress(word.id, dictionaryID: dictionaryID) }
         if mode == .review {
             // Only review captures a round whose membership and order remain fixed while rating.
             reviewRatedIDs.insert(word.id)
             if selectedID == word.id { next() }
-        } else if mode == .study && hideMastered {
+        } else if mode == .study && (hideMastered || hideImpression) {
             let matching = matchingWords()
             let eligibleIDs = Set(matching.map(\.id))
             let previousIDs = Set(filteredWords.map(\.id))
@@ -314,17 +351,22 @@ final class StudyStore {
         if mode != .review { mode = .review } else { captureReview(); persist() }
     }
 
-    private func dictionaryChanged() {
+    private func dictionaryChanged(from previousID: String) {
         guard !restoring else { return }
+        if mode == .memory { captureMemorySession(for: previousID) }
+        memorySessionActive = false
         cardResumePosition = nil
         restoring = true
         search = ""; categoryID = nil; subcategoryID = nil
+        if mode == .memory && currentDictionary.isGrammar { mode = .study }
         restoring = false
         if mode == .review { captureReview() } else { rebuildDeck() }
         persist()
     }
-    private func modeChanged() {
+    private func modeChanged(from previousMode: StudyMode) {
         guard !restoring else { return }
+        if previousMode == .memory { captureMemorySession(for: dictionaryID) }
+        memorySessionActive = false
         cardResumePosition = nil
         if mode == .review { captureReview() } else { rebuildDeck() }
         persist()
@@ -340,6 +382,7 @@ final class StudyStore {
             (mode == .lookup || categoryID == nil || categoryID == word.category) &&
             (mode == .lookup || subcategoryID == nil || subcategoryID == word.subcategory) &&
             (mode == .lookup || !hideMastered || rating(word) < 3) &&
+            (mode != .study || !hideImpression || rating(word) != 2) &&
             (showsCards || query.isEmpty || folded([word.term, word.pattern, word.explanation]
                 + word.exampleTexts + Array(word.meanings.values)
                 + word.examples.flatMap { Array($0.translations.values) }).contains(query))
@@ -380,6 +423,10 @@ final class StudyStore {
     }
     private func rebuildDeck(preservingCardPosition: Bool = false) {
         resetListMeaningReveals()
+        if mode == .memory {
+            restoreMemorySession()
+            return
+        }
         if !preservingCardPosition { cardResumePosition = nil }
         var words = matchingWords()
         if mode == .lookup { words.sort { $0.term.compare($1.term, options: [.caseInsensitive, .diacriticInsensitive], locale: Locale(identifier: currentDictionary.locale)) == .orderedAscending } }
@@ -402,6 +449,162 @@ final class StudyStore {
     }
     private func folded(_ text: String) -> String { text.folding(options: [.caseInsensitive, .diacriticInsensitive, .widthInsensitive], locale: Locale(identifier: currentDictionary.locale)) }
     private func folded(_ texts: [String]) -> String { folded(texts.joined(separator: " ")) }
+
+    var selectedMemoryChapters: Set<String> {
+        let valid = Set(availableCategories.map(\.id))
+        return memoryChapters[dictionaryID].map { Set($0).intersection(valid) } ?? []
+    }
+    var memoryWords: [StudyWord] {
+        let selected = selectedMemoryChapters
+        return availableWords.filter { rating($0) == 2 && selected.contains($0.category) }
+    }
+    func memoryRecord(for word: StudyWord) -> MemoryRecord? {
+        guard let record = memory[dictionaryID]?[word.id], record.stage < MemoryRecord.masteryStage else { return nil }
+        return record
+    }
+    private func memoryIsDue(_ word: StudyWord, at now: Double) -> Bool {
+        memoryRecord(for: word).map { $0.dueAt <= now } ?? true
+    }
+
+    private func keepCapturedMemoryWord(_ word: StudyWord, at now: Double) -> Bool {
+        memoryAnsweredIDs.contains(word.id) || (!isDeleted(word.id) && rating(word) == 2 && memoryIsDue(word, at: now))
+    }
+    /// Keep a dated reset so restoring an older backup cannot resurrect a previous learning cycle.
+    private func resetMemoryProgress(_ wordID: String, dictionaryID: String) {
+        guard let record = memory[dictionaryID]?[wordID] else { return }
+        let stamp = min(MemoryRecord.maxTimestamp, max(MemoryRecord.milliseconds(Date()), record.updatedAt + 1))
+        memory[dictionaryID]?[wordID] = MemoryRecord(stage: 0, dueAt: stamp, updatedAt: stamp)
+    }
+    func memoryDueWords(at date: Date = Date()) -> [StudyWord] {
+        let now = MemoryRecord.milliseconds(date)
+        let positions = Dictionary(uniqueKeysWithValues: availableWords.enumerated().map { ($0.element.id, $0.offset) })
+        return memoryWords.filter { memoryIsDue($0, at: now) }
+            .sorted { left, right in
+                let lhs = memoryRecord(for: left)?.dueAt ?? Double.greatestFiniteMagnitude
+                let rhs = memoryRecord(for: right)?.dueAt ?? Double.greatestFiniteMagnitude
+                return lhs == rhs ? positions[left.id, default: 0] < positions[right.id, default: 0] : lhs < rhs
+            }
+    }
+    var memoryNextDue: Date? {
+        let now = MemoryRecord.milliseconds(Date())
+        return memoryWords.compactMap { memoryRecord(for: $0)?.dueAt }.filter { $0 > now }.min()
+            .map { Date(timeIntervalSince1970: $0 / 1000) }
+    }
+    func selectMemoryChapters(_ ids: Set<String>) {
+        if mode == .memory, memorySessionActive { leaveMemoryRound() }
+        memoryChapters[dictionaryID] = Array(ids.intersection(Set(availableCategories.map(\.id)))).sorted()
+        persist()
+    }
+    func openMemory() {
+        guard !currentDictionary.isGrammar else { return }
+        if mode != .memory { mode = .memory }
+        else { refreshMemoryVisibility(); persist() }
+    }
+    func startMemoryRound(at date: Date = Date()) {
+        guard mode == .memory, !currentDictionary.isGrammar else { return }
+        let dueWords = memoryDueWords(at: date)
+        guard !dueWords.isEmpty else { return }
+        // Capture a fresh order only for an explicit new round. Continuation restores saved IDs.
+        let words = memoryRoundOrder(dueWords)
+        let wasRestoring = restoring
+        restoring = true
+        filteredWords = words; currentIndex = 0; revealed = false; completed = false
+        memorySessionActive = true; memoryAnsweredIDs = []
+        memoryAnsweredCount = 0; memoryMasteredCount = 0; memoryFeedback = nil
+        restoring = wasRestoring
+        persist()
+    }
+    var hasSavedMemoryRound: Bool { memorySessions.sessions[dictionaryID] != nil }
+    var hasUnfinishedMemoryRound: Bool { memorySessions.sessions[dictionaryID].map { !$0.completed } ?? false }
+
+    func leaveMemoryRound() {
+        guard mode == .memory else { return }
+        captureMemorySession(for: dictionaryID, paused: true)
+        clearMemoryWorkbench()
+        persist()
+    }
+    func resumeMemoryRound() {
+        guard mode == .memory else { return }
+        restoreMemorySession(resumePaused: true)
+        persist()
+    }
+    private func captureMemorySession(for id: String, paused: Bool = false) {
+        guard memorySessionActive else { return }
+        memorySessions.sessions[id] = MemorySession(deckIDs: filteredWords.map(\.id), currentWordID: currentWord?.id,
+            currentIndex: currentIndex, answeredIDs: memoryAnsweredIDs.sorted(), answeredCount: memoryAnsweredCount,
+            masteredCount: memoryMasteredCount, revealed: revealed, completed: completed, paused: paused, feedback: memoryFeedback)
+    }
+    private func clearMemoryWorkbench() {
+        let wasRestoring = restoring; restoring = true
+        memorySessionActive = false; filteredWords = []; currentIndex = 0
+        revealed = false; completed = false; memoryFeedback = nil
+        memoryAnsweredIDs = []; memoryAnsweredCount = 0; memoryMasteredCount = 0
+        restoring = wasRestoring
+    }
+    private func restoreMemorySession(resumePaused: Bool = false) {
+        clearMemoryWorkbench()
+        guard let session = memorySessions.sessions[dictionaryID], !session.paused || resumePaused else { return }
+        let wasRestoring = restoring; restoring = true
+        let byID = Dictionary(uniqueKeysWithValues: currentDictionary.words.map { ($0.id, $0) })
+        memoryAnsweredIDs = Set(session.answeredIDs)
+        let now = MemoryRecord.milliseconds(Date())
+        filteredWords = session.deckIDs.compactMap { byID[$0] }.filter { keepCapturedMemoryWord($0, at: now) }
+        let pending = Set(filteredWords.filter { !memoryAnsweredIDs.contains($0.id) }.map(\.id))
+        let selectedID = session.currentWordID.flatMap { pending.contains($0) ? $0 : nil }
+            ?? session.deckIDs.enumerated().first(where: { $0.offset >= session.currentIndex && pending.contains($0.element) })?.element
+            ?? filteredWords.first(where: { pending.contains($0.id) })?.id
+        currentIndex = filteredWords.firstIndex(where: { $0.id == selectedID })
+            ?? min(session.currentIndex, max(0, filteredWords.count - 1))
+        memoryAnsweredCount = session.answeredCount; memoryMasteredCount = session.masteredCount
+        completed = session.completed || pending.isEmpty
+        revealed = !completed && currentWord?.id == session.currentWordID && session.revealed
+        memoryFeedback = session.feedback == "5 分鐘後再複習" ? "已重新開始，請依下次複習時間回來" : session.feedback
+        memorySessionActive = true
+        restoring = wasRestoring
+    }
+
+    /// A captured round only loses members; newly due/restored words wait for the next round.
+    private func refreshMemoryVisibility() {
+        guard mode == .memory, memorySessionActive else { return }
+        let selectedID = currentWord?.id
+        let oldIndex = currentIndex
+        let now = MemoryRecord.milliseconds(Date())
+        filteredWords.removeAll { !keepCapturedMemoryWord($0, at: now) }
+        currentIndex = filteredWords.firstIndex(where: { $0.id == selectedID }) ?? min(oldIndex, max(0, filteredWords.count - 1))
+        if currentWord?.id != selectedID { revealed = false }
+        if filteredWords.isEmpty || filteredWords.allSatisfy({ memoryAnsweredIDs.contains($0.id) }) { completed = true; revealed = false }
+    }
+
+    @discardableResult func answerMemory(wordID: String, remembered: Bool, at date: Date = Date()) -> Bool {
+        let now = MemoryRecord.milliseconds(date)
+        guard mode == .memory, memorySessionActive, !completed,
+              let word = currentWord, word.id == wordID, !isDeleted(wordID), rating(word) == 2,
+              !remembered || word.meanings[meaningLanguage].map({ !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }) == true,
+              !memoryAnsweredIDs.contains(wordID),
+              memoryIsDue(word, at: now) else { return false }
+        let record: MemoryRecord
+        do {
+            record = try (memoryRecord(for: word) ?? MemoryRecord(stage: 0, dueAt: 0, updatedAt: 0))
+                .answering(remembered: remembered, at: now)
+        } catch { storageError = error.localizedDescription; return false }
+        if record.stage == MemoryRecord.masteryStage {
+            do {
+                var metadata = try preparedSyncMetadata()
+                try metadata.edit(dictionaryID: dictionaryID, wordID: wordID, level: 3)
+                syncMetadata = metadata
+            } catch { storageError = error.localizedDescription; return false }
+            progress[dictionaryID, default: [:]][wordID] = 3
+            memoryMasteredCount += 1
+        }
+        memory[dictionaryID, default: [:]][wordID] = record
+        memoryAnsweredIDs.insert(wordID); memoryAnsweredCount += 1
+        memoryFeedback = record.stage == MemoryRecord.masteryStage ? "已轉為已掌握" : remembered ? "已安排下一次複習" : "已重新開始，1 天後再複習"
+        revealed = false
+        if currentIndex < filteredWords.count - 1 { currentIndex += 1 } else { completed = true }
+        persist()
+        syncInstance?.localDidChange()
+        return true
+    }
 
     private func cleanedProgress(_ input: [String: [String: Int]], dictionaries: [StudyDictionary]) -> [String: [String: Int]] {
         var output: [String: [String: Int]] = [:]
@@ -437,15 +640,18 @@ final class StudyStore {
     }
     @discardableResult private func persist() -> Bool {
         guard !restoring, !persistenceBlocked else { return false }
+        if mode == .memory { captureMemorySession(for: dictionaryID) }
         guard let persistenceURL else { return true }
         do {
             let state = SavedState(dictionaries: dictionaries.filter { !$0.isBuiltIn }, extensions: extensions,
                 progress: progress, dictionaryID: dictionaryID, mode: mode, search: search,
                 categoryID: categoryID, subcategoryID: subcategoryID, listMode: listMode,
-                hideMastered: hideMastered, hideListMeanings: hideListMeanings, showExampleTranslations: showExampleTranslations,
+                hideMastered: hideMastered, hideImpression: hideImpression, hideListMeanings: hideListMeanings, showExampleTranslations: showExampleTranslations,
+                appearance: appearance.rawValue,
                 meaningLanguage: meaningLanguage, speechRate: speechRate,
                 autoAdvance: autoAdvance, pageSize: pageSize, randomOrder: randomOrder, currentIndex: currentIndex, completed: completed,
-                deckIDs: filteredWords.map(\.id), reviewRatedIDs: Array(reviewRatedIDs), syncMetadata: syncMetadata, deletionMetadata: deletionMetadata)
+                deckIDs: filteredWords.map(\.id), reviewRatedIDs: Array(reviewRatedIDs), syncMetadata: syncMetadata, deletionMetadata: deletionMetadata,
+                memory: memory, memoryChapters: memoryChapters, memorySessions: memorySessions)
             let data = try JSONEncoder().encode(state)
             try FileManager.default.createDirectory(at: persistenceURL.deletingLastPathComponent(), withIntermediateDirectories: true)
             try data.write(to: persistenceURL, options: .atomic)
@@ -482,11 +688,14 @@ final class StudyStore {
     private func setDeletionMetadata(_ metadata: WordDeletionMetadata?) {
         deletionMetadata = metadata
         deletionFlags = Dictionary(uniqueKeysWithValues: (metadata?.records ?? []).map { ($0.key, $0.deleted) })
-        revealedListMeanings = revealedListMeanings.filter { !isDeleted($0.wordID, dictionaryID: $0.dictionaryID) }
+        if let key = revealedListMeaning, isDeleted(key.wordID, dictionaryID: key.dictionaryID) {
+            revealedListMeaning = nil
+        }
     }
 
     /// Removing visibility never rates, reveals, shuffles or advances a surviving word.
     private func refreshDeletionVisibility() {
+        if mode == .memory { refreshMemoryVisibility(); return }
         let selectedID = currentWord?.id
         let previousIndex = currentIndex
         let previousReveal = revealed
@@ -525,6 +734,57 @@ final class StudyStore {
         guard persist() else { throw ProgressSyncError.storage }
     }
 
+    func memorySnapshot() throws -> [MemorySyncRecord] {
+        try MemoryRecord.validate(memory)
+        let result = memory.flatMap { id, words in words.map { wordID, record in
+            MemorySyncRecord(dictionaryID: id, wordID: wordID, stage: record.stage, dueAt: record.dueAt, updatedAt: record.updatedAt)
+        } }.sorted {
+            SyncRecordIdentity.precedes(dictionaryID: $0.dictionaryID, wordID: $0.wordID,
+                                        otherDictionaryID: $1.dictionaryID, otherWordID: $1.wordID)
+        }
+        for record in result { try record.validate() }
+        guard persist() else { throw ProgressSyncError.storage }
+        return result
+    }
+
+    func validatedMemorySnapshot(_ incoming: [MemorySyncRecord]) throws -> [String: [String: MemoryRecord]] {
+        guard incoming.count <= 100_000 else { throw ProgressSyncError.invalidResponse }
+        // Saved schedules use Swift String keys, while wire identifiers compare exact UTF-8.
+        // Reject a colliding spelling before a lookup or write can affect another word.
+        func exactValue<Value>(_ key: String, in values: [String: Value]) throws -> Value? {
+            guard let index = values.index(forKey: key) else { return nil }
+            let entry = values[index]
+            guard entry.key.utf8.elementsEqual(key.utf8) else { throw ProgressSyncError.memoryIDCollision }
+            return entry.value
+        }
+        let incomingBooks = Set(incoming.map(\.dictionaryID))
+        let knownWords = Dictionary(uniqueKeysWithValues: dictionaries.filter { incomingBooks.contains($0.id) }.map {
+            ($0.id, Set($0.words.map(\.id)))
+        })
+        var candidate = memory
+        for item in incoming {
+            try item.validate()
+            if let ids = try exactValue(item.dictionaryID, in: knownWords), let index = ids.firstIndex(of: item.wordID),
+               !ids[index].utf8.elementsEqual(item.wordID.utf8) { throw ProgressSyncError.memoryIDCollision }
+            if let words = try exactValue(item.dictionaryID, in: candidate),
+               let current = try exactValue(item.wordID, in: words),
+               !MemorySyncRecord.wins(item.record, over: current) {
+                continue
+            }
+            candidate[item.dictionaryID, default: [:]][item.wordID] = item.record
+        }
+        try MemoryRecord.validate(candidate)
+        return candidate
+    }
+
+    func mergeMemorySnapshot(_ incoming: [MemorySyncRecord]) throws {
+        memory = try validatedMemorySnapshot(incoming)
+        restoring = true
+        refreshMemoryVisibility()
+        restoring = false
+        guard persist() else { throw ProgressSyncError.storage }
+    }
+
     private func preparedSyncMetadata() throws -> ProgressSyncMetadata {
         var metadata = syncMetadata ?? ProgressSyncMetadata()
         try metadata.seed(progress)
@@ -550,7 +810,8 @@ final class StudyStore {
         restoring = true
         syncMetadata = metadata
         applySyncRecordsToKnownWords()
-        if mode == .study && hideMastered {
+        refreshMemoryVisibility()
+        if mode == .study && (hideMastered || hideImpression) {
             let matching = matchingWords()
             let eligible = Set(matching.map(\.id))
             let prior = Set(filteredWords.map(\.id))
@@ -609,18 +870,26 @@ final class StudyStore {
     func exportBackup() throws -> Data {
         let customJSON = dictionaries.filter { !$0.isBuiltIn }.map(Self.dictionaryJSON)
         let extensionsJSON = extensions.mapValues { $0.map(Self.wordJSON) }
+        let hiddenLevels: [Int] = (hideImpression ? [2] : []) + (hideMastered ? [3] : [])
+        let visibility = Dictionary(uniqueKeysWithValues: dictionaries.map { ($0.id, hiddenLevels) })
         let data: [String: Any] = ["app": "mots", "version": 3, "exportedAt": ISO8601DateFormatter().string(from: Date()),
             "ratings": progress["fr", default: [:]], "progress": progress, "dictionaries": customJSON, "customBanks": extensionsJSON,
             "deletions": try JSONSerialization.jsonObject(with: JSONEncoder().encode(deletionMetadata?.records ?? [])),
+            "memory": try JSONSerialization.jsonObject(with: JSONEncoder().encode(memory)),
             "settings": ["dictionaryId": dictionaryID, "meaningLanguage": meaningLanguage, "view": listMode ? "list" : "card",
-                         "defaultHideMastered": hideMastered, "hideListMeanings": hideListMeanings, "showExampleTranslations": showExampleTranslations,
+                         "defaultHideMastered": hideMastered, "hideImpression": hideImpression,
+                         "visibility": visibility,
+                         "hideListMeanings": hideListMeanings, "showExampleTranslations": showExampleTranslations,
+                         "appearance": appearance.rawValue,
                          "pageSize": pageSize, "speechRate": speechRate, "autoAdvance": autoAdvance, "order": randomOrder ? "random" : "ordered"]]
         return try JSONSerialization.data(withJSONObject: data, options: [.prettyPrinted, .sortedKeys])
     }
 
     @discardableResult func importBackup(_ data: Data) throws -> Int {
         let source = try StudyImport.object(data, limit: 50 * 1024 * 1024)
-        guard source["app"] as? String == "mots", let version = source["version"] as? Int, (1...3).contains(version) else { throw StudyDataError("請選擇 Mots 版本 1、2 或 3 的備份。") }
+        guard source["app"] as? String == "mots", let versionNumber = source["version"] as? NSNumber,
+              CFGetTypeID(versionNumber) != CFBooleanGetTypeID(), let version = versionNumber as? Int,
+              (1...3).contains(version) else { throw StudyDataError("請選擇 Mots 版本 1、2 或 3 的備份。") }
         var candidate = dictionaries
         if version == 3, let supplied = source["dictionaries"] {
             guard let library = supplied as? [[String: Any]], library.count <= 20 else { throw StudyDataError("備份辭典格式不正確。") }
@@ -683,6 +952,20 @@ final class StudyStore {
             }
         }
         var deletionCandidate = deletionMetadata
+        var memoryCandidate = memory
+        if let rawMemory = source["memory"] {
+            guard let rawMemory = rawMemory as? [String: Any] else { throw StudyDataError("卡片記憶進度格式不正確。") }
+            let decoded = try JSONDecoder().decode([String: [String: MemoryRecord]].self,
+                from: JSONSerialization.data(withJSONObject: rawMemory))
+            try MemoryRecord.validate(decoded)
+            for (dictionaryID, words) in decoded {
+                for (wordID, record) in words {
+                    let replace = memoryCandidate[dictionaryID]?[wordID].map { MemorySyncRecord.wins(record, over: $0) } ?? true
+                    if replace { memoryCandidate[dictionaryID, default: [:]][wordID] = record }
+                }
+            }
+            try MemoryRecord.validate(memoryCandidate)
+        }
         if let rawDeletions = source["deletions"] {
             let incomingDeletions = try WordDeletionRecord.decodeRecords(rawDeletions)
             var candidate = deletionCandidate ?? WordDeletionMetadata()
@@ -693,6 +976,7 @@ final class StudyStore {
         restoring = true
         dictionaries = candidate; progress = cleanedProgress(merged, dictionaries: candidate)
         syncMetadata = metadata
+        memory = memoryCandidate
         setDeletionMetadata(deletionCandidate)
         applySyncRecordsToKnownWords()
         if version >= 2, let settings = source["settings"] as? [String: Any] {
@@ -701,15 +985,20 @@ final class StudyStore {
             if let view = settings["view"] as? String { listMode = view == "list" }
             if let order = settings["order"] as? String { randomOrder = order == "random" }
             if let hidden = settings["defaultHideMastered"] as? Bool { hideMastered = hidden }
+            if let hidden = settings["hideImpression"] as? Bool { hideImpression = hidden }
+            else if let visibility = settings["visibility"] as? [String: [Int]], let hidden = visibility[dictionaryID] {
+                hideImpression = hidden.contains(2)
+            }
             if let hidden = settings["hideListMeanings"] as? Bool { hideListMeanings = hidden }
             if let shown = settings["showExampleTranslations"] as? Bool { showExampleTranslations = shown }
+            if let value = settings["appearance"] as? String, let imported = StudyAppearance(rawValue: value) { appearance = imported }
             if let size = settings["pageSize"] as? Int, [10,20,50,100].contains(size) { pageSize = size }
             if let rate = settings["speechRate"] as? Double { speechRate = min(0.6, max(0.25, rate)) }
             if let advance = settings["autoAdvance"] as? Bool { autoAdvance = advance }
 
         }
         search = ""; categoryID = nil; subcategoryID = nil
-        if mode == .review { mode = .study }
+        if mode == .review || (mode == .memory && currentDictionary.isGrammar) { mode = .study }
         restoring = false
         rebuildDeck(); persist()
         syncInstance?.localDidChange()
@@ -745,8 +1034,10 @@ private struct SavedState: Codable {
     let subcategoryID: String?
     let listMode: Bool
     let hideMastered: Bool
+    let hideImpression: Bool?
     let hideListMeanings: Bool?
     let showExampleTranslations: Bool?
+    let appearance: String?
     let meaningLanguage: String
     let speechRate: Double
     let autoAdvance: Bool
@@ -758,4 +1049,7 @@ private struct SavedState: Codable {
     let reviewRatedIDs: [String]
     let syncMetadata: ProgressSyncMetadata?
     let deletionMetadata: WordDeletionMetadata?
+    let memory: [String: [String: MemoryRecord]]?
+    let memoryChapters: [String: [String]]?
+    let memorySessions: MemorySessionLibrary?
 }

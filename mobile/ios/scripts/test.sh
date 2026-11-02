@@ -23,7 +23,10 @@ run_suite() {
 run_suite StudyModelsTests
 run_suite StudyStoreTests "$ios_root/Mots/Resources/catalog.json"
 run_suite ListMeaningTests
+run_suite AppearanceTests
+run_suite HideImpressionTests
 run_suite CardPagingTests
 run_suite GrammarStudyStoreTests "$ios_root/Mots/Resources/catalog.json"
 run_suite ProgressSyncTests
 run_suite WordDeletionTests
+run_suite MemoryStudyTests

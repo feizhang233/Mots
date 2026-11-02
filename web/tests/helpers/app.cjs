@@ -46,6 +46,7 @@ function context(options = {}) {
         hidden: false,
         open: false,
         dataset: {},
+        style: {},
         attrs: {},
         events: {},
         files: [],
@@ -131,10 +132,32 @@ function context(options = {}) {
     },
     createDocumentFragment: () => new Element(),
     body: new Element('body'),
+    documentElement: new Element('html'),
     activeElement: new Element('active'),
     addEventListener(type, fn) {
       (listeners[`document:${type}`] ??= []).push(fn);
     },
+  };
+  const mediaQueries = new Map();
+  const matchMedia = (query) => {
+    if (!mediaQueries.has(query)) {
+      const handlers = [];
+      mediaQueries.set(query, {
+        matches: query === '(prefers-color-scheme: dark)' && options.dark === true,
+        media: query,
+        addEventListener(type, handler) {
+          if (type === 'change') handlers.push(handler);
+        },
+        addListener(handler) {
+          handlers.push(handler);
+        },
+        change(matches) {
+          this.matches = matches;
+          for (const handler of handlers) handler({ matches, media: query });
+        },
+      });
+    }
+    return mediaQueries.get(query);
   };
   const ctx = {
     document,
@@ -147,7 +170,7 @@ function context(options = {}) {
     WeakMap,
     WeakSet,
     JSON,
-    Math,
+    Math: options.random ? Object.assign(Object.create(Math), { random: options.random }) : Math,
     Date,
     Promise,
     crypto: webcrypto,
@@ -161,7 +184,7 @@ function context(options = {}) {
         ctx.location = new URL(url);
       },
     },
-    matchMedia: () => ({ matches: false, addEventListener() {} }),
+    matchMedia,
     setTimeout: () => 0,
     clearTimeout() {},
     requestAnimationFrame(fn) {

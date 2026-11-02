@@ -20,6 +20,7 @@ const output = path.join(__dirname, 'production-verification');
     consoleErrors: [],
     failedResponses: [],
     blockedRequests: [],
+    suppressedAnalyticsRequests: [],
     checks: [],
   };
   fs.mkdirSync(output, { recursive: true });
@@ -27,6 +28,13 @@ const output = path.join(__dirname, 'production-verification');
     const context = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
     await context.route('**/*', async (route) => {
       const request = route.request();
+      const requestURL = new URL(request.url());
+      if (request.method() === 'POST' && requestURL.origin === new URL(origin).origin &&
+          requestURL.pathname === '/cdn-cgi/rum') {
+        // Suppress Cloudflare performance telemetry without sending its payload.
+        result.suppressedAnalyticsRequests.push(request.url());
+        return route.fulfill({ status: 204, body: '' });
+      }
       if (!['GET', 'HEAD'].includes(request.method()) || request.url().includes('/api/sync/')) {
         result.blockedRequests.push({ method: request.method(), url: request.url() });
         return route.abort();

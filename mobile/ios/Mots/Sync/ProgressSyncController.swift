@@ -99,6 +99,7 @@ final class ProgressSyncController {
             // Persist local seed before any outbound request. Credentials never enter this state file.
             _ = try store.syncSnapshot()
             _ = try store.deletionSnapshot()
+            _ = try store.memorySnapshot()
             let candidate: String
             if let existingCode { candidate = existingCode }
             else {
@@ -112,10 +113,14 @@ final class ProgressSyncController {
             guard generation == token else { return }
             let remoteDeletions = try await exchangeDeletions(code: candidate, records: [])
             guard generation == token else { return }
+            let remoteMemory = try await exchangeMemory(code: candidate, records: [])
+            guard generation == token else { return }
+            _ = try store.validatedMemorySnapshot(remoteMemory)
             try credentials.write(candidate)
             code = candidate; connected = true; revealedCode = nil
             try store.mergeSyncSnapshot(remote)
             try store.mergeDeletionSnapshot(remoteDeletions)
+            try store.mergeMemorySnapshot(remoteMemory)
             needsUpload = true; requested = true; status = "已配對，正在同步…"; retrySeconds = 2
         } catch { if generation == token { status = safeDescription(error) } }
     }
@@ -143,6 +148,7 @@ final class ProgressSyncController {
             do {
                 let snapshot = try store.syncSnapshot()
                 let deletionSnapshot = try store.deletionSnapshot()
+                let memorySnapshot = try store.memorySnapshot()
                 let uploading = needsUpload
                 needsUpload = false
                 let remote = try await exchange(code: code, records: uploading ? snapshot : [])
@@ -151,11 +157,21 @@ final class ProgressSyncController {
                 let remoteDeletions = try await exchangeDeletions(code: code, records: uploading ? deletionSnapshot : [])
                 guard generation == token else { return }
                 try store.mergeDeletionSnapshot(remoteDeletions)
+                let remoteMemory = try await exchangeMemory(code: code, records: uploading ? memorySnapshot : [])
+                guard generation == token else { return }
+                try store.mergeMemorySnapshot(remoteMemory)
+                let currentMemory = try store.memorySnapshot()
                 let current = try store.syncSnapshot()
                 let currentDeletions = try store.deletionSnapshot()
-                // Both channels merge CURRENT local records; in-flight edits are sent on the next serialized pass.
-                let canonicalRemote = try ProgressSyncRecord.canonical(remote)
-                if current != canonicalRemote || currentDeletions != remoteDeletions { needsUpload = true; requested = true }
+                // All channels merge CURRENT local records; in-flight edits are sent on the next serialized pass.
+                if current != remote || currentDeletions != remoteDeletions || currentMemory != remoteMemory {
+                    // If the server failed to acknowledge an unchanged upload, use normal retry backoff.
+                    if uploading && current == snapshot && currentDeletions == deletionSnapshot && currentMemory == memorySnapshot {
+                        throw ProgressSyncError.server
+                    }
+                    needsUpload = true
+                    requested = true
+                }
                 retrySeconds = 2
                 status = needsUpload ? "有進度等待同步" : "已同步"
             } catch {
@@ -187,6 +203,22 @@ final class ProgressSyncController {
     private func exchangeDeletions(code: String, records: [WordDeletionRecord]) async throws -> [WordDeletionRecord] {
         let response = try await send(path: "deletions", code: code, body: JSONEncoder().encode(DeletionEnvelope(records: records)))
         return try WordDeletionRecord.decodeEnvelope(response)
+    }
+    private struct MemoryEnvelope: Encodable { var version = 1; let records: [MemorySyncRecord] }
+    private func exchangeMemory(code: String, records: [MemorySyncRecord]) async throws -> [MemorySyncRecord] {
+        let response = try await send(path: "memory", code: code, body: JSONEncoder().encode(MemoryEnvelope(records: records)))
+        let incoming = try MemorySyncRecord.decodeEnvelope(response)
+        // Canonicalize duplicate keys and ordering before comparing snapshots.
+        var winners: [String: MemorySyncRecord] = [:]
+        for item in incoming {
+            let key = SyncRecordIdentity.key(dictionaryID: item.dictionaryID, wordID: item.wordID)
+            if let old = winners[key], !MemorySyncRecord.wins(item.record, over: old.record) { continue }
+            winners[key] = item
+        }
+        return winners.values.sorted {
+            SyncRecordIdentity.precedes(dictionaryID: $0.dictionaryID, wordID: $0.wordID,
+                                        otherDictionaryID: $1.dictionaryID, otherWordID: $1.wordID)
+        }
     }
     private func send(path: String, code: String?, body: Data) async throws -> Data {
         guard baseURL.scheme == "https", body.count <= 32 * 1024 * 1024 else { throw ProgressSyncError.invalidResponse }

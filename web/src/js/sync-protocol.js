@@ -103,6 +103,7 @@
     capacityError: 'invalid-deletions',
   });
   window.MotsSyncProtocol = Object.freeze({
+    sort,
     MAX,
     object,
     exactKeys,

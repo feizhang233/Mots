@@ -100,7 +100,7 @@ struct ProgressSyncMetadata: Codable, Equatable {
 }
 
 enum ProgressSyncError: LocalizedError {
-    case invalidResponse, invalidCode, unauthorized, server, storage, clockLimit, credentialStorage
+    case invalidResponse, invalidCode, unauthorized, server, storage, clockLimit, credentialStorage, memoryIDCollision
     var errorDescription: String? {
         switch self {
         case .invalidResponse: return "同步資料格式不正確，本機進度已保留。"
@@ -110,6 +110,7 @@ enum ProgressSyncError: LocalizedError {
         case .storage: return "本機進度尚未安全儲存，儲存成功後才能同步。"
         case .clockLimit: return "同步版本已達上限，請先匯出備份。"
         case .credentialStorage: return "無法在鑰匙圈儲存配對碼，請再試一次。"
+        case .memoryIDCollision: return "不同的卡片記憶代碼在此裝置被視為同一詞條。本機排程已保留，無法合併這次排程。"
         }
     }
 }

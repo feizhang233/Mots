@@ -88,3 +88,36 @@ def unique_json_object(pairs):
             raise ValueError("Duplicate JSON field")
         result[key] = value
     return result
+
+
+MEMORY_FIELDS = {"dictionaryID", "wordID", "stage", "dueAt", "updatedAt"}
+MAX_TIMESTAMP = 253402300799999
+
+
+def memory_rank(record):
+    # Same conservative tie-break as Web backups and native imports.
+    return record["updatedAt"], -record["stage"], record["dueAt"]
+
+
+def validated_memory(envelope, maximum=MAX_RECORDS):
+    if (not isinstance(envelope, dict) or set(envelope) != {"version", "records"}
+            or type(envelope["version"]) is not int or envelope["version"] != 1
+            or not isinstance(envelope["records"], list)):
+        raise SyncError(400, "Invalid memory envelope")
+    if len(envelope["records"]) > maximum:
+        raise SyncError(413, "Too many memory records")
+    winners = {}
+    for record in envelope["records"]:
+        if (not isinstance(record, dict) or set(record) != MEMORY_FIELDS
+                or not identifier(record["dictionaryID"], 128)
+                or not identifier(record["wordID"], 256)
+                or type(record["stage"]) is not int or not 0 <= record["stage"] <= 5
+                or any(type(record[k]) is not int or not 0 <= record[k] <= MAX_TIMESTAMP
+                       for k in ("dueAt", "updatedAt"))
+                or (record["dueAt"] != 0 if record["stage"] == 5
+                    else record["dueAt"] < record["updatedAt"])):
+            raise SyncError(400, "Invalid memory record")
+        key = record["dictionaryID"], record["wordID"]
+        if key not in winners or memory_rank(record) > memory_rank(winners[key]):
+            winners[key] = record
+    return winners

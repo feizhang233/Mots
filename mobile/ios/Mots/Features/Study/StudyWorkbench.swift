@@ -110,6 +110,8 @@ struct StudyWorkbench: View {
                         .accessibilityIdentifier("study.hide-translations")
                 }
                 Toggle("隱藏已掌握", isOn: $store.hideMastered)
+                Toggle("隱藏有印象", isOn: $store.hideImpression)
+                    .accessibilityIdentifier("study.hide-impression")
                 Picker(isGrammar ? "語法順序" : "詞序", selection: $store.randomOrder) {
                     Text("原書順序").tag(false)
                     Text("隨機順序").tag(true)
@@ -117,12 +119,13 @@ struct StudyWorkbench: View {
                 if store.randomOrder {
                     Button("重新洗牌", systemImage: "shuffle") { store.reshuffle() }
                 }
-                if store.categoryID != nil || !store.search.isEmpty || store.hideMastered {
+                if store.categoryID != nil || !store.search.isEmpty || store.hideMastered || store.hideImpression {
                     Button("顯示全部\(entryName)") {
                         store.categoryID = nil
                         store.subcategoryID = nil
                         store.search = ""
                         store.hideMastered = false
+                        store.hideImpression = false
                     }
                 }
             } label: {
@@ -130,7 +133,7 @@ struct StudyWorkbench: View {
                     .font(.body.weight(.semibold))
                     .foregroundStyle(MotsTheme.accent)
                     .overlay(alignment: .topTrailing) {
-                        if store.hideMastered || (!isGrammar && store.hideListMeanings) {
+                        if store.hideMastered || store.hideImpression || (!isGrammar && store.hideListMeanings) {
                             Circle()
                                 .fill(MotsTheme.accent)
                                 .frame(width: 6, height: 6)
@@ -152,6 +155,7 @@ struct StudyWorkbench: View {
     private var filterAccessibilityLabel: String {
         var parts = ["篩選\(entryName)"]
         if store.hideMastered { parts.append("已隱藏已掌握") }
+        if store.hideImpression { parts.append("已隱藏有印象") }
         if !isGrammar && store.hideListMeanings { parts.append("已隱藏翻譯") }
         return parts.joined(separator: "，")
     }
@@ -204,6 +208,7 @@ struct StudyWorkbench: View {
                     store.categoryID = nil
                     store.subcategoryID = nil
                     store.hideMastered = false
+                    store.hideImpression = false
                 }
                 .buttonStyle(.glass)
             }

@@ -1,6 +1,16 @@
 import SwiftUI
 import UIKit
 
+extension StudyAppearance {
+    var colorScheme: ColorScheme? {
+        switch self {
+        case .system: nil
+        case .light: .light
+        case .dark: .dark
+        }
+    }
+}
+
 /// The native adapter for the Mots palette in DESIGN.md.
 /// Content stays opaque; Liquid Glass belongs to navigation and controls.
 enum MotsTheme {

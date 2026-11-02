@@ -77,12 +77,13 @@ api.syncAll();
 api.closeAll();
 assert.equal(Object.isFrozen(api), true);
 const html = fs.readFileSync(path.join(__dirname, '../src/index.html'), 'utf8');
-assert.equal((html.match(/<select\b/g) || []).length, 8, 'All eight shared selectors are native');
+assert.equal((html.match(/<select\b/g) || []).length, 9, 'All nine shared selectors are native');
 assert(!/<md-|@material/.test(html), 'The interface has no retired custom elements');
 for (const id of [
   'dictionary-switcher',
   'study-language',
   'meaning-language',
+  'appearance',
   'page-size',
   'audio-mode',
   'export-unit',

@@ -3,10 +3,22 @@ import CoreFoundation
 
 /// IDs intentionally match the web edition so an imported backup keeps its progress.
 enum StudyMode: String, CaseIterable, Codable, Identifiable {
-    case lookup, study, review
+    case lookup, study, review, memory
     var id: String { rawValue }
     var title: String {
-        switch self { case .lookup: "查詞"; case .study: "主題學習"; case .review: "隨機複習" }
+        switch self { case .lookup: "查詞"; case .study: "主題學習"; case .review: "隨機複習"; case .memory: "卡片記憶" }
+    }
+}
+
+enum StudyAppearance: String, CaseIterable, Identifiable {
+    case system, light, dark
+    var id: String { rawValue }
+    var title: String {
+        switch self {
+        case .system: "跟隨系統"
+        case .light: "一般模式"
+        case .dark: "深色模式"
+        }
     }
 }
 

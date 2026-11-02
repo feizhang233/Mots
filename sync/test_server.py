@@ -15,6 +15,7 @@ import stat
 import tempfile
 import threading
 import unittest
+from unittest.mock import patch
 
 spec = importlib.util.spec_from_file_location("mots_sync_server", Path(__file__).with_name("server.py"))
 sync = importlib.util.module_from_spec(spec)
@@ -46,6 +47,31 @@ class SyncTests(unittest.TestCase):
                                        kwargs={"poll_interval": 0.02}, daemon=True)
         self.thread.start()
         self.addCleanup(self.stop_server)
+
+    def test_memory_sync_validation_convergence_and_isolation(self):
+        code = self.create()
+        other = self.create()
+        def exchange(rows, token=code):
+            return self.request("/memory", {"version": 1, "records": rows}, token)
+        a = {"dictionaryID": "fr", "wordID": "a", "stage": 1,
+             "updatedAt": 1000, "dueAt": 86401000}
+        b = dict(a, wordID="b", stage=0, updatedAt=2000, dueAt=86402000)
+        self.assertEqual(exchange([a])[0], 200)
+        self.assertEqual(exchange([b])[2]["records"], [a, b])
+        self.assertEqual(exchange([], other)[2]["records"], [])
+        # Same-time conflicts converge conservatively, regardless of upload order.
+        tie = dict(a, stage=0)
+        self.assertEqual(exchange([tie])[2]["records"], [tie, b])
+        self.assertEqual(exchange([a])[2]["records"], [tie, b])
+        reset = dict(a, stage=0, updatedAt=3000, dueAt=3000)
+        self.assertEqual(exchange([reset])[2]["records"], [reset, b])
+        self.assertEqual(exchange([a])[2]["records"], [reset, b])
+        for bad in [dict(a, stage=True), dict(a, dueAt=0), dict(a, updatedAt=1.5),
+                    dict(a, stage=6), dict(a, extra=1), dict(a, wordID="__proto__")]:
+            self.assertEqual(exchange([dict(a, wordID="new"), bad])[0], 400)
+            self.assertEqual(exchange([])[2]["records"], [reset, b])
+        self.assertEqual(self.request("/memory", {"version": 1, "records": []})[0], 401)
+        self.assertEqual(self.store.exchange_memory(self.store.authenticate(code), {"version": 1, "records": []})["records"], [reset, b])
 
     def stop_server(self):
         self.server.shutdown()
@@ -233,6 +259,33 @@ class SyncTests(unittest.TestCase):
         self.store.max_groups = 2
         self.assertEqual(self.request("/create", {})[0], 503)
 
+    def test_rejected_clients_do_not_evict_active_creation_limits(self):
+        limiter = sync.CreationLimiter(limit=1, window=10, global_limit=2)
+        with patch("sync.http_server.time.monotonic") as clock:
+            clock.return_value = 0
+            self.assertTrue(limiter.allow("first"))
+            clock.return_value = 1
+            self.assertTrue(limiter.allow("second"))
+            for client in range(2050):
+                self.assertFalse(limiter.allow(client))
+            clock.return_value = 10
+            self.assertFalse(limiter.allow("second"), "Its request is still inside the window")
+            self.assertTrue(limiter.allow("first"))
+            clock.return_value = 11
+            self.assertTrue(limiter.allow("second"))
+
+    def test_empty_polls_can_read_while_a_write_is_pending(self):
+        code = self.create()
+        self.exchange(code, [record()])
+        with self.store.connect() as writer:
+            writer.execute("BEGIN IMMEDIATE")
+            writer.execute("UPDATE records SET level = 3")
+            self.assertEqual(self.exchange(code), [record()], "Read the last committed rating")
+            self.assertEqual(self.deletions(code), [])
+            status, _, payload = self.request("/memory", {"version": 1, "records": []}, code)
+            self.assertEqual((status, payload["records"]), (200, []))
+        self.assertEqual(self.exchange(code), [record(level=3)])
+
     def test_exact_origins_and_no_wildcard_cors(self):
         for origin in [ORIGIN, "https://mots.feizhang233.com:443", "http://localhost:5173",
                        "http://127.0.0.1:8899", "http://[::1]:8080"]:
@@ -241,10 +294,12 @@ class SyncTests(unittest.TestCase):
             self.assertEqual(headers.get("Access-Control-Allow-Origin"), origin)
             self.assertEqual(headers["Vary"], "Origin")
         for origin in ["null", "https://evil.test", "http://mots.feizhang233.com", ORIGIN + ".evil",
-                       ORIGIN + "/", "https://mots.feizhang233.com@evil.test", "http://localhost.evil", "https://127.0.0.1:0"]:
+                       ORIGIN + "/", "https://mots.feizhang233.com@evil.test", "http://localhost.evil", "https://127.0.0.1:0",
+                       "http://[::1].evil.test", "http://localhost:", ORIGIN + "?", ORIGIN + "#"]:
             status, headers, _ = self.request("/create", {}, origin=origin)
             self.assertEqual(status, 403)
             self.assertNotIn("Access-Control-Allow-Origin", headers)
+        self.assertFalse(sync.origin_allowed("https://mots.fei\r\nzhang233.com"))
         status, headers, body = self.request("/health", method="GET", origin=None)
         self.assertEqual((status, body), (200, {"version": 1, "status": "ok"}))
         self.assertNotIn("Access-Control-Allow-Origin", headers)

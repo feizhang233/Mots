@@ -27,7 +27,13 @@ def main() -> None:
     previous = remote("readlink", "-f", f"{BASE}/current").decode().strip()
     remote("mkdir", "-p", candidate)
     sources = ["web", "database", "deploy", "sync", "scripts", "README.md", "AUDIO.md", "DESIGN.md", "UX-CONTRACT.md"]
-    subprocess.run(["rsync", "-az", "--checksum", "--exclude=__pycache__", *sources, f"{HOST}:{candidate}/"], cwd=ROOT, check=True)
+    upload = ["rsync", "-az", "--checksum", "--exclude=__pycache__"]
+    # Releases are immutable. Reuse identical files on the receiver rather than
+    # uploading the entire audio catalog for every interface update. Changed files
+    # still use rsync's normal replacement, keeping the previous release intact.
+    if previous.startswith(f"{BASE}/releases/"):
+        upload.append(f"--link-dest={previous}")
+    subprocess.run([*upload, *sources, f"{HOST}:{candidate}/"], cwd=ROOT, check=True)
     if remote("cat", f"{candidate}/deploy/release-manifest.json") != manifest:
         raise RuntimeError("Uploaded release manifest differs from the checked local snapshot")
     print(remote("python3", f"{candidate}/deploy/install.py", release).decode(), end="")

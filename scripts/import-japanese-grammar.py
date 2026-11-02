@@ -211,8 +211,7 @@ def books() -> dict:
             "thematicComparisonNoteCount": len(published_themes), "dictionaries": dictionaries}
 
 
-def outputs() -> dict[Path, bytes]:
-    data = books()
+def outputs(data: dict) -> dict[Path, bytes]:
     text = RUNTIME.read_text()
     start = text.index(BEGIN) + len(BEGIN)
     end = text.index(END, start)
@@ -225,13 +224,13 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
-    for path, content in outputs().items():
+    data = books()
+    for path, content in outputs(data).items():
         if args.check:
             if not path.is_file() or path.read_bytes() != content:
                 raise ValueError(f"Stale Japanese grammar: {path.relative_to(ROOT)}; run scripts/import-japanese-grammar.py")
         else:
             path.write_bytes(content)
-    data = books()
     print(f"{'Verified' if args.check else 'Imported'} Japanese grammar: {data['standardEntryCount']} ordinary entries; "
           f"{data['thematicTypeCount']} thematic types, {data['thematicStudyEntryCount']} study entries including comparison notes.")
 

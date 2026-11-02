@@ -40,10 +40,11 @@ french-atelier/
 | 模組（`web/src/js/`）           | 責任                                               |
 | ------------------------------- | -------------------------------------------------- |
 | `app.js`                        | 狀態、路由、學習動作、儲存與匯入的提交協調         |
+| `memory.js`                     | 卡片記憶間隔、到期排序、掌握判定、備份校驗與合併 |
 | `workspace.js`                  | 從傳入模型產生首頁、列表、卡片與複習 HTML          |
 | `settings-panel.js`             | 設定分組渲染、展開、遮碼及就地回饋                 |
 | `sync-protocol.js`              | 熟悉程度與刪除記錄的共用嚴格驗證、排序及合併規則   |
-| `progress-sync.js`              | 唯一配對／網路擁有者；雙通道交換、重試與跨分頁協調 |
+| `progress-sync.js`              | 配對、熟悉度／刪除／記憶排程交換、重試與跨分頁協調 |
 | `deletion-state.js`             | 刪除修訂的本機儲存、時鐘、恢復及備份預檢           |
 | `dictionaries.js`、`entries.js` | 新辭典、擴充詞條及舊資料格式驗證                   |
 | `languages.js`                  | 語言、中文轉換資料與德語／日語示例詞庫             |
@@ -59,7 +60,7 @@ french-atelier/
 
 `App/AppView.swift` 只組裝導航與工作區；`Features/Study/` 擁有學習控制、Cards 的翻頁容器及 List 的原生側滑；`Features/Settings/` 擁有設定分組、同步設定和已刪除詞條恢復。共用熟悉程度與發音控制位於 `Shared/WordControls.swift`，顏色及系統材質位於 `Shared/Theme.swift`。
 
-`Data/StudyStore.swift` 是學習位置、篩選、隨機複習、進度、刪除與本機存檔的唯一擁有者。畫面呼叫 store 的動作，不另外保存一套學習記錄。`Sync/` 分離純修訂資料、Keychain 憑證和非同步傳輸控制；`Audio/SpeechPlayer.swift` 擁有發音生命週期。`Domain/Models.swift` 保存共用值型別。
+`Data/StudyStore.swift` 是學習位置、篩選、隨機複習、進度、刪除與本機存檔的唯一擁有者。畫面呼叫 store 的動作，不另外保存一套學習記錄。`Sync/` 分離純修訂資料、Keychain 憑證和非同步傳輸控制；`Audio/SpeechPlayer.swift` 擁有發音生命週期。`Domain/Models.swift` 保存共用值型別。`Domain/MemorySchedule.swift` 定義卡片記憶階段與相容備份格式；`Features/Study/MemoryWorkbench.swift` 使用共享卡片顯示章節選擇、作答及完成狀態，持久化與熟悉度提交仍由 StudyStore 負責。
 
 `generate-project.py` 登記來源並保留現有簽名 Team 和 Bundle ID。新增 Swift 檔時必須同時通過工程來源完整性測試；Foundation 邏輯測試與含 SwiftUI／UIKit 的平台構建分開驗證。詳細入口見 [`../mobile/ios/README.md`](../mobile/ios/README.md)。
 
@@ -69,17 +70,17 @@ french-atelier/
 | --------------------- | --------------------------------------------------------- |
 | `sync/server.py`      | 命令列啟動入口                                            |
 | `sync/protocol.py`    | 協議常量、嚴格 JSON／記錄驗證與修訂比較                   |
-| `sync/store.py`       | 憑證摘要、私人 SQLite、兩條通道的原子交易                 |
+| `sync/store.py`       | 憑證摘要、私人 SQLite、三條通道共用的原子合併與快照讀取 |
 | `sync/http_server.py` | HTTP 路由、Origin／CORS、鑑權順序、請求限制與建立配對限流 |
 | `sync/test_server.py` | 使用真實本機 HTTP 的整合回歸                              |
 
-服務可用 `python3 sync/server.py` 或 `python3 -m sync.server` 啟動。熟悉程度與刪除各有獨立端點及修訂集合，沿用同一私人配對；恢復記錄也要保留，缺少記錄不代表恢復。協議唯一規格見 [`../sync/PROTOCOL.md`](../sync/PROTOCOL.md)。
+服務可用 `python3 sync/server.py` 或 `python3 -m sync.server` 啟動。熟悉度、刪除狀態與記憶排程共用私人配對，各有獨立端點及合併規則。刪除與恢復都保留明確紀錄。各通道的格式見 [`../sync/PROTOCOL.md`](../sync/PROTOCOL.md)。
 
 ## 資料與相容性
 
 - `database/runtime/` 是詞條、分類、音訊清單及音訊的共用來源；單元 JSON／Excel 也在 `database/`。生成的 Web 與 App 副本不得獨立修改。
 - 原有辭典／詞條 ID、本機儲存鍵、備份版本與同步線上格式保持相容。重構不觸發資料遷移或清除學習記錄。
-- 普通與主題語法使用不同書籍 ID／資料庫；`kind: grammar` 搭配 `grammarMode: standard | thematic` 決定操作方式。缺少欄位的舊書籍視為普通語法，不能用顯示設定或備份將同一本書改成另一類。三本主題語法內建書先保留空內容，等待來源資料。
+- 普通與主題語法使用不同書籍 ID／資料庫。`kind: grammar` 搭配 `grammarMode: standard | thematic` 決定操作方式。缺少模式欄位的舊書籍視為普通語法。日語主題書已有內容，法語與德語主題書預留待匯入。
 - 配對碼不進入備份、日誌或來源包。服務端私人 SQLite 位於發布目錄外，不能加入公開資產。
 - 舊資料相容分支及原書音訊是仍在使用的能力，不能只因檔案大或名稱舊而當作冗餘刪除。
 
@@ -99,4 +100,4 @@ make package       # 驗證後重新生成離線 HTML／完整 ZIP
 
 JS／HTML／CSS 遵循 `.prettierrc.json`。構建工具只依賴 Python 標準庫和 Node.js；無需在產品中加入前端框架。驗證記錄需區分自動測試、瀏覽器操作、Xcode 構建與實機安裝。
 
-部署使用 `make prepare` 生成 SHA-256 清單，或 `make sync-vps` 驗證後發布。同步服務的每個執行期模組都必須列在 `deploy/common.py` 的 `SYNC_RELEASE_FILES`；漏列、遺失或內容損壞會在啟用前失敗。發布與回退流程見 [`../deploy/README.md`](../deploy/README.md)。
+部署使用 `make prepare` 生成 SHA-256 清單，或 `make sync-vps` 驗證後發布。同步服務的執行期模組、三個服務單元、Nginx 與隧道設定均列在 `deploy/common.py` 的 `REQUIRED_RELEASE_FILES`，啟用前逐一校驗。發布與回退流程見 [`../deploy/README.md`](../deploy/README.md)。

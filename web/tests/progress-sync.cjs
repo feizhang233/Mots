@@ -4,6 +4,7 @@ const vm = require('node:vm');
 const { webcrypto } = require('node:crypto');
 const { context, read, upload, assert } = require('./helpers/app.cjs');
 
+const memorySource = fs.readFileSync(path.join(__dirname, '../src/js/memory.js'), 'utf8');
 const source = fs.readFileSync(path.join(__dirname, '../src/js/progress-sync.js'), 'utf8');
 const protocolSource = fs.readFileSync(path.join(__dirname, '../src/js/sync-protocol.js'), 'utf8');
 const deletionSource = fs.readFileSync(path.join(__dirname, '../src/js/deletion-state.js'), 'utf8');
@@ -52,10 +53,12 @@ function harness(options = {}) {
   vm.createContext(ctx);
   vm.runInContext(protocolSource, ctx);
   vm.runInContext(deletionSource, ctx);
+  vm.runInContext(memorySource, ctx);
   vm.runInContext(source, ctx);
   const api = ctx.MotsProgressSync;
   const engine = api.create({
     storage,
+    memory: options.memory,
     crypto: webcrypto,
     available: options.available ?? true,
     getLegacy: options.getLegacy || (() => ({})),
@@ -80,6 +83,7 @@ function harness(options = {}) {
     engine,
     api,
     deletionsAPI: ctx.MotsDeletions,
+    memoryAPI: ctx.MotsMemory,
     store,
     timers,
     statuses,
@@ -97,7 +101,113 @@ function harness(options = {}) {
 }
 
 async function run() {
+  // Two installations exchange real schedules independently of familiarity.
+  let schedules = [];
+  let failMemory = false;
+  let holdMemory;
+  const memoryTransport = async (route, _token, body) => {
+    if (route !== 'memory') return snapshot(body.records);
+    if (failMemory) throw new Error('network');
+    // Fixtures use distinct words except for the deliberate same-word race below.
+    const merged = new Map(schedules.map(r => [r.wordID, r]));
+    for (const r of body.records) {
+      const old = merged.get(r.wordID);
+      if (!old || r.updatedAt > old.updatedAt || (r.updatedAt === old.updatedAt && r.stage < old.stage)) merged.set(r.wordID, r);
+    }
+    schedules = [...merged.values()];
+    const response = snapshot(structuredClone(schedules));
+    if (holdMemory) { holdMemory(response); return await new Promise(resolve => { holdMemory = resolve; }); }
+    return response;
+  };
+  const memories = [{}, {}];
+  const clients = memories.map((_, i) => {
+    let api;
+    const h = harness({ transport: memoryTransport, memory: {
+      get: () => memories[i],
+      apply: incoming => { memories[i] = api.merge(memories[i], incoming); return true; },
+    } });
+    const memoryCtx = { window: { MotsSyncProtocol: null } };
+    // Reuse application schedule functions in an isolated pure context.
+    vm.createContext(memoryCtx); vm.runInContext(memorySource, memoryCtx);
+    api = memoryCtx.window.MotsMemory;
+    return h;
+  });
+  assert(await clients[0].engine.join(token));
+  assert(await clients[1].engine.join(token));
+  memories[0] = { fr: { a: { stage: 1, dueAt: 86401000, updatedAt: 1000 } } };
+  clients[0].engine.memoryChanged();
+  assert(await clients[0].engine.syncNow());
+  assert(await clients[1].engine.syncNow());
+  assert.deepEqual(JSON.parse(JSON.stringify(memories[1])), JSON.parse(JSON.stringify(memories[0])));
+  failMemory = true;
+  memories[1].fr.b = { stage: 0, dueAt: 86402000, updatedAt: 2000 };
+  clients[1].engine.memoryChanged();
+  assert.equal(await clients[1].engine.syncNow(), false);
+  assert.notEqual(clients[1].engine.state().phase, 'synced');
+  failMemory = false;
+  assert(await clients[1].engine.syncNow());
+  assert(await clients[0].engine.syncNow());
+  assert.equal(memories[0].fr.b.stage, 0, 'Offline lapses reach the other installation');
+  let heldResponse;
+  holdMemory = response => { heldResponse = response; };
+  const pendingMemory = clients[0].engine.syncNow();
+  await tick();
+  memories[0].fr.a = { stage: 0, dueAt: 86403000, updatedAt: 3000 };
+  clients[0].engine.memoryChanged();
+  const resolveMemory = holdMemory; holdMemory = null; resolveMemory(heldResponse);
+  await pendingMemory;
+  assert.equal(memories[0].fr.a.updatedAt, 3000, 'A stale response preserves an in-flight local lapse');
+  assert.equal(clients[0].engine.state().phase, 'pending');
+  assert(await clients[0].engine.syncNow());
+  assert(await clients[1].engine.syncNow());
+  assert.equal(memories[1].fr.a.updatedAt, 3000);
+  clients.forEach(c => c.engine.stop());
+
+  // The storage event may arrive after any of the three responses.
+  const replacementToken = `mots-${'B'.repeat(43)}`;
+  for (const heldRoute of ['exchange', 'deletions', 'memory']) {
+    let release;
+    const changed = harness({
+      memory: { get: () => ({}), apply: () => true },
+      transport: async (route) => {
+        if (release === null && route === heldRoute)
+          return new Promise(resolve => { release = resolve; });
+        return snapshot([]);
+      },
+    });
+    assert(await changed.engine.join(token));
+    release = null;
+    const oldFlight = changed.engine.syncNow();
+    await tick();
+    changed.store.set(changed.api.CONNECTION_KEY, JSON.stringify({ code: replacementToken }));
+    release(snapshot([]));
+    assert.equal(await oldFlight, false);
+    assert.equal(changed.engine.getCode(), replacementToken);
+    assert.equal(changed.engine.state().busy, false);
+    changed.fire(0);
+    await tick();
+    assert.equal(changed.engine.state().phase, 'synced');
+    assert.equal(changed.requests.at(-1)[1], replacementToken);
+    changed.engine.stop();
+  }
+
   const pure = harness();
+  const validMemory = { dictionaryID: 'fr', wordID: 'a', stage: 1, dueAt: 1000, updatedAt: 1000 };
+  const unusual = [
+    { ...validMemory, dictionaryID: 'toString', wordID: 'valueOf' },
+    { ...validMemory, dictionaryID: 'toString', wordID: '😀'.repeat(256) },
+  ];
+  const unusualSchedules = pure.memoryAPI.decodeSnapshot(snapshot(unusual));
+  assert.deepEqual(
+    JSON.parse(JSON.stringify(pure.memoryAPI.snapshot(pure.memoryAPI.merge({}, unusualSchedules)))),
+    unusual,
+    'Valid unknown IDs survive decoding, merging and re-upload, including full-length Unicode IDs',
+  );
+  for (const invalid of [
+    { ...validMemory, stage: true }, { ...validMemory, stage: 5 },
+    { ...validMemory, dueAt: 999 }, { ...validMemory, updatedAt: 1.5 },
+    { ...validMemory, wordID: '__proto__' }, { ...validMemory, extra: 1 },
+  ]) assert.throws(() => pure.memoryAPI.decodeSnapshot(snapshot([validMemory, invalid])));
   const canonical = pure.api.merge(
     [record('a', 3, 0, ''), record('b', 3, 5, deviceA)],
     [record('a', 1, 0, ''), record('b', 0, 5, deviceB)],
@@ -335,6 +445,19 @@ async function run() {
     'Backup import is a new versioned edit, including clear',
   );
   assert.equal(imported.records.find((r) => r.wordID === 'a').level, 2);
+  const exhausted = context({
+    source: true,
+    storage: {
+      'mots.sync.metadata.v1': { version: 1, deviceID: deviceA, counter: Number.MAX_SAFE_INTEGER, records: [] },
+    },
+  });
+  const beforeImport = [...exhausted.store];
+  await upload(exhausted, 'import-progress', {
+    app: 'mots', version: 3, progress: { fr: { same: 2 } },
+    memory: { fr: { same: { stage: 1, updatedAt: 1, dueAt: 1000 } } },
+  });
+  assert.deepEqual([...exhausted.store], beforeImport, 'A backup that cannot stamp its ratings leaves every field untouched');
+  assert.match(exhausted.$('backup-message').textContent, /上限/);
   for (const handler of app.$('export-progress').events.click) handler();
   const backup = await app.downloads.at(-1).text();
   assert(
