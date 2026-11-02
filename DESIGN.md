@@ -92,6 +92,8 @@ Web vocabulary lists keep term, original-language example, meaning, familiarity 
 
 ## Elevation & Depth
 
+Web vocabulary study and lookup lists highlight the full row on fine-pointer hover or visible keyboard focus within it. `workspace.css` owns `--list-row-highlight`, mixing 6% of the shared `--primary` into `--card` so both themes retain a quiet reading surface. The highlight changes no geometry, clears when hover/focus leaves, and does not become a persistent touch selection.
+
 Translucent navigation, sidebar and modal chrome use `--glass`, `--glass-edge`, `--glass-shadow` and `--glass-blur` (24px). Near-white reading cards remain substantially opaque. A thin light edge and soft 9% shadow suggest glass without gradient blobs or decorative shimmer. The web implementation is a CSS interpretation; the native iOS app owns actual system Liquid Glass. Document scrolling owns study content; category navigation and dialogs may scroll internally. Controls and audio feedback retain stable dimensions. Dark mode follows the system and remaps all shared colors. Reduced transparency replaces glass with opaque cards; reduced motion removes transitions; forced colors retain system-operable borders and focus.
 
 ## Shapes

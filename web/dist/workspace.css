@@ -1551,6 +1551,7 @@
   outline-offset: 3px;
 }
 .word-table.vocabulary-entry-list {
+  --list-row-highlight: color-mix(in srgb, var(--primary) 6%, var(--card));
   display: table;
   width: 100%;
   border: 0;
@@ -1560,6 +1561,14 @@
 .word-table .word-row.study-entry.vocabulary-entry {
   display: table-row;
   padding: 0;
+}
+.word-table .word-row.study-entry.vocabulary-entry:has(:focus-visible) {
+  background: var(--list-row-highlight);
+}
+@media (hover: hover) and (pointer: fine) {
+  .word-table .word-row.study-entry.vocabulary-entry:hover {
+    background: var(--list-row-highlight);
+  }
 }
 .vocabulary-entry > .list-term,
 .vocabulary-entry > .list-example,
