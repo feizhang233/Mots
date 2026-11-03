@@ -44,10 +44,20 @@ const forgotten = memory.review({ stage: 4, dueAt: now, updatedAt: now - day }, 
 assert.deepEqual(plain(forgotten), {
   record: { stage: 0, dueAt: now + day, updatedAt: now },
   mastered: false,
+  unfamiliar: false,
   accepted: true,
 });
+assert.equal(memory.review(undefined, false, now).unfamiliar, false, 'A first forgotten answer retains partial recall');
+assert.equal(memory.review(forgotten.record, false, forgotten.record.dueAt - 1).unfamiliar, false, 'An early duplicate never demotes');
+const forgottenAgain = memory.review(forgotten.record, false, forgotten.record.dueAt);
+assert.equal(forgottenAgain.accepted, true);
+assert.equal(forgottenAgain.unfamiliar, true, 'Two consecutive due forgotten answers demote familiarity');
+assert.equal(forgottenAgain.mastered, false);
+assert.equal(memory.review({ stage: 0, dueAt: now, updatedAt: now }, false, now).unfamiliar, false, 'Manual resets do not count as forgotten answers');
 const relearned = memory.review(forgotten.record, true, forgotten.record.dueAt);
 assert.equal(relearned.record.stage, 1, 'A lapse restarts the full expanding schedule');
+assert.equal(relearned.unfamiliar, false);
+assert.equal(memory.review(relearned.record, false, relearned.record.dueAt).unfamiliar, false, 'A successful recall breaks consecutive lapses');
 assert.equal(memory.review(masteredRecord, true, now).record.stage, 1, 'A manual downgrade can start again');
 
 const words = [

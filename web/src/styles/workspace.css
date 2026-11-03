@@ -1832,6 +1832,7 @@ main.vocabulary-list-layout {
 .memory-section .flashcard { min-height: 0; }
 .memory-answer-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 .memory-answer-actions .button { flex: 1 1 220px; min-height: 48px; }
+.memory-mastered-action { width: 100%; min-height: 48px; margin-top: 12px; }
 .memory-method { margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--outline); }
 .memory-method summary { min-height: 44px; cursor: pointer; color: var(--muted); }
 .memory-method summary:hover { color: var(--ink); }

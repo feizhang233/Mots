@@ -77,6 +77,11 @@ async function run() {
   const concealed = make();
   concealed.run("showMemory(); memorySelection.fr = ['1', '2']; startMemory()");
   const concealedCard = concealed.$('memory-section').innerHTML;
+  assert(!concealedCard.includes('可直接選擇是否記住'));
+  assert(!concealedCard.includes('先回想這個單字的意思'));
+  concealed.run('state.revealed = true; renderMemory()');
+  assert(!concealed.$('memory-section').innerHTML.includes('對照答案後，判斷'));
+  concealed.run('state.revealed = false; renderMemory()');
   for (const action of ['forgot', 'remembered']) {
     const button = concealedCard.match(new RegExp(`<button[^>]*data-memory-answer="${action}"[^>]*>`));
     assert(button && !button[0].includes('disabled'), `The ${action} action is enabled before revealing`);
@@ -111,6 +116,49 @@ async function run() {
   assert.deepEqual(ids(forgotten), ['same']);
   answer(forgotten, 'same', true);
   assert.equal(record(forgotten).stage, 1);
+  expire(forgotten);
+  forgotten.run('startMemory()');
+  answer(forgotten, 'same', false);
+  assert.equal(forgotten.run("levelOf('same')"), 2, 'A successful recall breaks the forgetting streak');
+
+  const repeatedLapse = make();
+  repeatedLapse.run("showMemory(); memorySelection.fr = ['1']; startMemory()");
+  answer(repeatedLapse, 'same', false);
+  const afterFirstLapse = record(repeatedLapse);
+  repeatedLapse.run("showScreen('study'); showMemory(); startMemory(); answerMemory('same',false)");
+  assert.deepEqual(record(repeatedLapse), afterFirstLapse, 'Reopening and early callbacks do not count as another lapse');
+  assert.equal(repeatedLapse.run("levelOf('same')"), 2);
+  const lapseReloaded = make({ storage: Object.fromEntries(repeatedLapse.store) });
+  assert.deepEqual(record(lapseReloaded), afterFirstLapse, 'The previous lapse survives reopening');
+  expire(lapseReloaded);
+  lapseReloaded.run("showMemory(); memorySelection.fr = ['1']; startMemory()");
+  assert(lapseReloaded.$('memory-section').innerHTML.includes('沒想起 · 轉為不熟悉'));
+  answer(lapseReloaded, 'same', false);
+  assert.equal(lapseReloaded.run("levelOf('same')"), 1, 'A second consecutive due lapse sets unfamiliar');
+  assert.equal(JSON.parse(lapseReloaded.store.get('mots.progress.v1')).same, 1);
+  const syncedLapse = JSON.parse(lapseReloaded.store.get('mots.sync.metadata.v1')).records.find(
+    (entry) => entry.dictionaryID === 'fr' && entry.wordID === 'same',
+  );
+  assert.equal(syncedLapse.level, 1, 'Demotion uses the existing familiarity sync channel');
+  assert.equal(lapseReloaded.run('memorySession.answered.size'), 1);
+  assert.equal(lapseReloaded.run('memorySession.mastered'), 0);
+  assert(lapseReloaded.$('toast').textContent.includes('連續兩次沒想起'));
+  const demotedRecord = record(lapseReloaded);
+  answer(lapseReloaded, 'same', false);
+  assert.deepEqual(record(lapseReloaded), demotedRecord, 'A stale answer cannot change the demotion');
+  lapseReloaded.run('startMemory()');
+  assert.deepEqual(ids(lapseReloaded), [], 'Unfamiliar words leave the card-memory queue');
+  const demotedReload = make({ storage: Object.fromEntries(lapseReloaded.store) });
+  assert.equal(demotedReload.run("levelOf('same')"), 1, 'Unfamiliarity survives reopening');
+  assert.deepEqual(record(demotedReload), demotedRecord);
+
+  const resetAt = Date.now() - 1000;
+  const manualReset = make({ storage: {
+    [memoryKey]: { fr: { same: { stage: 0, dueAt: resetAt, updatedAt: resetAt } } },
+  } });
+  manualReset.run("showMemory(); memorySelection.fr = ['1']; startMemory()");
+  answer(manualReset, 'same', false);
+  assert.equal(manualReset.run("levelOf('same')"), 2, 'A manual reset is not the first forgotten answer');
 
   const progression = make();
   progression.run("showMemory(); memorySelection.fr = ['1']; startMemory()");
@@ -173,6 +221,84 @@ async function run() {
   assert.equal(missingMeaning.run("levelOf('same')"), 2);
   missingMeaning.run("answerMemory('same',false)");
   assert.equal(record(missingMeaning).stage, 0, 'The forgot action still schedules a retry');
+
+  const directMastery = make();
+  directMastery.run("showMemory(); memorySelection.fr = ['1', '2']; startMemory()");
+  assert(directMastery.$('memory-section').innerHTML.includes('data-memory-mastered'), 'Concealed cards offer direct mastery');
+  directMastery.run("markMemoryMastered('b')");
+  assert.equal(record(directMastery, 'b'), null, 'Only the current card can be marked mastered');
+  directMastery.run("markMemoryMastered('same')");
+  assert.equal(directMastery.run("levelOf('same')"), 3);
+  assert.equal(record(directMastery).stage, 5);
+  assert.equal(record(directMastery).dueAt, 0);
+  assert.equal(JSON.parse(directMastery.store.get('mots.progress.v1')).same, 3);
+  assert.equal(JSON.parse(directMastery.store.get('mots.sync.metadata.v1')).records.find(
+    entry => entry.dictionaryID === 'fr' && entry.wordID === 'same',
+  ).level, 3, 'Direct mastery uses the existing familiarity sync channel');
+  assert.equal(directMastery.run('memorySession.answered.size'), 1);
+  assert.equal(directMastery.run('memorySession.remembered'), 1);
+  assert.equal(directMastery.run('memorySession.mastered'), 1, 'Direct mastery counts one completed card');
+  assert.equal(directMastery.run('deck[0].id'), 'b');
+  assert.equal(directMastery.run('state.revealed'), false);
+  assert(directMastery.$('toast').textContent.includes('已標記為「已掌握」'));
+  const masteredRecord = record(directMastery);
+  directMastery.run("markMemoryMastered('same'); answerMemory('same', false)");
+  assert.deepEqual(record(directMastery), masteredRecord, 'Repeated/stale actions cannot change mastery');
+  const masteryReload = make({ storage: Object.fromEntries(directMastery.store) });
+  assert.deepEqual(record(masteryReload), masteredRecord);
+  assert.equal(masteryReload.run('deck[0].id'), 'b', 'Reload resumes at the following card');
+  masteryReload.run("pauseMemory(); markMemoryMastered('b')");
+  assert.equal(record(masteryReload, 'b'), null, 'Paused rounds reject mastery callbacks');
+  masteryReload.run("resumeMemory(); state.revealed = true; renderMemory()");
+  assert(masteryReload.$('memory-section').innerHTML.includes('data-memory-mastered'), 'Revealed cards retain direct mastery');
+  masteryReload.run("markMemoryMastered('b')");
+  assert.equal(masteryReload.run('memorySession.mastered'), 2);
+  assert(masteryReload.$('memory-section').innerHTML.includes('新增已掌握 2 詞'));
+  click(masteryReload, 'export-progress');
+  const masteryBackup = JSON.parse(await masteryReload.downloads.at(-1).text());
+  assert.deepEqual(masteryBackup.memory.fr.same, masteredRecord);
+
+  const missingMastery = make();
+  missingMastery.run("settings.meaningLanguage = 'de'; showMemory(); memorySelection.fr = ['1']; startMemory(); markMemoryMastered('same')");
+  assert.equal(missingMastery.run("levelOf('same')"), 3, 'Explicit manual mastery does not require a translated meaning');
+
+  const staleMastery = make();
+  staleMastery.run("showMemory(); memorySelection.fr = ['1']; startMemory()");
+  const newerSchedule = { stage: 1, dueAt: Date.now() + 86400000, updatedAt: Date.now() };
+  staleMastery.store.set(memoryKey, JSON.stringify({ fr: { same: newerSchedule } }));
+  staleMastery.run("markMemoryMastered('same')");
+  assert.equal(staleMastery.run("levelOf('same')"), 2, 'A schedule saved elsewhere blocks a stale mastery action');
+  assert.deepEqual(record(staleMastery), newerSchedule);
+
+  const completedLearning = make({ storage: {
+    [memoryKey]: { fr: { same: masteredRecord } },
+  } });
+  completedLearning.run("showMemory(); memorySelection.fr = ['1']; startMemory(); markMemoryMastered('same')");
+  assert.equal(completedLearning.run("levelOf('same')"), 3, 'A level-2 word with an old completed schedule can be manually mastered again');
+  assert(record(completedLearning).updatedAt > masteredRecord.updatedAt);
+
+  const sameTimeMastery = make();
+  const actualNow = Date.now;
+  try {
+    sameTimeMastery.run(`Date.now = () => 1800000000000;
+      memoryRecords.fr = { same: { stage: 0, dueAt: Date.now(), updatedAt: Date.now() } };
+      write(memoryKey, memoryRecords); showMemory(); memorySelection.fr = ['1']; startMemory(); markMemoryMastered('same')`);
+  } finally { Date.now = actualNow; }
+  assert.equal(record(sameTimeMastery).updatedAt, 1800000000001, 'Mastery wins over a same-millisecond manual reset');
+
+  const unsavedMastery = make();
+  unsavedMastery.run("showMemory(); memorySelection.fr = ['1']; startMemory()");
+  const masteryWrite = unsavedMastery.ctx.localStorage.setItem;
+  unsavedMastery.ctx.localStorage.setItem = (key, value) => {
+    if (key === memoryKey) throw new Error('quota');
+    masteryWrite(key, value);
+  };
+  unsavedMastery.run("markMemoryMastered('same')");
+  assert.equal(record(unsavedMastery).stage, 5);
+  assert.equal(unsavedMastery.run("levelOf('same')"), 3);
+  assert(unsavedMastery.$('toast').textContent.includes('尚未儲存'));
+  click(unsavedMastery, 'export-progress');
+  assert.deepEqual(JSON.parse(await unsavedMastery.downloads.at(-1).text()).memory.fr.same, record(unsavedMastery), 'Backup recovers unsaved direct mastery');
 
   click(saved, 'export-progress');
   const backup = JSON.parse(await saved.downloads.at(-1).text());

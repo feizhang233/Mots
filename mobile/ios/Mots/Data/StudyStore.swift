@@ -575,30 +575,55 @@ final class StudyStore {
         if filteredWords.isEmpty || filteredWords.allSatisfy({ memoryAnsweredIDs.contains($0.id) }) { completed = true; revealed = false }
     }
 
-    @discardableResult func answerMemory(wordID: String, remembered: Bool, at date: Date = Date()) -> Bool {
-        let now = MemoryRecord.milliseconds(date)
+    private func currentMemoryWordForAnswer(wordID: String, at now: Double) -> StudyWord? {
         guard mode == .memory, memorySessionActive, !completed,
               let word = currentWord, word.id == wordID, !isDeleted(wordID), rating(word) == 2,
-              !remembered || word.meanings[meaningLanguage].map({ !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }) == true,
               !memoryAnsweredIDs.contains(wordID),
-              memoryIsDue(word, at: now) else { return false }
+              memoryIsDue(word, at: now) else { return nil }
+        return word
+    }
+
+    @discardableResult func answerMemory(wordID: String, remembered: Bool, at date: Date = Date()) -> Bool {
+        let now = MemoryRecord.milliseconds(date)
+        guard let word = currentMemoryWordForAnswer(wordID: wordID, at: now),
+              !remembered || word.meanings[meaningLanguage].map({ !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }) == true else { return false }
+        let previous = memoryRecord(for: word)
+        // Dated manual/sync resets also use stage zero, but have no waiting interval.
+        let becameUnfamiliar = !remembered && previous.map { $0.stage == 0 && $0.dueAt > $0.updatedAt } == true
         let record: MemoryRecord
         do {
-            record = try (memoryRecord(for: word) ?? MemoryRecord(stage: 0, dueAt: 0, updatedAt: 0))
+            record = try (previous ?? MemoryRecord(stage: 0, dueAt: 0, updatedAt: 0))
                 .answering(remembered: remembered, at: now)
         } catch { storageError = error.localizedDescription; return false }
-        if record.stage == MemoryRecord.masteryStage {
+        let newLevel: Int? = record.stage == MemoryRecord.masteryStage ? 3 : becameUnfamiliar ? 1 : nil
+        let feedback = record.stage == MemoryRecord.masteryStage ? "已轉為已掌握" : becameUnfamiliar ? "連續兩次忘記，已轉為不熟悉" : remembered ? "已安排下一次複習" : "已重新開始，1 天後再複習"
+        return commitMemoryAnswer(wordID: wordID, record: record, newLevel: newLevel, feedback: feedback)
+    }
+
+    /// An explicit familiarity choice completes this card without inventing successful recalls.
+    @discardableResult func markMemoryMastered(wordID: String, at date: Date = Date()) -> Bool {
+        let now = MemoryRecord.milliseconds(date)
+        guard currentMemoryWordForAnswer(wordID: wordID, at: now) != nil else { return false }
+        // Equal timestamps conservatively prefer the lower stage during sync merges.
+        let updatedAt = max(now, (memory[dictionaryID]?[wordID]?.updatedAt ?? -1) + 1)
+        let record = MemoryRecord(stage: MemoryRecord.masteryStage, dueAt: 0, updatedAt: updatedAt)
+        do { try record.validate() } catch { storageError = error.localizedDescription; return false }
+        return commitMemoryAnswer(wordID: wordID, record: record, newLevel: 3, feedback: "已轉為已掌握")
+    }
+
+    private func commitMemoryAnswer(wordID: String, record: MemoryRecord, newLevel: Int?, feedback: String) -> Bool {
+        if let newLevel {
             do {
                 var metadata = try preparedSyncMetadata()
-                try metadata.edit(dictionaryID: dictionaryID, wordID: wordID, level: 3)
+                try metadata.edit(dictionaryID: dictionaryID, wordID: wordID, level: newLevel)
                 syncMetadata = metadata
             } catch { storageError = error.localizedDescription; return false }
-            progress[dictionaryID, default: [:]][wordID] = 3
-            memoryMasteredCount += 1
+            progress[dictionaryID, default: [:]][wordID] = newLevel
+            if newLevel == 3 { memoryMasteredCount += 1 }
         }
         memory[dictionaryID, default: [:]][wordID] = record
         memoryAnsweredIDs.insert(wordID); memoryAnsweredCount += 1
-        memoryFeedback = record.stage == MemoryRecord.masteryStage ? "已轉為已掌握" : remembered ? "已安排下一次複習" : "已重新開始，1 天後再複習"
+        memoryFeedback = feedback
         revealed = false
         if currentIndex < filteredWords.count - 1 { currentIndex += 1 } else { completed = true }
         persist()

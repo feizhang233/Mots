@@ -90,7 +90,9 @@
     const normalized = normalizeRecord(previous);
     const current = normalized && normalized.stage !== masteryStage ? normalized : null;
     if (current && !due(current, now))
-      return { record: copyRecord(current), mastered: false, accepted: false };
+      return { record: copyRecord(current), mastered: false, unfamiliar: false, accepted: false };
+    // Stage zero with no delay is a manual reset, not a forgotten answer.
+    const unfamiliar = !remembered && current?.stage === 0 && current.dueAt > current.updatedAt;
     const stage = remembered ? (current?.stage || 0) + 1 : 0;
     const mastered = stage === masteryStage;
     const delay = mastered ? 0 : remembered ? intervals[stage - 1] : intervals[0];
@@ -99,6 +101,7 @@
     return {
       record: { stage, dueAt: mastered ? 0 : now + delay, updatedAt: now },
       mastered,
+      unfamiliar,
       accepted: true,
     };
   }

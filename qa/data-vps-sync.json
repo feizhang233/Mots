@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-02T14:43:07.707466+00:00",
-  "previousRelease": "/home/fei/Work/Mots/releases/20261102-133751-ccd9e21c",
+  "checkedAt": "2026-11-03T08:51:14.582668+00:00",
+  "previousRelease": "/home/fei/Work/Mots/releases/20261102-143820-596010b2",
   "contentVersion": "a3c5cb85b75d7d1b45e94492f3b716658d684ac57afbf7ce20ed00c272a5dbf6",
   "database": {
     "unitCount": 16,
@@ -70,15 +70,14 @@
     }
   ],
   "server": {
-    "release": "/home/fei/Work/Mots/releases/20261102-143820-596010b2",
+    "release": "/home/fei/Work/Mots/releases/20261103-084827-3f00edc9",
     "files": 17005,
     "sha256_match": true,
     "services": {
       "mots-web": "active",
       "mots-tunnel": "active",
       "mots-progress": "active"
-    },
-    "manifestSHA256": "596010b2d89f7d0feee0a556e29087821ebbb6dd729cd86ae9b608d350df2fcb"
+    }
   },
   "public": {
     "url": "https://mots.feizhang233.com/",
@@ -93,7 +92,7 @@
     },
     "checks": [
       {
-        "path": "app.js?v=11b51a4c6d13d392",
+        "path": "app.js?v=e67ef52e6ce8aae4",
         "status": 200
       },
       {
@@ -149,7 +148,7 @@
         "status": 200
       },
       {
-        "path": "memory.js?v=95081968d86024eb",
+        "path": "memory.js?v=5bfe2d66e488afed",
         "status": 200
       },
       {
@@ -181,11 +180,11 @@
         "status": 200
       },
       {
-        "path": "workspace.css?v=b32ad4f0010c5a0d",
+        "path": "workspace.css?v=72d9f09c2986f046",
         "status": 200
       },
       {
-        "path": "workspace.js?v=a1cb44f07bba8001",
+        "path": "workspace.js?v=6f6d0903b92a19b5",
         "status": 200
       },
       {
@@ -458,27 +457,10 @@
       }
     ]
   },
-  "browser": [
-    {
-      "name": "desktop",
-      "directRemember": true,
-      "directForget": true,
-      "optionalReveal": true,
-      "nextCardConcealed": true,
-      "savedAndResumed": true,
-      "fits": true,
-      "errors": []
-    },
-    {
-      "name": "mobile",
-      "directRemember": true,
-      "directForget": true,
-      "optionalReveal": true,
-      "nextCardConcealed": true,
-      "savedAndResumed": true,
-      "fits": true,
-      "errors": []
-    }
-  ],
-  "progressBackupIntegrity": "ok"
+  "progressBackup": {
+    "integrity": "ok",
+    "permissions": "0600",
+    "storedOutsideReleases": true
+  },
+  "verificationRecovery": "Local system DNS failed; completed public HTTPS verification with --resolve-ip, TLS validation retained."
 }

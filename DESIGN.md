@@ -209,3 +209,12 @@ The October 29 navigation/filter follow-up gives 卡片記憶 a shared outlined 
 Web card controls advertise Space for revealing answers and Enter for the primary remember/next action through aria-keyshortcuts and existing control titles. Keyboard support reuses the shared controls and focus styling without adding shortcut panels or changing card geometry.
 
 Web and native card-memory rounds always start in random order, using their existing shuffle utilities and captured-round persistence. The shared 複習規則 and native chapter-selection explanation state that a new round reshuffles while continuation keeps its saved order; no separate order selector or visual tokens are introduced.
+
+## Card memory familiarity — November 2
+
+Card-memory answers omit recurring recall instructions and the introductory tagline. Keep missing-meaning recovery text, actual progress, and result feedback. The existing collapsed 複習規則 owns a concise explanation of intervals, familiarity changes, and new-round/continuation behavior. Two consecutive accepted forgotten answers for the same word demote it to 不熟悉 (level 1); an intervening successful recall breaks that streak. Five successful recalls still promote it to 已掌握 (level 3). A manual familiarity reset is not a forgotten answer. Both outcomes use the established familiarity/sync owner and preserve the schedule record; no new storage fields or visual tokens are introduced.
+
+
+## Direct card-memory mastery — November 3
+
+Web and native memory cards place a full-width 已掌握 outline/native Liquid Glass action below the existing recall pair. It remains available with concealed or revealed meanings and uses the shared button geometry, focus, semantic tokens and feedback. The separate row preserves readable labels and touch targets on phones. 複習規則 explains manual completion; no new visual tokens or navigation are introduced.

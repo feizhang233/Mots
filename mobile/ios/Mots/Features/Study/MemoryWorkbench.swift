@@ -38,10 +38,7 @@ struct MemoryWorkbench: View {
             if store.memorySessionActive && !store.completed, let word = store.currentWord {
                 VStack(spacing: 8) {
                     if word.meanings[store.meaningLanguage] == nil {
-                        Text("目前釋義語言沒有答案，請在設定切換釋義語言後再判斷是否記得。")
-                            .font(.footnote).foregroundStyle(MotsTheme.muted)
-                    } else if !store.revealed {
-                        Text("可直接選擇是否記得，也可先顯示答案確認。")
+                        Text("所選語言尚無釋義，請在設定切換。")
                             .font(.footnote).foregroundStyle(MotsTheme.muted)
                     }
                     HStack(spacing: 12) {
@@ -65,6 +62,17 @@ struct MemoryWorkbench: View {
                         .disabled(word.meanings[store.meaningLanguage] == nil)
                         .accessibilityIdentifier("memory.remembered")
                     }
+                    Button {
+                        SpeechPlayer.shared.stop()
+                        store.markMemoryMastered(wordID: word.id)
+                    } label: {
+                        Label("已掌握", systemImage: "checkmark.seal")
+                            .frame(maxWidth: .infinity, minHeight: 44)
+                    }
+                    .buttonStyle(.glass)
+                    .tint(MotsTheme.mastered)
+                    .accessibilityHint("直接將這個單字轉為已掌握，並前往下一張卡片")
+                    .accessibilityIdentifier("memory.mastered")
                     Button("返回章節選擇") { store.leaveMemoryRound() }
                         .font(.footnote).frame(minHeight: 44)
                 }
@@ -82,12 +90,13 @@ struct MemoryWorkbench: View {
             Text("卡片記憶")
                 .font(.system(.title, design: .rounded).weight(.semibold))
                 .accessibilityAddTraits(.isHeader)
-            Text("專門複習「有印象」的單字。包含第一次背誦，完成 5 次成功回想後，會自動轉為「已掌握」。")
-                .foregroundStyle(MotsTheme.muted)
-            Text("第一次立即背誦，之後依次間隔 1 天、2 天、4 天、7 天。忘記後從頭開始，1 天後再複習。逾期仍按實際成功次數計算，下次間隔從本次作答時計算。")
+            DisclosureGroup("複習規則") {
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("完成 5 次成功回想後轉為「已掌握」。第一次立即背誦，之後間隔 1、2、4、7 天。忘記後從頭開始，1 天後重練；連續兩次忘記會轉為「不熟悉」。記住一次即中斷連續忘記。")
+                    Text("每次間隔從實際作答時計算。新一輪隨機排列，繼續上次保留順序與位置。")
+                }
                 .font(.footnote).foregroundStyle(MotsTheme.muted)
-            Text("每次開始新一輪會隨機排列到期單字；繼續上次會保留原本的順序與位置。")
-                .font(.footnote).foregroundStyle(MotsTheme.muted)
+            }
             if store.hasSavedMemoryRound {
                 Button {
                     store.resumeMemoryRound()
@@ -97,10 +106,8 @@ struct MemoryWorkbench: View {
                 }
                 .buttonStyle(.glassProminent)
                 .accessibilityIdentifier("memory.resume")
-                Text("上次的詞組與位置已保留。章節選擇只會套用到新的一輪。")
-                    .font(.footnote).foregroundStyle(MotsTheme.muted)
             }
-            Text("選擇章節，可同時選多個")
+            Text("選擇章節")
                 .font(.headline).accessibilityAddTraits(.isHeader)
             HStack {
                 Button("全選") { store.selectMemoryChapters(Set(store.availableCategories.map(\.id))) }
@@ -134,8 +141,6 @@ struct MemoryWorkbench: View {
                     .accessibilityIdentifier("memory.start")
                 }
             }
-            Text("配對後，複習次數與下次複習時間會自動同步，並包含在備份中；章節選擇與本輪位置保存在此裝置。")
-                .font(.footnote).foregroundStyle(MotsTheme.muted)
         }
         .foregroundStyle(MotsTheme.ink)
     }

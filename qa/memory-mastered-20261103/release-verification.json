@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-03",
+  "website": {
+    "url": "https://mots.feizhang233.com/",
+    "release": "20261103-084827-3f00edc9",
+    "manifestFilesVerified": 17005,
+    "publicResourcesVerified": 91,
+    "httpsChecksPassed": true,
+    "syncHealth": {
+      "version": 1,
+      "status": "ok"
+    },
+    "isolatedBrowserViewports": [
+      1440,
+      390,
+      320
+    ]
+  },
+  "ios": {
+    "bundleID": "com.feizhang.mots",
+    "version": "1.0",
+    "previousBuild": "8",
+    "build": "10",
+    "signing": "passed",
+    "sameSigningTeam": true,
+    "installation": "in-place update",
+    "uninstalled": false,
+    "privateBackupCreated": true,
+    "learningStateByteIdenticalBeforeFirstLaunch": true,
+    "afterLaunchStateReadable": true,
+    "allPreviousProgressAndMemoryKeysRetained": true,
+    "postLaunchChanges": "Existing paired sync applied newer other-device familiarity revisions and valid winning memory schedules. Existing dictionaries and imported extensions are unchanged.",
+    "existingPairingReceivedUpdatesAfterLaunch": true,
+    "launch": "passed",
+    "processRunningFromInstalledApp": true,
+    "manualMasteryOnUserDataTested": false
+  },
+  "checks": {
+    "makeTest": "passed",
+    "webRegressionSuites": 22,
+    "syncTests": 34,
+    "iosLogicSuites": 10,
+    "iosProjectTests": 6,
+    "iosReleaseBuild": "passed unsigned",
+    "browser": "passed 1440/390/320px; keyboard/touch/offline/reload/missing-meaning",
+    "diffCheck": "passed",
+    "premiumStaticAudit": "incomplete; auditor stalled in regex scan",
+    "designLint": {
+      "errors": 0,
+      "warnings": 16
+    }
+  },
+  "notes": [
+    "Private backups, pairing credentials, device dumps, signed binaries and actual-device screenshots are not included.",
+    "Full-project premium static audit was interrupted after the auditor stalled in its regular-expression scan; no static-audit pass is claimed."
+  ]
+}

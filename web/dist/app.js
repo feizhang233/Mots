@@ -639,14 +639,18 @@
     buildDeck(false);
     $('reveal-button')?.focus({ preventScroll: true });
   }
-  function answerMemory(id, remembered) {
-    if (state.screen !== 'memory' || !memorySession || memorySession.paused || deck[0]?.id !== id || memorySession.answered.has(id)) return;
+  function canAnswerMemory(id, requiresMeaning) {
+    if (state.screen !== 'memory' || !memorySession || memorySession.paused || deck[0]?.id !== id || memorySession.answered.has(id)) return false;
     const word = words().find((w) => w.id === id);
-    if (!word || levelOf(id) !== 2 || (remembered && meaning(word).missing)) {
+    if (!word || levelOf(id) !== 2 || (requiresMeaning && meaning(word).missing)) {
       state.revealed = false;
       buildDeck(false);
-      return;
+      return false;
     }
+    return true;
+  }
+  function answerMemory(id, remembered) {
+    if (!canAnswerMemory(id, remembered)) return;
     memoryRecords = latestMemoryRecords();
     const result = MotsMemory.review(memoryRecords[state.dictionary]?.[id], remembered, Date.now());
     if (!result.accepted) {
@@ -654,6 +658,24 @@
       buildDeck(false);
       return;
     }
+    saveMemoryAnswer(id, remembered, result);
+  }
+  function markMemoryMastered(id) {
+    if (!canAnswerMemory(id, false)) return;
+    memoryRecords = latestMemoryRecords();
+    const previous = memoryRecords[state.dictionary]?.[id];
+    if (previous?.stage !== MotsMemory.masteryStage && !MotsMemory.due(previous, Date.now())) {
+      state.revealed = false;
+      buildDeck(false);
+      return;
+    }
+    const now = Math.min(253402300799999, Math.max(Date.now(), (previous?.updatedAt ?? -1) + 1));
+    saveMemoryAnswer(id, true, {
+      record: { stage: MotsMemory.masteryStage, dueAt: 0, updatedAt: now },
+      mastered: true, unfamiliar: false,
+    }, '已標記為「已掌握」');
+  }
+  function saveMemoryAnswer(id, remembered, result, message) {
     stopPlayback();
     memoryRecords[state.dictionary] ??= Object.create(null);
     memoryRecords[state.dictionary][id] = result.record;
@@ -661,15 +683,16 @@
     progressSync?.memoryChanged();
     memorySession.answered.add(id);
     if (remembered) memorySession.remembered++;
-    if (result.mastered) {
-      memorySession.mastered++;
-      progress[state.dictionary][id] = 3;
-      saved = (progressSync ? progressSync.edit(state.dictionary, id, 3) : write(progressKey(state.dictionary), progress[state.dictionary])) && saved;
+    if (result.mastered || result.unfamiliar) {
+      if (result.mastered) memorySession.mastered++;
+      const level = result.mastered ? 3 : 1;
+      progress[state.dictionary][id] = level;
+      saved = (progressSync ? progressSync.edit(state.dictionary, id, level) : write(progressKey(state.dictionary), progress[state.dictionary])) && saved;
     }
     state.revealed = false;
     saved = buildDeckAndSaveMemory() && saved;
     ($('reveal-button') || $('memory-start') || $('main')).focus({ preventScroll: true });
-    toast(`${result.mastered ? '已完成全部複習，轉為「已掌握」' : remembered ? `已記住，下次複習：${memoryTime(result.record.dueAt)}` : '已安排 1 天後重新練習'}${saved ? '' : '；尚未儲存，請下載備份'}`);
+    toast(`${message || (result.mastered ? '已完成全部複習，轉為「已掌握」' : result.unfamiliar ? '連續兩次沒想起，轉為「不熟悉」' : remembered ? `已記住，下次複習：${memoryTime(result.record.dueAt)}` : '已安排 1 天後重新練習')}${saved ? '' : '；尚未儲存，請下載備份'}`);
   }
   function buildDeckAndSaveMemory() {
     buildDeck(false);
@@ -689,17 +712,17 @@
     const next = summary.nextDueAt ? `下次複習：${memoryTime(summary.nextDueAt)}` : '';
     const empty = !selected.length ? '請至少選擇一個章節。' : !summary.eligible ? '所選章節還沒有「有印象」的單字。請先在詞彙列表將要背誦的單字標為「有印象」。' : !summary.due ? `目前沒有到期的卡片。${next}` : '';
     const status = `<p class="memory-scope-status" role="status">已選 ${selected.length} 個章節 · 待複習 ${summary.due} 詞 · 等待下次複習 ${summary.waiting} 詞${next && summary.due ? ` · ${next}` : ''}</p>`;
-    const header = `<div class="memory-heading"><div><h2 id="memory-title">卡片記憶</h2><p>把「有印象」的單字，透過間隔複習逐步變成「已掌握」。</p></div>${running ? '<button class="button button-outline" type="button" data-memory-config>返回章節選擇</button>' : ''}</div>`;
+    const header = `<div class="memory-heading"><div><h2 id="memory-title">卡片記憶</h2></div>${running ? '<button class="button button-outline" type="button" data-memory-config>返回章節選擇</button>' : ''}</div>`;
     let content;
     if (running) {
       const record = memoryRecords[state.dictionary]?.[deck[0].id];
-      content = `<p class="memory-round-status" role="status">本輪已完成 ${memorySession.answered.size} / ${memorySession.ids.length} 詞</p>${studyView.card({ memory: { masteryStage: MotsMemory.masteryStage, stage: record?.stage === MotsMemory.masteryStage ? 0 : record?.stage || 0, position: memorySession.answered.size + 1, total: memorySession.ids.length } })}`;
+      content = `<p class="memory-round-status" role="status">本輪已完成 ${memorySession.answered.size} / ${memorySession.ids.length} 詞</p>${studyView.card({ memory: { masteryStage: MotsMemory.masteryStage, previousLapse: record?.stage === 0 && record.dueAt > record.updatedAt, stage: record?.stage === MotsMemory.masteryStage ? 0 : record?.stage || 0, position: memorySession.answered.size + 1, total: memorySession.ids.length } })}`;
     } else {
       const completion = done ? `<div class="memory-completion" role="status"><h3>本輪卡片記憶已完成</h3><p>已背誦 ${memorySession.answered.size} 詞 · 記住 ${memorySession.remembered} 詞 · 新增已掌握 ${memorySession.mastered} 詞</p></div>` : '';
-      const resume = resumable ? `<div class="memory-completion"><p>上次停在第 ${memorySession.answered.size + 1} / ${memorySession.ids.length} 詞，保留原有詞彙與順序。</p><button id="memory-resume" class="button button-primary" type="button">繼續上次</button></div>` : '';
-      content = `${completion}${resume}${chapterControls}${status}${empty ? `<p class="memory-empty">${esc(empty)}</p>` : ''}<button id="memory-start" class="button ${resumable ? 'button-outline' : 'button-primary'}" type="button" ${summary.due ? '' : 'disabled'}>${memorySession ? '開始新一輪' : '開始背誦'}${summary.due ? ` · ${summary.due} 詞` : ''}</button><p class="memory-card-help">${memorySession ? '只有「開始新一輪」會重新選詞；' : ''}本輪包含所選章節全部已到期的單字，不限制詞數。逾期後仍只計下一次複習。</p>`;
+      const resume = resumable ? `<div class="memory-completion"><p>上次停在第 ${memorySession.answered.size + 1} / ${memorySession.ids.length} 詞。</p><button id="memory-resume" class="button button-primary" type="button">繼續上次</button></div>` : '';
+      content = `${completion}${resume}${chapterControls}${status}${empty ? `<p class="memory-empty">${esc(empty)}</p>` : ''}<button id="memory-start" class="button ${resumable ? 'button-outline' : 'button-primary'}" type="button" ${summary.due ? '' : 'disabled'}>${memorySession ? '開始新一輪' : '開始背誦'}${summary.due ? ` · ${summary.due} 詞` : ''}</button>`;
     }
-    $('memory-section').innerHTML = `${header}${content}<details class="memory-method"><summary>複習規則</summary><p>每輪單字以亂序呈現，繼續上次會保留原順序；開始新一輪時重新洗牌。先回想，可直接選擇是否記住，也可顯示答案確認。共 5 次成功回想：第一次立即背誦，之後分別間隔 1 天、2 天、4 天、7 天；通過第 5 次才轉為「已掌握」。沒想起會從頭開始，1 天後再練，中途維持「有印象」。逾期不跳次數，每次間隔從實際作答時計算。</p><p>依艾賓浩斯遺忘曲線的間隔複習概念設計，以上時間是本功能的預設安排。配對後，複習次數與下次複習時間會自動同步，並包含在備份中；章節選擇與本輪位置保存在目前裝置。</p></details>`;
+    $('memory-section').innerHTML = `${header}${content}<details class="memory-method"><summary>複習規則</summary><p>完成 5 次成功回想後轉為「已掌握」，複習間隔為 1、2、4、7 天。也可按「已掌握」直接完成目前單字。第一次沒想起，1 天後從頭重練；連續兩次沒想起，轉為「不熟悉」。記住一次即中斷連續忘記。</p><p>每輪包含所選章節全部到期詞。開始新一輪會重新選詞並亂序；繼續上次保留順序與位置。</p></details>`;
     if (!running && summary.nextDueAt) memoryTimer = setTimeout(() => {
       if (state.screen === 'memory') buildDeck(false);
     }, Math.max(1000, Math.min(2_147_483_647, summary.nextDueAt - Date.now())));
@@ -1474,7 +1497,8 @@
       state.revealed = !state.revealed;
       render();
       $('reveal-button')?.focus({ preventScroll: true });
-    } else if (button.dataset.memoryAnswer) answerMemory(button.dataset.memoryWord, button.dataset.memoryAnswer === 'remembered');
+    } else if (button.hasAttribute('data-memory-mastered')) markMemoryMastered(button.dataset.memoryWord);
+    else if (button.dataset.memoryAnswer) answerMemory(button.dataset.memoryWord, button.dataset.memoryAnswer === 'remembered');
     else if (button.dataset.speak) speak(button.dataset.speak);
   });
   $('home-section').addEventListener('input', (event) => {

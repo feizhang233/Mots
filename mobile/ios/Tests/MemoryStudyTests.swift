@@ -304,7 +304,126 @@ struct MemoryStudyTests {
         try testSessionResume()
         try testUnboundedSession()
         try testLegacyScheduleMigration()
+        try testConsecutiveForgetting()
+        try testDirectMastery()
         print("MemoryStudyTests passed")
+    }
+
+    @MainActor static func testDirectMastery() throws {
+        let directory = FileManager.default.temporaryDirectory.appendingPathComponent("memory-direct-mastery-\(UUID().uuidString)")
+        let path = directory.appendingPathComponent("study.json")
+        defer { try? FileManager.default.removeItem(at: directory) }
+        let first = StudyStore(catalog: catalog, persistenceURL: path, memoryRoundOrder: { $0 })
+        first.listMode = true
+        first.rate(catalog[0].words[0], level: 2); first.rate(catalog[0].words[1], level: 2)
+        let stamp = MemoryRecord.milliseconds(now)
+        let prior = MemorySyncRecord(dictionaryID: "fr", wordID: "a", stage: 0, dueAt: stamp, updatedAt: stamp)
+        try first.mergeMemorySnapshot([prior])
+        precondition(!first.markMemoryMastered(wordID: "a", at: now), "Study mode cannot execute a memory-only action")
+        first.openMemory(); first.selectMemoryChapters(["1", "2"]); first.startMemoryRound(at: now)
+        precondition(first.currentWord?.id == "a" && !first.revealed)
+        precondition(!first.markMemoryMastered(wordID: "b", at: now), "Non-current callbacks cannot master another card")
+        precondition(!first.markMemoryMastered(wordID: "a", at: now.addingTimeInterval(-0.001)), "Early callbacks remain rejected")
+        first.meaningLanguage = "de"
+        precondition(first.markMemoryMastered(wordID: "a", at: now), "Explicit mastery needs neither reveal nor a selected-language meaning")
+        let mastered = first.memory["fr"]!["a"]!
+        precondition(first.rating(catalog[0].words[0]) == 3 && mastered.stage == MemoryRecord.masteryStage && mastered.dueAt == 0)
+        precondition(mastered.updatedAt == stamp + 1, "Same-millisecond mastery outranks the prior lower-stage schedule")
+        precondition(first.currentWord?.id == "b" && !first.revealed && first.memoryAnsweredCount == 1 && first.memoryMasteredCount == 1)
+        precondition(first.memoryFeedback == "已轉為已掌握")
+        precondition(!first.markMemoryMastered(wordID: "a", at: now), "Repeated callbacks cannot advance or recount mastery")
+        try first.mergeMemorySnapshot([prior])
+        precondition(first.memory["fr"]?["a"] == mastered, "Stale schedules cannot replace explicit mastery")
+        first.leaveMemoryRound()
+        precondition(!first.markMemoryMastered(wordID: "b", at: now), "Paused rounds reject mastery callbacks")
+        first.resumeMemoryRound()
+        precondition(first.currentWord?.id == "b" && first.memoryAnsweredCount == 1)
+        precondition(first.answerMemory(wordID: "b", remembered: false, at: now))
+        precondition(first.completed && first.memoryAnsweredCount == 2 && first.memoryMasteredCount == 1)
+
+        let reopened = StudyStore(catalog: catalog, persistenceURL: path, memoryRoundOrder: { $0 })
+        precondition(reopened.completed && reopened.memoryAnsweredCount == 2 && reopened.memoryMasteredCount == 1 && reopened.memory["fr"]?["a"] == mastered,
+                     "Mastery and the actual one-card result survive reopening")
+        precondition(!reopened.markMemoryMastered(wordID: "a", at: now), "Completed rounds reject callbacks")
+        let receiver = self.store()
+        try receiver.mergeSyncSnapshot(first.syncSnapshot())
+        try receiver.mergeMemorySnapshot(first.memorySnapshot())
+        precondition(receiver.rating(catalog[0].words[0]) == 3 && receiver.memory["fr"]?["a"] == mastered,
+                     "Explicit mastery travels through both existing sync channels")
+        precondition(!receiver.memoryDueWords(at: now.addingTimeInterval(30 * 86_400)).contains { $0.id == "a" })
+        reopened.rate(catalog[0].words[0], level: 2)
+        let reset = reopened.memory["fr"]!["a"]!
+        precondition(reset.stage == 0 && reset.dueAt == reset.updatedAt && reset.updatedAt > mastered.updatedAt,
+                     "An explicit later familiarity change can restart a manually mastered word")
+
+        let mismatched = self.store()
+        try mismatched.mergeMemorySnapshot([MemorySyncRecord(dictionaryID: "fr", wordID: "a", stage: MemoryRecord.masteryStage,
+            dueAt: 0, updatedAt: stamp)])
+        mismatched.openMemory(); mismatched.selectMemoryChapters(["1"]); mismatched.startMemoryRound(at: now)
+        precondition(mismatched.currentWord?.id == "a" && mismatched.rating(catalog[0].words[0]) == 2)
+        precondition(mismatched.markMemoryMastered(wordID: "a", at: now) && mismatched.memory["fr"]?["a"]?.updatedAt == stamp + 1,
+                     "A completed schedule arriving before familiarity can still accept current-card mastery")
+
+        let deleted = self.store()
+        deleted.openMemory(); deleted.startMemoryRound(at: now)
+        _ = deleted.deleteWord(catalog[0].words[0])
+        precondition(!deleted.markMemoryMastered(wordID: "a", at: now), "Deleted/currently removed cards reject mastery callbacks")
+    }
+
+    @MainActor static func testConsecutiveForgetting() throws {
+        let entry = catalog[0].words[0]
+        let directory = FileManager.default.temporaryDirectory.appendingPathComponent("memory-lapses-\(UUID().uuidString)")
+        let path = directory.appendingPathComponent("study.json")
+        defer { try? FileManager.default.removeItem(at: directory) }
+        let first = StudyStore(catalog: catalog, persistenceURL: path, memoryRoundOrder: { $0 })
+        first.rate(entry, level: 2)
+        first.openMemory(); first.selectMemoryChapters(["1"]); first.startMemoryRound(at: now)
+        precondition(first.answerMemory(wordID: entry.id, remembered: false, at: now))
+        precondition(first.rating(entry) == 2, "One forgotten answer leaves partial familiarity unchanged")
+        precondition(!first.answerMemory(wordID: entry.id, remembered: false, at: now),
+                     "A duplicate answer cannot count as a second lapse")
+        first.startMemoryRound(at: now.addingTimeInterval(86_399))
+        precondition(!first.answerMemory(wordID: entry.id, remembered: false, at: now.addingTimeInterval(86_399)),
+                     "An early revisit cannot count as a second lapse")
+
+        let second = StudyStore(catalog: catalog, persistenceURL: path, memoryRoundOrder: { $0 })
+        let nextDay = now.addingTimeInterval(86_400)
+        second.startMemoryRound(at: nextDay)
+        precondition(second.answerMemory(wordID: entry.id, remembered: false, at: nextDay))
+        precondition(second.rating(entry) == 1 && second.memoryWords.isEmpty && second.completed,
+                     "Two consecutive accepted lapses across restart demote and leave card memory")
+        precondition(second.memoryMasteredCount == 0 && second.memoryFeedback == "連續兩次忘記，已轉為不熟悉")
+        let demotedSnapshot = try second.syncSnapshot()
+        precondition(demotedSnapshot.contains { $0.wordID == entry.id && $0.level == 1 },
+                     "Automatic demotion enters the existing familiarity sync")
+        let reopened = StudyStore(catalog: catalog, persistenceURL: path, memoryRoundOrder: { $0 })
+        precondition(reopened.rating(entry) == 1 && reopened.memory == second.memory,
+                     "Automatic demotion and the answered schedule survive reopening")
+        let receiver = self.store()
+        try receiver.mergeSyncSnapshot(second.syncSnapshot())
+        try receiver.mergeMemorySnapshot(second.memorySnapshot())
+        precondition(receiver.rating(entry) == 1 && receiver.memory["fr"]?[entry.id] == second.memory["fr"]?[entry.id],
+                     "Another device receives the demotion with its answer history")
+
+        // A manually restarted cycle must not treat its dated reset as an actual forgotten answer.
+        reopened.listMode = true
+        reopened.rate(entry, level: 2)
+        let reset = reopened.memory["fr"]![entry.id]!
+        precondition(reset.stage == 0 && reset.dueAt == reset.updatedAt)
+        let restartedAt = Date(timeIntervalSince1970: reset.dueAt / 1000)
+        reopened.startMemoryRound(at: restartedAt)
+        precondition(reopened.answerMemory(wordID: entry.id, remembered: false, at: restartedAt))
+        precondition(reopened.rating(entry) == 2, "The first miss after a manual reset stays partially familiar")
+
+        // Any successful answer breaks the run of forgotten answers.
+        let interrupted = self.store()
+        interrupted.openMemory(); interrupted.selectMemoryChapters(["1"])
+        for (day, remembered) in [(0.0, false), (1.0, true), (2.0, false)] {
+            let date = now.addingTimeInterval(day * 86_400)
+            interrupted.startMemoryRound(at: date)
+            precondition(interrupted.answerMemory(wordID: entry.id, remembered: remembered, at: date))
+            precondition(interrupted.rating(entry) == 2, "A successful recall clears the consecutive-forgetting run")
+        }
     }
 
     @MainActor static func testShuffledRound() throws {
