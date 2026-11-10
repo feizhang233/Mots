@@ -42,9 +42,11 @@ french-atelier/
 | `app.js`                        | 狀態、路由、學習動作、儲存與匯入的提交協調         |
 | `memory.js`                     | 卡片記憶間隔、到期排序、掌握判定、備份校驗與合併 |
 | `workspace.js`                  | 從傳入模型產生首頁、列表、卡片與複習 HTML          |
+| `column-widths.js`              | Web 單字列表欄寬控制、拖曳／鍵盤／數字輸入與本機版面偏好 |
 | `settings-panel.js`             | 設定分組渲染、展開、遮碼及就地回饋                 |
 | `sync-protocol.js`              | 熟悉程度與刪除記錄的共用嚴格驗證、排序及合併規則   |
-| `progress-sync.js`              | 配對、熟悉度／刪除／記憶排程交換、重試與跨分頁協調 |
+| `progress-sync.js`              | 配對、四通道交換、完整成功判定、重試與跨分頁協調 |
+| `content-state.js`              | 公開詞庫版本／離線快取、私人詞典修訂與雙向內容合併 |
 | `deletion-state.js`             | 刪除修訂的本機儲存、時鐘、恢復及備份預檢           |
 | `dictionaries.js`、`entries.js` | 新辭典、擴充詞條及舊資料格式驗證                   |
 | `languages.js`                  | 語言、中文轉換資料與德語／日語示例詞庫             |
@@ -70,16 +72,17 @@ french-atelier/
 | --------------------- | --------------------------------------------------------- |
 | `sync/server.py`      | 命令列啟動入口                                            |
 | `sync/protocol.py`    | 協議常量、嚴格 JSON／記錄驗證與修訂比較                   |
-| `sync/store.py`       | 憑證摘要、私人 SQLite、三條通道共用的原子合併與快照讀取 |
+| `sync/content_protocol.py` | 書籍／詞條內容、修訂、封存與大小限制的驗證 |
+| `sync/store.py`       | 憑證摘要、私人 SQLite、四通道各自的原子合併與快照讀取 |
 | `sync/http_server.py` | HTTP 路由、Origin／CORS、鑑權順序、請求限制與建立配對限流 |
 | `sync/test_server.py` | 使用真實本機 HTTP 的整合回歸                              |
 
-服務可用 `python3 sync/server.py` 或 `python3 -m sync.server` 啟動。熟悉度、刪除狀態與記憶排程共用私人配對，各有獨立端點及合併規則。刪除與恢復都保留明確紀錄。各通道的格式見 [`../sync/PROTOCOL.md`](../sync/PROTOCOL.md)。
+服務可用 `python3 sync/server.py` 或 `python3 -m sync.server` 啟動。熟悉度、刪除狀態、記憶排程與詞典內容共用私人配對，各有獨立端點及合併規則。內建詞庫版本由公開清單提供，客戶端驗證後快取；私人內容修訂與公開基礎分開保存，避免舊版 App 將過時詞庫回傳覆蓋新版。刪除與恢復都保留明確紀錄。各通道的格式見 [`../sync/PROTOCOL.md`](../sync/PROTOCOL.md)。
 
 ## 資料與相容性
 
 - `database/runtime/` 是詞條、分類、音訊清單及音訊的共用來源；單元 JSON／Excel 也在 `database/`。生成的 Web 與 App 副本不得獨立修改。
-- 原有辭典／詞條 ID、本機儲存鍵、備份版本與同步線上格式保持相容。重構不觸發資料遷移或清除學習記錄。
+- 原有辭典／詞條 ID、本機儲存鍵、備份版本與同步線上格式保持相容。完整同步升級只增加詞典修訂與下載快取，原有學習記錄不改鍵、不清除；舊自訂書籍與擴充詞條一次性轉成初始修訂。
 - 普通與主題語法使用不同書籍 ID／資料庫。`kind: grammar` 搭配 `grammarMode: standard | thematic` 決定操作方式。缺少模式欄位的舊書籍視為普通語法。日語主題書已有內容，法語與德語主題書預留待匯入。
 - 配對碼不進入備份、日誌或來源包。服務端私人 SQLite 位於發布目錄外，不能加入公開資產。
 - 舊資料相容分支及原書音訊是仍在使用的能力，不能只因檔案大或名稱舊而當作冗餘刪除。

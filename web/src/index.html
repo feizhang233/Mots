@@ -13,12 +13,14 @@
     <link rel="stylesheet" href="workspace.css" />
     <script defer src="data.js"></script>
     <script defer src="languages.js"></script>
+    <script defer src="n2-vocabulary.js"></script>
     <script defer src="audio-manifest.js"></script>
     <script defer src="extra-audio.js"></script>
     <script defer src="select.js"></script>
     <script defer src="core.js"></script>
     <script defer src="dictionaries.js"></script>
     <script defer src="grammar.js"></script>
+    <script defer src="column-widths.js"></script>
     <script defer src="workspace.js"></script>
     <script defer src="memory.js"></script>
     <script defer src="audio.js"></script>
@@ -26,6 +28,7 @@
     <script defer src="entries.js"></script>
     <script defer src="sync-protocol.js"></script>
     <script defer src="deletion-state.js"></script>
+    <script defer src="content-state.js"></script>
     <script defer src="progress-sync.js"></script>
     <script defer src="settings-panel.js"></script>
     <script defer src="app.js"></script>
@@ -362,18 +365,18 @@
               <path d="M20 8a8 8 0 0 0-14-3L3 8m0-5v5h5M4 16a8 8 0 0 0 14 3l3-3m0 5v-5h-5" /></svg
           ></span>
           <span class="settings-group-label"
-            ><strong>進度同步</strong><span id="settings-sync-summary">尚未配對</span></span
+            ><strong>資料同步</strong><span id="settings-sync-summary">尚未配對</span></span
           >
           <svg class="settings-group-chevron" viewBox="0 0 24 24" aria-hidden="true">
             <path d="m9 5 7 7-7 7" />
           </svg>
         </summary>
         <div class="settings-group-body">
-          <span id="sync-title" class="visually-hidden">進度同步</span>
+          <span id="sync-title" class="visually-hidden">資料同步</span>
           <p class="settings-note" id="sync-help">
-            建立配對碼後，在另一部裝置輸入一次，即可同步熟悉程度、刪除與恢復記錄。離線時保留資料，恢復連線後重試。詞庫內容與顯示設定不會同步。
+            使用同一組配對碼，雙向同步詞典、詞條內容、熟悉程度、記憶排程與刪除／還原狀態。離線修改先存本機，連線後合併。外觀、章節選擇和閱讀位置保留在各裝置。
           </p>
-          <p class="settings-note">配對碼可存取這組進度，請只分享給自己的裝置。</p>
+          <p class="settings-note">配對碼可存取並修改這組詞典與學習資料，請只分享給自己的裝置。</p>
           <p
             id="sync-status"
             class="sync-status settings-note"
@@ -454,7 +457,7 @@
             <h3>匯入新辭典</h3>
             <p id="dictionary-import-help" class="settings-note">
               每個 JSON 檔可建立一部獨立辭典。支援法語、德語、日語，最多 2 MB／5,000 詞，最多 20
-              部匯入辭典。辭典之間的學習進度分開保存。
+              部匯入辭典。已存在的相同書籍 ID 會更新原書內容，並保留學習進度。
             </p>
             <div class="settings-actions">
               <label class="button button-tonal" for="import-dictionary"
@@ -473,6 +476,31 @@
               </button>
             </div>
             <p id="dictionary-message" class="backup-message" role="status"></p>
+            <div class="settings-field">
+              <label for="rename-dictionary-title">目前書籍名稱</label>
+              <input
+                id="rename-dictionary-title"
+                type="text"
+                maxlength="80"
+                autocomplete="off"
+                aria-describedby="dictionary-message"
+              />
+            </div>
+            <div class="settings-actions">
+              <button id="rename-dictionary" class="button button-outline" type="button">
+                更改書名
+              </button>
+              <button id="archive-dictionary" class="text-button" type="button">
+                封存目前書籍
+              </button>
+            </div>
+            <p class="settings-note">
+              封存會同步隱藏這本書，保留內容、熟悉度及記憶排程，可在下方恢復。
+            </p>
+            <details>
+              <summary>已封存書籍</summary>
+              <div id="archived-dictionary-list"></div>
+            </details>
             <p class="settings-note">
               先下載模板，修改 title（辭典名稱）、language（fr／de／ja）及 words（詞條）後匯入。
               每筆詞條的 id 請保持唯一，term 填單字或句型，meanings 填釋義；分類可省略。

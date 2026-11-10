@@ -41,12 +41,25 @@ struct MemoryWorkbench: View {
                         Text("所選語言尚無釋義，請在設定切換。")
                             .font(.footnote).foregroundStyle(MotsTheme.muted)
                     }
-                    HStack(spacing: 12) {
+                    MemoryAnswerLayout {
+                        Button {
+                            SpeechPlayer.shared.stop()
+                            store.markMemoryMastered(wordID: word.id)
+                        } label: {
+                            Text("已掌握")
+                                .font(.subheadline.weight(.medium))
+                                .lineLimit(1).minimumScaleFactor(0.75)
+                                .frame(maxWidth: .infinity, minHeight: 44)
+                        }
+                        .buttonStyle(.glass)
+                        .tint(MotsTheme.mastered)
+                        .accessibilityHint("直接將這個單字轉為已掌握，並前往下一張卡片")
+                        .accessibilityIdentifier("memory.mastered")
                         Button {
                             SpeechPlayer.shared.stop()
                             store.answerMemory(wordID: word.id, remembered: false)
                         } label: {
-                            Label("忘記了", systemImage: "arrow.counterclockwise")
+                            Text("沒想起")
                                 .frame(maxWidth: .infinity, minHeight: 44)
                         }
                         .buttonStyle(.glass)
@@ -55,24 +68,14 @@ struct MemoryWorkbench: View {
                             SpeechPlayer.shared.stop()
                             store.answerMemory(wordID: word.id, remembered: true)
                         } label: {
-                            Label("記得", systemImage: "checkmark")
+                            Text("記住了")
                                 .frame(maxWidth: .infinity, minHeight: 44)
                         }
                         .buttonStyle(.glassProminent)
                         .disabled(word.meanings[store.meaningLanguage] == nil)
                         .accessibilityIdentifier("memory.remembered")
                     }
-                    Button {
-                        SpeechPlayer.shared.stop()
-                        store.markMemoryMastered(wordID: word.id)
-                    } label: {
-                        Label("已掌握", systemImage: "checkmark.seal")
-                            .frame(maxWidth: .infinity, minHeight: 44)
-                    }
-                    .buttonStyle(.glass)
-                    .tint(MotsTheme.mastered)
-                    .accessibilityHint("直接將這個單字轉為已掌握，並前往下一張卡片")
-                    .accessibilityIdentifier("memory.mastered")
+                    .buttonSizing(.flexible)
                     Button("返回章節選擇") { store.leaveMemoryRound() }
                         .font(.footnote).frame(minHeight: 44)
                 }
@@ -192,5 +195,87 @@ struct MemoryWorkbench: View {
             Text("下次複習：\(date.formatted(date: .abbreviated, time: .shortened))")
                 .font(.subheadline).foregroundStyle(MotsTheme.muted)
         }
+    }
+}
+
+/// Measure each styled button at its final width, including its native control padding.
+private struct MemoryAnswerLayout: Layout {
+    private let spacing: CGFloat = 8
+
+    private func buttonWidth(_ index: Int, in row: CGFloat) -> CGFloat {
+        let unit = max(0, row - spacing * 2) / 5
+        return index == 0 ? unit : unit * 2
+    }
+
+    func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
+        let width = proposal.width ?? MotsTheme.contentWidth
+        var height: CGFloat = 44
+        for (index, button) in subviews.enumerated() {
+            let size = button.sizeThatFits(ProposedViewSize(width: buttonWidth(index, in: width), height: nil))
+            height = max(height, size.height)
+        }
+        return CGSize(width: width, height: height)
+    }
+
+    func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
+        var x = bounds.minX
+        for (index, button) in subviews.enumerated() {
+            let width = buttonWidth(index, in: bounds.width)
+            button.place(at: CGPoint(x: x, y: bounds.minY), anchor: .topLeading,
+                         proposal: ProposedViewSize(width: width, height: bounds.height))
+            x += width + spacing
+        }
+    }
+}
+
+struct MemoryLapseList: View {
+    let store: StudyStore
+    let returnToMemory: () -> Void
+
+    var body: some View {
+        let words = store.memoryLapseWords
+        List {
+            Section {
+                Button(action: returnToMemory) {
+                    Label("返回卡片記憶", systemImage: "chevron.backward")
+                        .frame(minHeight: 44)
+                }
+                .accessibilityIdentifier("memory.lapses.back")
+            }
+            Section {
+                if words.isEmpty {
+                    Text("目前沒有忘記一次的單字。")
+                        .foregroundStyle(MotsTheme.muted)
+                }
+                ForEach(words) { word in
+                    HStack(spacing: 12) {
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(word.displayTerm)
+                                .font(.system(.headline, design: .rounded))
+                                .foregroundStyle(MotsTheme.ink)
+                            Text(store.displayMeaning(for: word))
+                                .font(.subheadline)
+                                .foregroundStyle(MotsTheme.muted)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        SpeakButton(word: word).labelStyle(.iconOnly)
+                    }
+                    .accessibilityIdentifier("memory.lapse.\(word.id)")
+                }
+            } header: {
+                HStack {
+                    Text("忘記一次").font(.headline)
+                    Spacer()
+                    Text("\(words.count) 詞").font(.footnote.monospacedDigit())
+                }
+                .textCase(nil)
+            }
+            .listRowBackground(MotsTheme.surface)
+        }
+        .listStyle(.insetGrouped)
+        .scrollContentBackground(.hidden)
+        .background(MotsTheme.background)
+        .onDisappear { SpeechPlayer.shared.stop() }
+        .accessibilityIdentifier("memory.lapses")
     }
 }

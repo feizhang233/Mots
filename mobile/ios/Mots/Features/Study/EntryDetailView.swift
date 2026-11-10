@@ -16,7 +16,7 @@ struct EntryDetailView: View {
                         Text(store.subcategoryName(for: word))
                             .font(.caption.weight(.medium))
                             .foregroundStyle(MotsTheme.muted)
-                        Text(word.term)
+                        Text(word.displayTerm)
                             .font(.system(.largeTitle, design: .rounded).weight(.semibold))
                             .foregroundStyle(MotsTheme.ink)
                             .fixedSize(horizontal: false, vertical: true)
@@ -48,9 +48,9 @@ struct EntryDetailView: View {
                                 .foregroundStyle(MotsTheme.muted)
                         } else {
                             VStack(alignment: .leading, spacing: 20) {
-                                ForEach(Array(word.exampleTexts.enumerated()), id: \.offset) { index, example in
+                                ForEach(Array(word.examples.enumerated()), id: \.offset) { index, example in
                                     if index > 0 { Divider().overlay(MotsTheme.stroke) }
-                                    Text(example)
+                                    Text(word.displayExample(example))
                                         .foregroundStyle(MotsTheme.ink)
                                         .accessibilityIdentifier("entry-detail.example.\(index)")
                                 }

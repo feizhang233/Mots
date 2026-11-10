@@ -38,7 +38,7 @@ struct StudyCard: View {
                 RatingBadge(level: store.rating(word))
             }
             VStack(alignment: .leading, spacing: 20) {
-                Text(word.term)
+                Text(word.displayTerm)
                     .font(.system(.largeTitle, design: .rounded).weight(.semibold))
                     .foregroundStyle(MotsTheme.ink)
                     .fixedSize(horizontal: false, vertical: true)
@@ -69,7 +69,7 @@ struct StudyCard: View {
                         VStack(alignment: .leading, spacing: 14) {
                             Text("例句").font(.caption.weight(.semibold)).foregroundStyle(MotsTheme.muted)
                             ForEach(Array(word.examples.prefix(2).enumerated()), id: \.offset) { index, example in
-                                Text(example.text)
+                                Text(word.displayExample(example))
                                     .font(.body)
                                     .foregroundStyle(MotsTheme.muted)
                                     .lineSpacing(5)

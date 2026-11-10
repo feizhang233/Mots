@@ -282,7 +282,7 @@ private struct VocabularyRow: View {
                 SpeechPlayer.shared.speak(word: word)
             } label: {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(word.term)
+                    Text(word.displayTerm)
                         .font(.system(.headline, design: .rounded))
                         .foregroundStyle(isPlaying ? MotsTheme.accent : MotsTheme.ink)
                         .fixedSize(horizontal: false, vertical: true)
@@ -334,7 +334,7 @@ private struct GrammarRow: View {
         VStack(alignment: .leading, spacing: 2) {
             Button { SpeechPlayer.shared.speak(word: word) } label: {
                 primaryLayout {
-                    Text(word.term)
+                    Text(word.displayTerm)
                         .font(.system(.headline, design: .rounded))
                         .foregroundStyle(isPlaying ? MotsTheme.accent : MotsTheme.ink)
                         .fixedSize(horizontal: false, vertical: true)

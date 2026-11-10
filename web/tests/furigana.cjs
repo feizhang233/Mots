@@ -9,7 +9,7 @@ const scope = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root, 'web/src/js/core.js'), 'utf8'), scope);
 const { furiganaSegments, formatTerm } = scope.window.MotsCore;
 const segments = (term, reading) => JSON.parse(JSON.stringify(furiganaSegments(term, reading)));
-const ruby = (term, reading) => `<ruby class="japanese-ruby">${term}<rt>${reading}</rt></ruby>`;
+const parenthetical = (term, reading) => `${term}<span class="japanese-reading">（${reading}）</span>`;
 const kana = (text) => text.replace(/[ァ-ヶ]/gu, (letter) => String.fromCodePoint(letter.codePointAt(0) - 0x60));
 
 assert.deepEqual(segments('診察する', 'しんさつする'), [
@@ -45,23 +45,23 @@ for (const [term, reading] of [['しゃがむ', 'しゃがむ'], ['ブラシ', '
   assert.deepEqual(segments(term, reading), [{ text: term, reading: '' }]);
   assert.equal(formatTerm({ term: `${term}（${reading}）` }, 'ja'), term);
 }
-assert.equal(formatTerm({ term: '名前（なまえ）' }, 'ja'), ruby('名前', 'なまえ'));
-assert.equal(formatTerm({ term: '名前(なまえ)' }, 'ja'), ruby('名前', 'なまえ'));
-assert.equal(formatTerm({ term: '診察する（しんさつする）', headword: '診察する', reading: 'しんさつする' }, 'ja'), ruby('診察', 'しんさつ') + 'する');
+assert.equal(formatTerm({ term: '名前（なまえ）' }, 'ja'), parenthetical('名前', 'なまえ'));
+assert.equal(formatTerm({ term: '名前(なまえ)' }, 'ja'), parenthetical('名前', 'なまえ'));
+assert.equal(formatTerm({ term: '診察する（しんさつする）', headword: '診察する', reading: 'しんさつする' }, 'ja'), parenthetical('診察する', 'しんさつする'));
 assert.equal(formatTerm({ term: '漢字' }, 'ja'), '漢字');
 assert.equal(formatTerm({ french: "l’école & l'étude" }, 'fr'), 'l’école &amp; l&#39;étude');
 assert.equal(formatTerm({ term: 'der Name (Name)', reading: 'なまえ' }, 'de'), 'der Name (Name)');
 
 // Several valid kana-anchor splits must not invent a pronunciation per kanji.
 assert.deepEqual(segments('漢あ字', 'かああじ'), [{ text: '漢あ字', reading: 'かああじ' }]);
-assert.equal(formatTerm({ term: '漢あ字', reading: 'かああじ' }, 'ja'), ruby('漢あ字', 'かああじ'));
+assert.equal(formatTerm({ term: '漢あ字', reading: 'かああじ' }, 'ja'), parenthetical('漢あ字', 'かああじ'));
 assert.deepEqual(segments('食べる', 'たべます'), [{ text: '食べる', reading: 'たべます' }]);
 
 const unsafe = formatTerm({ term: '<img src=x onerror="alert(1)">漢', reading: '<svg onload="alert(1)">かん' }, 'ja');
 assert(!unsafe.includes('<img') && !unsafe.includes('<svg'), 'Imported text cannot introduce elements');
 assert(unsafe.includes('&lt;img') && unsafe.includes('&lt;svg') && unsafe.includes('&quot;'));
-assert.equal((unsafe.match(/<ruby\b/g) || []).length, 1);
-assert.equal((unsafe.match(/<rt>/g) || []).length, 1);
+assert.equal((unsafe.match(/<span\b/g) || []).length, 1);
+assert(!unsafe.includes('<ruby') && !unsafe.includes('<rt>'));
 assert.equal(formatTerm({ term: '<script>alert(1)</script>' }, 'fr'), '&lt;script&gt;alert(1)&lt;/script&gt;');
 
 const words = JSON.parse(fs.readFileSync(path.join(root, 'database/japanese/vocabulary.json'), 'utf8')).words;
@@ -85,9 +85,13 @@ for (const word of words) {
     assert.equal(parts[0].reading, '');
   }
   const markup = formatTerm(word, 'ja');
-  assert(!/[（）()]/u.test(markup), `Parenthetical reading removed: ${word.id}`);
+  assert(!markup.includes('<ruby') && !markup.includes('<rt>'), `No overhead readings: ${word.id}`);
+  if (hasKanji) assert(markup.includes(`（${word.reading}）`), `Full parenthetical reading: ${word.id}`);
 }
 assert.equal(words.length, 414);
 assert.equal(annotated, 363);
 assert.equal(plain, 51);
-console.log('Furigana: okurigana, legacy imports, safe HTML, fallback and all 414 source words passed (363 annotated, 51 plain).');
+assert.equal(formatTerm({term:'空',reading:'から'},'ja'),parenthetical('空','から'));
+assert.equal(formatTerm({term:'空',reading:'そら'},'ja'),parenthetical('空','そら'));
+assert.equal(formatTerm({term:'NHK',reading:'エヌエイチケー'},'ja'),parenthetical('NHK','エヌエイチケー'));
+console.log('Japanese readings: parenthetical terms, unchanged alignment data, legacy imports, safe HTML and all 414 source words passed.');

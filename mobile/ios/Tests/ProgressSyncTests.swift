@@ -11,6 +11,17 @@ private final class SyncURLProtocol: URLProtocol, @unchecked Sendable {
     override class func canInit(with request: URLRequest) -> Bool { true }
     override class func canonicalRequest(for request: URLRequest) -> URLRequest { request }
     override func startLoading() {
+        if request.url?.lastPathComponent == "content" {
+            let payload=try! JSONSerialization.jsonObject(with:ProgressSyncTests.requestBody(request)) as! [String:Any]
+            let records=payload["records"] as! [[String:Any]]
+            let canonical=try! ContentJSON.from(records).canonical
+            let digest=ContentLibrary.sha256(Data(canonical.utf8))
+            let unchanged=payload["knownDigest"] as? String == digest
+            let body=try! JSONSerialization.data(withJSONObject:["version":1,"records":unchanged ? [] : records,"digest":digest,"unchanged":unchanged])
+            let response=HTTPURLResponse(url:request.url!,statusCode:200,httpVersion:"HTTP/1.1",headerFields:["Content-Type":"application/json"])!
+            client?.urlProtocol(self,didReceive:response,cacheStoragePolicy:.notAllowed);client?.urlProtocol(self,didLoad:body);client?.urlProtocolDidFinishLoading(self)
+            return
+        }
         Self.handler?(request) { [self] status, data in
             let response = HTTPURLResponse(url: request.url!, statusCode: status, httpVersion: "HTTP/1.1", headerFields: ["Content-Type": "application/json"])!
             client?.urlProtocol(self, didReceive: response, cacheStoragePolicy: .notAllowed)
@@ -64,7 +75,8 @@ private final class SyncURLProtocol: URLProtocol, @unchecked Sendable {
         oldState.removeValue(forKey: "syncMetadata")
         try data(oldState).write(to: url)
         let legacy = StudyStore(catalog: [dictionary], persistenceURL: url)
-        precondition(legacy.syncMetadata == nil && legacy.rating(a) == 2)
+        precondition(legacy.syncMetadata != nil && legacy.rating(a) == 2,
+                     "Legacy progress is seeded before a downloaded catalog can remove its projection")
         let seeds = try legacy.syncSnapshot()
         precondition(seeds.count == 1 && seeds[0].clock == 0 && seeds[0].deviceID.isEmpty && seeds[0].level == 2)
         let seedTie = try ProgressSyncRecord.canonical([record("a", 1, 0, device: ""), record("a", 3, 0, device: "")])

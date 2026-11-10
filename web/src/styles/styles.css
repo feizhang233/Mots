@@ -2892,17 +2892,12 @@ label.settings-field {
   }
 }
 
-/* Shared Japanese headwords: semantic furigana above kanji, kana on the baseline. */
-.japanese-ruby {
-  ruby-position: over;
-  ruby-align: center;
-  white-space: nowrap;
-}
-.japanese-ruby rt {
-  font-size: 0.45em;
+/* Japanese pronunciation follows the word in parentheses. */
+.japanese-reading {
+  font-size: 0.72em;
   font-weight: 500;
   letter-spacing: 0;
-  line-height: 1.2;
+  line-height: inherit;
 }
 .french-word:lang(ja),
 .list-word:lang(ja),

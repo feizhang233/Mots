@@ -13,6 +13,7 @@ REQUIRED_RELEASE_FILES = (
     "sync/__init__.py",
     "sync/server.py",
     "sync/protocol.py",
+    "sync/content_protocol.py",
     "sync/store.py",
     "sync/http_server.py",
     "deploy/mots-progress.service",

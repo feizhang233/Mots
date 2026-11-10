@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const { escapeHTML: escape, formatTerm } = window.MotsCore;
+  const { escapeHTML: escape, formatTerm, formatExample } = window.MotsCore;
   const count = (value) =>
     Number.isFinite(Number(value)) ? Math.max(0, Math.floor(Number(value))) : 0;
   const number = (value) => new Intl.NumberFormat('zh-Hant').format(count(value));
@@ -33,6 +33,7 @@
       <div class="home-heading"><h2>學習首頁</h2><span>${escape(model.languageLabel)} · ${number(total)} ${unit}</span></div>
       <section class="home-current" aria-labelledby="home-dictionary-title">
         <div class="home-current-heading"><span class="home-book-symbol" aria-hidden="true">${icons.book}</span><div><p class="home-overline">目前書籍</p><h3 id="home-dictionary-title">${escape(model.title)}</h3></div></div>
+        ${model.description ? `<p class="home-help">${escape(model.description)}${model.sourceInfo === 'hongbao-n2-source.html' ? ' <a href="hongbao-n2-source.html" target="_blank" rel="noopener">來源與整理說明</a>' : ''}</p>` : ''}
         <form id="home-search-form" class="home-search-form" novalidate>
           <div class="home-searchbox">${icons.search}<label for="home-search" class="visually-hidden">搜尋目前書籍</label><input id="home-search" type="search" aria-label="搜尋目前書籍" placeholder="搜尋${grammar ? '語法' : '單字'}、釋義或例句" autocomplete="off"><button id="home-clear-search" class="icon-button" type="button" aria-label="清除搜尋" hidden>${icons.close}</button></div>
           <button class="button button-primary" type="submit">搜尋</button>
@@ -110,6 +111,7 @@
         if (seen.has(text)) {
           const previous = result.find((example) => example.text === text);
           if (entry.translations) previous.translations = entry.translations;
+          if (entry.furigana) previous.furigana = entry.furigana;
           continue;
         }
         seen.add(text);
@@ -129,7 +131,7 @@
           ? supplied.trim()
           : '';
       const text = language === 'zh-Hant' ? traditional(translation) : translation;
-      return `<div class="entry-example ${variant}-example"><p class="example-sentence" lang="${state.language}">${esc(example.text)}</p>${text ? `<p class="example-translation" lang="${language}">${esc(text)}</p>` : ''}</div>`;
+      return `<div class="entry-example ${variant}-example"><p class="example-sentence" lang="${state.language}">${formatExample(example, state.language)}</p>${text ? `<p class="example-translation" lang="${language}">${esc(text)}</p>` : ''}</div>`;
     }
     const detailButton = (word) =>
       isGrammar()
@@ -139,14 +141,20 @@
       const senses = /^\s*[①-⑳]/u.test(text) ? text.match(/[①-⑳][^①-⑳]*/gu) : [text];
       return senses.map((sense) => sense.split('。', 1)[0].trim()).join('\n');
     }
-    function renderSmallCard(w) {
+    function renderSmallCard(w, index = 0) {
       const { state, settings } = getModel();
       const m = meaning(w),
         examples = examplesOf(w);
       const concealed = !isGrammar() && state.screen === 'study' && settings.hideListMeanings;
       const revealed = !concealed || state.listRevealedID === w.id;
       const meaningID = `list-meaning-${encodeURIComponent(w.id)}`;
-      const term = `<div class="list-term">${speaker(w)}<button type="button" class="list-word" data-list-word="${esc(w.id)}" data-speak="${esc(w.id)}" lang="${state.language}" title="發音${concealed ? '並顯示釋義' : ''}"${concealed ? ` aria-expanded="${revealed}" aria-controls="${meaningID} current-list-meaning"${revealed ? ' aria-describedby="current-list-meaning"' : ''}` : ''}>${formatTerm(w, state.language)}</button></div>`;
+      const cellContent = (html, label) =>
+        isGrammar()
+          ? html
+          : `<div class="vocabulary-cell-content" role="group" aria-label="${label}內容，可左右捲動">${html}</div>`;
+      const resize = (column) =>
+        !isGrammar() && index === 0 ? MotsColumnWidths.resizer(column) : '';
+      const term = `<div class="list-term">${cellContent(`${speaker(w)}<button type="button" class="list-word" data-list-word="${esc(w.id)}" data-speak="${esc(w.id)}" lang="${state.language}" title="發音${concealed ? '並顯示釋義' : ''}"${concealed ? ` aria-expanded="${revealed}" aria-controls="${meaningID} current-list-meaning"${revealed ? ' aria-describedby="current-list-meaning"' : ''}` : ''}>${formatTerm(w, state.language)}</button>`, '單字')}${resize('term')}</div>`;
       const compact =
         isGrammar() && !m.missing && ['zh-Hant', 'zh-Hans'].includes(settings.meaningLanguage)
           ? compactGrammarMeaning(m.text)
@@ -155,19 +163,36 @@
         compact && compact !== m.text
           ? `<span class="list-meaning-full">${esc(m.text)}</span><span class="list-meaning-summary">${esc(compact)}</span>`
           : esc(m.text);
-      const translation = `<div id="${meaningID}" class="list-meaning ${m.missing ? 'missing-meaning' : ''}" lang="${m.missing ? 'zh-Hant' : settings.meaningLanguage}"${revealed ? '' : ' hidden'}>${translationText}</div>`;
-      const example = `<div class="list-example">${examples.length ? exampleHTML(examples[0], 'list') : '<span class="entry-empty-copy">尚未收錄例句</span>'}</div>`;
-      const status = `<div class="list-status">${ratingDots(w)}</div>`;
+      const translation = `<div id="${meaningID}" class="list-meaning ${m.missing ? 'missing-meaning' : ''}" lang="${m.missing ? 'zh-Hant' : settings.meaningLanguage}"${revealed ? '' : ' hidden'}>${cellContent(translationText, '釋義')}</div>`;
+      const example = `<div class="list-example">${cellContent(examples.length ? exampleHTML(examples[0], 'list') : '<span class="entry-empty-copy">尚未收錄例句</span>', '例句')}${resize('example')}</div>`;
+      const status = `<div class="list-status">${resize('meaning')}${ratingDots(w)}</div>`;
       const deletion = `<div class="list-delete"><button class="icon-button delete-word" data-delete="${esc(w.id)}" type="button" title="刪除「${esc(w.term)}」（可恢復）" aria-label="刪除「${esc(w.term)}」（可恢復）"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 10v7m4-7v7" /></svg></button></div>`;
       if (!isGrammar())
         return `<article class="word-row study-entry vocabulary-entry" role="listitem" data-row-word="${esc(w.id)}">${term}${example}${translation}${status}${deletion}</article>`;
       return `<article class="word-row study-entry" role="listitem" data-row-word="${esc(w.id)}"><div class="entry-primary">${term}${translation}${deletion}</div><div class="entry-secondary">${example}<div class="entry-secondary-actions">${detailButton(w)}${status}</div></div></article>`;
     }
+    function pagination(idPrefix = '') {
+      const { state, settings, deck } = getModel();
+      const start = (state.page - 1) * settings.pageSize;
+      const pages = Math.ceil(deck.length / settings.pageSize);
+      const unit = itemUnit();
+      return `<div class="pagination"><span>第 ${start + 1}–${Math.min(start + settings.pageSize, deck.length)} ${unit}，共 ${deck.length} ${unit} · 每頁 ${settings.pageSize} ${unit}</span><div class="pagination-actions"><button id="${idPrefix}previous-page" class="icon-button" aria-label="上一頁" ${state.page === 1 ? 'disabled' : ''}>${icons.left}</button><span>${state.page} / ${pages}</span><button id="${idPrefix}next-page" class="icon-button" aria-label="下一頁" ${state.page === pages ? 'disabled' : ''}>${icons.right}</button></div></div>`;
+    }
+    function renderMemoryLapses() {
+      const { state, settings, deck } = getModel();
+      if (!deck.length) return '<p class="memory-empty" role="status">目前沒有忘記一次的單字。</p>';
+      const start = (state.page - 1) * settings.pageSize;
+      const rows = deck.slice(start, start + settings.pageSize).map((word) => {
+        const definition = meaning(word);
+        return `<li data-memory-lapse-word="${esc(word.id)}">${speaker(word)}
+          <span class="list-word" lang="${state.language}">${formatTerm(word, state.language)}</span>
+          <span class="memory-lapse-meaning" lang="${definition.missing ? 'zh-Hant' : settings.meaningLanguage}">${esc(definition.text)}</span></li>`;
+      });
+      return `<ul class="word-table memory-lapse-list" aria-label="忘記一次的單字">${rows.join('')}</ul>${pagination('memory-')}`;
+    }
     function renderList() {
       const { state, settings, deck, grammarGrouping } = getModel();
       const start = (state.page - 1) * settings.pageSize,
-        pages = Math.ceil(deck.length / settings.pageSize),
-        unit = itemUnit(),
         pageWords = deck.slice(start, start + settings.pageSize);
       let content;
       if (isGrammar() && grammarGrouping) {
@@ -191,9 +216,11 @@
           })
           .join('')}</div>`;
       } else {
-        content = `<div class="word-table study-entry-list${isGrammar() ? '' : ` vocabulary-entry-list${state.screen === 'study' && settings.hideListMeanings ? ' meanings-concealed' : ''}`}" role="list" aria-label="${languageOf(state.language).name}${itemLabel()}列表">${pageWords.map(renderSmallCard).join('')}</div>`;
-        if (!isGrammar())
-          content = `<div class="vocabulary-list-scroll" role="region" aria-label="單字列表，可左右捲動" tabindex="0">${content}</div>`;
+        const rows = pageWords.map(renderSmallCard).join('');
+        const listLabel = `${languageOf(state.language).name}${itemLabel()}列表`;
+        content = isGrammar()
+          ? `<div class="word-table study-entry-list" role="list" aria-label="${listLabel}">${rows}</div>`
+          : `${MotsColumnWidths.controls()}<div class="vocabulary-list-scroll" role="region" aria-label="單字列表，可左右捲動" tabindex="0"><div class="word-table study-entry-list vocabulary-entry-list${state.screen === 'study' && settings.hideListMeanings ? ' meanings-concealed' : ''}">${MotsColumnWidths.definitions()}<div id="vocabulary-rows" class="vocabulary-entry-rows" role="list" aria-label="${listLabel}">${rows}</div></div></div>`;
       }
       const selected = pageWords.find((word) => word.id === state.listRevealedID);
       const selectedMeaning = selected ? meaning(selected) : null;
@@ -201,7 +228,8 @@
         !isGrammar() && state.screen === 'study' && settings.hideListMeanings
           ? `<div id="current-list-meaning" class="list-current-meaning" role="status">${selected ? `<strong lang="${state.language}">${formatTerm(selected, state.language)}</strong><span lang="${selectedMeaning.missing ? 'zh-Hant' : settings.meaningLanguage}">${esc(selectedMeaning.text)}</span>` : '<span>點選單字，發音並顯示釋義。</span>'}</div>`
           : '';
-      return `<div class="rating-legend" aria-label="熟悉程度圖例"><span><i class="legend-status green" aria-hidden="true"></i>已掌握</span><span><i class="legend-status orange" aria-hidden="true"></i>有印象</span><span><i class="legend-status red" aria-hidden="true"></i>不熟悉</span></div>${currentMeaning}${content}<div class="pagination"><span>第 ${start + 1}–${Math.min(start + settings.pageSize, deck.length)} ${unit}，共 ${deck.length} ${unit} · 每頁 ${settings.pageSize} ${unit}</span><div class="pagination-actions"><button id="previous-page" class="icon-button" aria-label="上一頁" ${state.page === 1 ? 'disabled' : ''}>${icons.left}</button><span>${state.page} / ${pages}</span><button id="next-page" class="icon-button" aria-label="下一頁" ${state.page === pages ? 'disabled' : ''}>${icons.right}</button></div></div>`;
+      const canvas = `<div class="rating-legend" aria-label="熟悉程度圖例"><span><i class="legend-status green" aria-hidden="true"></i>已掌握</span><span><i class="legend-status orange" aria-hidden="true"></i>有印象</span><span><i class="legend-status red" aria-hidden="true"></i>不熟悉</span></div>${currentMeaning}${content}${pagination()}`;
+      return isGrammar() ? canvas : `<div class="vocabulary-list-canvas">${canvas}</div>`;
     }
     function progressPanel() {
       const { state, deck } = getModel();
@@ -220,7 +248,7 @@
         level = levelOf(w.id),
         m = meaning(w),
         examples = examplesOf(w).slice(0, 2);
-      return `<div class="study-grid study-card-grid"><div><article class="flashcard study-flashcard" aria-label="${itemLabel()}卡片"><div class="flashcard-top"><span class="word-category">${esc(w.subcategory)} · ${esc(categoryLabel(subcategoryOf(w.subcategory)?.name || ''))}</span><span class="word-position">${memory ? memory.position : state.index + 1} / ${memory ? memory.total : deck.length}</span></div><div class="word-face"><div class="word-main">${speaker(w)}<h3 class="french-word${w.term.length > 24 ? ' long-term' : ''}" lang="${state.language}">${formatTerm(w, state.language)}</h3></div></div><div class="answer-area" id="answer-area">${state.revealed ? `<p class="chinese-meaning ${m.missing ? 'missing-meaning' : ''}" lang="${m.missing ? 'zh-Hant' : settings.meaningLanguage}">${esc(m.text)}</p>${w.pattern ? `<p class="card-pattern" lang="${state.language}">${esc(w.pattern)}</p>` : ''}<div class="card-examples">${examples.length ? examples.map((example) => exampleHTML(example)).join('') : '<p class="entry-empty-copy">尚未收錄例句</p>'}</div><div class="card-answer-actions"><button id="reveal-button" class="text-button hide-answer" aria-expanded="true" aria-controls="answer-area">隱藏釋義 ↑</button>${detailButton(w)}</div>` : `${memory ? '' : `<p class="answer-placeholder">${isGrammar() ? '先回想這個語法的意思與接續方式' : '先回想這個單字的意思'}</p>`}<button id="reveal-button" class="button button-tonal" aria-keyshortcuts="Space" title="空格：顯示釋義" aria-expanded="false" aria-controls="answer-area">${icons.eye}顯示釋義與例句</button>${detailButton(w)}`}</div>${memory ? `<div class="rating-section"><div class="rating-heading"><span>間隔複習</span><span>已通過 ${memory.stage} / ${memory.masteryStage} 次</span></div><div class="memory-answer-actions"><button class="button button-outline" type="button" data-memory-answer="forgot" data-memory-word="${esc(w.id)}">${memory.previousLapse ? "沒想起 · 轉為不熟悉" : "沒想起 · 1 天後重練"}</button><button class="button button-primary" type="button" aria-keyshortcuts="Enter" title="Enter：記住了" data-memory-answer="remembered" data-memory-word="${esc(w.id)}" ${m.missing ? "disabled" : ""}>${memory.stage === memory.masteryStage - 1 ? "記住了 · 轉為已掌握" : "記住了"}</button></div>${m.missing ? `<p class="memory-card-help">請先在設定選擇有釋義的語言，再判定是否記住。</p>` : ""}<button class="button button-outline memory-mastered-action" type="button" data-memory-mastered data-memory-word="${esc(w.id)}">已掌握</button></div>` : `<div class="rating-section"><div class="rating-heading"><span>熟悉程度</span><span class="current-rating">${labels[level]}</span></div><div class="rating-buttons">${[1, 2, 3].map((l) => `<button class="rating-button" data-rate="${l}" data-word="${esc(w.id)}" data-level="${l}" aria-pressed="${level === l}"><span class="rating-dot" aria-hidden="true"></span>${labels[l]}${level === l ? ' ✓' : ''}</button>`).join('')}</div></div>`}</article>${memory ? "</div></div>" : `<div class="card-navigation"><button id="previous-word" class="button button-outline" ${state.index === 0 ? 'disabled' : ''}>${icons.left}上一個</button><button id="next-word" class="button button-primary" aria-keyshortcuts="Enter ArrowRight">${state.index === deck.length - 1 ? '完成這組' : '下一個'}${icons.right}</button></div>${state.completed ? `<div class="session-end" role="status"><span>已看完這組 ${deck.length} 個${itemLabel()}。</span><button id="restart-session" class="text-button">再學一次 ↻</button></div>` : ''}</div>${progressPanel()}</div>`}`;
+      return `<div class="study-grid study-card-grid"><div><article class="flashcard study-flashcard" aria-label="${itemLabel()}卡片"><div class="flashcard-top"><span class="word-category">${esc(w.subcategory)} · ${esc(categoryLabel(subcategoryOf(w.subcategory)?.name || ''))}</span><span class="word-position">${memory ? memory.position : state.index + 1} / ${memory ? memory.total : deck.length}</span></div><div class="word-face"><div class="word-main">${speaker(w)}<h3 class="french-word${w.term.length > 24 ? ' long-term' : ''}" lang="${state.language}">${formatTerm(w, state.language)}</h3></div></div><div class="answer-area" id="answer-area">${state.revealed ? `<p class="chinese-meaning ${m.missing ? 'missing-meaning' : ''}" lang="${m.missing ? 'zh-Hant' : settings.meaningLanguage}">${esc(m.text)}</p>${w.pattern ? `<p class="card-pattern" lang="${state.language}">${esc(w.pattern)}</p>` : ''}<div class="card-examples">${examples.length ? examples.map((example) => exampleHTML(example)).join('') : '<p class="entry-empty-copy">尚未收錄例句</p>'}</div><div class="card-answer-actions"><button id="reveal-button" class="text-button hide-answer" aria-expanded="true" aria-controls="answer-area">隱藏釋義 ↑</button>${detailButton(w)}</div>` : `${memory ? '' : `<p class="answer-placeholder">${isGrammar() ? '先回想這個語法的意思與接續方式' : '先回想這個單字的意思'}</p>`}<button id="reveal-button" class="button button-tonal" aria-keyshortcuts="Space" title="空格：顯示釋義" aria-expanded="false" aria-controls="answer-area">${icons.eye}顯示釋義與例句</button>${detailButton(w)}`}</div>${memory ? `<div class="rating-section"><div class="rating-heading"><span>間隔複習</span><span>已通過 ${memory.stage} / ${memory.masteryStage} 次</span></div><div class="memory-answer-actions"><button class="button button-outline memory-mastered-action" type="button" data-memory-mastered data-memory-word="${esc(w.id)}">已掌握</button><button class="button button-outline" type="button" data-memory-answer="forgot" data-memory-word="${esc(w.id)}">${memory.previousLapse ? '沒想起 · 轉為不熟悉' : '沒想起 · 1 天後重練'}</button><button class="button button-primary" type="button" aria-keyshortcuts="Enter" title="Enter：記住了" data-memory-answer="remembered" data-memory-word="${esc(w.id)}" ${m.missing ? 'disabled' : ''}>${memory.stage === memory.masteryStage - 1 ? '記住了 · 轉為已掌握' : '記住了'}</button></div>${m.missing ? `<p class="memory-card-help">請先在設定選擇有釋義的語言，再判定是否記住。</p>` : ''}</div>` : `<div class="rating-section"><div class="rating-heading"><span>熟悉程度</span><span class="current-rating">${labels[level]}</span></div><div class="rating-buttons">${[1, 2, 3].map((l) => `<button class="rating-button" data-rate="${l}" data-word="${esc(w.id)}" data-level="${l}" aria-pressed="${level === l}"><span class="rating-dot" aria-hidden="true"></span>${labels[l]}${level === l ? ' ✓' : ''}</button>`).join('')}</div></div>`}</article>${memory ? '</div></div>' : `<div class="card-navigation"><button id="previous-word" class="button button-outline" ${state.index === 0 ? 'disabled' : ''}>${icons.left}上一個</button><button id="next-word" class="button button-primary" aria-keyshortcuts="Enter ArrowRight">${state.index === deck.length - 1 ? '完成這組' : '下一個'}${icons.right}</button></div>${state.completed ? `<div class="session-end" role="status"><span>已看完這組 ${deck.length} 個${itemLabel()}。</span><button id="restart-session" class="text-button">再學一次 ↻</button></div>` : ''}</div>${progressPanel()}</div>`}`;
     }
     function renderDetail(word) {
       const { state, settings } = getModel();
@@ -228,7 +256,7 @@
         examples = examplesOf(word);
       return `<div class="entry-detail-header"><p class="entry-detail-category">${isGrammar() ? '語法背誦' : '詞彙背誦'} · ${esc(categoryLabel(subcategoryOf(word.subcategory)?.name || ''))}</p><div class="entry-detail-term">${speaker(word)}<h2 id="entry-detail-title" lang="${state.language}">${formatTerm(word, state.language)}</h2></div><p class="entry-detail-meaning ${m.missing ? 'missing-meaning' : ''}" lang="${m.missing ? 'zh-Hant' : settings.meaningLanguage}">${esc(m.text)}</p></div>${word.pattern ? `<section class="entry-detail-section"><h3>${isGrammar() ? '接續方式' : '搭配與句型'}</h3><p class="entry-pattern" lang="${state.language}">${esc(word.pattern)}</p></section>` : ''}<section class="entry-detail-section"><h3>用法說明</h3><p class="entry-explanation" lang="zh-Hant">${word.explanation ? esc(word.explanation) : '尚未補充用法說明。'}</p></section><section class="entry-detail-section"><div class="entry-detail-section-heading"><h3>例句</h3><span>${examples.length} 個例句</span></div><div class="detail-examples">${examples.length ? examples.map((example) => exampleHTML(example, 'detail')).join('') : '<p class="entry-empty-copy">尚未收錄例句。</p>'}</div></section>`;
     }
-    return Object.freeze({ list: renderList, card: renderCard, detail: renderDetail });
+    return Object.freeze({ list: renderList, memoryLapses: renderMemoryLapses, card: renderCard, detail: renderDetail });
   }
 
   window.MotsWorkspace = Object.freeze({ home, reviewSummary, createStudyView });

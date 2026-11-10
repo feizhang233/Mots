@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "a3c5cb85b75d7d1b45e94492f3b716658d684ac57afbf7ce20ed00c272a5dbf6",
+  "version": "7599177f6b69e5d7b105b3873f14f1ca598e13ec5a9f61e5db6483692842d3b4",
   "catalogPath": "/database/catalog.json",
-  "catalogSHA256": "d563bc0fb688ee0f49d6ad12af445f6888ffc5df1ed37c5c4babc87b1a3977c3",
+  "catalogSHA256": "c2388b644c284bfc15b9c430a5991069bceb9a34be8ea518c55640b05eb37161",
   "dictionaries": [
     {
       "id": "fr",
@@ -21,6 +21,12 @@
       "kind": "vocabulary",
       "language": "ja",
       "entryCount": 414
+    },
+    {
+      "id": "vocab-ja-n2-hongbao",
+      "kind": "vocabulary",
+      "language": "ja",
+      "entryCount": 3136
     },
     {
       "id": "grammar-fr",
@@ -82,10 +88,13 @@
     "database/japanese/grammar/02 語法類型整理.md": "c9c5f00b11267f9dfc221a1776431691e39a4ab568dfc85562a9aa241601e01e",
     "database/japanese/grammar/books.json": "e91a5baddb2014ca81bec63b20dd99fce780d419fdfe888cdc4c4e521568efb6",
     "web/src/js/languages.js": "fbfb80f1f910853ef39a2fdb98189743106f1bbeb72233ef8e3d741c8b8ce399",
-    "web/src/js/dictionaries.js": "255e4f9918b928bf666735cc7088ad6fd7bda0d8ce5e7c803d2d033615c26155",
+    "web/src/js/dictionaries.js": "9669f764084e5f20f21ec735b57bb9e1614f76ba174abbc0a7198c5a5accc121",
     "web/src/js/grammar.js": "9f047c78b489e3b7260d233d861c11da8dc792e35b3567f5f246d970e168e4de",
-    "database/catalog.json": "d563bc0fb688ee0f49d6ad12af445f6888ffc5df1ed37c5c4babc87b1a3977c3",
+    "database/catalog.json": "c2388b644c284bfc15b9c430a5991069bceb9a34be8ea518c55640b05eb37161",
     "database/japanese/scenarios.json": "39abd5add943486662cd54a99cc3913a0da23e171b676434525d637cc97b2b90",
-    "database/french/example-network.json": "db12f8809fbd03dd453c1b94976457c01c6aab2cb1bf5960b9b0afcc78263d02"
+    "database/french/example-network.json": "db12f8809fbd03dd453c1b94976457c01c6aab2cb1bf5960b9b0afcc78263d02",
+    "database/japanese/hongbao-n2/vocabulary.json": "55af476f924e92c72f1c4d810a25c316f46ba86e76b7047452f2ee5a8c97e662",
+    "database/japanese/hongbao-n2/identity.json": "af70eac9f87a47067f08f2f841c702716e7fedf95cb3a8fcb1b8310e1300d81f",
+    "web/src/js/n2-vocabulary.js": "60cb5762eb3836026350e0947e12059ad2f5fbb79da522dc01b803326c988c3c"
   }
 }

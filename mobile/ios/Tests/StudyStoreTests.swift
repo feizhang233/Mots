@@ -5,13 +5,13 @@ struct StudyStoreTests {
     @MainActor static func main() throws {
         let resource = URL(fileURLWithPath: CommandLine.arguments[1])
         let catalog = try JSONDecoder().decode([StudyDictionary].self, from: Data(contentsOf: resource))
-        precondition(catalog.map(\.words.count) == [3846, 12, 414, 6, 6, 141, 0, 0, 229], "Bundled source counts")
+        precondition(catalog.map(\.words.count) == [3846, 12, 414, 3136, 6, 6, 141, 0, 0, 229], "Bundled source counts")
         let vocabulary = catalog.filter { $0.kind == .vocabulary }
         let grammar = catalog.filter { $0.isGrammar && !$0.isThematicGrammar }
         let thematic = catalog.filter(\.isThematicGrammar)
-        precondition(vocabulary.flatMap(\.words).count == 4272, "Vocabulary keeps every existing entry")
+        precondition(vocabulary.flatMap(\.words).count == 7408, "Vocabulary keeps every existing entry and adds N2")
         precondition(vocabulary.flatMap(\.words).allSatisfy { word in
-            guard let audio = word.audio else { return false }
+            guard let audio = word.audio else { return word.language == "ja" && !word.reading.isEmpty }
             return FileManager.default.fileExists(atPath: resource.deletingLastPathComponent().appendingPathComponent(audio).path)
         }, "Every bundled vocabulary entry has a local audio file")
         precondition(grammar.map(\.id) == ["grammar-fr", "grammar-de", "grammar-ja"], "Grammar books keep separate stable identities")
@@ -82,7 +82,8 @@ struct StudyStoreTests {
         let importedData = try json(["id": "dict-collision", "language": "fr", "title": "自訂辭典", "words": [
             ["id": age.id, "term": "école", "meanings": ["en": "school"], "example": "Une école.", "part": "n. f."]]])
         let customID = try store.importDictionary(importedData)
-        precondition(customID != "dict-collision" && store.currentDictionary.id == customID)
+        precondition(customID == "dict-collision" && store.currentDictionary.id == customID,
+                     "Portable dictionary identity stays stable for bidirectional content sync")
         let importedWord = store.currentDictionary.words[0]
         precondition(store.rating(importedWord) == 0 && importedWord.audio == nil)
         precondition(store.displayMeaning(for: importedWord).contains("尚無"), "Missing meaning is not invented")

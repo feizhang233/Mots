@@ -6,6 +6,9 @@ struct MemoryRecord: Codable, Equatable {
     let dueAt: Double
     let updatedAt: Double
 
+    // A manual reset also uses stage zero, with no interval before the next answer.
+    var hasPendingLapse: Bool { stage == 0 && dueAt > updatedAt }
+
     static let intervals: [Double] = [24 * 60 * 60, 2 * 24 * 60 * 60, 4 * 24 * 60 * 60, 7 * 24 * 60 * 60]
     static let masteryStage = intervals.count + 1
     static let maxTimestamp: Double = 253_402_300_799_999

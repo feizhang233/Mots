@@ -74,12 +74,23 @@
     const legacy = term.match(/^(.+?)[（(]([^（）()]+)[）)]$/u);
     const headword = String(word.headword || legacy?.[1] || term);
     const reading = String(word.reading || legacy?.[2] || '');
-    return furiganaSegments(headword, reading)
-      .map((part) => part.reading
-        ? `<ruby class="japanese-ruby">${escapeHTML(part.text)}<rt>${escapeHTML(part.reading)}</rt></ruby>`
-        : escapeHTML(part.text))
-      .join('');
+    const note = headword.match(/〔[^〕]*〕$/u)?.[0] || '';
+    const base = note ? headword.slice(0, -note.length) : headword;
+    const kana = (text) => text.replace(/[ァ-ヶ]/gu, (c) => String.fromCodePoint(c.codePointAt(0) - 0x60));
+    const pronunciation = reading && kana(base) !== kana(reading)
+      ? `<span class="japanese-reading">（${escapeHTML(reading)}）</span>` : '';
+    return escapeHTML(base) + pronunciation + escapeHTML(note);
   }
 
-  window.MotsCore = Object.freeze({ escapeHTML, isObject, hash, furiganaSegments, formatTerm });
+  function formatExample(example, language) {
+    const text = String(example.text || '');
+    const segments = example.furigana;
+    if (language !== 'ja' || !Array.isArray(segments) ||
+      segments.map((segment) => segment.text).join('') !== text) return escapeHTML(text);
+    return segments.map((segment) => segment.reading
+      ? `${escapeHTML(segment.text)}<span class="japanese-reading">（${escapeHTML(segment.reading)}）</span>`
+      : escapeHTML(segment.text)).join('');
+  }
+
+  window.MotsCore = Object.freeze({ escapeHTML, isObject, hash, furiganaSegments, formatTerm, formatExample });
 })();

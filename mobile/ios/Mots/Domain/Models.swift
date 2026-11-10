@@ -41,16 +41,43 @@ enum StudyGrammarMode: String, Codable, CaseIterable {
     case standard, thematic
 }
 
+struct StudyReadingSegment: Codable, Hashable {
+    let text: String
+    let reading: String
+}
+
 struct StudyExample: Codable, Hashable {
     let text: String
     let translations: [String: String]
+    let furigana: [StudyReadingSegment]
 
-    init(text: String, translations: [String: String] = [:]) {
+    init(text: String, translations: [String: String] = [:], furigana: [StudyReadingSegment] = []) {
         self.text = text
         self.translations = translations
+        self.furigana = furigana
     }
 
-    private enum CodingKeys: String, CodingKey { case text, translations }
+    var annotatedText: String {
+        guard !furigana.isEmpty else { return text }
+        return furigana.map { $0.text + ($0.reading.isEmpty ? "" : "（\($0.reading)）") }.joined()
+    }
+
+    var importJSON: [String: Any] {
+        var result: [String: Any] = ["text": text, "translations": translations]
+        if !furigana.isEmpty { result["furigana"] = furigana.map { ["text": $0.text, "reading": $0.reading] } }
+        return result
+    }
+
+    static func checkedAnnotations(_ segments: [StudyReadingSegment], text: String) throws -> [StudyReadingSegment] {
+        guard segments.isEmpty || (segments.count <= 2000 && segments.map(\.text).joined() == text && segments.allSatisfy({
+            !$0.text.isEmpty && ($0.reading.isEmpty ||
+                ($0.reading.range(of: "^[ぁ-ゖァ-ヶー]+$", options: .regularExpression) != nil &&
+                 $0.text.range(of: "^[一-龯々]+$", options: .regularExpression) != nil))
+        })) else { throw StudyDataError("例句讀音與原文不一致。") }
+        return segments
+    }
+
+    private enum CodingKeys: String, CodingKey { case text, translations, furigana }
 
     init(from decoder: Decoder) throws {
         if let sentence = try? decoder.singleValueContainer().decode(String.self) {
@@ -68,7 +95,8 @@ struct StudyExample: Codable, Hashable {
             let value = try StudyImport.detailText(translation, field: "例句翻譯", limit: 2000, required: false)
             if !value.isEmpty { checked[language] = value }
         }
-        self.init(text: sentence, translations: checked)
+        let segments = try values.contains(.furigana) ? values.decode([StudyReadingSegment].self, forKey: .furigana) : []
+        self.init(text: sentence, translations: checked, furigana: try Self.checkedAnnotations(segments, text: sentence))
     }
 }
 
@@ -86,13 +114,18 @@ struct StudyWord: Codable, Hashable, Identifiable {
     let examples: [StudyExample]
     let pattern: String
     let explanation: String
+    let reading: String
 
     var exampleTexts: [String] { examples.map(\.text) }
+    var displayTerm: String {
+        language == "ja" && !reading.isEmpty && reading != term ? "\(term)（\(reading)）" : term
+    }
+    func displayExample(_ example: StudyExample) -> String { language == "ja" ? example.annotatedText : example.text }
 
     /// Grammar notation stays visible, but Japanese voices should only read the phrase.
     var speechText: String {
         guard language == "ja" else { return term }
-        return term
+        return (reading.isEmpty ? term : reading)
             .replacingOccurrences(of: "[/／]", with: " ", options: .regularExpression)
             .replacingOccurrences(of: "[～〜~]", with: "", options: .regularExpression)
             .split(whereSeparator: \.isWhitespace)
@@ -102,7 +135,7 @@ struct StudyWord: Codable, Hashable, Identifiable {
     init(id: String, term: String, meaning: String, example: String = "", category: String,
          subcategory: String, language: String, audio: String? = nil,
          meanings: [String: String]? = nil, part: String? = nil,
-         examples: [StudyExample] = [], pattern: String = "", explanation: String = "") {
+         examples: [StudyExample] = [], pattern: String = "", explanation: String = "", reading: String = "") {
         self.id = id; self.term = term; self.meaning = meaning
         self.meanings = meanings ?? ["zh-Hant": meaning]
         let combined = Self.mergeExamples(legacy: example, supplied: examples)
@@ -111,6 +144,7 @@ struct StudyWord: Codable, Hashable, Identifiable {
         self.category = category; self.subcategory = subcategory
         self.language = language; self.audio = audio; self.part = part
         self.pattern = pattern; self.explanation = explanation
+        self.reading = reading
     }
 
     static func mergeExamples(legacy: String, supplied: [StudyExample]) -> [StudyExample] {
@@ -121,10 +155,11 @@ struct StudyWord: Codable, Hashable, Identifiable {
             guard !sentence.isEmpty else { continue }
             if let position = positions[sentence] {
                 let translations = result[position].translations.merging(entry.translations) { first, _ in first }
-                result[position] = StudyExample(text: sentence, translations: translations)
+                result[position] = StudyExample(text: sentence, translations: translations,
+                    furigana: result[position].furigana.isEmpty ? entry.furigana : result[position].furigana)
             } else {
                 positions[sentence] = result.count
-                result.append(StudyExample(text: sentence, translations: entry.translations))
+                result.append(StudyExample(text: sentence, translations: entry.translations, furigana: entry.furigana))
             }
         }
         return result
@@ -132,7 +167,7 @@ struct StudyWord: Codable, Hashable, Identifiable {
 
     private enum CodingKeys: String, CodingKey {
         case id, term, meaning, meanings, example, category, subcategory, language, audio, part
-        case examples, pattern, explanation
+        case examples, pattern, explanation, reading
     }
 
     init(from decoder: Decoder) throws {
@@ -153,7 +188,16 @@ struct StudyWord: Codable, Hashable, Identifiable {
                   audio: try values.decodeIfPresent(String.self, forKey: .audio),
                   meanings: try values.decodeIfPresent([String: String].self, forKey: .meanings),
                   part: try values.decodeIfPresent(String.self, forKey: .part),
-                  examples: examples, pattern: pattern, explanation: explanation)
+                  examples: examples, pattern: pattern, explanation: explanation,
+                  reading: try Self.checkedReading(values.decodeIfPresent(String.self, forKey: .reading)))
+    }
+
+    static func checkedReading(_ value: String?) throws -> String {
+        let reading = try StudyImport.text(value, field: "讀音", limit: 180, required: false)
+        guard reading.isEmpty || reading.range(of: "^[ぁ-ゖァ-ヶー～〜・/]+$", options: .regularExpression) != nil else {
+            throw StudyDataError("日語讀音須使用假名。")
+        }
+        return reading
     }
 }
 
@@ -165,13 +209,16 @@ struct StudyDictionary: Codable, Hashable, Identifiable {
     var words: [StudyWord]
     let kind: StudyDictionaryKind
     let grammarMode: StudyGrammarMode
-    var isBuiltIn: Bool { ["fr", "de", "ja", "grammar-fr", "grammar-de", "grammar-ja",
+    let builtIn: Bool?
+    let usesCustomTitle:Bool?
+    var isBuiltIn: Bool { builtIn ?? ["fr", "de", "ja", "vocab-ja-n2-hongbao", "grammar-fr", "grammar-de", "grammar-ja",
                           "grammar-theme-fr", "grammar-theme-de", "grammar-theme-ja"].contains(id) }
     var isGrammar: Bool { kind == .grammar }
     var isThematicGrammar: Bool { isGrammar && grammarMode == .thematic }
     var entryUnit: String { isGrammar ? "項" : "詞" }
     var displayTitle: String {
-        ["fr": "Français Mots", "de": "Deutsch Wörter", "ja": "日本語 語彙",
+        if usesCustomTitle == true { return title }
+        return ["fr": "Français Mots", "de": "Deutsch Wörter", "ja": "日本語 語彙",
          "grammar-fr": "Français Grammaire", "grammar-de": "Deutsch Grammatik", "grammar-ja": "日本語 文法",
          "grammar-theme-fr": "Français Grammaire · 主題", "grammar-theme-de": "Deutsch Grammatik · 主題",
          "grammar-theme-ja": "日本語 文法 · 主題"][id] ?? title
@@ -180,13 +227,15 @@ struct StudyDictionary: Codable, Hashable, Identifiable {
     var locale: String { ["fr": "fr-FR", "de": "de-DE", "ja": "ja-JP"][language] ?? language }
 
     init(id: String, title: String, language: String, categories: [StudyCategory], words: [StudyWord],
-         kind: StudyDictionaryKind = .vocabulary, grammarMode: StudyGrammarMode = .standard) {
+         kind: StudyDictionaryKind = .vocabulary, grammarMode: StudyGrammarMode = .standard, builtIn: Bool? = nil,usesCustomTitle:Bool?=nil) {
         self.id = id; self.title = title; self.language = language
         self.categories = categories; self.words = words; self.kind = kind
         self.grammarMode = kind == .grammar ? grammarMode : .standard
+        self.builtIn = builtIn
+        self.usesCustomTitle=usesCustomTitle
     }
 
-    private enum CodingKeys: String, CodingKey { case id, title, language, categories, words, kind, grammarMode }
+    private enum CodingKeys: String, CodingKey { case id, title, language, categories, words, kind, grammarMode, builtIn,usesCustomTitle }
 
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
@@ -200,7 +249,8 @@ struct StudyDictionary: Codable, Hashable, Identifiable {
                   language: try values.decode(String.self, forKey: .language),
                   categories: try values.decode([StudyCategory].self, forKey: .categories),
                   words: try values.decode([StudyWord].self, forKey: .words),
-                  kind: kind, grammarMode: grammarMode)
+                  kind: kind, grammarMode: grammarMode, builtIn: try values.decodeIfPresent(Bool.self, forKey: .builtIn),
+                  usesCustomTitle:try values.decodeIfPresent(Bool.self,forKey:.usesCustomTitle))
     }
     static let empty = StudyDictionary(id: "fr", title: "詞庫尚未載入", language: "fr", categories: [], words: [])
 }
@@ -226,10 +276,11 @@ enum StudyImport {
             "term": entry?.term ?? (dictionary.isGrammar ? "請填入語法句型" : "請填入單字"),
             "meanings": [meaningCode: entry?.meanings[meaningCode] ?? "請填入釋義"],
             "example": entry?.example ?? "",
-            "examples": entry?.examples.map { ["text": $0.text, "translations": $0.translations] as [String: Any] } ?? [],
+            "examples": entry?.examples.map(\.importJSON) ?? [],
             "pattern": entry?.pattern ?? "",
             "explanation": entry?.explanation ?? ""
         ]
+        if let reading = entry?.reading, !reading.isEmpty { word["reading"] = reading }
         var source: [String: Any] = [
             "app": "mots-dictionary", "version": 1,
             "title": dictionary.isThematicGrammar ? "我的主題語法書" : dictionary.isGrammar ? "我的語法筆記" : "我的詞彙本",
@@ -278,7 +329,13 @@ enum StudyImport {
                     if !translation.isEmpty { translations[language] = translation }
                 }
             }
-            return StudyExample(text: sentence, translations: translations)
+            let segments: [StudyReadingSegment]
+            if let raw = entry["furigana"] {
+                let data = try JSONSerialization.data(withJSONObject: raw)
+                segments = try JSONDecoder().decode([StudyReadingSegment].self, from: data)
+            } else { segments = [] }
+            return StudyExample(text: sentence, translations: translations,
+                furigana: try StudyExample.checkedAnnotations(segments, text: sentence))
         }
         let merged = StudyWord.mergeExamples(legacy: legacy, supplied: examples)
         guard merged.count <= 20 else { throw StudyDataError("每個詞條最多 20 個例句（包含 example 欄位）。") }
@@ -410,7 +467,8 @@ enum StudyImport {
                 example: details.example,
                 category: parent, subcategory: sub, language: language, meanings: meanings,
                 part: raw["part"] as? String, examples: details.examples,
-                pattern: details.pattern, explanation: details.explanation)
+                pattern: details.pattern, explanation: details.explanation,
+                reading: try StudyWord.checkedReading(raw["reading"].map { try text($0, field: "讀音", limit: 180, required: false) }))
         }
         if !declared {
             categories = inferredOrder.map { parent in StudyCategory(id: parent, name: parent == "1" ? (kind == .grammar ? "一般語法" : "一般詞彙") : "單元 \(parent)", subcategories: inferred[parent, default: []].map { StudySubcategory(id: $0, name: "子單元 \($0)") }) }

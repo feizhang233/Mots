@@ -116,7 +116,12 @@
       }
       stop();
       const context = getContext();
-      const text = speechText(word.term, context.language);
+      // Explicit readings disambiguate homographs such as 空（から / そら）.
+      const text = speechText(
+        context.language === 'ja' && typeof word.reading === 'string' && word.reading.trim()
+          ? word.reading : word.term,
+        context.language,
+      );
       if (!text.trim()) {
         status.textContent = '沒有可朗讀的文字';
         return;

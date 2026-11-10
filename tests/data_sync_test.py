@@ -9,6 +9,7 @@ import shutil
 import subprocess
 import tempfile
 import unittest
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location("sync_data", ROOT / "scripts/sync-data.py")
@@ -17,6 +18,22 @@ spec.loader.exec_module(sync_data)
 
 
 class DataSyncTests(unittest.TestCase):
+    def test_n2_content_can_change_but_existing_progress_keys_cannot(self):
+        spec = importlib.util.spec_from_file_location("n2_import", ROOT / "scripts/import-japanese-n2.py")
+        importer = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(importer)
+        source = json.loads(importer.SOURCE.read_text())
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "vocabulary.json"
+            source["words"][0]["meanings"]["zh-Hant"] = "校對後的釋義"
+            path.write_text(json.dumps(source, ensure_ascii=False))
+            with patch.object(importer, "SOURCE", path):
+                self.assertIn("校對後的釋義", importer.build())
+                source["words"][0]["id"] += "-changed"
+                path.write_text(json.dumps(source, ensure_ascii=False))
+                with self.assertRaisesRegex(AssertionError, "identities changed"):
+                    importer.build()
+
     @classmethod
     def setUpClass(cls):
         cls.words = []
@@ -65,7 +82,11 @@ class DataSyncTests(unittest.TestCase):
             f"grammar-{prefix}{language}"
             for prefix in ("", "theme-") for language in ("fr", "de", "ja")
         })
-        self.assertEqual(len(books), 9)
+        self.assertEqual(len(books), 10)
+        n2 = books['vocab-ja-n2-hongbao']
+        self.assertEqual(n2['audioMode'], 'speech')
+        self.assertEqual(len(n2['words']), 3136)
+        self.assertTrue(all(word['audio'] is None and word['reading'] and word['examples'][0]['furigana'] for word in n2['words']))
         self.assertEqual(len(books), len(native), "Dictionary identities must remain unique")
         for dictionary in source:
             generated = books[dictionary["id"]]

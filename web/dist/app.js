@@ -12,6 +12,7 @@
     MotsProgressSync,
     MotsDeletions,
     MotsMemory,
+    MotsContent,
   } = window;
   const { escapeHTML: esc, isObject } = MotsCore;
   const { downloadFile, downloadJSON: download } = MotsDownloads;
@@ -34,7 +35,8 @@
       '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m11 5-6 4H2v6h3l6 4V5Z"/><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></svg>',
     chevron: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"/></svg>',
     book: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5c-3-2-7-2-10-1v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1Zm0 0v15"/></svg>',
-    memory: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="2"/><path d="M5 6h14M7 3h10"/></svg>',
+    memory:
+      '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="2"/><path d="M5 6h14M7 3h10"/></svg>',
     right: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>',
     left: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m5-5-5 5 5 5"/></svg>',
     eye: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>',
@@ -81,10 +83,13 @@
     return MotsMemory.merge(memoryRecords, MotsMemory.sanitize(disk));
   }
   let memoryWorkspace = MotsMemory.sanitizeWorkspace(read(memoryWorkspaceKey, {}));
-  const memorySelection = {}, memorySessions = {};
+  const memorySelection = {},
+    memorySessions = {};
   const memoryBookBaselines = new Map();
-  let lastMemoryDestination, memoryDestinationPending = false;
-  const hydrateMemorySession = (session) => session ? { ...session, ids: [...session.ids], answered: new Set(session.answered) } : null;
+  let lastMemoryDestination,
+    memoryDestinationPending = false;
+  const hydrateMemorySession = (session) =>
+    session ? { ...session, ids: [...session.ids], answered: new Set(session.answered) } : null;
   for (const [id, book] of Object.entries(memoryWorkspace.books)) {
     if (book.chapters !== null) memorySelection[id] = [...book.chapters];
     if (book.session) memorySessions[id] = hydrateMemorySession(book.session);
@@ -93,6 +98,9 @@
   let memorySession = null;
   let memoryTimer;
   let dictionaryLibrary = [];
+  let contentState = null,
+    synchronizedBooks = null,
+    contentOperationBusy = false;
   try {
     dictionaryLibrary = MotsDictionaries.validateLibrary(read(dictionariesKey, []));
   } catch {
@@ -118,7 +126,7 @@
     title: builtinBookTitles[book.id] || book.title,
   }));
   const builtinIDs = new Set(builtinDictionaries.map((d) => d.id));
-  const dictionaryList = () => [...builtinDictionaries, ...dictionaryLibrary];
+  const dictionaryList = () => synchronizedBooks || [...builtinDictionaries, ...dictionaryLibrary];
   const dictionaryKind = (dictionary) =>
     dictionary?.kind === 'grammar' ? 'grammar' : 'vocabulary';
   const isThematicGrammar = (dictionary) =>
@@ -157,7 +165,8 @@
       visibility,
     };
   }
-  let settings = sanitizeSettings(read(settingsKey, {}));
+  const initialStoredSettings = read(settingsKey, {});
+  let settings = sanitizeSettings(initialStoredSettings);
   function applyDefaultVisibility(lang) {
     if (settings.defaultHideMastered)
       settings.visibility[lang] = [...new Set([...settings.visibility[lang], 3])];
@@ -185,6 +194,8 @@
     const meanings = isObject(word.meanings) ? { ...word.meanings } : {};
     if (language === 'fr' && word.chinese && !meanings['zh-Hans'])
       meanings['zh-Hans'] = word.chinese;
+    if (typeof word.meaning === 'string' && !meanings['zh-Hant'])
+      meanings['zh-Hant'] = word.meaning;
     if (meanings['zh-Hans'] && !meanings['zh-Hant']) meanings['zh-Hant'] = tc(meanings['zh-Hans']);
     if (meanings['zh-Hant'] && !meanings['zh-Hans']) meanings['zh-Hans'] = sc(meanings['zh-Hant']);
     let details;
@@ -212,12 +223,18 @@
   }
   let banks;
   function refreshBanks() {
+    if (synchronizedBooks) {
+      banks = Object.fromEntries(
+        synchronizedBooks.map((d) => [d.id, d.words.map((w) => normalizeWord(w, d.language))]),
+      );
+      return;
+    }
     banks = { fr: (window.WORDS || []).map((w) => normalizeWord(w, 'fr')) };
     for (const lang of ['de', 'ja'])
       banks[lang] = (window.MOTS_EXTRA_BANKS?.[lang] || []).map((w) => normalizeWord(w, lang));
     for (const dictionary of builtinDictionaries) {
       const lang = dictionary.id;
-      if (dictionary.kind === 'grammar')
+      if (Array.isArray(dictionary.words))
         banks[lang] = dictionary.words.map((w) => normalizeWord(w, dictionary.language));
       const extras = Array.isArray(customBanks[lang]) ? customBanks[lang] : [];
       for (const word of extras)
@@ -234,6 +251,19 @@
   }
   refreshBanks();
   const url = new URL(location.href);
+  const desiredContentDictionary =
+    url.searchParams.get('dict') ||
+    (url.searchParams.has('lang')
+      ? null
+      : memoryWorkspace.active
+        ? memoryWorkspace.dictionaryID
+        : initialStoredSettings?.dictionaryId);
+  let pendingContentDictionary =
+    typeof desiredContentDictionary === 'string' &&
+    window.MotsSyncProtocol.identifier(desiredContentDictionary, 128) &&
+    !dictionaryIDs().includes(desiredContentDictionary)
+      ? desiredContentDictionary
+      : null;
   const initialDictionary = dictionaryIDs().includes(url.searchParams.get('dict'))
     ? url.searchParams.get('dict')
     : languageCodes.has(url.searchParams.get('lang'))
@@ -251,12 +281,18 @@
     ? requestedScreen
     : url.searchParams.has('category')
       ? 'study'
-      : memoryWorkspace.active ? 'memory' : 'home';
+      : memoryWorkspace.active
+        ? 'memory'
+        : 'home';
   const state = {
+    memoryView: url.searchParams.get('memoryView') === 'lapses' ? 'lapses' : 'round',
     dictionary: initialDictionary,
     studyKind: dictionaryKind(dictionaryOf(initialDictionary)),
     language: dictionaryOf(initialDictionary).language,
-    screen: screen === 'memory' && dictionaryKind(dictionaryOf(initialDictionary)) === 'grammar' ? 'study' : screen,
+    screen:
+      screen === 'memory' && dictionaryKind(dictionaryOf(initialDictionary)) === 'grammar'
+        ? 'study'
+        : screen,
     category: categoryValid(url.searchParams.get('category'))
       ? url.searchParams.get('category')
       : 'all',
@@ -277,8 +313,13 @@
     memorySession = memorySessions[state.dictionary] || null;
     state.revealed = memorySession?.revealed === true && !memorySession.paused;
   }
-  lastMemoryDestination = JSON.stringify({ active: state.screen === 'memory', dictionaryID: state.dictionary });
-  memoryDestinationPending = ['screen', 'category', 'dict', 'lang'].some((key) => url.searchParams.has(key));
+  lastMemoryDestination = JSON.stringify({
+    active: state.screen === 'memory',
+    dictionaryID: state.dictionary,
+  });
+  memoryDestinationPending = ['screen', 'category', 'dict', 'lang'].some((key) =>
+    url.searchParams.has(key),
+  );
   if (url.searchParams.has('hide'))
     settings.visibility[state.dictionary] = [
       ...new Set(
@@ -296,6 +337,7 @@
   let deck = [],
     matched = [],
     randomOrder = [],
+    memoryNavExpanded = state.screen === 'memory',
     expandedCategory = state.category === 'all' ? null : state.category,
     composing = false,
     homeComposing = false,
@@ -350,18 +392,20 @@
         : '設定會自動儲存於此瀏覽器。';
   }
   function saveSettings() {
-    settings.dictionaryId = state.dictionary;
+    settings.dictionaryId = pendingContentDictionary || state.dictionary;
     settings.studyLanguage = state.language;
     settings.view = state.view;
     settings.order = state.order;
     return write(settingsKey, settings);
   }
   function syncURL() {
+    if (pendingContentDictionary) return;
     const u = new URL(location.href);
     u.search = '';
     u.hash = '';
     u.searchParams.set('dict', state.dictionary);
     u.searchParams.set('screen', state.screen);
+    if (showingMemoryLapses()) u.searchParams.set('memoryView', 'lapses');
     u.searchParams.set('lang', state.language);
     u.searchParams.set('category', state.category);
     if (state.subcategory !== 'all') u.searchParams.set('sub', state.subcategory);
@@ -370,7 +414,7 @@
       u.searchParams.set('hide', [...hiddenLevels()].sort().join(','));
     if (state.view === 'list') u.searchParams.set('view', 'list');
     u.searchParams.set('size', settings.pageSize);
-    if ((state.screen === 'dictionary' || state.view === 'list') && state.page > 1)
+    if ((showingMemoryLapses() || state.screen === 'dictionary' || state.view === 'list') && state.page > 1)
       u.searchParams.set('page', state.page);
     if (state.order === 'random') u.searchParams.set('order', 'random');
     try {
@@ -414,15 +458,32 @@
   function buildDeck(reset = true, reshuffle = false) {
     stopPlayback();
     if (grammarGroupingEnabled()) state.subcategory = 'all';
-    if (state.screen === 'memory') {
+    if (showingMemoryLapses()) {
+      deck = pendingLapseWords();
+      matched = deck;
+    } else if (state.screen === 'memory') {
       const expectedID = memorySession?.ids.find((id) => !memorySession.answered.has(id));
-      const eligible = new Map(MotsMemory.candidates(words(), levelOf,
-        memoryRecords[state.dictionary] || {}, categories.map((c) => c.id), Date.now()).map((w) => [w.id, w]));
+      const eligible = new Map(
+        MotsMemory.candidates(
+          words(),
+          levelOf,
+          memoryRecords[state.dictionary] || {},
+          categories.map((c) => c.id),
+          Date.now(),
+        ).map((w) => [w.id, w]),
+      );
       if (memorySession) {
         // A restored round can lose stale members, but never captures newly due words.
-        memorySession.ids = memorySession.ids.filter((id) => memorySession.answered.has(id) || eligible.has(id));
+        memorySession.ids = memorySession.ids.filter(
+          (id) => memorySession.answered.has(id) || eligible.has(id),
+        );
       }
-      deck = memorySession ? memorySession.ids.filter((id) => !memorySession.answered.has(id)).map((id) => eligible.get(id)).filter(Boolean) : [];
+      deck = memorySession
+        ? memorySession.ids
+            .filter((id) => !memorySession.answered.has(id))
+            .map((id) => eligible.get(id))
+            .filter(Boolean)
+        : [];
       matched = [...deck];
       state.index = 0;
       if (deck[0]?.id !== expectedID) {
@@ -468,9 +529,11 @@
     syncURL();
     render({ preserveStudyScroll: !reset });
   }
-  function showScreen(screen, query = '') {
+  function showScreen(screen, query = '', memoryView = 'round') {
+    pendingContentDictionary = null;
     stashMemorySession();
-    if (screen === 'memory' && state.screen !== 'memory') restoreLatestMemoryBook(state.dictionary);
+    if (screen === 'memory' && (state.screen !== 'memory' || showingMemoryLapses()))
+      restoreLatestMemoryBook(state.dictionary);
     memoryDestinationPending = true;
     stopPlayback();
     homeComposing = false;
@@ -478,6 +541,8 @@
     reviewSession = null;
     memorySession = screen === 'memory' ? memorySessions[state.dictionary] || null : null;
     state.screen = screen;
+    state.memoryView = memoryView;
+    memoryNavExpanded = screen === 'memory';
     state.query = query;
     state.searchOpen = screen === 'dictionary' || Boolean(query);
     state.index = 0;
@@ -494,7 +559,8 @@
     window.scrollTo({ top: 0, behavior: 'auto' });
     if (screen === 'dictionary') $('search-input').focus({ preventScroll: true });
   }
-  function startReview() {
+  function startReview(preservePending = false) {
+    if (!preservePending) pendingContentDictionary = null;
     stashMemorySession();
     memoryDestinationPending = true;
     stopPlayback();
@@ -506,6 +572,7 @@
       rated: new Set(),
     };
     state.screen = 'review';
+    memoryNavExpanded = false;
     state.category = 'all';
     state.subcategory = 'all';
     state.query = '';
@@ -520,37 +587,57 @@
     window.scrollTo({ top: 0, behavior: 'auto' });
   }
   function chooseCategory(id, sub = 'all') {
+    pendingContentDictionary = null;
     stashMemorySession();
     memoryDestinationPending = true;
     reviewSession = null;
     memorySession = null;
     if (['home', 'review', 'memory'].includes(state.screen)) state.screen = 'study';
+    memoryNavExpanded = false;
     state.category = id;
     state.subcategory = sub;
     expandedCategory = id === 'all' ? null : id;
     buildDeck();
   }
   function stashMemorySession() {
-    if (state.screen === 'memory' && memorySession) {
+    if (state.screen === 'memory' && !showingMemoryLapses() && memorySession) {
       if (!memorySession.paused) memorySession.revealed = state.revealed;
       memorySessions[state.dictionary] = memorySession;
     }
   }
   function memoryBookSnapshot(dictionaryID) {
     const session = memorySessions[dictionaryID];
-    return MotsMemory.sanitizeWorkspace({ version: 1, books: { [dictionaryID]: {
-      chapters: memorySelection[dictionaryID] ?? null,
-      session: session ? { ids: session.ids, answered: [...session.answered], remembered: session.remembered,
-        mastered: session.mastered, revealed: session.revealed === true, paused: session.paused === true } : null,
-    } } }).books[dictionaryID];
+    return MotsMemory.sanitizeWorkspace({
+      version: 1,
+      books: {
+        [dictionaryID]: {
+          chapters: memorySelection[dictionaryID] ?? null,
+          session: session
+            ? {
+                ids: session.ids,
+                answered: [...session.answered],
+                remembered: session.remembered,
+                mastered: session.mastered,
+                revealed: session.revealed === true,
+                paused: session.paused === true,
+              }
+            : null,
+        },
+      },
+    }).books[dictionaryID];
   }
   function memoryBookBaseline(dictionaryID) {
-    return memoryBookBaselines.get(dictionaryID) ?? JSON.stringify({ chapters: null, session: null });
+    return (
+      memoryBookBaselines.get(dictionaryID) ?? JSON.stringify({ chapters: null, session: null })
+    );
   }
   function restoreLatestMemoryBook(dictionaryID) {
     // A failed write retains this tab's live work until it can be saved again.
-    if (storageFailures.has(memoryWorkspaceKey) ||
-        JSON.stringify(memoryBookSnapshot(dictionaryID)) !== memoryBookBaseline(dictionaryID)) return;
+    if (
+      storageFailures.has(memoryWorkspaceKey) ||
+      JSON.stringify(memoryBookSnapshot(dictionaryID)) !== memoryBookBaseline(dictionaryID)
+    )
+      return;
     const latest = MotsMemory.sanitizeWorkspace(read(memoryWorkspaceKey, {}));
     if (storageFailures.has(memoryWorkspaceKey)) return;
     const book = latest.books[dictionaryID] || { chapters: null, session: null };
@@ -561,33 +648,44 @@
     memoryBookBaselines.set(dictionaryID, JSON.stringify(book));
   }
   function persistMemoryWorkspace() {
+    if (pendingContentDictionary) return true;
     stashMemorySession();
     const latest = MotsMemory.sanitizeWorkspace(read(memoryWorkspaceKey, {}));
     const books = { ...latest.books };
     const active = state.screen === 'memory';
     const destination = JSON.stringify({ active, dictionaryID: state.dictionary });
-    const localBook = active && state.studyKind === 'vocabulary' ? memoryBookSnapshot(state.dictionary) : null;
-    const changedBook = localBook && JSON.stringify(localBook) !== memoryBookBaseline(state.dictionary);
+    const localBook =
+      active && state.studyKind === 'vocabulary' ? memoryBookSnapshot(state.dictionary) : null;
+    const changedBook =
+      localBook && JSON.stringify(localBook) !== memoryBookBaseline(state.dictionary);
     // An unrelated render must not overwrite a newer round saved in another tab.
     if (changedBook) books[state.dictionary] = localBook;
-    const saveDestination = changedBook || memoryDestinationPending || destination !== lastMemoryDestination;
-    memoryWorkspace = MotsMemory.sanitizeWorkspace({ version: 1,
+    const saveDestination =
+      changedBook || memoryDestinationPending || destination !== lastMemoryDestination;
+    memoryWorkspace = MotsMemory.sanitizeWorkspace({
+      version: 1,
       active: saveDestination ? active : latest.active,
-      dictionaryID: saveDestination ? state.dictionary : latest.dictionaryID, books });
+      dictionaryID: saveDestination ? state.dictionary : latest.dictionaryID,
+      books,
+    });
     const didSave = () => {
       if (changedBook) memoryBookBaselines.set(state.dictionary, JSON.stringify(localBook));
       lastMemoryDestination = destination;
       memoryDestinationPending = false;
-      const unsaved = [...new Set([...Object.keys(memorySessions), ...Object.keys(memorySelection)])]
-        .some((id) => JSON.stringify(memoryBookSnapshot(id)) !== memoryBookBaseline(id));
+      const unsaved = [
+        ...new Set([...Object.keys(memorySessions), ...Object.keys(memorySelection)]),
+      ].some((id) => JSON.stringify(memoryBookSnapshot(id)) !== memoryBookBaseline(id));
       if (unsaved) storageFailures.add(memoryWorkspaceKey);
       else storageFailures.delete(memoryWorkspaceKey);
       updateSaveState();
       return !unsaved;
     };
     try {
-      if (localStorage.getItem(memoryWorkspaceKey) === JSON.stringify(memoryWorkspace)) return didSave();
-    } catch { /* The shared writer reports persistence failures and recovery. */ }
+      if (localStorage.getItem(memoryWorkspaceKey) === JSON.stringify(memoryWorkspace))
+        return didSave();
+    } catch {
+      /* The shared writer reports persistence failures and recovery. */
+    }
     return write(memoryWorkspaceKey, memoryWorkspace) ? didSave() : false;
   }
   function pauseMemory() {
@@ -605,27 +703,55 @@
     $('reveal-button')?.focus({ preventScroll: true });
   }
   function selectedMemoryCategories() {
-    const available = categories.filter((c) => words().some((w) => w.category === c.id)).map((c) => c.id);
+    const available = categories
+      .filter((c) => words().some((w) => w.category === c.id))
+      .map((c) => c.id);
     memorySelection[state.dictionary] ??= [];
     return memorySelection[state.dictionary].filter((id) => available.includes(id));
   }
   function memorySummary(now = Date.now()) {
-    return MotsMemory.summary(words(), levelOf, memoryRecords[state.dictionary] || {}, selectedMemoryCategories(), now);
+    return MotsMemory.summary(
+      words(),
+      levelOf,
+      memoryRecords[state.dictionary] || {},
+      selectedMemoryCategories(),
+      now,
+    );
   }
   function memoryTime(value) {
-    return new Intl.DateTimeFormat('zh-TW', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }).format(new Date(value));
+    return new Intl.DateTimeFormat('zh-TW', {
+      month: 'numeric',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+    }).format(new Date(value));
   }
-  function showMemory() {
+  function showingMemoryLapses() {
+    return state.screen === 'memory' && state.memoryView === 'lapses';
+  }
+  function pendingLapseWords(activeWords = words()) {
+    const records = memoryRecords[state.dictionary];
+    return activeWords.filter(
+      (word) => levelOf(word.id) === 2 && MotsMemory.hasPendingLapse(records?.[word.id]),
+    );
+  }
+  function showMemory(view = 'round') {
     if (state.studyKind !== 'vocabulary') return;
     state.category = 'all';
     state.subcategory = 'all';
     expandedCategory = null;
-    showScreen('memory');
+    showScreen('memory', '', view);
   }
   function startMemory() {
     if (state.studyKind !== 'vocabulary') return;
     stopPlayback();
-    const candidates = MotsMemory.candidates(words(), levelOf, memoryRecords[state.dictionary] || {}, selectedMemoryCategories(), Date.now());
+    const candidates = MotsMemory.candidates(
+      words(),
+      levelOf,
+      memoryRecords[state.dictionary] || {},
+      selectedMemoryCategories(),
+      Date.now(),
+    );
     if (!candidates.length) {
       memorySession = null;
       delete memorySessions[state.dictionary];
@@ -634,13 +760,28 @@
     }
     state.screen = 'memory';
     state.revealed = false;
-    memorySession = { ids: shuffle(candidates).map((w) => w.id), answered: new Set(), remembered: 0, mastered: 0, revealed: false, paused: false };
+    memorySession = {
+      ids: shuffle(candidates).map((w) => w.id),
+      answered: new Set(),
+      remembered: 0,
+      mastered: 0,
+      revealed: false,
+      paused: false,
+    };
     memorySessions[state.dictionary] = memorySession;
     buildDeck(false);
     $('reveal-button')?.focus({ preventScroll: true });
   }
   function canAnswerMemory(id, requiresMeaning) {
-    if (state.screen !== 'memory' || !memorySession || memorySession.paused || deck[0]?.id !== id || memorySession.answered.has(id)) return false;
+    if (
+      state.screen !== 'memory' ||
+      showingMemoryLapses() ||
+      !memorySession ||
+      memorySession.paused ||
+      deck[0]?.id !== id ||
+      memorySession.answered.has(id)
+    )
+      return false;
     const word = words().find((w) => w.id === id);
     if (!word || levelOf(id) !== 2 || (requiresMeaning && meaning(word).missing)) {
       state.revealed = false;
@@ -670,10 +811,16 @@
       return;
     }
     const now = Math.min(253402300799999, Math.max(Date.now(), (previous?.updatedAt ?? -1) + 1));
-    saveMemoryAnswer(id, true, {
-      record: { stage: MotsMemory.masteryStage, dueAt: 0, updatedAt: now },
-      mastered: true, unfamiliar: false,
-    }, '已標記為「已掌握」');
+    saveMemoryAnswer(
+      id,
+      true,
+      {
+        record: { stage: MotsMemory.masteryStage, dueAt: 0, updatedAt: now },
+        mastered: true,
+        unfamiliar: false,
+      },
+      '已標記為「已掌握」',
+    );
   }
   function saveMemoryAnswer(id, remembered, result, message) {
     stopPlayback();
@@ -687,12 +834,17 @@
       if (result.mastered) memorySession.mastered++;
       const level = result.mastered ? 3 : 1;
       progress[state.dictionary][id] = level;
-      saved = (progressSync ? progressSync.edit(state.dictionary, id, level) : write(progressKey(state.dictionary), progress[state.dictionary])) && saved;
+      saved =
+        (progressSync
+          ? progressSync.edit(state.dictionary, id, level)
+          : write(progressKey(state.dictionary), progress[state.dictionary])) && saved;
     }
     state.revealed = false;
     saved = buildDeckAndSaveMemory() && saved;
     ($('reveal-button') || $('memory-start') || $('main')).focus({ preventScroll: true });
-    toast(`${message || (result.mastered ? '已完成全部複習，轉為「已掌握」' : result.unfamiliar ? '連續兩次沒想起，轉為「不熟悉」' : remembered ? `已記住，下次複習：${memoryTime(result.record.dueAt)}` : '已安排 1 天後重新練習')}${saved ? '' : '；尚未儲存，請下載備份'}`);
+    toast(
+      `${message || (result.mastered ? '已完成全部複習，轉為「已掌握」' : result.unfamiliar ? '連續兩次沒想起，轉為「不熟悉」' : remembered ? `已記住，下次複習：${memoryTime(result.record.dueAt)}` : '已安排 1 天後重新練習')}${saved ? '' : '；尚未儲存，請下載備份'}`,
+    );
   }
   function buildDeckAndSaveMemory() {
     buildDeck(false);
@@ -700,50 +852,89 @@
   }
   function renderMemory() {
     clearTimeout(memoryTimer);
-    const summary = memorySummary(), selected = selectedMemoryCategories();
+    if (showingMemoryLapses()) {
+      $('memory-section').innerHTML = `<div class="memory-heading"><h2 id="memory-title">忘記一次</h2><button class="button button-outline" type="button" data-back-memory>返回卡片記憶</button></div>${studyView.memoryLapses()}`;
+      return;
+    }
+    const summary = memorySummary(),
+      selected = selectedMemoryCategories();
     const running = Boolean(memorySession && !memorySession.paused && deck.length);
     const done = Boolean(memorySession && !deck.length);
     const resumable = Boolean(memorySession?.paused && deck.length);
     const available = categories.filter((c) => words().some((w) => w.category === c.id));
-    const chapterControls = `<fieldset class="memory-chapters"><legend>選擇章節（可多選）</legend><div class="memory-chapter-actions"><button class="text-button" type="button" data-memory-select="all">全選</button><button class="text-button" type="button" data-memory-select="none">清除選擇</button></div><div class="memory-chapter-list">${available.map((c) => {
-      const count = words().filter((w) => w.category === c.id && levelOf(w.id) === 2).length;
-      return `<label class="memory-chapter"><input type="checkbox" data-memory-category="${esc(c.id)}" ${selected.includes(c.id) ? 'checked' : ''}><span>${esc(c.id)} · ${esc(categoryLabel(c.name))}</span><span class="nav-count">${count}</span></label>`;
-    }).join('')}</div></fieldset>`;
+    const chapterControls = `<fieldset class="memory-chapters"><legend>選擇章節（可多選）</legend><div class="memory-chapter-actions"><button class="text-button" type="button" data-memory-select="all">全選</button><button class="text-button" type="button" data-memory-select="none">清除選擇</button></div><div class="memory-chapter-list">${available
+      .map((c) => {
+        const count = words().filter((w) => w.category === c.id && levelOf(w.id) === 2).length;
+        return `<label class="memory-chapter"><input type="checkbox" data-memory-category="${esc(c.id)}" ${selected.includes(c.id) ? 'checked' : ''}><span>${esc(c.id)} · ${esc(categoryLabel(c.name))}</span><span class="nav-count">${count}</span></label>`;
+      })
+      .join('')}</div></fieldset>`;
     const next = summary.nextDueAt ? `下次複習：${memoryTime(summary.nextDueAt)}` : '';
-    const empty = !selected.length ? '請至少選擇一個章節。' : !summary.eligible ? '所選章節還沒有「有印象」的單字。請先在詞彙列表將要背誦的單字標為「有印象」。' : !summary.due ? `目前沒有到期的卡片。${next}` : '';
+    const empty = !selected.length
+      ? '請至少選擇一個章節。'
+      : !summary.eligible
+        ? '所選章節還沒有「有印象」的單字。請先在詞彙列表將要背誦的單字標為「有印象」。'
+        : !summary.due
+          ? `目前沒有到期的卡片。${next}`
+          : '';
     const status = `<p class="memory-scope-status" role="status">已選 ${selected.length} 個章節 · 待複習 ${summary.due} 詞 · 等待下次複習 ${summary.waiting} 詞${next && summary.due ? ` · ${next}` : ''}</p>`;
     const header = `<div class="memory-heading"><div><h2 id="memory-title">卡片記憶</h2></div>${running ? '<button class="button button-outline" type="button" data-memory-config>返回章節選擇</button>' : ''}</div>`;
     let content;
     if (running) {
       const record = memoryRecords[state.dictionary]?.[deck[0].id];
-      content = `<p class="memory-round-status" role="status">本輪已完成 ${memorySession.answered.size} / ${memorySession.ids.length} 詞</p>${studyView.card({ memory: { masteryStage: MotsMemory.masteryStage, previousLapse: record?.stage === 0 && record.dueAt > record.updatedAt, stage: record?.stage === MotsMemory.masteryStage ? 0 : record?.stage || 0, position: memorySession.answered.size + 1, total: memorySession.ids.length } })}`;
+      content = `<p class="memory-round-status" role="status">本輪已完成 ${memorySession.answered.size} / ${memorySession.ids.length} 詞</p>${studyView.card({ memory: { masteryStage: MotsMemory.masteryStage, previousLapse: MotsMemory.hasPendingLapse(record), stage: record?.stage === MotsMemory.masteryStage ? 0 : record?.stage || 0, position: memorySession.answered.size + 1, total: memorySession.ids.length } })}`;
     } else {
-      const completion = done ? `<div class="memory-completion" role="status"><h3>本輪卡片記憶已完成</h3><p>已背誦 ${memorySession.answered.size} 詞 · 記住 ${memorySession.remembered} 詞 · 新增已掌握 ${memorySession.mastered} 詞</p></div>` : '';
-      const resume = resumable ? `<div class="memory-completion"><p>上次停在第 ${memorySession.answered.size + 1} / ${memorySession.ids.length} 詞。</p><button id="memory-resume" class="button button-primary" type="button">繼續上次</button></div>` : '';
+      const completion = done
+        ? `<div class="memory-completion" role="status"><h3>本輪卡片記憶已完成</h3><p>已背誦 ${memorySession.answered.size} 詞 · 記住 ${memorySession.remembered} 詞 · 新增已掌握 ${memorySession.mastered} 詞</p></div>`
+        : '';
+      const resume = resumable
+        ? `<div class="memory-completion"><p>上次停在第 ${memorySession.answered.size + 1} / ${memorySession.ids.length} 詞。</p><button id="memory-resume" class="button button-primary" type="button">繼續上次</button></div>`
+        : '';
       content = `${completion}${resume}${chapterControls}${status}${empty ? `<p class="memory-empty">${esc(empty)}</p>` : ''}<button id="memory-start" class="button ${resumable ? 'button-outline' : 'button-primary'}" type="button" ${summary.due ? '' : 'disabled'}>${memorySession ? '開始新一輪' : '開始背誦'}${summary.due ? ` · ${summary.due} 詞` : ''}</button>`;
     }
-    $('memory-section').innerHTML = `${header}${content}<details class="memory-method"><summary>複習規則</summary><p>完成 5 次成功回想後轉為「已掌握」，複習間隔為 1、2、4、7 天。也可按「已掌握」直接完成目前單字。第一次沒想起，1 天後從頭重練；連續兩次沒想起，轉為「不熟悉」。記住一次即中斷連續忘記。</p><p>每輪包含所選章節全部到期詞。開始新一輪會重新選詞並亂序；繼續上次保留順序與位置。</p></details>`;
-    if (!running && summary.nextDueAt) memoryTimer = setTimeout(() => {
-      if (state.screen === 'memory') buildDeck(false);
-    }, Math.max(1000, Math.min(2_147_483_647, summary.nextDueAt - Date.now())));
+    $('memory-section').innerHTML =
+      `${header}${content}<details class="memory-method"><summary>複習規則</summary><p>完成 5 次成功回想後轉為「已掌握」，複習間隔為 1、2、4、7 天。也可按「已掌握」直接完成目前單字。第一次沒想起，1 天後從頭重練；連續兩次沒想起，轉為「不熟悉」。記住一次即中斷連續忘記。</p><p>每輪包含所選章節全部到期詞。開始新一輪會重新選詞並亂序；繼續上次保留順序與位置。</p></details>`;
+    if (!running && summary.nextDueAt)
+      memoryTimer = setTimeout(
+        () => {
+          if (state.screen === 'memory') buildDeck(false);
+        },
+        Math.max(1000, Math.min(2_147_483_647, summary.nextDueAt - Date.now())),
+      );
   }
 
   function renderNavigation() {
-    const available = categories.filter((c) => words().some((w) => w.category === c.id));
+    const activeWords = words();
+    const available = categories.filter((c) => activeWords.some((w) => w.category === c.id));
+    const isVocabulary = state.studyKind === 'vocabulary';
+    const dueCount = isVocabulary
+      ? MotsMemory.summary(
+          activeWords, levelOf, memoryRecords[state.dictionary] || {}, categories.map((c) => c.id),
+        ).due
+      : 0;
+    const lapseCount = isVocabulary && memoryNavExpanded ? pendingLapseWords(activeWords).length : 0;
     for (const target of ['category-nav', 'mobile-category-nav']) {
       const top = $(target).scrollTop;
+      const childrenID = `${target}-memory-children`;
+      const toggleLabel = memoryNavExpanded ? '收合卡片記憶選單' : '展開卡片記憶選單';
       $(target).innerHTML =
-        `<button class="nav-item all-words" data-category="all" aria-pressed="${!['home', 'memory'].includes(state.screen) && state.category === 'all'}">${icons.book}<span>${state.studyKind === 'grammar' ? '全部語法' : '全部詞彙'}</span><span class="nav-count">${words().length}</span></button>` +
-        (state.studyKind === 'vocabulary' ? `<button class="nav-item memory-nav" type="button" data-open-memory aria-pressed="${state.screen === 'memory'}">${icons.memory}<span>卡片記憶</span><span class="nav-count">${MotsMemory.summary(words(), levelOf, memoryRecords[state.dictionary] || {}, categories.map((c) => c.id), Date.now()).due}</span></button>` : '') +
+        `<button class="nav-item all-words" data-category="all" aria-pressed="${!['home', 'memory'].includes(state.screen) && state.category === 'all'}">${icons.book}<span>${isVocabulary ? '全部詞彙' : '全部語法'}</span><span class="nav-count">${activeWords.length}</span></button>` +
+        (isVocabulary
+          ? `<div class="nav-group"><div class="memory-nav-row">
+              <button class="nav-item memory-nav" type="button" data-open-memory aria-pressed="${state.screen === 'memory' && !showingMemoryLapses()}">${icons.memory}<span>卡片記憶</span><span class="nav-count">${dueCount}</span></button>
+              <button class="icon-button memory-nav-toggle" type="button" data-toggle-memory-nav aria-expanded="${memoryNavExpanded}" aria-controls="${childrenID}" aria-label="${toggleLabel}" title="${toggleLabel}">${icons.chevron}</button>
+            </div><div class="nav-children" id="${childrenID}" role="group" aria-label="卡片記憶" ${memoryNavExpanded ? '' : 'hidden'}>
+              <button class="nav-child" type="button" data-open-memory-lapses aria-pressed="${showingMemoryLapses()}"><span>忘記一次</span><span class="nav-count">${lapseCount}</span></button>
+            </div></div>`
+          : '') +
         available
           .map((c) => {
             const selected = !['home', 'memory'].includes(state.screen) && state.category === c.id,
               expanded = expandedCategory === c.id,
               id = `${target}-children-${c.id}`;
-            const subs = c.subcategories.filter((s) => words().some((w) => w.subcategory === s.id));
+            const subs = c.subcategories.filter((s) => activeWords.some((w) => w.subcategory === s.id));
             if (grammarGroupingEnabled() || subs.length < 2)
-              return `<div class="nav-group"><button class="nav-item chapter-button" data-category="${esc(c.id)}" aria-pressed="${selected}"><span class="chapter-num">${esc(/^\d+$/.test(c.id) ? c.id.padStart(2, '0') : c.id)}</span><span class="chapter-name">${esc(categoryLabel(c.name))}</span><span class="nav-count">${words().filter((w) => w.category === c.id).length}</span></button></div>`;
-            return `<div class="nav-group"><button class="nav-item chapter-button" data-category="${c.id}" aria-pressed="${selected}" aria-expanded="${expanded}" aria-controls="${id}"><span class="chapter-num">${/^\d+$/.test(c.id) ? c.id.padStart(2, '0') : c.id}</span><span class="chapter-name">${esc(categoryLabel(c.name))}</span><span class="nav-count">${words().filter((w) => w.category === c.id).length}</span><span class="nav-chevron">${icons.chevron}</span></button><div class="nav-children" id="${id}" role="group" aria-label="${esc(categoryLabel(c.name))}的子類" ${expanded ? '' : 'hidden'}><button class="nav-child" data-parent="${c.id}" data-sub="all" aria-pressed="${selected && state.subcategory === 'all'}">全部子類</button>${subs.map((s) => `<button class="nav-child" data-parent="${c.id}" data-sub="${s.id}" aria-pressed="${selected && state.subcategory === s.id}"><span class="sub-code">${s.id}</span><span>${esc(categoryLabel(s.name))}</span></button>`).join('')}</div></div>`;
+              return `<div class="nav-group"><button class="nav-item chapter-button" data-category="${esc(c.id)}" aria-pressed="${selected}"><span class="chapter-num">${esc(/^\d+$/.test(c.id) ? c.id.padStart(2, '0') : c.id)}</span><span class="chapter-name">${esc(categoryLabel(c.name))}</span><span class="nav-count">${activeWords.filter((w) => w.category === c.id).length}</span></button></div>`;
+            return `<div class="nav-group"><button class="nav-item chapter-button" data-category="${c.id}" aria-pressed="${selected}" aria-expanded="${expanded}" aria-controls="${id}"><span class="chapter-num">${/^\d+$/.test(c.id) ? c.id.padStart(2, '0') : c.id}</span><span class="chapter-name">${esc(categoryLabel(c.name))}</span><span class="nav-count">${activeWords.filter((w) => w.category === c.id).length}</span><span class="nav-chevron">${icons.chevron}</span></button><div class="nav-children" id="${id}" role="group" aria-label="${esc(categoryLabel(c.name))}的子類" ${expanded ? '' : 'hidden'}><button class="nav-child" data-parent="${c.id}" data-sub="all" aria-pressed="${selected && state.subcategory === 'all'}">全部子類</button>${subs.map((s) => `<button class="nav-child" data-parent="${c.id}" data-sub="${s.id}" aria-pressed="${selected && state.subcategory === s.id}"><span class="sub-code">${s.id}</span><span>${esc(categoryLabel(s.name))}</span></button>`).join('')}</div></div>`;
           })
           .join('');
       $(target).scrollTop = top;
@@ -881,14 +1072,17 @@
       state.order === 'random' ? '切換為正序' : '切換為亂序',
     );
     $('reshuffle-button').hidden = state.order !== 'random';
-    document.title = `${state.studyKind === 'grammar' ? '語法背誦' : '詞彙背誦'} · ${{ home: '首頁', dictionary: '總覽', study: grammar && !grammarGroupingEnabled() ? '語法背誦' : '主題背誦', review: '隨機複習', memory: '卡片記憶' }[state.screen]} · ${dictionaryOf(state.dictionary).title} · Mots`;
+    document.title = `${state.studyKind === 'grammar' ? '語法背誦' : '詞彙背誦'} · ${{ home: '首頁', dictionary: '總覽', study: grammar && !grammarGroupingEnabled() ? '語法背誦' : '主題背誦', review: '隨機複習', memory: showingMemoryLapses() ? '忘記一次 · 卡片記憶' : '卡片記憶' }[state.screen]} · ${dictionaryOf(state.dictionary).title} · Mots`;
     renderVisibility();
     updateSaveState();
   }
   function applySyncedRecords(records, reason) {
-    const projections = new Map(dictionaryIDs().map((id) => [
-      id, { ...cleanProgress(read(progressKey(id), {})), ...progress[id] },
-    ]));
+    const projections = new Map(
+      dictionaryIDs().map((id) => [
+        id,
+        { ...cleanProgress(read(progressKey(id), {})), ...progress[id] },
+      ]),
+    );
     let activeChanged = false;
     for (const { dictionaryID, wordID, level } of records) {
       const values = projections.get(dictionaryID);
@@ -944,7 +1138,7 @@
   }
   function selectionAnchor() {
     const list =
-      state.screen === 'dictionary' || (state.screen === 'study' && state.view === 'list');
+      showingMemoryLapses() || state.screen === 'dictionary' || (state.screen === 'study' && state.view === 'list');
     const oldIndex = list
       ? Math.min((state.page - 1) * settings.pageSize, Math.max(0, deck.length - 1))
       : state.index;
@@ -1068,6 +1262,8 @@
         studyKind: state.studyKind,
         grammarMode: grammarGroupingEnabled() ? 'thematic' : 'standard',
         title: dictionaryOf(state.dictionary).title,
+        description: dictionaryOf(state.dictionary).description,
+        sourceInfo: dictionaryOf(state.dictionary).sourceInfo,
         languageLabel: languageOf(state.language).label,
         total: words().length,
         mastered: counts[3],
@@ -1154,6 +1350,7 @@
       }
     }
     if (!updated) $('study-content').innerHTML = content;
+    columnWidths.refresh();
     updateAudioButtons();
     if (scroll) {
       // Replacing the reading surface recreates its scroll containers. Restore
@@ -1184,12 +1381,20 @@
       meaningLanguage: settings.meaningLanguage,
     }),
     getWord: (id) => words().find((word) => word.id === id),
-    getSource: (id) =>
-      state.dictionary === 'fr'
+    getSource: (id) => {
+      const displayed = sourceWords().find((w) => w.id === id),
+        original = bundledContentWords.get(state.dictionary)?.get(id);
+      if (
+        !displayed ||
+        !original ||
+        displayed.term !== String(original.term || original.french || '') ||
+        (displayed.reading || '') !== (original.reading || '')
+      )
+        return undefined;
+      return state.dictionary === 'fr'
         ? window.MOTS_AUDIO?.words?.[id]
-        : ['de', 'ja'].includes(state.dictionary)
-          ? window.MOTS_EXTRA_AUDIO?.[state.dictionary]?.words?.[id]
-          : undefined,
+        : window.MOTS_EXTRA_AUDIO?.[state.dictionary]?.words?.[id];
+    },
     getButtons: () => document.querySelectorAll('[data-speak]'),
     onNotice: toast,
   });
@@ -1207,6 +1412,12 @@
     traditional: tc,
     groupWords,
   });
+  const columnWidths = MotsColumnWidths.create({
+    root: $('study-content'),
+    read,
+    write,
+    notice: toast,
+  });
   const settingsPanel = window.MotsSettingsPanel.create({
     getDictionaryTemplate: dictionaryTemplate,
     getPreferences: () => ({
@@ -1221,6 +1432,8 @@
       studyKind: state.studyKind,
       grammarGrouping: grammarGroupingEnabled(),
       canExtend: categories.length > 0,
+      canManageContent:
+        !!contentState && !contentOperationBusy && dictionaryIDs().includes(state.dictionary),
       dictionaryTitle: dictionaryOf(state.dictionary).title,
       wordCount: words().length,
       customCount: (customBanks[state.dictionary] || []).filter(
@@ -1228,8 +1441,8 @@
       ).length,
       studyLanguageName: languageOf(state.language).name,
       meaningLanguageName: meaningOf(settings.meaningLanguage).label,
-      frenchSourceCount: banks.fr.length,
-      sourcedCount: banks.fr.filter((word) => word.bookPage).length,
+      frenchSourceCount: (banks.fr || []).length,
+      sourcedCount: (banks.fr || []).filter((word) => word.bookPage).length,
     }),
     getExport: exportSettingsModel,
     getDeleted: () => ({
@@ -1239,6 +1452,7 @@
     }),
     getMeaning: (word) => meaning(word).text,
     getSync: () => progressSync,
+    getContentLibrary: () => contentState?.allBooks().filter((b) => b.archived) || [],
     beforeOpen: () => {
       dismissDeletionNotice();
       stopPlayback();
@@ -1287,9 +1501,10 @@
       }
     }
     progress[state.dictionary][id] = next;
-    const saved = (progressSync
-      ? progressSync.edit(state.dictionary, id, next)
-      : write(progressKey(state.dictionary), progress[state.dictionary])) && scheduleSaved;
+    const saved =
+      (progressSync
+        ? progressSync.edit(state.dictionary, id, next)
+        : write(progressKey(state.dictionary), progress[state.dictionary])) && scheduleSaved;
     if (state.screen === 'review') {
       stopPlayback();
       reviewSession.rated.add(id);
@@ -1347,6 +1562,7 @@
   }
   function applyDictionary(id) {
     if (!dictionaryIDs().includes(id)) return;
+    pendingContentDictionary = null;
     stashMemorySession();
     if (state.screen === 'memory' && id !== state.dictionary) restoreLatestMemoryBook(id);
     memoryDestinationPending = true;
@@ -1400,8 +1616,15 @@
   }
   for (const navID of ['category-nav', 'mobile-category-nav'])
     $(navID).addEventListener('click', (event) => {
-      if (event.target.closest('[data-open-memory]')) {
-        showMemory();
+      if (event.target.closest('[data-toggle-memory-nav]')) {
+        memoryNavExpanded = !memoryNavExpanded;
+        renderNavigation();
+        $(navID).querySelector('[data-toggle-memory-nav]')?.focus({ preventScroll: true });
+        return;
+      }
+      const memoryLink = event.target.closest('[data-open-memory], [data-open-memory-lapses]');
+      if (memoryLink) {
+        showMemory(memoryLink.hasAttribute('data-open-memory-lapses') ? 'lapses' : 'round');
         if (navID === 'mobile-category-nav') closeCategories();
         return;
       }
@@ -1478,27 +1701,43 @@
     else selected.delete(id);
     memorySelection[state.dictionary] = [...selected];
     buildDeck(false);
-    document.querySelector(`[data-memory-category="${CSS.escape(id)}"]`)?.focus({ preventScroll: true });
+    document
+      .querySelector(`[data-memory-category="${CSS.escape(id)}"]`)
+      ?.focus({ preventScroll: true });
   });
   $('memory-section').addEventListener('click', (event) => {
     const button = event.target.closest('button');
     if (!button || button.disabled) return;
-    if (button.id === 'memory-start') startMemory();
+    if (button.hasAttribute('data-back-memory')) showMemory();
+    else if (['memory-previous-page', 'memory-next-page'].includes(button.id)) {
+      stopPlayback();
+      state.page += button.id === 'memory-next-page' ? 1 : -1;
+      syncURL();
+      render();
+      const control = $(button.id);
+      const otherID = button.id === 'memory-next-page' ? 'memory-previous-page' : 'memory-next-page';
+      (control.disabled ? $(otherID) : control)?.focus({ preventScroll: true });
+    } else if (button.id === 'memory-start') startMemory();
     else if (button.id === 'memory-resume') resumeMemory();
     else if (button.hasAttribute('data-memory-config')) {
       pauseMemory();
       ($('memory-resume') || $('memory-start'))?.focus({ preventScroll: true });
     } else if (button.dataset.memorySelect) {
-      memorySelection[state.dictionary] = button.dataset.memorySelect === 'all' ? categories.map((c) => c.id) : [];
+      memorySelection[state.dictionary] =
+        button.dataset.memorySelect === 'all' ? categories.map((c) => c.id) : [];
       buildDeck(false);
-      document.querySelector(`[data-memory-select="${button.dataset.memorySelect}"]`)?.focus({ preventScroll: true });
+      document
+        .querySelector(`[data-memory-select="${button.dataset.memorySelect}"]`)
+        ?.focus({ preventScroll: true });
     } else if (button.id === 'reveal-button') {
       stopPlayback();
       state.revealed = !state.revealed;
       render();
       $('reveal-button')?.focus({ preventScroll: true });
-    } else if (button.hasAttribute('data-memory-mastered')) markMemoryMastered(button.dataset.memoryWord);
-    else if (button.dataset.memoryAnswer) answerMemory(button.dataset.memoryWord, button.dataset.memoryAnswer === 'remembered');
+    } else if (button.hasAttribute('data-memory-mastered'))
+      markMemoryMastered(button.dataset.memoryWord);
+    else if (button.dataset.memoryAnswer)
+      answerMemory(button.dataset.memoryWord, button.dataset.memoryAnswer === 'remembered');
     else if (button.dataset.speak) speak(button.dataset.speak);
   });
   $('home-section').addEventListener('input', (event) => {
@@ -1819,7 +2058,14 @@
     }
   });
   document.addEventListener('keydown', (event) => {
-    if (event.defaultPrevented || event.isComposing || event.keyCode === 229 || composing || $('entry-detail-dialog').open) return;
+    if (
+      event.defaultPrevented ||
+      event.isComposing ||
+      event.keyCode === 229 ||
+      composing ||
+      $('entry-detail-dialog').open
+    )
+      return;
     if (event.key === 'Escape' && !$('settings-dialog').open && !$('category-dialog').open) {
       if ($('visibility-menu').open) {
         event.preventDefault();
@@ -1836,7 +2082,8 @@
       }
     }
     const focused = document.activeElement;
-    const memoryCard = state.screen === 'memory' && memorySession && !memorySession.paused;
+    const memoryCard =
+      state.screen === 'memory' && !showingMemoryLapses() && memorySession && !memorySession.paused;
     if (
       event.altKey ||
       event.ctrlKey ||
@@ -1847,14 +2094,23 @@
       focused.closest('nav,details,select') ||
       /INPUT|SELECT|TEXTAREA/.test(focused.tagName) ||
       focused.isContentEditable ||
-      !(memoryCard || state.screen === 'review' || (state.screen === 'study' && state.view === 'card')) ||
+      !(
+        memoryCard ||
+        state.screen === 'review' ||
+        (state.screen === 'study' && state.view === 'card')
+      ) ||
       !deck.length ||
       (state.completed && state.screen === 'review')
     )
       return;
     if (event.key === 'Enter' || event.key === ' ') {
       const control = focused.closest('button,a,summary,[role="button"]');
-      if (control && !['reveal-button', 'next-word'].includes(control.id) && control.dataset.memoryAnswer !== 'remembered') return;
+      if (
+        control &&
+        !['reveal-button', 'next-word'].includes(control.id) &&
+        control.dataset.memoryAnswer !== 'remembered'
+      )
+        return;
       event.preventDefault();
       if (event.repeat) return;
       if (event.key === ' ') {
@@ -1956,6 +2212,7 @@
           category: example.category,
           subcategory: example.subcategory,
           term: example.term,
+          ...(example.reading ? { reading: example.reading } : {}),
           meanings: { [settings.meaningLanguage]: m.missing ? '請填入釋義' : m.text },
           example: example.example || '',
           examples: example.examples || [],
@@ -1997,6 +2254,7 @@
           id: 'word-1',
           ...(thematic ? { category: 't1', subcategory: 't1.01' } : {}),
           term: entry?.term || (state.studyKind === 'grammar' ? '請填入語法句型' : '請填入單字'),
+          ...(entry?.reading ? { reading: entry.reading } : {}),
           meanings: { [settings.meaningLanguage]: m.missing ? '請填入釋義' : m.text },
           example: entry?.example || '',
           examples: entry?.examples || [],
@@ -2010,7 +2268,69 @@
     download(`mots-${state.language}-dictionary-template.json`, dictionaryTemplate());
     settingsPanel.notice('dictionary-message', '辭典範本已準備下載；填寫名稱、語言和詞條後匯入。');
   });
+  async function editContent(button, action, message) {
+    if (!contentState || contentOperationBusy) return;
+    contentOperationBusy = true;
+    button.disabled = true;
+    button.setAttribute('aria-busy', 'true');
+    try {
+      await contentState.ready();
+      await action();
+      progressSync?.contentChanged();
+      settingsPanel.notice('dictionary-message', message);
+    } catch (error) {
+      settingsPanel.notice(
+        'dictionary-message',
+        error.message === 'storage' ? '尚未儲存書籍變更，請先下載備份再重試。' : error.message,
+      );
+    } finally {
+      contentOperationBusy = false;
+      button.removeAttribute('aria-busy');
+      settingsPanel.render();
+    }
+  }
+  $('rename-dictionary').addEventListener('click', () => {
+    const id = state.dictionary,
+      title = $('rename-dictionary-title').value.trim();
+    if (!title || [...title].length > 80) {
+      settingsPanel.notice('dictionary-message', '書籍名稱須為 1–80 個字。');
+      return;
+    }
+    return editContent(
+      $('rename-dictionary'),
+      () => contentState.updateBook(id, { title }),
+      '書名已儲存，配對裝置將同步更新。',
+    );
+  });
+  $('archive-dictionary').addEventListener('click', () => {
+    const id = state.dictionary;
+    return editContent(
+      $('archive-dictionary'),
+      () => contentState.archiveBook(id),
+      '書籍已封存，內容與學習紀錄均已保留。',
+    );
+  });
+  $('archived-dictionary-list').addEventListener('click', (event) => {
+    const button = event.target.closest('[data-restore-book]');
+    if (!button) return;
+    return editContent(
+      button,
+      () => contentState.archiveBook(button.dataset.restoreBook, false),
+      '書籍已恢復，配對裝置將同步更新。',
+    );
+  });
   let dictionaryImportBusy = false;
+  function contentError(error) {
+    if (contentState?.failed()) {
+      storageFailures.add(MotsContent.META_KEY);
+      updateSaveState();
+      progressSync?.contentChanged();
+    }
+    if (['quota', 'storage'].includes(error.message) || error.name === 'QuotaExceededError')
+      return '詞典尚未儲存，請釋放儲存空間或下載備份，重新開啟本頁後重試。';
+    if (error.message === 'invalid-content') return '詞典內容格式不正確，請檢查詞條與分類後重試。';
+    return error.message;
+  }
   $('import-dictionary').addEventListener('change', async (event) => {
     const file = event.target.files[0];
     if (!file || dictionaryImportBusy) return;
@@ -2025,24 +2345,31 @@
     const fallbackGrammarMode = grammarGroupingEnabled() ? 'thematic' : 'standard';
     try {
       if (file.size > 2 * 1024 * 1024) throw new Error('請選擇 2 MB 以內的 JSON 辭典。');
-      const data = JSON.parse(await file.text()),
-        id = MotsDictionaries.createID();
+      const data = JSON.parse(await file.text());
+      if (contentState) await contentState.ready();
+      const id = MotsDictionaries.isDictionaryID(data?.id) ? data.id : MotsDictionaries.createID();
+      const existingBook =
+        contentState?.allBooks().find((d) => d.id === id) ||
+        dictionaryLibrary.find((d) => d.id === id);
       const dictionary = MotsDictionaries.validateImport(data, {
         id,
         title: file.name.replace(/\.json$/i, ''),
         language: fallbackLanguage,
-        kind: fallbackKind,
-        grammarMode: fallbackGrammarMode,
+        kind: existingBook ? dictionaryKind(existingBook) : fallbackKind,
+        grammarMode: existingBook ? existingBook.grammarMode || 'standard' : fallbackGrammarMode,
         meaningLanguage: settings.meaningLanguage,
       });
-      if (dictionaryLibrary.length >= 20) throw new Error('最多可匯入 20 部辭典。');
-      dictionaryLibrary = [...dictionaryLibrary, dictionary];
-      settings.visibility[id] = [];
-      progress[id] = {};
+      if (!dictionaryLibrary.some((d) => d.id === id) && dictionaryLibrary.length >= 20)
+        throw new Error('最多可匯入 20 部辭典。');
+      if (contentState) await contentState.upsertBook(dictionary);
+      else dictionaryLibrary = [...dictionaryLibrary.filter((d) => d.id !== id), dictionary];
+      settings.visibility[id] ??= [];
+      progress[id] ??= {};
       refreshBanks();
-      const saved = write(dictionariesKey, dictionaryLibrary);
+      const saved = contentState ? true : write(dictionariesKey, dictionaryLibrary);
       write(progressKey(id), progress[id]);
       progressSync?.refresh();
+      progressSync?.contentChanged();
       applyDictionary(id);
       settingsPanel.notice(
         'dictionary-message',
@@ -2052,7 +2379,9 @@
       input.setAttribute('aria-invalid', 'true');
       settingsPanel.notice(
         'dictionary-message',
-        error instanceof SyntaxError ? '無法讀取 JSON，請參照下載的辭典範本。' : error.message,
+        error instanceof SyntaxError
+          ? '無法讀取 JSON，請參照下載的辭典範本。'
+          : contentError(error),
       );
     } finally {
       dictionaryImportBusy = false;
@@ -2080,16 +2409,27 @@
         data.grammarMode !== (isThematicGrammar(metadata) ? 'thematic' : 'standard')
       )
         throw new Error('普通語法與主題語法須分開匯入，請使用「匯入新辭典」。');
-      const imported = validateEntries(
-        Array.isArray(data) ? data : data.words,
-        language,
-        false,
-        metadata.categories,
-        id,
-      );
+      const suppliedEntries = Array.isArray(data) ? data : data.words;
+      let imported = validateEntries(suppliedEntries, language, false, metadata.categories, id);
+      const known = new Set(sourceWords(id).map((w) => w.id));
+      imported = imported.map((w, index) => ({
+        ...w,
+        ...(typeof suppliedEntries[index]?.id === 'string' && known.has(suppliedEntries[index].id)
+          ? { id: suppliedEntries[index].id }
+          : {}),
+        ...(suppliedEntries[index]?.reading !== undefined
+          ? { reading: MotsDictionaries.normalizeReading(suppliedEntries[index].reading) }
+          : {}),
+        ...(suppliedEntries[index]?.part !== undefined
+          ? { part: suppliedEntries[index].part }
+          : {}),
+      }));
       if (!imported.length) throw new Error('檔案中沒有單字。');
       let saved;
-      if (builtinIDs.has(id)) {
+      if (contentState) {
+        saved = await contentState.upsertWords(id, imported);
+        progressSync?.contentChanged();
+      } else if (builtinIDs.has(id)) {
         const merged = new Map((customBanks[id] || []).map((w) => [w.id, w]));
         imported.forEach((w) => merged.set(w.id, w));
         if (merged.size > 5000) throw new Error('每部內建辭典最多可擴充 5,000 個自訂單字。');
@@ -2124,7 +2464,9 @@
     } catch (error) {
       settingsPanel.notice(
         'vocabulary-message',
-        error instanceof SyntaxError ? '無法讀取 JSON，請使用下載的詞庫範本。' : error.message,
+        error instanceof SyntaxError
+          ? '無法讀取 JSON，請使用下載的詞庫範本。'
+          : contentError(error),
       );
     }
     event.target.value = '';
@@ -2135,10 +2477,11 @@
       version: 3,
       exportedAt: new Date().toISOString(),
       ratings: progress.fr,
-      progress,
+      progress: progressSync?.portableProgress() || progress,
       settings,
       customBanks,
       dictionaries: dictionaryLibrary,
+      ...(contentState ? { content: contentState.portable() } : {}),
       deletions: deletionState.current(),
       memory: memoryRecords,
     });
@@ -2155,7 +2498,10 @@
       const data = JSON.parse(await file.text());
       if (data.app !== 'mots' || ![1, 2, 3].includes(data.version))
         throw new Error('請選擇 Mots 下載的備份檔案。');
-      const incomingMemory = data.memory === undefined ? {} : MotsMemory.sanitize(data.memory, { strict: true });
+      if (contentState) await contentState.ready();
+      const contentDrafts = [];
+      const incomingMemory =
+        data.memory === undefined ? {} : MotsMemory.sanitize(data.memory, { strict: true });
       const incomingDeletions =
         data.deletions === undefined ? null : deletionState.validateImport(data.deletions);
       let candidateLibrary = dictionaryLibrary;
@@ -2171,6 +2517,24 @@
           )
             throw new Error('備份不可變更現有書籍類型，請使用「匯入新辭典」建立獨立書籍。');
           merged.set(d.id, d);
+          if (contentState) {
+            contentDrafts.push({
+              dictionaryID: d.id,
+              kind: 'dictionary',
+              wordID: '*',
+              deleted: false,
+              payload: MotsContent.metaPayload(d),
+            });
+            d.words.forEach((w, index) =>
+              contentDrafts.push({
+                dictionaryID: d.id,
+                kind: 'word',
+                wordID: w.id,
+                deleted: false,
+                payload: MotsContent.wordPayload(w, d.language, index),
+              }),
+            );
+          }
         });
         candidateLibrary = MotsDictionaries.validateLibrary([...merged.values()]);
       }
@@ -2190,42 +2554,72 @@
             records.forEach((w) => merged.set(w.id, w));
             if (merged.size > 5000) throw new Error('合併後的擴充詞庫超過每部 5,000 詞的上限。');
             candidateBanks[lang] = [...merged.values()];
+            if (contentState)
+              records.forEach((w, index) =>
+                contentDrafts.push({
+                  dictionaryID: lang,
+                  kind: 'word',
+                  wordID: w.id,
+                  deleted: false,
+                  payload: MotsContent.wordPayload(
+                    w,
+                    dictionaryOf(lang).language,
+                    banks[lang].length + index,
+                  ),
+                }),
+              );
           }
       }
+      if (data.content !== undefined && contentState)
+        contentDrafts.push(...contentState.validatePortable(data.content));
+      const portableContent = { version: 1, records: contentDrafts };
+      const contentPreview = contentState ? contentState.previewPortable(portableContent) : null;
       const incoming = data.version === 1 ? { fr: data.ratings } : data.progress;
       if (!isObject(incoming)) throw new Error('備份進度格式不正確。');
       const candidateProgress = {};
       const syncEdits = [];
       let count = 0;
-      for (const id of [...builtinIDs, ...candidateLibrary.map((d) => d.id)]) {
+      for (const id of [
+        ...new Set([
+          ...builtinIDs,
+          ...candidateLibrary.map((d) => d.id),
+          ...(contentPreview || []).map((d) => d.id),
+          ...Object.keys(incoming),
+        ]),
+      ]) {
+        if (!window.MotsSyncProtocol.identifier(id, 128))
+          throw new Error('備份進度的書籍 ID 不正確。');
         const values = incoming[id] ?? {};
         if (!isObject(values)) throw new Error('備份進度格式不正確。');
-        const records = builtinIDs.has(id)
-          ? [...banks[id], ...(candidateBanks[id] || [])]
-          : candidateLibrary.find((d) => d.id === id).words;
-        const known = new Set(records.map((w) => w.id));
         candidateProgress[id] = { ...(progress[id] || {}) };
-        for (const [wordID, level] of Object.entries(values))
-          if (known.has(wordID) && [0, 1, 2, 3].includes(level)) {
-            candidateProgress[id][wordID] = level;
-            syncEdits.push({ dictionaryID: id, wordID, level });
-            count++;
-          }
+        for (const [wordID, level] of Object.entries(values)) {
+          window.MotsProgressSync.validateRecords([
+            { dictionaryID: id, wordID, level, clock: 0, deviceID: '' },
+          ]);
+          candidateProgress[id][wordID] = level;
+          syncEdits.push({ dictionaryID: id, wordID, level });
+          count++;
+        }
       }
       if (syncEdits.length) progressSync?.validateImport(syncEdits);
+      if (contentState && contentDrafts.length) await contentState.importPortable(portableContent);
       memoryRecords = MotsMemory.merge(latestMemoryRecords(), incomingMemory);
       stashMemorySession();
       memorySession = null;
       write(memoryKey, memoryRecords);
       progressSync?.memoryChanged();
-      dictionaryLibrary = candidateLibrary;
-      customBanks = candidateBanks;
+      if (!contentState) {
+        dictionaryLibrary = candidateLibrary;
+        customBanks = candidateBanks;
+      }
       refreshBanks();
       randomOrder = [];
       reviewSession = null;
-      write(dictionariesKey, dictionaryLibrary);
-      write(banksKey, customBanks);
-      for (const id of dictionaryIDs()) {
+      if (!contentState) {
+        write(dictionariesKey, dictionaryLibrary);
+        write(banksKey, customBanks);
+      } else progressSync?.contentChanged();
+      for (const id of Object.keys(candidateProgress)) {
         progress[id] = candidateProgress[id];
         write(progressKey(id), progress[id]);
       }
@@ -2274,25 +2668,53 @@
     }
     event.target.value = '';
   });
-  window.addEventListener('storage', (event) => {
+  window.addEventListener('storage', async (event) => {
     try {
+      if (columnWidths.handleStorage(event)) return;
       if (event.key === memoryKey) {
         const incomingMemory = MotsMemory.sanitize(JSON.parse(event.newValue || '{}'));
         const disk = MotsMemory.sanitize(read(memoryKey, {}));
         memoryRecords = MotsMemory.merge(MotsMemory.merge(memoryRecords, disk), incomingMemory);
         // Preserve different-word updates from concurrent tabs before a reload.
         // Compare records semantically so object insertion order cannot cause a write loop.
-        const entries = (records) => Object.entries(records).flatMap(([dictionary, values]) =>
-          Object.entries(values).map(([word, record]) => [dictionary, word, record.stage, record.dueAt, record.updatedAt]));
-        const signature = (records) => JSON.stringify(entries(records).sort((a, b) =>
-          (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0)));
+        const entries = (records) =>
+          Object.entries(records).flatMap(([dictionary, values]) =>
+            Object.entries(values).map(([word, record]) => [
+              dictionary,
+              word,
+              record.stage,
+              record.dueAt,
+              record.updatedAt,
+            ]),
+          );
+        const signature = (records) =>
+          JSON.stringify(
+            entries(records).sort((a, b) =>
+              a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0,
+            ),
+          );
         if (signature(memoryRecords) !== signature(disk)) write(memoryKey, memoryRecords);
         progressSync?.memoryChanged();
         if (state.screen === 'memory') buildDeck(false);
+        else if (memoryNavExpanded) renderNavigation();
         return;
       }
+      if (event.key === null && contentState) await contentState.handleStorage(event);
       if (progressSync?.handleStorage(event)) return;
+      if (contentState && [MotsContent.BEACON_KEY, MotsContent.META_KEY].includes(event.key)) {
+        await contentState.handleStorage(event);
+        progressSync?.contentChanged();
+        return;
+      }
       if (event.key === dictionariesKey) {
+        if (contentState) {
+          await contentState.ready();
+          const known = new Set(contentState.allBooks().map((d) => d.id));
+          for (const book of MotsDictionaries.validateLibrary(JSON.parse(event.newValue || '[]')))
+            if (!known.has(book.id)) await contentState.upsertBook(book);
+          progressSync?.contentChanged();
+          return;
+        }
         dictionaryLibrary = MotsDictionaries.validateLibrary(JSON.parse(event.newValue || '[]'));
         refreshBanks();
         for (const id of dictionaryIDs()) {
@@ -2306,7 +2728,8 @@
         categories = dictionaryOf(state.dictionary).categories;
         reviewSession = null;
         memorySession = state.screen === 'memory' ? memorySessions[state.dictionary] || null : null;
-        if (memorySession) state.revealed = memorySession.revealed === true && !memorySession.paused;
+        if (memorySession)
+          state.revealed = memorySession.revealed === true && !memorySession.paused;
         if (state.screen === 'review') state.screen = 'study';
         state.category = 'all';
         state.subcategory = 'all';
@@ -2338,7 +2761,8 @@
         }
         reviewSession = null;
         memorySession = state.screen === 'memory' ? memorySessions[state.dictionary] || null : null;
-        if (memorySession) state.revealed = memorySession.revealed === true && !memorySession.paused;
+        if (memorySession)
+          state.revealed = memorySession.revealed === true && !memorySession.paused;
         if (state.screen === 'review') state.screen = 'study';
         randomOrder = [];
         expandedCategory = state.category === 'all' ? null : state.category;
@@ -2347,6 +2771,17 @@
       } else if (event.key === banksKey) {
         const value = JSON.parse(event.newValue || '{}');
         if (!isObject(value)) return;
+        if (contentState) {
+          await contentState.ready();
+          for (const [id, entries] of Object.entries(value))
+            if (Array.isArray(entries) && dictionaryIDs().includes(id)) {
+              const known = new Set(sourceWords(id).map((w) => w.id)),
+                fresh = entries.filter((w) => !known.has(w.id));
+              if (fresh.length) await contentState.upsertWords(id, fresh);
+            }
+          progressSync?.contentChanged();
+          return;
+        }
         customBanks = value;
         refreshBanks();
         randomOrder = [];
@@ -2373,8 +2808,95 @@
     if (deletionUndo) changeDeletion(deletionUndo.dictionaryID, deletionUndo.wordID, false);
   });
   $('dismiss-deletion').addEventListener('click', dismissDeletionNotice);
+  const bundledContentCatalog = builtinDictionaries.map((d) => ({
+    ...d,
+    words: (d.words || (d.id === 'fr' ? window.WORDS : window.MOTS_EXTRA_BANKS?.[d.id]) || []).map(
+      (w) => normalizeWord(w, d.language),
+    ),
+  }));
+  const bundledContentWords = new Map(
+    bundledContentCatalog.map((d) => [d.id, new Map(d.words.map((w) => [w.id, w]))]),
+  );
+  if (MotsContent) {
+    contentState = MotsContent.create({
+      base: bundledContentCatalog,
+      getLegacy: () => ({ books: dictionaryLibrary, extensions: customBanks }),
+      onApply: (books, _allBooks, projectionState) => {
+        storageFailures.delete(MotsContent.META_KEY);
+        let anchor = syncReady ? selectionAnchor() : null;
+        synchronizedBooks = books.map((b) => ({
+          ...b,
+          title: b.contentOverridden ? b.title : builtinBookTitles[b.id] || b.title,
+        }));
+        dictionaryLibrary = synchronizedBooks.filter((b) => MotsDictionaries.isDictionaryID(b.id));
+        customBanks = contentState?.extensions() || customBanks;
+        for (const b of synchronizedBooks)
+          if (!MotsDictionaries.isDictionaryID(b.id)) builtinIDs.add(b.id);
+        refreshBanks();
+        for (const id of dictionaryIDs()) {
+          settings.visibility[id] ??= [];
+          progress[id] ??= cleanProgress(read(progressKey(id), {}));
+        }
+        progressSync?.refresh();
+        if (pendingContentDictionary && dictionaryIDs().includes(pendingContentDictionary)) {
+          state.dictionary = pendingContentDictionary;
+          pendingContentDictionary = null;
+          state.screen = screen;
+          state.query = url.searchParams.get('q') || '';
+          state.category = url.searchParams.get('category') || 'all';
+          state.subcategory = url.searchParams.get('sub') || 'all';
+          state.page = Number.isInteger(requestedPage) && requestedPage > 0 ? requestedPage : 1;
+          if (state.screen === 'memory') {
+            restoreLatestMemoryBook(state.dictionary);
+            memorySession = memorySessions[state.dictionary] || null;
+            state.revealed = memorySession?.revealed === true && !memorySession.paused;
+          }
+          settings.dictionaryId = state.dictionary;
+          anchor = {
+            selectedID: undefined,
+            oldIndex: Math.max(0, (state.page - 1) * settings.pageSize),
+            revealed: state.revealed,
+            completed: false,
+          };
+        }
+        if (!dictionaryIDs().includes(state.dictionary)) {
+          state.dictionary = dictionaryIDs()[0] || 'fr';
+          state.category = 'all';
+          state.subcategory = 'all';
+          reviewSession = null;
+          memorySession = null;
+        }
+        state.language = dictionaryOf(state.dictionary).language;
+        state.studyKind = dictionaryKind(dictionaryOf(state.dictionary));
+        categories = dictionaryOf(state.dictionary).categories;
+        if (state.category !== 'all' && !categories.some((c) => c.id === state.category)) {
+          state.category = 'all';
+          state.subcategory = 'all';
+        }
+        if (syncReady && !projectionState?.unchangedBundled)
+          refreshMembership(anchor || selectionAnchor());
+        return true;
+      },
+    });
+    contentState
+      .ready()
+      .then(() => contentState.refreshCatalog())
+      .catch(() => {
+        if (contentState.failed()) {
+          storageFailures.add(MotsContent.META_KEY);
+          updateSaveState();
+          progressSync?.contentChanged();
+        }
+        if (syncReady)
+          settingsPanel.notice(
+            'dictionary-message',
+            '目前無法更新線上詞庫；已保留本機內容，恢復連線後重試。',
+          );
+      });
+  }
   deletionState = MotsDeletions.create({ onApply: applyDeletionRecords });
   progressSync = MotsProgressSync.create({
+    content: contentState,
     deletions: deletionState,
     memory: {
       get: () => {
@@ -2389,6 +2911,7 @@
         memoryRecords = MotsMemory.merge(latestMemoryRecords(disk), incoming);
         const saved = write(memoryKey, memoryRecords);
         if (syncReady && state.screen === 'memory') buildDeck(false);
+        else if (syncReady && memoryNavExpanded) renderNavigation();
         return saved;
       },
     },
@@ -2397,7 +2920,10 @@
     onStatus: settingsPanel.renderSync,
   });
   for (const event of ['online', 'focus'])
-    window.addEventListener(event, () => progressSync.wake());
+    window.addEventListener(event, () => {
+      progressSync.wake();
+      contentState?.refreshCatalog().catch(() => {});
+    });
   document.addEventListener('visibilitychange', () => {
     if (document.visibilityState !== 'hidden') progressSync.wake();
   });
@@ -2417,7 +2943,7 @@
     state.subcategory = 'all';
     expandedCategory = null;
   }
-  if (state.screen === 'review') startReview();
+  if (state.screen === 'review') startReview(true);
   else buildDeck(false);
   syncReady = true;
 })();

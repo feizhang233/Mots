@@ -1,0 +1,27 @@
+{
+  "sourceTitle": "紅寶書・新日本語能力考試N2文字詞彙（詳解＋練習）",
+  "sourceSHA256": "cecc7c96273a4fcee02cb3e0d87cc774a786092a68ef1bbbb760284ab241764c",
+  "pdfPageCount": 328,
+  "contentPageRange": [
+    15,
+    294
+  ],
+  "entryCount": 3136,
+  "priorityCounts": {
+    "2": 1495,
+    "1": 376,
+    "3": 1265
+  },
+  "exampleMethods": {
+    "original": 123,
+    "lexical-context": 97,
+    "usage-adaptation": 1426,
+    "semantic-generation": 1490
+  },
+  "headwordAndExampleReadings": true,
+  "manualReview": "partial; OCR and generated examples require further editorial review",
+  "readingDisplay": "right-side parentheses",
+  "readingCorrections": [
+    "空 meaning empty uses から; speech uses the explicit reading."
+  ]
+}

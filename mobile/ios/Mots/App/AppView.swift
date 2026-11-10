@@ -7,6 +7,8 @@ struct AppView: View {
     @State private var columnVisibility: NavigationSplitViewVisibility = .automatic
     @State private var preferredCompactColumn: NavigationSplitViewColumn = .detail
     @State private var settingsPresented = false
+    @State private var memoryMenuExpanded = false
+    @State private var showingMemoryLapses = false
 
     var body: some View {
         NavigationSplitView(columnVisibility: $columnVisibility, preferredCompactColumn: $preferredCompactColumn) {
@@ -50,7 +52,10 @@ struct AppView: View {
             SettingsView(store: store)
         }
         .onChange(of: store.dictionaryID) { stopSpeech() }
-        .onChange(of: store.mode) { stopSpeech() }
+        .onChange(of: store.mode) {
+            if store.mode != .memory { showingMemoryLapses = false }
+            stopSpeech()
+        }
         .onChange(of: store.currentWord?.id) { stopSpeech() }
         .onChange(of: store.availableWords.map(\.id)) { _, _ in
             if let id = SpeechPlayer.shared.activeWordID, store.isDeleted(id) { stopSpeech() }
@@ -107,20 +112,7 @@ struct AppView: View {
             Section("主題目錄") {
                 categoryButton(store.currentDictionary.isGrammar ? "全部語法" : "全部單字", categoryID: nil, subcategoryID: nil, symbol: "square.grid.2x2")
                 if !store.currentDictionary.isGrammar {
-                    Button {
-                        store.openMemory()
-                        preferredCompactColumn = .detail
-                    } label: {
-                        HStack {
-                            Label("卡片記憶", systemImage: StudyMode.memory.symbol)
-                            Spacer(minLength: 4)
-                            if store.mode == .memory { Image(systemName: "checkmark").font(.caption.bold()) }
-                        }
-                        .frame(minHeight: 34, alignment: .leading)
-                        .foregroundStyle(store.mode == .memory ? MotsTheme.accent : MotsTheme.ink)
-                    }
-                    .accessibilityAddTraits(store.mode == .memory ? [.isSelected] : [])
-                    .accessibilityIdentifier("navigation.memory")
+                    memoryNavigation
                 }
                 ForEach(store.availableCategories) { category in
                     let subcategories = store.availableSubcategories(in: category)
@@ -153,6 +145,54 @@ struct AppView: View {
         .scrollContentBackground(.hidden)
         .background(MotsTheme.background)
         .navigationTitle("Mots")
+    }
+
+    @ViewBuilder private var memoryNavigation: some View {
+        let parentSelected = store.mode == .memory && !showingMemoryLapses
+        HStack(spacing: 0) {
+            Button { selectMode(.memory) } label: {
+                HStack {
+                    Label("卡片記憶", systemImage: StudyMode.memory.symbol)
+                    Spacer(minLength: 4)
+                    if parentSelected { Image(systemName: "checkmark").font(.caption.bold()) }
+                }
+                .frame(minHeight: 44)
+                .contentShape(Rectangle())
+            }
+            .foregroundStyle(parentSelected ? MotsTheme.accent : MotsTheme.ink)
+            .accessibilityAddTraits(parentSelected ? [.isSelected] : [])
+            .accessibilityIdentifier("navigation.memory")
+
+            Button { memoryMenuExpanded.toggle() } label: {
+                Image(systemName: memoryMenuExpanded ? "chevron.down" : "chevron.forward")
+                    .font(.caption.weight(.semibold))
+                    .frame(width: 44, height: 44)
+                    .contentShape(Rectangle())
+            }
+            .accessibilityLabel(memoryMenuExpanded ? "收合卡片記憶子選單" : "展開卡片記憶子選單")
+            .accessibilityIdentifier("navigation.memory.expand")
+        }
+        .buttonStyle(.plain)
+        if memoryMenuExpanded {
+            let selected = store.mode == .memory && showingMemoryLapses
+            Button {
+                store.openMemory()
+                showingMemoryLapses = true
+                preferredCompactColumn = .detail
+            } label: {
+                HStack {
+                    Text("忘記一次")
+                    Spacer()
+                    if selected { Image(systemName: "checkmark").font(.caption.bold()) }
+                }
+                .foregroundStyle(selected ? MotsTheme.accent : MotsTheme.ink)
+                .padding(.leading, 28)
+                .frame(minHeight: 44)
+                .contentShape(Rectangle())
+            }
+            .accessibilityAddTraits(selected ? [.isSelected] : [])
+            .accessibilityIdentifier("navigation.memory.lapses")
+        }
     }
 
     private func categoryButton(_ title: String, categoryID: String?, subcategoryID: String?, symbol: String? = nil) -> some View {
@@ -230,6 +270,8 @@ struct AppView: View {
     private func selectMode(_ mode: StudyMode) {
         if mode == .memory {
             store.openMemory()
+            showingMemoryLapses = false
+            memoryMenuExpanded = true
         } else if mode == .review {
             if store.mode != .review { store.startReview() }
         } else {
@@ -254,7 +296,12 @@ struct AppView: View {
                 Button("開啟設定") { settingsPresented = true }.buttonStyle(.glass)
             }
         } else if store.mode == .memory {
-            MemoryWorkbench(store: store, openSettings: { settingsPresented = true })
+            if showingMemoryLapses {
+                MemoryLapseList(store: store, returnToMemory: { selectMode(.memory) })
+                    .id(store.dictionaryID)
+            } else {
+                MemoryWorkbench(store: store, openSettings: { settingsPresented = true })
+            }
         } else if store.showsCards {
             StudyWorkbench(store: store, openSettings: { settingsPresented = true })
         } else {

@@ -22,6 +22,8 @@ run_suite() {
 
 run_suite StudyModelsTests
 run_suite StudyStoreTests "$ios_root/Mots/Resources/catalog.json"
+run_suite N2VocabularyTests "$ios_root/Mots/Resources/catalog.json"
+run_suite ContentSyncTests "$ios_root/Mots/Resources/catalog.json" "$project_root/sync/content_fixtures.json"
 run_suite ListMeaningTests
 run_suite AppearanceTests
 run_suite HideImpressionTests

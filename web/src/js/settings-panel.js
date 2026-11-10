@@ -16,6 +16,7 @@
     getDeleted,
     getMeaning,
     getSync,
+    getContentLibrary = () => [],
     beforeOpen,
     onRestore,
     onSyncStatus,
@@ -42,6 +43,19 @@
       $('vocabulary-extension-section').hidden = !model.canExtend;
       $('settings-bank-note').textContent =
         `目前辭典：${model.dictionaryTitle} · ${model.wordCount} 詞${model.customCount ? `，含 ${model.customCount} 個擴充單字` : ''}`;
+      if (document.activeElement !== $('rename-dictionary-title'))
+        $('rename-dictionary-title').value = model.dictionaryTitle;
+      $('rename-dictionary').disabled = !model.canManageContent;
+      $('archive-dictionary').disabled = !model.canManageContent;
+      const archived = getContentLibrary();
+      $('archived-dictionary-list').innerHTML = archived.length
+        ? archived
+            .map(
+              (b) =>
+                `<div class="deleted-word"><span>${esc(b.title)}</span><button class="button button-outline" type="button" data-restore-book="${esc(b.id)}">恢復</button></div>`,
+            )
+            .join('')
+        : '<p class="settings-note">目前沒有已封存書籍。</p>';
       $('dictionary-template-preview').textContent = JSON.stringify(
         getDictionaryTemplate(),
         null,
@@ -71,18 +85,20 @@
     function renderSync(snapshot = getSync()?.state()) {
       if (!snapshot) return;
       const messages = {
-        disconnected: '尚未配對。進度仍儲存在這個瀏覽器。',
+        disconnected: '尚未配對。詞典與學習資料仍儲存在這個瀏覽器。',
         unavailable:
           '離線檔案及非 HTTPS 頁面無法同步。請開啟正式網站 mots.feizhang233.com 使用配對。',
         connecting: '正在驗證配對，請稍候。',
-        syncing: '正在同步進度…',
+        syncing: '正在同步詞典與學習資料…',
         pending: '本機已儲存，等待同步。',
-        synced: '進度已同步。',
-        offline: '暫時無法連線，進度保留在本機，稍後會自動重試。',
+        synced: snapshot.contentPending
+          ? '資料已同步；部分詞條等待書籍資訊，紀錄已保留。'
+          : '詞典與學習資料已同步。',
+        offline: '暫時無法連線，詞典與學習資料保留在本機，稍後會自動重試。',
         unauthorized: '配對碼無效或已失效。請檢查配對碼後重新加入。',
         invalid: '伺服器回傳的資料無法驗證。本機進度未被覆蓋，稍後重試。',
         'invalid-code': '請輸入完整的 mots- 配對碼，再按「加入同步」。',
-        error: '進度尚未完整儲存，請釋放瀏覽器儲存空間或下載備份後重試。',
+        error: '資料尚未完整儲存，請釋放瀏覽器儲存空間或下載備份，重新開啟本頁後重試。',
         unsupported: '同步服務尚未支援完整進度同步。本機資料已保留，請稍後重試。',
       };
       $('sync-status').textContent = messages[snapshot.phase] || messages.disconnected;

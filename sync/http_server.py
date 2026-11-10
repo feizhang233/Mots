@@ -125,7 +125,7 @@ class SyncHandler(BaseHTTPRequestHandler):
         return digest
 
     def respond(self, status, payload):
-        body = json.dumps(payload, ensure_ascii=True, separators=(",", ":")).encode("ascii")
+        body = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
         self.send_response(status)
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(body)))
@@ -150,7 +150,7 @@ class SyncHandler(BaseHTTPRequestHandler):
     def handle_expect_100(self):
         try:
             self.check_origin()
-            if self.path in {BASE + "/exchange", BASE + "/deletions", BASE + "/memory"}:
+            if self.path in {BASE + "/exchange", BASE + "/deletions", BASE + "/memory", BASE + "/content"}:
                 self.authenticate()
         except SyncError as error:
             self.fail(error)
@@ -190,6 +190,9 @@ class SyncHandler(BaseHTTPRequestHandler):
             elif self.path == BASE + "/memory":
                 digest = self.authenticate()
                 result = self.server.store.exchange_memory(digest, self.read_json())
+            elif self.path == BASE + "/content":
+                digest = self.authenticate()
+                result = self.server.store.exchange_content(digest, self.read_json())
             elif self.path == BASE + "/create":
                 # Ignore forwarded IP headers; only the actual peer is trusted.
                 if not self.server.limiter.allow(self.client_address[0]):
@@ -219,7 +222,7 @@ class SyncHandler(BaseHTTPRequestHandler):
     def do_OPTIONS(self):
         try:
             self.check_origin()
-            if self.path not in {BASE + "/create", BASE + "/exchange", BASE + "/deletions", BASE + "/memory", BASE + "/health"}:
+            if self.path not in {BASE + "/create", BASE + "/exchange", BASE + "/deletions", BASE + "/memory", BASE + "/content", BASE + "/health"}:
                 raise SyncError(404, "Endpoint not found")
             method = self.headers.get("Access-Control-Request-Method", "POST")
             requested = {value.strip().lower() for value in self.headers.get("Access-Control-Request-Headers", "").split(",") if value.strip()}

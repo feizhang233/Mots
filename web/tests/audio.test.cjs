@@ -230,6 +230,17 @@ async function run() {
     assert.equal(japanese.words.get('first').term, term, 'Display text stays intact');
   }
 
+  for (const audioMode of ['auto', 'device', 'google']) {
+    const empty = setup({ sources: {}, language: 'ja', audioMode });
+    Object.assign(empty.words.get('first'), { term: '空', reading: 'から' });
+    empty.controller.speak('first');
+    await settle();
+    if (audioMode === 'google')
+      assert.equal(new URL(empty.opened[0][0]).searchParams.get('text'), 'から');
+    else assert.equal(empty.utterances[0].text, 'から', 'Explicit reading overrides the kanji engine guess of そら');
+    assert.equal(empty.words.get('first').term, '空');
+  }
+
   const japaneseFallback = setup({ language: 'ja' });
   japaneseFallback.words.get('first').term = '～わけではない／～というわけではない';
   japaneseFallback.controller.speak('first');

@@ -4,6 +4,7 @@ const { spawnSync } = require('node:child_process');
 
 const suites = [
   'furigana',
+  'n2-vocabulary',
   'navigation-review',
   'memory-schedule',
   'memory-resume-model',
@@ -24,6 +25,8 @@ const suites = [
   'select',
   'audio.test',
   'progress-sync',
+  'content-state',
+  'content-sync',
   'deletions',
 ];
 for (const suite of suites) {

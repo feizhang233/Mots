@@ -60,6 +60,8 @@ final class StudyStore {
     private var memorySessions = MemorySessionLibrary()
     private(set) var syncMetadata: ProgressSyncMetadata?
     private(set) var deletionMetadata: WordDeletionMetadata?
+    private(set) var contentMetadata: ContentSyncMetadata?
+    private(set) var downloadedCatalog: DownloadedCatalog?
     private var deletionFlags: [String: Bool] = [:]
     @ObservationIgnored private var syncInstance: ProgressSyncController?
     var syncController: ProgressSyncController {
@@ -110,28 +112,51 @@ final class StudyStore {
             do {
                 let state = try JSONDecoder().decode(SavedState.self, from: Data(contentsOf: persistenceURL))
                 // Persisted content is our own Codable output. Revalidate its identity and references.
-                let custom = try state.dictionaries.map { dictionary -> StudyDictionary in
+                let migratingLegacy=state.contentMetadata == nil
+                let custom = try (migratingLegacy ? state.dictionaries : []).map { dictionary -> StudyDictionary in
                     let json = Self.dictionaryJSON(dictionary)
                     return try StudyImport.dictionary(json, id: dictionary.id)
                 }
                 guard custom.count <= 20, Set(custom.map(\.id)).count == custom.count else { throw StudyDataError("儲存的辭典數量或 ID 不正確。") }
                 dictionaries = loaded + custom
-                for (id, extras) in state.extensions {
+                do {
+                    if let reference=state.catalogCache {
+                        guard reference.version.range(of:"^[0-9a-f]{64}$",options:.regularExpression) != nil,
+                              reference.sha256.range(of:"^[0-9a-f]{64}$",options:.regularExpression) != nil else { throw ProgressSyncError.invalidResponse }
+                        let data=try Data(contentsOf:persistenceURL.deletingLastPathComponent().appendingPathComponent(reference.fileName))
+                        guard ContentLibrary.sha256(data)==reference.sha256 else { throw ProgressSyncError.invalidResponse }
+                        let checked=try ContentLibrary.decodeCatalog(data)
+                        downloadedCatalog=DownloadedCatalog(version:reference.version,sha256:reference.sha256,dictionaries:checked)
+                    } else if let cache=state.downloadedCatalog {
+                        let checked=try ContentLibrary.decodeCatalog(JSONEncoder().encode(cache.dictionaries))
+                        downloadedCatalog=DownloadedCatalog(version:cache.version,sha256:cache.sha256,dictionaries:checked,rawData:cache.rawData)
+                    }
+                } catch { loadError="線上詞庫快取無法讀取，暫用內建詞庫；學習紀錄已保留。" }
+                for (id, extras) in migratingLegacy ? state.extensions : [:] {
                     guard let index = dictionaries.firstIndex(where: { $0.id == id && $0.isBuiltIn }) else { continue }
                     let known = Set(dictionaries[index].words.map(\.id))
                     dictionaries[index] = addingExtensions(extras.filter { !known.contains($0.id) }, to: dictionaries[index])
                 }
+                var content=state.contentMetadata ?? ContentSyncMetadata()
+                try content.validate()
+                if migratingLegacy { try seedContent(dictionaries,metadata:&content) }
+                contentMetadata=content
+                dictionaries=try ContentLibrary.materialize(baseline:contentBaseline,records:content.records)
+                var learning=state.syncMetadata ?? ProgressSyncMetadata()
+                try learning.validate()
+                var validLegacy:[String:[String:Int]]=[:]
+                for (book,words) in state.progress where ContentSyncRecord.identifier(book,max:128) {
+                    validLegacy[book]=words.filter{ContentSyncRecord.identifier($0.key,max:256) && (0...3).contains($0.value)}
+                }
+                try learning.seed(validLegacy)
+                syncMetadata=learning
                 progress = cleanedProgress(state.progress, dictionaries: dictionaries)
                 let savedMemory = state.memory ?? [:]
                 try MemoryRecord.validate(savedMemory)
                 memory = savedMemory
                 memoryChapters = state.memoryChapters ?? [:]
                 memorySessions = state.memorySessions ?? MemorySessionLibrary()
-                if var metadata = state.syncMetadata {
-                    try metadata.validate()
-                    syncMetadata = metadata
-                    applySyncRecordsToKnownWords()
-                }
+                applySyncRecordsToKnownWords()
                 if var deletions = state.deletionMetadata {
                     try deletions.validate()
                     setDeletionMetadata(deletions)
@@ -179,7 +204,7 @@ final class StudyStore {
             } catch {
                 // Quarantine original bytes before later navigation or ratings can save new state.
                 dictionaries = loaded
-                syncMetadata = nil; deletionMetadata = nil; deletionFlags = [:]; progress = [:]; memory = [:]; memoryChapters = [:]
+                syncMetadata = nil; deletionMetadata = nil; contentMetadata=nil;downloadedCatalog=nil;deletionFlags = [:]; progress = [:]; memory = [:]; memoryChapters = [:]
                 memorySessions = MemorySessionLibrary(); memorySessionActive = false; dictionaryID = loaded.first?.id ?? "fr"
                 mode = .study; search = ""; categoryID = nil; subcategoryID = nil
                 rebuildDeck()
@@ -383,7 +408,7 @@ final class StudyStore {
             (mode == .lookup || subcategoryID == nil || subcategoryID == word.subcategory) &&
             (mode == .lookup || !hideMastered || rating(word) < 3) &&
             (mode != .study || !hideImpression || rating(word) != 2) &&
-            (showsCards || query.isEmpty || folded([word.term, word.pattern, word.explanation]
+            (showsCards || query.isEmpty || folded([word.term, word.reading, word.pattern, word.explanation]
                 + word.exampleTexts + Array(word.meanings.values)
                 + word.examples.flatMap { Array($0.translations.values) }).contains(query))
         }
@@ -457,6 +482,10 @@ final class StudyStore {
     var memoryWords: [StudyWord] {
         let selected = selectedMemoryChapters
         return availableWords.filter { rating($0) == 2 && selected.contains($0.category) }
+    }
+    var memoryLapseWords: [StudyWord] {
+        guard !currentDictionary.isGrammar else { return [] }
+        return availableWords.filter { rating($0) == 2 && memoryRecord(for: $0)?.hasPendingLapse == true }
     }
     func memoryRecord(for word: StudyWord) -> MemoryRecord? {
         guard let record = memory[dictionaryID]?[word.id], record.stage < MemoryRecord.masteryStage else { return nil }
@@ -588,8 +617,7 @@ final class StudyStore {
         guard let word = currentMemoryWordForAnswer(wordID: wordID, at: now),
               !remembered || word.meanings[meaningLanguage].map({ !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }) == true else { return false }
         let previous = memoryRecord(for: word)
-        // Dated manual/sync resets also use stage zero, but have no waiting interval.
-        let becameUnfamiliar = !remembered && previous.map { $0.stage == 0 && $0.dueAt > $0.updatedAt } == true
+        let becameUnfamiliar = !remembered && previous?.hasPendingLapse == true
         let record: MemoryRecord
         do {
             record = try (previous ?? MemoryRecord(stage: 0, dueAt: 0, updatedAt: 0))
@@ -653,12 +681,12 @@ final class StudyStore {
                     subcategories: categories[index].subcategories + needed.filter { !existing.contains($0.id) })
             } else { categories.append(StudyCategory(id: sourceCategory.id, name: sourceCategory.name, subcategories: needed)) }
         }
-        return StudyDictionary(id: dictionary.id, title: dictionary.title, language: dictionary.language, categories: categories, words: combined, kind: dictionary.kind, grammarMode: dictionary.grammarMode)
+        return StudyDictionary(id: dictionary.id, title: dictionary.title, language: dictionary.language, categories: categories, words: combined, kind: dictionary.kind, grammarMode: dictionary.grammarMode,builtIn:dictionary.builtIn,usesCustomTitle:dictionary.usesCustomTitle)
     }
     private var extensions: [String: [StudyWord]] {
         var result: [String: [StudyWord]] = [:]
         for dictionary in dictionaries where dictionary.isBuiltIn {
-            let bundledIDs = Set(bundledDictionaries.first(where: { $0.id == dictionary.id })?.words.map(\.id) ?? [])
+            let bundledIDs = Set(contentBaseline.first(where: { $0.id == dictionary.id })?.words.map(\.id) ?? [])
             result[dictionary.id] = dictionary.words.filter { !bundledIDs.contains($0.id) }
         }
         return result
@@ -668,7 +696,18 @@ final class StudyStore {
         if mode == .memory { captureMemorySession(for: dictionaryID) }
         guard let persistenceURL else { return true }
         do {
-            let state = SavedState(dictionaries: dictionaries.filter { !$0.isBuiltIn }, extensions: extensions,
+            var cacheReference:CatalogCacheReference?
+            if let cache=downloadedCatalog {
+                let reference=CatalogCacheReference(version:cache.version,sha256:cache.sha256)
+                let path=persistenceURL.deletingLastPathComponent().appendingPathComponent(reference.fileName)
+                if !FileManager.default.fileExists(atPath:path.path) {
+                    guard let data=cache.rawData,ContentLibrary.sha256(data)==cache.sha256 else { throw ProgressSyncError.invalidResponse }
+                    try FileManager.default.createDirectory(at:path.deletingLastPathComponent(),withIntermediateDirectories:true)
+                    try data.write(to:path,options:.atomic)
+                }
+                cacheReference=reference
+            }
+            let state = SavedState(dictionaries: dictionaries.filter { !$0.isBuiltIn && $0.id.hasPrefix("dict-") }, extensions: extensions,
                 progress: progress, dictionaryID: dictionaryID, mode: mode, search: search,
                 categoryID: categoryID, subcategoryID: subcategoryID, listMode: listMode,
                 hideMastered: hideMastered, hideImpression: hideImpression, hideListMeanings: hideListMeanings, showExampleTranslations: showExampleTranslations,
@@ -676,7 +715,8 @@ final class StudyStore {
                 meaningLanguage: meaningLanguage, speechRate: speechRate,
                 autoAdvance: autoAdvance, pageSize: pageSize, randomOrder: randomOrder, currentIndex: currentIndex, completed: completed,
                 deckIDs: filteredWords.map(\.id), reviewRatedIDs: Array(reviewRatedIDs), syncMetadata: syncMetadata, deletionMetadata: deletionMetadata,
-                memory: memory, memoryChapters: memoryChapters, memorySessions: memorySessions)
+                memory: memory, memoryChapters: memoryChapters, memorySessions: memorySessions,
+                contentMetadata:contentMetadata,downloadedCatalog:nil,catalogCache:cacheReference)
             let data = try JSONEncoder().encode(state)
             try FileManager.default.createDirectory(at: persistenceURL.deletingLastPathComponent(), withIntermediateDirectories: true)
             try data.write(to: persistenceURL, options: .atomic)
@@ -860,18 +900,176 @@ final class StudyStore {
         }
     }
 
+    private var contentBaseline:[StudyDictionary] {
+        guard let cache=downloadedCatalog else { return bundledDictionaries }
+        return cache.dictionaries
+    }
+
+    /// Legacy migration publishes authored books/extensions, never stale bundled entries.
+    private func seedContent(_ library:[StudyDictionary],metadata:inout ContentSyncMetadata) throws {
+        for book in library {
+            let base=contentBaseline.first{$0.id==book.id}
+            let known=Set(base?.words.map(\.id) ?? []).union(bundledDictionaries.first{$0.id==book.id}?.words.map(\.id) ?? [])
+            let authored=book.isBuiltIn ? book.words.filter{!known.contains($0.id)} : book.words
+            if !book.isBuiltIn { try metadata.put(dictionaryID:book.id,kind:"dictionary",wordID:"*",payload:ContentLibrary.metadataJSON(book),seed:true) }
+            else if !authored.isEmpty {
+                let source=base ?? book
+                let merged=ContentLibrary.mergingCategories(source.categories,with:book.categories)
+                let info=StudyDictionary(id:source.id,title:source.title,language:source.language,categories:merged,words:[],kind:source.kind,grammarMode:source.grammarMode,builtIn:true)
+                try metadata.put(dictionaryID:book.id,kind:"dictionary",wordID:"*",payload:ContentLibrary.metadataJSON(info),seed:true)
+            }
+            let authoredIDs=Set(authored.map(\.id))
+            for (index,word) in book.words.enumerated() where authoredIDs.contains(word.id) {
+                try metadata.put(dictionaryID:book.id,kind:"word",wordID:word.id,payload:ContentLibrary.wordJSON(word,order:index),seed:true)
+            }
+        }
+    }
+    private func preparedContentMetadata() throws -> ContentSyncMetadata {
+        var metadata=contentMetadata ?? ContentSyncMetadata()
+        try metadata.validate()
+        if contentMetadata == nil { try seedContent(dictionaries,metadata:&metadata) }
+        return metadata
+    }
+    func contentSnapshot() throws -> [ContentSyncRecord] {
+        contentMetadata=try preparedContentMetadata()
+        guard persist() else { throw ProgressSyncError.storage }
+        return contentMetadata!.records
+    }
+    func validatedContentSnapshot(_ incoming:[ContentSyncRecord]) throws -> ContentSyncMetadata {
+        var metadata=try preparedContentMetadata()
+        try metadata.merge(incoming)
+        try validateContentIdentities(ContentLibrary.materialize(baseline:contentBaseline,records:metadata.records))
+        return metadata
+    }
+    func mergeContentSnapshot(_ incoming:[ContentSyncRecord]) throws {
+        try commitContent(try validatedContentSnapshot(incoming),cache:downloadedCatalog)
+    }
+    func applyDownloadedCatalog(_ data:Data,version:String,sha256:String) throws {
+        guard version.range(of:"^[0-9a-f]{64}$",options:.regularExpression) != nil,
+              sha256.range(of:"^[0-9a-f]{64}$",options:.regularExpression) != nil,
+              ContentLibrary.sha256(data)==sha256 else { throw ProgressSyncError.invalidResponse }
+        let books=try ContentLibrary.decodeCatalog(data)
+        let cache=DownloadedCatalog(version:version,sha256:sha256,dictionaries:books,rawData:data)
+        try commitContent(try preparedContentMetadata(),cache:cache)
+    }
+    private func commitContent(_ metadata:ContentSyncMetadata,cache:DownloadedCatalog?) throws {
+        let oldBooks=dictionaries,oldMeta=contentMetadata,oldCache=downloadedCatalog
+        let oldProgress=progress,oldBookID=dictionaryID,oldCategory=categoryID,oldSubcategory=subcategoryID,oldMode=mode
+        let oldDeck=filteredWords,oldIndex=currentIndex,oldReveal=revealed,oldCompleted=completed,oldSessions=memorySessions
+        let oldMemoryLive=(memorySessionActive,memoryAnsweredCount,memoryMasteredCount,memoryFeedback,memoryAnsweredIDs)
+        let oldReview=reviewRatedIDs
+        let selected=currentWord?.id
+        let baseline=cache?.dictionaries ?? bundledDictionaries
+        let books=try ContentLibrary.materialize(baseline:baseline,records:metadata.records)
+        try validateContentIdentities(books)
+        restoring=true
+        if mode == .memory { captureMemorySession(for:oldBookID) }
+        dictionaries=books;contentMetadata=metadata;downloadedCatalog=cache
+        if !books.contains(where:{$0.id==dictionaryID}) {
+            dictionaryID=books.first?.id ?? "fr";categoryID=nil;subcategoryID=nil
+            mode = .study;clearMemoryWorkbench();reviewRatedIDs=[]
+        }
+        if let id=categoryID,!currentDictionary.categories.contains(where:{$0.id==id}) { categoryID=nil;subcategoryID=nil }
+        if let id=subcategoryID,!currentDictionary.categories.flatMap(\.subcategories).contains(where:{$0.id==id}) { subcategoryID=nil }
+        applySyncRecordsToKnownWords()
+        let byID=Dictionary(uniqueKeysWithValues:currentDictionary.words.map{($0.id,$0)})
+        filteredWords=dictionaryID==oldBookID ? oldDeck.compactMap{byID[$0.id]} : []
+        refreshDeletionVisibility()
+        currentIndex=dictionaryID==oldBookID ? filteredWords.firstIndex(where:{$0.id==selected}) ?? min(oldIndex,max(0,filteredWords.count-1)) : 0
+        revealed=dictionaryID==oldBookID && currentWord?.id==selected ? oldReveal : false
+        restoring=false
+        if persist() { return }
+        restoring=true
+        dictionaries=oldBooks;contentMetadata=oldMeta;downloadedCatalog=oldCache;progress=oldProgress
+        dictionaryID=oldBookID;categoryID=oldCategory;subcategoryID=oldSubcategory;mode=oldMode
+        filteredWords=oldDeck;currentIndex=oldIndex;revealed=oldReveal;completed=oldCompleted;memorySessions=oldSessions
+        memorySessionActive=oldMemoryLive.0;memoryAnsweredCount=oldMemoryLive.1;memoryMasteredCount=oldMemoryLive.2;memoryFeedback=oldMemoryLive.3;memoryAnsweredIDs=oldMemoryLive.4
+        reviewRatedIDs=oldReview
+        restoring=false
+        throw ProgressSyncError.storage
+    }
+    private func validateContentIdentities(_ books:[StudyDictionary]) throws {
+        let existing=Dictionary(uniqueKeysWithValues:(dictionaries+archivedDictionaries).map{($0.id,$0)})
+        for book in books {
+            if let old=existing[book.id] {
+                guard old.language==book.language,old.kind==book.kind,old.grammarMode==book.grammarMode else {
+                    throw StudyDataError("同一辭典 ID 的語言或類型不同，請另存為新辭典；原有紀錄已保留。")
+                }
+            }
+        }
+    }
+    private func metadataPayload(for book:StudyDictionary,metadata:ContentSyncMetadata) throws -> ContentJSON {
+        var raw=metadata.records.first{$0.dictionaryID==book.id && $0.kind=="dictionary" && !$0.deleted}?.payload?.object ?? [:]
+        let authored=try ContentLibrary.metadataJSON(book).object!
+        raw.merge(authored){_,new in new}
+        return try .from(raw)
+    }
+    /// Replace authored content under the same stable book/word identities.
+    func updateDictionaryContent(_ book:StudyDictionary) throws {
+        if let existing=dictionaries.first(where:{$0.id==book.id}) {
+            guard existing.kind==book.kind,existing.grammarMode==book.grammarMode,existing.language==book.language else { throw StudyDataError("書籍語言與類型不可直接改換，請另存新書。") }
+        }
+        try ContentLibrary.validateWords(book.words,in:book)
+        var metadata=try preparedContentMetadata()
+        try metadata.put(dictionaryID:book.id,kind:"dictionary",wordID:"*",payload:metadataPayload(for:book,metadata:metadata))
+        let old=dictionaries.first{$0.id==book.id}
+        let supplied=Set(book.words.map(\.id))
+        for word in old?.words ?? [] where !supplied.contains(word.id) {
+            try metadata.put(dictionaryID:book.id,kind:"word",wordID:word.id,payload:nil,deleted:true)
+        }
+        for (index,word) in book.words.enumerated() {
+            if old?.words.first(where:{$0.id==word.id}) != word {
+                try metadata.put(dictionaryID:book.id,kind:"word",wordID:word.id,payload:ContentLibrary.wordJSON(word,order:index))
+            }
+        }
+        try commitContent(metadata,cache:downloadedCatalog)
+        syncInstance?.localDidChange()
+    }
+    func renameDictionary(_ id:String,title:String) throws {
+        guard let book=dictionaries.first(where:{$0.id==id}) else { throw ProgressSyncError.invalidResponse }
+        let title=try StudyImport.text(title,field:"辭典名稱",limit:80)
+        var metadata=try preparedContentMetadata()
+        var raw=try metadataPayload(for:book,metadata:metadata).object!
+        raw["title"]=title
+        try metadata.put(dictionaryID:id,kind:"dictionary",wordID:"*",payload:.from(raw))
+        try commitContent(metadata,cache:downloadedCatalog);syncInstance?.localDidChange()
+    }
+    var archivedDictionaries:[StudyDictionary] {
+        (contentMetadata?.records ?? []).filter{$0.kind=="dictionary" && !$0.deleted && $0.payload?.object?["archived"] as? Bool == true}
+            .compactMap{try? ContentLibrary.metadata($0.payload!.object!)}
+    }
+    func archiveDictionary(_ id:String,archived:Bool) throws {
+        var metadata=try preparedContentMetadata()
+        let source=dictionaries.first{$0.id==id} ?? archivedDictionaries.first{$0.id==id}
+        guard let source else { throw ProgressSyncError.invalidResponse }
+        var raw=try metadataPayload(for:source,metadata:metadata).object!
+        raw["archived"]=archived
+        try metadata.put(dictionaryID:id,kind:"dictionary",wordID:"*",payload:.from(raw))
+        try commitContent(metadata,cache:downloadedCatalog);syncInstance?.localDidChange()
+    }
+
     func importDictionary(_ data: Data, title: String? = nil, language: String? = nil) throws -> String {
-        guard dictionaries.filter({ !$0.isBuiltIn }).count < 20 else { throw StudyDataError("最多可匯入 20 部辭典。") }
         guard data.count <= 2 * 1024 * 1024 else { throw StudyDataError("辭典 JSON 最多 2 MB。") }
         let parsed = try JSONSerialization.jsonObject(with: data)
         let source: [String: Any]
         if let object = parsed as? [String: Any] { source = object }
         else if let words = parsed as? [[String: Any]] { source = ["words": words] }
         else { throw StudyDataError("辭典須為 JSON 物件或單字陣列。") }
-        let id = "dict-\(UUID().uuidString.lowercased())"
-        let dictionary = try StudyImport.dictionary(source, id: id, fallbackLanguage: language ?? currentDictionary.language,
-            fallbackTitle: title, fallbackKind: currentDictionary.kind, fallbackGrammarMode: currentDictionary.grammarMode)
-        dictionaries.append(dictionary); progress[id] = [:]; dictionaryID = id
+        let requested=source["id"] as? String
+        let existing=requested.flatMap{value in dictionaries.first{$0.id==value}}
+        guard existing != nil || dictionaries.filter({!$0.isBuiltIn}).count < 20 else { throw StudyDataError("最多可匯入 20 部辭典。") }
+        let id = existing?.id ?? (requested?.hasPrefix("dict-")==true ? requested! : "dict-\(UUID().uuidString.lowercased())")
+        let parsedBook = try StudyImport.dictionary(source, id: existing?.isBuiltIn == true ? "dict-content-validation" : id, fallbackLanguage: language ?? existing?.language ?? currentDictionary.language,
+            fallbackTitle: title ?? existing?.title, fallbackKind: existing?.kind ?? currentDictionary.kind, fallbackGrammarMode: existing?.grammarMode ?? currentDictionary.grammarMode)
+        var mergedWords=existing?.words ?? []
+        var indices=Dictionary(uniqueKeysWithValues:mergedWords.enumerated().map{($0.element.id,$0.offset)})
+        for word in parsedBook.words {
+            if let at=indices[word.id] { mergedWords[at]=word } else { indices[word.id]=mergedWords.count;mergedWords.append(word) }
+        }
+        let dictionary=StudyDictionary(id:id,title:parsedBook.title,language:parsedBook.language,categories:ContentLibrary.mergingCategories(existing?.categories ?? [],with:parsedBook.categories),words:mergedWords,
+            kind:parsedBook.kind,grammarMode:parsedBook.grammarMode,builtIn:existing?.isBuiltIn)
+        try updateDictionaryContent(dictionary)
+        dictionaryID = id
         return id
     }
 
@@ -879,8 +1077,9 @@ final class StudyStore {
         var result: [String: Any] = ["id": word.id, "term": word.term, "meanings": word.meanings, "example": word.example,
          "category": word.category, "subcategory": word.subcategory]
         if let part = word.part { result["part"] = part }
+        if !word.reading.isEmpty { result["reading"] = word.reading }
         if !word.examples.isEmpty {
-            result["examples"] = word.examples.map { ["text": $0.text, "translations": $0.translations] as [String: Any] }
+            result["examples"] = word.examples.map(\.importJSON)
         }
         if !word.pattern.isEmpty { result["pattern"] = word.pattern }
         if !word.explanation.isEmpty { result["explanation"] = word.explanation }
@@ -893,12 +1092,19 @@ final class StudyStore {
          }, "words": dictionary.words.map(wordJSON)]
     }
     func exportBackup() throws -> Data {
-        let customJSON = dictionaries.filter { !$0.isBuiltIn }.map(Self.dictionaryJSON)
+        let customJSON = dictionaries.filter { !$0.isBuiltIn && $0.id.hasPrefix("dict-") }.map(Self.dictionaryJSON)
         let extensionsJSON = extensions.mapValues { $0.map(Self.wordJSON) }
         let hiddenLevels: [Int] = (hideImpression ? [2] : []) + (hideMastered ? [3] : [])
         let visibility = Dictionary(uniqueKeysWithValues: dictionaries.map { ($0.id, hiddenLevels) })
-        let data: [String: Any] = ["app": "mots", "version": 3, "exportedAt": ISO8601DateFormatter().string(from: Date()),
-            "ratings": progress["fr", default: [:]], "progress": progress, "dictionaries": customJSON, "customBanks": extensionsJSON,
+        var portableProgress=progress
+        for record in syncMetadata?.records ?? [] {
+            if let at=portableProgress.index(forKey:record.dictionaryID),!portableProgress[at].key.utf8.elementsEqual(record.dictionaryID.utf8) { throw ProgressSyncError.invalidResponse }
+            var words=portableProgress[record.dictionaryID] ?? [:]
+            if let at=words.index(forKey:record.wordID),!words[at].key.utf8.elementsEqual(record.wordID.utf8) { throw ProgressSyncError.invalidResponse }
+            words[record.wordID]=record.level;portableProgress[record.dictionaryID]=words
+        }
+        var data: [String: Any] = ["app": "mots", "version": 3, "exportedAt": ISO8601DateFormatter().string(from: Date()),
+            "ratings": portableProgress["fr", default: [:]], "progress": portableProgress, "dictionaries": customJSON, "customBanks": extensionsJSON,
             "deletions": try JSONSerialization.jsonObject(with: JSONEncoder().encode(deletionMetadata?.records ?? [])),
             "memory": try JSONSerialization.jsonObject(with: JSONEncoder().encode(memory)),
             "settings": ["dictionaryId": dictionaryID, "meaningLanguage": meaningLanguage, "view": listMode ? "list" : "card",
@@ -907,6 +1113,10 @@ final class StudyStore {
                          "hideListMeanings": hideListMeanings, "showExampleTranslations": showExampleTranslations,
                          "appearance": appearance.rawValue,
                          "pageSize": pageSize, "speechRate": speechRate, "autoAdvance": autoAdvance, "order": randomOrder ? "random" : "ordered"]]
+        let content=try preparedContentMetadata()
+        data["content"]=["version":1,"records":content.records.map { record in
+            ["dictionaryID":record.dictionaryID,"kind":record.kind,"wordID":record.wordID,"deleted":record.deleted,"payload":record.payload?.foundation ?? NSNull()] as [String:Any]
+        }]
         return try JSONSerialization.data(withJSONObject: data, options: [.prettyPrinted, .sortedKeys])
     }
 
@@ -954,6 +1164,34 @@ final class StudyStore {
                 candidate[index] = addingExtensions(existing.values.sorted { $0.id < $1.id }, to: candidate[index])
             }
         }
+        var contentCandidate=try preparedContentMetadata()
+        for book in candidate {
+            let old=dictionaries.first{$0.id==book.id}
+            if !book.isBuiltIn && old==nil || old?.title != book.title || old?.categories != book.categories {
+                try contentCandidate.put(dictionaryID:book.id,kind:"dictionary",wordID:"*",payload:metadataPayload(for:book,metadata:contentCandidate))
+            }
+            let supplied=Set(book.words.map(\.id))
+            for word in old?.words ?? [] where !supplied.contains(word.id) {
+                try contentCandidate.put(dictionaryID:book.id,kind:"word",wordID:word.id,payload:nil,deleted:true)
+            }
+            for (index,word) in book.words.enumerated() where old?.words.first(where:{$0.id==word.id}) != word {
+                try contentCandidate.put(dictionaryID:book.id,kind:"word",wordID:word.id,payload:ContentLibrary.wordJSON(word,order:index))
+            }
+        }
+        if let raw=source["content"] {
+            guard let envelope=raw as? [String:Any],Set(envelope.keys)==["version","records"],
+                  ProgressSyncRecord.wireInteger(envelope["version"])==1,let records=envelope["records"] as? [[String:Any]],records.count<=100_000 else { throw ProgressSyncError.invalidResponse }
+            var wire:[[String:Any]]=[]
+            for record in records {
+                guard Set(record.keys)==["dictionaryID","kind","wordID","deleted","payload"] else { throw ProgressSyncError.invalidResponse }
+                var item=record;item["clock"]=0;item["deviceID"]="";wire.append(item)
+            }
+            let checked=try ContentSyncRecord.decodeEnvelope(JSONSerialization.data(withJSONObject:["version":1,"records":wire]))
+            for record in checked {
+                try contentCandidate.put(dictionaryID:record.dictionaryID,kind:record.kind,wordID:record.wordID,payload:record.payload,deleted:record.deleted)
+            }
+        }
+        candidate=try ContentLibrary.materialize(baseline:contentBaseline,records:contentCandidate.records)
         let incoming: [String: Any]
         if version == 1 {
             guard let ratings = source["ratings"] as? [String: Any] else { throw StudyDataError("備份進度格式不正確。") }
@@ -964,16 +1202,18 @@ final class StudyStore {
         }
         var merged = progress, count = 0
         var metadata = try preparedSyncMetadata()
-        for dictionary in candidate {
-            guard let value = incoming[dictionary.id] else { continue }
+        for (dictionaryID,value) in incoming {
+            guard ContentSyncRecord.identifier(dictionaryID,max:128) else { throw StudyDataError("備份書籍代碼不正確。") }
             guard let values = value as? [String: Any] else { throw StudyDataError("備份進度格式不正確。") }
-            let known = Set(dictionary.words.map(\.id))
-            for (id, value) in values where known.contains(id) {
+            for (id, value) in values {
+                guard ContentSyncRecord.identifier(id,max:256) else { throw StudyDataError("備份詞條代碼不正確。") }
                 guard let number = value as? NSNumber, CFGetTypeID(number) != CFBooleanGetTypeID(), number.doubleValue == Double(number.intValue), (0...3).contains(number.intValue) else { continue }
-                if merged[dictionary.id]?[id] != number.intValue {
-                    try metadata.edit(dictionaryID: dictionary.id, wordID: id, level: number.intValue)
+                if let at=merged.index(forKey:dictionaryID),!merged[at].key.utf8.elementsEqual(dictionaryID.utf8) { throw ProgressSyncError.invalidResponse }
+                if let words=merged[dictionaryID],let at=words.index(forKey:id),!words[at].key.utf8.elementsEqual(id.utf8) { throw ProgressSyncError.invalidResponse }
+                if merged[dictionaryID]?[id] != number.intValue {
+                    try metadata.edit(dictionaryID: dictionaryID, wordID: id, level: number.intValue)
                 }
-                merged[dictionary.id, default: [:]][id] = number.intValue; count += 1
+                merged[dictionaryID, default: [:]][id] = number.intValue; count += 1
             }
         }
         var deletionCandidate = deletionMetadata
@@ -1000,6 +1240,7 @@ final class StudyStore {
         // Every content/progress/deletion validation above succeeds before committing any observable state.
         restoring = true
         dictionaries = candidate; progress = cleanedProgress(merged, dictionaries: candidate)
+        contentMetadata=contentCandidate
         syncMetadata = metadata
         memory = memoryCandidate
         setDeletionMetadata(deletionCandidate)
@@ -1077,4 +1318,7 @@ private struct SavedState: Codable {
     let memory: [String: [String: MemoryRecord]]?
     let memoryChapters: [String: [String]]?
     let memorySessions: MemorySessionLibrary?
+    let contentMetadata: ContentSyncMetadata?
+    let downloadedCatalog: DownloadedCatalog?
+    let catalogCache:CatalogCacheReference?
 }

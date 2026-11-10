@@ -74,6 +74,8 @@ def snapshot(root: Path) -> dict[Path, bytes]:
     network = root / "database/french/example-network.json"
     if network.exists():
         hashes["database/french/example-network.json"] = sha(network.read_bytes())
+    for name in ["database/japanese/hongbao-n2/vocabulary.json", "database/japanese/hongbao-n2/identity.json", "web/src/js/n2-vocabulary.js"]:
+        hashes[name] = sha((root / name).read_bytes())
     version = sha(json.dumps(hashes, sort_keys=True, separators=(",", ":")).encode())
     dictionaries = []
     for dictionary in json.loads(catalog):
@@ -95,6 +97,7 @@ def main() -> None:
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     subprocess.run(["python3", str(ROOT / "scripts/import-japanese.py"), "--check"], check=True)
+    subprocess.run(["python3", str(ROOT / "scripts/import-japanese-n2.py"), "--check"], check=True)
     subprocess.run(["python3", str(ROOT / "scripts/import-japanese-grammar.py"), "--check"], check=True)
     if (ROOT / "database/french/example-network.json").exists():
         subprocess.run(["python3", str(ROOT / "scripts/update-french-examples.py"), "--check"], check=True)

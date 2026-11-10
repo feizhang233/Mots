@@ -37,6 +37,12 @@ def outputs() -> dict[str, bytes]:
         version_asset,
         (SRC / "index.html").read_text(),
     ).encode()
+    for path in sorted(SRC.glob("*.html")):
+        if path.name != "index.html":
+            result[path.name] = re.sub(
+                r'(?P<attr>(?:src|href)=")(?P<name>[^"?#]+\.(?:js|css))(?:\?v=[^"\s]*)?"',
+                version_asset, path.read_text(),
+            ).encode()
     return result
 
 

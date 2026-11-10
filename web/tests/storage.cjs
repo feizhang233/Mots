@@ -132,7 +132,7 @@ async function run() {
     url: 'http://localhost/Mots.html?screen=study&dict=dict-old',
   });
   await upload(imported, 'import-dictionary', {
-    id: 'dict-old',
+    id: 'dict-new-source',
     title: '另一部法語',
     language: 'fr',
     words: [{ id: 'same', term: 'nouveau', meanings: { 'zh-Hant': '新詞' } }],
@@ -203,6 +203,7 @@ async function run() {
   assert.equal(restored.run('progress["dict-old"].same'), 1);
 
   const corrupt = context({ storage: baseStorage });
+  await corrupt.run('contentState.ready()');
   const invalidBackups = [
     {
       app: 'mots',
@@ -235,11 +236,12 @@ async function run() {
   assert(corrupt.$('backup-message').textContent.includes('50 MB'));
 
   const synced = context({ storage: baseStorage });
-  const fire = (key, value) => {
+  await synced.run('contentState.ready()');
+  const fire = async (key, value) => {
     const newValue = JSON.stringify(value);
     // A real storage event is delivered after the shared localStorage value changes.
     synced.store.set(key, newValue);
-    synced.listeners.storage[0]({ key, newValue });
+    await synced.listeners.storage[0]({ key, newValue });
   };
   const fireRating = (dictionaryID, wordID, level) => {
     const metadata = JSON.parse(synced.store.get('mots.sync.metadata.v1'));
@@ -265,7 +267,10 @@ async function run() {
   fire('mots.progress.v1', { same: 2 });
   assert.equal(synced.run('progress.fr.same'), 1);
   assert.equal(synced.run('progress["dict-old"].same'), 3);
-  fire('mots.dictionaries.v1', [...library, { ...library[0], id: 'dict-other', title: '另一部' }]);
+  await fire('mots.dictionaries.v1', [
+    ...library,
+    { ...library[0], id: 'dict-other', title: '另一部' },
+  ]);
   assert(synced.run('dictionaryIDs().includes("dict-other")'));
   fire('mots.settings.v2', { dictionaryId: 'dict-other', view: 'list' });
   assert.equal(synced.run('state.dictionary'), 'dict-other');
@@ -276,6 +281,7 @@ async function run() {
 
   // Disclosure state must preserve entry points, feedback visibility, and private-code hiding.
   const grouped = context({ source: true });
+  await grouped.run('contentState.ready()');
   grouped.run('settingsPanel.open()');
   assert(
     grouped.run('MotsSettingsPanel.groupIDs.every(id => !$(id).open)'),
@@ -381,6 +387,7 @@ async function run() {
   );
 
   const quota = context();
+  await quota.run('contentState.ready()');
   quota.ctx.localStorage.setItem = () => {
     throw new Error('quota');
   };
@@ -389,11 +396,15 @@ async function run() {
     language: 'fr',
     words: [{ term: 'essai', meanings: { 'zh-Hant': '測試' } }],
   });
-  assert.equal(quota.run('dictionaryLibrary.length'), 1);
+  assert.equal(
+    quota.run('dictionaryLibrary.length'),
+    0,
+    'A failed durable content transaction must not claim the book was imported',
+  );
   assert.equal(quota.run('state.screen'), 'home');
   assert(quota.run('storageFailures.size') > 0);
   assert(quota.$('save-state').innerHTML.includes('請備份'));
-  assert(quota.$('dictionary-message').textContent.includes('僅暫存'));
+  assert(quota.$('dictionary-message').textContent.includes('尚未儲存'));
   console.log(
     'Dictionary imports, v1/v2/v3 backups, atomic validation, storage events, and quota feedback passed.',
   );

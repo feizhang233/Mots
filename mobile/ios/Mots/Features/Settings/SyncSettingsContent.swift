@@ -6,6 +6,15 @@ struct SyncSettingsContent: View {
     @Binding var pairingCode: String
 
     @ViewBuilder var body: some View {
+        Label(sync.catalogStatus,systemImage:sync.catalogBusy ? "arrow.triangle.2.circlepath" : "books.vertical")
+            .font(.subheadline).fixedSize(horizontal:false,vertical:true)
+            .accessibilityIdentifier("sync.catalog-status")
+        if !sync.connected {
+            Button { Task { await sync.refreshCatalog(force:true) } } label: {
+                Label("更新線上詞庫",systemImage:"arrow.down.circle").settingsActionTarget()
+            }
+            .disabled(sync.catalogBusy).accessibilityIdentifier("sync.catalog-refresh")
+        }
         Label(sync.status, systemImage: sync.busy ? "arrow.triangle.2.circlepath" : sync.connected ? "checkmark.icloud" : "icloud")
             .font(.subheadline)
             .fixedSize(horizontal: false, vertical: true)
@@ -56,7 +65,7 @@ struct SyncSettingsContent: View {
             .disabled(sync.busy || pairingCode.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
             .accessibilityIdentifier("sync.join")
         }
-        Text("另一裝置輸入同一配對碼即可同步熟悉程度與刪除狀態，離線變更會自動重試。配對碼請只用於自己的裝置。")
+        Text("另一裝置輸入同一配對碼，即可雙向同步詞典、自訂詞條、熟悉度、刪除／還原及記憶排程。離線內容可繼續使用，連線後自動合併；外觀、章節選擇與閱讀位置留在各裝置。配對碼請只用於自己的裝置。")
             .font(.footnote).foregroundStyle(.secondary)
     }
 }

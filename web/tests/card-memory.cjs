@@ -65,6 +65,9 @@ async function run() {
   assert(nav.indexOf('卡片記憶') > nav.indexOf('全部詞彙'));
   assert(nav.indexOf('卡片記憶') < nav.indexOf('chapter-button'));
   assert(scoped.$('mobile-category-nav').innerHTML.includes('卡片記憶'));
+  for (const navID of ['category-nav', 'mobile-category-nav']) {
+    assert(scoped.$(navID).innerHTML.includes('data-open-memory-lapses'), 'Both menus expose the lapse list');
+  }
   scoped.run("showMemory(); memorySelection.fr = ['1']; startMemory()");
   assert.equal(scoped.run('state.screen'), 'memory');
   assert.deepEqual(ids(scoped), ['same'], 'One chapter captures only its impression words');
@@ -77,6 +80,12 @@ async function run() {
   const concealed = make();
   concealed.run("showMemory(); memorySelection.fr = ['1', '2']; startMemory()");
   const concealedCard = concealed.$('memory-section').innerHTML;
+  const actionRow = concealedCard.match(/<div class="memory-answer-actions">([\s\S]*?)<\/div>/)?.[1];
+  assert.deepEqual(
+    Array.from(actionRow.matchAll(/data-memory-(mastered|answer="(?:forgot|remembered)")/g), ([, action]) => action),
+    ['mastered', 'answer="forgot"', 'answer="remembered"'],
+    'The review row places mastery first, then forgot and remembered',
+  );
   assert(!concealedCard.includes('可直接選擇是否記住'));
   assert(!concealedCard.includes('先回想這個單字的意思'));
   concealed.run('state.revealed = true; renderMemory()');
@@ -153,6 +162,25 @@ async function run() {
   assert.deepEqual(record(demotedReload), demotedRecord);
 
   const resetAt = Date.now() - 1000;
+  const firstLapse = { stage: 0, dueAt: resetAt + 86400000, updatedAt: resetAt };
+  const overdueLapse = { stage: 0, dueAt: resetAt, updatedAt: resetAt - 86400000 };
+  const lapseList = make({
+    url: 'http://localhost/Mots.html?screen=memory&dict=fr&memoryView=lapses',
+    storage: {
+      'mots.progress.v1': { same: 2, b: 2, a: 1, unseen: 2, mastered: 3 },
+      [memoryKey]: { fr: { same: firstLapse, b: overdueLapse, a: firstLapse, mastered: firstLapse,
+        unseen: { stage: 0, dueAt: resetAt, updatedAt: resetAt } } },
+    },
+  });
+  const displayedLapses = () => Array.from(
+    lapseList.$('memory-section').innerHTML.matchAll(/data-memory-lapse-word="([^"]+)"/g),
+    ([, id]) => id,
+  ).sort();
+  assert.deepEqual(displayedLapses(), ['b', 'same'], 'The selected book lists waiting and overdue first lapses across chapters');
+  lapseList.run("changeDeletion('fr','same',true)");
+  assert.deepEqual(displayedLapses(), ['b'], 'Deleted words leave the list');
+  fireStorage(lapseList, memoryKey, { fr: { b: { stage: 1, updatedAt: Date.now(), dueAt: Date.now() + 86400000 } } });
+  assert.deepEqual(displayedLapses(), [], 'A recalled word leaves the open list after a schedule update');
   const manualReset = make({ storage: {
     [memoryKey]: { fr: { same: { stage: 0, dueAt: resetAt, updatedAt: resetAt } } },
   } });

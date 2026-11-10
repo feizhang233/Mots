@@ -6,6 +6,7 @@ help:
 
 build:
 	python3 scripts/import-japanese-grammar.py
+	python3 scripts/import-japanese-n2.py
 	python3 web/scripts/build.py
 	python3 scripts/sync-data.py
 

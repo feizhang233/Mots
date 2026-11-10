@@ -1,6 +1,32 @@
 import SwiftUI
 import UniformTypeIdentifiers
 
+private struct ArchivedDictionaryList:View {
+    let store:StudyStore
+    @State private var failure:String?
+    var body:some View {
+        List {
+            if let failure { Label(failure,systemImage:"exclamationmark.circle").foregroundStyle(.secondary) }
+            if store.archivedDictionaries.isEmpty {
+                Text("沒有已移除的辭典。").foregroundStyle(.secondary)
+            }
+            ForEach(store.archivedDictionaries) { book in
+                HStack {
+                    Text(book.title).fixedSize(horizontal:false,vertical:true)
+                    Spacer()
+                    Button("還原") {
+                        do { try store.archiveDictionary(book.id,archived:false);failure=nil }
+                        catch { failure=error.localizedDescription }
+                    }
+                    .frame(minWidth:44,minHeight:44)
+                    .accessibilityLabel("還原 \(book.title)")
+                }
+            }
+        }
+        .navigationTitle("已移除的辭典")
+    }
+}
+
 struct SettingsView: View {
     @Bindable var store: StudyStore
     @Environment(\.dismiss) private var dismiss
@@ -15,6 +41,11 @@ struct SettingsView: View {
     @State private var exportScope = "all"
     @State private var pairingCode = ""
     @State private var expandedGroup: SettingsGroup?
+    @State private var renamingDictionary=false
+    @State private var renameTitle=""
+    @State private var removingDictionary=false
+    @State private var dictionaryActionID=""
+    @State private var dictionaryActionTitle=""
 
     private enum SettingsGroup { case learning, sync, dictionaries, backup }
 
@@ -36,7 +67,7 @@ struct SettingsView: View {
                     DisclosureGroup(isExpanded: expansion(for: .sync)) {
                         SyncSettingsContent(sync: store.syncController, pairingCode: $pairingCode)
                     } label: {
-                        SettingsGroupLabel("進度同步", symbol: "arrow.triangle.2.circlepath.icloud", summary: syncSummary)
+                        SettingsGroupLabel("資料同步", symbol: "arrow.triangle.2.circlepath.icloud", summary: syncSummary)
                     }
                     .disclosureGroupStyle(SettingsDisclosureStyle(identifier: "settings.group.sync"))
                 }
@@ -80,6 +111,21 @@ struct SettingsView: View {
             case .failure(let error): showStatus("匯出失敗：\(error.localizedDescription)", error: true)
             }
         }
+        .alert("重新命名辭典",isPresented:$renamingDictionary) {
+            TextField("辭典名稱",text:$renameTitle)
+            Button("取消",role:.cancel) {}
+            Button("儲存") {
+                do { try store.renameDictionary(dictionaryActionID,title:renameTitle);showStatus("辭典名稱已儲存，配對後會同步。") }
+                catch { showStatus(error.localizedDescription,error:true) }
+            }
+        }
+        .confirmationDialog("移除「\(dictionaryActionTitle)」？",isPresented:$removingDictionary,titleVisibility:.visible) {
+            Button("移除辭典",role:.destructive) {
+                do { try store.archiveDictionary(dictionaryActionID,archived:true);showStatus("辭典已移除，可隨時還原；學習紀錄已保留。") }
+                catch { showStatus(error.localizedDescription,error:true) }
+            }
+            Button("取消",role:.cancel) {}
+        } message: { Text("移除會同步到已配對裝置。你可以在「已移除的辭典」還原，熟悉度與記憶排程會保留。") }
     }
 
     private var appVersion: String {
@@ -88,6 +134,7 @@ struct SettingsView: View {
 
     private var syncSummary: String {
         let sync = store.syncController
+        if sync.catalogBusy { return "詞庫更新中" }
         if sync.busy { return sync.connected ? "同步中" : "配對中" }
         if syncIssue != nil { return sync.connected ? "需要處理，點開查看" : "配對未完成" }
         if sync.status == "已同步" { return "已同步" }
@@ -98,7 +145,8 @@ struct SettingsView: View {
     private var syncIssue: String? {
         let sync = store.syncController
         guard !sync.busy else { return nil }
-        let ordinary = ["尚未配對", "等待同步", "已同步", "有進度等待同步", "已配對，正在同步…",
+        if sync.catalogStatus.hasPrefix("線上詞庫更新失敗") { return sync.catalogStatus }
+        let ordinary = ["尚未配對", "等待同步", "已同步", "有進度等待同步", "有資料等待同步", "已配對，正在同步…",
                         "正在配對…", "正在同步…", "已中斷同步，本機進度已保留"]
         return ordinary.contains(sync.status) ? nil : sync.status
     }
@@ -233,6 +281,25 @@ struct SettingsView: View {
                 .settingsActionTarget()
         }
         .accessibilityIdentifier("settings.deleted-words")
+        Button {
+            dictionaryActionID=store.dictionaryID;dictionaryActionTitle=store.currentDictionary.displayTitle
+            renameTitle=store.currentDictionary.title;renamingDictionary=true
+        } label: {
+            Label("重新命名目前辭典",systemImage:"pencil").settingsActionTarget()
+        }
+        .disabled(store.dictionaries.isEmpty).accessibilityIdentifier("settings.dictionary-rename")
+        Button(role:.destructive) {
+            dictionaryActionID=store.dictionaryID;dictionaryActionTitle=store.currentDictionary.displayTitle;removingDictionary=true
+        } label: {
+            Label("移除目前辭典",systemImage:"books.vertical").settingsActionTarget()
+        }
+        .disabled(store.dictionaries.isEmpty).accessibilityIdentifier("settings.dictionary-remove")
+        NavigationLink { ArchivedDictionaryList(store:store) } label: {
+            Label("已移除的辭典（\(store.archivedDictionaries.count)）",systemImage:"archivebox").settingsActionTarget()
+        }
+        .accessibilityIdentifier("settings.dictionary-archive")
+        Text("帶有既有辭典 ID 的 JSON 會更新或新增所列詞條，未列出的詞條保留。保留詞條 ID，即可沿用熟悉度與記憶排程；沒有既有 ID 的內容會匯入為新辭典。")
+            .font(.footnote).foregroundStyle(.secondary)
     }
 
     private var dictionaryTemplatePreview: String {
@@ -300,7 +367,7 @@ struct SettingsView: View {
                 showStatus("已合併 \(count) 個項目的進度。")
             } else {
                 _ = try store.importDictionary(data)
-                showStatus("已匯入「\(store.currentDictionary.displayTitle)」（\(store.currentDictionary.words.count) 個詞條），已切換至新辭典。")
+                showStatus("已儲存「\(store.currentDictionary.displayTitle)」（\(store.currentDictionary.words.count) 個詞條），配對後會同步。")
             }
         } catch { showStatus("匯入失敗：\(error.localizedDescription)", error: true) }
     }

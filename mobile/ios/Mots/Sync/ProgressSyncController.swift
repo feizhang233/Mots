@@ -1,4 +1,5 @@
 import Foundation
+import CoreFoundation
 import Observation
 import Network
 
@@ -14,6 +15,8 @@ final class ProgressSyncController {
     private(set) var busy = false
     private(set) var status = "尚未配對"
     private(set) var revealedCode: String?
+    private(set) var catalogStatus = "詞庫更新待檢查"
+    private(set) var catalogBusy = false
     @ObservationIgnored private weak var store: StudyStore?
     @ObservationIgnored private let credentials: any ProgressSyncCredentials
     @ObservationIgnored private let session: URLSession
@@ -28,14 +31,22 @@ final class ProgressSyncController {
     @ObservationIgnored private var retry: Task<Void, Never>?
     @ObservationIgnored private var retrySeconds: UInt64 = 2
     @ObservationIgnored private var monitor: NWPathMonitor?
+    @ObservationIgnored private let catalogUpdatesEnabled:Bool
+    @ObservationIgnored private var catalogTask:Task<Bool,Never>?
+    @ObservationIgnored private var lastCatalogCheck:Date?
+    @ObservationIgnored private var catalogFailed=false
+    @ObservationIgnored private var forceCatalogCheck=false
+    @ObservationIgnored private var acknowledgedContent:[ContentSyncRecord]=[]
+    @ObservationIgnored private var contentDigest:String?
 
     init(store: StudyStore, credentials: any ProgressSyncCredentials = KeychainProgressSyncCredentials(),
-         session: URLSession? = nil, baseURL: URL = URL(string: "https://mots.feizhang233.com/api/sync")!) {
+         session: URLSession? = nil, baseURL: URL = URL(string: "https://mots.feizhang233.com/api/sync")!,catalogUpdatesEnabled:Bool? = nil) {
         self.store = store; self.credentials = credentials; self.baseURL = baseURL
         let configuration = URLSessionConfiguration.ephemeral
         configuration.timeoutIntervalForRequest = 20; configuration.timeoutIntervalForResource = 30
         configuration.httpShouldSetCookies = false; configuration.urlCache = nil
         self.session = session ?? URLSession(configuration: configuration, delegate: ProgressSyncSessionDelegate(), delegateQueue: nil)
+        self.catalogUpdatesEnabled=catalogUpdatesEnabled ?? (session == nil)
         do {
             if let saved = try credentials.read() {
                 guard Self.validCode(saved) else { throw ProgressSyncError.invalidCode }
@@ -51,6 +62,7 @@ final class ProgressSyncController {
     func setActive(_ value: Bool) {
         active = value; polling?.cancel(); polling = nil
         if value {
+            Task { [weak self] in _ = await self?.refreshCatalog() }
             if monitor == nil {
                 let watcher = NWPathMonitor()
                 watcher.pathUpdateHandler = { [weak self] path in
@@ -72,7 +84,7 @@ final class ProgressSyncController {
     func localDidChange() {
         needsUpload = true
         guard connected else { return }
-        status = "有進度等待同步"
+        status = "有資料等待同步"
         debounce?.cancel()
         debounce = Task { [weak self] in
             try? await Task.sleep(nanoseconds: 400_000_000)
@@ -100,6 +112,7 @@ final class ProgressSyncController {
             _ = try store.syncSnapshot()
             _ = try store.deletionSnapshot()
             _ = try store.memorySnapshot()
+            _ = try store.contentSnapshot()
             let candidate: String
             if let existingCode { candidate = existingCode }
             else {
@@ -115,12 +128,17 @@ final class ProgressSyncController {
             guard generation == token else { return }
             let remoteMemory = try await exchangeMemory(code: candidate, records: [])
             guard generation == token else { return }
+            let remoteContent=try await exchangeContent(code:candidate,records:[],knownDigest:nil,acknowledged:[])
+            guard generation == token else { return }
             _ = try store.validatedMemorySnapshot(remoteMemory)
+            _ = try store.validatedContentSnapshot(remoteContent.records)
             try credentials.write(candidate)
             code = candidate; connected = true; revealedCode = nil
             try store.mergeSyncSnapshot(remote)
             try store.mergeDeletionSnapshot(remoteDeletions)
             try store.mergeMemorySnapshot(remoteMemory)
+            try store.mergeContentSnapshot(remoteContent.records)
+            acknowledgedContent=remoteContent.records;contentDigest=remoteContent.digest
             needsUpload = true; requested = true; status = "已配對，正在同步…"; retrySeconds = 2
         } catch { if generation == token { status = safeDescription(error) } }
     }
@@ -128,10 +146,13 @@ final class ProgressSyncController {
         do { try credentials.write(nil) }
         catch { status = error.localizedDescription; return }
         generation += 1; code = nil; connected = false; requested = false; needsUpload = true
+        acknowledgedContent=[];contentDigest=nil
         debounce?.cancel(); debounce = nil; retry?.cancel(); retry = nil
         revealedCode = nil; status = "已中斷同步，本機進度已保留"
     }
     func requestSync(force: Bool = false) {
+        if force { forceCatalogCheck=true }
+        if !connected { Task { [weak self] in _ = await self?.refreshCatalog(force:force) };return }
         guard connected, code != nil, retry == nil || force else { return }
         requested = true
         guard !busy else { return }
@@ -146,9 +167,12 @@ final class ProgressSyncController {
         while requested && connected && generation == token {
             requested = false; status = "正在同步…"
             do {
+                _ = await refreshCatalog(force:forceCatalogCheck);forceCatalogCheck=false
+                guard generation == token else { return }
                 let snapshot = try store.syncSnapshot()
                 let deletionSnapshot = try store.deletionSnapshot()
                 let memorySnapshot = try store.memorySnapshot()
+                let contentSnapshot=try store.contentSnapshot()
                 let uploading = needsUpload
                 needsUpload = false
                 let remote = try await exchange(code: code, records: uploading ? snapshot : [])
@@ -160,20 +184,26 @@ final class ProgressSyncController {
                 let remoteMemory = try await exchangeMemory(code: code, records: uploading ? memorySnapshot : [])
                 guard generation == token else { return }
                 try store.mergeMemorySnapshot(remoteMemory)
+                let remoteContent=try await exchangeContent(code:code,records:contentSnapshot,
+                    knownDigest:contentDigest,acknowledged:acknowledgedContent)
+                guard generation == token else { return }
+                try store.mergeContentSnapshot(remoteContent.records)
+                acknowledgedContent=remoteContent.records;contentDigest=remoteContent.digest
                 let currentMemory = try store.memorySnapshot()
                 let current = try store.syncSnapshot()
                 let currentDeletions = try store.deletionSnapshot()
+                let currentContent=try store.contentSnapshot()
                 // All channels merge CURRENT local records; in-flight edits are sent on the next serialized pass.
-                if current != remote || currentDeletions != remoteDeletions || currentMemory != remoteMemory {
+                if current != remote || currentDeletions != remoteDeletions || currentMemory != remoteMemory || currentContent != remoteContent.records {
                     // If the server failed to acknowledge an unchanged upload, use normal retry backoff.
-                    if uploading && current == snapshot && currentDeletions == deletionSnapshot && currentMemory == memorySnapshot {
+                    if uploading && current == snapshot && currentDeletions == deletionSnapshot && currentMemory == memorySnapshot && currentContent == contentSnapshot {
                         throw ProgressSyncError.server
                     }
                     needsUpload = true
                     requested = true
                 }
                 retrySeconds = 2
-                status = needsUpload ? "有進度等待同步" : "已同步"
+                status = needsUpload ? "有資料等待同步" : catalogFailed ? "詞庫更新待重試" : "已同步"
             } catch {
                 guard generation == token else { return }
                 needsUpload = true; requested = false; status = safeDescription(error)
@@ -205,6 +235,77 @@ final class ProgressSyncController {
         return try WordDeletionRecord.decodeEnvelope(response)
     }
     private struct MemoryEnvelope: Encodable { var version = 1; let records: [MemorySyncRecord] }
+    private struct ContentEnvelope:Encodable {
+        var version=1
+        let records:[ContentSyncRecord]
+        let knownDigest:String?
+        enum CodingKeys:String,CodingKey { case version,records,knownDigest }
+        func encode(to encoder:Encoder) throws {
+            var v=encoder.container(keyedBy:CodingKeys.self);try v.encode(version,forKey:.version);try v.encode(records,forKey:.records)
+            if let knownDigest { try v.encode(knownDigest,forKey:.knownDigest) } else { try v.encodeNil(forKey:.knownDigest) }
+        }
+    }
+    private struct ContentResponse { let records:[ContentSyncRecord];let digest:String }
+    private func exchangeContent(code:String,records:[ContentSyncRecord],knownDigest:String?,acknowledged:[ContentSyncRecord]) async throws ->ContentResponse {
+        let prior=Dictionary(uniqueKeysWithValues:acknowledged.map{($0.key,$0)})
+        let pending=records.filter{prior[$0.key] != $0}
+        let data=try await send(path:"content",code:code,body:JSONEncoder().encode(ContentEnvelope(records:pending,knownDigest:knownDigest)))
+        guard let raw=try JSONSerialization.jsonObject(with:data) as? [String:Any],Set(raw.keys)==["version","records","digest","unchanged"],
+              ProgressSyncRecord.wireInteger(raw["version"])==1,let digest=raw["digest"] as? String,
+              digest.range(of:"^[0-9a-f]{64}$",options:.regularExpression) != nil,
+              let unchanged=raw["unchanged"] as? NSNumber,CFGetTypeID(unchanged)==CFBooleanGetTypeID(),
+              let wire=raw["records"] as? [[String:Any]] else { throw ProgressSyncError.invalidResponse }
+        if unchanged.boolValue {
+            guard wire.isEmpty,knownDigest==digest else { throw ProgressSyncError.invalidResponse }
+            return ContentResponse(records:acknowledged,digest:digest)
+        }
+        let decoded=try ContentSyncRecord.decodeEnvelope(JSONSerialization.data(withJSONObject:["version":1,"records":wire]))
+        let canonical=try ContentJSON.from(JSONSerialization.jsonObject(with:JSONEncoder().encode(decoded))).canonical
+        guard ContentLibrary.sha256(Data(canonical.utf8))==digest else { throw ProgressSyncError.invalidResponse }
+        return ContentResponse(records:decoded,digest:digest)
+    }
+
+    @discardableResult func refreshCatalog(force:Bool=false) async ->Bool {
+        guard catalogUpdatesEnabled else { return true }
+        if let task=catalogTask { return await task.value }
+        if !force,let lastCatalogCheck,Date().timeIntervalSince(lastCatalogCheck)<300 { return !catalogFailed }
+        catalogBusy=true;catalogStatus="正在檢查線上詞庫…"
+        let task=Task { [weak self] () ->Bool in
+            guard let self,let store=self.store else { return false }
+            do {
+                var components=URLComponents(url:self.baseURL,resolvingAgainstBaseURL:false)!
+                components.path="/database/content-version.json";components.query=nil;components.fragment=nil
+                let manifestData=try await self.publicData(components.url!,limit:1024*1024)
+                guard let manifest=try JSONSerialization.jsonObject(with:manifestData) as? [String:Any],
+                      let version=manifest["version"] as? String,let hash=manifest["catalogSHA256"] as? String,
+                      version.range(of:"^[0-9a-f]{64}$",options:.regularExpression) != nil,
+                      hash.range(of:"^[0-9a-f]{64}$",options:.regularExpression) != nil,
+                      manifest["catalogPath"] as? String == "/database/catalog.json" else { throw ProgressSyncError.invalidResponse }
+                if store.downloadedCatalog?.sha256 != hash {
+                    components.path="/database/catalog.json"
+                    let data=try await self.publicData(components.url!,limit:32*1024*1024)
+                    try store.applyDownloadedCatalog(data,version:version,sha256:hash)
+                }
+                self.catalogFailed=false;self.lastCatalogCheck=Date();self.catalogStatus="詞庫已更新"
+                return true
+            } catch {
+                self.catalogFailed=true;self.lastCatalogCheck=nil
+                self.catalogStatus="線上詞庫更新失敗，離線內容與學習紀錄已保留。"
+                return false
+            }
+        }
+        catalogTask=task
+        let success=await task.value
+        catalogTask=nil;catalogBusy=false
+        return success
+    }
+    private func publicData(_ url:URL,limit:Int) async throws ->Data {
+        guard url.scheme=="https",url.host==baseURL.host,url.port==baseURL.port else { throw ProgressSyncError.invalidResponse }
+        var request=URLRequest(url:url,cachePolicy:.reloadIgnoringLocalCacheData);request.httpMethod="GET"
+        let (data,response)=try await session.data(for:request)
+        guard let response=response as? HTTPURLResponse,response.statusCode==200,data.count<=limit else { throw ProgressSyncError.server }
+        return data
+    }
     private func exchangeMemory(code: String, records: [MemorySyncRecord]) async throws -> [MemorySyncRecord] {
         let response = try await send(path: "memory", code: code, body: JSONEncoder().encode(MemoryEnvelope(records: records)))
         let incoming = try MemorySyncRecord.decodeEnvelope(response)

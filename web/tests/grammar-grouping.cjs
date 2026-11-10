@@ -61,7 +61,7 @@ const change = (app, id, value) => {
 const fireStorage = (app, key, value) => {
   const newValue = JSON.stringify(value);
   app.store.set(key, newValue);
-  for (const handler of app.listeners.storage || []) handler({ key, newValue });
+  return Promise.all((app.listeners.storage || []).map((handler) => handler({ key, newValue })));
 };
 const assertFirstLevelNavigation = (app) => {
   for (const id of ['category-nav', 'mobile-category-nav']) {
@@ -307,7 +307,7 @@ async function run() {
   });
   assert.equal(importing.run('dictionaryOf(state.dictionary).grammarMode'), 'standard');
   assert.equal(groups(importing), 0, 'Explicit metadata controls the newly imported book');
-  fireStorage(importing, 'mots.dictionaries.v1', [dictionary, standard]);
+  await fireStorage(importing, 'mots.dictionaries.v1', [dictionary, standard]);
   change(importing, 'book-switcher', standard.id);
   assert.equal(importing.run('dictionaryOf(state.dictionary).grammarMode'), 'standard');
   assert.equal(groups(importing), 0);

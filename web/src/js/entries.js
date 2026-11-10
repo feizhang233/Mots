@@ -56,7 +56,24 @@
       ).slice(0, 110);
       if (seen.has(id)) throw new Error(`第 ${index + 1} 詞與其他詞條的 ID 重複。`);
       seen.add(id);
-      return { id, category, subcategory, term, meanings, ...details };
+      const reading =
+        entry.reading === undefined ? '' : window.MotsDictionaries.normalizeReading(entry.reading);
+      if (
+        entry.part !== undefined &&
+        entry.part !== null &&
+        (typeof entry.part !== 'string' || entry.part.length > 100)
+      )
+        throw new Error('詞性須為 100 字以內的文字。');
+      return {
+        id,
+        category,
+        subcategory,
+        term,
+        meanings,
+        ...details,
+        ...(reading ? { reading } : {}),
+        ...(typeof entry.part === 'string' ? { part: entry.part } : {}),
+      };
     });
   }
 

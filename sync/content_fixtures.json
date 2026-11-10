@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "dictionaryID": "dict-fixture",
+      "kind": "dictionary",
+      "wordID": "*",
+      "clock": 1,
+      "deviceID": "11111111111111111111111111111111",
+      "deleted": false,
+      "payload": {
+        "id": "dict-fixture",
+        "title": "日本語 / 詞庫",
+        "language": "ja",
+        "categories": [
+          {
+            "id": "1",
+            "name": "優先掌握",
+            "subcategories": [
+              {
+                "id": "1.01",
+                "name": "名詞"
+              }
+            ]
+          }
+        ],
+        "description": "繁體中文、Français、Deutsch / 😀",
+        "archived": false
+      }
+    },
+    {
+      "dictionaryID": "dict-fixture",
+      "kind": "word",
+      "wordID": "é",
+      "clock": 1,
+      "deviceID": "11111111111111111111111111111111",
+      "deleted": false,
+      "payload": {
+        "id": "é",
+        "term": "é é / 空😀",
+        "meaning": "空的 / \"quoted\" \\ path\n下一行  𐀀 😀",
+        "language": "ja",
+        "category": "1",
+        "subcategory": "1.01",
+        "reading": "から",
+        "order": 0,
+        "examples": [
+          {
+            "text": "空 です。",
+            "translations": {
+              "zh-Hant": "是空的。 / 😀"
+            },
+            "furigana": [
+              {
+                "text": "空",
+                "reading": "から"
+              },
+              {
+                "text": " ",
+                "reading": ""
+              },
+              {
+                "text": "です。",
+                "reading": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "dictionaryID": "dict-fixture",
+      "kind": "word",
+      "wordID": "é",
+      "clock": 1,
+      "deviceID": "11111111111111111111111111111111",
+      "deleted": false,
+      "payload": {
+        "id": "é",
+        "term": "é é / 空😀",
+        "meaning": "空的 / \"quoted\" \\ path\n下一行  𐀀 😀",
+        "language": "ja",
+        "category": "1",
+        "subcategory": "1.01",
+        "reading": "から",
+        "order": 1,
+        "examples": [
+          {
+            "text": "空 です。",
+            "translations": {
+              "zh-Hant": "是空的。 / 😀"
+            },
+            "furigana": [
+              {
+                "text": "空",
+                "reading": "から"
+              },
+              {
+                "text": " ",
+                "reading": ""
+              },
+              {
+                "text": "です。",
+                "reading": ""
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "canonicalRecordsJSON": "[{\"clock\":1,\"deleted\":false,\"deviceID\":\"11111111111111111111111111111111\",\"dictionaryID\":\"dict-fixture\",\"kind\":\"dictionary\",\"payload\":{\"archived\":false,\"categories\":[{\"id\":\"1\",\"name\":\"優先掌握\",\"subcategories\":[{\"id\":\"1.01\",\"name\":\"名詞\"}]}],\"description\":\"繁體中文、Français、Deutsch / 😀\",\"id\":\"dict-fixture\",\"language\":\"ja\",\"title\":\"日本語 / 詞庫\"},\"wordID\":\"*\"},{\"clock\":1,\"deleted\":false,\"deviceID\":\"11111111111111111111111111111111\",\"dictionaryID\":\"dict-fixture\",\"kind\":\"word\",\"payload\":{\"category\":\"1\",\"examples\":[{\"furigana\":[{\"reading\":\"から\",\"text\":\"空\"},{\"reading\":\"\",\"text\":\" \"},{\"reading\":\"\",\"text\":\"です。\"}],\"text\":\"空 です。\",\"translations\":{\"zh-Hant\":\"是空的。 / 😀\"}}],\"id\":\"é\",\"language\":\"ja\",\"meaning\":\"空的 / \\\"quoted\\\" \\\\ path\\n下一行  𐀀 😀\",\"order\":0,\"reading\":\"から\",\"subcategory\":\"1.01\",\"term\":\"é é / 空😀\"},\"wordID\":\"é\"},{\"clock\":1,\"deleted\":false,\"deviceID\":\"11111111111111111111111111111111\",\"dictionaryID\":\"dict-fixture\",\"kind\":\"word\",\"payload\":{\"category\":\"1\",\"examples\":[{\"furigana\":[{\"reading\":\"から\",\"text\":\"空\"},{\"reading\":\"\",\"text\":\" \"},{\"reading\":\"\",\"text\":\"です。\"}],\"text\":\"空 です。\",\"translations\":{\"zh-Hant\":\"是空的。 / 😀\"}}],\"id\":\"é\",\"language\":\"ja\",\"meaning\":\"空的 / \\\"quoted\\\" \\\\ path\\n下一行  𐀀 😀\",\"order\":1,\"reading\":\"から\",\"subcategory\":\"1.01\",\"term\":\"é é / 空😀\"},\"wordID\":\"é\"}]",
+  "digest": "1e4351d6c9b5327d89a971759bd549ac3e6ac329c12f526ca3da32f70b4033d5",
+  "emptyDigest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "ties": [
+    {
+      "less": {
+        "dictionaryID": "dict-test",
+        "kind": "word",
+        "wordID": "word-1",
+        "clock": 1,
+        "deviceID": "11111111111111111111111111111111",
+        "deleted": false,
+        "payload": {
+          "id": "word-1",
+          "term": "空",
+          "meaning": "",
+          "language": "ja",
+          "category": "1",
+          "subcategory": "1.01",
+          "reading": "から"
+        }
+      },
+      "greater": {
+        "dictionaryID": "dict-test",
+        "kind": "word",
+        "wordID": "word-1",
+        "clock": 1,
+        "deviceID": "11111111111111111111111111111111",
+        "deleted": false,
+        "payload": {
+          "id": "word-1",
+          "term": "空",
+          "meaning": "𐀀",
+          "language": "ja",
+          "category": "1",
+          "subcategory": "1.01",
+          "reading": "から"
+        }
+      }
+    }
+  ]
+}

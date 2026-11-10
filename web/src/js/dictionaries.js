@@ -76,9 +76,25 @@
         }
       }
       const previous = examples.get(sentence);
+      const furigana = source.furigana;
+      if (
+        furigana !== undefined &&
+        (!Array.isArray(furigana) ||
+          furigana.length > LIMITS.example ||
+          furigana.some(
+            (segment) =>
+              !object(segment) ||
+              typeof segment.text !== 'string' ||
+              typeof segment.reading !== 'string' ||
+              !/^[ぁ-ゖァ-ヶー]*$/u.test(segment.reading),
+          ) ||
+          furigana.map((segment) => segment.text).join('') !== sentence)
+      )
+        throw new Error(`${name}的振假名與句子不一致。`);
       examples.set(sentence, {
         text: sentence,
         translations: { ...translations, ...previous?.translations },
+        ...(furigana ? { furigana: furigana.map(({ text, reading }) => ({ text, reading })) } : {}),
       });
     });
     if (examples.size > LIMITS.examples)
@@ -88,7 +104,10 @@
       example: legacy || result[0]?.text || '',
       examples: result,
       pattern: text(entry.pattern, `${prefix}的接續方式`, LIMITS.pattern, false),
-      explanation: label(text(entry.explanation, `${prefix}的解釋`, LIMITS.explanation, false), language),
+      explanation: label(
+        text(entry.explanation, `${prefix}的解釋`, LIMITS.explanation, false),
+        language,
+      ),
     };
   }
 
@@ -99,6 +118,11 @@
   function createID() {
     if (window.crypto?.randomUUID) return `dict-${window.crypto.randomUUID()}`;
     return `dict-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 14)}-${Math.random().toString(36).slice(2, 10)}`;
+  }
+  function normalizeReading(value) {
+    const reading = text(value, '讀音', 180, false);
+    if (!/^[ぁ-ゖァ-ヶー～〜・/]*$/u.test(reading)) throw new Error('日語讀音須使用假名。');
+    return reading;
   }
 
   function sourceCategories() {
@@ -132,6 +156,7 @@
         language: 'ja',
         categories: window.MOTS_JAPANESE_CATEGORIES,
       },
+      ...(window.MOTS_VOCABULARY_BOOKS || []),
     ];
   }
 
@@ -331,7 +356,19 @@
         });
       if (used.size > LIMITS.categories || childOwners.size > LIMITS.subcategories)
         throw new Error('分類最多 100 個一級、300 個二級單元。');
-      return { id, category, subcategory, term, meanings, ...details };
+      const reading = own(entry, 'reading') ? normalizeReading(entry.reading) : '';
+      const part =
+        own(entry, 'part') && entry.part !== null ? text(entry.part, '詞性', 100, false) : null;
+      return {
+        id,
+        category,
+        subcategory,
+        term,
+        meanings,
+        ...details,
+        ...(reading ? { reading } : {}),
+        ...(part ? { part } : {}),
+      };
     });
     return {
       id: requestedID,
@@ -363,6 +400,7 @@
     validateImport,
     validateLibrary,
     normalizeDetails,
+    normalizeReading,
     isDictionaryID,
     createID,
     limits: LIMITS,

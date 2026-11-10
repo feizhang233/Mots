@@ -2,6 +2,7 @@
 
 from contextlib import contextmanager
 import hashlib
+import json
 import os
 from pathlib import Path
 import secrets
@@ -13,15 +14,21 @@ from .protocol import (
     CODE, MAX_GROUPS, MAX_RECORDS, SyncError, deletion_rank, rank,
     validated_deletions, validated_records, validated_memory, memory_rank,
 )
+from .content_protocol import (
+    MAX_CONTENT_BYTES, canonical_json, content_rank, encoded_bytes, validated_content,
+)
 
 
 class SyncStore:
     def __init__(self, database, *, max_records=MAX_RECORDS, max_groups=MAX_GROUPS,
-                 max_deletions=MAX_RECORDS):
+                 max_deletions=MAX_RECORDS, max_content_records=MAX_RECORDS,
+                 max_content_bytes=MAX_CONTENT_BYTES):
         self.path = Path(database).absolute()
         self.max_records = max_records
         self.max_groups = max_groups
         self.max_deletions = max_deletions
+        self.max_content_records = max_content_records
+        self.max_content_bytes = max_content_bytes
         self.path.parent.mkdir(mode=0o700, parents=True, exist_ok=True)
         # Never chmod an arbitrary shared parent (for example /tmp) behind the caller's back.
         parent = self.path.parent.stat()
@@ -63,6 +70,17 @@ class SyncStore:
                     dictionary_id TEXT NOT NULL, word_id TEXT NOT NULL,
                     stage INTEGER NOT NULL, due_at INTEGER NOT NULL, updated_at INTEGER NOT NULL,
                     PRIMARY KEY (group_hash, dictionary_id, word_id)
+                );
+                CREATE TABLE IF NOT EXISTS content (
+                    group_hash TEXT NOT NULL REFERENCES groups(code_hash),
+                    dictionary_id TEXT NOT NULL,
+                    kind TEXT NOT NULL CHECK(kind IN ('dictionary','word')),
+                    word_id TEXT NOT NULL,
+                    clock INTEGER NOT NULL CHECK(clock BETWEEN 0 AND 9007199254740991),
+                    device_id TEXT NOT NULL,
+                    deleted INTEGER NOT NULL CHECK(deleted IN (0,1)),
+                    payload TEXT NOT NULL,
+                    PRIMARY KEY (group_hash, dictionary_id, kind, word_id)
                 );
                 PRAGMA user_version = 1;
             """)
@@ -127,6 +145,45 @@ class SyncStore:
             columns={"stage": "stage", "dueAt": "due_at", "updatedAt": "updated_at"},
             ordering=memory_rank, maximum=self.max_records, capacity_error="Group memory limit reached",
         )
+
+    def exchange_content(self, digest, envelope):
+        incoming = validated_content(envelope, self.max_content_records)
+        with self.connect() as connection:
+            connection.execute("BEGIN IMMEDIATE" if incoming else "BEGIN")
+            self._require_group(connection, digest)
+            rows = connection.execute(
+                "SELECT dictionary_id, kind, word_id, clock, device_id, deleted, payload "
+                "FROM content WHERE group_hash = ?", (digest,))
+            canonical = {}
+            for dictionary, kind, word, clock, device, deleted, payload in rows:
+                canonical[dictionary, kind, word] = {
+                    "dictionaryID": dictionary, "kind": kind, "wordID": word,
+                    "clock": clock, "deviceID": device, "deleted": bool(deleted),
+                    "payload": json.loads(payload),
+                }
+            updates = []
+            for key, record in incoming.items():
+                if key not in canonical or content_rank(record) > content_rank(canonical[key]):
+                    canonical[key] = record
+                    updates.append((digest, *key, record["clock"], record["deviceID"],
+                                    int(record["deleted"]), canonical_json(record["payload"])))
+            if len(canonical) > self.max_content_records:
+                raise SyncError(413, "Group content record limit reached")
+            snapshot = {"version": 1, "records": [canonical[key] for key in sorted(canonical)]}
+            if encoded_bytes(snapshot) > self.max_content_bytes:
+                raise SyncError(413, "Group content size limit reached")
+            if updates:
+                connection.executemany(
+                    "INSERT INTO content (group_hash,dictionary_id,kind,word_id,clock,device_id,deleted,payload) "
+                    "VALUES (?,?,?,?,?,?,?,?) ON CONFLICT(group_hash,dictionary_id,kind,word_id) "
+                    "DO UPDATE SET clock=excluded.clock, device_id=excluded.device_id, "
+                    "deleted=excluded.deleted,payload=excluded.payload", updates)
+        if "knownDigest" in envelope:
+            digest_value = hashlib.sha256(canonical_json(snapshot["records"]).encode("utf-8")).hexdigest()
+            unchanged = envelope["knownDigest"] == digest_value
+            return {"version": 1, "records": [] if unchanged else snapshot["records"],
+                    "digest": digest_value, "unchanged": unchanged}
+        return snapshot
 
     def _exchange(self, digest, incoming, *, table, columns, ordering, maximum, capacity_error):
         # Table/column names come only from the fixed channel definitions above.

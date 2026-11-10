@@ -15,7 +15,10 @@
     const onApply = options.onApply || (() => true);
     const onStatus = options.onStatus || (() => {});
     const memory = options.memory;
-    const memorySnapshot = () => memory ? window.MotsMemory.snapshot(memory.get()) : [];
+    const content = options.content;
+    let contentAck = [],
+      contentDigest = null;
+    const memorySnapshot = () => (memory ? window.MotsMemory.snapshot(memory.get()) : []);
     const legacy = options.getLegacy || (() => ({}));
     const deletions = options.deletions || window.MotsDeletions.create({ storage, crypto });
     const fetcher = options.fetch || window.fetch?.bind(window);
@@ -39,7 +42,7 @@
           throw new Error(
             response.status === 401
               ? 'unauthorized'
-              : response.status === 404 && ['deletions', 'memory'].includes(path)
+              : response.status === 404 && ['deletions', 'memory', 'content'].includes(path)
                 ? 'unsupported-deletions'
                 : response.status === 413
                   ? 'too-large'
@@ -68,7 +71,8 @@
         connected: !!code,
         busy: pairing || !!flight || phase === 'syncing',
         available,
-        persistenceError: persistenceError || deletions.failed(),
+        persistenceError: persistenceError || deletions.failed() || !!content?.failed(),
+        contentPending: content?.unresolved?.() || 0,
       };
     }
     function report(value) {
@@ -81,8 +85,12 @@
     function readMetadata(raw = storage.getItem(META_KEY)) {
       if (raw === null) return null;
       const value = JSON.parse(raw);
-      if (!object(value) || typeof value.deviceID !== 'string' ||
-          !/^[0-9a-f]{32}$/.test(value.deviceID) || !integer(value.counter, MAX))
+      if (
+        !object(value) ||
+        typeof value.deviceID !== 'string' ||
+        !/^[0-9a-f]{32}$/.test(value.deviceID) ||
+        !integer(value.counter, MAX)
+      )
         throw new Error('invalid-metadata');
       if (value.version !== 1) throw new Error('invalid-metadata');
       return { ...value, records: validateRecords(value.records) };
@@ -114,16 +122,62 @@
       if (persistenceError) report('error');
       return !persistenceError;
     }
-    function applyRemote(combined, incomingDeletions, incomingMemory) {
+    async function applyRemote(
+      combined,
+      incomingDeletions,
+      incomingMemory,
+      incomingContent,
+      session,
+    ) {
+      if (content && incomingContent !== undefined)
+        await content.receive(incomingContent, () => currentSession(session));
+      if (session !== undefined && !currentSession(session)) return false;
       records = combined;
       counter = Math.max(counter, maxClock(records));
       if (!save('remote')) return false;
-      if (deletions.receive(incomingDeletions) && (!memory || memory.apply(incomingMemory) !== false))
+      if (
+        deletions.receive(incomingDeletions) &&
+        (!memory || memory.apply(incomingMemory) !== false)
+      )
         return true;
       persistenceError = true;
       report('error');
       return false;
     }
+    async function contentResponse(response, ack, digest) {
+      if (
+        !exactKeys(response, ['version', 'records', 'digest', 'unchanged']) ||
+        response.version !== 1 ||
+        typeof response.unchanged !== 'boolean' ||
+        typeof response.digest !== 'string' ||
+        !/^[0-9a-f]{64}$/.test(response.digest)
+      )
+        throw new Error('invalid-content');
+      const incoming = window.MotsContent.validateRecords(response.records);
+      if (response.unchanged && (incoming.length || !digest || response.digest !== digest))
+        throw new Error('invalid-content');
+      const records = response.unchanged ? ack : window.MotsContent.merge(incoming);
+      if (!response.unchanged) {
+        if (!crypto.subtle) throw new Error('invalid-content');
+        const hash = await crypto.subtle.digest(
+          'SHA-256',
+          new TextEncoder().encode(window.MotsContent.canonical(records)),
+        );
+        if (
+          [...new Uint8Array(hash)].map((b) => b.toString(16).padStart(2, '0')).join('') !==
+          response.digest
+        )
+          throw new Error('invalid-content');
+      }
+      return { records, digest: response.digest };
+    }
+    const pendingContent = (snapshot, ack) => {
+      const keys = new Map(ack.map((r) => [JSON.stringify([r.dictionaryID, r.kind, r.wordID]), r]));
+      return snapshot.filter((r) => {
+        const old = keys.get(JSON.stringify([r.dictionaryID, r.kind, r.wordID]));
+        return !old || window.MotsContent.compare(r, old) !== 0;
+      });
+    };
     function seed() {
       fresh();
       const known = new Set(records.map(key));
@@ -159,6 +213,7 @@
                     'invalid-records',
                     'invalid-snapshot',
                     'invalid-deletions',
+                    'invalid-content',
                   ].includes(error?.message)
                 ? 'invalid'
                 : 'offline',
@@ -183,7 +238,7 @@
       networkTail = task;
       return task;
     }
-    async function syncNow() {
+    async function syncNow(forceCatalog = false) {
       try {
         reconcileConnection();
       } catch {
@@ -202,6 +257,7 @@
       rerun = false;
       flight = (async () => {
         try {
+          if (content) await content.ready();
           if (!save('refresh')) return false;
           deletions.snapshot(); // Local revision channels are durable before any upload.
           report('syncing');
@@ -215,14 +271,51 @@
             await request('deletions', token, { version: 1, records: deletions.snapshot() }),
           );
           if (!currentSession(session)) return false;
-          const incomingMemory = memory ? window.MotsMemory.decodeSnapshot(
-            await request('memory', token, { version: 1, records: memorySnapshot() }),
-          ) : null;
+          const incomingMemory = memory
+            ? window.MotsMemory.decodeSnapshot(
+                await request('memory', token, { version: 1, records: memorySnapshot() }),
+              )
+            : null;
           if (!currentSession(session)) return false;
+          let incomingContent;
+          if (content) {
+            await content.refreshCatalog(forceCatalog);
+            if (!currentSession(session)) return false;
+            const outgoing = await content.snapshot();
+            incomingContent = await contentResponse(
+              await request('content', token, {
+                version: 1,
+                records: pendingContent(outgoing, contentAck),
+                knownDigest: contentDigest,
+              }),
+              contentAck,
+              contentDigest,
+            );
+            if (!currentSession(session)) return false;
+            await content.validateReceive(incomingContent.records);
+            if (!currentSession(session)) return false;
+          }
           deletions.validateReceive(incomingDeletions);
           fresh();
-          if (!applyRemote(merge(records, incoming), incomingDeletions, incomingMemory)) return false;
-          if (memory) rerun ||= JSON.stringify(window.MotsMemory.snapshot(incomingMemory)) !== JSON.stringify(memorySnapshot());
+          if (
+            !(await applyRemote(
+              merge(records, incoming),
+              incomingDeletions,
+              incomingMemory,
+              incomingContent?.records,
+              session,
+            ))
+          )
+            return false;
+          if (incomingContent) {
+            contentAck = incomingContent.records;
+            contentDigest = incomingContent.digest;
+            rerun ||= pendingContent(await content.snapshot(), contentAck).length > 0;
+          }
+          if (memory)
+            rerun ||=
+              JSON.stringify(window.MotsMemory.snapshot(incomingMemory)) !==
+              JSON.stringify(memorySnapshot());
           // A local edit during the request may be newer than its response.
           const canonical = JSON.stringify(merge(incoming));
           rerun ||= canonical !== JSON.stringify(records);
@@ -296,6 +389,8 @@
       flight = null;
       pairing = false;
       rerun = false;
+      contentAck = [];
+      contentDigest = null;
     }
     function connectionFromDisk() {
       const value = JSON.parse(storage.getItem(CONNECTION_KEY) || 'null');
@@ -335,6 +430,10 @@
       const session = generation;
       try {
         seed();
+        if (content) {
+          await content.ready();
+          await content.snapshot();
+        }
         if (!save('refresh')) return false;
         deletions.snapshot();
         const incoming = validateSnapshot(
@@ -345,10 +444,25 @@
           await request('deletions', candidate, { version: 1, records: [] }),
         );
         if (!currentSession(session)) return false;
-        const incomingMemory = memory ? window.MotsMemory.decodeSnapshot(
-          await request('memory', candidate, { version: 1, records: [] }),
-        ) : null;
+        const incomingMemory = memory
+          ? window.MotsMemory.decodeSnapshot(
+              await request('memory', candidate, { version: 1, records: [] }),
+            )
+          : null;
         if (!currentSession(session)) return false;
+        let incomingContent;
+        if (content) {
+          await content.refreshCatalog(true);
+          if (!currentSession(session)) return false;
+          incomingContent = await contentResponse(
+            await request('content', candidate, { version: 1, records: [], knownDigest: null }),
+            [],
+            null,
+          );
+          if (!currentSession(session)) return false;
+          await content.validateReceive(incomingContent.records);
+          if (!currentSession(session)) return false;
+        }
         seed();
         // Preflight the local unions before committing new credentials or either channel.
         if (memory) window.MotsMemory.merge(memory.get(), incomingMemory);
@@ -357,7 +471,20 @@
         // A validated pairing is committed only after credentials persist.
         storage.setItem(CONNECTION_KEY, JSON.stringify({ code: candidate }));
         code = candidate;
-        if (!applyRemote(combined, incomingDeletions, incomingMemory)) return false;
+        if (
+          !(await applyRemote(
+            combined,
+            incomingDeletions,
+            incomingMemory,
+            incomingContent?.records,
+            session,
+          ))
+        )
+          return false;
+        if (incomingContent) {
+          contentAck = incomingContent.records;
+          contentDigest = incomingContent.digest;
+        }
         report('pending');
         return true;
       } catch (error) {
@@ -473,7 +600,7 @@
     }
     return {
       state,
-      syncNow,
+      syncNow: () => syncNow(true),
       join,
       createPairing,
       disconnect,
@@ -486,14 +613,39 @@
       editDeletions,
       edit: (dictionaryID, wordID, level) => editMany([{ dictionaryID, wordID, level }]),
       getCode: () => code || '',
+      portableProgress: () => {
+        fresh();
+        const result = Object.fromEntries(
+          Object.entries(legacy()).map(([id, values]) => [id, { ...values }]),
+        );
+        for (const r of records) {
+          result[r.dictionaryID] ??= {};
+          result[r.dictionaryID][r.wordID] = r.level;
+        }
+        return result;
+      },
       memoryChanged: () => {
         rerun = true;
         report(code ? 'pending' : available ? 'disconnected' : 'unavailable');
         schedule();
       },
+      contentChanged: () => {
+        rerun = true;
+        report(
+          content?.failed()
+            ? 'error'
+            : code
+              ? 'pending'
+              : available
+                ? 'disconnected'
+                : 'unavailable',
+        );
+        schedule();
+      },
       wake: () => schedule(0),
       stop: () => {
         stopped = true;
+        content?.stop();
         invalidate();
       },
     };

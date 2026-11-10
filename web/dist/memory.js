@@ -83,6 +83,11 @@
     return !current || (current.stage !== masteryStage && current.dueAt <= now);
   }
 
+  // A manual reset also sets stage zero, but does not schedule a waiting interval.
+  function hasPendingLapse(record) {
+    return record?.stage === 0 && record.dueAt > record.updatedAt;
+  }
+
   function review(previous, remembered, now = Date.now()) {
     if (typeof remembered !== 'boolean' || !timestamp(now))
       throw new Error('卡片記憶的回答或時間不正確。');
@@ -91,8 +96,7 @@
     const current = normalized && normalized.stage !== masteryStage ? normalized : null;
     if (current && !due(current, now))
       return { record: copyRecord(current), mastered: false, unfamiliar: false, accepted: false };
-    // Stage zero with no delay is a manual reset, not a forgotten answer.
-    const unfamiliar = !remembered && current?.stage === 0 && current.dueAt > current.updatedAt;
+    const unfamiliar = !remembered && hasPendingLapse(current);
     const stage = remembered ? (current?.stage || 0) + 1 : 0;
     const mastered = stage === masteryStage;
     const delay = mastered ? 0 : remembered ? intervals[stage - 1] : intervals[0];
@@ -267,6 +271,7 @@
     masteryStage,
     sanitize,
     due,
+    hasPendingLapse,
     review,
     candidates,
     summary,

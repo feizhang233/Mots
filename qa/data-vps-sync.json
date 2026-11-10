@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-11-03T08:51:14.582668+00:00",
-  "previousRelease": "/home/fei/Work/Mots/releases/20261102-143820-596010b2",
-  "contentVersion": "a3c5cb85b75d7d1b45e94492f3b716658d684ac57afbf7ce20ed00c272a5dbf6",
+  "checkedAt": "2026-11-10T19:15:46.387336+00:00",
+  "previousRelease": "/home/fei/Work/Mots/releases/20261104-235451-9d0b48b2",
+  "contentVersion": "7599177f6b69e5d7b105b3873f14f1ca598e13ec5a9f61e5db6483692842d3b4",
   "database": {
     "unitCount": 16,
     "entryCount": 3846,
@@ -25,6 +25,12 @@
       "kind": "vocabulary",
       "language": "ja",
       "entryCount": 414
+    },
+    {
+      "id": "vocab-ja-n2-hongbao",
+      "kind": "vocabulary",
+      "language": "ja",
+      "entryCount": 3136
     },
     {
       "id": "grammar-fr",
@@ -70,8 +76,8 @@
     }
   ],
   "server": {
-    "release": "/home/fei/Work/Mots/releases/20261103-084827-3f00edc9",
-    "files": 17005,
+    "release": "/home/fei/Work/Mots/releases/20261110-191313-f1edbb54",
+    "files": 17014,
     "sha256_match": true,
     "services": {
       "mots-web": "active",
@@ -82,7 +88,7 @@
   "public": {
     "url": "https://mots.feizhang233.com/",
     "public_ipv4_override": "172.67.191.68",
-    "checked": 91,
+    "checked": 99,
     "sha256_match": true,
     "audio_range_status": 206,
     "content_range": "bytes 0-31/8563",
@@ -90,9 +96,10 @@
       "version": 1,
       "status": "ok"
     },
+    "content_auth_status": 401,
     "checks": [
       {
-        "path": "app.js?v=e67ef52e6ce8aae4",
+        "path": "app.js?v=1bc3f8a321cbbd71",
         "status": 200
       },
       {
@@ -100,11 +107,19 @@
         "status": 200
       },
       {
-        "path": "audio.js?v=9334e358d6bb7dfc",
+        "path": "audio.js?v=fc7f5f3004415776",
         "status": 200
       },
       {
-        "path": "core.js?v=7c72fb0139b35234",
+        "path": "column-widths.js?v=e5ecdf6b5716167b",
+        "status": 200
+      },
+      {
+        "path": "content-state.js?v=68209ee8787a3ddc",
+        "status": 200
+      },
+      {
+        "path": "core.js?v=f00ca95da3bcf6c4",
         "status": 200
       },
       {
@@ -116,7 +131,7 @@
         "status": 200
       },
       {
-        "path": "dictionaries.js?v=255e4f9918b928bf",
+        "path": "dictionaries.js?v=9669f764084e5f20",
         "status": 200
       },
       {
@@ -124,7 +139,7 @@
         "status": 200
       },
       {
-        "path": "entries.js?v=bca735aa14facac4",
+        "path": "entries.js?v=639abad40cd3625c",
         "status": 200
       },
       {
@@ -133,6 +148,10 @@
       },
       {
         "path": "grammar.js?v=9f047c78b489e3b7",
+        "status": 200
+      },
+      {
+        "path": "hongbao-n2-source.html",
         "status": 200
       },
       {
@@ -148,11 +167,15 @@
         "status": 200
       },
       {
-        "path": "memory.js?v=5bfe2d66e488afed",
+        "path": "memory.js?v=b0e02dcbfb7bcf8c",
         "status": 200
       },
       {
-        "path": "progress-sync.js?v=98116ce1817652b4",
+        "path": "n2-vocabulary.js?v=60cb5762eb383602",
+        "status": 200
+      },
+      {
+        "path": "progress-sync.js?v=19cf7ada737c5a10",
         "status": 200
       },
       {
@@ -164,11 +187,11 @@
         "status": 200
       },
       {
-        "path": "settings-panel.js?v=9aff919cd4578b0b",
+        "path": "settings-panel.js?v=12ab6b2a3ca23bfb",
         "status": 200
       },
       {
-        "path": "styles.css?v=be636a98d86c8e1d",
+        "path": "styles.css?v=9d077a622bdf6422",
         "status": 200
       },
       {
@@ -180,11 +203,11 @@
         "status": 200
       },
       {
-        "path": "workspace.css?v=72d9f09c2986f046",
+        "path": "workspace.css?v=8041b361180635c2",
         "status": 200
       },
       {
-        "path": "workspace.js?v=6f6d0903b92a19b5",
+        "path": "workspace.js?v=512c8c753d4c3010",
         "status": 200
       },
       {
@@ -217,6 +240,22 @@
       },
       {
         "path": "database/japanese/grammar/books.json",
+        "status": 200
+      },
+      {
+        "path": "database/japanese/hongbao-n2/identity.json",
+        "status": 200
+      },
+      {
+        "path": "database/japanese/hongbao-n2/provenance.json",
+        "status": 200
+      },
+      {
+        "path": "database/japanese/hongbao-n2/source.md",
+        "status": 200
+      },
+      {
+        "path": "database/japanese/hongbao-n2/vocabulary.json",
         "status": 200
       },
       {
@@ -457,10 +496,80 @@
       }
     ]
   },
-  "progressBackup": {
-    "integrity": "ok",
-    "permissions": "0600",
-    "storedOutsideReleases": true
+  "browser": {
+    "passed": true,
+    "isolatedContexts": true,
+    "viewports": [
+      {
+        "width": 1440,
+        "first": "book-1.01-002",
+        "second": "book-1.01-001",
+        "pendingOutOfChapter": "2.01-2",
+        "concealed": [
+          147.6,
+          295.2,
+          295.2
+        ],
+        "revealed": [
+          147.6,
+          295.2,
+          295.2
+        ],
+        "due": [
+          147.6,
+          295.2,
+          295.2
+        ],
+        "finalAction": "remembered"
+      },
+      {
+        "width": 390,
+        "first": "book-1.01-001",
+        "second": "book-1.01-002",
+        "pendingOutOfChapter": "2.01-2",
+        "concealed": [
+          62.4,
+          124.8,
+          124.8
+        ],
+        "revealed": [
+          62.4,
+          124.8,
+          124.8
+        ],
+        "due": [
+          62.4,
+          124.8,
+          124.8
+        ],
+        "finalAction": "forgot"
+      },
+      {
+        "width": 320,
+        "first": "book-1.01-002",
+        "second": "book-1.01-001",
+        "pendingOutOfChapter": "2.01-2",
+        "concealed": [
+          48.4,
+          96.8,
+          96.8
+        ],
+        "revealed": [
+          48.4,
+          96.8,
+          96.8
+        ],
+        "due": [
+          48.4,
+          96.8,
+          96.8
+        ],
+        "finalAction": "mastered"
+      }
+    ]
   },
-  "verificationRecovery": "Local system DNS failed; completed public HTTPS verification with --resolve-ip, TLS validation retained."
+  "initialPublicValidationError": "Local DNS resolution failed. Public validation completed using independently resolved Cloudflare IPv4 with the original hostname and TLS verification.",
+  "publicVerificationCommand": "python3 deploy/verify.py --resolve-ip 172.67.191.68",
+  "passed": true,
+  "learningDataVerified": true
 }

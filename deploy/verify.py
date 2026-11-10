@@ -60,7 +60,18 @@ def verify(resolve_ip: str | None = None) -> dict:
         health = json.loads(subprocess.check_output(curl + ["--dump-header", str(sync_header_path), SITE_URL + "api/sync/health"]))
         if health != {"version": 1, "status": "ok"} or not re.search(r"^cache-control:.*no-store", sync_header_path.read_text(), re.I | re.M):
             raise RuntimeError("Public progress synchronization health or cache policy is incorrect")
-    return {"url": SITE_URL, "public_ipv4_override": resolve_ip, "checked": len(results), "sha256_match": True, "audio_range_status": 206, "content_range": content_range.group(1).strip(), "sync_health": health, "checks": results}
+        content_body_path = Path(directory) / "content-auth-body"
+        content_header_path = Path(directory) / "content-auth-headers"
+        # Verify the new private channel exists without creating a group or writing user data.
+        status = subprocess.check_output([argument for argument in curl if argument != "--fail"] + [
+            "--request", "POST", "--header", "Content-Type: application/json",
+            "--data", '{"version":1,"records":[]}', "--output", str(content_body_path),
+            "--dump-header", str(content_header_path), "--write-out", "%{http_code}",
+            SITE_URL + "api/sync/content",
+        ], text=True)
+        if status != "401" or not re.search(r"^cache-control:.*no-store", content_header_path.read_text(), re.I | re.M):
+            raise RuntimeError("Public dictionary synchronization authentication or cache policy is incorrect")
+    return {"url": SITE_URL, "public_ipv4_override": resolve_ip, "checked": len(results), "sha256_match": True, "audio_range_status": 206, "content_range": content_range.group(1).strip(), "sync_health": health, "content_auth_status": 401, "checks": results}
 
 
 def main() -> None:

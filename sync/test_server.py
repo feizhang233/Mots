@@ -73,6 +73,44 @@ class SyncTests(unittest.TestCase):
         self.assertEqual(self.request("/memory", {"version": 1, "records": []})[0], 401)
         self.assertEqual(self.store.exchange_memory(self.store.authenticate(code), {"version": 1, "records": []})["records"], [reset, b])
 
+    def test_n2_familiarity_and_memory_survive_content_update_and_restart(self):
+        root = Path(__file__).resolve().parent.parent
+        source = json.loads((root / "database/japanese/hongbao-n2/vocabulary.json").read_text())
+        identities = json.loads((root / "database/japanese/hongbao-n2/identity.json").read_text())
+        self.assertEqual(source["id"], "vocab-ja-n2-hongbao")
+        self.assertEqual(identities["entries"], [
+            {"sourceOrder": word["sourceOrder"], "id": word["id"]}
+            for word in source["words"]
+        ])
+        word = next(word for word in source["words"] if word["sourceOrder"] == 526)
+        self.assertEqual((word["term"], word["reading"]), ("空", "から"))
+        code = self.create()
+        rating = record(word=word["id"], level=2, clock=31, dictionary=source["id"])
+        schedule = {"dictionaryID": source["id"], "wordID": word["id"],
+                    "stage": 2, "dueAt": 259201000, "updatedAt": 1000}
+        self.assertEqual(self.exchange(code, [rating]), [rating])
+        status, _, result = self.request("/memory", {"version": 1, "records": [schedule]}, code)
+        self.assertEqual((status, result["records"]), (200, [schedule]))
+        # A second client reads exact dictionary/word keys, independent of content text.
+        self.assertEqual(self.exchange(code), [rating])
+        self.assertEqual(self.request("/memory", {"version": 1, "records": []}, code)[2]["records"], [schedule])
+        edited = dict(word, reading="から", meanings={"zh-Hant": "空的，沒有內容"})
+        self.assertEqual(edited["id"], word["id"])
+        reopened = sync.SyncStore(self.database)
+        digest = reopened.authenticate(code)
+        self.assertEqual(reopened.exchange(digest, {"version": 1, "records": []})["records"], [rating])
+        self.assertEqual(reopened.exchange_memory(digest, {"version": 1, "records": []})["records"], [schedule])
+        mastered = dict(rating, level=3, clock=32, deviceID=DEVICE_B)
+        finished = dict(schedule, stage=5, dueAt=0, updatedAt=2000)
+        self.assertEqual(self.exchange(code, [mastered]), [mastered])
+        self.assertEqual(self.request("/memory", {"version": 1, "records": [finished]}, code)[2]["records"], [finished])
+        # Stale offline uploads cannot overwrite newer familiarity or the mastered schedule.
+        self.assertEqual(self.exchange(code, [rating]), [mastered])
+        self.assertEqual(self.request("/memory", {"version": 1, "records": [schedule]}, code)[2]["records"], [finished])
+        other_code = self.create()
+        self.assertEqual(self.exchange(other_code), [])
+        self.assertEqual(self.request("/memory", {"version": 1, "records": []}, other_code)[2]["records"], [])
+
     def stop_server(self):
         self.server.shutdown()
         self.server.server_close()

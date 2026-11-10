@@ -380,6 +380,7 @@ struct MemoryStudyTests {
         first.openMemory(); first.selectMemoryChapters(["1"]); first.startMemoryRound(at: now)
         precondition(first.answerMemory(wordID: entry.id, remembered: false, at: now))
         precondition(first.rating(entry) == 2, "One forgotten answer leaves partial familiarity unchanged")
+        precondition(first.memoryLapseWords.map(\.id) == [entry.id], "A single miss appears immediately, before the next due date")
         precondition(!first.answerMemory(wordID: entry.id, remembered: false, at: now),
                      "A duplicate answer cannot count as a second lapse")
         first.startMemoryRound(at: now.addingTimeInterval(86_399))
@@ -387,11 +388,13 @@ struct MemoryStudyTests {
                      "An early revisit cannot count as a second lapse")
 
         let second = StudyStore(catalog: catalog, persistenceURL: path, memoryRoundOrder: { $0 })
+        precondition(second.memoryLapseWords.map(\.id) == [entry.id], "The list derives from existing saved records")
         let nextDay = now.addingTimeInterval(86_400)
         second.startMemoryRound(at: nextDay)
         precondition(second.answerMemory(wordID: entry.id, remembered: false, at: nextDay))
         precondition(second.rating(entry) == 1 && second.memoryWords.isEmpty && second.completed,
                      "Two consecutive accepted lapses across restart demote and leave card memory")
+        precondition(second.memoryLapseWords.isEmpty)
         precondition(second.memoryMasteredCount == 0 && second.memoryFeedback == "連續兩次忘記，已轉為不熟悉")
         let demotedSnapshot = try second.syncSnapshot()
         precondition(demotedSnapshot.contains { $0.wordID == entry.id && $0.level == 1 },
@@ -410,6 +413,7 @@ struct MemoryStudyTests {
         reopened.rate(entry, level: 2)
         let reset = reopened.memory["fr"]![entry.id]!
         precondition(reset.stage == 0 && reset.dueAt == reset.updatedAt)
+        precondition(reopened.memoryLapseWords.isEmpty, "Returning a word to partial recall manually does not count as a miss")
         let restartedAt = Date(timeIntervalSince1970: reset.dueAt / 1000)
         reopened.startMemoryRound(at: restartedAt)
         precondition(reopened.answerMemory(wordID: entry.id, remembered: false, at: restartedAt))
@@ -423,7 +427,15 @@ struct MemoryStudyTests {
             interrupted.startMemoryRound(at: date)
             precondition(interrupted.answerMemory(wordID: entry.id, remembered: remembered, at: date))
             precondition(interrupted.rating(entry) == 2, "A successful recall clears the consecutive-forgetting run")
+            precondition(interrupted.memoryLapseWords.map(\.id) == (remembered ? [] : [entry.id]))
         }
+        interrupted.selectMemoryChapters(["2"])
+        precondition(interrupted.memoryLapseWords.map(\.id) == [entry.id], "The book-wide list includes unselected chapters")
+        interrupted.dictionaryID = "de"
+        precondition(interrupted.memoryLapseWords.isEmpty, "Identical word IDs in different dictionaries stay separate")
+        interrupted.dictionaryID = "fr"
+        _ = interrupted.deleteWord(entry)
+        precondition(interrupted.memoryLapseWords.isEmpty, "A deleted word disappears from the list")
     }
 
     @MainActor static func testShuffledRound() throws {

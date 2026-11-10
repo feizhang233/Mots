@@ -6,6 +6,7 @@
     "Domain/MemorySchedule.swift",
     "Sync/PairingCredentials.swift",
     "Sync/ProgressSyncController.swift",
+    "Sync/ContentSync.swift",
     "Sync/ProgressSyncRecord.swift",
     "Sync/SyncRecordIdentity.swift",
     "Sync/WordDeletion.swift"
