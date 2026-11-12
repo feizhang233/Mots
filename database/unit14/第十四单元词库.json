@@ -60,7 +60,16 @@
           "form": "animal"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Notre association rappelle qu'on ne doit jamais abandonner un animal lorsque les vacances approchent.",
+          "translations": {
+            "zh-Hant": "我們協會提醒大家，假期將近，也絕不能棄養動物。",
+            "zh-Hans": "我们协会提醒大家，假期将近，也绝不能弃养动物。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-002",
@@ -86,7 +95,16 @@
           "form": "repas"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mon amie a traversé toute la ville pour m'apporter un repas après mon opération.",
+          "translations": {
+            "zh-Hant": "我手術後，朋友穿越整座城市，特地送了一餐給我。",
+            "zh-Hans": "我手术后，朋友穿越整座城市，特地送了一餐给我。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-003",
@@ -112,7 +130,16 @@
           "form": "grand-mère"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La compagnie de sa voisine aide notre grand-mère à sortir de chez elle chaque matin.",
+          "translations": {
+            "zh-Hant": "有鄰居作伴，祖母每天早上都能走出家門。",
+            "zh-Hans": "有邻居作伴，祖母每天早上都能走出家门。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-004",
@@ -138,7 +165,16 @@
           "form": "réunion"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La confiance grandira entre les collègues si chacun respecte les engagements pris pendant la réunion.",
+          "translations": {
+            "zh-Hant": "只要大家都遵守會議上作出的承諾，同事之間就會越來越信任彼此。",
+            "zh-Hans": "只要大家都遵守会议上作出的承诺，同事之间就会越来越信任彼此。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-005",
@@ -164,7 +200,16 @@
           "form": "bateau"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le départ dépend de la météo, car notre bateau ne peut pas naviguer dans une forte tempête.",
+          "translations": {
+            "zh-Hant": "能否出發要看天氣，因為我們的船無法在猛烈的暴風雨中航行。",
+            "zh-Hans": "能否出发要看天气，因为我们的船无法在猛烈的暴风雨中航行。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-006",
@@ -190,7 +235,16 @@
           "form": "enfants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mes parents élevaient quatre enfants tout en tenant une petite épicerie sur la place du village.",
+          "translations": {
+            "zh-Hant": "我父母當年一邊在村裡的廣場開雜貨店，一邊養育四個孩子。",
+            "zh-Hans": "我父母当年一边在村里的广场开杂货店，一边养育四个孩子。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-007",
@@ -216,7 +270,16 @@
           "form": "ouvriers"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La pluie empêche les ouvriers de terminer le toit avant la fin de la semaine.",
+          "translations": {
+            "zh-Hant": "這場雨讓工人無法在這週結束前把屋頂完工。",
+            "zh-Hans": "这场雨让工人无法在这周结束前把屋顶完工。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-008",
@@ -242,7 +305,16 @@
           "form": "élève"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le professeur a encouragé cette élève à présenter ses dessins dans l'exposition de l'école.",
+          "translations": {
+            "zh-Hant": "老師鼓勵這名女學生在校內展覽中展出自己的畫作。",
+            "zh-Hans": "老师鼓励这名女学生在校内展览中展出自己的画作。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-009",
@@ -268,7 +340,16 @@
           "form": "outils"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les voisins partagent leurs outils pour entretenir le jardin sans acheter chacun le même matériel.",
+          "translations": {
+            "zh-Hant": "鄰居們共用工具來打理花園，這樣就不用每戶都買一套相同的工具。",
+            "zh-Hans": "邻居们共用工具来打理花园，这样就不用每户都买一套相同的工具。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-010",
@@ -294,7 +375,16 @@
           "form": "délais"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Préservez votre relation avec les clients en expliquant clairement les délais avant de prendre une commande.",
+          "translations": {
+            "zh-Hant": "接單前先向客戶說清楚交貨時間，才能維繫彼此的關係。",
+            "zh-Hans": "接单前先向客户说清楚交货时间，才能维系彼此的关系。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-011",
@@ -320,7 +410,16 @@
           "form": "travaux"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le respect des habitants passe aussi par des travaux qui ne commencent pas trop tôt le matin.",
+          "translations": {
+            "zh-Hant": "早上施工時別太早開工，也是對居民的一種尊重。",
+            "zh-Hans": "早上施工时别太早开工，也是对居民的一种尊重。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-012",
@@ -346,7 +445,16 @@
           "form": "village"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous respecterons les coutumes du village en demandant au guide comment nous comporter pendant la cérémonie.",
+          "translations": {
+            "zh-Hant": "我們會向導遊請教參加儀式時該注意哪些禮節，以尊重村裡的習俗。",
+            "zh-Hans": "我们会向导游请教参加仪式时该注意哪些礼节，以尊重村里的习俗。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-013",
@@ -372,7 +480,16 @@
           "form": "considération"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette responsable traite les nouveaux employés avec la même considération que les collègues expérimentés.",
+          "translations": {
+            "zh-Hant": "這位主管對待新進員工和資深同事一樣體貼。",
+            "zh-Hans": "这位主管对待新进员工和资深同事一样体贴。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-014",
@@ -398,7 +515,16 @@
           "form": "père"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La famille est restée unie pendant les longs mois où leur père cherchait du travail.",
+          "translations": {
+            "zh-Hant": "父親找工作的漫長幾個月裡，這家人一直團結一心。",
+            "zh-Hans": "父亲找工作的漫长几个月里，这家人一直团结一心。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-015",
@@ -424,7 +550,16 @@
           "form": "enfants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L'abandon d'un chien inquiète les enfants qui le découvrent seul près de la gare.",
+          "translations": {
+            "zh-Hant": "孩子們在車站附近發現一隻落單的棄犬，都很擔心牠。",
+            "zh-Hans": "孩子们在车站附近发现一只落单的弃犬，都很担心牠。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-016",
@@ -450,7 +585,16 @@
           "form": "artisans"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mon grand-père éprouvait une grande admiration pour les artisans capables de réparer presque tous les objets.",
+          "translations": {
+            "zh-Hant": "祖父很欽佩那些幾乎什麼東西都會修的工匠。",
+            "zh-Hans": "祖父很钦佩那些几乎什么东西都会修的工匠。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-017",
@@ -476,7 +620,16 @@
           "form": "questions"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les visiteurs admirent les tableaux avant de rejoindre la terrasse où le peintre répond aux questions.",
+          "translations": {
+            "zh-Hant": "參觀者欣賞完畫作，再前往露臺聽畫家回答問題。",
+            "zh-Hans": "参观者欣赏完画作，再前往露台听画家回答问题。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-018",
@@ -502,7 +655,16 @@
           "form": "chambre"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Notre amitié s'est renforcée pendant le voyage où nous avons partagé une petite chambre.",
+          "translations": {
+            "zh-Hant": "旅行時我們同住一間小房間，這段日子讓我們的友誼更深了。",
+            "zh-Hans": "旅行时我们同住一间小房间，这段日子让我们的友谊更深了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-019",
@@ -528,7 +690,16 @@
           "form": "enfant"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La mère apaise son enfant en lui racontant une histoire pendant que l'orage s'éloigne.",
+          "translations": {
+            "zh-Hant": "雷雨漸漸遠去，母親一邊講故事，一邊安撫孩子。",
+            "zh-Hans": "雷雨渐渐远去，母亲一边讲故事，一边安抚孩子。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-020",
@@ -554,7 +725,16 @@
           "form": "association"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L'appui des habitants permettrait à l'association de maintenir les cours gratuits dans la bibliothèque.",
+          "translations": {
+            "zh-Hant": "如果能得到居民的支持，協會就能繼續在圖書館開設免費課程。",
+            "zh-Hans": "如果能得到居民的支持，协会就能继续在图书馆开设免费课程。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-021",
@@ -580,7 +760,16 @@
           "form": "infirmière"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L'attente devant le cabinet paraît moins longue quand une infirmière explique le retard aux patients.",
+          "translations": {
+            "zh-Hant": "護理師向病人解釋延誤的原因後，在診間門口等候的時間就顯得沒那麼長了。",
+            "zh-Hans": "护理师向病人解释延误的原因后，在诊间门口等候的时间就显得没那么长了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-022",
@@ -606,7 +795,16 @@
           "form": "eau"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Avertissez les voisins avant de couper l'eau pour réparer le robinet de la cuisine.",
+          "translations": {
+            "zh-Hant": "要關水修理廚房的水龍頭，請先通知鄰居。",
+            "zh-Hans": "要关水修理厨房的水龙头，请先通知邻居。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-023",
@@ -632,7 +830,16 @@
           "form": "jardin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette confidence rapproche les deux sœurs, qui discutent longtemps dans le jardin après le repas.",
+          "translations": {
+            "zh-Hant": "這番真心話拉近了姊妹倆的距離，飯後她們又在花園裡聊了很久。",
+            "zh-Hans": "这番真心话拉近了姐妹俩的距离，饭后她们又在花园里聊了很久。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-024",
@@ -658,7 +865,16 @@
           "form": "sport"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La médecin m'a conseillé de reprendre le sport progressivement au lieu de courir tous les jours.",
+          "translations": {
+            "zh-Hant": "醫師建議我循序漸進地恢復運動，別一開始就每天跑步。",
+            "zh-Hans": "医师建议我循序渐进地恢复运动，别一开始就每天跑步。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-025",
@@ -684,7 +900,16 @@
           "form": "ouvriers"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La considération que notre directeur porte aux ouvriers se voit dans sa façon d'écouter leurs remarques.",
+          "translations": {
+            "zh-Hant": "從主管傾聽工人意見的方式，就能看出他對他們的重視。",
+            "zh-Hans": "从主管倾听工人意见的方式，就能看出他对他们的重视。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-026",
@@ -710,7 +935,16 @@
           "form": "enfant"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Sa grand-mère consolera l'enfant en l'aidant à réparer le jouet qu'il vient de casser.",
+          "translations": {
+            "zh-Hant": "祖母會幫孩子修好他剛弄壞的玩具，藉此安慰他。",
+            "zh-Hans": "祖母会帮孩子修好他刚弄坏的玩具，借此安慰他。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-027",
@@ -736,7 +970,16 @@
           "form": "livres"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La contribution de chaque famille permet d'acheter des livres pour la bibliothèque de l'école.",
+          "translations": {
+            "zh-Hant": "有了每個家庭的捐助，學校圖書館就能添購書籍。",
+            "zh-Hans": "有了每个家庭的捐助，学校图书馆就能添购书籍。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-028",
@@ -762,7 +1005,16 @@
           "form": "rivière"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous croisions souvent le même pêcheur en suivant le chemin qui longeait la rivière.",
+          "translations": {
+            "zh-Hant": "以前我們沿著河邊的小路走時，經常和同一個漁夫擦身而過。",
+            "zh-Hans": "以前我们沿着河边的小路走时，经常和同一个渔夫擦身而过。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-029",
@@ -788,7 +1040,16 @@
           "form": "machine"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le bruit de la machine dérange les voisins lorsque l'atelier reste ouvert tard le soir.",
+          "translations": {
+            "zh-Hant": "每當工坊開到深夜，機器的噪音就會干擾鄰居。",
+            "zh-Hans": "每当工坊开到深夜，机器的噪音就会干扰邻居。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-030",
@@ -814,7 +1075,16 @@
           "form": "fils"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le père a disputé son fils qui avait lancé le ballon trop près de la route.",
+          "translations": {
+            "zh-Hant": "父親訓斥了兒子，因為他把球扔得太靠近馬路了。",
+            "zh-Hans": "父亲训斥了儿子，因为他把球扔得太靠近马路了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-031",
@@ -840,7 +1110,16 @@
           "form": "voiture"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce long trajet en voiture ennuie les enfants, alors nous faisons une pause près du lac.",
+          "translations": {
+            "zh-Hant": "這趟車程太長，孩子們覺得無聊，所以我們在湖邊休息一下。",
+            "zh-Hans": "这趟车程太长，孩子们觉得无聊，所以我们在湖边休息一下。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-032",
@@ -866,7 +1145,16 @@
           "form": "camarades"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "N'excluez aucun élève du jeu : ses camarades peuvent lui expliquer les règles avec des gestes simples.",
+          "translations": {
+            "zh-Hant": "別把任何學生排除在遊戲之外，同學可以用簡單的手勢向他解釋規則。",
+            "zh-Hans": "别把任何学生排除在游戏之外，同学可以用简单的手势向他解释规则。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-033",
@@ -892,7 +1180,16 @@
           "form": "lumière"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La lumière du phare fascine les enfants qui la regardent tourner depuis la plage.",
+          "translations": {
+            "zh-Hant": "孩子們站在沙灘上，看著燈塔的光芒轉動，看得入了迷。",
+            "zh-Hans": "孩子们站在沙滩上，看着灯塔的光芒转动，看得入了迷。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-034",
@@ -918,7 +1215,16 @@
           "form": "métier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Personne ne m'a forcé à accepter ce travail : j'ai choisi moi-même de changer de métier.",
+          "translations": {
+            "zh-Hant": "沒有人逼我接受這份工作，換行是我自己的決定。",
+            "zh-Hans": "没有人逼我接受这份工作，换行是我自己的决定。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-035",
@@ -944,7 +1250,16 @@
           "form": "cliente"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le vendeur évite de gêner sa cliente en lui laissant le temps de réfléchir à son achat.",
+          "translations": {
+            "zh-Hant": "店員讓這位顧客慢慢考慮要不要買，以免打擾她。",
+            "zh-Hans": "店员让这位顾客慢慢考虑要不要买，以免打扰她。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-036",
@@ -970,7 +1285,16 @@
           "form": "quartier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une attitude hostile découragerait les nouveaux qui souhaitent rejoindre notre association de quartier.",
+          "translations": {
+            "zh-Hant": "不友善的態度會讓想加入社區協會的新人打退堂鼓。",
+            "zh-Hans": "不友善的态度会让想加入社区协会的新人打退堂鼓。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-037",
@@ -996,7 +1320,16 @@
           "form": "élèves"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L'école incite les élèves à venir à pied en organisant des trajets accompagnés depuis plusieurs rues.",
+          "translations": {
+            "zh-Hant": "學校安排從好幾條街出發、有人陪同的步行路線，鼓勵學生走路上學。",
+            "zh-Hans": "学校安排从好几条街出发、有人陪同的步行路线，鼓励学生走路上学。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-038",
@@ -1022,7 +1355,16 @@
           "form": "atelier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La visite de l'atelier a influencé mon choix de métier bien plus que les brochures de l'université.",
+          "translations": {
+            "zh-Hant": "那次參觀工坊對我選擇職業的影響，遠比大學的招生手冊大得多。",
+            "zh-Hans": "那次参观工坊对我选择职业的影响，远比大学的招生手册大得多。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-039",
@@ -1048,7 +1390,16 @@
           "form": "contrat"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je me méfie de cette offre, car le contrat ne précise ni les horaires ni le salaire.",
+          "translations": {
+            "zh-Hant": "我對這份工作邀約存有戒心，因為合約裡既沒寫工時，也沒寫薪水。",
+            "zh-Hans": "我对这份工作邀约存有戒心，因为合约里既没写工时，也没写薪水。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-040",
@@ -1074,7 +1425,16 @@
           "form": "maisons"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une aide mutuelle facilitera l'installation des nouveaux voisins dans les maisons du quartier.",
+          "translations": {
+            "zh-Hant": "大家互相幫忙，能讓新鄰居更容易在這個社區安頓下來。",
+            "zh-Hans": "大家互相帮忙，能让新邻居更容易在这个社区安顿下来。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-041",
@@ -1100,7 +1460,16 @@
           "form": "enfants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma sœur pardonne facilement les petites erreurs de ses enfants lorsqu'ils reconnaissent ce qu'ils ont fait.",
+          "translations": {
+            "zh-Hant": "只要孩子們坦承自己做了什麼，我姊姊就很容易原諒他們的小過失。",
+            "zh-Hans": "只要孩子们坦承自己做了什么，我姐姐就很容易原谅他们的小过失。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-042",
@@ -1126,7 +1495,16 @@
           "form": "visiteurs"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La directrice a personnellement accueilli les visiteurs au lieu de les laisser attendre dans le hall.",
+          "translations": {
+            "zh-Hant": "主任親自接待了訪客，沒有讓他們留在大廳等候。",
+            "zh-Hans": "主任亲自接待了访客，没有让他们留在大厅等候。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-043",
@@ -1152,7 +1530,16 @@
           "form": "bruit"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les habitants se plaignent du bruit qui les réveille chaque nuit depuis l'ouverture du nouveau bar.",
+          "translations": {
+            "zh-Hant": "居民抱怨新酒吧開張後，噪音每晚都會把他們吵醒。",
+            "zh-Hans": "居民抱怨新酒吧开张后，噪音每晚都会把他们吵醒。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-044",
@@ -1178,7 +1565,16 @@
           "form": "médecin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Sa reconnaissance s'exprimait dans les lettres qu'elle envoyait régulièrement au médecin qui l'avait soignée.",
+          "translations": {
+            "zh-Hant": "她經常寫信給曾經治療她的醫師，在信中表達自己的感激。",
+            "zh-Hans": "她经常写信给曾经治疗她的医师，在信中表达自己的感激。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-045",
@@ -1204,7 +1600,16 @@
           "form": "artisan"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le propriétaire recourt à un artisan du village pour restaurer les fenêtres de sa maison.",
+          "translations": {
+            "zh-Hant": "屋主請村裡的一名工匠修復家中的窗戶。",
+            "zh-Hans": "屋主请村里的一名工匠修复家中的窗户。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-046",
@@ -1230,7 +1635,16 @@
           "form": "logement"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Envisagez le recours à une association si les démarches pour obtenir ce logement deviennent trop difficiles.",
+          "translations": {
+            "zh-Hant": "如果申請這間住房的手續變得太難辦，可以考慮向協會求助。",
+            "zh-Hans": "如果申请这间住房的手续变得太难办，可以考虑向协会求助。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-047",
@@ -1256,7 +1670,16 @@
           "form": "chat"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une famille recueille le chat trouvé près du port en attendant de retrouver son propriétaire.",
+          "translations": {
+            "zh-Hant": "有一家人暫時收留了在港口附近發現的貓，等找到牠的主人。",
+            "zh-Hans": "有一家人暂时收留了在港口附近发现的猫，等找到牠的主人。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-048",
@@ -1282,7 +1705,16 @@
           "form": "vendeur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les clients ont reproché au vendeur de ne pas avoir signalé le défaut avant l'achat.",
+          "translations": {
+            "zh-Hant": "顧客責怪店員沒有在他們購買前告知商品有瑕疵。",
+            "zh-Hans": "顾客责怪店员没有在他们购买前告知商品有瑕疵。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-049",
@@ -1308,7 +1740,16 @@
           "form": "train"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous nous résignons à prendre le bus lorsque le dernier train ne circule plus.",
+          "translations": {
+            "zh-Hant": "末班火車已經停駛，我們只好改搭公車。",
+            "zh-Hans": "末班火车已经停驶，我们只好改搭公车。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-050",
@@ -1334,7 +1775,16 @@
           "form": "voyageurs"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une chambre plus calme satisferait les voyageurs qui viennent travailler plusieurs semaines dans notre ville.",
+          "translations": {
+            "zh-Hant": "對於要來我們城市工作幾週的旅客，更安靜的房間應該會讓他們滿意。",
+            "zh-Hans": "对于要来我们城市工作几周的旅客，更安静的房间应该会让他们满意。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-051",
@@ -1360,7 +1810,16 @@
           "form": "étudiante"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le soutien de ses amis permet à cette étudiante de poursuivre ses études malgré ses difficultés.",
+          "translations": {
+            "zh-Hant": "有朋友的支持，這位女學生即使遇到困難也能繼續學業。",
+            "zh-Hans": "有朋友的支持，这位女学生即使遇到困难也能继续学业。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-052",
@@ -1386,7 +1845,16 @@
           "form": "habitants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le projet de jardin partagé a suscité l'enthousiasme des habitants dès la première réunion.",
+          "translations": {
+            "zh-Hant": "共享菜園的計畫在第一次開會時就引起了居民的熱烈響應。",
+            "zh-Hans": "共享菜园的计划在第一次开会时就引起了居民的热烈响应。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-053",
@@ -1412,7 +1880,16 @@
           "form": "conversation"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La conversation devient tendue quand les voisins abordent le partage des frais de réparation du mur.",
+          "translations": {
+            "zh-Hant": "鄰居們談到該怎麼分攤修牆費用時，談話的氣氛就緊張起來。",
+            "zh-Hans": "邻居们谈到该怎么分摊修墙费用时，谈话的气氛就紧张起来。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-054",
@@ -1438,7 +1915,16 @@
           "form": "organisation"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les employés toléreront mieux le changement si la direction explique les raisons de la nouvelle organisation.",
+          "translations": {
+            "zh-Hant": "如果管理層能說明調整組織的原因，員工會更容易接受這項改變。",
+            "zh-Hans": "如果管理层能说明调整组织的原因，员工会更容易接受这项改变。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-055",
@@ -1464,7 +1950,16 @@
           "form": "informations"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette nouvelle trouble les parents, qui attendent encore des informations sur le retour de leur fils.",
+          "translations": {
+            "zh-Hant": "這個消息讓父母心神不寧，他們還在等兒子返家的進一步消息。",
+            "zh-Hans": "这个消息让父母心神不宁，他们还在等儿子返家的进一步消息。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.01-056",
@@ -1490,7 +1985,16 @@
           "form": "lit"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma mère veillait près du lit pendant que ma petite sœur dormait avec de la fièvre.",
+          "translations": {
+            "zh-Hant": "妹妹發著燒睡覺時，母親一直守在床邊。",
+            "zh-Hans": "妹妹发着烧睡觉时，母亲一直守在床边。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-001",
@@ -1516,7 +2020,16 @@
           "form": "artiste"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L'amour de sa famille accompagne cette artiste même lorsqu'elle travaille plusieurs mois à l'étranger.",
+          "translations": {
+            "zh-Hant": "即使到國外一工作就是好幾個月，家人的愛也一直陪伴著這位藝術家。",
+            "zh-Hans": "即使到国外一工作就是好几个月，家人的爱也一直陪伴着这位艺术家。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-002",
@@ -1542,7 +2055,16 @@
           "form": "passants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La musique a attiré les passants vers la place où les enfants présentaient leur spectacle.",
+          "translations": {
+            "zh-Hant": "音樂把路人吸引到廣場上，孩子們正在那裡演出。",
+            "zh-Hans": "音乐把路人吸引到广场上，孩子们正在那里演出。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-003",
@@ -1568,7 +2090,16 @@
           "form": "boîte"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La bague de ma grand-mère reste dans une petite boîte que ma mère garde près de son lit.",
+          "translations": {
+            "zh-Hant": "祖母的戒指一直放在母親收在床邊的小盒子裡。",
+            "zh-Hans": "祖母的戒指一直放在母亲收在床边的小盒子里。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-004",
@@ -1594,7 +2125,16 @@
           "form": "hôtel"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Demandez à votre compagnon de vérifier l'adresse de l'hôtel pendant que vous achetez les billets.",
+          "translations": {
+            "zh-Hant": "你買票的時候，請同行的夥伴確認一下飯店地址。",
+            "zh-Hans": "你买票的时候，请同行的伙伴确认一下饭店地址。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-005",
@@ -1620,7 +2160,16 @@
           "form": "ancienne"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce couple transforme une ancienne ferme en maison d'accueil pour les marcheurs de passage.",
+          "translations": {
+            "zh-Hant": "這對伴侶正在把一座老農莊改建成接待過路健行者的住所。",
+            "zh-Hans": "这对伴侣正在把一座老农庄改建成接待过路健行者的住所。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-006",
@@ -1646,7 +2195,16 @@
           "form": "repas"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les voisins préparaient ensemble le repas pendant que les enfants installaient les tables dans le jardin.",
+          "translations": {
+            "zh-Hant": "鄰居們一起準備餐點時，孩子們正在花園裡擺桌子。",
+            "zh-Hans": "邻居们一起准备餐点时，孩子们正在花园里摆桌子。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-007",
@@ -1672,7 +2230,16 @@
           "form": "trajet"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Son épouse travaille à l'hôpital et profite du trajet pour écouter des cours de langue.",
+          "translations": {
+            "zh-Hant": "他的妻子在醫院工作，上下班途中會聽語言課程。",
+            "zh-Hans": "他的妻子在医院工作，上下班途中会听语言课程。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-008",
@@ -1698,7 +2265,16 @@
           "form": "musicienne"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mon oncle a épousé une musicienne rencontrée lors d'un concert organisé dans notre village.",
+          "translations": {
+            "zh-Hant": "我叔叔娶了一位音樂家，他們是在村裡舉辦的一場音樂會上認識的。",
+            "zh-Hans": "我叔叔娶了一位音乐家，他们是在村里举办的一场音乐会上认识的。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-009",
@@ -1724,7 +2300,16 @@
           "form": "magasin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette cliente reste fidèle au petit magasin où le vendeur connaît les goûts de toute sa famille.",
+          "translations": {
+            "zh-Hant": "這位顧客一直光顧那家小店，店員熟知她全家人的喜好。",
+            "zh-Hans": "这位顾客一直光顾那家小店，店员熟知她全家人的喜好。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-010",
@@ -1750,7 +2335,16 @@
           "form": "distance"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nos familles resteront liées malgré la distance qui séparera bientôt nos deux maisons.",
+          "translations": {
+            "zh-Hant": "很快我們兩家就會住得相隔遙遠，但彼此還是會保持親密的往來。",
+            "zh-Hans": "很快我们两家就会住得相隔遥远，但彼此还是会保持亲密的往来。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-011",
@@ -1776,7 +2370,16 @@
           "form": "enfants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Son mari prépare le dîner pendant qu'elle aide les enfants à terminer leurs devoirs.",
+          "translations": {
+            "zh-Hant": "她幫孩子們做完功課時，丈夫正在準備晚飯。",
+            "zh-Hans": "她帮孩子们做完功课时，丈夫正在准备晚饭。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-012",
@@ -1802,7 +2405,16 @@
           "form": "pays"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le mariage a réuni des invités venus de plusieurs pays dans le jardin de la maison familiale.",
+          "translations": {
+            "zh-Hant": "來自好幾個國家的賓客，為這場婚禮齊聚在他們老家的花園裡。",
+            "zh-Hans": "来自好几个国家的宾客，为这场婚礼齐聚在他们老家的花园里。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-013",
@@ -1828,7 +2440,16 @@
           "form": "printemps"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les deux amis se marient au printemps et organisent une fête simple dans la cour de l'école.",
+          "translations": {
+            "zh-Hant": "這對朋友將在春天結為伴侶，打算在學校的庭院裡辦一場簡單的慶祝會。",
+            "zh-Hans": "这对朋友将在春天结为伴侣，打算在学校的庭院里办一场简单的庆祝会。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-014",
@@ -1854,7 +2475,16 @@
           "form": "sœur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce roman plairait à ma sœur, qui aime les histoires de voyage et les portraits de famille.",
+          "translations": {
+            "zh-Hant": "我姊姊喜歡旅行故事和描寫家庭的作品，這本小說應該會合她的胃口。",
+            "zh-Hans": "我姐姐喜欢旅行故事和描写家庭的作品，这本小说应该会合她的胃口。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-015",
@@ -1880,7 +2510,16 @@
           "form": "bibliothèque"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les étudiants quittent la bibliothèque lorsque le gardien annonce la fermeture prochaine des portes.",
+          "translations": {
+            "zh-Hant": "管理員宣布即將關門時，學生們便離開圖書館。",
+            "zh-Hans": "管理员宣布即将关门时，学生们便离开图书馆。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-016",
@@ -1906,7 +2545,16 @@
           "form": "amis"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je ressentais une grande joie en retrouvant mes amis après plusieurs mois passés à l'étranger.",
+          "translations": {
+            "zh-Hant": "在國外待了幾個月後，再度見到朋友讓我十分開心。",
+            "zh-Hans": "在国外待了几个月后，再度见到朋友让我十分开心。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-017",
@@ -1932,7 +2580,16 @@
           "form": "gare"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les voyageurs se séparent à la gare, chacun poursuivant son trajet vers une autre ville.",
+          "translations": {
+            "zh-Hant": "旅客們在車站分別，各自繼續前往不同的城市。",
+            "zh-Hans": "旅客们在车站分别，各自继续前往不同的城市。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-018",
@@ -1958,7 +2615,16 @@
           "form": "client"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le vendeur a trompé son client en présentant un objet abîmé comme un produit neuf.",
+          "translations": {
+            "zh-Hant": "店員把受損的物品當成新品賣給顧客，欺騙了他。",
+            "zh-Hans": "店员把受损的物品当成新品卖给顾客，欺骗了他。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-019",
@@ -1984,7 +2650,16 @@
           "form": "pain"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mes enfants adorent préparer le pain avec leur grand-père quand nous passons le dimanche chez lui.",
+          "translations": {
+            "zh-Hant": "每逢星期天去祖父家，我的孩子都特別喜歡和他一起做麵包。",
+            "zh-Hans": "每逢星期天去祖父家，我的孩子都特别喜欢和他一起做面包。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-020",
@@ -2010,7 +2685,16 @@
           "form": "famille"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette lettre témoignera de l'affection que notre famille porte aux amis qui nous ont accueillis.",
+          "translations": {
+            "zh-Hant": "這封信將表達我們一家對那些接待過我們的朋友的深厚情誼。",
+            "zh-Hans": "这封信将表达我们一家对那些接待过我们的朋友的深厚情谊。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-021",
@@ -2036,7 +2720,16 @@
           "form": "rivière"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dans le roman, l'amant attend sa bien-aimée près de la rivière où ils se retrouvent en secret.",
+          "translations": {
+            "zh-Hant": "小說裡，那名男子在河邊等候心愛的人，那是他們私下幽會的地方。",
+            "zh-Hans": "小说里，那名男子在河边等候心爱的人，那是他们私下幽会的地方。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-022",
@@ -2062,7 +2755,16 @@
           "form": "stage"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les deux étudiants sont tombés amoureux pendant un stage qu'ils effectuaient dans le même musée.",
+          "translations": {
+            "zh-Hant": "這兩名學生在同一家博物館實習時相愛了。",
+            "zh-Hans": "这两名学生在同一家博物馆实习时相爱了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-023",
@@ -2088,7 +2790,16 @@
           "form": "voyage"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cet anneau en argent rappelle à mon père le voyage où il a rencontré ma mère.",
+          "translations": {
+            "zh-Hant": "這枚銀戒指讓父親想起認識母親的那趟旅行。",
+            "zh-Hans": "这枚银戒指让父亲想起认识母亲的那趟旅行。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-024",
@@ -2114,7 +2825,16 @@
           "form": "centre"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Comparez l'attrait du centre-ville avec le calme de la campagne avant de choisir votre logement.",
+          "translations": {
+            "zh-Hant": "挑選住處前，先比較一下市中心的吸引力與鄉間的寧靜。",
+            "zh-Hans": "挑选住处前，先比较一下市中心的吸引力与乡间的宁静。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-025",
@@ -2140,7 +2860,16 @@
           "form": "frère"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La petite fille caresse le chien pendant que son frère remplit la gamelle d'eau fraîche.",
+          "translations": {
+            "zh-Hant": "小女孩輕撫著狗，哥哥則在牠的碗裡倒入清水。",
+            "zh-Hans": "小女孩轻抚着狗，哥哥则在牠的碗里倒入清水。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-026",
@@ -2166,7 +2895,16 @@
           "form": "village"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le guide était charmant et racontait l'histoire du village avec beaucoup d'humour pendant la visite.",
+          "translations": {
+            "zh-Hant": "那位導遊很有魅力，帶我們參觀時把村子的歷史講得妙趣橫生。",
+            "zh-Hans": "那位导游很有魅力，带我们参观时把村子的历史讲得妙趣横生。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-027",
@@ -2192,7 +2930,16 @@
           "form": "jardin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le charme de cette maison tient à son jardin sauvage et aux objets que les habitants y conservent.",
+          "translations": {
+            "zh-Hant": "這棟房子的魅力在於那座自然生長的花園，以及住戶在屋裡珍藏的物件。",
+            "zh-Hans": "这栋房子的魅力在于那座自然生长的花园，以及住户在屋里珍藏的物件。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-028",
@@ -2218,7 +2965,16 @@
           "form": "thé"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "« Mon chéri », a murmuré ma grand-mère en tendant une tasse de thé à son mari.",
+          "translations": {
+            "zh-Hant": "祖母把一杯茶遞給丈夫，輕聲喚他：「親愛的。」",
+            "zh-Hans": "祖母把一杯茶递给丈夫，轻声唤他：「亲爱的。」"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-029",
@@ -2244,7 +3000,16 @@
           "form": "parents"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les enfants embrassent leurs parents avant de monter dans le train qui les emmène en vacances.",
+          "translations": {
+            "zh-Hant": "孩子們和父母親吻道別，接著登上帶他們去度假的火車。",
+            "zh-Hans": "孩子们和父母亲吻道别，接着登上带他们去度假的火车。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-030",
@@ -2270,7 +3035,16 @@
           "form": "repas"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma fiancée rencontrera mes cousins pendant le repas que nous préparerons ensemble dimanche prochain.",
+          "translations": {
+            "zh-Hant": "下星期天，我和未婚妻會一起準備一頓飯，她也會在席間見到我的堂表兄弟姊妹。",
+            "zh-Hans": "下星期天，我和未婚妻会一起准备一顿饭，她也会在席间见到我的堂表兄弟姐妹。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-031",
@@ -2296,7 +3070,16 @@
           "form": "femme"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La fidélité de ses amis aide cette femme à traverser une période difficile après son déménagement.",
+          "translations": {
+            "zh-Hant": "搬家以後，朋友們始終不離不棄，幫助這位女士度過了難關。",
+            "zh-Hans": "搬家以后，朋友们始终不离不弃，帮助这位女士度过了难关。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-032",
@@ -2322,7 +3105,16 @@
           "form": "travaux"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L'harmonie entre les voisins a facilité les travaux nécessaires à la rénovation de la cour commune.",
+          "translations": {
+            "zh-Hant": "鄰里相處融洽，共同庭院的整修工程也進行得更順利。",
+            "zh-Hans": "邻里相处融洽，共同庭院的整修工程也进行得更顺利。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-033",
@@ -2348,7 +3140,16 @@
           "form": "travail"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Leurs relations harmonieuses permettent aux collègues de répartir le travail sans multiplier les réunions.",
+          "translations": {
+            "zh-Hant": "同事們關係融洽，不用一再開會也能分配好工作。",
+            "zh-Hans": "同事们关系融洽，不用一再开会也能分配好工作。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-034",
@@ -2374,7 +3175,16 @@
           "form": "conversation"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une conversation intime demanderait un endroit plus calme que ce café rempli d'étudiants.",
+          "translations": {
+            "zh-Hant": "想談點私事，得找個比這間擠滿學生的咖啡館更安靜的地方。",
+            "zh-Hans": "想谈点私事，得找个比这间挤满学生的咖啡馆更安静的地方。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-035",
@@ -2400,7 +3210,16 @@
           "form": "touristes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le village retrouve une ambiance paisible lorsque les touristes regagnent leurs hôtels à la tombée du jour.",
+          "translations": {
+            "zh-Hant": "黃昏時，遊客陸續回到飯店，村子又恢復了寧靜。",
+            "zh-Hans": "黄昏时，游客陆续回到饭店，村子又恢复了宁静。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-036",
@@ -2426,7 +3245,16 @@
           "form": "voyage"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette lectrice passionnée a passé tout le voyage à comparer deux traductions du même roman.",
+          "translations": {
+            "zh-Hant": "這位熱愛閱讀的女士把整趟旅程都用來比較同一本小說的兩種譯本。",
+            "zh-Hans": "这位热爱阅读的女士把整趟旅程都用来比较同一本小说的两种译本。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-037",
@@ -2452,7 +3280,16 @@
           "form": "famille"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le personnage rompt avec sa famille pour partir vivre dans un pays où personne ne le connaît.",
+          "translations": {
+            "zh-Hant": "故事中的人物和家人決裂，動身去了一個沒有人認識他的國家生活。",
+            "zh-Hans": "故事中的人物和家人决裂，动身去了一个没有人认识他的国家生活。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-038",
@@ -2478,7 +3315,16 @@
           "form": "produits"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Pour séduire les visiteurs, présentez aussi les produits locaux dans le petit magasin du musée.",
+          "translations": {
+            "zh-Hant": "想吸引遊客，也可以在博物館的小商店裡展示當地特產。",
+            "zh-Hans": "想吸引游客，也可以在博物馆的小商店里展示当地特产。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-039",
@@ -2504,7 +3350,16 @@
           "form": "parents"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La séparation inquiète les enfants, mais leurs parents leur expliquent comment les visites seront organisées.",
+          "translations": {
+            "zh-Hant": "父母分開讓孩子們很不安，不過父母向他們解釋了以後會如何安排見面。",
+            "zh-Hans": "父母分开让孩子们很不安，不过父母向他们解释了以后会如何安排见面。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-040",
@@ -2530,7 +3385,16 @@
           "form": "bureaux"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les deux collègues travaillaient dans des bureaux séparés et se retrouvaient à la pause du déjeuner.",
+          "translations": {
+            "zh-Hant": "兩位同事原本在不同的辦公室工作，午休時才會碰面。",
+            "zh-Hans": "两位同事原本在不同的办公室工作，午休时才会碰面。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-041",
@@ -2556,7 +3420,16 @@
           "form": "patient"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le médecin aborde la santé sexuelle avec le patient en répondant à ses questions sans jugement.",
+          "translations": {
+            "zh-Hant": "醫師和病人談起性健康，不帶批判地回答他的問題。",
+            "zh-Hans": "医师和病人谈起性健康，不带批判地回答他的问题。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.02-042",
@@ -2582,7 +3455,16 @@
           "form": "repas"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La tendresse de notre père s'est exprimée lorsqu'il a préparé le repas préféré de chacun.",
+          "translations": {
+            "zh-Hant": "父親為家裡每個人做了各自最愛吃的菜，用這個方式表達了他的溫情。",
+            "zh-Hans": "父亲为家里每个人做了各自最爱吃的菜，用这个方式表达了他的温情。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-001",
@@ -2608,7 +3490,16 @@
           "form": "voisins"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les habitants accueillent les nouveaux voisins en leur proposant une visite du jardin partagé.",
+          "translations": {
+            "zh-Hant": "居民們主動帶新鄰居參觀共享菜園，歡迎他們加入社區。",
+            "zh-Hans": "居民们主动带新邻居参观共享菜园，欢迎他们加入社区。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-002",
@@ -2634,7 +3525,16 @@
           "form": "déjeuner"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "J'apporterai une salade et du pain pour le déjeuner que nous partagerons au bord du lac.",
+          "translations": {
+            "zh-Hant": "我會帶沙拉和麵包，我們一起在湖邊吃午餐。",
+            "zh-Hans": "我会带沙拉和面包，我们一起在湖边吃午餐。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-003",
@@ -2660,7 +3560,16 @@
           "form": "chauffeurs"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L'arrivée du train attire les chauffeurs de taxi devant la petite gare du village.",
+          "translations": {
+            "zh-Hant": "火車到站時，計程車司機紛紛來到村裡的小車站前。",
+            "zh-Hans": "火车到站时，计程车司机纷纷来到村里的小车站前。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-004",
@@ -2686,7 +3595,16 @@
           "form": "musée"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous nous attendions à une longue attente en voyant la foule devant le musée.",
+          "translations": {
+            "zh-Hant": "看到博物館前的人潮，我們就料到要等很久。",
+            "zh-Hans": "看到博物馆前的人潮，我们就料到要等很久。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-005",
@@ -2712,7 +3630,16 @@
           "form": "vendeuse"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le contact avec les clients aide la vendeuse à choisir les produits qu'elle commandera la semaine suivante.",
+          "translations": {
+            "zh-Hant": "和顧客接觸，有助於這位店員決定下週該訂哪些商品。",
+            "zh-Hans": "和顾客接触，有助于这位店员决定下周该订哪些商品。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-006",
@@ -2738,7 +3665,16 @@
           "form": "train"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dépêchez-vous de mettre vos chaussures si vous voulez attraper le train de huit heures.",
+          "translations": {
+            "zh-Hant": "想趕上八點鐘的火車，就快點把鞋穿好。",
+            "zh-Hans": "想赶上八点钟的火车，就快点把鞋穿好。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-007",
@@ -2764,7 +3700,16 @@
           "form": "cour"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les visiteurs entrent dans la cour après avoir laissé leurs sacs près de la réception.",
+          "translations": {
+            "zh-Hant": "訪客把包放在接待處附近後，走進庭院。",
+            "zh-Hans": "访客把包放在接待处附近后，走进庭院。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-008",
@@ -2790,7 +3735,16 @@
           "form": "école"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Recevoir cette artiste dans notre école était un honneur que les élèves prenaient très au sérieux.",
+          "translations": {
+            "zh-Hant": "能在學校接待這位藝術家，學生們深感榮幸，也十分重視這件事。",
+            "zh-Hans": "能在学校接待这位艺术家，学生们深感荣幸，也十分重视这件事。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-009",
@@ -2816,7 +3770,16 @@
           "form": "repas"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous invitons les voisins à partager un repas pour apprendre à mieux connaître le quartier.",
+          "translations": {
+            "zh-Hant": "我們邀請鄰居來吃飯，藉此多了解這個社區。",
+            "zh-Hans": "我们邀请邻居来吃饭，借此多了解这个社区。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-010",
@@ -2842,7 +3805,16 @@
           "form": "question"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L'étudiante a osé poser une question alors qu'elle comprenait encore difficilement le français.",
+          "translations": {
+            "zh-Hant": "這位學生當時連聽懂法語都有些吃力，仍鼓起勇氣提了一個問題。",
+            "zh-Hans": "这位学生当时连听懂法语都有些吃力，仍鼓起勇气提了一个问题。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-011",
@@ -2868,7 +3840,16 @@
           "form": "lac"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le guide prévoit une pause près du lac pour que les enfants puissent manger et se reposer.",
+          "translations": {
+            "zh-Hant": "導遊打算在湖邊停一下，讓孩子們吃點東西、休息片刻。",
+            "zh-Hans": "导游打算在湖边停一下，让孩子们吃点东西、休息片刻。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-012",
@@ -2894,7 +3875,16 @@
           "form": "familles"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le spectacle prévu samedi commencera plus tôt pour permettre aux familles de rentrer avec le dernier bus.",
+          "translations": {
+            "zh-Hant": "排在星期六的演出會提早開始，好讓各家人趕上末班公車回家。",
+            "zh-Hans": "排在星期六的演出会提早开始，好让各家人赶上末班公车回家。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-013",
@@ -2920,7 +3910,16 @@
           "form": "restaurant"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je rejoins mes collègues au restaurant après avoir déposé les documents dans le bureau du directeur.",
+          "translations": {
+            "zh-Hant": "我把文件送到主管辦公室後，到餐廳和同事會合。",
+            "zh-Hans": "我把文件送到主管办公室后，到餐厅和同事会合。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-014",
@@ -2946,7 +3945,16 @@
           "form": "professeurs"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette rencontre a permis aux parents de parler aux professeurs avant le début de l'année scolaire.",
+          "translations": {
+            "zh-Hant": "這場會面讓家長有機會在新學年開始前和老師交談。",
+            "zh-Hans": "这场会面让家长有机会在新学年开始前和老师交谈。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-015",
@@ -2972,7 +3980,16 @@
           "form": "chemin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous rencontrons souvent la même femme sur le chemin qui traverse le parc au lever du jour.",
+          "translations": {
+            "zh-Hant": "黎明時，我們經常在穿過公園的那條路上遇見同一位女士。",
+            "zh-Hans": "黎明时，我们经常在穿过公园的那条路上遇见同一位女士。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-016",
@@ -2998,7 +4015,16 @@
           "form": "train"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je rentrerais plus tôt si les horaires du train correspondaient mieux à ceux de mon travail.",
+          "translations": {
+            "zh-Hant": "要是火車班次能更配合我的工作時間，我就能早點回家。",
+            "zh-Hans": "要是火车班次能更配合我的工作时间，我就能早点回家。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-017",
@@ -3024,7 +4050,16 @@
           "form": "village"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma sœur retourne chaque été dans le village où elle a passé une partie de son enfance.",
+          "translations": {
+            "zh-Hant": "姊姊每年夏天都會回到那座村莊，她童年有一段時間是在那裡度過的。",
+            "zh-Hans": "姐姐每年夏天都会回到那座村庄，她童年有一段时间是在那里度过的。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-018",
@@ -3050,7 +4085,16 @@
           "form": "ballon"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les enfants ont retrouvé leur ballon dans le jardin du voisin après l'orage de dimanche.",
+          "translations": {
+            "zh-Hant": "星期天的暴風雨過後，孩子們在鄰居的花園裡找回了球。",
+            "zh-Hans": "星期天的暴风雨过后，孩子们在邻居的花园里找回了球。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-019",
@@ -3076,7 +4120,16 @@
           "form": "maison"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le chien revient vers la maison dès qu'il entend le bruit de la gamelle sur le sol.",
+          "translations": {
+            "zh-Hant": "狗一聽見食盆碰到地面的聲音，就會跑回屋子這邊。",
+            "zh-Hans": "狗一听见食盆碰到地面的声音，就会跑回屋子这边。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-020",
@@ -3102,7 +4155,16 @@
           "form": "questions"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Avant de revoir le médecin, notez les questions que vous souhaitez lui poser sur votre traitement.",
+          "translations": {
+            "zh-Hant": "回診前，把想問醫師的治療問題先記下來。",
+            "zh-Hans": "回诊前，把想问医师的治疗问题先记下来。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-021",
@@ -3128,7 +4190,16 @@
           "form": "habitants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L'architecte tient compte des besoins des habitants lorsqu'il dessine les nouveaux logements du quartier.",
+          "translations": {
+            "zh-Hant": "建築師為社區設計新住宅時，會把居民的需求納入考量。",
+            "zh-Hans": "建筑师为社区设计新住宅时，会把居民的需求纳入考量。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-022",
@@ -3154,7 +4225,16 @@
           "form": "chambres"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les invités venus de loin passaient la nuit dans les chambres situées au-dessus de la cuisine.",
+          "translations": {
+            "zh-Hant": "以前，遠道而來的客人會在廚房樓上的房間過夜。",
+            "zh-Hans": "以前，远道而来的客人会在厨房楼上的房间过夜。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-023",
@@ -3180,7 +4260,16 @@
           "form": "meubles"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mon frère est disposé à nous aider à porter les meubles si nous organisons le déménagement dimanche.",
+          "translations": {
+            "zh-Hant": "如果我們安排在星期天搬家，我哥哥願意來幫忙搬家具。",
+            "zh-Hans": "如果我们安排在星期天搬家，我哥哥愿意来帮忙搬家具。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-024",
@@ -3206,7 +4295,16 @@
           "form": "élèves"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La professeure a emmené les élèves au bord de la rivière pour observer les plantes du printemps.",
+          "translations": {
+            "zh-Hant": "老師帶學生到河邊觀察春天的植物。",
+            "zh-Hans": "老师带学生到河边观察春天的植物。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-025",
@@ -3232,7 +4330,16 @@
           "form": "bibliothèque"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma grand-mère fréquente la bibliothèque depuis qu'un atelier de lecture y réunit les habitants du quartier.",
+          "translations": {
+            "zh-Hant": "自從圖書館開辦讀書活動、讓社區居民聚在一起後，祖母就常常去那裡。",
+            "zh-Hans": "自从图书馆开办读书活动、让社区居民聚在一起后，祖母就常常去那里。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-026",
@@ -3258,7 +4365,16 @@
           "form": "rues"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nos hôtes prépareront le dîner pendant que nous explorerons les rues autour de leur maison.",
+          "translations": {
+            "zh-Hant": "我們到主人家附近的街道走走時，他們會準備晚餐。",
+            "zh-Hans": "我们到主人家附近的街道走走时，他们会准备晚餐。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-027",
@@ -3284,7 +4400,16 @@
           "form": "parents"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L'invitation précise que les enfants peuvent venir avec leurs parents et participer aux jeux du jardin.",
+          "translations": {
+            "zh-Hant": "邀請函上寫明，孩子可以和父母一同前來，參加花園裡的遊戲。",
+            "zh-Hans": "邀请函上写明，孩子可以和父母一同前来，参加花园里的游戏。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-028",
@@ -3310,7 +4435,16 @@
           "form": "famille"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une invitée a apporté des fleurs pour remercier la famille qui l'accueillait pendant le festival.",
+          "translations": {
+            "zh-Hant": "一位女賓帶來鮮花，感謝在節慶期間招待她的家庭。",
+            "zh-Hans": "一位女宾带来鲜花，感谢在节庆期间招待她的家庭。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-029",
@@ -3336,7 +4470,16 @@
           "form": "mère"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je joins le médecin par téléphone lorsque ma mère ne comprend pas les consignes du traitement.",
+          "translations": {
+            "zh-Hant": "母親不明白治療須知時，我會打電話聯絡醫師。",
+            "zh-Hans": "母亲不明白治疗须知时，我会打电话联络医师。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-030",
@@ -3362,7 +4505,16 @@
           "form": "train"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un rendez-vous dans ce café serait pratique pour les collègues qui viennent en train.",
+          "translations": {
+            "zh-Hant": "約在這家咖啡館見面，對搭火車來的同事會很方便。",
+            "zh-Hans": "约在这家咖啡馆见面，对搭火车来的同事会很方便。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-031",
@@ -3388,7 +4540,16 @@
           "form": "jardin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les enfants ressortent dans le jardin dès que la pluie cesse et que le soleil revient.",
+          "translations": {
+            "zh-Hant": "雨一停、太陽一出來，孩子們就又跑到花園裡去了。",
+            "zh-Hans": "雨一停、太阳一出来，孩子们就又跑到花园里去了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.03-032",
@@ -3414,7 +4575,16 @@
           "form": "repas"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La venue de ma sœur a transformé un dimanche ordinaire en grand repas de famille.",
+          "translations": {
+            "zh-Hant": "姊姊的到來，讓原本平凡的星期天變成了一場熱鬧的家庭聚餐。",
+            "zh-Hans": "姐姐的到来，让原本平凡的星期天变成了一场热闹的家庭聚餐。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-001",
@@ -3440,7 +4610,16 @@
           "form": "ouvrages"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette bibliothèque acquiert chaque année des ouvrages choisis avec les lecteurs du quartier.",
+          "translations": {
+            "zh-Hant": "這家圖書館每年都會購入和社區讀者一起挑選的書籍。",
+            "zh-Hans": "这家图书馆每年都会购入和社区读者一起挑选的书籍。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-002",
@@ -3466,7 +4645,16 @@
           "form": "table"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Vérifiez à qui appartient ce terrain avant d'y installer une table pour le pique-nique.",
+          "translations": {
+            "zh-Hant": "在這塊地上擺桌子野餐前，請先確認土地屬於誰。",
+            "zh-Hans": "在这块地上摆桌子野餐前，请先确认土地属于谁。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-003",
@@ -3492,7 +4680,16 @@
           "form": "dessin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le garçon cache son dessin derrière le dos pour faire une surprise à sa mère.",
+          "translations": {
+            "zh-Hant": "男孩把畫藏在身後，想給媽媽一個驚喜。",
+            "zh-Hans": "男孩把画藏在身后，想给妈妈一个惊喜。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-004",
@@ -3518,7 +4715,16 @@
           "form": "enfants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma tante confiait ses enfants aux voisins lorsqu'elle travaillait tard à l'hôpital.",
+          "translations": {
+            "zh-Hant": "阿姨以前在醫院工作到很晚時，會把小孩託給鄰居照顧。",
+            "zh-Hans": "阿姨以前在医院工作到很晚时，会把小孩托给邻居照顾。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-005",
@@ -3544,7 +4750,16 @@
           "form": "jardin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L'école dispose d'un jardin que les élèves utilisent pour apprendre à cultiver des légumes.",
+          "translations": {
+            "zh-Hant": "學校有一座菜園，學生可以在那裡學習種菜。",
+            "zh-Hans": "学校有一座菜园，学生可以在那里学习种菜。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-006",
@@ -3570,7 +4785,16 @@
           "form": "fenêtre"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La nouvelle disposition des meubles a libéré un espace près de la fenêtre pour lire.",
+          "translations": {
+            "zh-Hant": "重新擺放家具後，靠窗的地方騰出了一塊可以讀書的空間。",
+            "zh-Hans": "重新摆放家具后，靠窗的地方腾出了一块可以读书的空间。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-007",
@@ -3596,7 +4820,16 @@
           "form": "habitants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L'échange de livres rapproche les habitants qui n'avaient encore jamais discuté ensemble dans l'immeuble.",
+          "translations": {
+            "zh-Hant": "交換書籍拉近了住戶間的距離，有些人雖住在同一棟樓裡，之前卻從沒聊過天。",
+            "zh-Hans": "交换书籍拉近了住户间的距离，有些人虽住在同一栋楼里，之前却从没聊过天。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-008",
@@ -3622,7 +4855,16 @@
           "form": "quartier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les bagages seront gardés à la réception pendant que nous visiterons le quartier à pied.",
+          "translations": {
+            "zh-Hant": "我們步行遊覽附近街區時，行李會由接待處保管。",
+            "zh-Hans": "我们步行游览附近街区时，行李会由接待处保管。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-009",
@@ -3648,7 +4890,16 @@
           "form": "enfants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mon père garde les enfants pendant que ma sœur suit son cours du soir à l'université.",
+          "translations": {
+            "zh-Hant": "姊姊在大學上夜間課程時，由父親照顧孩子們。",
+            "zh-Hans": "姐姐在大学上夜间课程时，由父亲照顾孩子们。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-010",
@@ -3674,7 +4925,16 @@
           "form": "table"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le manque de lumière nous a conduits à déplacer la table près de la fenêtre.",
+          "translations": {
+            "zh-Hant": "因為光線不足，我們把桌子移到了窗邊。",
+            "zh-Hans": "因为光线不足，我们把桌子移到了窗边。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-011",
@@ -3700,7 +4960,16 @@
           "form": "table"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Il manque une chaise autour de la table maintenant que notre voisin vient partager le dîner.",
+          "translations": {
+            "zh-Hant": "鄰居現在也要來吃晚飯，桌邊就少了一張椅子。",
+            "zh-Hans": "邻居现在也要来吃晚饭，桌边就少了一张椅子。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-012",
@@ -3726,7 +4995,16 @@
           "form": "voisins"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Avant d'acheter un outil, demandez aux voisins s'ils possèdent déjà un modèle qu'ils peuvent vous prêter.",
+          "translations": {
+            "zh-Hant": "買工具前，先問問鄰居家裡有沒有可以借你用的。",
+            "zh-Hans": "买工具前，先问问邻居家里有没有可以借你用的。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-013",
@@ -3752,7 +5030,16 @@
           "form": "chauffage"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le prêt permettra à cette famille de remplacer le chauffage sans attendre le prochain hiver.",
+          "translations": {
+            "zh-Hant": "有了這筆貸款，這家人就能更換暖氣設備，不必等到下一個冬天。",
+            "zh-Hans": "有了这笔贷款，这家人就能更换暖气设备，不必等到下一个冬天。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-014",
@@ -3778,7 +5065,16 @@
           "form": "vélo"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La voisine prêtait son vélo aux étudiants qui séjournaient dans la petite chambre au-dessus du garage.",
+          "translations": {
+            "zh-Hant": "以前，那位鄰居會把腳踏車借給暫住在車庫樓上小房間的學生。",
+            "zh-Hans": "以前，那位邻居会把脚踏车借给暂住在车库楼上小房间的学生。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-015",
@@ -3804,7 +5100,16 @@
           "form": "horaire"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Toutes les places sont prises dans le train, alors nous cherchons un autre horaire de départ.",
+          "translations": {
+            "zh-Hant": "這班火車已經客滿，我們只好找其他出發時間。",
+            "zh-Hans": "这班火车已经客满，我们只好找其他出发时间。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-016",
@@ -3830,7 +5135,16 @@
           "form": "maison"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous avons visité le jardin privé d'une maison ouverte exceptionnellement pour les journées du patrimoine.",
+          "translations": {
+            "zh-Hant": "文化遺產日期間，有一棟住宅破例對外開放，我們去參觀了它的私人花園。",
+            "zh-Hans": "文化遗产日期间，有一栋住宅破例对外开放，我们去参观了它的私人花园。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-017",
@@ -3856,7 +5170,16 @@
           "form": "vêtements"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L'association procure des vêtements chauds aux personnes qui viennent d'arriver dans la région.",
+          "translations": {
+            "zh-Hant": "協會為剛搬到這一帶的人提供保暖衣物。",
+            "zh-Hans": "协会为刚搬到这一带的人提供保暖衣物。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-018",
@@ -3882,7 +5205,16 @@
           "form": "chambre"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Chaque enfant aura sa propre chambre quand les travaux de la maison seront terminés.",
+          "translations": {
+            "zh-Hant": "等房子整修完，每個孩子都會有自己的房間。",
+            "zh-Hans": "等房子整修完，每个孩子都会有自己的房间。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-019",
@@ -3908,7 +5240,16 @@
           "form": "clients"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le propriétaire de cette boutique connaît les clients qui viennent au marché depuis plusieurs générations.",
+          "translations": {
+            "zh-Hant": "有些人家幾代人都來這個市場買東西，這家店的老闆和他們都很熟。",
+            "zh-Hans": "有些人家几代人都来这个市场买东西，这家店的老板和他们都很熟。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-020",
@@ -3934,7 +5275,16 @@
           "form": "maison"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La famille a vendu une partie de sa propriété pour financer la restauration de la vieille maison.",
+          "translations": {
+            "zh-Hant": "這家人賣掉部分房地產，用來支付修復老屋的費用。",
+            "zh-Hans": "这家人卖掉部分房地产，用来支付修复老屋的费用。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-021",
@@ -3960,7 +5310,16 @@
           "form": "étudiants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La bibliothèque publique reste ouverte le soir pour accueillir les étudiants qui travaillent dans la journée.",
+          "translations": {
+            "zh-Hant": "公共圖書館晚上仍然開放，讓白天要工作的學生也能來使用。",
+            "zh-Hans": "公共图书馆晚上仍然开放，让白天要工作的学生也能来使用。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-022",
@@ -3986,7 +5345,16 @@
           "form": "maison"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ramenez les enfants à la maison avant que le vent ne rende la promenade trop froide.",
+          "translations": {
+            "zh-Hant": "趁風還沒把天氣吹得冷到不適合散步，先帶孩子們回家吧。",
+            "zh-Hans": "趁风还没把天气吹得冷到不适合散步，先带孩子们回家吧。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-023",
@@ -4012,7 +5380,16 @@
           "form": "livre"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mon frère rapporte toujours un livre du pays où il voyage pour enrichir notre petite bibliothèque.",
+          "translations": {
+            "zh-Hant": "哥哥每到一個國家旅行，總會帶一本書回來，為我們的小小藏書添一本新書。",
+            "zh-Hans": "哥哥每到一个国家旅行，总会带一本书回来，为我们的小小藏书添一本新书。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-024",
@@ -4038,7 +5415,16 @@
           "form": "produits"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le commerçant reprenait les produits défectueux sans demander aux clients de revenir plusieurs fois.",
+          "translations": {
+            "zh-Hant": "這位商家過去碰到瑕疵品就會直接收回，不會讓顧客來回奔波好幾趟。",
+            "zh-Hans": "这位商家过去碰到瑕疵品就会直接收回，不会让顾客来回奔波好几趟。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-025",
@@ -4064,7 +5450,16 @@
           "form": "travail"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L'acquisition de cette machine facilite le travail des artisans qui utilisent l'atelier partagé.",
+          "translations": {
+            "zh-Hant": "添購了這部機器後，在共享工坊工作的工匠做起事來更方便了。",
+            "zh-Hans": "添购了这部机器后，在共享工坊工作的工匠做起事来更方便了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-026",
@@ -4090,7 +5485,16 @@
           "form": "patient"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La médecin a choisi un traitement approprié après avoir écouté les difficultés quotidiennes du patient.",
+          "translations": {
+            "zh-Hant": "醫師聽完病人日常生活中遇到的困難後，選擇了適合他的治療方式。",
+            "zh-Hans": "医师听完病人日常生活中遇到的困难后，选择了适合他的治疗方式。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-027",
@@ -4116,7 +5520,16 @@
           "form": "jardin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une petite porte cachée derrière les arbres donne accès au jardin de l'ancien couvent.",
+          "translations": {
+            "zh-Hant": "樹後藏著一扇小門，可以通往舊修道院的花園。",
+            "zh-Hans": "树后藏着一扇小门，可以通往旧修道院的花园。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-028",
@@ -4142,7 +5555,16 @@
           "form": "ouvrages"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La bibliothèque détiendra bientôt tous les ouvrages de cette collection consacrée à l'histoire locale.",
+          "translations": {
+            "zh-Hant": "圖書館很快就會收藏這套地方史叢書的全部書籍。",
+            "zh-Hans": "图书馆很快就会收藏这套地方史丛书的全部书籍。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-029",
@@ -4168,7 +5590,16 @@
           "form": "peur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L'enfant dissimule sa peur en faisant semblant de s'intéresser aux tableaux accrochés dans le couloir.",
+          "translations": {
+            "zh-Hant": "孩子假裝對走廊牆上的畫很感興趣，藉此掩飾心中的害怕。",
+            "zh-Hans": "孩子假装对走廊墙上的画很感兴趣，借此掩饰心中的害怕。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-030",
@@ -4194,7 +5625,16 @@
           "form": "feuille"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le vent s'est emparé de la feuille avant que nous ayons pu lire le message écrit dessus.",
+          "translations": {
+            "zh-Hant": "我們還沒來得及讀紙上的留言，那張紙就被風吹走了。",
+            "zh-Hans": "我们还没来得及读纸上的留言，那张纸就被风吹走了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-031",
@@ -4220,7 +5660,16 @@
           "form": "livres"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les étudiants empruntent des livres à la bibliothèque au lieu de les acheter pour chaque cours.",
+          "translations": {
+            "zh-Hant": "學生到圖書館借書，省得每門課都要自己買書。",
+            "zh-Hans": "学生到图书馆借书，省得每门课都要自己买书。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-032",
@@ -4246,7 +5695,16 @@
           "form": "chapeau"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Munissez les enfants d'un chapeau avant de les emmener marcher au bord de la rivière.",
+          "translations": {
+            "zh-Hant": "帶孩子去河邊散步前，請給每個孩子準備一頂帽子。",
+            "zh-Hans": "带孩子去河边散步前，请给每个孩子准备一顶帽子。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-033",
@@ -4272,7 +5730,16 @@
           "form": "visiteurs"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La possession de cette clé permet au gardien d'ouvrir les salles avant l'arrivée des visiteurs.",
+          "translations": {
+            "zh-Hant": "管理員持有這把鑰匙，可以在訪客到來前打開各個房間。",
+            "zh-Hans": "管理员持有这把钥匙，可以在访客到来前打开各个房间。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-034",
@@ -4298,7 +5765,16 @@
           "form": "logement"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La commune pourvoyait aux besoins des familles qui avaient perdu leur logement après l'incendie.",
+          "translations": {
+            "zh-Hant": "那時，市鎮當局為火災後失去住所的家庭提供生活所需。",
+            "zh-Hans": "那时，市镇当局为火灾后失去住所的家庭提供生活所需。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-035",
@@ -4324,7 +5800,16 @@
           "form": "artisan"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je récupère mon vélo chez l'artisan avant de rejoindre mes amis pour une promenade au bord du lac.",
+          "translations": {
+            "zh-Hant": "我到師傅那裡取回腳踏車，再去和朋友會合，到湖邊走走。",
+            "zh-Hans": "我到师傅那里取回脚踏车，再去和朋友会合，到湖边走走。"
+          }
+        }
+      ]
     },
     {
       "id": "book-14.04-036",
@@ -4350,7 +5835,16 @@
           "form": "livres"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les enfants ont découvert un trésor de vieux livres dans le grenier de la maison de leurs grands-parents.",
+          "translations": {
+            "zh-Hant": "孩子們在祖父母家的閣樓上發現了一批寶藏般的舊書。",
+            "zh-Hans": "孩子们在祖父母家的阁楼上发现了一批宝藏般的旧书。"
+          }
+        }
+      ]
     }
   ],
   "originalMethod": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点、自反动词及词性；中文释义按例句语境校正或补充。se plaindre、se séparer 按例句补足自反形式；hôte、joindre、disposé、fréquenter、propre 等语境义另记于 note；gents、chez soi、reçu une relacion、mal venues、échange de timbre 等拼写或搭配校正逐条注明。",

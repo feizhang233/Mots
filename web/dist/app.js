@@ -159,6 +159,7 @@
       pageSize: pageSizes.includes(Number(source.pageSize)) ? Number(source.pageSize) : 20,
       defaultHideMastered: source.defaultHideMastered === true,
       showExampleTranslations: source.showExampleTranslations !== false,
+      showListExampleTranslations: source.showListExampleTranslations === true,
       hideListMeanings: source.hideListMeanings === true,
       appearance: ['light', 'dark'].includes(source.appearance) ? source.appearance : 'system',
       sidebarCollapsed: source.sidebarCollapsed === true,
@@ -1427,6 +1428,7 @@
       pageSize: settings.pageSize,
       defaultHideMastered: settings.defaultHideMastered,
       showExampleTranslations: settings.showExampleTranslations,
+      showListExampleTranslations: settings.showListExampleTranslations,
       hideListMeanings: settings.hideListMeanings,
       appearance: settings.appearance,
       studyKind: state.studyKind,
@@ -1860,6 +1862,11 @@
   });
   $('show-example-translations').addEventListener('change', (event) => {
     settings.showExampleTranslations = event.target.checked;
+    saveSettings();
+    render();
+  });
+  $('show-list-example-translations').addEventListener('change', (event) => {
+    settings.showListExampleTranslations = event.target.checked;
     saveSettings();
     render();
   });

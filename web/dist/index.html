@@ -10,8 +10,8 @@
     <script src="theme.js?v=b5b8723a517495f7"></script>
     <link rel="stylesheet" href="styles.css?v=9d077a622bdf6422" />
     <link rel="stylesheet" href="select.css?v=d9685d2e102b4476" />
-    <link rel="stylesheet" href="workspace.css?v=8041b361180635c2" />
-    <script defer src="data.js?v=ce94fca52c83a2a7"></script>
+    <link rel="stylesheet" href="workspace.css?v=a209b823fd224070" />
+    <script defer src="data.js?v=452c79cdd0fa0225"></script>
     <script defer src="languages.js?v=fbfb80f1f910853e"></script>
     <script defer src="n2-vocabulary.js?v=60cb5762eb383602"></script>
     <script defer src="audio-manifest.js?v=2415420e385eafc4"></script>
@@ -21,7 +21,7 @@
     <script defer src="dictionaries.js?v=9669f764084e5f20"></script>
     <script defer src="grammar.js?v=9f047c78b489e3b7"></script>
     <script defer src="column-widths.js?v=e5ecdf6b5716167b"></script>
-    <script defer src="workspace.js?v=512c8c753d4c3010"></script>
+    <script defer src="workspace.js?v=8515c20bc8a3d1e8"></script>
     <script defer src="memory.js?v=b0e02dcbfb7bcf8c"></script>
     <script defer src="audio.js?v=fc7f5f3004415776"></script>
     <script defer src="downloads.js?v=887b8391395047af"></script>
@@ -30,8 +30,8 @@
     <script defer src="deletion-state.js?v=4eb08ad304203f24"></script>
     <script defer src="content-state.js?v=68209ee8787a3ddc"></script>
     <script defer src="progress-sync.js?v=19cf7ada737c5a10"></script>
-    <script defer src="settings-panel.js?v=12ab6b2a3ca23bfb"></script>
-    <script defer src="app.js?v=1bc3f8a321cbbd71"></script>
+    <script defer src="settings-panel.js?v=68b6dc0ea576c086"></script>
+    <script defer src="app.js?v=83e3ed43511f7150"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">跳到背誦內容</a>
@@ -303,6 +303,24 @@
                   class="switch-track"
                   aria-hidden="true"
                   ><span class="switch-thumb"></span></span></span
+            ></label>
+            <label class="settings-toggle" for="show-list-example-translations"
+              ><span
+                ><strong>列表顯示例句翻譯</strong
+                ><span id="list-example-translations-help"
+                  >在列表的例句下方顯示已收錄的譯文，語言依「釋義語言」設定。</span
+                ></span
+              ><span class="glass-switch"
+                ><input
+                  id="show-list-example-translations"
+                  type="checkbox"
+                  role="switch"
+                  aria-label="列表顯示例句翻譯"
+                  aria-describedby="list-example-translations-help" /><span
+                  class="switch-track"
+                  aria-hidden="true"
+                  ><span class="switch-thumb"
+                    ><svg viewBox="0 0 24 24"><path d="m6 12 4 4 8-8" /></svg></span></span></span
             ></label>
             <label class="settings-toggle" for="show-example-translations"
               ><span

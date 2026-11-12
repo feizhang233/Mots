@@ -64,7 +64,16 @@
           "form": "enfant"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La dentiste demande à l’enfant d’ouvrir la bouche pendant que son père attend près de la fenêtre.",
+          "translations": {
+            "zh-Hant": "女牙醫請孩子張開嘴巴，孩子的父親則在窗邊等候。",
+            "zh-Hans": "女牙医请孩子张开嘴巴，孩子的父亲则在窗边等候。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-002",
@@ -94,7 +103,16 @@
           "form": "trajet"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Après sa chute de vélo, Camille a gardé le bras contre sa poitrine pendant le trajet vers l’hôpital.",
+          "translations": {
+            "zh-Hant": "卡蜜兒騎自行車摔倒後，去醫院的路上一直把手臂貼在胸前。",
+            "zh-Hans": "卡蜜儿骑自行车摔倒后，去医院的路上一直把手臂贴在胸前。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-003",
@@ -124,7 +142,16 @@
           "form": "journée"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je brosse les cheveux de ma fille pendant qu’elle raconte sa journée d’école et prépare son spectacle.",
+          "translations": {
+            "zh-Hant": "我替女兒梳頭，她一邊講述在學校度過的一天，一邊準備自己的表演。",
+            "zh-Hans": "我替女儿梳头，她一边讲述在学校度过的一天，一边准备自己的表演。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-004",
@@ -154,7 +181,16 @@
           "form": "voyageur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un cheveu blond restait accroché à la manche du manteau que le voyageur avait oublié dans le train.",
+          "translations": {
+            "zh-Hant": "旅客忘在火車上的那件大衣，袖子上還黏著一根金髮。",
+            "zh-Hans": "旅客忘在火车上的那件大衣，袖子上还黏着一根金发。"
+          }
+        }
+      ]
     },
     {
       "id": "8.01-4",
@@ -185,7 +221,16 @@
           "form": "élèves"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le professeur montre un dessin du cœur et explique aux élèves comment le sang circule dans le corps.",
+          "translations": {
+            "zh-Hant": "老師展示一張心臟的圖，向學生解釋血液如何在體內循環。",
+            "zh-Hans": "老师展示一张心脏的图，向学生解释血液如何在体内循环。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-006",
@@ -215,7 +260,16 @@
           "form": "mouvements"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les danseurs prépareront leur corps par des exercices doux avant de répéter les mouvements du spectacle.",
+          "translations": {
+            "zh-Hant": "舞者們將先做柔和的運動來活動身體，再排練演出的動作。",
+            "zh-Hans": "舞者们将先做柔和的运动来活动身体，再排练演出的动作。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-007",
@@ -245,7 +299,16 @@
           "form": "patient"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Sur cette radiographie, la médecin montre une côte cassée au patient qui raconte sa chute dans l’escalier.",
+          "translations": {
+            "zh-Hant": "在這張 X 光片上，女醫師向病人指出一根斷裂的肋骨，病人則講述自己在樓梯上跌倒的經過。",
+            "zh-Hans": "在这张 X 光片上，女医师向病人指出一根断裂的肋骨，病人则讲述自己在楼梯上跌倒的经过。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-008",
@@ -275,7 +338,16 @@
           "form": "repas"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma fille a perdu une dent pendant le repas et l’a enveloppée soigneusement dans une serviette.",
+          "translations": {
+            "zh-Hant": "女兒吃飯時掉了一顆牙，小心地用餐巾把它包起來。",
+            "zh-Hans": "女儿吃饭时掉了一颗牙，小心地用餐巾把它包起来。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-009",
@@ -305,7 +377,16 @@
           "form": "enfant"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’enfant suit chaque ligne du livre avec son doigt et demande à son frère de lire plus lentement.",
+          "translations": {
+            "zh-Hant": "孩子用手指沿著書中的每一行移動，並請哥哥讀慢一點。",
+            "zh-Hans": "孩子用手指沿著书中的每一行移动，并请哥哥读慢一点。"
+          }
+        }
+      ]
     },
     {
       "id": "8.01-3",
@@ -336,7 +417,16 @@
           "form": "chantier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Après une journée passée au chantier, mon père avait mal au dos et préférait dîner dans le fauteuil.",
+          "translations": {
+            "zh-Hant": "在工地工作了一整天後，父親背痛，寧願坐在扶手椅上吃晚餐。",
+            "zh-Hans": "在工地工作了一整天后，父亲背痛，宁愿坐在扶手椅上吃晚餐。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-011",
@@ -366,7 +456,16 @@
           "form": "gare"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le photographe pose son appareil sur l’épaule et cherche un passage entre les voyageurs de la gare.",
+          "translations": {
+            "zh-Hant": "攝影師把相機放在肩上，在車站的旅客之間尋找通道。",
+            "zh-Hans": "摄影师把相机放在肩上，在车站的旅客之间寻找通道。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-012",
@@ -396,7 +495,16 @@
           "form": "bruit"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un bruit dans son estomac a fait rire la classe pendant que le professeur distribuait les exercices.",
+          "translations": {
+            "zh-Hant": "老師發練習題時，他胃裡發出的聲音逗笑了全班。",
+            "zh-Hans": "老师发练习题时，他胃里发出的声音逗笑了全班。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-013",
@@ -426,7 +534,16 @@
           "form": "famille"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Sa figure apparaît sur les photographies de famille, mais personne ne se rappelle le nom de son village.",
+          "translations": {
+            "zh-Hant": "家庭照片裡有他的面容，但沒有人記得他家鄉村莊的名字。",
+            "zh-Hans": "家庭照片里有他的面容，但没有人记得他家乡村庄的名字。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-014",
@@ -452,7 +569,16 @@
           "form": "lumière"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le peintre ajoutera de la lumière sur le front du modèle pour faire ressortir son regard.",
+          "translations": {
+            "zh-Hant": "畫家會把模特兒額頭的亮部畫得更亮，好襯托出眼神。",
+            "zh-Hans": "画家会把模特儿额头的亮部画得更亮，好衬托出眼神。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-015",
@@ -482,7 +608,16 @@
           "form": "documents"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mon genou touche le bureau lorsque je rapproche ma chaise pour lire les documents de mon collègue.",
+          "translations": {
+            "zh-Hant": "我把椅子拉近，閱讀同事的文件時，膝蓋碰到了書桌。",
+            "zh-Hans": "我把椅子拉近，阅读同事的文件时，膝盖碰到了书桌。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-016",
@@ -512,7 +647,16 @@
           "form": "terrain"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La joueuse s’est blessée à la jambe en courant et a quitté le terrain avec son entraîneur.",
+          "translations": {
+            "zh-Hant": "這位女球員跑步時腿部受傷，和教練一起離開了球場。",
+            "zh-Hans": "这位女球员跑步时腿部受伤，和教练一起离开了球场。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-017",
@@ -542,7 +686,16 @@
           "form": "réaction"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’enfant tire la langue devant le miroir, puis éclate de rire en voyant la réaction de sa sœur.",
+          "translations": {
+            "zh-Hant": "孩子對著鏡子吐舌頭，看到妹妹的反應後便哈哈大笑。",
+            "zh-Hans": "孩子对着镜子吐舌头，看到妹妹的反应后便哈哈大笑。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-018",
@@ -568,7 +721,16 @@
           "form": "mots"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Sa lèvre tremblait lorsqu’elle cherchait les mots pour annoncer son départ à ses collègues.",
+          "translations": {
+            "zh-Hant": "她找尋措辭，想向同事宣布自己即將離開時，嘴唇微微顫抖。",
+            "zh-Hans": "她找寻措辞，想向同事宣布自己即将离开时，嘴唇微微颤抖。"
+          }
+        }
+      ]
     },
     {
       "id": "8.01-2",
@@ -595,7 +757,16 @@
           "form": "tissu"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La couturière tient le tissu d’une main et guide les ciseaux de l’autre pour préparer la manche.",
+          "translations": {
+            "zh-Hant": "女裁縫一手握住布料，一手操控剪刀，裁出做袖子要用的布。",
+            "zh-Hans": "女裁缝一手握住布料，一手操控剪刀，裁出做袖子要用的布。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-020",
@@ -621,7 +792,16 @@
           "form": "activités"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une prothèse adaptée lui permettrait de bouger son membre plus facilement et de reprendre certaines activités.",
+          "translations": {
+            "zh-Hant": "合適的義肢可以讓他更輕鬆地活動肢體，並恢復某些活動。",
+            "zh-Hans": "合适的义肢可以让他更轻松地活动肢体，并恢复某些活动。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-021",
@@ -651,7 +831,16 @@
           "form": "marché"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le bébé fronce le nez quand sa sœur approche le fromage qu’elle vient de rapporter du marché.",
+          "translations": {
+            "zh-Hant": "姐姐把剛從市場買回來的乳酪湊近時，寶寶皺起了鼻子。",
+            "zh-Hans": "姐姐把刚从市场买回来的乳酪凑近时，宝宝皱起了鼻子。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-022",
@@ -681,7 +870,16 @@
           "form": "jardin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Pieds nus dans le jardin, les enfants ont traversé l’herbe pour regarder les oiseaux près de la fontaine.",
+          "translations": {
+            "zh-Hant": "孩子們赤腳走在花園裡，穿過草地，去看噴泉附近的鳥兒。",
+            "zh-Hans": "孩子们赤脚走在花园里，穿过草地，去看喷泉附近的鸟儿。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-023",
@@ -711,7 +909,16 @@
           "form": "architecte"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un œil sur le plan, l’architecte vérifie la position de la fenêtre et la largeur de la porte.",
+          "translations": {
+            "zh-Hant": "建築師一邊留意平面圖，一邊核對窗戶的位置和門的寬度。",
+            "zh-Hans": "建筑师一边留意平面图，一边核对窗户的位置和门的宽度。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-024",
@@ -741,7 +948,16 @@
           "form": "machine"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le technicien protégera ses oreilles pendant les essais de la machine installée dans le nouvel atelier.",
+          "translations": {
+            "zh-Hant": "技師將在測試新車間裡安裝的機器時保護自己的耳朵。",
+            "zh-Hans": "技师将在测试新车间里安装的机器时保护自己的耳朵。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-025",
@@ -771,7 +987,16 @@
           "form": "étudiants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La biologiste étudie un organisme marin avec ses étudiants et note ses réactions dans un cahier.",
+          "translations": {
+            "zh-Hant": "這位女生物學家和學生一起研究一種海洋生物，並在筆記本中記錄牠的反應。",
+            "zh-Hans": "这位女生物学家和学生一起研究一种海洋生物，并在笔记本中记录牠的反应。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-026",
@@ -801,7 +1026,16 @@
           "form": "vêtements"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La peau de ses mains devenait sèche après les longues journées passées à laver les vêtements du restaurant.",
+          "translations": {
+            "zh-Hant": "在餐廳長時間清洗衣物後，她雙手的皮膚變得乾燥。",
+            "zh-Hans": "在餐厅长时间清洗衣物后，她双手的皮肤变得干燥。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-027",
@@ -831,7 +1065,16 @@
           "form": "sac"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je cherche mon peigne dans le sac de voyage pendant que ma sœur prépare la salle de bains.",
+          "translations": {
+            "zh-Hant": "我在旅行袋裡找梳子，姐姐則在整理浴室。",
+            "zh-Hans": "我在旅行袋里找梳子，姐姐则在整理浴室。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-028",
@@ -857,7 +1100,16 @@
           "form": "équilibre"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le promeneur a posé le pied sur une pierre instable et perdu l’équilibre près du ruisseau.",
+          "translations": {
+            "zh-Hant": "散步的人一腳踩上鬆動的石頭，在溪邊失去了平衡。",
+            "zh-Hans": "散步的人一脚踩上松动的石头，在溪边失去了平衡。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-029",
@@ -887,7 +1139,16 @@
           "form": "conférence"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un poil de chat reste collé au pantalon du professeur, qui le retire avant sa conférence.",
+          "translations": {
+            "zh-Hant": "教授的褲子上黏著一根貓毛，他在演講前把它取下。",
+            "zh-Hans": "教授的裤子上黏着一根猫毛，他在演讲前把它取下。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-030",
@@ -913,7 +1174,16 @@
           "form": "mot"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Pose ton pouce sur la page pour garder ta place pendant que tu cherches le mot dans le dictionnaire.",
+          "translations": {
+            "zh-Hant": "查字典時，把拇指放在書頁上，以記住讀到的位置。",
+            "zh-Hans": "查字典时，把拇指放在书页上，以记住读到的位置。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-031",
@@ -943,7 +1213,16 @@
           "form": "laboratoire"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le laboratoire analyse un échantillon de sang et transmet les résultats au médecin chargé du dossier.",
+          "translations": {
+            "zh-Hant": "實驗室分析一份血液樣本，並將結果交給負責該病例的醫師。",
+            "zh-Hans": "实验室分析一份血液样本，并将结果交给负责该病例的医师。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-032",
@@ -973,7 +1252,16 @@
           "form": "voyageurs"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous avons acheté du savon et des serviettes pour accueillir les voyageurs bloqués par la neige.",
+          "translations": {
+            "zh-Hant": "我們買了肥皂和毛巾，準備接待因大雪而受困的旅客。",
+            "zh-Hans": "我们买了肥皂和毛巾，准备接待因大雪而受困的旅客。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-033",
@@ -1003,7 +1291,16 @@
           "form": "médecin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La médecin explique l’examen du sein avec un schéma et prend le temps de répondre aux questions.",
+          "translations": {
+            "zh-Hant": "女醫師用圖解說明乳房檢查，並耐心回答問題。",
+            "zh-Hans": "女医师用图解说明乳房检查，并耐心回答问题。"
+          }
+        }
+      ]
     },
     {
       "id": "8.01-1",
@@ -1034,7 +1331,16 @@
           "form": "voyageur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La tête appuyée contre la vitre, le voyageur regardait les champs défiler jusqu’à la prochaine gare.",
+          "translations": {
+            "zh-Hant": "旅客把頭靠在車窗上，看著一片片田野掠過，直到火車抵達下一站。",
+            "zh-Hans": "旅客把头靠在车窗上，看着一片片田野掠过，直到火车抵达下一站。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-035",
@@ -1064,7 +1370,16 @@
           "form": "famille"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Sur son visage, un sourire remplace peu à peu la fatigue quand elle aperçoit sa famille sur le quai.",
+          "translations": {
+            "zh-Hant": "她在月台上看見家人時，臉上的疲憊逐漸被笑容取代。",
+            "zh-Hans": "她在月台上看见家人时，脸上的疲惫逐渐被笑容取代。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-036",
@@ -1094,7 +1409,16 @@
           "form": "concert"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La chanteuse reposera sa voix avant le concert et laissera son collègue présenter le programme au public.",
+          "translations": {
+            "zh-Hant": "這位女歌手將在音樂會前讓嗓子休息，由同事向觀眾介紹節目。",
+            "zh-Hans": "这位女歌手将在音乐会前让嗓子休息，由同事向观众介绍节目。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-037",
@@ -1120,7 +1444,16 @@
           "form": "étudiants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dans le laboratoire, les étudiants observent un modèle de l’A.D.N. et comparent leurs notes après le cours.",
+          "translations": {
+            "zh-Hant": "在實驗室裡，學生們觀察 DNA 模型，並在課後互相比較筆記。",
+            "zh-Hans": "在实验室里，学生们观察 DNA 模型，并在课后互相比较笔记。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-038",
@@ -1146,7 +1479,16 @@
           "form": "fils"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mon frère a rasé sa barbe avant l’entretien, mais son fils l’a reconnu immédiatement sur la photographie.",
+          "translations": {
+            "zh-Hant": "哥哥在面試前剃掉了鬍子，但他的兒子仍立即在照片中認出了他。",
+            "zh-Hans": "哥哥在面试前剃掉了胡子，但他的儿子仍立即在照片中认出了他。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-039",
@@ -1176,7 +1518,16 @@
           "form": "professeur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La danseuse incline le buste sans bouger les pieds pendant que son professeur corrige la position des épaules.",
+          "translations": {
+            "zh-Hant": "女舞者雙腳不動地傾斜上半身，老師則修正她肩膀的位置。",
+            "zh-Hans": "女舞者双脚不动地倾斜上半身，老师则修正她肩膀的位置。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-040",
@@ -1206,7 +1557,16 @@
           "form": "élèves"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le cours de biologie abordait la division cellulaire à partir de dessins réalisés par les élèves.",
+          "translations": {
+            "zh-Hant": "生物課以學生繪製的圖畫為基礎，講解細胞分裂。",
+            "zh-Hans": "生物课以学生绘制的图画为基础，讲解细胞分裂。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-041",
@@ -1236,7 +1596,16 @@
           "form": "chercheuse"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette chercheuse compare l’activité cérébrale de volontaires pendant un exercice de mémoire et une tâche de lecture.",
+          "translations": {
+            "zh-Hant": "這位女研究員比較志願者在進行記憶練習和閱讀任務時的大腦活動。",
+            "zh-Hans": "这位女研究员比较志愿者在进行记忆练习和阅读任务时的大脑活动。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-042",
@@ -1266,7 +1635,16 @@
           "form": "enfants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le musée présentera une maquette du cerveau et proposera aux enfants des jeux sur les cinq sens.",
+          "translations": {
+            "zh-Hant": "博物館將展示大腦模型，並為孩子們安排與五感有關的遊戲。",
+            "zh-Hans": "博物馆将展示大脑模型，并为孩子们安排与五感有关的游戏。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-043",
@@ -1292,7 +1670,16 @@
           "form": "acteurs"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le mouvement corporel occupe une place importante dans la formation des acteurs qui préparent cette pièce.",
+          "translations": {
+            "zh-Hant": "肢體動作在準備這齣戲的演員訓練中占有重要地位。",
+            "zh-Hans": "肢体动作在准备这出戏的演员训练中占有重要地位。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-044",
@@ -1318,7 +1705,16 @@
           "form": "gare"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "J’ai enroulé mon écharpe autour du cou avant de sortir attendre le bus près de la gare sous la neige.",
+          "translations": {
+            "zh-Hant": "我先把圍巾繞在脖子上，才出門到車站附近的雪中等公車。",
+            "zh-Hans": "我先把围巾绕在脖子上，才出门到车站附近的雪中等公车。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-045",
@@ -1348,7 +1744,16 @@
           "form": "collègue"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Son coude heurte la tasse quand elle se retourne pour saluer une collègue à l’entrée du café.",
+          "translations": {
+            "zh-Hant": "她轉身向咖啡館入口的一位女同事打招呼時，手肘碰到了杯子。",
+            "zh-Hans": "她转身向咖啡馆入口的一位女同事打招呼时，手肘碰到了杯子。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-046",
@@ -1378,7 +1783,16 @@
           "form": "noms"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’étudiant dessinait le crâne humain pendant que sa camarade cherchait les noms des os dans le manuel.",
+          "translations": {
+            "zh-Hant": "這位男學生正在畫人類頭骨，女同學則在課本裡查找骨骼的名稱。",
+            "zh-Hans": "这位男学生正在画人类头骨，女同学则在课本里查找骨骼的名称。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-047",
@@ -1408,7 +1822,16 @@
           "form": "professeur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un schéma du foie aide le professeur à expliquer la digestion sans multiplier les termes techniques.",
+          "translations": {
+            "zh-Hant": "肝臟示意圖幫助老師解釋消化過程，無須使用太多專業術語。",
+            "zh-Hans": "肝脏示意图帮助老师解释消化过程，无须使用太多专业术语。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-048",
@@ -1434,7 +1857,16 @@
           "form": "douleur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La chanteuse a signalé une douleur à la gorge et demandé le report de la répétition.",
+          "translations": {
+            "zh-Hant": "女歌手表示喉嚨疼痛，並要求延後排練。",
+            "zh-Hans": "女歌手表示喉咙疼痛，并要求延后排练。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-049",
@@ -1464,7 +1896,16 @@
           "form": "élève"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’élève pointe son index vers le tableau pour montrer la faute qu’il vient de remarquer dans le calcul.",
+          "translations": {
+            "zh-Hant": "學生用食指指著黑板，指出他剛在計算中發現的錯誤。",
+            "zh-Hans": "学生用食指指着黑板，指出他刚在计算中发现的错误。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-050",
@@ -1494,7 +1935,16 @@
           "form": "bruit"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un examen interne du moteur serait nécessaire pour comprendre le bruit qui inquiète le conducteur.",
+          "translations": {
+            "zh-Hant": "要弄清楚令駕駛擔憂的噪音，可能需要檢查引擎內部。",
+            "zh-Hans": "要弄清楚令驾驶担忧的噪音，可能需要检查引擎内部。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-051",
@@ -1524,7 +1974,16 @@
           "form": "école"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La joue de mon fils porte encore une trace de peinture après l’atelier organisé à l’école.",
+          "translations": {
+            "zh-Hant": "學校舉辦的工作坊結束後，兒子的臉頰上還留著一抹顏料。",
+            "zh-Hans": "学校举办的工作坊结束后，儿子的脸颊上还留着一抹颜料。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-052",
@@ -1554,7 +2013,16 @@
           "form": "projet"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La maturité de son jugement étonnait ses collègues, surtout pendant les réunions où chacun défendait son projet.",
+          "translations": {
+            "zh-Hant": "他判斷事情時表現出的成熟令同事驚訝，尤其是在大家各自為自己的計畫辯護的會議中。",
+            "zh-Hans": "他判断事情时表现出的成熟令同事惊讶，尤其是在大家各自为自己的计划辩护的会议中。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-053",
@@ -1584,7 +2052,16 @@
           "form": "chanson"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Pour exercer sa mémoire, ma grand-mère apprend une chanson et raconte son enfance à ses petits-enfants.",
+          "translations": {
+            "zh-Hant": "為了鍛鍊記憶力，奶奶學唱一首歌，也說自己的童年往事給孫子孫女聽。",
+            "zh-Hans": "为了锻炼记忆力，奶奶学唱一首歌，也说自己的童年往事给孙子孙女听。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-054",
@@ -1614,7 +2091,16 @@
           "form": "barbe"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La costumière a fixé une fausse barbe sous le menton de l’acteur avant son entrée sur scène.",
+          "translations": {
+            "zh-Hant": "服裝師在演員上台前，把假鬍子固定在他的下巴下面。",
+            "zh-Hans": "服装师在演员上台前，把假胡子固定在他的下巴下面。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-055",
@@ -1644,7 +2130,16 @@
           "form": "main"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce dessin représente un muscle du bras et montre comment il participe au mouvement de la main.",
+          "translations": {
+            "zh-Hant": "這張圖畫出手臂上的一條肌肉，並說明它如何協助手部活動。",
+            "zh-Hans": "这张图画出手臂上的一条肌肉，并说明它如何协助手部活动。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-056",
@@ -1674,7 +2169,16 @@
           "form": "spécialiste"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La spécialiste expliquera le rôle du nerf sur le schéma avant de commenter les résultats de l’examen.",
+          "translations": {
+            "zh-Hant": "專科醫師將先用圖解說明神經的作用，再講解檢查結果。",
+            "zh-Hans": "专科医师将先用图解说明神经的作用，再讲解检查结果。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-057",
@@ -1700,7 +2204,16 @@
           "form": "élèves"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les élèves choisissent un organe et préparent une affiche pour expliquer sa fonction aux autres classes.",
+          "translations": {
+            "zh-Hant": "學生們選擇一個器官，製作海報，向其他班級說明它的功能。",
+            "zh-Hans": "学生们选择一个器官，制作海报，向其他班级说明它的功能。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-058",
@@ -1730,7 +2243,16 @@
           "form": "sol"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La chercheuse comparait les matières organiques présentes dans le sol après la récolte et au début du printemps.",
+          "translations": {
+            "zh-Hant": "這位女研究員比較收穫後和初春時土壤中的有機物質。",
+            "zh-Hans": "这位女研究员比较收获后和初春时土壤中的有机物质。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-059",
@@ -1760,7 +2282,16 @@
           "form": "enfant"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dans sa paume, l’enfant cache une pièce qu’il veut dépenser pour acheter un cadeau à sa sœur.",
+          "translations": {
+            "zh-Hant": "孩子把一枚硬幣藏在掌心裡，想用它買禮物送給姐姐。",
+            "zh-Hans": "孩子把一枚硬币藏在掌心里，想用它买礼物送给姐姐。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-060",
@@ -1786,7 +2317,16 @@
           "form": "bibliothèque"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une poussière s’est glissée sous sa paupière pendant qu’il rangeait les livres de la bibliothèque.",
+          "translations": {
+            "zh-Hant": "他整理圖書館的書籍時，一粒灰塵進了眼皮底下。",
+            "zh-Hans": "他整理图书馆的书籍时，一粒灰尘进了眼皮底下。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-061",
@@ -1816,7 +2356,16 @@
           "form": "quartier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La montre serre mon poignet depuis que j’ai remplacé le bracelet dans une petite boutique du quartier.",
+          "translations": {
+            "zh-Hant": "自從我在附近的小店換了錶帶後，手錶就一直勒著手腕。",
+            "zh-Hans": "自从我在附近的小店换了表带后，手表就一直勒着手腕。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-062",
@@ -1846,7 +2395,16 @@
           "form": "collègues"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le boxeur levait le poing après le combat, puis rejoignait sa famille et ses collègues près de la salle.",
+          "translations": {
+            "zh-Hant": "拳擊手在比賽後舉起拳頭，接著到場館附近與家人和同事會合。",
+            "zh-Hans": "拳击手在比赛后举起拳头，接着到场馆附近与家人和同事会合。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-063",
@@ -1876,7 +2434,16 @@
           "form": "père"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le bébé dort contre la poitrine de son père pendant que le train traverse la campagne.",
+          "translations": {
+            "zh-Hant": "火車穿越鄉間時，寶寶貼著父親的胸膛睡著了。",
+            "zh-Hans": "火车穿越乡间时，宝宝贴着父亲的胸膛睡着了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-064",
@@ -1906,7 +2473,16 @@
           "form": "élèves"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le cours abordera la reproduction des plantes avant la visite du jardin botanique avec les élèves.",
+          "translations": {
+            "zh-Hant": "在學生們參觀植物園之前，課程將先講解植物的繁殖。",
+            "zh-Hans": "在学生们参观植物园之前，课程将先讲解植物的繁殖。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-065",
@@ -1936,7 +2512,16 @@
           "form": "savon"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce shampooing se trouve dans le même rayon que le savon et les brosses du magasin.",
+          "translations": {
+            "zh-Hant": "這款洗髮精和肥皂、刷子都放在店裡的同一個貨架區。",
+            "zh-Hans": "这款洗发精和肥皂、刷子都放在店里的同一个货架区。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-066",
@@ -1966,7 +2551,16 @@
           "form": "village"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La sueur a mouillé sa chemise après la longue montée entre la gare et le village.",
+          "translations": {
+            "zh-Hant": "從車站走到村莊的漫長上坡路後，汗水浸濕了他的襯衫。",
+            "zh-Hans": "从车站走到村庄的漫长上坡路后，汗水浸湿了他的衬衫。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-067",
@@ -1996,7 +2590,16 @@
           "form": "consultation"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’infirmière mesure la tension du patient et inscrit le résultat dans son dossier avant la consultation.",
+          "translations": {
+            "zh-Hant": "護理師測量病人的血壓，並在看診前將結果記入病歷。",
+            "zh-Hans": "护理师测量病人的血压，并在看诊前将结果记入病历。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-068",
@@ -2026,7 +2629,16 @@
           "form": "grand-mère"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma grand-mère faisait sa toilette près de la fenêtre pendant que mon grand-père préparait le petit déjeuner.",
+          "translations": {
+            "zh-Hant": "祖母在窗邊梳洗，祖父則在準備早餐。",
+            "zh-Hans": "祖母在窗边梳洗，祖父则在准备早餐。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-069",
@@ -2056,7 +2668,16 @@
           "form": "couleur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Sur le dessin, chaque vaisseau apparaît en couleur pour que les élèves suivent la circulation du sang.",
+          "translations": {
+            "zh-Hant": "圖中每一條血管都以顏色標示，讓學生能追蹤血液循環。",
+            "zh-Hans": "图中每一条血管都以颜色标示，让学生能追踪血液循环。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-070",
@@ -2082,7 +2703,16 @@
           "form": "bras"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La médecin a montré une veine sur le bras du mannequin utilisé pendant la formation.",
+          "translations": {
+            "zh-Hant": "女醫師在培訓使用的人體模型手臂上指出了一條靜脈。",
+            "zh-Hans": "女医师在培训使用的人体模型手臂上指出了一条静脉。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.01-071",
@@ -2112,7 +2742,16 @@
           "form": "sœur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le chat se couche sur le ventre de ma sœur pendant qu’elle lit son livre dans le fauteuil.",
+          "translations": {
+            "zh-Hant": "姐姐坐在扶手椅上看書時，貓趴在她的肚子上。",
+            "zh-Hans": "姐姐坐在扶手椅上看书时，猫趴在她的肚子上。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-001",
@@ -2142,7 +2781,16 @@
           "form": "épaule"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "J’ai eu mal à l’épaule après le déménagement et demandé à mon frère de porter les derniers cartons.",
+          "translations": {
+            "zh-Hant": "搬家後我的肩膀疼痛，於是請哥哥搬最後幾個紙箱。",
+            "zh-Hans": "搬家后我的肩膀疼痛，于是请哥哥搬最后几个纸箱。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-002",
@@ -2172,7 +2820,16 @@
           "form": "père"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un cigare oublié dans une boîte rappelle à mon père les voyages de son grand-père à Cuba.",
+          "translations": {
+            "zh-Hant": "一支被遺忘在盒子裡的雪茄，讓爸爸想起他爺爺去古巴旅行的往事。",
+            "zh-Hans": "一支被遗忘在盒子里的雪茄，让爸爸想起他爷爷去古巴旅行的往事。"
+          }
+        }
+      ]
     },
     {
       "id": "8.02-3",
@@ -2199,7 +2856,16 @@
           "form": "consultations"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La douleur l’empêchait de dormir, alors sa sœur l’accompagnait aux consultations et prenait des notes.",
+          "translations": {
+            "zh-Hant": "疼痛讓他無法入睡，因此姐姐陪他去看診，並做筆記。",
+            "zh-Hans": "疼痛让他无法入睡，因此姐姐陪他去看诊，并做笔记。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-004",
@@ -2229,7 +2895,16 @@
           "form": "médecin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le patient décrit sa faiblesse au médecin et explique pourquoi il a quitté son travail plus tôt.",
+          "translations": {
+            "zh-Hant": "病人向醫師描述自己虛弱的情況，並解釋為何提早下班。",
+            "zh-Hans": "病人向医师描述自己虚弱的情况，并解释为何提早下班。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-005",
@@ -2259,7 +2934,16 @@
           "form": "village"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dans ce roman, le village a cru l’inventeur fou avant de comprendre l’utilité de sa machine.",
+          "translations": {
+            "zh-Hant": "在這本小說中，村民一度以為那位發明家瘋了，後來才明白他的機器有何用途。",
+            "zh-Hans": "在这本小说中，村民一度以为那位发明家疯了，后来才明白他的机器有何用途。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-006",
@@ -2289,7 +2973,16 @@
           "form": "santé"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un ancien fumeur raconte son expérience aux étudiants qui préparent une exposition sur la santé.",
+          "translations": {
+            "zh-Hant": "一位已戒菸的人向正在籌備健康主題展覽的學生講述自己的經驗。",
+            "zh-Hans": "一位已戒烟的人向正在筹备健康主题展览的学生讲述自己的经验。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-007",
@@ -2319,7 +3012,16 @@
           "form": "hôpital"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les bénévoles apporteront des livres aux malades et organiseront un petit concert dans la salle commune de l’hôpital.",
+          "translations": {
+            "zh-Hant": "志工會帶書給病人，還會在醫院的公共休息室舉辦一場小型音樂會。",
+            "zh-Hans": "志工会带书给病人，还会在医院的公共休息室举办一场小型音乐会。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-008",
@@ -2349,7 +3051,16 @@
           "form": "famille"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La maladie bouleverse leur vie, mais la famille organise les visites et partage les tâches quotidiennes.",
+          "translations": {
+            "zh-Hant": "疾病打亂了他們的生活，但一家人仍安排好探病的時間，也分攤日常家務。",
+            "zh-Hans": "疾病打乱了他们的生活，但一家人仍安排好探病的时间，也分摊日常家务。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-009",
@@ -2379,7 +3090,16 @@
           "form": "musicien"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Après la mort de son ami, le musicien retrouvait du réconfort dans les répétitions avec son groupe.",
+          "translations": {
+            "zh-Hant": "朋友過世後，那位樂手和樂團一起排練時，總能獲得一些安慰。",
+            "zh-Hans": "朋友过世后，那位乐手和乐团一起排练时，总能获得一些安慰。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-010",
@@ -2409,7 +3129,16 @@
           "form": "père"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le personnage apprend que son père est en train de mourir et décide de rentrer au village.",
+          "translations": {
+            "zh-Hant": "故事裡的角色得知父親病危，便決定回村裡去。",
+            "zh-Hans": "故事里的角色得知父亲病危，便决定回村里去。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-011",
@@ -2439,7 +3168,16 @@
           "form": "médecin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le médecin a expliqué que le résultat était normal, puis répondu aux questions restées sans réponse.",
+          "translations": {
+            "zh-Hant": "醫師解釋檢查結果正常，然後回答了先前還沒得到解答的問題。",
+            "zh-Hans": "医师解释检查结果正常，然后回答了先前还没得到解答的问题。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-012",
@@ -2469,7 +3207,16 @@
           "form": "questions"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La patiente prépare ses questions dans un cahier et apporte les résultats de ses examens à la consultation.",
+          "translations": {
+            "zh-Hant": "女病人把問題寫在筆記本裡，並帶著檢查結果去看診。",
+            "zh-Hans": "女病人把问题写在笔记本里，并带着检查结果去看诊。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-013",
@@ -2499,7 +3246,16 @@
           "form": "montre"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La pipe de mon grand-père reposait dans un tiroir avec sa montre et ses anciennes lunettes.",
+          "translations": {
+            "zh-Hant": "祖父的菸斗放在抽屜裡，旁邊是他的手錶和舊眼鏡。",
+            "zh-Hans": "祖父的烟斗放在抽屉里，旁边是他的手表和旧眼镜。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-014",
@@ -2529,7 +3285,16 @@
           "form": "promenades"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Depuis son retour à la maison, notre voisine se porte mieux et reprend les promenades avec son chien.",
+          "translations": {
+            "zh-Hant": "自從回家後，我們的女鄰居身體好多了，也重新開始帶狗散步。",
+            "zh-Hans": "自从回家后，我们的女邻居身体好多了，也重新开始带狗散步。"
+          }
+        }
+      ]
     },
     {
       "id": "8.02-2",
@@ -2560,7 +3325,16 @@
           "form": "concert"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Si son rhume persiste, le chanteur demandera conseil avant de confirmer sa participation au concert.",
+          "translations": {
+            "zh-Hant": "如果感冒一直不好，這位男歌手會先徵詢意見，再確認是否參加音樂會。",
+            "zh-Hans": "如果感冒一直不好，这位男歌手会先征询意见，再确认是否参加音乐会。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-016",
@@ -2590,7 +3364,16 @@
           "form": "salariés"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La santé des salariés figure à l’ordre du jour de la réunion consacrée aux conditions de travail.",
+          "translations": {
+            "zh-Hant": "員工健康列在這場討論工作條件的會議議程上。",
+            "zh-Hans": "员工健康列在这场讨论工作条件的会议议程上。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-017",
@@ -2620,7 +3403,16 @@
           "form": "train"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je me suis senti fatigué dans le train et j’ai dormi jusqu’à l’arrivée à la gare.",
+          "translations": {
+            "zh-Hant": "我在火車上感到疲倦，一直睡到抵達車站。",
+            "zh-Hans": "我在火车上感到疲倦，一直睡到抵达车站。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-018",
@@ -2650,7 +3442,16 @@
           "form": "association"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’association accompagne les personnes qui souffrent et propose aussi une aide aux membres de leur famille.",
+          "translations": {
+            "zh-Hant": "這個協會陪伴承受痛苦的人，也向他們的家人提供協助。",
+            "zh-Hans": "这个协会陪伴承受痛苦的人，也向他们的家人提供协助。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-019",
@@ -2680,7 +3481,16 @@
           "form": "fenêtres"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’odeur du tabac restait dans les rideaux de l’ancien café malgré les fenêtres ouvertes sur le jardin.",
+          "translations": {
+            "zh-Hant": "雖然窗戶朝花園敞開，舊咖啡館的窗簾仍殘留著菸草味。",
+            "zh-Hans": "虽然窗户朝花园敞开，旧咖啡馆的窗帘仍残留着烟草味。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-020",
@@ -2710,7 +3520,16 @@
           "form": "infirmière"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’enfant tousse pendant la lecture ; son père ferme le livre et l’accompagne auprès de l’infirmière scolaire.",
+          "translations": {
+            "zh-Hant": "孩子在閱讀時咳嗽，父親便闔上書，陪他去找學校護理師。",
+            "zh-Hans": "孩子在阅读时咳嗽，父亲便阖上书，陪他去找学校护理师。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-021",
@@ -2736,7 +3555,16 @@
           "form": "enfants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une vie moins chargée permettrait à notre collègue de consacrer davantage de temps à ses enfants.",
+          "translations": {
+            "zh-Hant": "如果生活沒那麼忙碌，我們的同事就能有更多時間陪孩子。",
+            "zh-Hans": "如果生活没那么忙碌，我们的同事就能有更多时间陪孩子。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-022",
@@ -2762,7 +3590,16 @@
           "form": "douleur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une vive douleur au poignet surprend le violoniste pendant la répétition ; il prévient aussitôt sa professeure.",
+          "translations": {
+            "zh-Hant": "排練時，小提琴手的手腕突然劇痛，他立即告知老師。",
+            "zh-Hans": "排练时，小提琴手的手腕突然剧痛，他立即告知老师。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-023",
@@ -2788,7 +3625,16 @@
           "form": "secours"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les secours ont retrouvé le promeneur vivant près d’une cabane où il avait passé la nuit.",
+          "translations": {
+            "zh-Hant": "救援人員在一間小屋附近找到了仍活著的健行者，他曾在那裡過夜。",
+            "zh-Hans": "救援人员在一间小屋附近找到了仍活着的健行者，他曾在那里过夜。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-024",
@@ -2818,7 +3664,16 @@
           "form": "voisins"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma tante vit seule, mais partage souvent ses repas avec les voisins et participe aux activités du quartier.",
+          "translations": {
+            "zh-Hant": "阿姨獨居，但經常與鄰居一起吃飯，也參加社區活動。",
+            "zh-Hans": "阿姨独居，但经常与邻居一起吃饭，也参加社区活动。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-025",
@@ -2848,7 +3703,16 @@
           "form": "technicien"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le bruit paraissait anormal au technicien, qui comparait les mesures avant d’arrêter la machine.",
+          "translations": {
+            "zh-Hant": "技術員覺得這聲音不太尋常，便先比對測量數據，再把機器停下來。",
+            "zh-Hans": "技术员觉得这声音不太寻常，便先比对测量数据，再把机器停下来。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-026",
@@ -2878,7 +3742,16 @@
           "form": "familles"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette association aide les familles dont un enfant est atteint d’une maladie qui nécessite des soins réguliers.",
+          "translations": {
+            "zh-Hant": "這個協會協助家有孩子患病、需要定期照護的家庭。",
+            "zh-Hans": "这个协会协助家有孩子患病、需要定期照护的家庭。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-027",
@@ -2908,7 +3781,16 @@
           "form": "train"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une voyageuse aveugle a demandé au personnel de la gare de l’accompagner jusqu’à son train.",
+          "translations": {
+            "zh-Hant": "一位視障女旅客請車站工作人員陪她走到要搭乘的火車。",
+            "zh-Hans": "一位视障女旅客请车站工作人员陪她走到要搭乘的火车。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-028",
@@ -2938,7 +3820,16 @@
           "form": "pause"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une chaussure mal adaptée peut blesser le pied et rendre la promenade pénible avant même la première pause.",
+          "translations": {
+            "zh-Hant": "不合腳的鞋可能使腳受傷，甚至在第一次休息前就讓散步變得難受。",
+            "zh-Hans": "不合脚的鞋可能使脚受伤，甚至在第一次休息前就让散步变得难受。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-029",
@@ -2968,7 +3859,16 @@
           "form": "chantier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le médecin examinera la blessure après avoir écouté le récit de la chute sur le chantier.",
+          "translations": {
+            "zh-Hant": "醫師將先聽取在工地跌倒的經過，再檢查傷口。",
+            "zh-Hans": "医师将先听取在工地跌倒的经过，再检查伤口。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-030",
@@ -2998,7 +3898,16 @@
           "form": "étudiants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le laboratoire étudie le cancer et accueille des chercheurs qui présentent leurs travaux aux étudiants en médecine.",
+          "translations": {
+            "zh-Hant": "這間實驗室研究癌症，也接待來向醫學生介紹研究成果的學者。",
+            "zh-Hans": "这间实验室研究癌症，也接待来向医学生介绍研究成果的学者。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-031",
@@ -3024,7 +3933,16 @@
           "form": "patiente"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La spécialiste a commenté l’examen cardiaque avant de parler avec la patiente de ses prochaines consultations.",
+          "translations": {
+            "zh-Hant": "專科醫師先說明心臟檢查的情況，再與女病人討論接下來的看診安排。",
+            "zh-Hans": "专科医师先说明心脏检查的情况，再与女病人讨论接下来的看诊安排。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-032",
@@ -3054,7 +3972,16 @@
           "form": "oncle"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une cigarette éteinte reste dans le cendrier du balcon, à côté du journal que mon oncle a oublié.",
+          "translations": {
+            "zh-Hant": "陽台上的菸灰缸裡還留著一支熄了的香菸，旁邊放著叔叔忘了拿的報紙。",
+            "zh-Hans": "阳台上的烟灰缸里还留着一支熄了的香烟，旁边放着叔叔忘了拿的报纸。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-033",
@@ -3084,7 +4011,16 @@
           "form": "réunion"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’annonce du décès avait interrompu la réunion, et chacun cherchait les mots pour soutenir sa collègue.",
+          "translations": {
+            "zh-Hant": "死訊打斷了會議，大家都在尋找適當的話語來安慰女同事。",
+            "zh-Hans": "死讯打断了会议，大家都在寻找适当的话语来安慰女同事。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-034",
@@ -3114,7 +4050,16 @@
           "form": "équipe"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’infirmier signale un épisode de délire et décrit précisément les paroles du patient à l’équipe médicale.",
+          "translations": {
+            "zh-Hant": "男護理師通報病人曾出現譫妄，並向醫療團隊準確描述病人說過的話。",
+            "zh-Hans": "男护理师通报病人曾出现谵妄，并向医疗团队准确描述病人说过的话。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-035",
@@ -3144,7 +4089,16 @@
           "form": "étudiants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La conférence sur la dépression réunira des professionnels, des étudiants et des personnes qui souhaitent partager leur expérience.",
+          "translations": {
+            "zh-Hant": "這場關於憂鬱症的研討會將聚集專業人士、學生，以及想分享自身經驗的人。",
+            "zh-Hans": "这场关于忧郁症的研讨会将聚集专业人士、学生，以及想分享自身经验的人。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-036",
@@ -3170,7 +4124,16 @@
           "form": "amis"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette séparation reste douloureuse, mais les amis de Samira l’invitent régulièrement à dîner ou à se promener.",
+          "translations": {
+            "zh-Hant": "這次分離依然令人痛苦，但薩米拉的朋友們經常邀她吃晚餐或散步。",
+            "zh-Hans": "这次分离依然令人痛苦，但萨米拉的朋友们经常邀她吃晚餐或散步。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-037",
@@ -3200,7 +4163,16 @@
           "form": "costume"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’actrice a dit qu’elle étouffait sous son costume et demandé une pause avant de reprendre la scène.",
+          "translations": {
+            "zh-Hant": "女演員說穿著戲服悶得喘不過氣，要求先休息一下再繼續演出這一幕。",
+            "zh-Hans": "女演员说穿着戏服闷得喘不过气，要求先休息一下再继续演出这一幕。"
+          }
+        }
+      ]
     },
     {
       "id": "8.02-1",
@@ -3231,7 +4203,16 @@
           "form": "questions"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La mère note l’heure à laquelle la fièvre apparaît et prépare ses questions pour le médecin.",
+          "translations": {
+            "zh-Hant": "母親記下發燒出現的時間，並準備要問醫師的問題。",
+            "zh-Hans": "母亲记下发烧出现的时间，并准备要问医师的问题。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-039",
@@ -3261,7 +4242,16 @@
           "form": "vérité"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dans la pièce, la folie du roi inquiétait ses conseillers, qui hésitaient à révéler la vérité au peuple.",
+          "translations": {
+            "zh-Hant": "在劇中，國王的瘋狂令顧問們擔憂，他們猶豫是否該向人民揭露真相。",
+            "zh-Hans": "在剧中，国王的疯狂令顾问们担忧，他们犹豫是否该向人民揭露真相。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-040",
@@ -3291,7 +4281,16 @@
           "form": "laboratoire"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Son handicap ne l’empêche pas de travailler au laboratoire, dont l’équipe a adapté le matériel et les horaires.",
+          "translations": {
+            "zh-Hant": "他的身心障礙並未妨礙他在實驗室工作，團隊為此調整了設備和工作時間。",
+            "zh-Hans": "他的身心障碍并未妨碍他在实验室工作，团队为此调整了设备和工作时间。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-041",
@@ -3317,7 +4316,16 @@
           "form": "contrat"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Sans traduction, je serais incapable de remplir ce formulaire et de comprendre les conditions du contrat.",
+          "translations": {
+            "zh-Hant": "如果沒有翻譯，我就無法填寫這份表格，也無法理解合約條款。",
+            "zh-Hans": "如果没有翻译，我就无法填写这份表格，也无法理解合约条款。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-042",
@@ -3347,7 +4355,16 @@
           "form": "médecin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le médecin recherche l’origine de l’infection et demande au patient quels symptômes sont apparus pendant le voyage.",
+          "translations": {
+            "zh-Hant": "醫師正在找出感染的源頭，也詢問病人旅途中出現了哪些症狀。",
+            "zh-Hans": "医师正在找出感染的源头，也询问病人旅途中出现了哪些症状。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-043",
@@ -3377,7 +4394,16 @@
           "form": "aide"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La radiographie a révélé une lésion que la spécialiste a expliquée à l’aide d’un dessin.",
+          "translations": {
+            "zh-Hant": "X 光檢查發現一處損傷，專科醫師藉助圖畫加以說明。",
+            "zh-Hans": "X 光检查发现一处损伤，专科医师借助图画加以说明。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-044",
@@ -3407,7 +4433,16 @@
           "form": "voyageuse"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La voyageuse décrit son malaise au personnel de la gare pendant que son amie appelle les secours.",
+          "translations": {
+            "zh-Hant": "女旅客向車站工作人員描述自己的身體不適，同行的女性友人則呼叫救援。",
+            "zh-Hans": "女旅客向车站工作人员描述自己的身体不适，同行的女性友人则呼叫救援。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-045",
@@ -3437,7 +4472,16 @@
           "form": "habitants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dans le roman, les habitants veillaient le mort et apportaient des repas à sa famille.",
+          "translations": {
+            "zh-Hant": "小說裡，居民為死者守靈，也送餐給他的家人。",
+            "zh-Hans": "小说里，居民为死者守灵，也送餐给他的家人。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-046",
@@ -3467,7 +4511,16 @@
           "form": "régions"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le rapport compare la mortalité dans plusieurs régions et souligne les limites des données disponibles.",
+          "translations": {
+            "zh-Hant": "這份報告比較了幾個地區的死亡率，並指出現有資料的侷限。",
+            "zh-Hans": "这份报告比较了几个地区的死亡率，并指出现有资料的局限。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-047",
@@ -3497,7 +4550,16 @@
           "form": "familles"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le documentaire évoquera cet accident mortel en donnant la parole aux familles et aux enquêteurs.",
+          "translations": {
+            "zh-Hant": "這部紀錄片將透過家屬和調查人員的講述，回顧那起致命事故。",
+            "zh-Hans": "这部纪录片将透过家属和调查人员的讲述，回顾那起致命事故。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-048",
@@ -3527,7 +4589,16 @@
           "form": "camarades"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’enfant, muet depuis sa naissance, raconte ses histoires avec des images que ses camarades comprennent facilement.",
+          "translations": {
+            "zh-Hant": "這個自出生就無法說話的孩子，用同學們很容易理解的圖畫講述自己的故事。",
+            "zh-Hans": "这个自出生就无法说话的孩子，用同学们很容易理解的图画讲述自己的故事。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-049",
@@ -3557,7 +4628,16 @@
           "form": "infirmière"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’infirmière a examiné la plaie et demandé comment l’accident s’était produit pendant les travaux du jardin.",
+          "translations": {
+            "zh-Hant": "護理師檢查了傷口，並詢問在花園工作時，意外是如何發生的。",
+            "zh-Hans": "护理师检查了伤口，并询问在花园工作时，意外是如何发生的。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-050",
@@ -3587,7 +4667,16 @@
           "form": "quartier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La cantine cherche à proposer un repas sain sans dépasser le budget des familles du quartier.",
+          "translations": {
+            "zh-Hant": "食堂希望在不超出社區家庭預算的情況下，提供健康的餐點。",
+            "zh-Hans": "食堂希望在不超出社区家庭预算的情况下，提供健康的餐点。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-051",
@@ -3613,7 +4702,16 @@
           "form": "frère"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La souffrance de son frère l’inquiétait, mais elle ne savait pas comment aborder le sujet avec lui.",
+          "translations": {
+            "zh-Hant": "弟弟的痛苦令她擔心，但她不知道該如何和他談起這件事。",
+            "zh-Hans": "弟弟的痛苦令她担心，但她不知道该如何和他谈起这件事。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-052",
@@ -3643,7 +4741,16 @@
           "form": "groupe"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une guide sourde présente le musée en langue des signes et répond aux questions du groupe.",
+          "translations": {
+            "zh-Hant": "一位聽障女導覽員用手語介紹博物館，並回答團員的問題。",
+            "zh-Hans": "一位听障女导览员用手语介绍博物馆，并回答团员的问题。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-053",
@@ -3673,7 +4780,16 @@
           "form": "aide"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Avec l’aide de ses proches, cette étudiante a surmonté une période difficile et repris ses études.",
+          "translations": {
+            "zh-Hant": "在親友的幫助下，這位女學生度過了一段艱難時期，並恢復學業。",
+            "zh-Hans": "在亲友的帮助下，这位女学生度过了一段艰难时期，并恢复学业。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-054",
@@ -3703,7 +4819,16 @@
           "form": "école"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le témoin raconte comment sa famille a survécu à l’inondation et trouvé refuge dans l’école du village.",
+          "translations": {
+            "zh-Hant": "目擊者講述他的家人如何在洪水中倖存，並到村裡的學校避難。",
+            "zh-Hans": "目击者讲述他的家人如何在洪水中幸存，并到村里的学校避难。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-055",
@@ -3733,7 +4858,16 @@
           "form": "montagne"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Après cette nuit dans la montagne, les enfants trembleront peut-être encore en racontant leur aventure à leurs parents.",
+          "translations": {
+            "zh-Hant": "在山裡度過這一夜後，孩子們向父母講述冒險經歷時，或許還會發抖。",
+            "zh-Hans": "在山里度过这一夜后，孩子们向父母讲述冒险经历时，或许还会发抖。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.02-056",
@@ -3763,7 +4897,16 @@
           "form": "sommeil"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La consultation permet de parler du trouble du sommeil qui perturbe son travail et ses relations familiales.",
+          "translations": {
+            "zh-Hant": "看診時可以談談影響他工作和家庭關係的睡眠障礙。",
+            "zh-Hans": "看诊时可以谈谈影响他工作和家庭关系的睡眠障碍。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-001",
@@ -3793,7 +4936,16 @@
           "form": "chambre"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le besoin de calme a conduit ma sœur à louer une chambre loin du centre et de la circulation.",
+          "translations": {
+            "zh-Hant": "因為需要安靜，姐姐租了一間遠離市中心和車流的房間。",
+            "zh-Hans": "因为需要安静，姐姐租了一间远离市中心和车流的房间。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-002",
@@ -3823,7 +4975,16 @@
           "form": "sac"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je me couche après avoir préparé mon sac et vérifié l’horaire du premier train du matin.",
+          "translations": {
+            "zh-Hant": "我先收好包包，確認明早第一班火車的發車時間，才上床睡覺。",
+            "zh-Hans": "我先收好包包，确认明早第一班火车的发车时间，才上床睡觉。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-003",
@@ -3853,7 +5014,16 @@
           "form": "enfants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La croissance des enfants obligeait leurs parents à acheter de nouvelles chaussures avant chaque rentrée scolaire.",
+          "translations": {
+            "zh-Hant": "孩子們不斷成長，父母每次開學前都得買新鞋。",
+            "zh-Hans": "孩子们不断成长，父母每次开学前都得买新鞋。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-004",
@@ -3883,7 +5053,16 @@
           "form": "voyage"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le bébé dort dans la chambre pendant que nous parlons doucement des préparatifs du voyage.",
+          "translations": {
+            "zh-Hant": "寶寶在房裡睡覺，我們則輕聲討論旅行的準備工作。",
+            "zh-Hans": "宝宝在房里睡觉，我们则轻声讨论旅行的准备工作。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-005",
@@ -3909,7 +5088,16 @@
           "form": "mouvements"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les danseurs travailleront leur équilibre avant d’apprendre les mouvements plus complexes du prochain spectacle.",
+          "translations": {
+            "zh-Hant": "舞者們將先練習平衡，再學習下一場演出中更複雜的動作。",
+            "zh-Hans": "舞者们将先练习平衡，再学习下一场演出中更复杂的动作。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-006",
@@ -3935,7 +5123,16 @@
           "form": "pistes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’existence de cette archive change notre lecture de l’histoire et ouvre de nouvelles pistes de recherche.",
+          "translations": {
+            "zh-Hant": "這份檔案的存在改變了我們對歷史的解讀，也開啟了新的研究方向。",
+            "zh-Hans": "这份档案的存在改变了我们对历史的解读，也开启了新的研究方向。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-007",
@@ -3965,7 +5162,16 @@
           "form": "maladie"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Encore faible après sa maladie, notre voisine a demandé de l’aide pour porter les courses jusqu’à sa porte.",
+          "translations": {
+            "zh-Hant": "我們的女鄰居病後仍然虛弱，請人幫忙把買來的東西搬到家門口。",
+            "zh-Hans": "我们的女邻居病后仍然虚弱，请人帮忙把买来的东西搬到家门口。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-008",
@@ -3995,7 +5201,16 @@
           "form": "logements"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’influence du bruit sur le sommeil intéresse les chercheurs qui étudient les logements proches de l’aéroport.",
+          "translations": {
+            "zh-Hant": "研究機場附近住宅的學者，很關心噪音對睡眠的影響。",
+            "zh-Hans": "研究机场附近住宅的学者，很关心噪音对睡眠的影响。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-009",
@@ -4025,7 +5240,16 @@
           "form": "père"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Quand il travaillait à l’usine, mon père se levait avant le soleil pour prendre le premier bus.",
+          "translations": {
+            "zh-Hant": "爸爸以前在工廠上班時，天還沒亮就得起床去搭第一班公車。",
+            "zh-Hans": "爸爸以前在工厂上班时，天还没亮就得起床去搭第一班公车。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-010",
@@ -4051,7 +5275,16 @@
           "form": "semaine"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Pendant la pause, les ouvriers prennent un café et discutent des travaux prévus pour la semaine.",
+          "translations": {
+            "zh-Hant": "休息時，工人們喝著咖啡，討論這週預定要做的工作。",
+            "zh-Hans": "休息时，工人们喝着咖啡，讨论这周预定要做的工作。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-011",
@@ -4081,7 +5314,16 @@
           "form": "emploi"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une activité physique régulière trouverait mieux sa place dans mon emploi du temps si le gymnase était plus proche.",
+          "translations": {
+            "zh-Hant": "如果體育館離我近一點，我就比較容易在日常行程裡排進固定的運動時間。",
+            "zh-Hans": "如果体育馆离我近一点，我就比较容易在日常行程里排进固定的运动时间。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-012",
@@ -4111,7 +5353,16 @@
           "form": "travail"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La pression au travail inquiète cette salariée, qui souhaite discuter de ses horaires avec sa responsable.",
+          "translations": {
+            "zh-Hant": "工作壓力令這位女員工擔憂，她想與女主管討論自己的工作時間。",
+            "zh-Hans": "工作压力令这位女员工担忧，她想与女主管讨论自己的工作时间。"
+          }
+        }
+      ]
     },
     {
       "id": "8.03-3",
@@ -4141,7 +5392,16 @@
           "form": "sentier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous nous sommes reposés à l’ombre avant de reprendre le sentier qui mène au sommet.",
+          "translations": {
+            "zh-Hant": "我們先在樹蔭下休息，再繼續沿著通往山頂的小徑前進。",
+            "zh-Hans": "我们先在树荫下休息，再继续沿着通往山顶的小径前进。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-014",
@@ -4171,7 +5431,16 @@
           "form": "médecin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le médecin observe comment le patient respire et lui demande de décrire la gêne ressentie pendant l’effort.",
+          "translations": {
+            "zh-Hant": "醫師觀察病人如何呼吸，並請他描述活動時感受到的不適。",
+            "zh-Hans": "医师观察病人如何呼吸，并请他描述活动时感受到的不适。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-015",
@@ -4197,7 +5466,16 @@
           "form": "déjeuner"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je me réveillerai plus tôt demain pour préparer le déjeuner avant le départ des enfants.",
+          "translations": {
+            "zh-Hant": "明天我會早點醒來，好在孩子們出門前準備午餐。",
+            "zh-Hans": "明天我会早点醒来，好在孩子们出门前准备午餐。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-016",
@@ -4227,7 +5505,16 @@
           "form": "pain"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma fille souffle sur la soupe pendant que son frère coupe le pain et remplit les verres.",
+          "translations": {
+            "zh-Hant": "女兒對著湯吹氣，哥哥則切麵包、把杯子倒滿。",
+            "zh-Hans": "女儿对着汤吹气，哥哥则切面包、把杯子倒满。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-017",
@@ -4257,7 +5544,16 @@
           "form": "chute"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le village a subi une longue coupure d’électricité après la chute d’un arbre sur la route.",
+          "translations": {
+            "zh-Hant": "一棵樹倒在道路上後，村莊經歷了長時間停電。",
+            "zh-Hans": "一棵树倒在道路上后，村庄经历了长时间停电。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-018",
@@ -4287,7 +5583,16 @@
           "form": "aide"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le professeur décrit l’aspiration de l’air dans les poumons à l’aide d’un schéma projeté au tableau.",
+          "translations": {
+            "zh-Hant": "老師藉助投影在黑板上的示意圖，說明空氣如何吸入肺部。",
+            "zh-Hans": "老师借助投影在黑板上的示意图，说明空气如何吸入肺部。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-019",
@@ -4317,7 +5622,16 @@
           "form": "fond"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Avant chaque réplique, le comédien aspirait lentement l’air puis projetait sa voix vers le fond du théâtre.",
+          "translations": {
+            "zh-Hant": "每次說台詞前，這位男演員都慢慢吸氣，再把聲音傳向劇院後方。",
+            "zh-Hans": "每次说台词前，这位男演员都慢慢吸气，再把声音传向剧院后方。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-020",
@@ -4347,7 +5661,16 @@
           "form": "secours"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le promeneur blessé attend les secours dans une cabane, accompagné de deux amis qui connaissent le sentier.",
+          "translations": {
+            "zh-Hant": "受傷的健行者在小屋裡等待救援，兩位熟悉山徑的朋友陪著他。",
+            "zh-Hans": "受伤的健行者在小屋里等待救援，两位熟悉山径的朋友陪着他。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-021",
@@ -4377,7 +5700,16 @@
           "form": "sœur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma sœur s’est endormie sur le canapé avant la fin du film que nous avions choisi ensemble.",
+          "translations": {
+            "zh-Hant": "我們一起選的電影還沒演完，妹妹就在沙發上睡著了。",
+            "zh-Hans": "我们一起选的电影还没演完，妹妹就在沙发上睡着了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-022",
@@ -4407,7 +5739,16 @@
           "form": "heures"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La fatigue rend la lecture difficile après une journée de travail et deux heures de transport.",
+          "translations": {
+            "zh-Hant": "上了一天班，又搭了兩個小時的車，累得連看書都很吃力。",
+            "zh-Hans": "上了一天班，又搭了两个小时的车，累得连看书都很吃力。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-023",
@@ -4437,7 +5778,16 @@
           "form": "voyage"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Fatiguée par le voyage, elle préférerait dîner à l’hôtel plutôt que traverser encore toute la ville.",
+          "translations": {
+            "zh-Hant": "她一路舟車勞頓，寧願在飯店吃晚餐，也不想再穿越整座城市。",
+            "zh-Hans": "她一路舟车劳顿，宁愿在饭店吃晚餐，也不想再穿越整座城市。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-024",
@@ -4467,7 +5817,16 @@
           "form": "école"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les enfants grandissent vite, alors les familles échangent leurs vêtements à la fête organisée par l’école.",
+          "translations": {
+            "zh-Hant": "小孩長得很快，因此各家人會在學校舉辦的活動上交換孩子的衣服。",
+            "zh-Hans": "小孩长得很快，因此各家人会在学校举办的活动上交换孩子的衣服。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-025",
@@ -4497,7 +5856,16 @@
           "form": "équipe"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les secours ont trouvé le conducteur inconscient et transmis les premières informations à l’équipe de l’hôpital.",
+          "translations": {
+            "zh-Hant": "救援人員發現駕駛已失去意識，便將初步資訊傳給醫院團隊。",
+            "zh-Hans": "救援人员发现驾驶已失去意识，便将初步资讯传给医院团队。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-026",
@@ -4527,7 +5895,16 @@
           "form": "voyageurs"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Las d’attendre sous la pluie, les voyageurs cherchent un café près de la gare pour se réchauffer.",
+          "translations": {
+            "zh-Hant": "旅客們厭倦了在雨中等待，便到車站附近找一家咖啡館暖身。",
+            "zh-Hans": "旅客们厌倦了在雨中等待，便到车站附近找一家咖啡馆暖身。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-027",
@@ -4557,7 +5934,16 @@
           "form": "intervention"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La réparation nécessitera plusieurs pièces neuves et l’intervention d’un technicien formé à ce modèle de machine.",
+          "translations": {
+            "zh-Hant": "這項維修將需要幾個新零件，以及一名受過該型號機器訓練的技師協助。",
+            "zh-Hans": "这项维修将需要几个新零件，以及一名受过该型号机器训练的技师协助。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-028",
@@ -4587,7 +5973,16 @@
           "form": "étudiants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce cours explique les changements physiologiques liés au sommeil à partir d’exemples accessibles aux étudiants.",
+          "translations": {
+            "zh-Hant": "這門課用學生容易理解的例子，解釋與睡眠有關的生理變化。",
+            "zh-Hans": "这门课用学生容易理解的例子，解释与睡眠有关的生理变化。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-029",
@@ -4617,7 +6012,16 @@
           "form": "jours"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Après la récolte, les agriculteurs profitaient de quelques jours de repos pour retrouver leur famille.",
+          "translations": {
+            "zh-Hant": "收穫後，農民們利用幾天休息時間與家人團聚。",
+            "zh-Hans": "收获后，农民们利用几天休息时间与家人团聚。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-030",
@@ -4647,7 +6051,16 @@
           "form": "mère"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La respiration du bébé devient plus calme pendant que sa mère lui chante une chanson près du lit.",
+          "translations": {
+            "zh-Hant": "母親在床邊唱歌給寶寶聽時，寶寶的呼吸變得更加平穩。",
+            "zh-Hans": "母亲在床边唱歌给宝宝听时，宝宝的呼吸变得更加平稳。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-031",
@@ -4677,7 +6090,16 @@
           "form": "frère"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Réveille ton frère avant de préparer le petit déjeuner ; le bus pour l’école part dans une heure.",
+          "translations": {
+            "zh-Hant": "準備早餐前先叫醒你哥哥，去學校的公車一小時後就要開了。",
+            "zh-Hans": "准备早餐前先叫醒你哥哥，去学校的公车一小时后就要开了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-032",
@@ -4707,7 +6129,16 @@
           "form": "collègues"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Pour rompre sa solitude, mon voisin s’inscrit à un atelier de cuisine et invite parfois ses collègues.",
+          "translations": {
+            "zh-Hant": "為了排遣孤獨，鄰居報名參加烹飪工作坊，有時也邀請同事一起來。",
+            "zh-Hans": "为了排遣孤独，邻居报名参加烹饪工作坊，有时也邀请同事一起来。"
+          }
+        }
+      ]
     },
     {
       "id": "8.03-4",
@@ -4734,7 +6165,16 @@
           "form": "bruit"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le bruit des travaux a interrompu mon sommeil, alors j’ai quitté la chambre pour lire dans la cuisine.",
+          "translations": {
+            "zh-Hant": "施工噪音打斷了我的睡眠，於是我離開房間，到廚房看書。",
+            "zh-Hans": "施工噪音打断了我的睡眠，于是我离开房间，到厨房看书。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-034",
@@ -4764,7 +6204,16 @@
           "form": "village"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Après la montée, le promeneur reprend son souffle et regarde la vallée avant de photographier le village.",
+          "translations": {
+            "zh-Hant": "爬完上坡後，健行者先喘口氣、看看山谷，再拍攝村莊。",
+            "zh-Hans": "爬完上坡后，健行者先喘口气、看看山谷，再拍摄村庄。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-035",
@@ -4794,7 +6243,16 @@
           "form": "danseurs"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La professeure observera la souplesse des danseurs avant de choisir les exercices adaptés à leur niveau.",
+          "translations": {
+            "zh-Hant": "女老師將先觀察舞者的柔軟度，再選擇適合他們程度的練習。",
+            "zh-Hans": "女老师将先观察舞者的柔软度，再选择适合他们程度的练习。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-036",
@@ -4824,7 +6282,16 @@
           "form": "chambre"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je supporte mal le bruit du chantier, surtout lorsque je prépare mes examens dans ma chambre.",
+          "translations": {
+            "zh-Hant": "我很難忍受工地的噪音，尤其是我在房間裡準備考試的時候。",
+            "zh-Hans": "我很难忍受工地的噪音，尤其是我在房间里准备考试的时候。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-037",
@@ -4854,7 +6321,16 @@
           "form": "voyages"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "En vieillissant, mon grand-père consacrait davantage de temps au jardin et moins aux longs voyages.",
+          "translations": {
+            "zh-Hant": "隨著年紀增長，祖父把更多時間花在花園裡，減少了長途旅行。",
+            "zh-Hans": "随着年纪增长，祖父把更多时间花在花园里，减少了长途旅行。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.03-038",
@@ -4884,7 +6360,16 @@
           "form": "maisons"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’accès à l’eau reste vital pour les habitants dont les maisons ont été détruites par l’inondation.",
+          "translations": {
+            "zh-Hant": "對房屋被洪水摧毀的居民來說，取得用水依然攸關生存。",
+            "zh-Hans": "对房屋被洪水摧毁的居民来说，取得用水依然攸关生存。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-001",
@@ -4914,7 +6399,16 @@
           "form": "infirmière"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’infirmière a appliqué une compresse sur le bras du patient et expliqué ce qu’elle faisait à son enfant.",
+          "translations": {
+            "zh-Hant": "護理師把敷布敷在病人的手臂上，並向他的孩子解釋自己正在做什麼。",
+            "zh-Hans": "护理师把敷布敷在病人的手臂上，并向他的孩子解释自己正在做什么。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-002",
@@ -4940,7 +6434,16 @@
           "form": "examen"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La dentiste montre la radiographie à ma fille et lui explique patiemment le déroulement de l’examen.",
+          "translations": {
+            "zh-Hant": "牙醫拿Ｘ光片給女兒看，耐心地向她說明檢查過程。",
+            "zh-Hans": "牙医拿Ｘ光片给女儿看，耐心地向她说明检查过程。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-003",
@@ -4970,7 +6473,16 @@
           "form": "père"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le docteur recevra mon père après la réunion médicale et examinera les résultats apportés par ma sœur.",
+          "translations": {
+            "zh-Hant": "醫療會議結束後，醫師會替爸爸看診，並查看姊姊帶來的檢查結果。",
+            "zh-Hans": "医疗会议结束后，医师会替爸爸看诊，并查看姐姐带来的检查结果。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-004",
@@ -5000,7 +6512,16 @@
           "form": "hôpital"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cet examen inquiète le patient, qui note ses questions avant de rencontrer la spécialiste à l’hôpital.",
+          "translations": {
+            "zh-Hant": "病人擔心這項檢查，便在到醫院見專科醫師前，把想問的問題寫下來。",
+            "zh-Hans": "病人担心这项检查，便在到医院见专科医师前，把想问的问题写下来。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-005",
@@ -5030,7 +6551,16 @@
           "form": "enfant"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La médecin examinait l’enfant pendant que son père cherchait le carnet de santé dans son sac.",
+          "translations": {
+            "zh-Hant": "醫師正在替孩子做檢查，爸爸則在包包裡找孩子的健康手冊。",
+            "zh-Hans": "医师正在替孩子做检查，爸爸则在包包里找孩子的健康手册。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-006",
@@ -5060,7 +6590,16 @@
           "form": "travail"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’hôpital accueille des étudiants qui découvrent le travail des infirmières et participent aux réunions de service.",
+          "translations": {
+            "zh-Hant": "醫院接待來實習的學生，讓他們了解護理師的工作，也參加科內會議。",
+            "zh-Hans": "医院接待来实习的学生，让他们了解护理师的工作，也参加科内会议。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-007",
@@ -5090,7 +6629,16 @@
           "form": "famille"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un infirmier a accompagné la patiente jusqu’à sa chambre pendant que sa famille attendait dans le couloir.",
+          "translations": {
+            "zh-Hant": "一位男護理師陪女病人走到病房，她的家人則在走廊裡等候。",
+            "zh-Hans": "一位男护理师陪女病人走到病房，她的家人则在走廊里等候。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-008",
@@ -5120,7 +6668,16 @@
           "form": "dossier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le médecin écoute mon récit et compare les symptômes avec les informations déjà présentes dans mon dossier.",
+          "translations": {
+            "zh-Hant": "醫師聽我描述病況，並把症狀與病歷上原有的資料相互比對。",
+            "zh-Hans": "医师听我描述病况，并把症状与病历上原有的资料相互比对。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-009",
@@ -5146,7 +6703,16 @@
           "form": "famille"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’opération aura lieu après les examens prévus et l’entretien de la famille avec l’équipe médicale.",
+          "translations": {
+            "zh-Hant": "預定的檢查完成、家屬也和醫療團隊談過後，才會進行手術。",
+            "zh-Hans": "预定的检查完成、家属也和医疗团队谈过后，才会进行手术。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-010",
@@ -5172,7 +6738,16 @@
           "form": "vies"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’association forme des volontaires qui souhaitent apprendre à porter secours et à aider à sauver des vies.",
+          "translations": {
+            "zh-Hant": "這個協會培訓想學習急救、協助挽救生命的志願者。",
+            "zh-Hans": "这个协会培训想学习急救、协助挽救生命的志愿者。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-011",
@@ -5202,7 +6777,16 @@
           "form": "enfants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La famille a partagé le soin des enfants pour permettre à leur mère de suivre sa formation.",
+          "translations": {
+            "zh-Hant": "家人分擔了照顧孩子的工作，讓孩子的母親能參加培訓。",
+            "zh-Hans": "家人分担了照顾孩子的工作，让孩子的母亲能参加培训。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-012",
@@ -5228,7 +6812,16 @@
           "form": "amis"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le traitement occupe une place importante dans sa journée, mais elle garde du temps pour peindre et voir ses amis.",
+          "translations": {
+            "zh-Hant": "治療占去她一天中不少時間，但她還是會留些時間畫畫、和朋友見面。",
+            "zh-Hans": "治疗占去她一天中不少时间，但她还是会留些时间画画、和朋友见面。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-013",
@@ -5258,7 +6851,16 @@
           "form": "chercheur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le chercheur observait comment ce matériau absorbait l’eau et notait les résultats après chaque expérience.",
+          "translations": {
+            "zh-Hant": "研究人員觀察這種材料如何吸水，並在每次實驗後記錄結果。",
+            "zh-Hans": "研究人员观察这种材料如何吸水，并在每次实验后记录结果。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-014",
@@ -5288,7 +6890,16 @@
           "form": "étudiants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’absorption de cette substance est étudiée au laboratoire, puis expliquée aux étudiants pendant le cours de physiologie.",
+          "translations": {
+            "zh-Hant": "研究人員在實驗室探討這種物質的吸收過程，再於生理學課堂上講解給學生聽。",
+            "zh-Hans": "研究人员在实验室探讨这种物质的吸收过程，再于生理学课堂上讲解给学生听。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-015",
@@ -5314,7 +6925,16 @@
           "form": "enfants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La couturière a laissé tomber son aiguille et demandé aux enfants de rester loin de la table.",
+          "translations": {
+            "zh-Hant": "女裁縫掉了針，便請孩子們離桌子遠一點。",
+            "zh-Hans": "女裁缝掉了针，便请孩子们离桌子远一点。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-016",
@@ -5344,7 +6964,16 @@
           "form": "laboratoire"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une lumière artificielle éclaire les plantes que les chercheurs cultivent dans une pièce sans fenêtre du laboratoire.",
+          "translations": {
+            "zh-Hant": "人工光源照亮了研究人員在實驗室無窗房間裡培育的植物。",
+            "zh-Hans": "人工光源照亮了研究人员在实验室无窗房间里培育的植物。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-017",
@@ -5374,7 +7003,16 @@
           "form": "patiente"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’infirmière retirera la bande après avoir expliqué l’examen à la patiente et répondu à ses questions.",
+          "translations": {
+            "zh-Hant": "護理師將先向女病人說明檢查並回答問題，再拆下繃帶。",
+            "zh-Hans": "护理师将先向女病人说明检查并回答问题，再拆下绷带。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-018",
@@ -5404,7 +7042,16 @@
           "form": "étude"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’étude clinique présentée au séminaire réunit plusieurs équipes qui comparent leurs méthodes et discutent leurs résultats.",
+          "translations": {
+            "zh-Hant": "研討會上發表的這項臨床研究匯集了好幾個團隊，他們互相比較研究方法，也討論各自的結果。",
+            "zh-Hans": "研讨会上发表的这项临床研究汇集了好几个团队，他们互相比较研究方法，也讨论各自的结果。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-019",
@@ -5430,7 +7077,16 @@
           "form": "patient"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La consultation durait plus longtemps que prévu parce que le patient avait apporté de nombreux documents.",
+          "translations": {
+            "zh-Hant": "因為病人帶來許多文件，這次看診花的時間比預期更長。",
+            "zh-Hans": "因为病人带来许多文件，这次看诊花的时间比预期更长。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-020",
@@ -5460,7 +7116,16 @@
           "form": "collègue"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mon collègue souhaite consulter un médecin avant de reprendre les déplacements que son travail lui impose.",
+          "translations": {
+            "zh-Hant": "同事想先看醫師，再恢復工作所需的出差。",
+            "zh-Hans": "同事想先看医师，再恢复工作所需的出差。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-021",
@@ -5490,7 +7155,16 @@
           "form": "famille"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le diagnostic a été discuté avec la spécialiste, qui a expliqué les résultats de l’examen à la famille.",
+          "translations": {
+            "zh-Hant": "大家與專科醫師討論了診斷，專科醫師也向家人解釋了檢查結果。",
+            "zh-Hans": "大家与专科医师讨论了诊断，专科医师也向家人解释了检查结果。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-022",
@@ -5520,7 +7194,16 @@
           "form": "hôpital"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La gravité de l’accident inquiète la famille, tandis que les secours transmettent des nouvelles à l’hôpital.",
+          "translations": {
+            "zh-Hant": "意外的嚴重程度令家人擔憂，救援人員則向醫院傳達消息。",
+            "zh-Hans": "意外的严重程度令家人担忧，救援人员则向医院传达消息。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-023",
@@ -5546,7 +7229,16 @@
           "form": "groupe"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Si elle guérissait assez vite, la violoniste reprendrait les répétitions avec son groupe avant les vacances.",
+          "translations": {
+            "zh-Hant": "如果康復得夠快，這位女小提琴手就會在假期前重新與樂團排練。",
+            "zh-Hans": "如果康复得够快，这位女小提琴手就会在假期前重新与乐团排练。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-024",
@@ -5576,7 +7268,16 @@
           "form": "repas"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’hygiène de la cuisine fait partie de la formation des employés qui préparent les repas de l’école.",
+          "translations": {
+            "zh-Hant": "廚房衛生是為學校準備餐點的員工培訓內容之一。",
+            "zh-Hans": "厨房卫生是为学校准备餐点的员工培训内容之一。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-025",
@@ -5606,7 +7307,16 @@
           "form": "famille"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’intervention s’est terminée dans l’après-midi, puis le chirurgien a rencontré la famille dans une salle calme.",
+          "translations": {
+            "zh-Hant": "手術在下午結束，之後外科醫師在一間安靜的房間裡與家屬見面。",
+            "zh-Hans": "手术在下午结束，之后外科医师在一间安静的房间里与家属见面。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-026",
@@ -5636,7 +7346,16 @@
           "form": "patiente"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La kinésithérapeute masse doucement l’épaule de la patiente et lui demande de décrire les sensations ressenties.",
+          "translations": {
+            "zh-Hant": "女物理治療師輕輕按摩女病人的肩膀，並請她描述感受到的感覺。",
+            "zh-Hans": "女物理治疗师轻轻按摩女病人的肩膀，并请她描述感受到的感觉。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-027",
@@ -5666,7 +7385,16 @@
           "form": "étudiante"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’étudiante choisira sa spécialité en médecine après les stages qui lui feront découvrir plusieurs services de l’hôpital.",
+          "translations": {
+            "zh-Hant": "這位女學生將在實習、認識醫院的多個科室後，選擇自己的醫學專業方向。",
+            "zh-Hans": "这位女学生将在实习、认识医院的多个科室后，选择自己的医学专业方向。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-028",
@@ -5696,7 +7424,16 @@
           "form": "travail"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le dossier médical reste sur le bureau pendant que la patiente explique les difficultés rencontrées au travail.",
+          "translations": {
+            "zh-Hant": "女病人說明工作中遇到的困難時，病歷放在桌上。",
+            "zh-Hans": "女病人说明工作中遇到的困难时，病历放在桌上。"
+          }
+        }
+      ]
     },
     {
       "id": "8.04-4",
@@ -5726,7 +7463,16 @@
           "form": "ordonnance"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le pharmacien a vérifié le nom du médicament avant de répondre aux questions inscrites sur mon ordonnance.",
+          "translations": {
+            "zh-Hant": "藥師先核對藥名，再回答寫在我處方上的問題。",
+            "zh-Hans": "药师先核对药名，再回答写在我处方上的问题。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-030",
@@ -5752,7 +7498,16 @@
           "form": "patient"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le chirurgien explique pourquoi il propose d’opérer et discute des autres possibilités avec le patient.",
+          "translations": {
+            "zh-Hant": "外科醫師解釋為何建議手術，並與病人討論其他可能的方案。",
+            "zh-Hans": "外科医师解释为何建议手术，并与病人讨论其他可能的方案。"
+          }
+        }
+      ]
     },
     {
       "id": "8.04-3",
@@ -5782,7 +7537,16 @@
           "form": "père"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’ordonnance était restée dans la poche du manteau que mon père avait oublié chez sa sœur.",
+          "translations": {
+            "zh-Hant": "處方留在父親忘在姐姐家的那件大衣口袋裡。",
+            "zh-Hans": "处方留在父亲忘在姐姐家的那件大衣口袋里。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-032",
@@ -5812,7 +7576,16 @@
           "form": "eau"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Au laboratoire, le professeur montre comment mesurer l’oxygène présent dans les échantillons d’eau de la rivière.",
+          "translations": {
+            "zh-Hant": "在實驗室裡，老師示範如何測量河水樣本中的含氧量。",
+            "zh-Hans": "在实验室里，老师示范如何测量河水样本中的含氧量。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-033",
@@ -5842,7 +7615,16 @@
           "form": "documents"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Prenez la précaution de garder une copie du dossier avant d’envoyer les documents à votre assurance.",
+          "translations": {
+            "zh-Hant": "把文件寄給保險公司前，請先留存一份副本，以防萬一。",
+            "zh-Hans": "把文件寄给保险公司前，请先留存一份副本，以防万一。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-034",
@@ -5872,7 +7654,16 @@
           "form": "médecin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le personnage cherche un remède auprès du médecin du village, qui l’interroge longuement sur ses symptômes.",
+          "translations": {
+            "zh-Hant": "故事中的角色向村裡的醫師尋求療法，醫師仔細詢問他的症狀。",
+            "zh-Hans": "故事中的角色向村里的医师寻求疗法，医师仔细询问他的症状。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-035",
@@ -5902,7 +7693,16 @@
           "form": "réunions"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La crise sanitaire a obligé l’association à organiser les livraisons de repas et les réunions autrement.",
+          "translations": {
+            "zh-Hant": "公共衛生危機迫使協會改變送餐和舉行會議的方式。",
+            "zh-Hans": "公共卫生危机迫使协会改变送餐和举行会议的方式。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-036",
@@ -5932,7 +7732,16 @@
           "form": "amie"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le personnel porte secours à une voyageuse tandis que son amie rassemble leurs sacs sur le quai.",
+          "translations": {
+            "zh-Hant": "工作人員救助一位女旅客，她的女性友人則在月台上收攏兩人的行李。",
+            "zh-Hans": "工作人员救助一位女旅客，她的女性友人则在月台上收拢两人的行李。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-037",
@@ -5962,7 +7771,16 @@
           "form": "dossier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le laboratoire analysera le sérum et transmettra les résultats au médecin qui suit le dossier du patient.",
+          "translations": {
+            "zh-Hant": "實驗室將分析血清，並將結果交給持續追蹤該病人病情的醫師。",
+            "zh-Hans": "实验室将分析血清，并将结果交给持续追踪该病人病情的医师。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-038",
@@ -5992,7 +7810,16 @@
           "form": "voisins"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Soignée près de chez elle, ma tante peut recevoir ses voisins et garder un lien avec sa famille.",
+          "translations": {
+            "zh-Hant": "阿姨在住家附近接受治療，因此可以接待鄰居來訪，並與家人保持聯繫。",
+            "zh-Hans": "阿姨在住家附近接受治疗，因此可以接待邻居来访，并与家人保持联系。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-039",
@@ -6022,7 +7849,16 @@
           "form": "secours"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’infirmière a soigné le promeneur blessé pendant que les secours préparaient son transport vers l’hôpital.",
+          "translations": {
+            "zh-Hant": "護理師照護受傷的健行者，救援人員則準備將他送往醫院。",
+            "zh-Hans": "护理师照护受伤的健行者，救援人员则准备将他送往医院。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-040",
@@ -6052,7 +7888,16 @@
           "form": "aide"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’association organise une conférence sur la prévention du suicide avec des professionnels et des personnes engagées dans l’aide aux proches.",
+          "translations": {
+            "zh-Hant": "協會邀請專業人員及致力於支持親友的人士，共同舉辦一場自殺防治講座。",
+            "zh-Hans": "协会邀请专业人员及致力于支持亲友的人士，共同举办一场自杀防治讲座。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-041",
@@ -6082,7 +7927,16 @@
           "form": "route"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’urgence de la situation obligeait les secours à dégager la route pour permettre le passage de l’ambulance.",
+          "translations": {
+            "zh-Hant": "由於情況緊急，救援人員必須清理道路，讓救護車通過。",
+            "zh-Hans": "由于情况紧急，救援人员必须清理道路，让救护车通过。"
+          }
+        }
+      ]
     },
     {
       "id": "book-8.04-042",
@@ -6112,7 +7966,16 @@
           "form": "chercheurs"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les chercheurs comparent plusieurs images du virus et expliquent aux étudiants comment ils interprètent leurs observations.",
+          "translations": {
+            "zh-Hant": "研究人員比較多張病毒影像，並向學生說明如何解讀觀察結果。",
+            "zh-Hans": "研究人员比较多张病毒影像，并向学生说明如何解读观察结果。"
+          }
+        }
+      ]
     }
   ],
   "originalMethod": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，医学和科学例句依原文保留；8.03 第64页第二组仍标基础词汇，依原标注保留并注明。",

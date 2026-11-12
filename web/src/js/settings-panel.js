@@ -35,6 +35,7 @@
         MotsSelect.setValue(id, value);
       $('default-hide-mastered').checked = model.defaultHideMastered;
       $('show-example-translations').checked = model.showExampleTranslations;
+      $('show-list-example-translations').checked = model.showListExampleTranslations;
       $('hide-list-meanings').checked = model.hideListMeanings;
       $('grammar-book-type').hidden = model.studyKind !== 'grammar';
       $('grammar-book-type').textContent = model.grammarGrouping

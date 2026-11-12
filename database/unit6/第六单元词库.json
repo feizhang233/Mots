@@ -61,7 +61,16 @@
           "form": "budget"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "J’achète des légumes au marché et je garde le reste de mon budget pour les livres.",
+          "translations": {
+            "zh-Hant": "我在市場買蔬菜，把剩下的預算留著買書。",
+            "zh-Hans": "我在市场买蔬菜，把剩下的预算留着买书。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-002",
@@ -91,7 +100,16 @@
           "form": "usine"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La commerçante a conclu une bonne affaire en commandant du tissu directement à l’usine du village.",
+          "translations": {
+            "zh-Hant": "那位女商家直接向村裡的工廠訂布，做成了一筆划算的生意。",
+            "zh-Hans": "那位女商家直接向村里的工厂订布，做成了一笔划算的生意。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-003",
@@ -121,7 +139,16 @@
           "form": "manteaux"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une cliente compare la qualité des manteaux pendant que sa fille essaie des chaussures près de la caisse.",
+          "translations": {
+            "zh-Hant": "一位女顧客在比較幾件大衣的品質，女兒則在收銀台旁試鞋。",
+            "zh-Hans": "一位女顾客在比较几件大衣的品质，女儿则在收银台旁试鞋。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-004",
@@ -147,7 +174,16 @@
           "form": "cuisine"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous commanderons une table plus solide lorsque les travaux de la cuisine seront enfin terminés.",
+          "translations": {
+            "zh-Hant": "等廚房終於整修完，我們會訂一張更堅固的桌子。",
+            "zh-Hans": "等厨房终于整修完，我们会订一张更坚固的桌子。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-005",
@@ -177,7 +213,16 @@
           "form": "familles"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le commerce du café fait vivre plusieurs familles et crée des emplois dans cette petite ville.",
+          "translations": {
+            "zh-Hant": "咖啡貿易養活了好幾個家庭，也為這座小鎮創造了工作機會。",
+            "zh-Hans": "咖啡贸易养活了好几个家庭，也为这座小镇创造了工作机会。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-006",
@@ -207,7 +252,16 @@
           "form": "atelier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Notre équipe commerciale visitait les magasins de province pour présenter les produits fabriqués dans notre atelier.",
+          "translations": {
+            "zh-Hant": "以前我們的業務團隊會走訪外地的商店，介紹我們工坊製作的產品。",
+            "zh-Hans": "以前我们的业务团队会走访外地的商店，介绍我们工坊制作的产品。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-007",
@@ -237,7 +291,16 @@
           "form": "enfants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je fais les courses avec ma voisine, puis nous préparons ensemble le dîner de nos enfants.",
+          "translations": {
+            "zh-Hant": "我和鄰居一起買菜，然後一起為孩子們準備晚餐。",
+            "zh-Hans": "我和邻居一起买菜，然后一起为孩子们准备晚餐。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-008",
@@ -263,7 +326,16 @@
           "form": "cuisine"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le magasin livrera le réfrigérateur demain et reprendra gratuitement l’ancien appareil qui encombre notre cuisine.",
+          "translations": {
+            "zh-Hant": "店家明天會送冰箱過來，還會免費載走廚房裡那台占空間的舊冰箱。",
+            "zh-Hans": "店家明天会送冰箱过来，还会免费载走厨房里那台占空间的旧冰箱。"
+          }
+        }
+      ]
     },
     {
       "id": "6.01-1",
@@ -290,7 +362,16 @@
           "form": "qualité"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce magasin propose des vêtements de qualité et reste ouvert après la fermeture des bureaux voisins.",
+          "translations": {
+            "zh-Hant": "這家店賣的衣服品質很好，就算附近的辦公室都下班了，店裡仍在營業。",
+            "zh-Hans": "这家店卖的衣服品质很好，就算附近的办公室都下班了，店里仍在营业。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-010",
@@ -320,7 +401,16 @@
           "form": "pluie"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les employés ont protégé la marchandise contre la pluie avant de charger les caisses dans le camion.",
+          "translations": {
+            "zh-Hant": "員工先把貨物包好防雨，才把箱子搬上卡車。",
+            "zh-Hans": "员工先把货物包好防雨，才把箱子搬上卡车。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-011",
@@ -350,7 +440,16 @@
           "form": "budget"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce vélo est neuf, mais son prix dépasse le budget que nous avons prévu pour les vacances.",
+          "translations": {
+            "zh-Hant": "這輛自行車是全新的，但價格超過了我們為假期編列的預算。",
+            "zh-Hans": "这辆自行车是全新的，但价格超过了我们为假期编列的预算。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-012",
@@ -380,7 +479,16 @@
           "form": "sœur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma sœur a trouvé un nouvel emploi et loué un appartement près de la bibliothèque municipale.",
+          "translations": {
+            "zh-Hant": "姊姊找到了新工作，也在市立圖書館附近租了間公寓。",
+            "zh-Hans": "姐姐找到了新工作，也在市立图书馆附近租了间公寓。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-013",
@@ -410,7 +518,16 @@
           "form": "promenade"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La boulangerie reste ouverte le dimanche, ce qui permet aux voisins d’acheter du pain après leur promenade.",
+          "translations": {
+            "zh-Hant": "麵包店星期天也營業，附近居民散步回來還能順路買麵包。",
+            "zh-Hans": "面包店星期天也营业，附近居民散步回来还能顺路买面包。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-014",
@@ -436,7 +553,16 @@
           "form": "enfants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce produit conviendrait mieux aux enfants si son emballage expliquait clairement les précautions à prendre.",
+          "translations": {
+            "zh-Hant": "如果包裝上能清楚說明使用時該注意什麼，這項產品就更適合兒童了。",
+            "zh-Hans": "如果包装上能清楚说明使用时该注意什么，这项产品就更适合儿童了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-015",
@@ -466,7 +592,16 @@
           "form": "tissu"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La qualité du tissu compte davantage pour cette couturière que la marque inscrite sur l’étiquette.",
+          "translations": {
+            "zh-Hant": "這位女裁縫看重的是布料的品質，標籤上的品牌反倒是其次。",
+            "zh-Hans": "这位女裁缝看重的是布料的品质，标签上的品牌反倒是其次。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-016",
@@ -496,7 +631,16 @@
           "form": "quartier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Grâce à la reprise de son ancien téléphone, Hugo a payé moins cher son nouvel appareil au magasin du quartier.",
+          "translations": {
+            "zh-Hant": "雨果在附近的店家用舊手機折抵了一部分價款，少花了些錢就買到了新手機。",
+            "zh-Hans": "雨果在附近的店家用旧手机折抵了一部分价款，少花了些钱就买到了新手机。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-017",
@@ -526,7 +670,16 @@
           "form": "semaine"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le restaurant garde une réserve de farine et de riz pour préparer les repas de la semaine.",
+          "translations": {
+            "zh-Hant": "餐廳會儲備一些麵粉和米，用來準備一週的餐點。",
+            "zh-Hans": "餐厅会储备一些面粉和米，用来准备一周的餐点。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-018",
@@ -556,7 +709,16 @@
           "form": "machine"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’usage quotidien de cette machine facilitait le travail des ouvriers, mais exigeait un entretien régulier.",
+          "translations": {
+            "zh-Hant": "工人每天用這台機器，工作起來輕鬆許多，但機器也必須定期保養。",
+            "zh-Hans": "工人每天用这台机器，工作起来轻松许多，但机器也必须定期保养。"
+          }
+        }
+      ]
     },
     {
       "id": "6.01-3",
@@ -587,7 +749,16 @@
           "form": "voyages"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’association vend des livres d’occasion pour financer les voyages scolaires des enfants du quartier.",
+          "translations": {
+            "zh-Hant": "協會販售二手書，替附近孩子的校外旅行籌措經費。",
+            "zh-Hans": "协会贩售二手书，替附近孩子的校外旅行筹措经费。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-020",
@@ -617,7 +788,16 @@
           "form": "matériel"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La vente des tableaux permettra de restaurer le toit de l’école et d’acheter du matériel neuf.",
+          "translations": {
+            "zh-Hant": "把這些畫賣掉後，就有錢整修學校的屋頂，也能添購新設備。",
+            "zh-Hans": "把这些画卖掉后，就有钱整修学校的屋顶，也能添购新设备。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-021",
@@ -647,7 +827,16 @@
           "form": "transport"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Avant l’achat d’un appartement, nous comparons les frais de transport, le chauffage et la qualité du quartier.",
+          "translations": {
+            "zh-Hant": "買公寓前，我們會比較交通費、暖氣條件和周遭的居住環境。",
+            "zh-Hans": "买公寓前，我们会比较交通费、暖气条件和周遭的居住环境。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-022",
@@ -677,7 +866,16 @@
           "form": "vêtements"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une petite boutique de vêtements a remplacé l’ancienne agence bancaire au bout de notre rue.",
+          "translations": {
+            "zh-Hant": "我們這條街盡頭原本是銀行分行，現在換成了一間小服飾店。",
+            "zh-Hans": "我们这条街尽头原本是银行分行，现在换成了一间小服饰店。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-023",
@@ -707,7 +905,16 @@
           "form": "montant"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "À la caisse, le client vérifie le montant de ses achats avant de sortir sa carte bancaire.",
+          "translations": {
+            "zh-Hant": "在收銀台前，客人先確認購物金額，才拿出銀行卡。",
+            "zh-Hans": "在收银台前，客人先确认购物金额，才拿出银行卡。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-024",
@@ -737,7 +944,16 @@
           "form": "ouvriers"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La clientèle du café réunissait des étudiants, des ouvriers et quelques retraités qui lisaient le journal.",
+          "translations": {
+            "zh-Hant": "以前那家咖啡館的客人有學生、工人，也有幾位來讀報的退休人士。",
+            "zh-Hans": "以前那家咖啡馆的客人有学生、工人，也有几位来读报的退休人士。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-025",
@@ -767,7 +983,16 @@
           "form": "table"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Votre commande comprend deux chaises et une table ; la livraison est prévue vendredi après la réunion.",
+          "translations": {
+            "zh-Hant": "您訂了兩張椅子和一張桌子，預計星期五會議結束後送達。",
+            "zh-Hans": "您订了两张椅子和一张桌子，预计星期五会议结束后送达。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-026",
@@ -797,7 +1022,16 @@
           "form": "cliente"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le vendeur a posé les chaussures sur le comptoir pour montrer à la cliente la solidité des semelles.",
+          "translations": {
+            "zh-Hant": "店員把鞋子放在櫃檯上，讓女顧客看看鞋底有多結實。",
+            "zh-Hans": "店员把鞋子放在柜台上，让女顾客看看鞋底有多结实。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-027",
@@ -827,7 +1061,16 @@
           "form": "conditions"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les consommateurs demandent des informations précises sur l’origine des aliments et les conditions de production.",
+          "translations": {
+            "zh-Hant": "消費者要求業者清楚說明食物的來源和生產條件。",
+            "zh-Hans": "消费者要求业者清楚说明食物的来源和生产条件。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-028",
@@ -857,7 +1100,16 @@
           "form": "villages"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le camion déposera les meubles au dépôt avant de livrer les commandes dans les villages voisins.",
+          "translations": {
+            "zh-Hant": "卡車會先把家具送到倉庫，再到鄰近的村子配送訂單。",
+            "zh-Hans": "卡车会先把家具送到仓库，再到邻近的村子配送订单。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-029",
@@ -887,7 +1139,16 @@
           "form": "couvertures"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Des bénévoles distribuent des repas chauds et des couvertures aux familles accueillies dans le gymnase.",
+          "translations": {
+            "zh-Hant": "志工把熱食和毛毯分給安置在體育館裡的家庭。",
+            "zh-Hans": "志工把热食和毛毯分给安置在体育馆里的家庭。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-030",
@@ -917,7 +1178,16 @@
           "form": "récolte"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La coopérative a écoulé sa récolte au marché et versé une prime aux agriculteurs du village.",
+          "translations": {
+            "zh-Hant": "合作社在市場上賣掉了收成，還發了一筆獎金給村裡的農民。",
+            "zh-Hans": "合作社在市场上卖掉了收成，还发了一笔奖金给村里的农民。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-031",
@@ -947,7 +1217,16 @@
           "form": "tissu"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’étiquette indique la composition du vêtement et explique comment le laver sans abîmer le tissu.",
+          "translations": {
+            "zh-Hant": "標籤上列出了衣服的材質，也說明要怎麼洗才不會傷到布料。",
+            "zh-Hans": "标签上列出了衣服的材质，也说明要怎么洗才不会伤到布料。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-032",
@@ -973,7 +1252,16 @@
           "form": "magasin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le magasin était fermé pour inventaire, alors nous avons attendu son ouverture dans le café voisin.",
+          "translations": {
+            "zh-Hant": "店家為了盤點而暫停營業，所以我們就在隔壁的咖啡館等它開門。",
+            "zh-Hans": "店家为了盘点而暂停营业，所以我们就在隔壁的咖啡馆等它开门。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-033",
@@ -1003,7 +1291,16 @@
           "form": "machine"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La garantie couvre la réparation de la machine, mais les frais de transport restent à notre charge.",
+          "translations": {
+            "zh-Hant": "保固涵蓋機器的維修費用，但運費還是要由我們負擔。",
+            "zh-Hans": "保固涵盖机器的维修费用，但运费还是要由我们负担。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-034",
@@ -1029,7 +1326,16 @@
           "form": "chaussures"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le fabricant garantira ces chaussures pendant deux ans et réparera les coutures dans son propre atelier.",
+          "translations": {
+            "zh-Hant": "廠商會為這些鞋子提供兩年保固，縫線需要修補時會在自家工坊處理。",
+            "zh-Hans": "厂商会为这些鞋子提供两年保固，缝线需要修补时会在自家工坊处理。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-035",
@@ -1059,7 +1365,16 @@
           "form": "étiquettes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Pendant l’inventaire, chaque employée compte les produits de son rayon et vérifie les étiquettes.",
+          "translations": {
+            "zh-Hant": "盤點時，每位店員都會清點自己負責區域的商品，並核對標籤。",
+            "zh-Hans": "盘点时，每位店员都会清点自己负责区域的商品，并核对标签。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-036",
@@ -1089,7 +1404,16 @@
           "form": "montagne"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La livraison des médicaments a été retardée par la neige qui bloquait la route de montagne.",
+          "translations": {
+            "zh-Hant": "大雪阻斷了山路，藥品因此延遲送達。",
+            "zh-Hans": "大雪阻断了山路，药品因此延迟送达。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-037",
@@ -1119,7 +1443,16 @@
           "form": "enfants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’ouverture de la bibliothèque attire les familles du quartier et permet aux enfants d’emprunter gratuitement des livres.",
+          "translations": {
+            "zh-Hant": "圖書館開館吸引了附近的家庭前來，孩子們也能免費借書。",
+            "zh-Hans": "图书馆开馆吸引了附近的家庭前来，孩子们也能免费借书。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.01-038",
@@ -1149,7 +1482,16 @@
           "form": "frère"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dépose le paquet chez notre voisine et garde le reçu jusqu’au retour de son frère.",
+          "translations": {
+            "zh-Hant": "把包裹放在我們鄰居家，收據先留著，等她哥哥回來。",
+            "zh-Hans": "把包裹放在我们邻居家，收据先留着，等她哥哥回来。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-001",
@@ -1175,7 +1517,16 @@
           "form": "oncle"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mon oncle possède une action de cette entreprise, mais préfère garder ses économies sur son compte bancaire.",
+          "translations": {
+            "zh-Hant": "叔叔持有這家公司的一股股票，不過他的積蓄大多還是喜歡放在銀行帳戶裡。",
+            "zh-Hans": "叔叔持有这家公司的一股股票，不过他的积蓄大多还是喜欢放在银行帐户里。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-002",
@@ -1205,7 +1556,16 @@
           "form": "toit"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous avons mis de l’argent de côté pour réparer le toit et remplacer les fenêtres de la maison.",
+          "translations": {
+            "zh-Hant": "我們存了一筆錢，準備修屋頂和更換家裡的窗戶。",
+            "zh-Hans": "我们存了一笔钱，准备修屋顶和更换家里的窗户。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-003",
@@ -1235,7 +1595,16 @@
           "form": "dépenses"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le prix du chauffage augmente, alors les locataires cherchent des solutions pour réduire leurs dépenses.",
+          "translations": {
+            "zh-Hant": "暖氣費漲了，所以房客們正在想辦法節省開支。",
+            "zh-Hans": "暖气费涨了，所以房客们正在想办法节省开支。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-004",
@@ -1265,7 +1634,16 @@
           "form": "crédit"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La banque examinera notre dossier avant de nous accorder le crédit nécessaire à l’achat du logement.",
+          "translations": {
+            "zh-Hant": "銀行會先審核我們的資料，再決定是否核發購屋所需的貸款。",
+            "zh-Hans": "银行会先审核我们的资料，再决定是否核发购屋所需的贷款。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-005",
@@ -1295,7 +1673,16 @@
           "form": "rencontres"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La libraire consacre une partie du bénéfice à l’organisation de rencontres gratuites avec les auteurs.",
+          "translations": {
+            "zh-Hant": "書店女老闆把一部分盈利用來舉辦免費的作家見面會。",
+            "zh-Hans": "书店女老板把一部分盈利用来举办免费的作家见面会。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-006",
@@ -1325,7 +1712,16 @@
           "form": "pays"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Notre budget ne permettait pas de prendre l’avion, alors nous traversions le pays en train.",
+          "translations": {
+            "zh-Hant": "以前我們的預算不夠搭飛機，所以都是搭火車橫越這個國家。",
+            "zh-Hans": "以前我们的预算不够搭飞机，所以都是搭火车横越这个国家。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-007",
@@ -1355,7 +1751,16 @@
           "form": "quartier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette artisane souhaite céder sa boutique à une employée qui connaît déjà les clients du quartier.",
+          "translations": {
+            "zh-Hant": "這位女工藝師希望把自己的店轉讓給一位已經很熟悉街坊顧客的員工。",
+            "zh-Hans": "这位女工艺师希望把自己的店转让给一位已经很熟悉街坊顾客的员工。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-008",
@@ -1385,7 +1790,16 @@
           "form": "bibliothèque"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Au Canada, ma nièce a ramassé une pièce d’un cent devant l’entrée de la bibliothèque.",
+          "translations": {
+            "zh-Hant": "在加拿大，我姪女曾在圖書館門口撿到一枚一分錢的硬幣。",
+            "zh-Hans": "在加拿大，我侄女曾在图书馆门口捡到一枚一分钱的硬币。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-009",
@@ -1415,7 +1829,16 @@
           "form": "monnaie"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Il me manque un centime pour acheter ce pain ; la boulangère sourit et accepte ma monnaie.",
+          "translations": {
+            "zh-Hant": "我買這個麵包還差一歐分，麵包店老闆娘笑了笑，收下了我手裡的零錢。",
+            "zh-Hans": "我买这个面包还差一欧分，面包店老板娘笑了笑，收下了我手里的零钱。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-010",
@@ -1445,7 +1868,16 @@
           "form": "soldes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce manteau serait trop cher pour moi sans la réduction proposée aux étudiants pendant les soldes.",
+          "translations": {
+            "zh-Hant": "要不是特賣期間有學生折扣，這件大衣對我來說就太貴了。",
+            "zh-Hans": "要不是特卖期间有学生折扣，这件大衣对我来说就太贵了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-011",
@@ -1475,7 +1907,16 @@
           "form": "dépenses"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je consulte mon compte après chaque paiement important pour vérifier les dépenses du ménage.",
+          "translations": {
+            "zh-Hant": "每次付了一筆較大的款項，我都會查看帳戶，核對家裡的開銷。",
+            "zh-Hans": "每次付了一笔较大的款项，我都会查看帐户，核对家里的开销。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-012",
@@ -1505,7 +1946,16 @@
           "form": "voyage"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La réparation du moteur a augmenté le coût du voyage et réduit notre budget pour les visites.",
+          "translations": {
+            "zh-Hant": "修理引擎增加了旅費，我們能花在參觀景點上的預算也少了。",
+            "zh-Hans": "修理引擎增加了旅费，我们能花在参观景点上的预算也少了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-013",
@@ -1535,7 +1985,16 @@
           "form": "train"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le billet coûte moins cher en semaine, mais le dernier train arrive après la fermeture de l’hôtel.",
+          "translations": {
+            "zh-Hant": "平日票價比較便宜，但末班火車到站時，飯店早已打烊。",
+            "zh-Hans": "平日票价比较便宜，但末班火车到站时，饭店早已打烊。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-014",
@@ -1565,7 +2024,16 @@
           "form": "famille"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La famille remboursera son crédit progressivement, sans renoncer aux dépenses nécessaires à l’éducation des enfants.",
+          "translations": {
+            "zh-Hant": "這家人會慢慢還清貸款，同時兼顧孩子必要的教育支出。",
+            "zh-Hans": "这家人会慢慢还清贷款，同时兼顾孩子必要的教育支出。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-015",
@@ -1595,7 +2063,16 @@
           "form": "salariés"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le transport représente une dépense importante pour les salariés qui habitent loin de leur lieu de travail.",
+          "translations": {
+            "zh-Hant": "對住得離上班地點很遠的人來說，交通費是一筆不小的開銷。",
+            "zh-Hans": "对住得离上班地点很远的人来说，交通费是一笔不小的开销。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-016",
@@ -1625,7 +2102,16 @@
           "form": "paiement"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Après plusieurs mois de chômage, leur dette augmentait et le paiement du loyer devenait difficile.",
+          "translations": {
+            "zh-Hant": "他們失業好幾個月後，債務越積越多，連付房租都開始吃力。",
+            "zh-Hans": "他们失业好几个月后，债务越积越多，连付房租都开始吃力。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-017",
@@ -1651,7 +2137,16 @@
           "form": "sœur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce billet d’un dollar me rappelle le voyage pendant lequel ma sœur a découvert Montréal.",
+          "translations": {
+            "zh-Hant": "這張一元鈔票讓我想起姊姊初次認識蒙特婁的那趟旅行。",
+            "zh-Hans": "这张一元钞票让我想起姐姐初次认识蒙特娄的那趟旅行。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-018",
@@ -1681,7 +2176,16 @@
           "form": "montant"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous avons versé la somme due au propriétaire après avoir vérifié le montant indiqué sur la facture.",
+          "translations": {
+            "zh-Hant": "我們核對帳單上的金額後，把應付的款項付給了屋主。",
+            "zh-Hans": "我们核对帐单上的金额后，把应付的款项付给了屋主。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-019",
@@ -1707,7 +2211,16 @@
           "form": "repas"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "En préparant ses repas à la maison, Sami économise assez pour suivre un cours de photographie.",
+          "translations": {
+            "zh-Hant": "薩米自己在家做飯，省下的錢夠他報名攝影課。",
+            "zh-Hans": "萨米自己在家做饭，省下的钱够他报名摄影课。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-020",
@@ -1737,7 +2250,16 @@
           "form": "étudiante"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un loyer trop élevé a poussé cette étudiante à chercher une chambre plus loin de l’université.",
+          "translations": {
+            "zh-Hant": "房租太高，這位女學生只好到離大學遠一點的地方找房間。",
+            "zh-Hans": "房租太高，这位女学生只好到离大学远一点的地方找房间。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-021",
@@ -1767,7 +2289,16 @@
           "form": "frère"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Pour chaque euro dépensé au restaurant, mon frère note le montant dans son carnet de voyage.",
+          "translations": {
+            "zh-Hant": "哥哥在餐廳花的每一歐元，都會記在他的旅行筆記裡。",
+            "zh-Hans": "哥哥在餐厅花的每一欧元，都会记在他的旅行笔记里。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-022",
@@ -1797,7 +2328,16 @@
           "form": "achat"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Conservez la facture du réfrigérateur : le technicien en aura besoin pour vérifier la date de l’achat.",
+          "translations": {
+            "zh-Hant": "請保留冰箱的發票，技師會用它確認購買日期。",
+            "zh-Hans": "请保留冰箱的发票，技师会用它确认购买日期。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-023",
@@ -1827,7 +2367,16 @@
           "form": "ateliers"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Elle travaille dans la finance et anime bénévolement des ateliers sur le budget pour les jeunes salariés.",
+          "translations": {
+            "zh-Hant": "她在金融業工作，也利用自己的時間為年輕上班族開設免費的預算管理工作坊。",
+            "zh-Hans": "她在金融业工作，也利用自己的时间为年轻上班族开设免费的预算管理工作坊。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-024",
@@ -1857,7 +2406,16 @@
           "form": "hôpital"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le service financier préparera un rapport sur les dépenses de l’hôpital avant la réunion du personnel.",
+          "translations": {
+            "zh-Hant": "財務部門會在員工會議前，備妥一份醫院的支出報告。",
+            "zh-Hans": "财务部门会在员工会议前，备妥一份医院的支出报告。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-025",
@@ -1887,7 +2445,16 @@
           "form": "quartier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Malgré sa fortune, cet entrepreneur utilise les transports publics et participe aux activités du quartier.",
+          "translations": {
+            "zh-Hant": "這位企業家雖然家境富裕，平常還是搭大眾運輸，也會參加社區活動。",
+            "zh-Hans": "这位企业家虽然家境富裕，平常还是搭大众运输，也会参加社区活动。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-026",
@@ -1913,7 +2480,16 @@
           "form": "boutique"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les frais de livraison ont dépassé le prix du livre commandé dans une petite boutique étrangère.",
+          "translations": {
+            "zh-Hant": "我向國外一家小店訂了一本書，運費竟然比書還貴。",
+            "zh-Hans": "我向国外一家小店订了一本书，运费竟然比书还贵。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-027",
@@ -1943,7 +2519,16 @@
           "form": "grand-mère"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma grand-mère garde un ancien franc dans une boîte avec les lettres et les photographies de son enfance.",
+          "translations": {
+            "zh-Hant": "奶奶把一枚舊法郎放在盒子裡，和她童年時的信件、照片收在一起。",
+            "zh-Hans": "奶奶把一枚旧法郎放在盒子里，和她童年时的信件、照片收在一起。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-028",
@@ -1973,7 +2558,16 @@
           "form": "visite"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’entrée du musée était gratuite pour les élèves, mais leur professeur devait réserver la visite.",
+          "translations": {
+            "zh-Hant": "當時學生參觀博物館可以免費入場，但老師得事先預約。",
+            "zh-Hans": "当时学生参观博物馆可以免费入场，但老师得事先预约。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-029",
@@ -2003,7 +2597,16 @@
           "form": "monnaie"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le marchand accepte le liquide et la carte bancaire, mais préfère recevoir la monnaie exacte.",
+          "translations": {
+            "zh-Hant": "店家可以收現金，也可以刷卡，但用現金時最好能付剛好的金額。",
+            "zh-Hans": "店家可以收现金，也可以刷卡，但用现金时最好能付刚好的金额。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-030",
@@ -2029,7 +2632,16 @@
           "form": "atelier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un loyer moins élevé nous permettrait de louer un atelier pour développer notre petite entreprise.",
+          "translations": {
+            "zh-Hant": "如果租金再便宜一點，我們就能租一間工坊，把小生意做起來。",
+            "zh-Hans": "如果租金再便宜一点，我们就能租一间工坊，把小生意做起来。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-031",
@@ -2059,7 +2671,16 @@
           "form": "transport"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le montant de la facture comprend les matériaux, le travail de l’artisan et le transport des meubles.",
+          "translations": {
+            "zh-Hant": "帳單上的金額包括材料費、師傅的工錢，以及家具運費。",
+            "zh-Hans": "帐单上的金额包括材料费、师傅的工钱，以及家具运费。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-032",
@@ -2085,7 +2706,16 @@
           "form": "banque"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le paiement par carte a échoué, alors la cliente a demandé où se trouvait la banque la plus proche.",
+          "translations": {
+            "zh-Hant": "刷卡沒成功，女顧客便問最近的銀行在哪裡。",
+            "zh-Hans": "刷卡没成功，女顾客便问最近的银行在哪里。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-033",
@@ -2115,7 +2745,16 @@
           "form": "famille"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette famille pauvre reçoit une aide pour acheter les fournitures scolaires et payer le chauffage.",
+          "translations": {
+            "zh-Hant": "這個經濟困難的家庭獲得補助，可以買學用品並繳暖氣費。",
+            "zh-Hans": "这个经济困难的家庭获得补助，可以买学用品并缴暖气费。"
+          }
+        }
+      ]
     },
     {
       "id": "6.02-2",
@@ -2146,7 +2785,16 @@
           "form": "train"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je paierai les billets de train dès que ma sœur aura confirmé les dates de ses congés.",
+          "translations": {
+            "zh-Hant": "姊姊一確認休假日期，我就會付火車票錢。",
+            "zh-Hans": "姐姐一确认休假日期，我就会付火车票钱。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-035",
@@ -2176,7 +2824,16 @@
           "form": "comptoir"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une pièce de deux euros roule sous le comptoir pendant que le vendeur prépare mon paquet.",
+          "translations": {
+            "zh-Hant": "店員幫我包裝東西時，一枚兩歐元硬幣滾到了櫃檯底下。",
+            "zh-Hans": "店员帮我包装东西时，一枚两欧元硬币滚到了柜台底下。"
+          }
+        }
+      ]
     },
     {
       "id": "6.02-1",
@@ -2207,7 +2864,16 @@
           "form": "récolte"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le prix des légumes variait selon la saison et les agriculteurs expliquaient aux clients les difficultés de la récolte.",
+          "translations": {
+            "zh-Hant": "以前菜價隨季節變化，農民也會向顧客解釋採收時遇到的困難。",
+            "zh-Hans": "以前菜价随季节变化，农民也会向顾客解释采收时遇到的困难。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-037",
@@ -2233,7 +2899,16 @@
           "form": "machines"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La coopérative partage son profit entre les producteurs et garde une réserve pour réparer les machines.",
+          "translations": {
+            "zh-Hant": "合作社把利潤分給生產者，也留下一筆準備金，用來修理機器。",
+            "zh-Hans": "合作社把利润分给生产者，也留下一笔准备金，用来修理机器。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-038",
@@ -2263,7 +2938,16 @@
           "form": "facture"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le règlement de la facture a été effectué après la livraison des tables destinées à la cantine.",
+          "translations": {
+            "zh-Hant": "訂給餐廳的桌子送到後，這筆款項就付清了。",
+            "zh-Hans": "订给餐厅的桌子送到后，这笔款项就付清了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-039",
@@ -2289,7 +2973,16 @@
           "form": "loyer"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Son revenu couvre le loyer et les courses, mais laisse peu de place aux loisirs coûteux.",
+          "translations": {
+            "zh-Hant": "他的收入夠付房租和日常採買，但負擔昂貴休閒活動的餘裕不多。",
+            "zh-Hans": "他的收入够付房租和日常采买，但负担昂贵休闲活动的余裕不多。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-040",
@@ -2315,7 +3008,16 @@
           "form": "vêtements"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Même riche, je continuerais à réparer mes vêtements et à emprunter mes livres à la bibliothèque.",
+          "translations": {
+            "zh-Hant": "就算有錢了，我還是會修補自己的衣服，也會到圖書館借書。",
+            "zh-Hans": "就算有钱了，我还是会修补自己的衣服，也会到图书馆借书。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-041",
@@ -2345,7 +3047,16 @@
           "form": "entreprises"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La richesse de cette région provient surtout de l’agriculture et du travail des petites entreprises.",
+          "translations": {
+            "zh-Hant": "這個地區的財富主要來自農業和當地小企業的努力。",
+            "zh-Hans": "这个地区的财富主要来自农业和当地小企业的努力。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-042",
@@ -2375,7 +3086,16 @@
           "form": "bijou"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’expert a estimé la valeur du bijou avant que la famille ne décide de le vendre.",
+          "translations": {
+            "zh-Hant": "家人決定出售那件珠寶前，專家已先替它估過價。",
+            "zh-Hans": "家人决定出售那件珠宝前，专家已先替它估过价。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-043",
@@ -2405,7 +3125,16 @@
           "form": "montre"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette montre vaut davantage que mon vélo, mais elle ne me sert qu’à connaître l’heure.",
+          "translations": {
+            "zh-Hant": "這只手錶比我的自行車還值錢，但對我來說，它的用處只是看時間。",
+            "zh-Hans": "这只手表比我的自行车还值钱，但对我来说，它的用处只是看时间。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-044",
@@ -2435,7 +3164,16 @@
           "form": "veste"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Range ta carte bancaire dans la poche intérieure de ta veste avant de monter dans le métro.",
+          "translations": {
+            "zh-Hant": "進地鐵前，先把銀行卡收進外套內側的口袋。",
+            "zh-Hans": "进地铁前，先把银行卡收进外套内侧的口袋。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-045",
@@ -2465,7 +3203,16 @@
           "form": "fenêtres"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un chauffage ancien peut devenir coûteux lorsque le logement perd sa chaleur par les fenêtres.",
+          "translations": {
+            "zh-Hant": "如果屋裡的熱氣一直從窗戶散失，用老舊的暖氣設備可能會很花錢。",
+            "zh-Hans": "如果屋里的热气一直从窗户散失，用老旧的暖气设备可能会很花钱。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-046",
@@ -2495,7 +3242,16 @@
           "form": "vêtements"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Pendant ses études, Léa dépensait moins en vêtements pour financer ses voyages et ses cours de langue.",
+          "translations": {
+            "zh-Hant": "蕾雅念書時，把買衣服的錢省下來，用在旅行和語言課上。",
+            "zh-Hans": "蕾雅念书时，把买衣服的钱省下来，用在旅行和语言课上。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-047",
@@ -2525,7 +3281,16 @@
           "form": "récolte"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Au marché du village, nous payons en espèces et discutons de la récolte avec les producteurs.",
+          "translations": {
+            "zh-Hant": "我們在村裡的市場用現金付帳，也會和農民聊聊收成。",
+            "zh-Hans": "我们在村里的市场用现金付帐，也会和农民聊聊收成。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-048",
@@ -2555,7 +3320,16 @@
           "form": "mois"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous épargnerons chaque mois une petite somme pour remplacer la voiture sans demander de crédit.",
+          "translations": {
+            "zh-Hant": "我們每個月會存一小筆錢，這樣換車時就不用貸款。",
+            "zh-Hans": "我们每个月会存一小笔钱，这样换车时就不用贷款。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-049",
@@ -2585,7 +3359,16 @@
           "form": "entreprises"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le financement du nouveau laboratoire dépend d’une subvention et de la participation de plusieurs entreprises.",
+          "translations": {
+            "zh-Hant": "新實驗室的經費要靠一筆補助，還需要幾家企業共同出資。",
+            "zh-Hans": "新实验室的经费要靠一笔补助，还需要几家企业共同出资。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-050",
@@ -2615,7 +3398,16 @@
           "form": "déclaration"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La conseillère fiscale a vérifié les revenus du couple avant de préparer sa déclaration d’impôts.",
+          "translations": {
+            "zh-Hant": "稅務顧問先核對了夫妻倆的收入，再替他們準備報稅資料。",
+            "zh-Hans": "税务顾问先核对了夫妻俩的收入，再替他们准备报税资料。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-051",
@@ -2645,7 +3437,16 @@
           "form": "voyage"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le gain obtenu grâce à la vente du vélo permettra de payer une partie du voyage scolaire.",
+          "translations": {
+            "zh-Hant": "賣自行車賺來的錢，可以支付一部分校外旅行的費用。",
+            "zh-Hans": "卖自行车赚来的钱，可以支付一部分校外旅行的费用。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-052",
@@ -2675,7 +3476,16 @@
           "form": "entreprise"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une entreprise généreuse pourrait offrir du matériel à l’association sans imposer sa publicité dans les écoles.",
+          "translations": {
+            "zh-Hant": "慷慨的企業可以捐設備給協會，而不用要求學校替它登廣告。",
+            "zh-Hans": "慷慨的企业可以捐设备给协会，而不用要求学校替它登广告。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-053",
@@ -2705,7 +3515,16 @@
           "form": "transport"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le tarif inclut le repas et la visite du musée, mais le transport reste à organiser.",
+          "translations": {
+            "zh-Hant": "這個價格包含用餐和參觀博物館，交通還得另外安排。",
+            "zh-Hans": "这个价格包含用餐和参观博物馆，交通还得另外安排。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-054",
@@ -2735,7 +3554,16 @@
           "form": "logement"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Issue d’une famille modeste, cette chercheuse travaillait le soir pour payer son logement et ses études.",
+          "translations": {
+            "zh-Hant": "這位女研究員家境並不寬裕，以前靠晚上打工來支付房租和學費。",
+            "zh-Hans": "这位女研究员家境并不宽裕，以前靠晚上打工来支付房租和学费。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-055",
@@ -2765,7 +3593,16 @@
           "form": "professeur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La politique monétaire figure au programme du séminaire que prépare le professeur avec ses étudiants.",
+          "translations": {
+            "zh-Hant": "教授正和學生籌備研討會，貨幣政策是議程中的一項主題。",
+            "zh-Hans": "教授正和学生筹备研讨会，货币政策是议程中的一项主题。"
+          }
+        }
+      ]
     },
     {
       "id": "6.02-3",
@@ -2796,7 +3633,16 @@
           "form": "fille"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le boulanger m’a rendu la monnaie, puis a glissé un petit gâteau dans le sac de ma fille.",
+          "translations": {
+            "zh-Hant": "麵包師把零錢找給我，接著往我女兒的袋子裡放了一個小蛋糕。",
+            "zh-Hans": "面包师把零钱找给我，接着往我女儿的袋子里放了一个小蛋糕。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-057",
@@ -2822,7 +3668,16 @@
           "form": "clients"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La promotion attire les clients, mais je compare les prix avant d’acheter une nouvelle machine.",
+          "translations": {
+            "zh-Hant": "促銷活動吸引了不少顧客，但我買新機器前還是會先比價。",
+            "zh-Hans": "促销活动吸引了不少顾客，但我买新机器前还是会先比价。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-058",
@@ -2852,7 +3707,16 @@
           "form": "élèves"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les élèves bénéficieront d’un tarif réduit pour assister au concert organisé dans le théâtre municipal.",
+          "translations": {
+            "zh-Hant": "學生去市立劇院聽這場音樂會，可以買優惠票。",
+            "zh-Hans": "学生去市立剧院听这场音乐会，可以买优惠票。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-059",
@@ -2882,7 +3746,16 @@
           "form": "magasin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce magasin propose des soldes exceptionnels sur les manteaux avant de recevoir sa nouvelle collection.",
+          "translations": {
+            "zh-Hant": "這家店趁新款到貨前，正以難得的優惠價出清大衣。",
+            "zh-Hans": "这家店趁新款到货前，正以难得的优惠价出清大衣。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-060",
@@ -2912,7 +3785,16 @@
           "form": "emplois"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Grâce à une subvention, le village a restauré sa salle de spectacle et créé deux emplois.",
+          "translations": {
+            "zh-Hant": "村子靠著一筆補助整修了表演廳，還創造了兩個工作機會。",
+            "zh-Hans": "村子靠着一笔补助整修了表演厅，还创造了两个工作机会。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-061",
@@ -2942,7 +3824,16 @@
           "form": "taxi"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le tarif du taxi dépend de la distance et augmente lorsque le chauffeur attend devant la gare.",
+          "translations": {
+            "zh-Hant": "計程車費依里程計算，司機在車站門口等候時也會加計費用。",
+            "zh-Hans": "计程车费依里程计算，司机在车站门口等候时也会加计费用。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.02-062",
@@ -2968,7 +3859,16 @@
           "form": "facture"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Vérifiez si la taxe figure déjà sur la facture avant de comparer le prix des deux hôtels.",
+          "translations": {
+            "zh-Hant": "比較兩家飯店的價格前，先確認帳單上是否已經列入稅金。",
+            "zh-Hans": "比较两家饭店的价格前，先确认帐单上是否已经列入税金。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-001",
@@ -2998,7 +3898,16 @@
           "form": "sac"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "J’attache mon écharpe à la poignée du sac pour éviter de la perdre dans le train.",
+          "translations": {
+            "zh-Hant": "我把圍巾繫在包包的提把上，以免在火車上弄丟。",
+            "zh-Hans": "我把围巾系在包包的提把上，以免在火车上弄丢。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-002",
@@ -3028,7 +3937,16 @@
           "form": "monnaie"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La voyageuse a retrouvé sa bourse sous le fauteuil après avoir cherché sa monnaie dans toutes ses poches.",
+          "translations": {
+            "zh-Hant": "那名女旅客為了找零錢翻遍了所有口袋，後來才在扶手椅底下找到零錢包。",
+            "zh-Hans": "那名女旅客为了找零钱翻遍了所有口袋，后来才在扶手椅底下找到零钱包。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-003",
@@ -3054,7 +3972,16 @@
           "form": "trou"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette chaussette a un trou, mais ma grand-mère préfère la réparer plutôt que d’en acheter une autre.",
+          "translations": {
+            "zh-Hant": "這隻襪子破了一個洞，但奶奶寧願把它補好，也不想再買一隻。",
+            "zh-Hans": "这只袜子破了一个洞，但奶奶宁愿把它补好，也不想再买一只。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-004",
@@ -3084,7 +4011,16 @@
           "form": "chapeau"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Avec sa veste sombre et son chapeau, notre voisin avait l’air chic même pour aller au marché.",
+          "translations": {
+            "zh-Hant": "我們鄰居穿著深色外套、戴著帽子，就連去市場也顯得很有型。",
+            "zh-Hans": "我们邻居穿着深色外套、戴着帽子，就连去市场也显得很有型。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-005",
@@ -3114,7 +4050,16 @@
           "form": "sœur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma sœur essaie une robe pendant que la vendeuse cherche une ceinture de la même couleur.",
+          "translations": {
+            "zh-Hant": "姊姊試穿洋裝時，女店員去找一條同色的腰帶給她。",
+            "zh-Hans": "姐姐试穿洋装时，女店员去找一条同色的腰带给她。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-006",
@@ -3144,7 +4089,16 @@
           "form": "exposition"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le musée présentera une exposition sur la mode et les conditions de travail dans l’industrie textile.",
+          "translations": {
+            "zh-Hant": "博物館將舉辦展覽，介紹時尚與紡織業的工作條件。",
+            "zh-Hans": "博物馆将举办展览，介绍时尚与纺织业的工作条件。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-007",
@@ -3174,7 +4128,16 @@
           "form": "voyage"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Sa montre indique encore l’heure de Montréal depuis le voyage où elle a rencontré ses collègues canadiens.",
+          "translations": {
+            "zh-Hant": "她上次旅行時認識了幾位加拿大同事，從那之後，手錶就一直顯示蒙特婁時間。",
+            "zh-Hans": "她上次旅行时认识了几位加拿大同事，从那之后，手表就一直显示蒙特娄时间。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-008",
@@ -3200,7 +4163,16 @@
           "form": "légumes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous avons rempli le panier de légumes et de fromage avant de rentrer préparer le déjeuner.",
+          "translations": {
+            "zh-Hant": "我們把籃子裝滿蔬菜和起司，才回家準備午餐。",
+            "zh-Hans": "我们把篮子装满蔬菜和起司，才回家准备午餐。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-009",
@@ -3230,7 +4202,16 @@
           "form": "sac"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mon parapluie protège mal mon sac, alors je mets les documents dans une enveloppe en plastique.",
+          "translations": {
+            "zh-Hant": "我的雨傘遮不太到包包，所以我把文件放進塑膠封套裡。",
+            "zh-Hans": "我的雨伞遮不太到包包，所以我把文件放进塑胶封套里。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-010",
@@ -3256,7 +4237,16 @@
           "form": "bijou"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une perle plus petite conviendrait mieux à ce bijou destiné à une jeune musicienne.",
+          "translations": {
+            "zh-Hant": "這件首飾是要送給年輕女音樂家的，配一顆小一點的珍珠會更合適。",
+            "zh-Hans": "这件首饰是要送给年轻女音乐家的，配一颗小一点的珍珠会更合适。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-011",
@@ -3286,7 +4276,16 @@
           "form": "veste"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dans la poche de sa veste, le facteur garde un stylo pour faire signer les reçus.",
+          "translations": {
+            "zh-Hant": "郵差在外套口袋裡放著一支筆，好讓收件人簽收。",
+            "zh-Hans": "邮差在外套口袋里放着一支笔，好让收件人签收。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-012",
@@ -3312,7 +4311,16 @@
           "form": "sœur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Elle a confié ses bijoux précieux à sa sœur avant de partir travailler plusieurs mois à l’étranger.",
+          "translations": {
+            "zh-Hant": "她去國外工作幾個月前，把貴重的首飾交給姊姊保管。",
+            "zh-Hans": "她去国外工作几个月前，把贵重的首饰交给姐姐保管。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-013",
@@ -3342,7 +4350,16 @@
           "form": "appartement"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette robe en laine tient chaud pendant les soirées d’hiver, même dans notre appartement mal chauffé.",
+          "translations": {
+            "zh-Hant": "冬天晚上穿這件羊毛洋裝很暖和，即使在我們暖氣不足的公寓裡也是如此。",
+            "zh-Hans": "冬天晚上穿这件羊毛洋装很暖和，即使在我们暖气不足的公寓里也是如此。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-014",
@@ -3372,7 +4389,16 @@
           "form": "costume"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le style du directeur surprenait ses collègues : il portait toujours des chaussures rouges avec son costume.",
+          "translations": {
+            "zh-Hant": "主管的穿衣風格讓同事們很意外，他總是穿紅鞋搭西裝。",
+            "zh-Hans": "主管的穿衣风格让同事们很意外，他总是穿红鞋搭西装。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-015",
@@ -3398,7 +4424,16 @@
           "form": "vêtements"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce tissu résiste bien aux lavages, ce qui convient aux vêtements que nous fabriquons pour les enfants.",
+          "translations": {
+            "zh-Hant": "這種布料很耐洗，很適合我們用來做童裝。",
+            "zh-Hans": "这种布料很耐洗，很适合我们用来做童装。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-016",
@@ -3428,7 +4463,16 @@
           "form": "frère"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je prêterai ma veste à mon frère s’il doit attendre longtemps sur le quai de la gare.",
+          "translations": {
+            "zh-Hant": "如果哥哥得在月台上等很久，我會把外套借給他。",
+            "zh-Hans": "如果哥哥得在月台上等很久，我会把外套借给他。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-017",
@@ -3454,7 +4498,16 @@
           "form": "poches"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Avant de donner un vêtement à l’association, nous vérifions les poches et réparons les boutons.",
+          "translations": {
+            "zh-Hant": "捐衣服給協會前，我們會先檢查口袋，把釦子補好。",
+            "zh-Hans": "捐衣服给协会前，我们会先检查口袋，把扣子补好。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-018",
@@ -3480,7 +4533,16 @@
           "form": "lumière"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La costumière a choisi chaque accessoire en fonction du personnage et de la lumière prévue sur scène.",
+          "translations": {
+            "zh-Hant": "服裝設計師根據角色和預定的舞台燈光，逐一挑選每件配飾。",
+            "zh-Hans": "服装设计师根据角色和预定的舞台灯光，逐一挑选每件配饰。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-019",
@@ -3510,7 +4572,16 @@
           "form": "manteau"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’ampleur de ce manteau permet de porter un gros pull sans limiter les mouvements des bras.",
+          "translations": {
+            "zh-Hant": "這件大衣剪裁很寬鬆，裡面即使穿厚毛衣，手臂也能活動自如。",
+            "zh-Hans": "这件大衣剪裁很宽松，里面即使穿厚毛衣，手臂也能活动自如。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-020",
@@ -3536,7 +4607,16 @@
           "form": "valeur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce bijou aurait plus de valeur pour moi s’il avait appartenu à quelqu’un de ma famille.",
+          "translations": {
+            "zh-Hant": "如果這件首飾以前是我家裡某個人的，對我而言就更有價值了。",
+            "zh-Hans": "如果这件首饰以前是我家里某个人的，对我而言就更有价值了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-021",
@@ -3562,7 +4642,16 @@
           "form": "chemise"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un bouton manque à ma chemise ; je cherche du fil avant de partir au bureau.",
+          "translations": {
+            "zh-Hant": "我的襯衫少了一顆釦子，我趁出門上班前找線來補。",
+            "zh-Hans": "我的衬衫少了一颗扣子，我趁出门上班前找线来补。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-022",
@@ -3588,7 +4677,16 @@
           "form": "domicile"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le vieil homme a oublié sa canne au café, et le serveur l’a rapportée à son domicile.",
+          "translations": {
+            "zh-Hant": "那位老人把手杖忘在咖啡館，服務生幫他送回了家。",
+            "zh-Hans": "那位老人把手杖忘在咖啡馆，服务生帮他送回了家。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-023",
@@ -3618,7 +4716,16 @@
           "form": "métal"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette ceinture maintient mon pantalon, mais sa boucle en métal déclenche parfois le contrôle à l’aéroport.",
+          "translations": {
+            "zh-Hant": "這條皮帶能繫住我的褲子，但它的金屬釦有時會讓我在機場安檢時被攔下來。",
+            "zh-Hans": "这条皮带能系住我的裤子，但它的金属扣有时会让我在机场安检时被拦下来。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-024",
@@ -3644,7 +4751,16 @@
           "form": "enfant"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une fine chaîne brillait autour de son cou lorsqu’elle se penchait pour aider son enfant.",
+          "translations": {
+            "zh-Hant": "她每次彎下身幫孩子時，頸間的細鍊就會閃閃發光。",
+            "zh-Hans": "她每次弯下身帮孩子时，颈间的细炼就会闪闪发光。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-025",
@@ -3674,7 +4790,16 @@
           "form": "gants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le jardinier porte un chapeau et des gants pour travailler plusieurs heures sous le soleil.",
+          "translations": {
+            "zh-Hant": "園丁在太陽下工作好幾個小時，會戴上帽子和手套。",
+            "zh-Hans": "园丁在太阳下工作好几个小时，会戴上帽子和手套。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-026",
@@ -3704,7 +4829,16 @@
           "form": "porte"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Enlève tes chaussures mouillées et pose-les près de la porte pendant que je prépare le thé dans la cuisine.",
+          "translations": {
+            "zh-Hant": "把濕鞋脫下來放在門邊吧，我去廚房泡茶。",
+            "zh-Hans": "把湿鞋脱下来放在门边吧，我去厨房泡茶。"
+          }
+        }
+      ]
     },
     {
       "id": "6.03-1",
@@ -3731,7 +4865,16 @@
           "form": "entreprise"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je repasse ma chemise avant l’entretien, puis je relis les informations sur l’entreprise.",
+          "translations": {
+            "zh-Hant": "面試前，我先燙好襯衫，再把公司的資料讀一遍。",
+            "zh-Hans": "面试前，我先烫好衬衫，再把公司的资料读一遍。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-028",
@@ -3757,7 +4900,16 @@
           "form": "veste"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La couturière a modifié le col de la veste pour que le costume soit plus confortable.",
+          "translations": {
+            "zh-Hant": "裁縫修改了外套的衣領，讓這套西裝穿起來更舒服。",
+            "zh-Hans": "裁缝修改了外套的衣领，让这套西装穿起来更舒服。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-029",
@@ -3787,7 +4939,16 @@
           "form": "pantalon"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce corsage en coton se porte facilement avec une jupe ou un pantalon de couleur sombre.",
+          "translations": {
+            "zh-Hant": "這件棉質女衫很容易搭配，配深色裙子或長褲都合適。",
+            "zh-Hans": "这件棉质女衫很容易搭配，配深色裙子或长裤都合适。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-030",
@@ -3817,7 +4978,16 @@
           "form": "lieu"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Pour le mariage de sa cousine, Malik louera un costume au lieu d’en acheter un neuf.",
+          "translations": {
+            "zh-Hant": "馬利克要參加表姊的婚禮，打算租西裝，不另外買新的。",
+            "zh-Hans": "马利克要参加表姐的婚礼，打算租西装，不另外买新的。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-031",
@@ -3847,7 +5017,16 @@
           "form": "chauffage"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une couverture attend sur le fauteuil pour les soirées où le chauffage ne suffit plus.",
+          "translations": {
+            "zh-Hant": "扶手椅上備著一條毯子，晚上暖氣不夠暖時就能拿來蓋。",
+            "zh-Hans": "扶手椅上备着一条毯子，晚上暖气不够暖时就能拿来盖。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-032",
@@ -3877,7 +5056,16 @@
           "form": "manche"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un clou a déchiré la manche de mon manteau lorsque je traversais le chantier avec l’architecte.",
+          "translations": {
+            "zh-Hant": "我和建築師穿過工地時，一根釘子勾破了我的大衣袖子。",
+            "zh-Hans": "我和建筑师穿过工地时，一根钉子勾破了我的大衣袖子。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-033",
@@ -3903,7 +5091,16 @@
           "form": "robe"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La dentelle de cette robe demande un lavage délicat et beaucoup de patience au repassage.",
+          "translations": {
+            "zh-Hant": "這件洋裝上的蕾絲要輕柔地洗，熨燙時也得很有耐心。",
+            "zh-Hans": "这件洋装上的蕾丝要轻柔地洗，熨烫时也得很有耐心。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-034",
@@ -3933,7 +5130,16 @@
           "form": "clients"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce modèle semblait dépassé, mais les jeunes clients appréciaient son tissu solide et ses grandes poches.",
+          "translations": {
+            "zh-Hant": "這個款式看起來有些過時，但年輕客人喜歡它結實的布料和寬大的口袋。",
+            "zh-Hans": "这个款式看起来有些过时，但年轻客人喜欢它结实的布料和宽大的口袋。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-035",
@@ -3963,7 +5169,16 @@
           "form": "magasin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Au magasin, je demande à échanger les chaussures parce que leur taille ne convient pas à mon fils.",
+          "translations": {
+            "zh-Hant": "這雙鞋的尺寸不合兒子的腳，所以我到店裡請求換貨。",
+            "zh-Hans": "这双鞋的尺寸不合儿子的脚，所以我到店里请求换货。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-036",
@@ -3993,7 +5208,16 @@
           "form": "étudiants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une conférence sur l’esthétique intéresserait les étudiants qui préparent l’exposition consacrée au mobilier contemporain.",
+          "translations": {
+            "zh-Hant": "正在籌備當代家具展的學生，應該會對美學講座感興趣。",
+            "zh-Hans": "正在筹备当代家具展的学生，应该会对美学讲座感兴趣。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-037",
@@ -4023,7 +5247,16 @@
           "form": "jardin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dans son atelier, cette artisane file la laine avant de la teindre avec des plantes du jardin.",
+          "translations": {
+            "zh-Hant": "這位女工藝師在自己的工坊裡把羊毛紡成線，再用花園裡的植物染色。",
+            "zh-Hans": "这位女工艺师在自己的工坊里把羊毛纺成线，再用花园里的植物染色。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-038",
@@ -4049,7 +5282,16 @@
           "form": "sac"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "J’ai perdu un gant dans le bus et retrouvé l’autre au fond de mon sac.",
+          "translations": {
+            "zh-Hant": "我在公車上弄丟了一隻手套，另一隻則在包包底部找到了。",
+            "zh-Hans": "我在公车上弄丢了一只手套，另一只则在包包底部找到了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-039",
@@ -4079,7 +5321,16 @@
           "form": "repas"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mon père habille le petit pendant que je prépare son repas et les documents demandés par l’école.",
+          "translations": {
+            "zh-Hant": "我準備孩子的餐點和學校要的文件時，爸爸幫孩子穿衣服。",
+            "zh-Hans": "我准备孩子的餐点和学校要的文件时，爸爸帮孩子穿衣服。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-040",
@@ -4105,7 +5356,16 @@
           "form": "poches"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette jupe sera plus pratique pour le voyage si la couturière lui ajoute deux poches.",
+          "translations": {
+            "zh-Hant": "如果裁縫幫這件裙子加上兩個口袋，旅行時穿就更方便了。",
+            "zh-Hans": "如果裁缝帮这件裙子加上两个口袋，旅行时穿就更方便了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-041",
@@ -4135,7 +5395,16 @@
           "form": "couvertures"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La laine provient d’une ferme voisine et sert à fabriquer les couvertures vendues au marché.",
+          "translations": {
+            "zh-Hant": "這些羊毛來自附近的農場，用來製作市場上賣的毛毯。",
+            "zh-Hans": "这些羊毛来自附近的农场，用来制作市场上卖的毛毯。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-042",
@@ -4165,7 +5434,16 @@
           "form": "magasin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Sans ses lunettes, ma grand-mère distinguait mal les prix inscrits sur les étiquettes du magasin.",
+          "translations": {
+            "zh-Hant": "奶奶沒戴眼鏡時，看不太清楚商店標籤上的價格。",
+            "zh-Hans": "奶奶没戴眼镜时，看不太清楚商店标签上的价格。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-043",
@@ -4191,7 +5469,16 @@
           "form": "veste"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La manche de ma veste se coince dans la porte lorsque je porte le paquet.",
+          "translations": {
+            "zh-Hant": "我抱著包裹時，外套的袖子被門夾住了。",
+            "zh-Hans": "我抱着包裹时，外套的袖子被门夹住了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-044",
@@ -4221,7 +5508,16 @@
           "form": "chaussures"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une bénévole a donné un manteau et des chaussures sèches au voyageur arrivé sous la pluie.",
+          "translations": {
+            "zh-Hant": "一位女志工拿了一件大衣和一雙乾鞋，送給冒雨趕到的旅客。",
+            "zh-Hans": "一位女志工拿了一件大衣和一双干鞋，送给冒雨赶到的旅客。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-045",
@@ -4251,7 +5547,16 @@
           "form": "voix"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Au théâtre, ce masque cache le visage de l’actrice tout en laissant entendre clairement sa voix.",
+          "translations": {
+            "zh-Hant": "在劇場裡，這副面具遮住了女演員的臉，觀眾仍能清楚聽見她的聲音。",
+            "zh-Hans": "在剧场里，这副面具遮住了女演员的脸，观众仍能清楚听见她的声音。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-046",
@@ -4277,7 +5582,16 @@
           "form": "montre"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le mécanisme de cette montre fonctionnerait mieux si un spécialiste remplaçait la petite pièce usée.",
+          "translations": {
+            "zh-Hant": "如果請專業師傅換掉那個磨損的小零件，這只手錶的機芯會運作得更順暢。",
+            "zh-Hans": "如果请专业师傅换掉那个磨损的小零件，这只手表的机芯会运作得更顺畅。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-047",
@@ -4307,7 +5621,16 @@
           "form": "vêtements"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce sac en nylon protège mes vêtements pendant les randonnées où la pluie nous surprend souvent.",
+          "translations": {
+            "zh-Hant": "我們健行時常常出其不意就遇上下雨，這個尼龍袋能保護我的衣服。",
+            "zh-Hans": "我们健行时常常出其不意就遇上下雨，这个尼龙袋能保护我的衣服。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-048",
@@ -4337,7 +5660,16 @@
           "form": "chapeau"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ôte ton chapeau et tes gants avant d’aider ta sœur à préparer le repas.",
+          "translations": {
+            "zh-Hant": "先脫下帽子和手套，再去幫妹妹準備餐點。",
+            "zh-Hans": "先脱下帽子和手套，再去帮妹妹准备餐点。"
+          }
+        }
+      ]
     },
     {
       "id": "6.03-2",
@@ -4364,7 +5696,16 @@
           "form": "bureau"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce pantalon est assez souple pour faire du vélo et assez élégant pour aller au bureau.",
+          "translations": {
+            "zh-Hant": "這條褲子穿起來夠柔軟，適合騎自行車，也夠體面，可以穿去上班。",
+            "zh-Hans": "这条裤子穿起来够柔软，适合骑自行车，也够体面，可以穿去上班。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-050",
@@ -4394,7 +5735,16 @@
           "form": "cliente"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La cliente a choisi un parfum léger après avoir essayé plusieurs échantillons sur son poignet.",
+          "translations": {
+            "zh-Hant": "女顧客在手腕上試了好幾款試用品，最後選了一款氣味清淡的香水。",
+            "zh-Hans": "女顾客在手腕上试了好几款试用品，最后选了一款气味清淡的香水。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-051",
@@ -4424,7 +5774,16 @@
           "form": "masque"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Avant d’entrer sur scène, l’acteur revêt un manteau rouge et vérifie son masque dans le miroir.",
+          "translations": {
+            "zh-Hant": "上台前，演員披上一件紅大衣，對著鏡子查看臉上的面具。",
+            "zh-Hans": "上台前，演员披上一件红大衣，对着镜子查看脸上的面具。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-052",
@@ -4454,7 +5813,16 @@
           "form": "boîte"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le rubis ornait une bague que ma tante conservait dans une boîte avec ses lettres anciennes.",
+          "translations": {
+            "zh-Hant": "那顆紅寶石鑲在一枚戒指上，阿姨把戒指和她以前的信件一起珍藏在盒子裡。",
+            "zh-Hans": "那颗红宝石镶在一枚戒指上，阿姨把戒指和她以前的信件一起珍藏在盒子里。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-053",
@@ -4484,7 +5852,16 @@
           "form": "train"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je range mon appareil photo dans le sac et garde les billets de train dans ma poche.",
+          "translations": {
+            "zh-Hant": "我把相機收進袋子裡，火車票則放在口袋裡。",
+            "zh-Hans": "我把相机收进袋子里，火车票则放在口袋里。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-054",
@@ -4514,7 +5891,16 @@
           "form": "costumes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’atelier utilisera cette soie pour confectionner les costumes du prochain spectacle de danse.",
+          "translations": {
+            "zh-Hant": "工坊會用這批絲綢製作下一場舞蹈演出的服裝。",
+            "zh-Hans": "工坊会用这批丝绸制作下一场舞蹈演出的服装。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-055",
@@ -4540,7 +5926,16 @@
           "form": "tissu"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La teinture donne une couleur plus sombre au tissu, mais les coutures restent encore visibles.",
+          "translations": {
+            "zh-Hant": "染料把布料染得更深，但接縫還是看得見。",
+            "zh-Hans": "染料把布料染得更深，但接缝还是看得见。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-056",
@@ -4570,7 +5965,16 @@
           "form": "chaussures"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Pour son premier jour de travail, elle a choisi une tenue confortable et des chaussures solides.",
+          "translations": {
+            "zh-Hant": "第一天上班，她選了一身舒適的衣服和一雙耐穿的鞋。",
+            "zh-Hans": "第一天上班，她选了一身舒适的衣服和一双耐穿的鞋。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-057",
@@ -4600,7 +6004,16 @@
           "form": "région"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’industrie textile de la région emploie des techniciens qui cherchent à réduire la consommation d’eau.",
+          "translations": {
+            "zh-Hant": "當地紡織業聘請的技術人員正設法減少用水量。",
+            "zh-Hans": "当地纺织业聘请的技术人员正设法减少用水量。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-058",
@@ -4630,7 +6043,16 @@
           "form": "vêtements"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un petit trou dans le toit laissait tomber la pluie sur les vêtements rangés au grenier.",
+          "translations": {
+            "zh-Hant": "雨從屋頂的一個小洞滴下來，落在收在閣樓裡的衣服上。",
+            "zh-Hans": "雨从屋顶的一个小洞滴下来，落在收在阁楼里的衣服上。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-059",
@@ -4660,7 +6082,16 @@
           "form": "manteau"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce manteau est usé aux coudes, mais son tissu reste assez solide pour passer encore un hiver.",
+          "translations": {
+            "zh-Hant": "這件大衣的手肘處已經磨損了，不過布料還很結實，再穿一個冬天沒問題。",
+            "zh-Hans": "这件大衣的手肘处已经磨损了，不过布料还很结实，再穿一个冬天没问题。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-060",
@@ -4690,7 +6121,16 @@
           "form": "trajets"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les longues promenades ont usé mes chaussures plus vite que les trajets quotidiens entre la maison et le bureau.",
+          "translations": {
+            "zh-Hant": "比起每天在家和辦公室之間往返，長距離散步讓我的鞋磨損得更快。",
+            "zh-Hans": "比起每天在家和办公室之间往返，长距离散步让我的鞋磨损得更快。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-061",
@@ -4720,7 +6160,16 @@
           "form": "main"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le velours du fauteuil est doux sous la main et sa couleur s’accorde avec les rideaux.",
+          "translations": {
+            "zh-Hant": "扶手椅上的天鵝絨摸起來很柔軟，顏色也和窗簾很搭。",
+            "zh-Hans": "扶手椅上的天鹅绒摸起来很柔软，颜色也和窗帘很搭。"
+          }
+        }
+      ]
     },
     {
       "id": "book-6.03-062",
@@ -4750,7 +6199,16 @@
           "form": "robe"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Vêtue de sa robe bleue, la chanteuse saluera le public avant de commencer le concert.",
+          "translations": {
+            "zh-Hant": "女歌手將穿著她的藍色洋裝，先向觀眾致意，再開始演唱會。",
+            "zh-Hans": "女歌手将穿着她的蓝色洋装，先向观众致意，再开始演唱会。"
+          }
+        }
+      ]
     }
   ],
   "originalMethod": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，旧统计和科学表述的范围说明记入 note。",

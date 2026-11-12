@@ -1211,11 +1211,15 @@
   color: var(--muted);
   font-size: 13px;
 }
-.card-example .example-translation {
+.entry-example .example-translation {
   margin: 4px 0 0;
   color: var(--muted);
   font-size: 14px;
   line-height: 1.7;
+}
+.list-example .example-translation {
+  margin-top: 2px;
+  font-size: 12px;
 }
 .entry-empty-copy {
   color: var(--muted);
@@ -1424,7 +1428,7 @@
     align-items: start;
     margin-top: 2px;
   }
-  .entry-secondary > .list-example {
+  .entry-secondary > .list-example:not(:has(.example-translation)) {
     display: none;
   }
   .entry-secondary-actions {
@@ -1977,6 +1981,10 @@ main.vocabulary-list-layout {
 .memory-lapse-list li + li { border-top: 1px solid var(--outline); }
 .memory-lapse-list .list-word { font-size: 16px; }
 .memory-lapse-meaning { font-size: 12px; line-height: 1.6; overflow-wrap: anywhere; }
+.memory-list-examples { grid-column: 2 / -1; min-width: 0; overflow-wrap: anywhere; }
+.memory-list-examples .entry-example + .entry-example { margin-top: 6px; }
+.memory-list-examples .example-sentence { font-size: 13px; }
+.memory-list-examples .example-translation { margin-top: 2px; font-size: 12px; }
 .memory-answer-actions {
   display: grid;
   grid-template-columns: minmax(0, 1fr) repeat(2, minmax(0, 2fr));

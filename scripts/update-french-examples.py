@@ -37,6 +37,13 @@ def validate(words: list[dict], records: dict) -> dict:
         text = record['text']
         if not isinstance(text, str) or not text.strip() or len(text) > 2000:
             raise ValueError(f'Invalid example: {identifier}')
+        translations = record.get('translations', {})
+        if not isinstance(translations, dict) or any(
+            language not in {'zh-Hant', 'zh-Hans', 'en', 'de', 'ja'}
+            or not isinstance(value, str) or not value.strip() or len(value) > 2000
+            for language, value in translations.items()
+        ):
+            raise ValueError(f'Invalid example translation: {identifier}')
         fingerprint = normalized(text.strip())
         if fingerprint in seen:
             raise ValueError(f'Duplicate example: {identifier}')
@@ -81,6 +88,18 @@ def validate(words: list[dict], records: dict) -> dict:
                 minWords=min(lengths), maxWords=max(lengths))
 
 
+def rich_examples(word: dict, record: dict) -> list:
+    # Replace the managed sentence and keep any additional examples in the unit.
+    primary_texts = {word.get('example'), record['text']}
+    examples = [
+        example for example in word.get('examples', [])
+        if (example if isinstance(example, str) else example['text']) not in primary_texts
+    ]
+    if record.get('translations'):
+        examples.insert(0, {'text': record['text'], 'translations': record['translations']})
+    return examples
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', type=Path, default=ROOT)
@@ -102,7 +121,7 @@ def main() -> None:
             record = records[word['id']]
             expected = (record['text'], record['tense'], record['related'], PROVENANCE)
             actual = (word['example'], word.get('exampleTense'), word.get('exampleRelated'), word.get('exampleSource'))
-            if actual != expected:
+            if actual != expected or word.get('examples', []) != rich_examples(word, record):
                 raise ValueError(f'Generated example drift: {word["id"]}')
         print(json.dumps(statistics, ensure_ascii=False, indent=2))
         return
@@ -115,6 +134,11 @@ def main() -> None:
         for word in unit['words']:
             record = records[word['id']]
             record.setdefault('originalText', previous.get(word['id'], {}).get('originalText', word['example']))
+            examples = rich_examples(word, record)
+            if examples:
+                word['examples'] = examples
+            else:
+                word.pop('examples', None)
             word.update(example=record['text'], exampleTense=record['tense'],
                         exampleRelated=record['related'], exampleSource=PROVENANCE)
         unit['exampleMethod'] = PROVENANCE

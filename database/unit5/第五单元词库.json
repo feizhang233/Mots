@@ -52,7 +52,16 @@
           "form": "pâte"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le beurre ramollit sur la table pendant que ma sœur prépare la pâte du gâteau.",
+          "translations": {
+            "zh-Hant": "姊姊在準備蛋糕麵糊時，桌上的奶油也漸漸軟化了。",
+            "zh-Hans": "姐姐在准备蛋糕面糊时，桌上的奶油也渐渐软化了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-002",
@@ -78,7 +87,16 @@
           "form": "repas"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous avons acheté du bœuf au marché pour préparer le repas de dimanche.",
+          "translations": {
+            "zh-Hant": "我們在市場買了牛肉，準備做星期天那頓飯。",
+            "zh-Hans": "我们在市场买了牛肉，准备做星期天那顿饭。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-003",
@@ -104,7 +122,16 @@
           "form": "vacances"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette boîte protège les biscuits que ma grand-mère nous envoie pendant les vacances.",
+          "translations": {
+            "zh-Hant": "這個盒子保護著奶奶放假時寄給我們的餅乾。",
+            "zh-Hans": "这个盒子保护着奶奶放假时寄给我们的饼干。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-004",
@@ -130,7 +157,16 @@
           "form": "cuisine"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L'odeur du café remplissait la cuisine avant que les enfants descendent pour le petit déjeuner.",
+          "translations": {
+            "zh-Hant": "孩子們還沒下樓吃早餐，廚房裡就已經飄滿了咖啡香。",
+            "zh-Hans": "孩子们还没下楼吃早餐，厨房里就已经飘满了咖啡香。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-005",
@@ -156,7 +192,16 @@
           "form": "filet"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les cerises du jardin attirent les oiseaux, alors nous protégeons les branches avec un filet.",
+          "translations": {
+            "zh-Hant": "花園裡的櫻桃吸引了鳥兒，所以我們用網子罩住樹枝。",
+            "zh-Hans": "花园里的樱桃吸引了鸟儿，所以我们用网子罩住树枝。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-006",
@@ -182,7 +227,16 @@
           "form": "café"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous offrirons du chocolat aux invités avec le café servi après le dîner.",
+          "translations": {
+            "zh-Hant": "晚餐後上咖啡時，我們會給客人一些巧克力。",
+            "zh-Hans": "晚餐后上咖啡时，我们会给客人一些巧克力。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-007",
@@ -208,7 +262,16 @@
           "form": "bébé"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La compote de pommes accompagne les tartines du bébé lorsqu'il prend son goûter.",
+          "translations": {
+            "zh-Hant": "寶寶吃點心時，會拿蘋果泥配麵包片。",
+            "zh-Hans": "宝宝吃点心时，会拿苹果泥配面包片。"
+          }
+        }
+      ]
     },
     {
       "id": "5.01-2",
@@ -235,7 +298,16 @@
           "form": "légumes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un morceau de fromage donnerait plus de goût à cette soupe de légumes.",
+          "translations": {
+            "zh-Hant": "如果加一塊起司，這道蔬菜湯會更有味道。",
+            "zh-Hans": "如果加一块起司，这道蔬菜汤会更有味道。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-009",
@@ -261,7 +333,16 @@
           "form": "été"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce fruit pousse dans le jardin de mon oncle et mûrit au début de l'été.",
+          "translations": {
+            "zh-Hant": "這種水果長在我叔叔的花園裡，初夏時成熟。",
+            "zh-Hans": "这种水果长在我叔叔的花园里，初夏时成熟。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-010",
@@ -287,7 +368,16 @@
           "form": "parents"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les enfants ont partagé une glace sur la plage avant de rejoindre leurs parents.",
+          "translations": {
+            "zh-Hant": "孩子們在海灘上分著吃了一份冰淇淋，才回到爸媽身邊。",
+            "zh-Hans": "孩子们在海滩上分着吃了一份冰淇淋，才回到爸妈身边。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-011",
@@ -313,7 +403,16 @@
           "form": "pain"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma fille verse du lait dans son bol pendant que son frère coupe le pain.",
+          "translations": {
+            "zh-Hant": "女兒把牛奶倒進自己的碗裡，她哥哥則在切麵包。",
+            "zh-Hans": "女儿把牛奶倒进自己的碗里，她哥哥则在切面包。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-012",
@@ -339,7 +438,16 @@
           "form": "menu"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le cuisinier choisissait ses légumes au marché avant d'afficher le menu du jour.",
+          "translations": {
+            "zh-Hant": "廚師總是先到市場挑好蔬菜，再把當天的菜單貼出來。",
+            "zh-Hans": "厨师总是先到市场挑好蔬菜，再把当天的菜单贴出来。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-013",
@@ -365,7 +473,16 @@
           "form": "déjeuner"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Quelques noix ajoutent du croquant aux poires que nous partageons après le déjeuner.",
+          "translations": {
+            "zh-Hant": "午餐後我們一起吃梨子，配上幾顆核桃，口感更酥脆。",
+            "zh-Hans": "午餐后我们一起吃梨子，配上几颗核桃，口感更酥脆。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-014",
@@ -391,7 +508,16 @@
           "form": "promenade"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je garderai cette orange pour le goûter après notre promenade dans la forêt.",
+          "translations": {
+            "zh-Hant": "我會把這顆柳橙留到我們在森林散步完再當點心吃。",
+            "zh-Hans": "我会把这颗柳橙留到我们在森林散步完再当点心吃。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-015",
@@ -417,7 +543,16 @@
           "form": "boulanger"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La pâte repose près de la fenêtre pendant que le boulanger chauffe son four.",
+          "translations": {
+            "zh-Hant": "麵包師傅預熱烤爐時，麵團就放在窗邊靜置。",
+            "zh-Hans": "面包师傅预热烤炉时，面团就放在窗边静置。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-016",
@@ -443,7 +578,16 @@
           "form": "crème"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette poire serait meilleure avec un peu de chocolat fondu et une cuillère de crème.",
+          "translations": {
+            "zh-Hant": "這顆梨子如果淋上一點融化的巧克力，再加一匙鮮奶油，會更好吃。",
+            "zh-Hans": "这颗梨子如果淋上一点融化的巧克力，再加一匙鲜奶油，会更好吃。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-017",
@@ -469,7 +613,16 @@
           "form": "pain"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mon père ajoute du poivre à sa soupe avant de goûter le pain encore chaud.",
+          "translations": {
+            "zh-Hant": "爸爸往湯裡撒了些胡椒，再嚐一口還熱著的麵包。",
+            "zh-Hans": "爸爸往汤里撒了些胡椒，再尝一口还热着的面包。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-018",
@@ -495,7 +648,16 @@
           "form": "invités"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La famille a préparé du porc avec du riz pour accueillir les invités de dimanche.",
+          "translations": {
+            "zh-Hant": "這家人準備了豬肉和米飯，招待星期天來訪的客人。",
+            "zh-Hans": "这家人准备了猪肉和米饭，招待星期天来访的客人。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-019",
@@ -521,7 +683,16 @@
           "form": "table"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le poulet cuit doucement pendant que nous installons les chaises autour de la table.",
+          "translations": {
+            "zh-Hant": "我們圍著餐桌擺好椅子時，雞肉正在小火慢煮。",
+            "zh-Hans": "我们围着餐桌摆好椅子时，鸡肉正在小火慢煮。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-020",
@@ -547,7 +718,16 @@
           "form": "magasin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le marchand découpait la saucisse en fines tranches pour les clients de son magasin.",
+          "translations": {
+            "zh-Hant": "店家把香腸切成薄片，分給店裡的客人。",
+            "zh-Hans": "店家把香肠切成薄片，分给店里的客人。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-021",
@@ -573,7 +753,16 @@
           "form": "ferme"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce vin accompagne le fromage produit par la ferme située au-dessus du village.",
+          "translations": {
+            "zh-Hant": "這款葡萄酒搭配的是村子上方那座農場生產的起司。",
+            "zh-Hans": "这款葡萄酒搭配的是村子上方那座农场生产的起司。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-022",
@@ -599,7 +788,16 @@
           "form": "lac"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous emporterons des yaourts et du pain pour le pique-nique au bord du lac.",
+          "translations": {
+            "zh-Hant": "我們會帶優格和麵包去湖邊野餐。",
+            "zh-Hans": "我们会带优格和面包去湖边野餐。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-023",
@@ -625,7 +823,16 @@
           "form": "volant"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette boisson ne contient pas d'alcool et convient aux adultes qui prennent le volant.",
+          "translations": {
+            "zh-Hant": "這款飲料不含酒精，適合需要開車的大人喝。",
+            "zh-Hans": "这款饮料不含酒精，适合需要开车的大人喝。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-024",
@@ -651,7 +858,16 @@
           "form": "fruits"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une aide alimentaire permettrait aux familles de compléter leurs courses avec des fruits frais.",
+          "translations": {
+            "zh-Hant": "有了食物補助，這些家庭就能在平常採買的食材之外，再買些新鮮水果。",
+            "zh-Hans": "有了食物补助，这些家庭就能在平常采买的食材之外，再买些新鲜水果。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-025",
@@ -677,7 +893,16 @@
           "form": "traitement"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le médecin discute de l'alimentation de mon grand-père avant de modifier son traitement.",
+          "translations": {
+            "zh-Hant": "醫師會先和爺爺談談他的飲食，再調整治療方式。",
+            "zh-Hans": "医师会先和爷爷谈谈他的饮食，再调整治疗方式。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-026",
@@ -703,7 +928,16 @@
           "form": "gâteau"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "J'ai renversé la crème sur la nappe en voulant servir le gâteau trop vite.",
+          "translations": {
+            "zh-Hant": "我急著把蛋糕端上桌，結果把鮮奶油灑在桌布上了。",
+            "zh-Hans": "我急着把蛋糕端上桌，结果把鲜奶油洒在桌布上了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-027",
@@ -729,7 +963,16 @@
           "form": "cuisinier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette huile donne du goût aux légumes rôtis que prépare le cuisinier de l'hôtel.",
+          "translations": {
+            "zh-Hant": "飯店主廚烤的蔬菜加了這種油，吃起來特別香。",
+            "zh-Hans": "饭店主厨烤的蔬菜加了这种油，吃起来特别香。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-028",
@@ -755,7 +998,16 @@
           "form": "magasin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le marchand conservait les produits laitiers au froid, derrière le comptoir du magasin.",
+          "translations": {
+            "zh-Hant": "店家把乳製品放在店裡的櫃檯後方冷藏。",
+            "zh-Hans": "店家把乳制品放在店里的柜台后方冷藏。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-029",
@@ -781,7 +1033,16 @@
           "form": "repas"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma tante ajoute du miel au yaourt que les enfants mangent après leur repas.",
+          "translations": {
+            "zh-Hant": "阿姨會在孩子們飯後吃的優格裡加蜂蜜。",
+            "zh-Hans": "阿姨会在孩子们饭后吃的优格里加蜂蜜。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-030",
@@ -807,7 +1068,16 @@
           "form": "cuisine"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les bénévoles distribueront la nourriture aux habitants dont la cuisine a été endommagée.",
+          "translations": {
+            "zh-Hant": "志工會把食物發給廚房受損的居民。",
+            "zh-Hans": "志工会把食物发给厨房受损的居民。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-031",
@@ -833,7 +1103,16 @@
           "form": "recette"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un œuf suffit pour lier la pâte lorsque nous préparons cette recette en petite quantité.",
+          "translations": {
+            "zh-Hant": "少量製作這道食譜時，加一顆蛋就能讓麵糊黏合。",
+            "zh-Hans": "少量制作这道食谱时，加一颗蛋就能让面糊黏合。"
+          }
+        }
+      ]
     },
     {
       "id": "5.01-1",
@@ -860,7 +1139,16 @@
           "form": "fruits"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Du pain grillé accompagnerait bien le fromage et les fruits que tu as apportés.",
+          "translations": {
+            "zh-Hant": "烤麵包應該很適合搭配你帶來的起司和水果。",
+            "zh-Hans": "烤面包应该很适合搭配你带来的起司和水果。"
+          }
+        }
+      ]
     },
     {
       "id": "5.01-4",
@@ -887,7 +1175,16 @@
           "form": "sœur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma fille coupe une pomme pour la partager avec sa sœur pendant la récréation.",
+          "translations": {
+            "zh-Hant": "女兒切了一顆蘋果，準備在下課時間和妹妹分著吃。",
+            "zh-Hans": "女儿切了一颗苹果，准备在下课时间和妹妹分着吃。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-034",
@@ -913,7 +1210,16 @@
           "form": "couverts"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le riz a absorbé toute l'eau pendant que nous mettions les couverts.",
+          "translations": {
+            "zh-Hant": "我們在擺餐具的時候，米已經把水全吸乾了。",
+            "zh-Hans": "我们在摆餐具的时候，米已经把水全吸干了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-035",
@@ -943,7 +1249,16 @@
           "form": "repas"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le médecin conseille à mon père de réduire le sel sans supprimer le plaisir du repas.",
+          "translations": {
+            "zh-Hant": "醫師建議爸爸少吃點鹽，同時也能享受用餐的樂趣。",
+            "zh-Hans": "医师建议爸爸少吃点盐，同时也能享受用餐的乐趣。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-036",
@@ -969,7 +1284,16 @@
           "form": "match"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous verserons un peu de sirop dans l'eau fraîche après le match de football.",
+          "translations": {
+            "zh-Hant": "足球賽結束後，我們會在涼水裡加一點糖漿。",
+            "zh-Hans": "足球赛结束后，我们会在凉水里加一点糖浆。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-037",
@@ -995,7 +1319,16 @@
           "form": "poires"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette tarte contient peu de sucre parce que les poires sont déjà très douces.",
+          "translations": {
+            "zh-Hant": "這個塔只加了少量的糖，因為梨子本身就很甜了。",
+            "zh-Hans": "这个塔只加了少量的糖，因为梨子本身就很甜了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-038",
@@ -1021,7 +1354,16 @@
           "form": "marche"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une tasse de thé réchaufferait les randonneurs après leur marche sous la pluie.",
+          "translations": {
+            "zh-Hant": "健行的人淋著雨走了一路，喝杯熱茶應該就能暖和起來。",
+            "zh-Hans": "健行的人淋着雨走了一路，喝杯热茶应该就能暖和起来。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.01-039",
@@ -1047,7 +1389,16 @@
           "form": "légumes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La viande repose quelques minutes pendant que le cuisinier termine la sauce et les légumes.",
+          "translations": {
+            "zh-Hant": "廚師忙著完成醬汁和蔬菜配菜時，煮好的肉先靜置幾分鐘。",
+            "zh-Hans": "厨师忙着完成酱汁和蔬菜配菜时，煮好的肉先静置几分钟。"
+          }
+        }
+      ]
     },
     {
       "id": "5.02-3",
@@ -1074,7 +1425,16 @@
           "form": "serveuse"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L'addition comprenait les boissons et le dessert, mais pas le pourboire laissé à la serveuse.",
+          "translations": {
+            "zh-Hant": "帳單裡包括飲料和甜點，留給女服務生的小費另計。",
+            "zh-Hans": "帐单里包括饮料和甜点，留给女服务生的小费另计。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-002",
@@ -1100,7 +1460,16 @@
           "form": "marché"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une baguette dépasse du panier que ma mère rapporte du marché chaque matin.",
+          "translations": {
+            "zh-Hant": "媽媽每天早上從市場提回的籃子裡，都露出一截法國長棍麵包。",
+            "zh-Hans": "妈妈每天早上从市场提回的篮子里，都露出一截法国长棍面包。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-003",
@@ -1126,7 +1495,16 @@
           "form": "menu"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les invités ont commandé une bière avant de choisir leur repas sur le menu.",
+          "translations": {
+            "zh-Hant": "客人們先點了一杯啤酒，再看菜單決定要吃什麼。",
+            "zh-Hans": "客人们先点了一杯啤酒，再看菜单决定要吃什么。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-004",
@@ -1152,7 +1530,16 @@
           "form": "déjeuner"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce bistrot accueille les ouvriers du quartier pour un déjeuner simple et rapide.",
+          "translations": {
+            "zh-Hant": "附近的工人會來這家小酒館，吃一頓簡單又快速的午餐。",
+            "zh-Hans": "附近的工人会来这家小酒馆，吃一顿简单又快速的午餐。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-005",
@@ -1178,7 +1565,16 @@
           "form": "sentier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous boirons de l'eau avant de reprendre le sentier qui monte au refuge.",
+          "translations": {
+            "zh-Hant": "我們會先喝點水，再繼續沿著山徑往上走到山屋。",
+            "zh-Hans": "我们会先喝点水，再继续沿着山径往上走到山屋。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-006",
@@ -1204,7 +1600,16 @@
           "form": "course"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette boisson fraîche attend les sportifs à l'arrivée de leur course autour du lac.",
+          "translations": {
+            "zh-Hant": "運動員跑完環湖賽，一到終點就能喝到這款清涼的飲料。",
+            "zh-Hans": "运动员跑完环湖赛，一到终点就能喝到这款清凉的饮料。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-007",
@@ -1230,7 +1635,16 @@
           "form": "vendeur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce fromage serait bon avec du pain encore chaud, selon le vendeur du marché.",
+          "translations": {
+            "zh-Hant": "市場裡的攤販說，這款起司配上還熱著的麵包會很好吃。",
+            "zh-Hans": "市场里的摊贩说，这款起司配上还热着的面包会很好吃。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-008",
@@ -1256,7 +1670,16 @@
           "form": "dîner"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La mère garde les bonbons pour la fête plutôt que d'en donner avant le dîner.",
+          "translations": {
+            "zh-Hant": "媽媽把糖果留到派對時再拿出來，晚餐前先不給孩子吃。",
+            "zh-Hans": "妈妈把糖果留到派对时再拿出来，晚餐前先不给孩子吃。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-009",
@@ -1282,7 +1705,16 @@
           "form": "salon"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La casserole est restée sur le feu pendant que je répondais au téléphone dans le salon.",
+          "translations": {
+            "zh-Hant": "我在客廳接電話時，鍋子一直放在爐火上。",
+            "zh-Hans": "我在客厅接电话时，锅子一直放在炉火上。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-010",
@@ -1308,7 +1740,16 @@
           "form": "jardin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma grand-mère prépare sa confiture avec les fruits qu'elle récolte dans son jardin.",
+          "translations": {
+            "zh-Hant": "奶奶用自己在花園裡摘的水果做果醬。",
+            "zh-Hans": "奶奶用自己在花园里摘的水果做果酱。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-011",
@@ -1334,7 +1775,16 @@
           "form": "cave"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les habitants conservaient le lait au frais dans la cave avant d'avoir un réfrigérateur.",
+          "translations": {
+            "zh-Hant": "以前還沒有冰箱時，居民會把牛奶放在地窖裡保冷。",
+            "zh-Hans": "以前还没有冰箱时，居民会把牛奶放在地窖里保冷。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-012",
@@ -1360,7 +1810,16 @@
           "form": "table"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le cuisinier coupe les légumes pendant que son apprenti met la table pour les clients.",
+          "translations": {
+            "zh-Hant": "廚師在切蔬菜，學徒則在替客人擺餐具。",
+            "zh-Hans": "厨师在切蔬菜，学徒则在替客人摆餐具。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-013",
@@ -1386,7 +1845,16 @@
           "form": "dîner"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous installerons un couvert supplémentaire si ton frère se joint à nous pour le dîner.",
+          "translations": {
+            "zh-Hant": "如果你哥哥要和我們一起吃晚餐，我們會多擺一副餐具。",
+            "zh-Hans": "如果你哥哥要和我们一起吃晚餐，我们会多摆一副餐具。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-014",
@@ -1412,7 +1880,16 @@
           "form": "compote"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette cuillère permet au bébé de manger sa compote sans renverser tout le contenu.",
+          "translations": {
+            "zh-Hant": "有了這把湯匙，寶寶吃果泥時就不會把整碗都打翻。",
+            "zh-Hans": "有了这把汤匙，宝宝吃果泥时就不会把整碗都打翻。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-015",
@@ -1438,7 +1915,16 @@
           "form": "légumes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une cuisson plus lente permettrait de cuire la viande sans dessécher les légumes.",
+          "translations": {
+            "zh-Hant": "如果慢慢煮，肉能煮熟，蔬菜也不會變乾。",
+            "zh-Hans": "如果慢慢煮，肉能煮熟，蔬菜也不会变干。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-016",
@@ -1464,7 +1950,16 @@
           "form": "repas"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Après la randonnée, les enfants ont faim et attendent impatiemment le repas.",
+          "translations": {
+            "zh-Hant": "健行結束後，孩子們肚子都餓了，迫不及待地等著吃飯。",
+            "zh-Hans": "健行结束后，孩子们肚子都饿了，迫不及待地等着吃饭。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-017",
@@ -1490,7 +1985,16 @@
           "form": "serviette"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le petit a laissé tomber sa fourchette sous la chaise avant de demander une autre serviette.",
+          "translations": {
+            "zh-Hant": "小朋友把叉子掉到椅子底下，接著又要了一張餐巾。",
+            "zh-Hans": "小朋友把叉子掉到椅子底下，接着又要了一张餐巾。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-018",
@@ -1516,7 +2020,16 @@
           "form": "bougies"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le gâteau refroidit près de la fenêtre pendant que les enfants préparent les bougies.",
+          "translations": {
+            "zh-Hant": "孩子們在準備蠟燭，蛋糕則放在窗邊放涼。",
+            "zh-Hans": "孩子们在准备蜡烛，蛋糕则放在窗边放凉。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-019",
@@ -1542,7 +2055,16 @@
           "form": "vent"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous mangerons sur la terrasse si le vent reste aussi faible ce soir.",
+          "translations": {
+            "zh-Hant": "如果今晚的風還是這麼小，我們就會在露臺吃飯。",
+            "zh-Hans": "如果今晚的风还是这么小，我们就会在露台吃饭。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-020",
@@ -1568,7 +2090,16 @@
           "form": "fruits"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le menu propose un poisson du jour et un dessert préparé avec les fruits locaux.",
+          "translations": {
+            "zh-Hant": "菜單上有當日鮮魚，以及用當地水果做的甜點。",
+            "zh-Hans": "菜单上有当日鲜鱼，以及用当地水果做的甜点。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-021",
@@ -1594,7 +2125,16 @@
           "form": "fromage"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une petite part de gâteau suffirait après ce déjeuner accompagné de fromage.",
+          "translations": {
+            "zh-Hant": "午餐已經吃了起司，餐後再吃一小塊蛋糕應該就夠了。",
+            "zh-Hans": "午餐已经吃了起司，餐后再吃一小块蛋糕应该就够了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-022",
@@ -1620,7 +2160,16 @@
           "form": "beurre"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La poêle chauffe pendant que mon frère casse les œufs et cherche le beurre.",
+          "translations": {
+            "zh-Hant": "哥哥敲開雞蛋、找奶油時，平底鍋正在爐上加熱。",
+            "zh-Hans": "哥哥敲开鸡蛋、找奶油时，平底锅正在炉上加热。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-023",
@@ -1646,7 +2195,16 @@
           "form": "bistrot"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le client laissait toujours un pourboire après avoir pris son café au même bistrot.",
+          "translations": {
+            "zh-Hant": "那位客人總是在同一家小酒館喝咖啡，喝完都會留下小費。",
+            "zh-Hans": "那位客人总是在同一家小酒馆喝咖啡，喝完都会留下小费。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-024",
@@ -1672,7 +2230,16 @@
           "form": "jardin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous préparons la soupe avec les légumes que notre voisin cultive dans son jardin.",
+          "translations": {
+            "zh-Hant": "我們用鄰居在自家花園種的蔬菜煮湯。",
+            "zh-Hans": "我们用邻居在自家花园种的蔬菜煮汤。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-025",
@@ -1698,7 +2265,16 @@
           "form": "habitudes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La médecin adaptera ce régime aux habitudes de son patient plutôt qu'à une liste d'interdictions.",
+          "translations": {
+            "zh-Hant": "這位女醫師會依病人的習慣調整飲食計畫，而不會只照著一張禁忌清單行事。",
+            "zh-Hans": "这位女医师会依病人的习惯调整饮食计划，而不会只照着一张禁忌清单行事。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-026",
@@ -1724,7 +2300,16 @@
           "form": "repas"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le serveur remplit la carafe pendant que les clients choisissent leur repas.",
+          "translations": {
+            "zh-Hant": "客人們在選餐時，服務生正把水壺裝滿。",
+            "zh-Hans": "客人们在选餐时，服务生正把水壶装满。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-027",
@@ -1750,7 +2335,16 @@
           "form": "eau"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette soupe trop salée nous a donné envie de boire un grand verre d'eau.",
+          "translations": {
+            "zh-Hant": "這道湯太鹹了，喝完讓我們好想喝一大杯水。",
+            "zh-Hans": "这道汤太咸了，喝完让我们好想喝一大杯水。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-028",
@@ -1776,7 +2370,16 @@
           "form": "menu"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La serveuse aide les enfants à choisir un dessert pendant que leurs parents regardent le menu.",
+          "translations": {
+            "zh-Hant": "爸媽還在看菜單，女服務生先幫孩子們挑甜點。",
+            "zh-Hans": "爸妈还在看菜单，女服务生先帮孩子们挑甜点。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-029",
@@ -1802,7 +2405,16 @@
           "form": "gare"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une soupe chaude réchaufferait les voyageurs qui attendent dans la petite gare.",
+          "translations": {
+            "zh-Hant": "小車站裡候車的旅客如果喝碗熱湯，身體就能暖和一些。",
+            "zh-Hans": "小车站里候车的旅客如果喝碗热汤，身体就能暖和一些。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-030",
@@ -1828,7 +2440,16 @@
           "form": "jardin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce dessert sucré accompagne le thé offert aux visiteurs après la visite du jardin.",
+          "translations": {
+            "zh-Hant": "參觀完花園後，主人用這道香甜的點心配茶招待訪客。",
+            "zh-Hans": "参观完花园后，主人用这道香甜的点心配茶招待访客。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-031",
@@ -1854,7 +2475,16 @@
           "form": "dîner"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La tarte cuisait pendant que ma mère préparait la salade pour le dîner.",
+          "translations": {
+            "zh-Hant": "媽媽準備晚餐的沙拉時，水果塔正在烤箱裡烘烤。",
+            "zh-Hans": "妈妈准备晚餐的沙拉时，水果塔正在烤箱里烘烤。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-032",
@@ -1880,7 +2510,16 @@
           "form": "lait"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mon fils étale de la confiture sur sa tartine avant de boire son lait.",
+          "translations": {
+            "zh-Hant": "兒子在麵包片上塗了果醬，才喝牛奶。",
+            "zh-Hans": "儿子在面包片上涂了果酱，才喝牛奶。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-033",
@@ -1906,7 +2545,16 @@
           "form": "fromage"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une tranche de pain et un peu de fromage compléteront notre pique-nique de demain.",
+          "translations": {
+            "zh-Hant": "我們明天野餐時，還會再配上一片麵包和一點起司。",
+            "zh-Hans": "我们明天野餐时，还会再配上一片面包和一点起司。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-034",
@@ -1932,7 +2580,16 @@
           "form": "porte"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La vaisselle attend dans l'évier pendant que nous accompagnons nos invités jusqu'à la porte.",
+          "translations": {
+            "zh-Hant": "我們送客人到門口時，碗盤還在水槽裡等著洗。",
+            "zh-Hans": "我们送客人到门口时，碗盘还在水槽里等着洗。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-035",
@@ -1958,7 +2615,16 @@
           "form": "porte"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un verre a glissé du plateau lorsque la serveuse a voulu ouvrir la porte.",
+          "translations": {
+            "zh-Hant": "女服務生要開門時，一個玻璃杯從托盤上滑了下來。",
+            "zh-Hans": "女服务生要开门时，一个玻璃杯从托盘上滑了下来。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-036",
@@ -1984,7 +2650,16 @@
           "form": "terrasse"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma fille verse de l'eau dans la carafe pour les invités assis sur la terrasse.",
+          "translations": {
+            "zh-Hant": "女兒把水倒進水壺裡，準備給坐在露臺上的客人喝。",
+            "zh-Hans": "女儿把水倒进水壶里，准备给坐在露台上的客人喝。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-037",
@@ -2010,7 +2685,16 @@
           "form": "marché"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette association pourrait alimenter plusieurs familles avec les produits invendus du marché.",
+          "translations": {
+            "zh-Hant": "這個協會可以用市場裡沒賣完的食材，供應好幾個家庭的餐食。",
+            "zh-Hans": "这个协会可以用市场里没卖完的食材，供应好几个家庭的餐食。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-038",
@@ -2036,7 +2720,16 @@
           "form": "poisson"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le cuisinier préfère apprêter le poisson avec des herbes plutôt qu'avec une sauce lourde.",
+          "translations": {
+            "zh-Hant": "廚師喜歡用香草料理魚，不愛搭配濃膩的醬汁。",
+            "zh-Hans": "厨师喜欢用香草料理鱼，不爱搭配浓腻的酱汁。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-039",
@@ -2062,7 +2755,16 @@
           "form": "légumes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les assiettes étaient encore chaudes lorsque la serveuse a apporté la viande et les légumes.",
+          "translations": {
+            "zh-Hant": "女服務生端上肉和蔬菜時，盤子還是熱的。",
+            "zh-Hans": "女服务生端上肉和蔬菜时，盘子还是热的。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-040",
@@ -2088,7 +2790,16 @@
           "form": "pain"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le petit prend son temps pour avaler la soupe avant de demander un morceau de pain.",
+          "translations": {
+            "zh-Hant": "小朋友慢慢把湯吞下去，才開口要一塊麵包。",
+            "zh-Hans": "小朋友慢慢把汤吞下去，才开口要一块面包。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-041",
@@ -2114,7 +2825,16 @@
           "form": "musiciens"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le bar restera ouvert après le concert pour accueillir les musiciens et leurs amis.",
+          "translations": {
+            "zh-Hant": "音樂會結束後，酒吧會繼續營業，招待樂手和他們的朋友。",
+            "zh-Hans": "音乐会结束后，酒吧会继续营业，招待乐手和他们的朋友。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-042",
@@ -2140,7 +2860,16 @@
           "form": "promenade"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette bouteille d'eau suffit pour une courte promenade, mais pas pour une journée en montagne.",
+          "translations": {
+            "zh-Hant": "這瓶水夠短程散步時喝，卻不夠在山上喝一整天。",
+            "zh-Hans": "这瓶水够短程散步时喝，却不够在山上喝一整天。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-043",
@@ -2166,7 +2895,16 @@
           "form": "jardin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une coupe en plastique serait moins fragile pour la fête organisée dans le jardin.",
+          "translations": {
+            "zh-Hant": "在花園裡辦派對，用塑膠杯比較不容易摔破。",
+            "zh-Hans": "在花园里办派对，用塑胶杯比较不容易摔破。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-044",
@@ -2192,7 +2930,16 @@
           "form": "repas"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le couteau reste dans la cuisine lorsque les enfants aident à porter le repas dehors.",
+          "translations": {
+            "zh-Hant": "孩子們幫忙把餐點端到戶外時，刀子會留在廚房裡。",
+            "zh-Hans": "孩子们帮忙把餐点端到户外时，刀子会留在厨房里。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-045",
@@ -2218,7 +2965,16 @@
           "form": "toit"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous avons partagé le déjeuner avec les ouvriers qui réparaient le toit de la maison.",
+          "translations": {
+            "zh-Hant": "我們和幫忙修屋頂的工人一起吃了午餐。",
+            "zh-Hans": "我们和帮忙修屋顶的工人一起吃了午餐。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-046",
@@ -2244,7 +3000,16 @@
           "form": "école"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le dîner rassemble toute la famille après une journée de travail et d'école.",
+          "translations": {
+            "zh-Hant": "大人上了一天班、孩子上了一天課，到了晚餐時間全家人又聚在一起。",
+            "zh-Hans": "大人上了一天班、孩子上了一天课，到了晚餐时间全家人又聚在一起。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-047",
@@ -2270,7 +3035,16 @@
           "form": "voyage"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La serveuse emplissait les verres pendant que les clients discutaient de leur voyage.",
+          "translations": {
+            "zh-Hant": "客人聊著旅途中的事，女服務生則忙著替他們把杯子倒滿。",
+            "zh-Hans": "客人聊着旅途中的事，女服务生则忙着替他们把杯子倒满。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-048",
@@ -2296,7 +3070,16 @@
           "form": "feu"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le froid fait figer la sauce, alors je remets doucement la casserole sur le feu.",
+          "translations": {
+            "zh-Hant": "醬汁遇冷就會凝固，所以我輕輕把鍋子放回爐火上。",
+            "zh-Hans": "酱汁遇冷就会凝固，所以我轻轻把锅子放回炉火上。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-049",
@@ -2322,7 +3105,16 @@
           "form": "poires"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le chocolat fondra pendant que nous couperons les poires pour préparer le dessert.",
+          "translations": {
+            "zh-Hant": "我們切梨子準備甜點時，巧克力就會慢慢融化。",
+            "zh-Hans": "我们切梨子准备甜点时，巧克力就会慢慢融化。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-050",
@@ -2348,7 +3140,16 @@
           "form": "cuisinier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La fraîcheur du poisson se vérifie avant son achat au marché, rappelle le cuisinier.",
+          "translations": {
+            "zh-Hant": "廚師提醒大家，在市場買魚要先確認魚夠不夠新鮮。",
+            "zh-Hans": "厨师提醒大家，在市场买鱼要先确认鱼够不够新鲜。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-051",
@@ -2374,7 +3175,16 @@
           "form": "invités"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Des légumes frais apporteraient de la couleur au repas préparé pour les invités.",
+          "translations": {
+            "zh-Hant": "如果加些新鮮蔬菜，為客人準備的餐點會更繽紛。",
+            "zh-Hans": "如果加些新鲜蔬菜，为客人准备的餐点会更缤纷。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-052",
@@ -2400,7 +3210,16 @@
           "form": "cave"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La garde de ce vin demande une température stable dans la cave toute l'année.",
+          "translations": {
+            "zh-Hant": "要保存這款葡萄酒，酒窖裡的溫度一年到頭都必須維持穩定。",
+            "zh-Hans": "要保存这款葡萄酒，酒窖里的温度一年到头都必须维持稳定。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-053",
@@ -2426,7 +3245,16 @@
           "form": "ruches"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les enfants ont goûté le miel avant de visiter les ruches avec le fermier.",
+          "translations": {
+            "zh-Hant": "孩子們先嚐了蜂蜜，再跟著農夫去看蜂箱。",
+            "zh-Hans": "孩子们先尝了蜂蜜，再跟着农夫去看蜂箱。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-054",
@@ -2452,7 +3280,16 @@
           "form": "légumes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce plat trop gras plaît peu à mon père, qui préfère le poisson et les légumes.",
+          "translations": {
+            "zh-Hant": "這道菜太油膩了，爸爸不太喜歡，他比較愛吃魚和蔬菜。",
+            "zh-Hans": "这道菜太油腻了，爸爸不太喜欢，他比较爱吃鱼和蔬菜。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-055",
@@ -2478,7 +3315,16 @@
           "form": "chaud"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le beurre restait liquide dans le bol posé près du four encore chaud.",
+          "translations": {
+            "zh-Hant": "那碗奶油放在還熱著的烤箱旁，一直呈液態。",
+            "zh-Hans": "那碗奶油放在还热着的烤箱旁，一直呈液态。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-056",
@@ -2504,7 +3350,16 @@
           "form": "gare"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Notre voisin nourrit les chats du quartier avant de partir travailler à la gare.",
+          "translations": {
+            "zh-Hant": "我們的鄰居每天出門去車站上班前，都會餵附近的貓。",
+            "zh-Hans": "我们的邻居每天出门去车站上班前，都会喂附近的猫。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-057",
@@ -2530,7 +3385,16 @@
           "form": "salon"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le plateau permettra de transporter les tasses sans multiplier les allers-retours entre la cuisine et le salon.",
+          "translations": {
+            "zh-Hant": "用托盤就能一次端好幾個杯子，不必在廚房和客廳之間來回跑那麼多趟。",
+            "zh-Hans": "用托盘就能一次端好几个杯子，不必在厨房和客厅之间来回跑那么多趟。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-058",
@@ -2556,7 +3420,16 @@
           "form": "poulet"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette préparation à base de riz accompagne le poulet servi aux invités du mariage.",
+          "translations": {
+            "zh-Hant": "這道以米為主的料理，是搭配婚宴上招待賓客的雞肉一起吃的。",
+            "zh-Hans": "这道以米为主的料理，是搭配婚宴上招待宾客的鸡肉一起吃的。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-059",
@@ -2582,7 +3455,16 @@
           "form": "soleil"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un jus d'orange pressée serait agréable après la marche sous ce grand soleil.",
+          "translations": {
+            "zh-Hant": "頂著這麼大的太陽走了一路，來杯現榨柳橙汁應該很舒服。",
+            "zh-Hans": "顶着这么大的太阳走了一路，来杯现榨柳橙汁应该很舒服。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-060",
@@ -2608,7 +3490,16 @@
           "form": "pain"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La recette de ma tante explique comment utiliser les restes de pain dans un dessert.",
+          "translations": {
+            "zh-Hant": "阿姨的食譜說明了如何用剩下的麵包做甜點。",
+            "zh-Hans": "阿姨的食谱说明了如何用剩下的面包做甜点。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-061",
@@ -2634,7 +3525,16 @@
           "form": "table"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "J'ai posé le bol rempli de soupe sur la table avant d'appeler les enfants.",
+          "translations": {
+            "zh-Hant": "我把盛滿湯的碗放上桌，才叫孩子們過來。",
+            "zh-Hans": "我把盛满汤的碗放上桌，才叫孩子们过来。"
+          }
+        }
+      ]
     },
     {
       "id": "5.02-1",
@@ -2661,7 +3561,16 @@
           "form": "voisins"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce repas partagé permet aux nouveaux habitants de rencontrer leurs voisins sans cérémonie.",
+          "translations": {
+            "zh-Hant": "大家一起吃這頓飯，讓新搬來的居民可以輕鬆認識鄰居。",
+            "zh-Hans": "大家一起吃这顿饭，让新搬来的居民可以轻松认识邻居。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-063",
@@ -2687,7 +3596,16 @@
           "form": "gare"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le restaurant accueillait les voyageurs qui attendaient leur train en face de la gare.",
+          "translations": {
+            "zh-Hant": "這家餐廳以前會招待那些在車站對面等火車的旅客。",
+            "zh-Hans": "这家餐厅以前会招待那些在车站对面等火车的旅客。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-064",
@@ -2713,7 +3631,16 @@
           "form": "goûter"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les enfants ont soif après le match et boivent avant de demander leur goûter.",
+          "translations": {
+            "zh-Hant": "孩子們比賽後口渴了，先喝了水，才開口要點心。",
+            "zh-Hans": "孩子们比赛后口渴了，先喝了水，才开口要点心。"
+          }
+        }
+      ]
     },
     {
       "id": "book-5.02-065",
@@ -2739,7 +3666,16 @@
           "form": "journal"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette tasse gardera le café chaud pendant que tu termineras la lecture du journal.",
+          "translations": {
+            "zh-Hant": "你把報紙看完的這段時間，這個杯子能讓咖啡保持溫熱。",
+            "zh-Hans": "你把报纸看完的这段时间，这个杯子能让咖啡保持温热。"
+          }
+        }
+      ]
     }
   ],
   "originalMethod": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，旧统计和科学表述的范围说明记入 note。",

@@ -60,7 +60,16 @@
           "form": "marché"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’agricultrice vend ses légumes au marché et accueille des élèves qui souhaitent découvrir le travail de la ferme.",
+          "translations": {
+            "zh-Hant": "這位女農夫到市場販售自己種的蔬菜，也接待想認識農場工作的學生。",
+            "zh-Hans": "这位女农夫到市场贩售自己种的蔬菜，也接待想认识农场工作的学生。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-002",
@@ -90,7 +99,16 @@
           "form": "voyage"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’astronaute a présenté des photographies de son voyage aux enfants réunis dans la salle de spectacle de l’école.",
+          "translations": {
+            "zh-Hant": "太空人在學校的表演廳向聚集在那裡的孩子展示了這趟旅程的照片。",
+            "zh-Hans": "太空人在学校的表演厅向聚集在那里的孩子展示了这趟旅程的照片。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-003",
@@ -120,7 +138,16 @@
           "form": "restaurant"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le boucher conseille une cliente sur le choix de la viande pendant que son apprentie prépare la commande du restaurant.",
+          "translations": {
+            "zh-Hant": "肉販正在幫一位女客人挑肉，女學徒則忙著準備餐廳訂購的貨品。",
+            "zh-Hans": "肉贩正在帮一位女客人挑肉，女学徒则忙着准备餐厅订购的货品。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-004",
@@ -150,7 +177,16 @@
           "form": "employés"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La boulangère commençait son travail avant le départ du premier train et connaissait tous les employés de la gare.",
+          "translations": {
+            "zh-Hant": "這位麵包師傅以前每天都趕在首班火車開出前開工，車站所有員工她都認識。",
+            "zh-Hans": "这位面包师傅以前每天都赶在首班火车开出前开工，车站所有员工她都认识。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-005",
@@ -180,7 +216,16 @@
           "form": "début"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le capitaine de l’équipe encourage les jeunes joueurs et rappelle les règles avant le début du match.",
+          "translations": {
+            "zh-Hant": "隊長鼓勵年輕球員，並在開賽前提醒大家比賽規則。",
+            "zh-Hans": "队长鼓励年轻球员，并在开赛前提醒大家比赛规则。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-006",
@@ -210,7 +255,16 @@
           "form": "matériel"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La commandante présentera le trajet aux membres de l’expédition avant le chargement du matériel dans les camions.",
+          "translations": {
+            "zh-Hant": "指揮官將在器材裝上卡車前，向探險隊成員說明行程。",
+            "zh-Hans": "指挥官将在器材装上卡车前，向探险队成员说明行程。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-007",
@@ -236,7 +290,16 @@
           "form": "légumes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le cuisinier compare le prix des légumes et adapte son menu au budget de la cantine.",
+          "translations": {
+            "zh-Hant": "廚師比較蔬菜的價格，依照食堂的預算調整菜單。",
+            "zh-Hans": "厨师比较蔬菜的价格，依照食堂的预算调整菜单。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-008",
@@ -266,7 +329,16 @@
           "form": "voyage"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La directrice a reçu les parents pour discuter du voyage scolaire et des difficultés de certaines familles.",
+          "translations": {
+            "zh-Hant": "校長接見了家長，討論校外旅行以及部分家庭面臨的困難。",
+            "zh-Hans": "校长接见了家长，讨论校外旅行以及部分家庭面临的困难。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-009",
@@ -296,7 +368,16 @@
           "form": "village"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dans ce récit historique, le général hésite à poursuivre le combat et demande des nouvelles des habitants du village.",
+          "translations": {
+            "zh-Hant": "在這則歷史故事裡，將軍猶豫著是否要繼續戰鬥，還打聽了村民的近況。",
+            "zh-Hans": "在这则历史故事里，将军犹豫着是否要继续战斗，还打听了村民的近况。"
+          }
+        }
+      ]
     },
     {
       "id": "11.01-1",
@@ -322,7 +403,16 @@
           "form": "habitants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’ingénieure vérifiera la solidité du pont avant de rencontrer les élus et les habitants réunis à la mairie.",
+          "translations": {
+            "zh-Hant": "這位工程師會先檢查橋梁是否堅固，再去市政廳與當地民意代表及居民見面。",
+            "zh-Hans": "这位工程师会先检查桥梁是否坚固，再去市政厅与当地民意代表及居民见面。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-011",
@@ -352,7 +442,16 @@
           "form": "machine"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une ouvrière explique le fonctionnement de la machine aux étudiants qui visitent l’usine avec leur professeur.",
+          "translations": {
+            "zh-Hant": "一位女工向跟著教授參觀工廠的學生解說機器的運作方式。",
+            "zh-Hans": "一位女工向跟着教授参观工厂的学生解说机器的运作方式。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-012",
@@ -382,7 +481,16 @@
           "form": "salle"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le personnel du musée préparait l’exposition pendant que les artisans terminaient la réparation des fenêtres de la salle.",
+          "translations": {
+            "zh-Hant": "博物館工作人員正在準備展覽，工匠則在完成展廳窗戶的修繕。",
+            "zh-Hans": "博物馆工作人员正在准备展览，工匠则在完成展厅窗户的修缮。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-013",
@@ -412,7 +520,16 @@
           "form": "trajet"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La pilote consulte les informations sur le vent et discute du trajet avec le reste de l’équipe.",
+          "translations": {
+            "zh-Hant": "這位飛行員查看風況資料，並和其他隊員討論航線。",
+            "zh-Hans": "这位飞行员查看风况资料，并和其他队员讨论航线。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-014",
@@ -442,7 +559,16 @@
           "form": "jardin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La présidente de l’association a proposé d’utiliser le jardin pour organiser des cours et des repas partagés.",
+          "translations": {
+            "zh-Hant": "協會會長提議利用花園開課，也在那裡舉辦聚餐。",
+            "zh-Hans": "协会会长提议利用花园开课，也在那里举办聚餐。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-015",
@@ -472,7 +598,16 @@
           "form": "architectes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un représentant des locataires explique les difficultés du quartier aux architectes chargés de préparer les travaux.",
+          "translations": {
+            "zh-Hant": "一位房客代表向負責籌備工程的建築師說明社區面臨的問題。",
+            "zh-Hans": "一位房客代表向负责筹备工程的建筑师说明社区面临的问题。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-016",
@@ -502,7 +637,16 @@
           "form": "équipe"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un savant isolé comprendrait moins bien ce problème qu’une équipe capable de comparer plusieurs méthodes de recherche.",
+          "translations": {
+            "zh-Hant": "要理解這個問題，單打獨鬥的學者恐怕不如能比較多種研究方法的團隊。",
+            "zh-Hans": "要理解这个问题，单打独斗的学者恐怕不如能比较多种研究方法的团队。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-017",
@@ -532,7 +676,16 @@
           "form": "dossiers"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La secrétaire prépare les dossiers et vérifie les horaires des visiteurs attendus pour la réunion du directeur.",
+          "translations": {
+            "zh-Hant": "祕書整理好檔案，再核對預定來見主管的訪客時段。",
+            "zh-Hans": "秘书整理好档案，再核对预定来见主管的访客时段。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-018",
@@ -562,7 +715,16 @@
           "form": "questions"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La spécialiste a écouté les questions du patient avant d’expliquer les résultats de l’examen sur un schéma.",
+          "translations": {
+            "zh-Hant": "專科醫師先聽病人提問，再用示意圖解說檢查結果。",
+            "zh-Hans": "专科医师先听病人提问，再用示意图解说检查结果。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-019",
@@ -592,7 +754,16 @@
           "form": "vêtements"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Chaque travailleuse reçoit une formation avant d’utiliser les machines qui découpent le tissu destiné aux vêtements.",
+          "translations": {
+            "zh-Hant": "每一位女工都會先接受培訓，才操作裁剪服裝布料的機器。",
+            "zh-Hans": "每一位女工都会先接受培训，才操作裁剪服装布料的机器。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-020",
@@ -622,7 +793,16 @@
           "form": "théâtre"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’administratrice du théâtre gérait les contrats des artistes et les dépenses nécessaires à chaque nouveau spectacle.",
+          "translations": {
+            "zh-Hant": "劇院行政主管當時負責管理藝人的合約，以及每一齣新戲所需的經費。",
+            "zh-Hans": "剧院行政主管当时负责管理艺人的合约，以及每一出新戏所需的经费。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-021",
@@ -652,7 +832,16 @@
           "form": "étudiants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’ambassadrice visite l’université pour rencontrer les étudiants qui participent à un programme de recherche commun.",
+          "translations": {
+            "zh-Hant": "大使到大學訪問，與參與共同研究計畫的學生們見面。",
+            "zh-Hans": "大使到大学访问，与参与共同研究计划的学生们见面。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-022",
@@ -682,7 +871,16 @@
           "form": "jardin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’architecte présentera aux familles un plan qui prévoit davantage de lumière et des espaces communs ouverts sur le jardin.",
+          "translations": {
+            "zh-Hant": "建築師將向各家住戶提出設計方案，增加室內採光，並讓公共空間連通花園。",
+            "zh-Hans": "建筑师将向各家住户提出设计方案，增加室内采光，并让公共空间连通花园。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-023",
@@ -712,7 +910,16 @@
           "form": "bois"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une artisane répare les fauteuils du café et conserve les morceaux de bois pour fabriquer de petits objets.",
+          "translations": {
+            "zh-Hant": "一位女工匠替咖啡館修理扶手椅，也把剩下的木料留著製作小物件。",
+            "zh-Hans": "一位女工匠替咖啡馆修理扶手椅，也把剩下的木料留着制作小物件。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-024",
@@ -742,7 +949,16 @@
           "form": "collègue"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’assistante a retrouvé la lettre demandée dans un dossier que son collègue avait classé par erreur.",
+          "translations": {
+            "zh-Hant": "助理在一份被同事歸錯類的檔案裡，找到了要找的那封信。",
+            "zh-Hans": "助理在一份被同事归错类的档案里，找到了要找的那封信。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-025",
@@ -772,7 +988,16 @@
           "form": "élèves"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le chauffeur attend les élèves devant le musée et vérifie que personne n’a oublié son sac dans le bus.",
+          "translations": {
+            "zh-Hant": "司機在博物館前等候學生，並檢查有沒有人把包包忘在公車上。",
+            "zh-Hans": "司机在博物馆前等候学生，并检查有没有人把包包忘在公车上。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-026",
@@ -802,7 +1027,16 @@
           "form": "usine"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La chercheuse interrogeait les habitants pour comprendre comment la fermeture de l’usine avait transformé leur vie quotidienne.",
+          "translations": {
+            "zh-Hant": "這位研究員當時正訪問居民，了解工廠關閉後，他們的日常生活有了什麼變化。",
+            "zh-Hans": "这位研究员当时正访问居民，了解工厂关闭后，他们的日常生活有了什么变化。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-027",
@@ -828,7 +1062,16 @@
           "form": "chantier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mon collaborateur prépare les calculs pendant que je vérifie les plans et les demandes reçues du chantier.",
+          "translations": {
+            "zh-Hant": "我的同事負責計算，我則核對圖面以及工地傳來的各項要求。",
+            "zh-Hans": "我的同事负责计算，我则核对图面以及工地传来的各项要求。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-028",
@@ -858,7 +1101,16 @@
           "form": "conférence"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une collègue prendra ma place à la réunion si le train qui me ramène de la conférence a du retard.",
+          "translations": {
+            "zh-Hant": "如果送我從研討會回來的火車誤點，一位同事會代我出席會議。",
+            "zh-Hans": "如果送我从研讨会回来的火车误点，一位同事会代我出席会议。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-029",
@@ -888,7 +1140,16 @@
           "form": "voisins"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La commerçante connaît les habitudes du quartier et réserve parfois du pain aux voisins qui travaillent tard.",
+          "translations": {
+            "zh-Hant": "這位女店主熟悉附近居民的生活習慣，有時會替晚下班的鄰居留下麵包。",
+            "zh-Hans": "这位女店主熟悉附近居民的生活习惯，有时会替晚下班的邻居留下面包。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-030",
@@ -918,7 +1179,16 @@
           "form": "avis"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le médecin a demandé l’avis d’une consœur avant d’expliquer les différentes possibilités de traitement à la famille.",
+          "translations": {
+            "zh-Hant": "醫師先徵詢了一位女同業的意見，再向家屬解說各種治療選擇。",
+            "zh-Hans": "医师先征询了一位女同业的意见，再向家属解说各种治疗选择。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-031",
@@ -944,7 +1214,16 @@
           "form": "techniciens"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le constructeur présente un modèle moins coûteux et explique comment ses techniciens assurent l’entretien des machines.",
+          "translations": {
+            "zh-Hant": "製造商介紹一款成本較低的機型，並說明旗下技師如何保養這些機器。",
+            "zh-Hans": "制造商介绍一款成本较低的机型，并说明旗下技师如何保养这些机器。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-032",
@@ -974,7 +1253,16 @@
           "form": "enfants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une danseuse plus expérimentée pourrait aider les enfants à préparer leur spectacle sans leur imposer des exercices trop difficiles.",
+          "translations": {
+            "zh-Hant": "如果有一位更有經驗的舞者，就能幫孩子籌備演出，也不必讓他們做太難的練習。",
+            "zh-Hans": "如果有一位更有经验的舞者，就能帮孩子筹备演出，也不必让他们做太难的练习。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-033",
@@ -1004,7 +1292,16 @@
           "form": "rencontres"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’éducateur accompagne les adolescents dans leur recherche de stage et organise des rencontres avec les artisans du quartier.",
+          "translations": {
+            "zh-Hant": "這位輔導員陪青少年找實習機會，還安排他們與附近的工匠見面。",
+            "zh-Hans": "这位辅导员陪青少年找实习机会，还安排他们与附近的工匠见面。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-034",
@@ -1030,7 +1327,16 @@
           "form": "rapport"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une experte a examiné la charpente de l’école avant de rédiger un rapport sur les travaux nécessaires.",
+          "translations": {
+            "zh-Hant": "一位專家檢查了學校的屋架，才動筆寫下必須進行哪些修繕工程的報告。",
+            "zh-Hans": "一位专家检查了学校的屋架，才动笔写下必须进行哪些修缮工程的报告。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-035",
@@ -1060,7 +1366,16 @@
           "form": "salle"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le garde ouvre le portail aux visiteurs et leur indique la salle où se déroule la conférence.",
+          "translations": {
+            "zh-Hant": "警衛為訪客打開大門，並告訴他們演講在哪個廳舉行。",
+            "zh-Hans": "警卫为访客打开大门，并告诉他们演讲在哪个厅举行。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-036",
@@ -1090,7 +1405,16 @@
           "form": "travail"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La gardienne arrosait les plantes de l’entrée pendant que les habitants partaient pour leur travail et leurs courses.",
+          "translations": {
+            "zh-Hant": "住戶們紛紛出門上班或採買時，女管理員正在給入口處的植物澆水。",
+            "zh-Hans": "住户们纷纷出门上班或采买时，女管理员正在给入口处的植物浇水。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-037",
@@ -1120,7 +1444,16 @@
           "form": "village"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’historienne compare les registres de la mairie aux lettres conservées par les familles de notre village.",
+          "translations": {
+            "zh-Hant": "這位歷史學者將市政府的登記簿與村裡各家保存的信件互相比對。",
+            "zh-Hans": "这位历史学者将市政府的登记簿与村里各家保存的信件互相比对。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-038",
@@ -1146,7 +1479,16 @@
           "form": "bibliothèque"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’informaticien installera le matériel de la bibliothèque et montrera aux bénévoles comment enregistrer les nouveaux livres.",
+          "translations": {
+            "zh-Hant": "資訊技師會為圖書館安裝設備，並示範給志工看如何登錄新書。",
+            "zh-Hans": "资讯技师会为图书馆安装设备，并示范给志工看如何登录新书。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-039",
@@ -1176,7 +1518,16 @@
           "form": "jeunes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La main-d’œuvre manque dans cette région, et les entreprises cherchent à former les jeunes aux métiers de la construction.",
+          "translations": {
+            "zh-Hant": "這一帶人手短缺，企業正設法培訓年輕人從事營建業的工作。",
+            "zh-Hans": "这一带人手短缺，企业正设法培训年轻人从事营建业的工作。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-040",
@@ -1206,7 +1557,16 @@
           "form": "chaises"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le marchand a accepté de livrer les chaises après avoir vérifié l’adresse du restaurant et la largeur de la porte.",
+          "translations": {
+            "zh-Hant": "商家確認餐廳的地址和門的寬度後，答應把椅子送過去。",
+            "zh-Hans": "商家确认餐厅的地址和门的宽度后，答应把椅子送过去。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-041",
@@ -1236,7 +1596,16 @@
           "form": "lettres"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une exposition sur la marine rassemble des photographies de bateaux et des lettres écrites par des familles de marins.",
+          "translations": {
+            "zh-Hant": "一場以航海為主題的展覽，展出了船隻的照片和水手家人寫的信。",
+            "zh-Hans": "一场以航海为主题的展览，展出了船只的照片和水手家人写的信。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-042",
@@ -1266,7 +1635,16 @@
           "form": "lumière"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La metteuse en scène discutait de la lumière avec les techniciens pendant que les acteurs répétaient leur dernière réplique.",
+          "translations": {
+            "zh-Hant": "導演正和技術人員討論燈光，演員們則在排練最後一句台詞。",
+            "zh-Hans": "导演正和技术人员讨论灯光，演员们则在排练最后一句台词。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-043",
@@ -1296,7 +1674,16 @@
           "form": "dépenses"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La patronne du café invite ses employés à proposer des idées pour réduire les dépenses sans diminuer la qualité des repas.",
+          "translations": {
+            "zh-Hant": "咖啡館老闆請員工想想，怎樣才能在維持餐點品質的前提下降低開銷。",
+            "zh-Hans": "咖啡馆老板请员工想想，怎样才能在维持餐点品质的前提下降低开销。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-044",
@@ -1326,7 +1713,16 @@
           "form": "village"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les paysans du village organiseront une fête après la récolte et inviteront les familles venues les aider.",
+          "translations": {
+            "zh-Hant": "收成之後，村裡的農民會舉辦慶祝活動，並邀請前來幫忙的家庭參加。",
+            "zh-Hans": "收成之后，村里的农民会举办庆祝活动，并邀请前来帮忙的家庭参加。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-045",
@@ -1356,7 +1752,16 @@
           "form": "conflit"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le philosophe interroge les étudiants sur la liberté à partir d’un conflit entre les règles et les choix d’un personnage.",
+          "translations": {
+            "zh-Hant": "哲學家從故事人物的選擇與規則的衝突出發，請學生思考什麼是自由。",
+            "zh-Hans": "哲学家从故事人物的选择与规则的冲突出发，请学生思考什么是自由。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-046",
@@ -1386,7 +1791,16 @@
           "form": "métier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La productrice de fromage a montré ses installations aux élèves, puis répondu à leurs questions sur son métier.",
+          "translations": {
+            "zh-Hant": "這位乳酪製作者帶學生看了她的生產設備，然後回答他們對這一行的提問。",
+            "zh-Hans": "这位乳酪制作者带学生看了她的生产设备，然后回答他们对这一行的提问。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-047",
@@ -1412,7 +1826,16 @@
           "form": "clients"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette profession exige de la patience : les apprentis apprennent à écouter les clients avant de commencer les réparations.",
+          "translations": {
+            "zh-Hant": "這份工作需要耐心，學徒得學會在動手修理前，先仔細聽客戶怎麼說。",
+            "zh-Hans": "这份工作需要耐心，学徒得学会在动手修理前，先仔细听客户怎么说。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-048",
@@ -1438,7 +1861,16 @@
           "form": "travail"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une salariée à temps partiel pourrait reprendre sa formation si les cours étaient proposés près de son lieu de travail.",
+          "translations": {
+            "zh-Hant": "如果工作地點附近就有課程，這名兼職員工就能繼續進修。",
+            "zh-Hans": "如果工作地点附近就有课程，这名兼职员工就能继续进修。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-049",
@@ -1468,7 +1900,16 @@
           "form": "bruit"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le technicien cherche l’origine du bruit pendant que son collègue note les mesures prises sur la machine.",
+          "translations": {
+            "zh-Hant": "技師正在尋找噪音的來源，他的同事則記錄在機器上量得的數據。",
+            "zh-Hans": "技师正在寻找噪音的来源，他的同事则记录在机器上量得的数据。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-050",
@@ -1498,7 +1939,16 @@
           "form": "frère"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La vendeuse a proposé une autre taille à mon frère et rangé les vêtements qu’il avait essayés.",
+          "translations": {
+            "zh-Hant": "女店員拿了另一個尺寸給哥哥試穿，並整理好他試過的衣服。",
+            "zh-Hans": "女店员拿了另一个尺寸给哥哥试穿，并整理好他试过的衣服。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.01-051",
@@ -1528,7 +1978,16 @@
           "form": "budget"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La vice-présidente du club prépare le budget du voyage et contacte les familles qui souhaitent participer à son organisation.",
+          "translations": {
+            "zh-Hant": "俱樂部副會長正在編列旅行預算，並聯絡有意協助籌辦行程的家庭。",
+            "zh-Hans": "具乐部副会长正在编列旅行预算，并联络有意协助筹办行程的家庭。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-001",
@@ -1558,7 +2017,16 @@
           "form": "clients"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’équipe accomplira les dernières tâches avant l’ouverture du magasin pour accueillir les clients dans de bonnes conditions.",
+          "translations": {
+            "zh-Hant": "團隊會在商店開門前完成最後幾項工作，把一切準備好再迎接顧客。",
+            "zh-Hans": "团队会在商店开门前完成最后几项工作，把一切准备好再迎接顾客。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-002",
@@ -1588,7 +2056,16 @@
           "form": "tissu"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Adroite de ses mains, cette apprentie répare une couture sans laisser de marque visible sur le tissu.",
+          "translations": {
+            "zh-Hant": "這位女學徒手很巧，補好縫線之後，布料上看不出修補的痕跡。",
+            "zh-Hans": "这位女学徒手很巧，补好缝线之后，布料上看不出修补的痕迹。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-003",
@@ -1618,7 +2095,16 @@
           "form": "quartier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Sa capacité à écouter les habitants facilitait les discussions pendant les réunions consacrées aux travaux du quartier.",
+          "translations": {
+            "zh-Hant": "他善於傾聽居民的意見，因此社區工程說明會上的討論進行得更順利。",
+            "zh-Hans": "他善于倾听居民的意见，因此社区工程说明会上的讨论进行得更顺利。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-004",
@@ -1648,7 +2134,16 @@
           "form": "artisane"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Sa carrière commence dans un petit atelier où une artisane lui apprend à reconnaître les bois et à dessiner les meubles.",
+          "translations": {
+            "zh-Hant": "他的職涯從一間小工坊開始，一位女工匠在那裡教他辨認木材和繪製家具圖。",
+            "zh-Hans": "他的职涯从一间小工坊开始，一位女工匠在那里教他辨认木材和绘制家具图。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-005",
@@ -1678,7 +2173,16 @@
           "form": "sœur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je me suis chargé de réserver les billets pendant que ma sœur cherchait un logement pour notre voyage.",
+          "translations": {
+            "zh-Hant": "我負責訂票，妹妹則為我們這趟旅行找住處。",
+            "zh-Hans": "我负责订票，妹妹则为我们这趟旅行找住处。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-006",
@@ -1708,7 +2212,16 @@
           "form": "travail"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le chef répartit le travail entre les employés et vérifie que chacun dispose du matériel nécessaire.",
+          "translations": {
+            "zh-Hant": "主管把工作分配給員工，並確認每個人都拿到了需要的器材。",
+            "zh-Hans": "主管把工作分配给员工，并确认每个人都拿到了需要的器材。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-007",
@@ -1738,7 +2251,16 @@
           "form": "habitants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La conférence réunira des spécialistes du logement et permettra aux habitants de poser leurs questions sur le projet.",
+          "translations": {
+            "zh-Hant": "這場講座將邀集住宅方面的專家，也讓居民有機會針對這項計畫提問。",
+            "zh-Hans": "这场讲座将邀集住宅方面的专家，也让居民有机会针对这项计划提问。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-008",
@@ -1768,7 +2290,16 @@
           "form": "repas"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les bénévoles contribuent à la vie du quartier en organisant des repas et des activités pour les enfants.",
+          "translations": {
+            "zh-Hant": "志工籌辦聚餐，又為孩子安排活動，為社區生活盡一份心力。",
+            "zh-Hans": "志工筹办聚餐，又为孩子安排活动，为社区生活尽一份心力。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-009",
@@ -1798,7 +2329,16 @@
           "form": "machine"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’entreprise développait une nouvelle machine pour réduire les efforts des ouvriers qui transportaient les charges les plus lourdes.",
+          "translations": {
+            "zh-Hant": "這家公司當時正在研發一款新機器，幫助負責搬運重物的工人省點力氣。",
+            "zh-Hans": "这家公司当时正在研发一款新机器，帮助负责搬运重物的工人省点力气。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-010",
@@ -1828,7 +2368,16 @@
           "form": "bibliothèque"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Elle dirige une petite équipe qui restaure les livres anciens conservés dans la bibliothèque de l’université.",
+          "translations": {
+            "zh-Hant": "她帶領一個小團隊，修復大學圖書館收藏的古籍。",
+            "zh-Hans": "她带领一个小团队，修复大学图书馆收藏的古籍。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-011",
@@ -1858,7 +2407,16 @@
           "form": "personnel"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une méthode plus efficace permettrait au personnel de traiter les commandes sans rester au bureau après la fermeture.",
+          "translations": {
+            "zh-Hant": "如果作業方法更有效率，員工就能處理完訂單，不必到打烊後還留在辦公室。",
+            "zh-Hans": "如果作业方法更有效率，员工就能处理完订单，不必到打烊后还留在办公室。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-012",
@@ -1888,7 +2446,16 @@
           "form": "architecte"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Avant d’entreprendre les travaux, la famille compare les devis et demande des conseils à une architecte du quartier.",
+          "translations": {
+            "zh-Hant": "動工之前，這家人比較各份報價單，也向附近的一位建築師請教。",
+            "zh-Hans": "动工之前，这家人比较各份报价单，也向附近的一位建筑师请教。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-013",
@@ -1918,7 +2485,16 @@
           "form": "école"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette médecin a exercé sa profession dans plusieurs villages avant d’ouvrir un cabinet près de notre école.",
+          "translations": {
+            "zh-Hant": "這位醫師曾在好幾個村莊行醫，後來才在我們學校附近開設診所。",
+            "zh-Hans": "这位医师曾在好几个村庄行医，后来才在我们学校附近开设诊所。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-014",
@@ -1948,7 +2524,16 @@
           "form": "contrat"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les exigences du client sont précisées dans le contrat pour que l’artisan puisse préparer un devis exact.",
+          "translations": {
+            "zh-Hant": "合約裡清楚列出客戶的要求，讓工匠能準確估價。",
+            "zh-Hans": "合约里清楚列出客户的要求，让工匠能准确估价。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-015",
@@ -1978,7 +2563,16 @@
           "form": "ingénieurs"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Son expérience du chantier lui permettait de prévoir les difficultés que les jeunes ingénieurs ne remarquaient pas encore.",
+          "translations": {
+            "zh-Hant": "憑著工地經驗，他能預見年輕工程師還沒留意到的難題。",
+            "zh-Hans": "凭着工地经验，他能预见年轻工程师还没留意到的难题。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-016",
@@ -2008,7 +2602,16 @@
           "form": "salariés"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Sa fonction consiste à accueillir les nouveaux salariés et à les aider à comprendre l’organisation de l’usine.",
+          "translations": {
+            "zh-Hant": "他的職責是接待新進員工，並幫助他們了解工廠如何運作。",
+            "zh-Hans": "他的职责是接待新进员工，并帮助他们了解工厂如何运作。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-017",
@@ -2038,7 +2641,16 @@
           "form": "visiteurs"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le nouveau règlement imposera le port d’un casque aux visiteurs qui souhaitent entrer sur le chantier.",
+          "translations": {
+            "zh-Hant": "新規定將要求所有希望進入工地的訪客佩戴安全帽。",
+            "zh-Hans": "新规定将要求所有希望进入工地的访客佩戴安全帽。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-018",
@@ -2068,7 +2680,16 @@
           "form": "technicien"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une instruction près de la machine explique comment prévenir le technicien lorsqu’un bruit inhabituel apparaît.",
+          "translations": {
+            "zh-Hant": "機器旁的操作說明寫著，聽到異常聲響時應該怎麼通知技師。",
+            "zh-Hans": "机器旁的操作说明写着，听到异常声响时应该怎么通知技师。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-019",
@@ -2098,7 +2719,16 @@
           "form": "atelier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mon frère a occupé plusieurs postes dans cette entreprise avant de devenir responsable de l’atelier de réparation.",
+          "translations": {
+            "zh-Hant": "哥哥在這家公司擔任過好幾個職位，後來才成為維修工坊的負責人。",
+            "zh-Hans": "哥哥在这家公司担任过好几个职位，后来才成为维修工坊的负责人。"
+          }
+        }
+      ]
     },
     {
       "id": "11.02-2",
@@ -2129,7 +2759,16 @@
           "form": "jardin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce projet relie l’école au jardin du quartier et prévoit un passage plus sûr pour les enfants.",
+          "translations": {
+            "zh-Hant": "這個計畫將學校和社區花園連接起來，並為孩子們規劃一條較安全的通道。",
+            "zh-Hans": "这个计划将学校和社区花园连接起来，并为孩子们规划一条较安全的通道。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-021",
@@ -2159,7 +2798,16 @@
           "form": "difficultés"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le rapport présentait les dépenses du laboratoire et les difficultés rencontrées pendant la première année de recherche.",
+          "translations": {
+            "zh-Hant": "這份報告列出了實驗室的開銷，以及研究第一年遇到的困難。",
+            "zh-Hans": "这份报告列出了实验室的开销，以及研究第一年遇到的困难。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-022",
@@ -2185,7 +2833,16 @@
           "form": "architectes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La recherche sur les matériaux intéresse les architectes qui souhaitent construire des logements plus confortables et moins coûteux.",
+          "translations": {
+            "zh-Hant": "想興建更舒適、更便宜住宅的建築師，對材料研究很感興趣。",
+            "zh-Hans": "想兴建更舒适、更便宜住宅的建筑师，对材料研究很感兴趣。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-023",
@@ -2215,7 +2872,16 @@
           "form": "réunion"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une responsabilité mieux partagée rendrait le travail moins lourd pour la personne qui organise chaque réunion de l’association.",
+          "translations": {
+            "zh-Hant": "如果責任能分擔得更平均，負責籌辦每次協會會議的人就能輕鬆一些。",
+            "zh-Hans": "如果责任能分担得更平均，负责筹办每次协会会议的人就能轻松一些。"
+          }
+        }
+      ]
     },
     {
       "id": "11.02-1",
@@ -2246,7 +2912,16 @@
           "form": "habitants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La réunion commence par les questions des habitants avant la présentation des plans préparés par l’architecte.",
+          "translations": {
+            "zh-Hant": "會議一開始先讓居民提問，之後再介紹建築師繪製的圖面。",
+            "zh-Hans": "会议一开始先让居民提问，之后再介绍建筑师绘制的图面。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-025",
@@ -2276,7 +2951,16 @@
           "form": "enfants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une fête de la science a permis aux enfants de réaliser des expériences avec les chercheurs de l’université.",
+          "translations": {
+            "zh-Hant": "孩子們在科學節上有機會與大學的研究人員一起做實驗。",
+            "zh-Hans": "孩子们在科学节上有机会与大学的研究人员一起做实验。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-026",
@@ -2306,7 +2990,16 @@
           "form": "méthode"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’équipe scientifique publie ses résultats et explique les limites de la méthode utilisée pour étudier les échantillons.",
+          "translations": {
+            "zh-Hant": "研究團隊發表了研究結果，並說明用來分析樣本的研究方法有何侷限。",
+            "zh-Hans": "研究团队发表了研究结果，并说明用来分析样本的研究方法有何局限。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-027",
@@ -2336,7 +3029,16 @@
           "form": "région"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’institut spécialisera ce laboratoire dans l’étude des matériaux employés pour rénover les bâtiments anciens de la région.",
+          "translations": {
+            "zh-Hant": "研究所將讓這間實驗室專門研究修復本地老建築所用的材料。",
+            "zh-Hans": "研究所将让这间实验室专门研究修复本地老建筑所用的材料。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-028",
@@ -2362,7 +3064,16 @@
           "form": "dossiers"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma première tâche consiste à vérifier les factures avant de les classer dans les dossiers des différents fournisseurs.",
+          "translations": {
+            "zh-Hant": "我的第一項工作是核對發票，然後按供應商分別歸檔。",
+            "zh-Hans": "我的第一项工作是核对发票，然后按供应商分别归档。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-029",
@@ -2392,7 +3103,16 @@
           "form": "père"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mon père travaillait la nuit à l’usine et gardait ses après-midi pour le jardin et la famille.",
+          "translations": {
+            "zh-Hant": "我父親那時在工廠上夜班，下午的時間則留給園藝和家人。",
+            "zh-Hans": "我父亲那时在工厂上夜班，下午的时间则留给园艺和家人。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-030",
@@ -2422,7 +3142,16 @@
           "form": "personnes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Son ambition est d’ouvrir un atelier où des personnes de plusieurs générations pourront apprendre à réparer leurs meubles.",
+          "translations": {
+            "zh-Hant": "他的志向是開一間工坊，讓不同世代的人都能在那裡學會自己修家具。",
+            "zh-Hans": "他的志向是开一间工坊，让不同世代的人都能在那里学会自己修家具。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-031",
@@ -2452,7 +3181,16 @@
           "form": "collègues"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Son aptitude à résoudre les conflits a convaincu ses collègues de lui confier l’accueil des nouvelles équipes.",
+          "translations": {
+            "zh-Hant": "他善於化解衝突，同事因此放心把接待新團隊的工作交給他。",
+            "zh-Hans": "他善于化解冲突，同事因此放心把接待新团队的工作交给他。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-032",
@@ -2482,7 +3220,16 @@
           "form": "changement"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La responsable assume ses décisions et explique au personnel les raisons du changement des horaires de travail.",
+          "translations": {
+            "zh-Hant": "這位主管為自己的決定負責，並向員工解釋調整工時的原因。",
+            "zh-Hans": "这位主管为自己的决定负责，并向员工解释调整工时的原因。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-033",
@@ -2512,7 +3259,16 @@
           "form": "habitants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le jury attribuera une bourse au projet qui associera le mieux la recherche et les besoins des habitants.",
+          "translations": {
+            "zh-Hant": "評審會把補助金頒給最能結合研究與居民需求的計畫。",
+            "zh-Hans": "评审会把补助金颁给最能结合研究与居民需求的计划。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-034",
@@ -2542,7 +3298,16 @@
           "form": "élèves"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce laboratoire utilise une technologie avancée, mais les chercheurs expliquent leurs observations avec des exemples accessibles aux élèves.",
+          "translations": {
+            "zh-Hant": "這間實驗室採用先進技術，不過研究人員會用學生聽得懂的例子來解釋觀察結果。",
+            "zh-Hans": "这间实验室采用先进技术，不过研究人员会用学生听得懂的例子来解释观察结果。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-035",
@@ -2568,7 +3333,16 @@
           "form": "magasin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La besogne était fatigante, surtout lorsqu’il fallait porter les caisses depuis le dépôt jusqu’au magasin.",
+          "translations": {
+            "zh-Hant": "這份差事很累，尤其是要把箱子一路從倉庫搬到店裡的時候。",
+            "zh-Hans": "这份差事很累，尤其是要把箱子一路从仓库搬到店里的时候。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-036",
@@ -2594,7 +3368,16 @@
           "form": "ouvriers"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La compétence de cette technicienne rassure les ouvriers, qui lui demandent conseil avant de modifier les réglages.",
+          "translations": {
+            "zh-Hant": "這位女技師的專業能力讓工人很放心，想調整機器設定前都會先向她請教。",
+            "zh-Hans": "这位女技师的专业能力让工人很放心，想调整机器设定前都会先向她请教。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-037",
@@ -2624,7 +3407,16 @@
           "form": "commandes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une compression du personnel risquerait d’allonger les délais et de compliquer encore la préparation des commandes.",
+          "translations": {
+            "zh-Hant": "裁減人手可能會拉長交貨時間，也讓備貨工作變得更加棘手。",
+            "zh-Hans": "裁减人手可能会拉长交货时间，也让备货工作变得更加棘手。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-038",
@@ -2654,7 +3446,16 @@
           "form": "coût"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les efforts conjugués des enseignants et des familles permettent aux enfants de participer au voyage malgré son coût.",
+          "translations": {
+            "zh-Hant": "這趟旅行費用不低，幸好老師和家人齊心協力，孩子們才得以參加。",
+            "zh-Hans": "这趟旅行费用不低，幸好老师和家人齐心协力，孩子们才得以参加。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-039",
@@ -2684,7 +3485,16 @@
           "form": "école"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La coopération entre l’école et la ferme a donné naissance à un jardin entretenu par les élèves.",
+          "translations": {
+            "zh-Hant": "學校與農場合作開闢了一座花園，交由學生們照料。",
+            "zh-Hans": "学校与农场合作开辟了一座花园，交由学生们照料。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-040",
@@ -2714,7 +3524,16 @@
           "form": "équipe"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le travail créateur de l’équipe apparaît dans les décors que les enfants construisent pour leur spectacle.",
+          "translations": {
+            "zh-Hant": "孩子們為演出製作的布景，展現了整個團隊的創意。",
+            "zh-Hans": "孩子们为演出制作的布景，展现了整个团队的创意。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-041",
@@ -2744,7 +3563,16 @@
           "form": "familles"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le prix restait un critère important pour les familles qui comparaient les logements proposés près de l’université.",
+          "translations": {
+            "zh-Hant": "當時各家在比較大學附近的房子，價格仍是重要的考量。",
+            "zh-Hans": "当时各家在比较大学附近的房子，价格仍是重要的考量。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-042",
@@ -2774,7 +3602,16 @@
           "form": "usine"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une déléguée du personnel recueille les questions des salariés avant la réunion prévue avec la direction de l’usine.",
+          "translations": {
+            "zh-Hant": "在預定與廠方主管開會之前，一名員工代表先蒐集大家想問的問題。",
+            "zh-Hans": "在预定与厂方主管开会之前，一名员工代表先搜集大家想问的问题。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-043",
@@ -2800,7 +3637,16 @@
           "form": "atelier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce déplacement nous permettra de rencontrer le fournisseur et de visiter l’atelier où sont fabriqués les meubles.",
+          "translations": {
+            "zh-Hant": "這趟出差讓我們有機會和供應商見面，也能參觀製作家具的工坊。",
+            "zh-Hans": "这趟出差让我们有机会和供应商见面，也能参观制作家具的工坊。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-044",
@@ -2830,7 +3676,16 @@
           "form": "pluie"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Sa détermination aide toute l’équipe à poursuivre les travaux malgré la pluie et les retards de livraison.",
+          "translations": {
+            "zh-Hant": "有他堅定的意志鼓舞，全體團隊即使碰到下雨和送貨延誤，還是能繼續施工。",
+            "zh-Hans": "有他坚定的意志鼓舞，全体团队即使碰到下雨和送货延误，还是能继续施工。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-045",
@@ -2860,7 +3715,16 @@
           "form": "employés"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une directive a demandé aux employés de vérifier les adresses avant d’expédier les commandes aux clients.",
+          "translations": {
+            "zh-Hant": "公司發出指示，要求員工在寄出客戶訂購的商品前核對地址。",
+            "zh-Hans": "公司发出指示，要求员工在寄出客户订购的商品前核对地址。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-046",
@@ -2890,7 +3754,16 @@
           "form": "étapes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dirigée par une ingénieure, la visite montre aux étudiants les étapes de construction du pont et les règles de sécurité.",
+          "translations": {
+            "zh-Hant": "一位女工程師帶領學生參觀，介紹這座橋的施工步驟以及安全規則。",
+            "zh-Hans": "一位女工程师带领学生参观，介绍这座桥的施工步骤以及安全规则。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-047",
@@ -2920,7 +3793,16 @@
           "form": "employés"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’efficacité du service augmenterait si les employés pouvaient consulter les dossiers sans se déplacer entre plusieurs bureaux.",
+          "translations": {
+            "zh-Hant": "如果員工查閱檔案時不用在好幾間辦公室來回跑，部門的效率就能提高。",
+            "zh-Hans": "如果员工查阅档案时不用在好几间办公室来回跑，部门的效率就能提高。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-048",
@@ -2950,7 +3832,16 @@
           "form": "habitants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les habitants élaborent un projet de jardin avec les élèves et discutent des dépenses nécessaires pendant leurs réunions.",
+          "translations": {
+            "zh-Hant": "居民與學生一同擬定花園計畫，並在會議上討論所需支出。",
+            "zh-Hans": "居民与学生一同拟定花园计划，并在会议上讨论所需支出。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-049",
@@ -2980,7 +3871,16 @@
           "form": "tissus"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le marchand a étalé les tissus sur le comptoir pour permettre à la couturière de comparer les couleurs.",
+          "translations": {
+            "zh-Hant": "商家把布料攤開在櫃檯上，好讓裁縫師比較顏色。",
+            "zh-Hans": "商家把布料摊开在柜台上，好让裁缝师比较颜色。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-050",
@@ -3010,7 +3910,16 @@
           "form": "habitants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette expédition rassemble des chercheurs qui étudient les plantes et racontent leurs observations aux habitants des villages traversés.",
+          "translations": {
+            "zh-Hant": "參與這趟考察的研究人員不僅研究植物，也向沿途村莊的居民分享觀察所得。",
+            "zh-Hans": "参与这趟考察的研究人员不仅研究植物，也向沿途村庄的居民分享观察所得。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-051",
@@ -3040,7 +3949,16 @@
           "form": "sentiers"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’exploration de la vallée demandait de longues marches et une bonne connaissance des sentiers utilisés par les bergers.",
+          "translations": {
+            "zh-Hant": "當時要勘查這座山谷，得走很長的路，還得熟悉牧人使用的小徑。",
+            "zh-Hans": "当时要勘查这座山谷，得走很长的路，还得熟悉牧人使用的小径。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-052",
@@ -3070,7 +3988,16 @@
           "form": "logements"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les étudiants explorent le quartier à pied pour comprendre les relations entre les logements, les commerces et les transports.",
+          "translations": {
+            "zh-Hant": "學生徒步探索這一帶，了解住宅、商家與交通之間的關係。",
+            "zh-Hans": "学生徒步探索这一带，了解住宅、商家与交通之间的关系。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-053",
@@ -3100,7 +4027,16 @@
           "form": "employés"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La gestion de la bibliothèque sera confiée à une équipe qui associera des employés et des bénévoles formés.",
+          "translations": {
+            "zh-Hant": "圖書館將交由員工和受過訓練的志工共同組成的團隊管理。",
+            "zh-Hans": "图书馆将交由员工和受过训练的志工共同组成的团队管理。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-054",
@@ -3130,7 +4066,16 @@
           "form": "repas"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Son nouveau grade ne change pas ses habitudes : il continue à partager le repas et le travail de son équipe.",
+          "translations": {
+            "zh-Hant": "升了職，他的習慣還是沒變，照樣和團隊一起吃飯、一起工作。",
+            "zh-Hans": "升了职，他的习惯还是没变，照样和团队一起吃饭、一起工作。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-055",
@@ -3160,7 +4105,16 @@
           "form": "ouvriers"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’impératif de terminer avant la rentrée a conduit les ouvriers à revoir l’organisation du chantier avec l’architecte.",
+          "translations": {
+            "zh-Hant": "為了趕在開學前完工，工人和建築師一起重新調整了工地的工作安排。",
+            "zh-Hans": "为了赶在开学前完工，工人和建筑师一起重新调整了工地的工作安排。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-056",
@@ -3190,7 +4144,16 @@
           "form": "agriculteurs"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les enfants inventent une machine imaginaire et expliquent comment elle pourrait faciliter le travail des agriculteurs.",
+          "translations": {
+            "zh-Hant": "孩子們設計出一部想像中的機器，並說明它可以怎樣讓農民的工作更輕鬆。",
+            "zh-Hans": "孩子们设计出一部想像中的机器，并说明它可以怎样让农民的工作更轻松。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-057",
@@ -3220,7 +4183,16 @@
           "form": "entreprises"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette invention intéresserait les petites entreprises si son coût restait inférieur à celui des machines déjà disponibles.",
+          "translations": {
+            "zh-Hant": "如果這項發明的成本能低於市面上現有機器的成本，小企業應該會有興趣。",
+            "zh-Hans": "如果这项发明的成本能低于市面上现有机器的成本，小企业应该会有兴趣。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-058",
@@ -3250,7 +4222,16 @@
           "form": "tissu"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La recherche de la perfection ralentit parfois cette apprentie, qui reprend la couture d’une veste malgré la qualité du tissu.",
+          "translations": {
+            "zh-Hant": "有時這位女學徒太追求完美，進度反而慢了下來。即使布料品質很好，她還是會把外套重新縫過。",
+            "zh-Hans": "有时这位女学徒太追求完美，进度反而慢了下来。即使布料品质很好，她还是会把外套重新缝过。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-059",
@@ -3280,7 +4261,16 @@
           "form": "trains"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La planification du voyage occupait nos soirées, car chacun devait vérifier ses congés et les horaires des trains.",
+          "translations": {
+            "zh-Hant": "那時我們一到晚上就忙著規劃旅行，因為每個人都得確認休假日期和火車班次。",
+            "zh-Hans": "那时我们一到晚上就忙着规划旅行，因为每个人都得确认休假日期和火车班次。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-060",
@@ -3310,7 +4300,16 @@
           "form": "questions"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le recrutement commence par une rencontre où les candidats présentent leur expérience et posent des questions sur l’atelier.",
+          "translations": {
+            "zh-Hant": "招募從一場見面會開始，應徵者會介紹自己的經歷，也能就工坊的情況發問。",
+            "zh-Hans": "招募从一场见面会开始，应征者会介绍自己的经历，也能就工坊的情况发问。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-061",
@@ -3340,7 +4339,16 @@
           "form": "techniciennes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’entreprise recrutera deux techniciennes pour entretenir les machines et former les employés qui viennent de rejoindre l’usine.",
+          "translations": {
+            "zh-Hant": "這家公司將招募兩名女技師，負責機器保養並培訓剛進廠的員工。",
+            "zh-Hans": "这家公司将招募两名女技师，负责机器保养并培训刚进厂的员工。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-062",
@@ -3366,7 +4374,16 @@
           "form": "bibliothèque"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je renouvelle ma carte de bibliothèque avant les vacances pour pouvoir emprunter les livres nécessaires à ma recherche.",
+          "translations": {
+            "zh-Hant": "我趁放假前把借書證續期，好借閱研究需要的書。",
+            "zh-Hans": "我趁放假前把借书证续期，好借阅研究需要的书。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-063",
@@ -3396,7 +4413,16 @@
           "form": "repas"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Réunis dans le jardin, les voisins ont partagé un repas et choisi la date de la prochaine fête.",
+          "translations": {
+            "zh-Hant": "鄰居們聚在花園裡吃了一餐，也選定了下次聚會的日期。",
+            "zh-Hans": "邻居们聚在花园里吃了一餐，也选定了下次聚会的日期。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-064",
@@ -3426,7 +4452,16 @@
           "form": "trajet"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce schéma montre le trajet de l’eau dans le bâtiment et aide les apprentis à comprendre les travaux.",
+          "translations": {
+            "zh-Hant": "這張示意圖顯示水在建築物內流動的路徑，幫助學徒了解工程內容。",
+            "zh-Hans": "这张示意图显示水在建筑物内流动的路径，帮助学徒了解工程内容。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-065",
@@ -3456,7 +4491,16 @@
           "form": "architecte"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Étudiez sérieusement le devis avant de signer le contrat, puis posez vos questions à l’architecte pendant la réunion.",
+          "translations": {
+            "zh-Hant": "請在簽約前仔細研究報價單，然後趁開會時把你的疑問提出來請教建築師。",
+            "zh-Hans": "请在签约前仔细研究报价单，然后趁开会时把你的疑问提出来请教建筑师。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-066",
@@ -3486,7 +4530,16 @@
           "form": "école"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La mairie souhaite supprimer un arrêt de bus, mais les habitants expliquent qu’il dessert l’école et l’hôpital.",
+          "translations": {
+            "zh-Hant": "市政府想撤掉一個公車站，但居民指出，上學和去醫院的人都要用到這一站。",
+            "zh-Hans": "市政府想撤掉一个公车站，但居民指出，上学和去医院的人都要用到这一站。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.02-067",
@@ -3516,7 +4569,16 @@
           "form": "tante"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Sa vocation de médecin était née pendant les visites qu’elle rendait à sa tante dans un hôpital de campagne.",
+          "translations": {
+            "zh-Hant": "她以前常去鄉間醫院探望阿姨，正是在那些探訪中萌生了行醫的志願。",
+            "zh-Hans": "她以前常去乡间医院探望阿姨，正是在那些探访中萌生了行医的志愿。"
+          }
+        }
+      ]
     },
     {
       "id": "11.03-1",
@@ -3547,7 +4609,16 @@
           "form": "employés"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le bureau donne sur le jardin, ce qui permet aux employés de profiter du calme pendant leur pause.",
+          "translations": {
+            "zh-Hant": "辦公室面向花園，員工休息時可以享受一點寧靜。",
+            "zh-Hans": "办公室面向花园，员工休息时可以享受一点宁静。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-002",
@@ -3577,7 +4648,16 @@
           "form": "études"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une période de chômage l’a décidé à reprendre des études et à préparer un diplôme dans une nouvelle profession.",
+          "translations": {
+            "zh-Hant": "一段失業的日子讓他下定決心重返校園，為取得另一個行業的文憑做準備。",
+            "zh-Hans": "一段失业的日子让他下定决心重返校园，为取得另一个行业的文凭做准备。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-003",
@@ -3607,7 +4687,16 @@
           "form": "quartier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette association aide les chômeurs à préparer leurs candidatures et organise des rencontres avec les entreprises du quartier.",
+          "translations": {
+            "zh-Hant": "這個協會幫助失業者準備求職資料，也安排他們和附近企業見面。",
+            "zh-Hans": "这个协会帮助失业者准备求职资料，也安排他们和附近企业见面。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-004",
@@ -3637,7 +4726,16 @@
           "form": "laboratoires"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La collaboration entre les deux laboratoires donnera aux étudiants accès à du matériel qu’ils ne possèdent pas encore.",
+          "translations": {
+            "zh-Hant": "兩所實驗室合作後，學生就能使用原本沒有的設備。",
+            "zh-Hans": "两所实验室合作后，学生就能使用原本没有的设备。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-005",
@@ -3667,7 +4765,16 @@
           "form": "client"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une condition du contrat oblige le fournisseur à prévenir le client si la livraison risque d’être retardée.",
+          "translations": {
+            "zh-Hant": "合約有一項條款規定，如果可能延遲送貨，供應商必須通知客戶。",
+            "zh-Hans": "合约有一项条款规定，如果可能延迟送货，供应商必须通知客户。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-006",
@@ -3697,7 +4804,16 @@
           "form": "étudiante"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La famille destinait cette chambre aux visiteurs, mais l’étudiante l’utilisait aussi pour préparer ses examens.",
+          "translations": {
+            "zh-Hant": "這家人原本把這間房留給訪客，那名女學生也會在這裡準備考試。",
+            "zh-Hans": "这家人原本把这间房留给访客，那名女学生也会在这里准备考试。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-007",
@@ -3727,7 +4843,16 @@
           "form": "ville"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dans le domaine du transport, cette ingénieure cherche des solutions pour relier les villages aux services de la ville.",
+          "translations": {
+            "zh-Hant": "這位工程師研究交通，設法讓村民更方便使用市區提供的各種服務。",
+            "zh-Hans": "这位工程师研究交通，设法让村民更方便使用市区提供的各种服务。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-008",
@@ -3753,7 +4878,16 @@
           "form": "enfants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un emploi plus proche de son domicile lui laisserait davantage de temps pour ses enfants et sa formation.",
+          "translations": {
+            "zh-Hant": "如果能找到離家近些的工作，他就有更多時間陪孩子和進修。",
+            "zh-Hans": "如果能找到离家近些的工作，他就有更多时间陪孩子和进修。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-009",
@@ -3783,7 +4917,16 @@
           "form": "musée"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une employée accueille les visiteurs du musée et les aide à choisir la visite adaptée à leurs intérêts.",
+          "translations": {
+            "zh-Hant": "一位女職員接待博物館的訪客，並依各人的興趣幫他們挑選適合的參觀行程。",
+            "zh-Hans": "一位女职员接待博物馆的访客，并依各人的兴趣帮他们挑选适合的参观行程。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-010",
@@ -3813,7 +4956,16 @@
           "form": "commandes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La coopérative a employé plusieurs habitants du village pour préparer les commandes pendant la période de récolte.",
+          "translations": {
+            "zh-Hant": "收穫季節，合作社雇用了好幾名村民幫忙處理訂單。",
+            "zh-Hans": "收获季节，合作社雇用了好几名村民帮忙处理订单。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-011",
@@ -3843,7 +4995,16 @@
           "form": "budget"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le restaurant souhaite engager un apprenti et lui apprendre à préparer des repas de qualité avec un budget limité.",
+          "translations": {
+            "zh-Hant": "餐廳想招一名學徒，教他如何在預算有限的情況下做出好菜。",
+            "zh-Hans": "餐厅想招一名学徒，教他如何在预算有限的情况下做出好菜。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-012",
@@ -3873,7 +5034,16 @@
           "form": "gare"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’entreprise ouvrira un atelier près de la gare pour faciliter les trajets des salariés qui utilisent les transports publics.",
+          "translations": {
+            "zh-Hant": "公司將在車站附近開設工坊，方便搭大眾運輸工具的員工上下班。",
+            "zh-Hans": "公司将在车站附近开设工坊，方便搭大众运输工具的员工上下班。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-013",
@@ -3903,7 +5073,16 @@
           "form": "équipe"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le génie de cette inventrice apparaît dans la simplicité d’un outil qui transforme le travail de toute l’équipe.",
+          "translations": {
+            "zh-Hant": "一件小工具設計得如此簡單，卻改變了全隊的工作方式，足見這位女發明家的才華。",
+            "zh-Hans": "一件小工具设计得如此简单，却改变了全队的工作方式，足见这位女发明家的才华。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-014",
@@ -3933,7 +5112,16 @@
           "form": "salles"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le laboratoire occupait deux salles de l’université et partageait son matériel avec les étudiants de plusieurs formations.",
+          "translations": {
+            "zh-Hant": "這間實驗室占用大學的兩間教室，也和好幾個學程的學生共用設備。",
+            "zh-Hans": "这间实验室占用大学的两间教室，也和好几个学程的学生共用设备。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-015",
@@ -3963,7 +5151,16 @@
           "form": "villages"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Notre obligation est de prévenir les familles avant de modifier les horaires du transport scolaire dans les villages.",
+          "translations": {
+            "zh-Hant": "調整各村校車的時刻表前，我們有責任先通知家長。",
+            "zh-Hans": "调整各村校车的时刻表前，我们有责任先通知家长。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-016",
@@ -3993,7 +5190,16 @@
           "form": "travail"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La perspective d’un stage à l’étranger a encouragé ma sœur à suivre un cours de langue après son travail.",
+          "translations": {
+            "zh-Hant": "想到有機會去國外實習，妹妹便決定下班後去上語言課。",
+            "zh-Hans": "想到有机会去国外实习，妹妹便决定下班后去上语言课。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-017",
@@ -4023,7 +5229,16 @@
           "form": "entreprise"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La formation professionnelle permet à cette salariée d’apprendre un nouveau métier sans quitter immédiatement son entreprise.",
+          "translations": {
+            "zh-Hant": "透過職業培訓，這位員工可以一邊學習新的行業技能，一邊繼續留在原公司上班。",
+            "zh-Hans": "透过职业培训，这位员工可以一边学习新的行业技能，一边继续留在原公司上班。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-018",
@@ -4053,7 +5268,16 @@
           "form": "enfants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Son supérieur accepterait sans doute cet horaire si elle expliquait les contraintes liées au transport de ses enfants.",
+          "translations": {
+            "zh-Hant": "如果她把接送孩子的難處說清楚，上司多半會同意這樣的班表。",
+            "zh-Hans": "如果她把接送孩子的难处说清楚，上司多半会同意这样的班表。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-019",
@@ -4083,7 +5307,16 @@
           "form": "employés"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le travail se répartit entre l’atelier et le bureau, où les employés préparent les commandes et les factures.",
+          "translations": {
+            "zh-Hant": "工作分別在工坊和辦公室進行，員工在辦公室負責處理訂單和發票。",
+            "zh-Hans": "工作分别在工坊和办公室进行，员工在办公室负责处理订单和发票。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-020",
@@ -4113,7 +5346,16 @@
           "form": "conditions"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’usine a ouvert ses portes aux familles pour leur montrer les machines et les conditions de travail des salariés.",
+          "translations": {
+            "zh-Hant": "工廠邀請員工家屬入內參觀，讓他們看看機器和員工的工作環境。",
+            "zh-Hans": "工厂邀请员工家属入内参观，让他们看看机器和员工的工作环境。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-021",
@@ -4143,7 +5385,16 @@
           "form": "logements"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’agence propose des logements proches de la gare, mais leurs loyers dépassent souvent le budget des étudiants.",
+          "translations": {
+            "zh-Hant": "這家房仲提供車站附近的住宅，租金卻常常超出學生的預算。",
+            "zh-Hans": "这家房仲提供车站附近的住宅，租金却常常超出学生的预算。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-022",
@@ -4173,7 +5424,16 @@
           "form": "meuble"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’atelier accueillera des enfants le mercredi pour leur apprendre à réparer un jouet ou fabriquer un petit meuble.",
+          "translations": {
+            "zh-Hant": "這間工坊每週三會接待孩子，教他們修理玩具或做一件小家具。",
+            "zh-Hans": "这间工坊每周三会接待孩子，教他们修理玩具或做一件小家具。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-023",
@@ -4203,7 +5463,16 @@
           "form": "quartier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dans son cabinet, la médecin reçoit les habitants du quartier et prend le temps d’expliquer chaque examen.",
+          "translations": {
+            "zh-Hant": "醫師在診所裡接診附近居民，也會耐心解釋每項檢查。",
+            "zh-Hans": "医师在诊所里接诊附近居民，也会耐心解释每项检查。"
+          }
+        }
+      ]
     },
     {
       "id": "11.03-2",
@@ -4233,7 +5502,16 @@
           "form": "école"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le chantier ralentissait la circulation, mais les ouvriers laissaient un passage aux enfants qui rejoignaient l’école.",
+          "translations": {
+            "zh-Hant": "工地施工拖慢了車流，不過工人留了一條通道，方便孩子上學。",
+            "zh-Hans": "工地施工拖慢了车流，不过工人留了一条通道，方便孩子上学。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-025",
@@ -4263,7 +5541,16 @@
           "form": "méthodes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les chercheurs collaborent avec des agriculteurs pour observer les changements du sol et comparer leurs méthodes de travail.",
+          "translations": {
+            "zh-Hant": "研究人員與農民合作，觀察土壤的變化，並比較各自的工作方法。",
+            "zh-Hans": "研究人员与农民合作，观察土壤的变化，并比较各自的工作方法。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-026",
@@ -4293,7 +5580,16 @@
           "form": "famille"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Pendant son congé, mon collègue a visité sa famille et aidé son frère à rénover une chambre.",
+          "translations": {
+            "zh-Hant": "休假期間，我的同事去探望家人，還幫兄弟翻修了一間房。",
+            "zh-Hans": "休假期间，我的同事去探望家人，还帮兄弟翻修了一间房。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-027",
@@ -4323,7 +5619,16 @@
           "form": "équipe"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La contrainte du budget pousse l’équipe à réutiliser le matériel disponible plutôt qu’à acheter une nouvelle machine.",
+          "translations": {
+            "zh-Hant": "由於預算有限，團隊決定繼續使用現有設備，省下添購新機器的費用。",
+            "zh-Hans": "由于预算有限，团队决定继续使用现有设备，省下添购新机器的费用。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-028",
@@ -4353,7 +5658,16 @@
           "form": "meubles"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le contrat précisera le prix, la date de livraison et les conditions de réparation des meubles commandés par l’école.",
+          "translations": {
+            "zh-Hant": "學校訂購家具的價格、交貨日期和維修條件，都會在合約上寫明。",
+            "zh-Hans": "学校订购家具的价格、交货日期和维修条件，都会在合约上写明。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-029",
@@ -4383,7 +5697,16 @@
           "form": "emploi"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une demandeuse d’emploi prépare son entretien avec une bénévole qui l’aide à présenter son expérience et ses compétences.",
+          "translations": {
+            "zh-Hant": "一名求職者和女志工一起準備面試，志工幫她練習如何介紹自己的經驗與技能。",
+            "zh-Hans": "一名求职者和女志工一起准备面试，志工帮她练习如何介绍自己的经验与技能。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-030",
@@ -4413,7 +5736,16 @@
           "form": "collègues"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Sa démission a surpris les collègues, mais elle souhaitait reprendre des études et changer de profession.",
+          "translations": {
+            "zh-Hant": "她辭職讓同事們很意外，不過她是想回學校進修，換個職業。",
+            "zh-Hans": "她辞职让同事们很意外，不过她是想回学校进修，换个职业。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-031",
@@ -4443,7 +5775,16 @@
           "form": "train"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’employeur participe aux frais de transport des salariés qui habitent loin de l’usine et viennent en train.",
+          "translations": {
+            "zh-Hant": "雇主補助那些住得離工廠遠、搭火車通勤的員工一部分交通費。",
+            "zh-Hans": "雇主补助那些住得离工厂远、搭火车通勤的员工一部分交通费。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-032",
@@ -4473,7 +5814,16 @@
           "form": "vêtements"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La firme fabriquait des tissus solides destinés aux vêtements de travail utilisés sur les chantiers de la région.",
+          "translations": {
+            "zh-Hant": "這家公司過去生產耐磨布料，用來製作本地工地穿的工作服。",
+            "zh-Hans": "这家公司过去生产耐磨布料，用来制作本地工地穿的工作服。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-033",
@@ -4503,7 +5853,16 @@
           "form": "étudiants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La grève perturbe les trains, et les étudiants cherchent d’autres moyens de rejoindre leur université avant l’examen.",
+          "translations": {
+            "zh-Hant": "罷工打亂了火車班次，學生們正另想辦法，設法在考試前趕到大學。",
+            "zh-Hans": "罢工打乱了火车班次，学生们正另想办法，设法在考试前赶到大学。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-034",
@@ -4529,7 +5888,16 @@
           "form": "entreprises"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une norme plus claire aiderait les petites entreprises à comparer les matériaux proposés pour la rénovation des logements.",
+          "translations": {
+            "zh-Hant": "如果有更明確的標準，小企業就更容易比較各種住宅翻修用的材料。",
+            "zh-Hans": "如果有更明确的标准，小企业就更容易比较各种住宅翻修用的材料。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-035",
@@ -4559,7 +5927,16 @@
           "form": "atelier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une ouvrière qualifiée forme les apprentis et vérifie les pièces avant leur départ de l’atelier vers le chantier.",
+          "translations": {
+            "zh-Hant": "一名熟練的女工負責培訓學徒，並在零件從工坊送往工地前逐一檢查。",
+            "zh-Hans": "一名熟练的女工负责培训学徒，并在零件从工坊送往工地前逐一检查。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-036",
@@ -4589,7 +5966,16 @@
           "form": "bibliothèque"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "À la retraite, notre voisine consacrera plus de temps au jardin et aux cours de peinture de la bibliothèque.",
+          "translations": {
+            "zh-Hant": "退休後，我們的鄰居會花更多時間照料花園，也會去上圖書館的繪畫課。",
+            "zh-Hans": "退休后，我们的邻居会花更多时间照料花园，也会去上图书馆的绘画课。"
+          }
+        }
+      ]
     },
     {
       "id": "11.03-3",
@@ -4620,7 +6006,16 @@
           "form": "voyages"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Son salaire couvre le loyer et les dépenses courantes, mais elle garde une petite réserve pour les voyages en famille.",
+          "translations": {
+            "zh-Hant": "她的薪水足以支付房租和日常開銷，她也會留一點錢作為全家旅行的備用金。",
+            "zh-Hans": "她的薪水足以支付房租和日常开销，她也会留一点钱作为全家旅行的备用金。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-038",
@@ -4650,7 +6045,16 @@
           "form": "habitants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La suspension du service a obligé les habitants à organiser eux-mêmes le transport des enfants jusqu’à l’école.",
+          "translations": {
+            "zh-Hant": "服務暫停後，居民只好自行安排接送孩子上學的方式。",
+            "zh-Hans": "服务暂停后，居民只好自行安排接送孩子上学的方式。"
+          }
+        }
+      ]
     },
     {
       "id": "book-11.03-039",
@@ -4680,7 +6084,16 @@
           "form": "conditions"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le syndicat consulte les salariés avant de présenter ses propositions sur les horaires et les conditions de travail.",
+          "translations": {
+            "zh-Hant": "工會先徵詢員工意見，再就工時與工作條件提出建議。",
+            "zh-Hans": "工会先征询员工意见，再就工时与工作条件提出建议。"
+          }
+        }
+      ]
     }
   ],
   "originalMethod": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，明显语法或释义错误另记于 note；职业名称保留阴阳性及原书词形；校正 conjugué、détermination 例句排印错误，按语境说明 rapport、créateur、vocation 等词义。",

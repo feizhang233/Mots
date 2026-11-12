@@ -29,7 +29,7 @@ JSON 的 `words` 陣列包含詞條 ID、分類／子類、法語、中文、例
 
 執行 `python3 scripts/import-japanese.py` 可由原表、例句補充檔及場景分類重建 JSON 與 `web/src/js/languages.js` 中的日語詞庫及分類；`python3 scripts/import-japanese.py --check` 可核對三者是否一致。新詞 ID 由詞彙及讀音產生，與舊示例 ID 分開，避免既有進度套用到不同詞條。讀音使用 Kyoko（ja-JP）合成語音，詳細範圍見 [讀音方案](../AUDIO.md)。
 
-[`manifest.json`](manifest.json) 記錄各單元數量、32 份來源檔案的大小及 SHA-256，可用來核對下載內容。這批來源檔共 4,012,037 bytes；清單檔、本說明與生成的公開快照不計入其中。
+[`manifest.json`](manifest.json) 記錄各單元數量、32 份來源檔案的大小及 SHA-256，可用來核對下載內容。
 
 ## 日語語法筆記
 
@@ -46,5 +46,7 @@ JSON 的 `words` 陣列包含詞條 ID、分類／子類、法語、中文、例
 3,846 個法語詞條的當前 JSON 例句已改為另行編寫的學習內容；每句至少記錄兩個實際使用的其他詞條與句中詞形。`french/example-network.json` 保存完整例句、主要子句的時態、關聯 ID、原書例句及統計。`exampleRelated` 是資料關聯，不會新增介面導覽按鈕；單詞與語法透過句中共同出現形成複習網路。
 
 一般現在時約占一半，其餘依情境採用複合過去時、未完成過去時、未來時、條件式和命令式等。原有詞條 ID、釋義、分類與頁碼保留，既有學習進度繼續對應。單元 XLSX 保留原書轉錄（包含舊例句），目前例句以 JSON 為準；舊例句另存於關聯檔案的 `originalText`。舊例句錄音引用已移除，單詞錄音照常保留。
+
+16 個單元的 3,846 個法語例句都收錄了中文譯文。第八單元的 160 句與第九單元的 248 句沿用既有列印詞表，其餘 3,438 句依目前法文例句翻譯。關聯檔案的 `translations` 欄位以 `zh-Hant` 和 `zh-Hans` 分別保存繁體與簡體，構建時按詞條 ID 將譯文與對應法文原句一同寫入 `examples`。
 
 維護：`python3 scripts/update-french-examples.py --input 完整例句JSON` 更新來源、執行期詞庫、來源清單與關聯圖；`--check` 核對完整覆蓋、去重、有效關聯、時態比例與來源一致性，然後依正常構建／發布流程更新。

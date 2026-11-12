@@ -64,7 +64,16 @@
           "form": "document"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’administration demande un justificatif de domicile avant de délivrer le document nécessaire à notre inscription.",
+          "translations": {
+            "zh-Hant": "行政單位要我們先提出居住證明，才會核發註冊所需的文件。",
+            "zh-Hans": "行政单位要我们先提出居住证明，才会核发注册所需的文件。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-002",
@@ -94,7 +103,16 @@
           "form": "lettre"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "J’ai adressé une lettre à la mairie pour demander la réparation du trottoir devant l’école.",
+          "translations": {
+            "zh-Hant": "我寫了一封信給市政府，請他們修繕學校前面的人行道。",
+            "zh-Hans": "我写了一封信给市政府，请他们修缮学校前面的人行道。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-003",
@@ -124,7 +142,16 @@
           "form": "budget"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le document ci-joint présente le budget et précise les conditions de livraison du matériel scolaire.",
+          "translations": {
+            "zh-Hant": "隨附的文件列出預算，也說明學校用品的交貨條件。",
+            "zh-Hans": "随附的文件列出预算，也说明学校用品的交货条件。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-004",
@@ -154,7 +181,16 @@
           "form": "dossier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La secrétaire conservera une copie du certificat dans votre dossier avant de vous rendre le document original.",
+          "translations": {
+            "zh-Hant": "秘書會先在您的檔案裡留存一份證明書影本，再把正本還給您。",
+            "zh-Hans": "秘书会先在您的档案里留存一份证明书影本，再把正本还给您。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-005",
@@ -184,7 +220,16 @@
           "form": "bois"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ma grand-mère correspond avec une amie allemande et garde ses lettres dans une boîte en bois.",
+          "translations": {
+            "zh-Hant": "奶奶和一位德國朋友通信，並把對方寫來的信收藏在木盒裡。",
+            "zh-Hans": "奶奶和一位德国朋友通信，并把对方写来的信收藏在木盒里。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-006",
@@ -214,7 +259,16 @@
           "form": "conditions"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce document expliquait les conditions du stage, mais aucun étudiant n’avait remarqué la date de signature.",
+          "translations": {
+            "zh-Hant": "這份文件說明了實習條件，但當時沒有學生注意到簽署日期。",
+            "zh-Hans": "这份文件说明了实习条件，但当时没有学生注意到签署日期。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-007",
@@ -240,7 +294,16 @@
           "form": "voyageur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "À la douane, le voyageur présente son passeport et explique pourquoi il transporte du matériel scientifique.",
+          "translations": {
+            "zh-Hant": "在海關，旅客出示護照，並說明自己為什麼攜帶科研設備。",
+            "zh-Hans": "在海关，旅客出示护照，并说明自己为什么携带科研设备。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-008",
@@ -270,7 +333,16 @@
           "form": "salle"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous enverrons les invitations après avoir réservé la salle et confirmé la date avec les musiciens.",
+          "translations": {
+            "zh-Hant": "我們會先訂好場地、跟樂手確認日期，再把邀請函寄出去。",
+            "zh-Hans": "我们会先订好场地、跟乐手确认日期，再把邀请函寄出去。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-009",
@@ -300,7 +372,16 @@
           "form": "dossier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une fonctionnaire examine mon dossier pendant que je cherche la facture qui prouve mon adresse.",
+          "translations": {
+            "zh-Hant": "一位公務員正在審閱我的資料，我則在找能證明住址的帳單。",
+            "zh-Hans": "一位公务员正在审阅我的资料，我则在找能证明住址的帐单。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-010",
@@ -326,7 +407,16 @@
           "form": "enveloppe"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’expéditrice a oublié d’indiquer son adresse sur l’enveloppe, alors le facteur n’a pas pu la renvoyer.",
+          "translations": {
+            "zh-Hant": "寄件人忘了在信封上寫自己的地址，所以郵差沒辦法把信退還給她。",
+            "zh-Hans": "寄件人忘了在信封上写自己的地址，所以邮差没办法把信退还给她。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-011",
@@ -352,7 +442,16 @@
           "form": "habitants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette fonctionnaire aide les habitants du quartier à comprendre les formulaires et à préparer leurs demandes.",
+          "translations": {
+            "zh-Hant": "這位公務員協助附近居民看懂表格、備妥申請資料。",
+            "zh-Hans": "这位公务员协助附近居民看懂表格、备妥申请资料。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-012",
@@ -382,7 +481,16 @@
           "form": "machines"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’impôt représentait une charge importante pour son entreprise, qui venait d’acheter de nouvelles machines.",
+          "translations": {
+            "zh-Hant": "他的公司才剛買了新機器，當時稅金是一筆不小的負擔。",
+            "zh-Hans": "他的公司才刚买了新机器，当时税金是一笔不小的负担。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-013",
@@ -412,7 +520,16 @@
           "form": "université"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dans sa lettre, mon frère décrit son appartement et raconte ses premiers jours à l’université.",
+          "translations": {
+            "zh-Hant": "哥哥在信裡描述自己的公寓，也說了剛上大學頭幾天的生活。",
+            "zh-Hans": "哥哥在信里描述自己的公寓，也说了刚上大学头几天的生活。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-014",
@@ -442,7 +559,16 @@
           "form": "quartier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’office du tourisme publiera une carte des sentiers et organisera des visites du vieux quartier.",
+          "translations": {
+            "zh-Hant": "旅遊服務中心會發行一份步道地圖，也會舉辦老城區的導覽活動。",
+            "zh-Hans": "旅游服务中心会发行一份步道地图，也会举办老城区的导览活动。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-015",
@@ -472,7 +598,16 @@
           "form": "habitants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La section consacrée aux transports accueille les habitants qui souhaitent discuter du nouveau trajet des bus.",
+          "translations": {
+            "zh-Hant": "負責交通的部門接待想討論公車新路線的居民。",
+            "zh-Hans": "负责交通的部门接待想讨论公车新路线的居民。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-016",
@@ -502,7 +637,16 @@
           "form": "propriétaire"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le propriétaire a signé le contrat après avoir vérifié le montant du loyer et la durée du bail.",
+          "translations": {
+            "zh-Hant": "屋主核對了租金金額和租約期限後，才在合約上簽名。",
+            "zh-Hans": "屋主核对了租金金额和租约期限后，才在合约上签名。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-017",
@@ -528,7 +672,16 @@
           "form": "poste"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je colle un timbre sur l’enveloppe et vérifie l’adresse avant de partir à la poste.",
+          "translations": {
+            "zh-Hant": "我把郵票貼在信封上，再確認地址，然後才出門去郵局。",
+            "zh-Hans": "我把邮票贴在信封上，再确认地址，然后才出门去邮局。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-018",
@@ -558,7 +711,16 @@
           "form": "train"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Vérifiez le numéro du train et l’heure du départ avant d’acheter vos billets pour le voyage.",
+          "translations": {
+            "zh-Hant": "買車票前，請先確認火車班次和發車時間。",
+            "zh-Hans": "买车票前，请先确认火车班次和发车时间。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-019",
@@ -584,7 +746,16 @@
           "form": "aide"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les démarches administratives prennent du temps, mais la bibliothèque propose une aide gratuite pour remplir les formulaires.",
+          "translations": {
+            "zh-Hant": "辦理行政手續需要時間，不過圖書館會免費協助填寫表格。",
+            "zh-Hans": "办理行政手续需要时间，不过图书馆会免费协助填写表格。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-020",
@@ -614,7 +785,16 @@
           "form": "village"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une équipe plus nombreuse pourrait administrer ce service sans imposer de longues attentes aux habitants du village.",
+          "translations": {
+            "zh-Hant": "如果團隊人手再多一些，就能把這項服務辦好，也不用讓村民等這麼久。",
+            "zh-Hans": "如果团队人手再多一些，就能把这项服务办好，也不用让村民等这么久。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-021",
@@ -640,7 +820,16 @@
           "form": "dossier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Devant l’ambassade, des étudiants attendent pour demander un visa et apporter les pièces de leur dossier.",
+          "translations": {
+            "zh-Hant": "學生們在大使館門前排隊等候，準備申請簽證、遞交相關文件。",
+            "zh-Hans": "学生们在大使馆门前排队等候，准备申请签证、递交相关文件。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-022",
@@ -670,7 +859,16 @@
           "form": "école"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La médecin a rédigé un certificat que la famille a transmis à l’école pour expliquer l’absence de l’enfant.",
+          "translations": {
+            "zh-Hant": "醫師開了一張證明，家人把它交給學校，說明孩子缺席的原因。",
+            "zh-Hans": "医师开了一张证明，家人把它交给学校，说明孩子缺席的原因。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-023",
@@ -700,7 +898,16 @@
           "form": "contrats"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La secrétaire classe les factures par date et garde les contrats dans une armoire fermée à clé.",
+          "translations": {
+            "zh-Hant": "秘書把發票依日期歸檔，合約則收在上鎖的櫃子裡。",
+            "zh-Hans": "秘书把发票依日期归档，合约则收在上锁的柜子里。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-024",
@@ -730,7 +937,16 @@
           "form": "documents"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La mairie délivrera le certificat dès que notre dossier comportera tous les documents demandés.",
+          "translations": {
+            "zh-Hant": "等我們的申請資料備齊了所有指定文件，市政府就會核發證明。",
+            "zh-Hans": "等我们的申请资料备齐了所有指定文件，市政府就会核发证明。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-025",
@@ -756,7 +972,16 @@
           "form": "certificat"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mon dossier a été renvoyé parce que la copie du certificat ne portait pas la signature demandée.",
+          "translations": {
+            "zh-Hant": "我的申請資料被退回了，因為證明書影本上缺少規定要有的簽名。",
+            "zh-Hans": "我的申请资料被退回了，因为证明书影本上缺少规定要有的签名。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-026",
@@ -786,7 +1011,16 @@
           "form": "séjour"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette fondation finance des bourses et aide les jeunes chercheurs à préparer leur premier séjour à l’étranger.",
+          "translations": {
+            "zh-Hant": "這家基金會提供獎學金，也幫助年輕研究人員準備第一次出國研修。",
+            "zh-Hans": "这家基金会提供奖学金，也帮助年轻研究人员准备第一次出国研修。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-027",
@@ -816,7 +1050,16 @@
           "form": "visite"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le gardien notait chaque visite dans un registre avant d’ouvrir la porte du laboratoire.",
+          "translations": {
+            "zh-Hant": "警衛每次都會先在登記簿上記下訪客資料，再打開實驗室的門。",
+            "zh-Hans": "警卫每次都会先在登记簿上记下访客资料，再打开实验室的门。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-028",
@@ -842,7 +1085,16 @@
           "form": "clients"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La libraire renvoie les livres abîmés au fournisseur et demande une nouvelle livraison pour ses clients.",
+          "translations": {
+            "zh-Hant": "書店老闆娘把受損的書退還供應商，並要求重新送一批給她的顧客。",
+            "zh-Hans": "书店老板娘把受损的书退还供应商，并要求重新送一批给她的顾客。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-029",
@@ -872,7 +1124,16 @@
           "form": "association"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les membres de l’association ont relu ses statuts avant de voter sur le projet de jardin partagé.",
+          "translations": {
+            "zh-Hant": "協會成員在表決共享花園計畫前，先重新讀過協會章程。",
+            "zh-Hans": "协会成员在表决共享花园计划前，先重新读过协会章程。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.01-030",
@@ -898,7 +1159,16 @@
           "form": "ville"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce billet reste valable pendant tout le week-end et permet de visiter plusieurs musées de la ville.",
+          "translations": {
+            "zh-Hant": "這張票整個週末都有效，憑票可以參觀市內好幾座博物館。",
+            "zh-Hans": "这张票整个周末都有效，凭票可以参观市内好几座博物馆。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-001",
@@ -928,7 +1198,16 @@
           "form": "équipe"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le directeur accordera un congé à la salariée lorsque son équipe aura organisé le remplacement.",
+          "translations": {
+            "zh-Hant": "等團隊安排好代理人，主管就會批准這位員工的休假。",
+            "zh-Hans": "等团队安排好代理人，主管就会批准这位员工的休假。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-002",
@@ -958,7 +1237,16 @@
           "form": "lettre"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "À la poste, je demande combien de timbres il faut pour affranchir cette lettre destinée au Canada.",
+          "translations": {
+            "zh-Hant": "我在郵局問，這封要寄到加拿大的信需要貼幾張郵票。",
+            "zh-Hans": "我在邮局问，这封要寄到加拿大的信需要贴几张邮票。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-003",
@@ -988,7 +1276,16 @@
           "form": "famille"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Grâce à l’aide de ses voisins, cette famille a pu installer les meubles avant la rentrée scolaire.",
+          "translations": {
+            "zh-Hant": "多虧鄰居幫忙，這家人趕在開學前把家具安置好了。",
+            "zh-Hans": "多亏邻居帮忙，这家人赶在开学前把家具安置好了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-004",
@@ -1018,7 +1315,16 @@
           "form": "étudiants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Des étudiants aident les enfants à faire leurs devoirs et préparent avec eux une petite exposition.",
+          "translations": {
+            "zh-Hant": "一些大學生幫孩子們做功課，還和他們一起籌備一場小型展覽。",
+            "zh-Hans": "一些大学生帮孩子们做功课，还和他们一起筹备一场小型展览。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-005",
@@ -1048,7 +1354,16 @@
           "form": "association"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’assistance proposée par l’association comprenait des repas, un logement provisoire et un accompagnement administratif.",
+          "translations": {
+            "zh-Hant": "協會當時提供的協助包括餐食、臨時住所，以及陪同辦理行政手續。",
+            "zh-Hans": "协会当时提供的协助包括餐食、临时住所，以及陪同办理行政手续。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-006",
@@ -1074,7 +1389,16 @@
           "form": "factures"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Mon assurance couvre les dégâts causés dans l’appartement, mais je dois conserver les factures des réparations.",
+          "translations": {
+            "zh-Hant": "我的保險涵蓋公寓裡造成的損害，但我得保留修繕的發票。",
+            "zh-Hans": "我的保险涵盖公寓里造成的损害，但我得保留修缮的发票。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-007",
@@ -1104,7 +1428,16 @@
           "form": "familles"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La communauté organisera une fête sur la place pour accueillir les familles récemment installées dans le quartier.",
+          "translations": {
+            "zh-Hant": "社區將在廣場上辦一場歡迎會，迎接最近搬來的家庭。",
+            "zh-Hans": "社区将在广场上办一场欢迎会，迎接最近搬来的家庭。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-008",
@@ -1134,7 +1467,16 @@
           "form": "courrier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La factrice dépose le courrier à la mairie avant de poursuivre sa tournée vers les fermes isolées.",
+          "translations": {
+            "zh-Hant": "女郵差先到市政府送信，再繼續前往偏遠農場投遞郵件。",
+            "zh-Hans": "女邮差先到市政府送信，再继续前往偏远农场投递邮件。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-009",
@@ -1164,7 +1506,16 @@
           "form": "école"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Sa mission a consisté à vérifier les installations électriques de l’école et à rédiger un rapport.",
+          "translations": {
+            "zh-Hant": "她的任務是檢查學校的電力設施，並撰寫報告。",
+            "zh-Hans": "她的任务是检查学校的电力设施，并撰写报告。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-010",
@@ -1194,7 +1545,16 @@
           "form": "emploi"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cet organisme propose une formation aux personnes qui cherchent un emploi et souhaitent changer de profession.",
+          "translations": {
+            "zh-Hant": "這個機構為正在求職、也想轉換職業的人提供培訓。",
+            "zh-Hans": "这个机构为正在求职、也想转换职业的人提供培训。"
+          }
+        }
+      ]
     },
     {
       "id": "7.02-1",
@@ -1225,7 +1585,16 @@
           "form": "ville"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une poste plus proche faciliterait la vie des habitants qui n’ont pas de voiture pour rejoindre la ville.",
+          "translations": {
+            "zh-Hant": "村裡有些居民沒有車子可以進城，如果附近就有郵局，生活會方便許多。",
+            "zh-Hans": "村里有些居民没有车子可以进城，如果附近就有邮局，生活会方便许多。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-012",
@@ -1251,7 +1620,16 @@
           "form": "lettre"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je poste la lettre de ma mère avant de prendre le bus pour aller travailler.",
+          "translations": {
+            "zh-Hant": "我先把媽媽的信投進郵筒，再搭公車去上班。",
+            "zh-Hans": "我先把妈妈的信投进邮筒，再搭公车去上班。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-013",
@@ -1281,7 +1659,16 @@
           "form": "commandes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le service de livraison a prévenu les clients qu’un accident retardait l’arrivée de leurs commandes.",
+          "translations": {
+            "zh-Hant": "配送單位已經通知客人，有起事故導致他們訂的貨延遲送達。",
+            "zh-Hans": "配送单位已经通知客人，有起事故导致他们订的货延迟送达。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-014",
@@ -1311,7 +1698,16 @@
           "form": "école"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le centre social du quartier accueille les enfants après l’école et organise des cours pour leurs parents.",
+          "translations": {
+            "zh-Hant": "社區活動中心在放學後接待孩子，也為家長開設課程。",
+            "zh-Hans": "社区活动中心在放学后接待孩子，也为家长开设课程。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-015",
@@ -1341,7 +1737,16 @@
           "form": "artisane"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le crédit accordé par la banque permettra à l’artisane d’acheter une machine et d’agrandir son atelier.",
+          "translations": {
+            "zh-Hant": "有了銀行核發的貸款，這位女工藝師就能買機器、擴建工坊。",
+            "zh-Hans": "有了银行核发的贷款，这位女工艺师就能买机器、扩建工坊。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-016",
@@ -1371,7 +1776,16 @@
           "form": "frais"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette allocation complète son salaire et lui permet de payer une partie des frais de garde.",
+          "translations": {
+            "zh-Hant": "這筆津貼補足了薪資收入，讓她能夠支付一部分托育費。",
+            "zh-Hans": "这笔津贴补足了薪资收入，让她能够支付一部分托育费。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-017",
@@ -1401,7 +1815,16 @@
           "form": "repas"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une équipe auxiliaire préparait les repas pendant que les volontaires installaient les lits dans le gymnase.",
+          "translations": {
+            "zh-Hant": "志工在體育館裡架設床鋪時，支援小組則忙著準備餐點。",
+            "zh-Hans": "志工在体育馆里架设床铺时，支援小组则忙着准备餐点。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-018",
@@ -1431,7 +1854,16 @@
           "form": "lettre"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Chaque bénéficiaire reçoit une lettre qui indique le montant de l’aide et les pièces à fournir.",
+          "translations": {
+            "zh-Hant": "每位受助者都會收到一封信，上面寫著補助金額及應檢附的文件。",
+            "zh-Hans": "每位受助者都会收到一封信，上面写着补助金额及应检附的文件。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-019",
@@ -1457,7 +1889,16 @@
           "form": "documents"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une bénévole a accompagné mon voisin à la mairie pour l’aider à comprendre les documents.",
+          "translations": {
+            "zh-Hant": "一位女志工陪我的鄰居去市政府，幫他看懂那些文件。",
+            "zh-Hans": "一位女志工陪我的邻居去市政府，帮他看懂那些文件。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-020",
@@ -1487,7 +1928,16 @@
           "form": "table"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le courrier s’accumule sur la table depuis que notre collègue est parti en congé.",
+          "translations": {
+            "zh-Hant": "自從同事休假後，桌上的信件就一直越積越多。",
+            "zh-Hans": "自从同事休假后，桌上的信件就一直越积越多。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-021",
@@ -1517,7 +1967,16 @@
           "form": "artisan"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Coupez l’électricité avant l’arrivée de l’artisan et gardez les enfants à distance de ses outils.",
+          "translations": {
+            "zh-Hant": "師傅來之前請先切斷電源，也要讓孩子遠離他的工具。",
+            "zh-Hans": "师傅来之前请先切断电源，也要让孩子远离他的工具。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-022",
@@ -1547,7 +2006,16 @@
           "form": "sœur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Très engagée dans la vie du quartier, ma sœur participe aux réunions et anime un atelier de lecture.",
+          "translations": {
+            "zh-Hant": "姊姊很熱心參與社區事務，常出席會議，還會主持閱讀工作坊。",
+            "zh-Hans": "姐姐很热心参与社区事务，常出席会议，还会主持阅读工作坊。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-023",
@@ -1577,7 +2045,16 @@
           "form": "habitants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’engagement des habitants a permis de transformer un terrain abandonné en jardin ouvert à tous.",
+          "translations": {
+            "zh-Hant": "在居民的投入下，一塊廢棄土地變成了人人都能使用的花園。",
+            "zh-Hans": "在居民的投入下，一块废弃土地变成了人人都能使用的花园。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-024",
@@ -1607,7 +2084,16 @@
           "form": "factures"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dans cette enveloppe, je range les billets de train et les factures à remettre à mon employeur.",
+          "translations": {
+            "zh-Hant": "我要交給雇主的火車票和發票，都收在這個信封裡。",
+            "zh-Hans": "我要交给雇主的火车票和发票，都收在这个信封里。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-025",
@@ -1633,7 +2119,16 @@
           "form": "enfants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Nous envelopperons les livres dans du papier avant de les déposer chez les enfants de l’association.",
+          "translations": {
+            "zh-Hant": "我們會先用紙把書包起來，再送到協會服務的孩子家中。",
+            "zh-Hans": "我们会先用纸把书包起来，再送到协会服务的孩子家中。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-026",
@@ -1663,7 +2158,16 @@
           "form": "commandes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La librairie expédie les commandes chaque matin et avertit les clients lorsque leur paquet quitte le magasin.",
+          "translations": {
+            "zh-Hant": "書店每天早上出貨，包裹一離開店裡就會通知客人。",
+            "zh-Hans": "书店每天早上出货，包裹一离开店里就会通知客人。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-027",
@@ -1693,7 +2197,16 @@
           "form": "chambre"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’indemnité couvrait les frais de transport, mais elle ne suffisait pas pour louer une chambre en ville.",
+          "translations": {
+            "zh-Hant": "當時這筆津貼足以支付交通費，但不夠在城裡租一個房間。",
+            "zh-Hans": "当时这笔津贴足以支付交通费，但不够在城里租一个房间。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-028",
@@ -1723,7 +2236,16 @@
           "form": "travail"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette prime récompense le travail de toute l’équipe et sera partagée entre les salariés de l’atelier.",
+          "translations": {
+            "zh-Hant": "這筆獎金是對整個團隊的肯定，會分給工坊裡的員工。",
+            "zh-Hans": "这笔奖金是对整个团队的肯定，会分给工坊里的员工。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-029",
@@ -1753,7 +2275,16 @@
           "form": "documents"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une meilleure protection des documents éviterait leur destruction si la pluie entrait encore par le toit.",
+          "translations": {
+            "zh-Hant": "如果能把文件保護得更好，就算屋頂又漏雨，也不至於讓文件毀損。",
+            "zh-Hans": "如果能把文件保护得更好，就算屋顶又漏雨，也不至于让文件毁损。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.02-030",
@@ -1783,7 +2314,16 @@
           "form": "familles"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une volontaire prépare le café pendant que ses collègues distribuent les repas aux familles accueillies.",
+          "translations": {
+            "zh-Hant": "一位志工在準備咖啡，其他同事則把餐點發給前來接受協助的家庭。",
+            "zh-Hans": "一位志工在准备咖啡，其他同事则把餐点发给前来接受协助的家庭。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-001",
@@ -1809,7 +2349,16 @@
           "form": "heure"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le témoin a avoué avoir menti sur l’heure du vol après avoir relu sa déposition.",
+          "translations": {
+            "zh-Hant": "證人重新讀過自己的證詞後，承認先前謊報了失竊的時間。",
+            "zh-Hans": "证人重新读过自己的证词后，承认先前谎报了失窃的时间。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-002",
@@ -1839,7 +2388,16 @@
           "form": "entrée"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Je cherche mes clés pendant que mon frère vérifie les poches des vêtements laissés dans l’entrée.",
+          "translations": {
+            "zh-Hant": "我在找鑰匙，哥哥則在翻玄關那幾件衣服的口袋。",
+            "zh-Hans": "我在找钥匙，哥哥则在翻玄关那几件衣服的口袋。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-003",
@@ -1869,7 +2427,16 @@
           "form": "employés"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le contrôle des billets ralentissait l’entrée du public, mais les employés répondaient patiemment aux questions.",
+          "translations": {
+            "zh-Hant": "驗票讓觀眾進場的速度慢了下來，但工作人員仍耐心回答大家的問題。",
+            "zh-Hans": "验票让观众进场的速度慢了下来，但工作人员仍耐心回答大家的问题。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-004",
@@ -1899,7 +2466,16 @@
           "form": "visite"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le technicien effectue une visite de l’usine pour vérifier les machines et préparer leur entretien.",
+          "translations": {
+            "zh-Hant": "技術員到工廠巡查，檢查機器狀況，為保養工作做準備。",
+            "zh-Hans": "技术员到工厂巡查，检查机器状况，为保养工作做准备。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-005",
@@ -1925,7 +2501,16 @@
           "form": "musée"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’enquête devra expliquer pourquoi les alarmes du musée ne fonctionnaient pas le soir du vol.",
+          "translations": {
+            "zh-Hant": "這次調查必須釐清，失竊當晚博物館的警報器為什麼沒有運作。",
+            "zh-Hans": "这次调查必须厘清，失窃当晚博物馆的警报器为什么没有运作。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-006",
@@ -1955,7 +2540,16 @@
           "form": "police"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les habitants demandent à la police de ne pas employer la force pour disperser le rassemblement du quartier.",
+          "translations": {
+            "zh-Hant": "居民要求警方不要使用武力驅散社區的集會。",
+            "zh-Hans": "居民要求警方不要使用武力驱散社区的集会。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-007",
@@ -1985,7 +2579,16 @@
           "form": "vélo"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La police a retrouvé le vélo volé grâce au numéro inscrit sur la facture conservée par son propriétaire.",
+          "translations": {
+            "zh-Hant": "警方靠車主保留的發票上記載的車號，找回了失竊的自行車。",
+            "zh-Hans": "警方靠车主保留的发票上记载的车号，找回了失窃的自行车。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-008",
@@ -2015,7 +2618,16 @@
           "form": "gare"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une policière aide les voyageurs à retrouver leur chemin après la fermeture inattendue de la gare.",
+          "translations": {
+            "zh-Hant": "車站臨時關閉後，一位女警幫旅客找到該走的路。",
+            "zh-Hans": "车站临时关闭后，一位女警帮旅客找到该走的路。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-009",
@@ -2045,7 +2657,16 @@
           "form": "marché"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dans le film, une inspectrice a poursuivi le voleur à travers le marché avant de perdre sa trace.",
+          "translations": {
+            "zh-Hant": "電影裡，女警探一路追著小偷穿過市場，最後還是跟丟了。",
+            "zh-Hans": "电影里，女警探一路追着小偷穿过市场，最后还是跟丢了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-010",
@@ -2075,7 +2696,16 @@
           "form": "ouvriers"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce casque protège la tête des ouvriers qui travaillent près des machines et des charges suspendues.",
+          "translations": {
+            "zh-Hant": "在機器和吊掛重物附近工作的工人，靠這種安全帽保護頭部。",
+            "zh-Hans": "在机器和吊挂重物附近工作的工人，靠这种安全帽保护头部。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-011",
@@ -2105,7 +2735,16 @@
           "form": "police"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’accusation reposait sur une lettre dont la police cherchait encore à vérifier l’origine et la date.",
+          "translations": {
+            "zh-Hant": "當時的指控是根據一封信提出的，警方仍在查證它的來源和日期。",
+            "zh-Hans": "当时的指控是根据一封信提出的，警方仍在查证它的来源和日期。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-012",
@@ -2135,7 +2774,16 @@
           "form": "lieux"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le journaliste décrit l’arrestation du suspect sans révéler les noms des enfants présents sur les lieux.",
+          "translations": {
+            "zh-Hant": "記者描述嫌疑人被捕的經過，但沒有透露當時在場孩子的姓名。",
+            "zh-Hans": "记者描述嫌疑人被捕的经过，但没有透露当时在场孩子的姓名。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-013",
@@ -2165,7 +2813,16 @@
           "form": "roman"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dans ce roman, les enquêteurs ont découvert un cadavre près de la rivière après plusieurs jours de recherches.",
+          "translations": {
+            "zh-Hant": "在這部小說裡，調查人員搜尋了好幾天，終於在河邊發現一具屍體。",
+            "zh-Hans": "在这部小说里，调查人员搜寻了好几天，终于在河边发现一具尸体。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-014",
@@ -2195,7 +2852,16 @@
           "form": "quartier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La commissaire présente les résultats de l’enquête aux journalistes réunis devant le commissariat du quartier.",
+          "translations": {
+            "zh-Hant": "警察局長向聚集在社區警局門口的記者說明調查結果。",
+            "zh-Hans": "警察局长向聚集在社区警局门口的记者说明调查结果。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-015",
@@ -2225,7 +2891,16 @@
           "form": "théâtre"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les agents contrôleront les billets à l’entrée du théâtre afin de faciliter l’installation du public.",
+          "translations": {
+            "zh-Hant": "工作人員會在劇院入口驗票，讓觀眾更順利地入座。",
+            "zh-Hans": "工作人员会在剧院入口验票，让观众更顺利地入座。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-016",
@@ -2255,7 +2930,16 @@
           "form": "victimes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’association dénonce les violences et accompagne les victimes qui souhaitent déposer une plainte auprès de la police.",
+          "translations": {
+            "zh-Hant": "協會譴責暴力行為，也會陪同想向警方報案的受害者。",
+            "zh-Hans": "协会谴责暴力行为，也会陪同想向警方报案的受害者。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-017",
@@ -2285,7 +2969,16 @@
           "form": "équipes"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les secours ont déployé plusieurs équipes pour rechercher les promeneurs disparus dans la montagne.",
+          "translations": {
+            "zh-Hant": "救援單位派出好幾支小隊，搜尋在山裡失蹤的健行者。",
+            "zh-Hans": "救援单位派出好几支小队，搜寻在山里失踪的健行者。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-018",
@@ -2315,7 +3008,16 @@
           "form": "prison"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le détenu échange des lettres avec sa famille et suit une formation dans l’atelier de la prison.",
+          "translations": {
+            "zh-Hant": "這名受刑人和家人通信，也在監獄的工坊裡接受職業訓練。",
+            "zh-Hans": "这名受刑人和家人通信，也在监狱的工坊里接受职业训练。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-019",
@@ -2345,7 +3047,16 @@
           "form": "fenêtres"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dans le récit, les gardes enfermaient les prisonniers dans une tour dont les fenêtres donnaient sur la mer.",
+          "translations": {
+            "zh-Hant": "故事裡，衛兵把囚犯關在一座窗戶朝海的高塔裡。",
+            "zh-Hans": "故事里，卫兵把囚犯关在一座窗户朝海的高塔里。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-020",
@@ -2375,7 +3086,16 @@
           "form": "propriétaire"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les enquêteurs fouillent le bureau en présence du propriétaire et dressent la liste des documents emportés.",
+          "translations": {
+            "zh-Hant": "調查人員在屋主在場時搜索辦公室，並把帶走的文件逐項列出。",
+            "zh-Hans": "调查人员在屋主在场时搜索办公室，并把带走的文件逐项列出。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-021",
@@ -2405,7 +3125,16 @@
           "form": "pont"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un gendarme a indiqué aux touristes une autre route après la fermeture du pont endommagé.",
+          "translations": {
+            "zh-Hant": "受損的橋梁封閉後，一名憲兵為遊客指引了另一條路。",
+            "zh-Hans": "受损的桥梁封闭后，一名宪兵为游客指引了另一条路。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-022",
@@ -2435,7 +3164,16 @@
           "form": "numéro"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette photographie permet d’identifier le conducteur, mais le numéro de la voiture reste illisible.",
+          "translations": {
+            "zh-Hant": "這張照片足以辨認出駕駛，但車牌號碼還是看不清楚。",
+            "zh-Hans": "这张照片足以辨认出驾驶，但车牌号码还是看不清楚。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-023",
@@ -2465,7 +3203,16 @@
           "form": "gare"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un indice supplémentaire aiderait l’inspectrice à comprendre le trajet du voleur entre la gare et le musée.",
+          "translations": {
+            "zh-Hant": "如果再多一條線索，女警探就更能釐清小偷從車站到博物館究竟走了哪條路。",
+            "zh-Hans": "如果再多一条线索，女警探就更能厘清小偷从车站到博物馆究竟走了哪条路。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-024",
@@ -2495,7 +3242,16 @@
           "form": "horaires"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’inspecteur compare les témoignages avec les horaires de train et cherche à expliquer leurs contradictions.",
+          "translations": {
+            "zh-Hant": "警探把各人的證詞和火車時刻相互比對，試著釐清其中的矛盾。",
+            "zh-Hans": "警探把各人的证词和火车时刻相互比对，试着厘清其中的矛盾。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-025",
@@ -2521,7 +3277,16 @@
           "form": "sentier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le promeneur a découvert un piège rouillé près du sentier et averti le gardien de la réserve.",
+          "translations": {
+            "zh-Hant": "散步的人在步道旁發現一個生鏽的陷阱，便通知了保護區的管理員。",
+            "zh-Hans": "散步的人在步道旁发现一个生锈的陷阱，便通知了保护区的管理员。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-026",
@@ -2551,7 +3316,16 @@
           "form": "rues"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le roman raconte une poursuite dans les rues de la ville du point de vue d’une passante.",
+          "translations": {
+            "zh-Hant": "小說從一名女路人的角度，描寫在城裡街頭展開的一場追逐。",
+            "zh-Hans": "小说从一名女路人的角度，描写在城里街头展开的一场追逐。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-027",
@@ -2577,7 +3351,16 @@
           "form": "documents"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les documents seront mieux protégés dans l’armoire que la mairie installera après les travaux du bureau.",
+          "translations": {
+            "zh-Hant": "辦公室整修結束後，市政府會添置櫃子，把文件放在裡面會更安全。",
+            "zh-Hans": "办公室整修结束后，市政府会添置柜子，把文件放在里面会更安全。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-028",
@@ -2607,7 +3390,16 @@
           "form": "secours"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les secours recherchent les voyageurs dont le bateau n’est pas revenu au port avant la nuit.",
+          "translations": {
+            "zh-Hant": "有艘船在天黑前一直沒回到港口，救援人員正在搜尋船上的旅客。",
+            "zh-Hans": "有艘船在天黑前一直没回到港口，救援人员正在搜寻船上的旅客。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-029",
@@ -2637,7 +3429,16 @@
           "form": "route"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La barrière a repoussé le troupeau vers le pré et empêché les animaux de traverser la route.",
+          "translations": {
+            "zh-Hant": "圍欄把畜群擋回草地，使牠們無法穿越馬路。",
+            "zh-Hans": "围栏把畜群挡回草地，使牠们无法穿越马路。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-030",
@@ -2667,7 +3468,16 @@
           "form": "factures"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La police soupçonne le vendeur d’avoir falsifié les factures pour cacher l’origine des tableaux.",
+          "translations": {
+            "zh-Hant": "警方懷疑賣家偽造發票，以隱瞞畫作的來源。",
+            "zh-Hans": "警方怀疑卖家伪造发票，以隐瞒画作的来源。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-031",
@@ -2697,7 +3507,16 @@
           "form": "pont"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La sûreté des voyageurs dépendait notamment de l’entretien du pont et du respect des limitations de vitesse.",
+          "translations": {
+            "zh-Hant": "當時旅客的安全，部分取決於橋梁是否妥善維護，以及駕駛是否遵守速限。",
+            "zh-Hans": "当时旅客的安全，部分取决于桥梁是否妥善维护，以及驾驶是否遵守速限。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-032",
@@ -2727,7 +3546,16 @@
           "form": "matériel"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La surveillance du musée continue pendant les travaux pour protéger les tableaux et le matériel des artisans.",
+          "translations": {
+            "zh-Hant": "施工期間博物館仍持續執行警戒，以保護畫作和工匠的設備。",
+            "zh-Hans": "施工期间博物馆仍持续执行警戒，以保护画作和工匠的设备。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.03-033",
@@ -2757,7 +3585,16 @@
           "form": "gardien"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Surveille le portail pendant que je cherche le gardien qui doit ouvrir la salle de réunion.",
+          "translations": {
+            "zh-Hant": "你幫忙看著大門，我去找負責開會議室的管理員。",
+            "zh-Hans": "你帮忙看着大门，我去找负责开会议室的管理员。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-001",
@@ -2787,7 +3624,16 @@
           "form": "témoin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dans cette pièce, un témoin affirme que le ministre a été assassiné, mais son récit contredit les preuves.",
+          "translations": {
+            "zh-Hant": "這齣戲裡，一名證人聲稱部長遭到暗殺，但他的說法和證據互相矛盾。",
+            "zh-Hans": "这出戏里，一名证人声称部长遭到暗杀，但他的说法和证据互相矛盾。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-002",
@@ -2817,7 +3663,16 @@
           "form": "école"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’attaque du village a obligé plusieurs familles à quitter leur maison et chercher refuge près de l’école.",
+          "translations": {
+            "zh-Hant": "村子遭受襲擊，好幾戶人家被迫離開住處，到學校附近避難。",
+            "zh-Hans": "村子遭受袭击，好几户人家被迫离开住处，到学校附近避难。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-003",
@@ -2847,7 +3702,16 @@
           "form": "entrée"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dans le documentaire, les témoins racontent comment des hommes ont attaqué le convoi à l’entrée de la ville.",
+          "translations": {
+            "zh-Hant": "紀錄片裡，目擊者講述一群男子如何在進城的路口襲擊車隊。",
+            "zh-Hans": "纪录片里，目击者讲述一群男子如何在进城的路口袭击车队。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-004",
@@ -2877,7 +3741,16 @@
           "form": "terrain"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Après le coup reçu au bras, le joueur attendait le médecin sur un banc près du terrain.",
+          "translations": {
+            "zh-Hant": "那名球員的手臂挨了一下，當時正坐在球場旁的長椅上等醫師。",
+            "zh-Hans": "那名球员的手臂挨了一下，当时正坐在球场旁的长椅上等医师。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-005",
@@ -2907,7 +3780,16 @@
           "form": "habitants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Ce roman suit une journaliste qui enquête sur un crime oublié et interroge les habitants du quartier.",
+          "translations": {
+            "zh-Hant": "這部小說的主角是一名女記者，她走訪附近居民，調查一樁被遺忘的案件。",
+            "zh-Hans": "这部小说的主角是一名女记者，她走访附近居民，调查一桩被遗忘的案件。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-006",
@@ -2937,7 +3819,16 @@
           "form": "prisonniers"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les archives indiquent que le régime a exécuté des prisonniers sans permettre à leurs familles de les revoir.",
+          "translations": {
+            "zh-Hant": "檔案記載，當時的政權處決了囚犯，甚至不讓家屬跟他們見最後一面。",
+            "zh-Hans": "档案记载，当时的政权处决了囚犯，甚至不让家属跟他们见最后一面。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-007",
@@ -2967,7 +3858,16 @@
           "form": "familles"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Personne ne doit frapper un enfant ; cette association propose une aide aux familles confrontées à la violence.",
+          "translations": {
+            "zh-Hant": "任何人都不該打孩子，這個協會為遭遇暴力的家庭提供協助。",
+            "zh-Hans": "任何人都不该打孩子，这个协会为遭遇暴力的家庭提供协助。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-008",
@@ -2993,7 +3893,16 @@
           "form": "atelier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La bibliothèque de la prison recevra des livres et accueillera un atelier animé par des bénévoles.",
+          "translations": {
+            "zh-Hant": "監獄圖書館將收到一批圖書，也會舉辦由志工帶領的工作坊。",
+            "zh-Hans": "监狱图书馆将收到一批图书，也会举办由志工带领的工作坊。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-009",
@@ -3023,7 +3932,16 @@
           "form": "conducteur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le témoin explique au tribunal que le conducteur n’avait pas l’intention de tuer le piéton.",
+          "translations": {
+            "zh-Hant": "證人向法庭說明，駕駛並沒有要置那名行人於死地的意圖。",
+            "zh-Hans": "证人向法庭说明，驾驶并没有要置那名行人于死地的意图。"
+          }
+        }
+      ]
     },
     {
       "id": "7.04-3",
@@ -3050,7 +3968,16 @@
           "form": "sac"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La victime du vol a retrouvé son sac, mais ses papiers et sa carte bancaire avaient disparu.",
+          "translations": {
+            "zh-Hant": "遭竊的人找回了自己的包包，但裡面的證件和銀行卡都不見了。",
+            "zh-Hans": "遭窃的人找回了自己的包包，但里面的证件和银行卡都不见了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-011",
@@ -3080,7 +4007,16 @@
           "form": "toit"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le propriétaire découvre que quelqu’un a volé ses outils pendant qu’il réparait le toit de l’école.",
+          "translations": {
+            "zh-Hant": "他發現有人趁他修繕學校屋頂時，偷走了他的工具。",
+            "zh-Hans": "他发现有人趁他修缮学校屋顶时，偷走了他的工具。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-012",
@@ -3110,7 +4046,16 @@
           "form": "trains"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La voleuse du roman passait pour une voyageuse ordinaire et connaissait tous les horaires des trains.",
+          "translations": {
+            "zh-Hant": "小說裡的女賊看起來像個普通旅客，對所有火車的時刻都瞭若指掌。",
+            "zh-Hans": "小说里的女贼看起来像个普通旅客，对所有火车的时刻都了若指掌。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-013",
@@ -3140,7 +4085,16 @@
           "form": "mur"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dans ce récit historique, les soldats reçoivent l’ordre d’abattre le mur pour ouvrir un passage aux civils.",
+          "translations": {
+            "zh-Hant": "這個歷史故事裡，士兵接到命令要拆掉圍牆，讓平民能夠通行。",
+            "zh-Hans": "这个历史故事里，士兵接到命令要拆掉围墙，让平民能够通行。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-014",
@@ -3170,7 +4124,16 @@
           "form": "soutien"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’assassinat du journaliste a provoqué une manifestation silencieuse devant la mairie et plusieurs témoignages de soutien.",
+          "translations": {
+            "zh-Hant": "記者遭到暗殺後，民眾在市政府前舉行無聲抗議，也有不少人出面聲援。",
+            "zh-Hans": "记者遭到暗杀后，民众在市政府前举行无声抗议，也有不少人出面声援。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-015",
@@ -3200,7 +4163,16 @@
           "form": "maison"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le bandit de cette histoire abandonne son arme lorsque les enfants sortent de la maison.",
+          "translations": {
+            "zh-Hant": "故事裡的歹徒看到孩子們走出屋子，就放下了武器。",
+            "zh-Hans": "故事里的歹徒看到孩子们走出屋子，就放下了武器。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-016",
@@ -3230,7 +4202,16 @@
           "form": "chaise"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un geste brutal a fait tomber la chaise et effrayé les clients installés près du comptoir.",
+          "translations": {
+            "zh-Hant": "有人粗暴地一揮手，撞翻了椅子，也嚇到了坐在櫃檯旁的客人。",
+            "zh-Hans": "有人粗暴地一挥手，撞翻了椅子，也吓到了坐在柜台旁的客人。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-017",
@@ -3260,7 +4241,16 @@
           "form": "gare"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le témoin affirme que le gardien a brutalement repoussé le voyageur qui demandait à entrer dans la gare.",
+          "translations": {
+            "zh-Hant": "證人指出，警衛粗暴地把那名要求進入車站的旅客推開了。",
+            "zh-Hans": "证人指出，警卫粗暴地把那名要求进入车站的旅客推开了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-018",
@@ -3290,7 +4280,16 @@
           "form": "homme"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le tribunal examinera les circonstances dans lesquelles le jeune homme aurait commis ce délit.",
+          "translations": {
+            "zh-Hant": "法院將審視這名年輕人涉嫌犯罪時的具體情況。",
+            "zh-Hans": "法院将审视这名年轻人涉嫌犯罪时的具体情况。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-019",
@@ -3320,7 +4319,16 @@
           "form": "collègues"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Une fausse déclaration peut compromettre ses collègues et rendre plus difficile la recherche de la vérité.",
+          "translations": {
+            "zh-Hant": "不實的陳述可能牽連同事，也會讓真相更難查明。",
+            "zh-Hans": "不实的陈述可能牵连同事，也会让真相更难查明。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-020",
@@ -3350,7 +4358,16 @@
           "form": "entreprise"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les enquêteurs cherchaient à déterminer si cette entreprise participait à une activité criminelle ou transportait des marchandises ordinaires.",
+          "translations": {
+            "zh-Hant": "調查人員當時正試圖釐清，這家公司究竟涉及犯罪活動，還是只在運送一般貨物。",
+            "zh-Hans": "调查人员当时正试图厘清，这家公司究竟涉及犯罪活动，还是只在运送一般货物。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-021",
@@ -3380,7 +4397,16 @@
           "form": "étudiants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le traitement cruel des prisonniers est dénoncé dans les lettres que l’historienne étudie avec ses étudiants.",
+          "translations": {
+            "zh-Hant": "那位歷史學者和學生一起研究的信件裡，寫信的人譴責了囚犯所受的殘酷對待。",
+            "zh-Hans": "那位历史学者和学生一起研究的信件里，写信的人谴责了囚犯所受的残酷对待。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-022",
@@ -3410,7 +4436,16 @@
           "form": "aide"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le jeune délinquant a suivi une formation et retrouvé un emploi grâce à l’aide d’une association.",
+          "translations": {
+            "zh-Hant": "這位曾經觸法的年輕人在協會幫助下接受了培訓，也重新找到了工作。",
+            "zh-Hans": "这位曾经触法的年轻人在协会帮助下接受了培训，也重新找到了工作。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-023",
@@ -3440,7 +4475,16 @@
           "form": "conférence"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "L’avocate explique la différence entre un délit et un crime aux étudiants réunis pour la conférence.",
+          "translations": {
+            "zh-Hant": "女律師向前來聽講座的學生解釋，法國法律中的輕罪與重罪有何不同。",
+            "zh-Hans": "女律师向前来听讲座的学生解释，法国法律中的轻罪与重罪有何不同。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-024",
@@ -3470,7 +4514,16 @@
           "form": "documents"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le comptable a détourné de l’argent destiné à la réparation des logements, selon les documents présentés au procès.",
+          "translations": {
+            "zh-Hant": "根據庭上出示的文件，會計師挪用了原本要用來修繕房屋的款項。",
+            "zh-Hans": "根据庭上出示的文件，会计师挪用了原本要用来修缮房屋的款项。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-025",
@@ -3496,7 +4549,16 @@
           "form": "prisonnière"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Dans le film, la prisonnière cherche à s’enfuir avant que les gardes découvrent la porte ouverte.",
+          "translations": {
+            "zh-Hant": "電影裡，女囚犯想趁守衛還沒發現門開著之前逃走。",
+            "zh-Hans": "电影里，女囚犯想趁守卫还没发现门开着之前逃走。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-026",
@@ -3526,7 +4588,16 @@
           "form": "habitants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Les habitants fuiront le village si la menace se rapproche encore des maisons et de l’école.",
+          "translations": {
+            "zh-Hant": "如果威脅再逼近住家和學校，居民就會逃離村子。",
+            "zh-Hans": "如果威胁再逼近住家和学校，居民就会逃离村子。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-027",
@@ -3556,7 +4627,16 @@
           "form": "lettre"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette lettre semble impliquer un employé, mais l’inspectrice veut vérifier son authenticité avant de l’interroger.",
+          "translations": {
+            "zh-Hant": "這封信似乎暗示有一名員工涉案，但女警探想先確認信件真偽，再找他問話。",
+            "zh-Hans": "这封信似乎暗示有一名员工涉案，但女警探想先确认信件真伪，再找他问话。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-028",
@@ -3586,7 +4666,16 @@
           "form": "famille"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La menace pesait sur toute la famille, qui hésitait à quitter son logement et son travail.",
+          "translations": {
+            "zh-Hant": "整個家庭都籠罩在威脅之下，家人遲遲無法決定是否要離開住處和工作。",
+            "zh-Hans": "整个家庭都笼罩在威胁之下，家人迟迟无法决定是否要离开住处和工作。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-029",
@@ -3612,7 +4701,16 @@
           "form": "magasin"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le témoin raconte qu’un inconnu l’a menacé devant le magasin après lui avoir demandé de l’argent.",
+          "translations": {
+            "zh-Hant": "證人說，有個陌生人在商店門口向他要錢，隨後又出言威脅。",
+            "zh-Hans": "证人说，有个陌生人在商店门口向他要钱，随后又出言威胁。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-030",
@@ -3638,7 +4736,16 @@
           "form": "dossier"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le meurtre décrit dans ce roman a été résolu grâce à une photographie oubliée dans un dossier.",
+          "translations": {
+            "zh-Hant": "小說描寫的那起謀殺案，最後靠著一張被遺忘在檔案裡的照片破案了。",
+            "zh-Hans": "小说描写的那起谋杀案，最后靠着一张被遗忘在档案里的照片破案了。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-031",
@@ -3668,7 +4775,16 @@
           "form": "musée"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Au musée, un pistolet ancien est présenté derrière une vitre avec des documents sur l’histoire de la ville.",
+          "translations": {
+            "zh-Hant": "博物館將一把古董手槍陳列在玻璃櫃裡，旁邊還放著介紹城市歷史的文件。",
+            "zh-Hans": "博物馆将一把古董手枪陈列在玻璃柜里，旁边还放着介绍城市历史的文件。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-032",
@@ -3698,7 +4814,16 @@
           "form": "famille"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La prisonnière pourra rencontrer sa famille après l’entretien prévu avec son avocate dans la matinée.",
+          "translations": {
+            "zh-Hant": "上午和律師談完之後，這名女囚犯就能與家人見面。",
+            "zh-Hans": "上午和律师谈完之后，这名女囚犯就能与家人见面。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-033",
@@ -3728,7 +4853,16 @@
           "form": "cave"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le revolver retrouvé dans la cave figure sur l’inventaire des objets que les enquêteurs ont emportés.",
+          "translations": {
+            "zh-Hant": "調查人員帶走的物品清單上，列有一把在地下室找到的左輪手槍。",
+            "zh-Hans": "调查人员带走的物品清单上，列有一把在地下室找到的左轮手枪。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-034",
@@ -3758,7 +4892,16 @@
           "form": "train"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Un colis suspect a retardé le départ du train pendant que les voyageurs attendaient dans la gare.",
+          "translations": {
+            "zh-Hant": "一個可疑包裹延誤了火車發車時間，旅客只好在車站等候。",
+            "zh-Hans": "一个可疑包裹延误了火车发车时间，旅客只好在车站等候。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-035",
@@ -3788,7 +4931,16 @@
           "form": "document"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Cette tentative de vol a échoué parce qu’une employée a reconnu le faux document présenté au comptoir.",
+          "translations": {
+            "zh-Hant": "一名店員認出對方拿到櫃檯的文件是偽造的，這起竊案才沒有得逞。",
+            "zh-Hans": "一名店员认出对方拿到柜台的文件是伪造的，这起窃案才没有得逞。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-036",
@@ -3818,7 +4970,16 @@
           "form": "habitants"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "La violence inquiétait les habitants, qui demandaient davantage d’aide pour les jeunes et de présence dans le quartier.",
+          "translations": {
+            "zh-Hant": "暴力事件讓居民擔心，他們要求為年輕人提供更多協助，也希望社區裡有人多加照應。",
+            "zh-Hans": "暴力事件让居民担心，他们要求为年轻人提供更多协助，也希望社区里有人多加照应。"
+          }
+        }
+      ]
     },
     {
       "id": "book-7.04-037",
@@ -3848,7 +5009,16 @@
           "form": "famille"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le personnage devient violent lorsqu’il boit, et sa famille cherche de l’aide auprès d’une association.",
+          "translations": {
+            "zh-Hant": "故事裡的角色一喝酒就變得暴力，他的家人正向一個協會求助。",
+            "zh-Hans": "故事里的角色一喝酒就变得暴力，他的家人正向一个协会求助。"
+          }
+        }
+      ]
     },
     {
       "id": "7.04-1",
@@ -3879,7 +5049,16 @@
           "form": "laboratoire"
         }
       ],
-      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook."
+      "exampleSource": "Original learning examples authored for Mots, 2026-10-25; not quotations from the source handbook.",
+      "examples": [
+        {
+          "text": "Le vol de son ordinateur a obligé la chercheuse à retrouver les copies de ses documents au laboratoire.",
+          "translations": {
+            "zh-Hant": "電腦失竊後，那位女研究員只得到實驗室去找自己文件的備份。",
+            "zh-Hans": "电脑失窃后，那位女研究员只得到实验室去找自己文件的备份。"
+          }
+        }
+      ]
     }
   ],
   "originalMethod": "扫描页逐页核对；保留原书词条顺序、基础/进阶及阴阳性成对形式；统一法语标点；中文释义按语境校正或补充；词性为整理标注。例句保留原书内容，旧统计和科学表述的范围说明记入 note。",

@@ -38,6 +38,6 @@ VPS 發布使用根目錄 `make sync-vps`，完整流程見 [部署說明](../de
 
 JSON 學習集可設定 `kind: "grammar"` 或 `"vocabulary"`。詞條支援 `examples: [{text, translations: {"zh-Hant": "翻譯"}}]`、`pattern`、`explanation`，並相容舊 `example` 欄位。`grammar.js` 的原創示例是 Web 專用內容，尚非完整課程。
 
-內建書名：Français Mots／Français Grammaire、Deutsch Wörter／Deutsch Grammatik、日本語 語彙／日本語 文法。設定 → 學習偏好的「卡片顯示例句翻譯」預設開啟；顯示答案時會顯示已收錄、對應釋義語言的例句翻譯。列表及詳情維持原文例句。匯入書籍沿用其自訂名稱。
+內建書名：Français Mots／Français Grammaire、Deutsch Wörter／Deutsch Grammatik、日本語 語彙／日本語 文法。「設定 → 學習偏好」可分別控制卡片和列表的例句翻譯。「列表顯示例句翻譯」預設關閉，開啟後會在學習、查詞與卡片記憶列表的原句下方顯示已收錄的所選釋義語言譯文。「卡片顯示例句翻譯」預設開啟，翻開答案後顯示。語法詳情顯示原文例句。匯入書籍沿用其自訂名稱。
 
 Web 詞彙列表依實際內容區寬度分為小於 720、720–1199、1200–1599、1600px 以上四組間距與欄寬，並可延伸至 2240px；收合側欄後自動重新適配。各組仍保留單行、固定字體與完整欄位，過寬內容僅在列表內橫向捲動。卡片、語法與首頁沿用原有閱讀寬度。

@@ -31,6 +31,30 @@ class FrenchExamplesTests(unittest.TestCase):
             self.assertEqual(word['exampleSource'], editor.PROVENANCE)
             self.assertIn('originalText', record)
 
+    def test_every_primary_sentence_has_both_chinese_translations(self):
+        for word in self.words:
+            record = self.examples[word['id']]
+            primary = [example for example in word.get('examples', [])
+                       if isinstance(example, dict) and example['text'] == record['text']]
+            translations = record.get('translations', {})
+            for language in ('zh-Hant', 'zh-Hans'):
+                self.assertTrue(translations.get(language, '').strip(), (word['id'], language))
+            self.assertEqual([example['translations'] for example in primary],
+                             [translations], word['id'])
+
+    def test_changed_sentence_drops_old_translation_and_keeps_other_examples(self):
+        other = {'text': 'Autre phrase.', 'translations': {'en': 'Another sentence.'}}
+        word = {'example': 'Avant.', 'examples': [{'text': 'Avant.', 'translations': {'en': 'Before.'}}, other]}
+        self.assertEqual(editor.rich_examples(word, {'text': 'Après.'}), [other])
+
+    def test_invalid_translations_are_rejected(self):
+        identifier = next(iter(self.examples))
+        for translations in (None, [], {'zh-Hant': ' '}, {'zh-Hant': 7}, {'unknown': 'Test'}):
+            with self.subTest(translations=translations):
+                records = {**self.examples, identifier: {**self.examples[identifier], 'translations': translations}}
+                with self.assertRaisesRegex(ValueError, 'Invalid example translation'):
+                    editor.validate(self.words, records)
+
     def test_missing_target_is_rejected(self):
         records = dict(self.examples)
         records.pop(next(iter(records)))
